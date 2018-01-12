@@ -1,9 +1,13 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>
 #endif
+
+#include "models/cardsmodel.h"
+#include "models/searchmodel.h"
 
 
 int main(int argc, char *argv[])
@@ -13,6 +17,15 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+
+    auto context = engine.rootContext();
+
+    auto searchModel = new SearchModel();
+    searchModel->setSourceModel(new CardsModel);
+    searchModel->setFilterRole(CardsModel::Roles::Code);
+    context->setContextProperty("cardsModel", searchModel);
+    engine.addImportPath(QStringLiteral("qrc:/"));
+    engine.addImportPath(QStringLiteral("qrc:/qml/"));
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;

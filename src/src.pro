@@ -6,14 +6,22 @@ CONFIG += c++11
 DEFINES += QT_DEPRECATED_WARNINGS
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+HEADERS += \
+    $$PWD/models/cardsmodel.h \
+    $$PWD/models/data.h \
+    $$PWD/models/searchmodel.h
+
 SOURCES += \
-    $$PWD/main.cpp
+    $$PWD/main.cpp \
+    $$PWD/models/cardsmodel.cpp \
+    $$PWD/models/searchmodel.cpp
 
 RESOURCES += \
     $$PWD/qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
+QML_IMPORT_PATH = \
+    $$PWD/qml
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
@@ -33,3 +41,5 @@ android {
 
     ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 }
+
+

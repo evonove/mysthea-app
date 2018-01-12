@@ -1,6 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/main.qml</file>
+        <file>qml/Mysthea/Pages/qmldir</file>
+        <file>qml/Mysthea/Pages/SearchPage.qml</file>
+        <file>qml/Mysthea/Pages/DetailPage.qml</file>
+        <file>fonts/MaterialIcons-Regular.woff</file>
+        <file>images/logo.png</file>
+        <file>images/card.png</file>
         <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>
