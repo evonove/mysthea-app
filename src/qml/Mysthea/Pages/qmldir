@@ -1,0 +1,3 @@
+module Mysthea.Pages
+SearchPage 1.0 SearchPage.qml
+DetailPage 1.0 DetailPage.qml
