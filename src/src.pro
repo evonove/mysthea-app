@@ -42,4 +42,17 @@ android {
     ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 }
 
+ios {
+    OTHER_FILES += $$PWD/ios/*
 
+    # Custom plist
+    QMAKE_INFO_PLIST = $$PWD/ios/Info.plist
+
+    # App icons
+    ios_icon.files = $$files($$PWD/ios/Icon-*.png)
+    QMAKE_BUNDLE_DATA += ios_icon
+
+    # Itunes artwork
+    itunes_images.files = $$files($$PWD/ios/iTunesArtwork*.png)
+    QMAKE_BUNDLE_DATA += itunes_images
+}
