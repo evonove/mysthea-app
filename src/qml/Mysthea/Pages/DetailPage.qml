@@ -36,10 +36,10 @@ Page {
                 spacing: 8
 
                 Image {
-                    width: sourceSize.width
-                    height: sourceSize.height
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/images/" + image
+                    source: "qrc:/images/cards/" + image
+
+                    Layout.fillWidth: true
                 }
 
                 ColumnLayout {

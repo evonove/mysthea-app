@@ -15,6 +15,7 @@ public:
         Code = Qt::UserRole + 1,
         Type,
         Category,
+        Color,
         Image,
         Description
     };
