@@ -14,6 +14,7 @@ QHash<int, QByteArray> CardsModel::roleNames() const
         {Roles::Code, "code"},
         {Roles::Type, "type"},
         {Roles::Category, "category"},
+        {Roles::Color, "color"},
         {Roles::Image, "image"},
         {Roles::Description, "description"}
     };
@@ -39,6 +40,8 @@ QVariant CardsModel::data(const QModelIndex& index, int role) const
             return CARDS_DATA[row].type;
         case Roles::Category:
             return CARDS_DATA[row].category;
+        case Roles::Color:
+            return CARDS_DATA[row].color;
         case Roles::Image:
             return CARDS_DATA[row].image;
         case Roles::Description:

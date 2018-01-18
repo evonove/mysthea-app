@@ -17,7 +17,8 @@ SOURCES += \
     $$PWD/models/searchmodel.cpp
 
 RESOURCES += \
-    $$PWD/qml.qrc
+    $$PWD/qml.qrc \
+    $$PWD/cards.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH = \
