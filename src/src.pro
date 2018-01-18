@@ -1,24 +1,13 @@
 TARGET = mysthea
 
-QT += qml quick
-CONFIG += c++11
-
-DEFINES += QT_DEPRECATED_WARNINGS
-DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
-HEADERS += \
-    $$PWD/models/cardsmodel.h \
-    $$PWD/models/data.h \
-    $$PWD/models/searchmodel.h
-
 SOURCES += \
-    $$PWD/main.cpp \
-    $$PWD/models/cardsmodel.cpp \
-    $$PWD/models/searchmodel.cpp
+    $$PWD/main.cpp
 
 RESOURCES += \
     $$PWD/qml.qrc \
     $$PWD/cards.qrc
+
+include($$PWD/src.pri)
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH = \

@@ -25,7 +25,21 @@ Page {
 
                     Layout.fillWidth: true
 
-                    onTextEdited: cardsModel.setFilterFixedString(_searchField.text)
+                    onTextEdited: cardsModel.setCodeFilter(_searchField.text)
+                }
+
+                ComboBox {
+                    model: ["All Categories", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
+
+                    Layout.preferredWidth: 150
+
+                    onActivated: cardsModel.setCategoryFilter(model[index]);
+                }
+
+                ComboBox {
+                    model: ["All Colors", "Red", "Green", "Blue", "Yellow", "Gray"]
+
+                    onActivated: cardsModel.setColorFilter(model[index]);
                 }
             }
         }

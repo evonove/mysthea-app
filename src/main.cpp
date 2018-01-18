@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 
     auto searchModel = new SearchModel();
     searchModel->setSourceModel(new CardsModel);
-    searchModel->setFilterRole(CardsModel::Roles::Code);
     context->setContextProperty("cardsModel", searchModel);
     engine.addImportPath(QStringLiteral("qrc:/"));
     engine.addImportPath(QStringLiteral("qrc:/qml/"));
