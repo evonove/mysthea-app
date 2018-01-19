@@ -7,64 +7,28 @@ Page {
 
     padding: 8
 
-    property string code: ""
-    property string type: ""
-    property string category: ""
-    property string image: ""
-    property string description: ""
+    property var model: null
+    property int index: -1
 
-    Flickable {
+    SwipeView {
+        id: _swipeView
         anchors.fill: parent
-        contentHeight: _layout.height
-        contentWidth: parent.width
+        currentIndex: root.index
 
-        ColumnLayout {
-            id: _layout
-            width: parent.width
+        Repeater {
+            model: root.model
 
-            spacing: 8
+            Loader {
+                active: SwipeView.isPreviousItem || SwipeView.isCurrentItem || SwipeView.isNextItem
+                asynchronous: true
 
-            Label {
-                font.pixelSize: 24
-                text: root.code
-
-                Layout.alignment: Qt.AlignHCenter
-            }
-
-            RowLayout {
-
-                spacing: 8
-
-                Image {
-                    fillMode: Image.PreserveAspectFit
-                    source: "qrc:/images/cards/" + image
-
-                    Layout.fillWidth: true
+                sourceComponent: DetailDelegate {
+                    code: model.code
+                    type: model.type
+                    category: model.category
+                    image: model.image
+                    description: model.description
                 }
-
-                ColumnLayout {
-
-                    spacing: 8
-
-                    Label {
-                        font.pixelSize: 24
-                        text: root.type
-                    }
-
-                    Label {
-                        font.pixelSize: 24
-                        text: root.category
-                    }
-                }
-            }
-
-            Label {
-                font.pixelSize: 24
-                text: root.description
-
-                wrapMode: Text.Wrap
-
-                Layout.maximumWidth: parent.width
             }
         }
     }
