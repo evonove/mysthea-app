@@ -3,6 +3,7 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 import QtQuick.Controls.Material 2.2
 
+import Mysthea.Components 1.0
 
 Page {
     id: root
@@ -15,7 +16,7 @@ Page {
 
             Material.elevation: 1
 
-            RowLayout {
+            ColumnLayout {
                 anchors.fill: parent
 
                 TextField {
@@ -28,18 +29,20 @@ Page {
                     onTextEdited: cardsModel.setCodeFilter(_searchField.text)
                 }
 
-                ComboBox {
-                    model: ["All Categories", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
+                RowLayout {
+                    ComboBox {
+                        model: ["All Categories", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
 
-                    Layout.preferredWidth: 150
+                        Layout.minimumWidth: 150
 
-                    onActivated: cardsModel.setCategoryFilter(model[index]);
-                }
+                        onActivated: cardsModel.setCategoryFilter(model[index]);
+                    }
 
-                ComboBox {
-                    model: ["All Colors", "Red", "Green", "Blue", "Yellow", "Gray"]
+                    ColorComboBox {
+                        Layout.minimumWidth: 150
 
-                    onActivated: cardsModel.setColorFilter(model[index]);
+                        onActivated: cardsModel.setColorFilter(model.get(index).colorName);
+                    }
                 }
             }
         }
