@@ -19,14 +19,24 @@ Page {
             ColumnLayout {
                 anchors.fill: parent
 
-                TextField {
-                    id: _searchField
-                    placeholderText: qsTr("Search code…")
-                    inputMethodHints: Qt.ImhPreferNumbers
+                RowLayout {
+                    Label {
+                        readonly property string searchIcon: "\uE8B6"
+                        text: searchIcon
+                        font.pixelSize: 24
+                        font.family: "Material Icons"
+                        horizontalAlignment: Text.AlignHCenter
+                    }
 
-                    Layout.fillWidth: true
+                    TextField {
+                        id: _searchField
+                        placeholderText: qsTr("Search code…")
+                        inputMethodHints: Qt.ImhPreferNumbers
 
-                    onTextEdited: cardsModel.setCodeFilter(_searchField.text)
+                        Layout.fillWidth: true
+
+                        onTextEdited: cardsModel.setCodeFilter(_searchField.text)
+                    }
                 }
 
                 RowLayout {
