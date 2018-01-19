@@ -48,6 +48,7 @@ Page {
         }
 
         ListView {
+            id: _cardsList
             model: cardsModel
 
             clip: true
@@ -75,13 +76,8 @@ Page {
 
                         root.StackView.view.push(
                             "qrc:/qml/Mysthea/Pages/DetailPage.qml",
-                            {
-                                "code": code,
-                                "type": type,
-                                "category": category,
-                                "image": image,
-                                "description": description
-                            });
+                            { "model": _cardsList.model, "index": index }
+                        );
                     }
                 }
             }
