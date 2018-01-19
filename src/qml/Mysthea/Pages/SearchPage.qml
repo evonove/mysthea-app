@@ -59,12 +59,27 @@ Page {
             ScrollIndicator.vertical: ScrollIndicator {}
 
             delegate: Pane {
-                height: 60
+                height: 80
                 width: parent.width
 
-                Label {
-                    font.pixelSize: 18
-                    text: code
+                RowLayout {
+                    height: parent.height
+
+                    spacing: 8
+
+                    Image {
+                        height: parent.height
+                        width: 10
+                        fillMode: Image.PreserveAspectFit
+                        source: "qrc:/images/cards/" + image
+                        sourceSize.height: height
+                        sourceSize.width: width
+                    }
+
+                    Label {
+                        font.pixelSize: 18
+                        text: code
+                    }
                 }
 
                 MouseArea {
