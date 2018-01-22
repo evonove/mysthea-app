@@ -31,7 +31,6 @@ Page {
                     TextField {
                         id: _searchField
                         placeholderText: qsTr("Search code…")
-                        inputMethodHints: Qt.ImhPreferNumbers
 
                         Layout.fillWidth: true
 
