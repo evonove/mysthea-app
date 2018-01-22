@@ -15,6 +15,7 @@ private slots:
     void testColorFilter();
     void testMixedFilters();
     void testResetFilter();
+    void testCaseInsensitiveFilter();
 };
 
 void TestSearchModel::testDefaultFilters()
@@ -134,7 +135,7 @@ void TestSearchModel::testMixedFilters()
 
 void TestSearchModel::testResetFilter()
 {
-    // Verifies filters are reset to defaul values
+    // Verifies filters are reset to default values
     auto searchModel = new SearchModel();
     searchModel->setSourceModel(new CardsModel);
 
@@ -148,6 +149,24 @@ void TestSearchModel::testResetFilter()
     // Resets filters and verifies rows shown are back to default
     searchModel->resetFilters();
     QCOMPARE(searchModel->rowCount(QModelIndex()), 94);
+}
+
+void TestSearchModel::testCaseInsensitiveFilter()
+{
+    // Verifies Code filter is case insensitive
+    auto searchModel = new SearchModel();
+    searchModel->setSourceModel(new CardsModel);
+
+    // Verifies default number of rows
+    QCOMPARE(searchModel->rowCount(QModelIndex()), 94);
+
+    // Applies filter with uppercase Code
+    searchModel->setCodeFilter("H");
+    QCOMPARE(searchModel->rowCount(QModelIndex()), 4);
+
+    // Applies filter with lowercase code
+    searchModel->setCodeFilter("h");
+    QCOMPARE(searchModel->rowCount(QModelIndex()), 4);
 }
 
 QTEST_MAIN(TestSearchModel)
