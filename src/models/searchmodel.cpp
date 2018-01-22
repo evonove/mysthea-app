@@ -13,6 +13,7 @@ SearchModel::SearchModel(QObject* parent)
 
 void SearchModel::setCodeFilter(QString code)
 {
+    code = code.toUpper();
     if (m_code != code) {
         m_code = code;
         invalidateFilter();
