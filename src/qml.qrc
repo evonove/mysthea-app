@@ -9,6 +9,8 @@
         <file>qml/Mysthea/Components/ColorComboBox.qml</file>
         <file>fonts/MaterialIcons-Regular.ttf</file>
         <file>images/logo.png</file>
+        <file>images/background.png</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/Mysthea/Pages/MainMenu.qml</file>
     </qresource>
 </RCC>
