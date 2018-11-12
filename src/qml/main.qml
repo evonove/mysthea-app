@@ -12,7 +12,7 @@ ApplicationWindow {
 
     // Loads Material icons font
     FontLoader {
-        source: "qrc:/fonts/MaterialIcons-Regular.woff"
+        source: "qrc:/fonts/MaterialIcons-Regular.ttf"
     }
 
     header: ToolBar {

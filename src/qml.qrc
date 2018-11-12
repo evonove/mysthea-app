@@ -7,7 +7,7 @@
         <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
         <file>qml/Mysthea/Components/qmldir</file>
         <file>qml/Mysthea/Components/ColorComboBox.qml</file>
-        <file>fonts/MaterialIcons-Regular.woff</file>
+        <file>fonts/MaterialIcons-Regular.ttf</file>
         <file>images/logo.png</file>
         <file>qtquickcontrols2.conf</file>
     </qresource>
