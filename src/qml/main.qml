@@ -51,7 +51,8 @@ ApplicationWindow {
     StackView {
         id: _mainStackView
         anchors.fill: parent
-        initialItem: SearchPage { }
+//        initialItem: SearchPage { }
+        initialItem: MainMenu {}
 
         focus: true
 
