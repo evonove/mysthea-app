@@ -93,25 +93,15 @@ Page {
             }
         }
 
-        Item {
-            id: _first
-            Text {
-                id: _firstText
-                text: qsTr("first")
-            }
-        }
-        Item {
-            id: _second
-            Text {
-                id: _secondText
-                text: qsTr("second")
-            }
-        }
-        Item {
-            id: _third
-            Text {
-                id: _thirdText
-                text: qsTr("third")
+        Repeater {
+            model: GameSetupModel {}
+            Loader {
+                asynchronous: true
+                active: SwipeView.isCurrentItem || SwipeView.isNextItem || SwipeView.isPreviousItem
+                sourceComponent: Text {
+                    text: model.content
+                    wrapMode: Text.Wrap
+                }
             }
         }
     }
