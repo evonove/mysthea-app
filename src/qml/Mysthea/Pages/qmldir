@@ -3,4 +3,5 @@ SearchPage 1.0 SearchPage.qml
 DetailPage 1.0 DetailPage.qml
 DetailDelegate 1.0 DetailDelegate.qml
 MainMenu 1.0 MainMenu.qml
+GameSetup 1.0 GameSetup.qml
 Credits 1.0 Credits.qml
