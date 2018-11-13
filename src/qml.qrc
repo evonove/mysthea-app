@@ -16,5 +16,6 @@
         <file>qml/Mysthea/Pages/MainMenu.qml</file>
         <file>qml/Mysthea/Pages/Credits.qml</file>
         <file>qml/Mysthea/Pages/GameSetup.qml</file>
+        <file>qml/Mysthea/Pages/GameSetupModel.qml</file>
     </qresource>
 </RCC>
