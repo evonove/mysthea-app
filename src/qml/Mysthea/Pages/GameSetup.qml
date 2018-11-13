@@ -98,9 +98,10 @@ Page {
             Loader {
                 asynchronous: true
                 active: SwipeView.isCurrentItem || SwipeView.isNextItem || SwipeView.isPreviousItem
-                sourceComponent: Text {
-                    text: model.content
-                    wrapMode: Text.Wrap
+                sourceComponent: GameSetupStep {
+                   title: model.title
+                    mainImageSource: model.image
+                   content: model.content
                 }
             }
         }
