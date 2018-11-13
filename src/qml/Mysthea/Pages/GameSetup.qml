@@ -16,14 +16,18 @@ Page {
     header: ToolBar {
         RowLayout {
             anchors.fill: parent
+
             ToolButton {
                 text: root.apps
+                font.pixelSize: 22
+                font.family: "Material Icons"
                 onClicked: root.currentIndex = 0
             }
             Text {
                 text: root.currentIndex === 0 ? qsTr("Game Setup") : qsTr(
-                                                          "Wizard %1 of 3").arg(
-                                                          root.currentIndex)
+                                                    "Wizard %1 of 3").arg(
+                                                    root.currentIndex)
+                font.pixelSize: 16
                 color: "white"
             }
 
@@ -33,16 +37,23 @@ Page {
 
             ToolButton {
                 text: root.navigateBefore
+                font.pixelSize: 22
+                font.family: "Material Icons"
+
                 onClicked: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
-                                                             ) : root.currentIndex = 0
+                                                       ) : root.currentIndex = 0
             }
             ToolButton {
                 text: root.navigateNext
+                font.pixelSize: 22
+                font.family: "Material Icons"
                 onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
-                                                             ) : root.currentIndex = 3
+                                                       ) : root.currentIndex = 3
             }
             ToolButton {
                 text: root.menu
+                font.pixelSize: 22
+                font.family: "Material Icons"
                 onClicked: _mainStackView.pop()
             }
         }
