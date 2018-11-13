@@ -18,5 +18,6 @@
         <file>qml/Mysthea/Pages/GameSetup.qml</file>
         <file>qml/Mysthea/Pages/GameSetupModel.qml</file>
         <file>qml/Mysthea/Pages/GameSetupStep.qml</file>
+        <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
     </qresource>
 </RCC>
