@@ -39,6 +39,5 @@ Page {
                 wrapMode: Text.Wrap
             }
         }
-
     }
 }
