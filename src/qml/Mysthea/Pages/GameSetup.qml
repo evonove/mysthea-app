@@ -4,23 +4,26 @@ import QtQuick.Layouts 1.3
 
 Page {
     id: root
+    padding: 8
 
     readonly property string apps: "\uE5C3"
     readonly property string menu: "\uE5D2"
     readonly property string navigateBefore: "\uE408"
     readonly property string navigateNext: "\uE409"
 
+    property alias currentIndex: _swipeView.currentIndex
+
     header: ToolBar {
         RowLayout {
             anchors.fill: parent
             ToolButton {
                 text: root.apps
-                onClicked: _swipeView.currentIndex = 0
+                onClicked: root.currentIndex = 0
             }
             Text {
-                text: _swipeView.currentIndex === 0 ? qsTr("Game Setup") : qsTr(
+                text: root.currentIndex === 0 ? qsTr("Game Setup") : qsTr(
                                                           "Wizard %1 of 3").arg(
-                                                          _swipeView.currentIndex)
+                                                          root.currentIndex)
                 color: "white"
             }
 
@@ -30,11 +33,13 @@ Page {
 
             ToolButton {
                 text: root.navigateBefore
-                onClicked: _swipeView.currentIndex > 0 ? _swipeView.decrementCurrentIndex() : _swipeView.currentIndex = 0
+                onClicked: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
+                                                             ) : root.currentIndex = 0
             }
             ToolButton {
                 text: root.navigateNext
-                onClicked: _swipeView.currentIndex < 3 ? _swipeView.incrementCurrentIndex() : _swipeView.currentIndex = 3
+                onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
+                                                             ) : root.currentIndex = 3
             }
             ToolButton {
                 text: root.menu
@@ -42,7 +47,6 @@ Page {
             }
         }
     }
-
 
     background: Image {
         source: "qrc:/images/background.png"
@@ -53,55 +57,29 @@ Page {
         verticalAlignment: Image.AlignTop
     }
 
-
     SwipeView {
         id: _swipeView
-
         currentIndex: 0
         anchors.fill: parent
 
-        Item {
-            id: _map
-            Text {
-                id: _mapText
-                text: qsTr("map")
-            }
-
-            ColumnLayout {
-                anchors.horizontalCenter: parent.horizontalCenter
-                Button {
-                    id: _firstButton
-                    text: qsTr("1")
-                    onClicked: {
-                        _swipeView.currentIndex = 1
-                    }
-                }
-                Button {
-                    id: _secondButton
-                    text: qsTr("2")
-                    onClicked: {
-                        _swipeView.currentIndex = 2
-                    }
-                }
-                Button {
-                    id: _thirdButton
-                    text: qsTr("3")
-                    onClicked: {
-                        _swipeView.currentIndex = 3
-                    }
-                }
+        Loader {
+            asynchronous: true
+            sourceComponent: GameSetupMap {
+                onStepClicked: root.currentIndex = step;
             }
         }
 
         Repeater {
-            model: GameSetupModel {}
+            model: GameSetupModel {
+            }
             Loader {
                 asynchronous: true
-                active: SwipeView.isCurrentItem || SwipeView.isNextItem || SwipeView.isPreviousItem
+                active: SwipeView.isCurrentItem || SwipeView.isNextItem
+                        || SwipeView.isPreviousItem
                 sourceComponent: GameSetupStep {
-                   title: model.title
+                    title: model.title
                     mainImageSource: model.image
-                   content: model.content
+                    content: model.content
                 }
             }
         }
