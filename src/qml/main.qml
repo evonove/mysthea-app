@@ -6,8 +6,8 @@ import Mysthea.Pages 1.0
 
 ApplicationWindow {
     visible: true
-    width: 640
-    height: 480
+    width: 375
+    height: 667
     title: qsTr("Mysthea")
 
     // Loads Material icons font
@@ -32,12 +32,14 @@ ApplicationWindow {
 
             onClicked: {
                 if (_mainStackView.depth > 1) {
-                    _mainStackView.pop();
+                    _mainStackView.pop()
                 }
             }
 
             Behavior on opacity {
-                PropertyAnimation{ duration: 200 }
+                PropertyAnimation {
+                    duration: 200
+                }
             }
         }
 
@@ -51,8 +53,6 @@ ApplicationWindow {
     StackView {
         id: _mainStackView
         anchors.fill: parent
-//        initialItem: SearchPage { }
-        initialItem: MainMenu {}
 
         focus: true
 
@@ -60,10 +60,24 @@ ApplicationWindow {
         Keys.onPressed: {
             if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
                 if (_mainStackView.depth > 1) {
-                    _mainStackView.pop();
-                    event.accepted = true;
+                    _mainStackView.pop()
+                    event.accepted = true
                 }
             }
+        }
+
+        initialItem: MainMenu {
+            onCardsReferenceClicked: _mainStackView.push(_cardReference);
+            onGameSetupClicked: console.log("Game Setup button clicked");
+            onRulesbookClicked: console.log("Rulesbook button clicked");
+            onLoreClicked: console.log("Lore button clicked");
+            onLanguageClicked: console.log("Language button clicked");
+            onCreditsClicked: console.log("Credits button clicked");
+        }
+
+        Component {
+            id: _cardReference
+            SearchPage{}
         }
     }
 }

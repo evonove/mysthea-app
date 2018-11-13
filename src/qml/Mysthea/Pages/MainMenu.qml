@@ -4,6 +4,14 @@ import QtQuick.Layouts 1.3
 
 Page {
     id: root
+
+    signal cardsReferenceClicked()
+    signal gameSetupClicked()
+    signal rulesbookClicked()
+    signal loreClicked()
+    signal languageClicked()
+    signal creditsClicked()
+
     background: Image {
         source: "qrc:/images/background.png"
         fillMode: Image.PreserveAspectCrop
@@ -26,7 +34,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(cardsReferenceButton.text)
+            onClicked: root.cardsReferenceClicked()
         }
 
         Button {
@@ -36,7 +44,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(gameSetupButton.text)
+            onClicked: root.gameSetupClicked()
         }
 
         Button {
@@ -46,7 +54,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(rulesbookButton.text)
+            onClicked: root.rulesbookClicked()
         }
 
         Button {
@@ -56,7 +64,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(loreButton.text)
+            onClicked: root.loreClicked()
         }
 
         Button {
@@ -66,7 +74,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(languageButton.text)
+            onClicked: root.languageClicked()
         }
 
         Button {
@@ -76,7 +84,7 @@ Page {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 150
 
-            onClicked: console.log(creditsButton.text)
+            onClicked: root.creditsClicked()
         }
     }
 }
