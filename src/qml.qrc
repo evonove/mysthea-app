@@ -10,7 +10,10 @@
         <file>fonts/MaterialIcons-Regular.ttf</file>
         <file>images/logo.png</file>
         <file>images/background.png</file>
+        <file>images/tabula-logo.png</file>
+        <file>images/evonove-logo.png</file>
         <file>qtquickcontrols2.conf</file>
         <file>qml/Mysthea/Pages/MainMenu.qml</file>
+        <file>qml/Mysthea/Pages/Credits.qml</file>
     </qresource>
 </RCC>

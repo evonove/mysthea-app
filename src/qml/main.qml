@@ -72,12 +72,17 @@ ApplicationWindow {
             onRulesbookClicked: console.log("Rulesbook button clicked");
             onLoreClicked: console.log("Lore button clicked");
             onLanguageClicked: console.log("Language button clicked");
-            onCreditsClicked: console.log("Credits button clicked");
+            onCreditsClicked: _mainStackView.push(_credits);
         }
 
         Component {
             id: _cardReference
             SearchPage{}
+        }
+
+        Component {
+            id: _credits
+            Credits{}
         }
     }
 }
