@@ -15,5 +15,6 @@
         <file>qtquickcontrols2.conf</file>
         <file>qml/Mysthea/Pages/MainMenu.qml</file>
         <file>qml/Mysthea/Pages/Credits.qml</file>
+        <file>qml/Mysthea/Pages/GameSetup.qml</file>
     </qresource>
 </RCC>

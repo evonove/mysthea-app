@@ -67,22 +67,30 @@ ApplicationWindow {
         }
 
         initialItem: MainMenu {
-            onCardsReferenceClicked: _mainStackView.push(_cardReference);
-            onGameSetupClicked: console.log("Game Setup button clicked");
-            onRulesbookClicked: console.log("Rulesbook button clicked");
-            onLoreClicked: console.log("Lore button clicked");
-            onLanguageClicked: console.log("Language button clicked");
-            onCreditsClicked: _mainStackView.push(_credits);
+            onCardsReferenceClicked: _mainStackView.push(_cardReference)
+            onGameSetupClicked: _mainStackView.push(_gameSetup)
+            onRulesbookClicked: console.log("Rulesbook button clicked")
+            onLoreClicked: console.log("Lore button clicked")
+            onLanguageClicked: console.log("Language button clicked")
+            onCreditsClicked: _mainStackView.push(_credits)
         }
 
         Component {
             id: _cardReference
-            SearchPage{}
+            SearchPage {
+            }
+        }
+
+        Component {
+            id: _gameSetup
+            GameSetup {
+            }
         }
 
         Component {
             id: _credits
-            Credits{}
+            Credits {
+            }
         }
     }
 }
