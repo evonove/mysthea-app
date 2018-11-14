@@ -1,8 +1,10 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.4
+import QtQuick.Layouts 1.3
 
 Page {
     id: root
+    padding: 8
 
     header: ToolBar {
 
@@ -48,8 +50,38 @@ Page {
         verticalAlignment: Image.AlignTop
     }
 
-    Label {
-        text: "Language"
-        anchors.centerIn: parent
+    Flickable {
+        anchors.fill: parent
+        contentHeight:_layout.height
+        contentWidth:_layout.width
+
+        ColumnLayout {
+            id: _layout
+            width: parent.width
+            spacing: 16
+            Label {
+                text: qsTr("Set Language of application");
+                font.pixelSize: 16
+            }
+            Button {
+                text: qsTr("english")
+                onClicked: console.log("english");
+            }
+            Button {
+                text: qsTr("italian")
+                onClicked: console.log("italian");
+            }
+            Button {
+                text: qsTr("deutsch")
+                onClicked: console.log("deutsch");
+            }
+            Button {
+                text: qsTr("japanese")
+                onClicked: console.log("japanese");
+            }
+        }
+
+        ScrollIndicator.vertical: ScrollIndicator { }
+
     }
 }
