@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.4
+import QtQuick.Layouts 1.3
 
 Page {
     id: root
@@ -48,8 +49,34 @@ Page {
         verticalAlignment: Image.AlignTop
     }
 
-    Label {
-        text: "Rulebook"
-        anchors.centerIn: parent
+    ScrollView {
+        anchors.fill: parent
+        padding: 8
+        ColumnLayout {
+            anchors.fill: parent
+            spacing: 16
+
+            Label {
+                text: qsTr("Download rulebook");
+                font.pixelSize: 16
+            }
+
+            Button {
+                text: qsTr("english")
+                onClicked: console.log("download english rulebook");
+            }
+            Button {
+                text: qsTr("italian")
+                onClicked: console.log("download italian rulebook");
+            }
+            Button {
+                text: qsTr("deutsch")
+                onClicked: console.log("download deutsch rulebook");
+            }
+            Button {
+                text: qsTr("japanese")
+                onClicked: console.log("download japanese rulebook");
+            }
+        }
     }
 }
