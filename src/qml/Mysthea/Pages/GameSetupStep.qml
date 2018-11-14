@@ -16,26 +16,29 @@ Page {
         verticalAlignment: Image.AlignTop
     }
 
-    Column {
+    ScrollView {
         anchors.fill: parent
-        spacing: 16
-        Label {
-            id: _title
-            text: root.title
-        }
 
-        Image {
-            id: _mainImage
-            width: root.availableWidth
-            fillMode: Image.PreserveAspectFit
-        }
+        Column {
+            anchors.fill: parent
+            spacing: 16
+            Label {
+                id: _title
+                text: root.title
+            }
 
-        Label {
-            id: _content
-            width: root.availableWidth
-            wrapMode: Text.Wrap
+            Image {
+                id: _mainImage
+                width: root.availableWidth
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Label {
+                id: _content
+                width: root.availableWidth
+                wrapMode: Text.Wrap
+            }
         }
 
     }
-
 }
