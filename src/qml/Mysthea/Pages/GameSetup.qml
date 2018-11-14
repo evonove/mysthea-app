@@ -65,7 +65,7 @@ Page {
         Loader {
             asynchronous: true
             sourceComponent: GameSetupMap {
-                onStepClicked: root.currentIndex = step;
+                onStepClicked: root.currentIndex = step
             }
         }
 

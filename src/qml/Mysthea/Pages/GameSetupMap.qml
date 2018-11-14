@@ -21,21 +21,21 @@ Page {
             id: _firstButton
             text: qsTr("1")
             onClicked: {
-                root.stepClicked(1);
+                root.stepClicked(1)
             }
         }
         Button {
             id: _secondButton
             text: qsTr("2")
             onClicked: {
-                root.stepClicked(2);
+                root.stepClicked(2)
             }
         }
         Button {
             id: _thirdButton
             text: qsTr("3")
             onClicked: {
-                root.stepClicked(3);
+                root.stepClicked(3)
             }
         }
     }
