@@ -35,7 +35,7 @@ ApplicationWindow {
             onCardsReferenceClicked: _mainStackView.push(_cardReference)
             onGameSetupClicked: _mainStackView.push(_gameSetup)
             onRulesbookClicked: _mainStackView.push(_rulebook)
-            onLoreClicked: console.log("Lore button clicked")
+            onLoreClicked: _mainStackView.push(_lore)
             onLanguageClicked: _mainStackView.push(_language)
             onCreditsClicked: _mainStackView.push(_credits)
         }
@@ -56,6 +56,11 @@ ApplicationWindow {
             id: _rulebook
             Rulebook {
             }
+        }
+
+        Component {
+            id: _lore
+            Lore {}
         }
 
         Component {
