@@ -8,12 +8,7 @@ Page {
 
     signal stepClicked(int step)
 
-    background: Image {
-        source: "qrc:/images/background.png"
-        fillMode: Image.PreserveAspectCrop
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignTop
-    }
+    background: null
 
     ColumnLayout {
         anchors.horizontalCenter: parent.horizontalCenter
