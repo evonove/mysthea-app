@@ -20,5 +20,6 @@
         <file>qml/Mysthea/Pages/GameSetupStep.qml</file>
         <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
         <file>qml/Mysthea/Pages/Rulebook.qml</file>
+        <file>qml/Mysthea/Pages/Language.qml</file>
     </qresource>
 </RCC>

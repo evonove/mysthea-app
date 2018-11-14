@@ -36,7 +36,7 @@ ApplicationWindow {
             onGameSetupClicked: _mainStackView.push(_gameSetup)
             onRulesbookClicked: _mainStackView.push(_rulebook)
             onLoreClicked: console.log("Lore button clicked")
-            onLanguageClicked: console.log("Language button clicked")
+            onLanguageClicked: _mainStackView.push(_language)
             onCreditsClicked: _mainStackView.push(_credits)
         }
 
@@ -56,6 +56,11 @@ ApplicationWindow {
             id: _rulebook
             Rulebook {
             }
+        }
+
+        Component {
+            id: _language
+            Language {}
         }
 
         Component {
