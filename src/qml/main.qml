@@ -34,7 +34,7 @@ ApplicationWindow {
         initialItem: MainMenu {
             onCardsReferenceClicked: _mainStackView.push(_cardReference)
             onGameSetupClicked: _mainStackView.push(_gameSetup)
-            onRulesbookClicked: console.log("Rulesbook button clicked")
+            onRulesbookClicked: _mainStackView.push(_rulebook)
             onLoreClicked: console.log("Lore button clicked")
             onLanguageClicked: console.log("Language button clicked")
             onCreditsClicked: _mainStackView.push(_credits)
@@ -49,6 +49,12 @@ ApplicationWindow {
         Component {
             id: _gameSetup
             GameSetup {
+            }
+        }
+
+        Component {
+            id: _rulebook
+            Rulebook {
             }
         }
 
