@@ -7,14 +7,7 @@ Page {
     property alias content: _content.text
     property alias mainImageSource: _mainImage.source
 
-    background: Image {
-        source: "qrc:/images/background.png"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignTop
-    }
+    background: null
 
     ScrollView {
         anchors.fill: parent
@@ -39,6 +32,5 @@ Page {
                 wrapMode: Text.Wrap
             }
         }
-
     }
 }

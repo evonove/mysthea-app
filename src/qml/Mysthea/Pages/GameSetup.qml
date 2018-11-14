@@ -6,20 +6,23 @@ Page {
     id: root
     padding: 8
 
-    readonly property string apps: "\uE5C3"
-    readonly property string menu: "\uE5D2"
-    readonly property string navigateBefore: "\uE408"
-    readonly property string navigateNext: "\uE409"
-
     property alias currentIndex: _swipeView.currentIndex
 
     header: ToolBar {
         RowLayout {
             anchors.fill: parent
+
             ToolButton {
-                text: root.apps
+                id: _appsButton
+                readonly property string apps: "\uE5C3"
+
+                text: _appsButton.apps
+                font.pixelSize: 22
+                font.family: "Material Icons"
+
                 onClicked: root.currentIndex = 0
             }
+
             Text {
                 text: root.currentIndex === 0 ? qsTr("Game Setup") : qsTr(
                                                           "Wizard %1 of 3").arg(
@@ -32,17 +35,36 @@ Page {
             }
 
             ToolButton {
-                text: root.navigateBefore
+                id: _beforeButton
+                readonly property string navigateBefore: "\uE408"
+
+                text: _beforeButton.navigateBefore
+                font.pixelSize: 22
+                font.family: "Material Icons"
+
                 onClicked: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
                                                              ) : root.currentIndex = 0
             }
+
             ToolButton {
-                text: root.navigateNext
+                id: _nextButton
+                readonly property string navigateNext: "\uE409"
+
+                text: _nextButton.navigateNext
+                font.pixelSize: 22
+                font.family: "Material Icons"
+
                 onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
                                                              ) : root.currentIndex = 3
             }
             ToolButton {
-                text: root.menu
+                id: _menuButton
+                readonly property string menu: "\uE5D2"
+
+                text: _menuButton.menu
+                font.pixelSize: 22
+                font.family: "Material Icons"
+
                 onClicked: _mainStackView.pop()
             }
         }
