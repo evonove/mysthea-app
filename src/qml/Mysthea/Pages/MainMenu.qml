@@ -13,35 +13,6 @@ Page {
     signal languageClicked();
     signal creditsClicked();
 
-    header: ToolBar {
-
-        // Back button shown only if there is more than a page in the StackView
-        ToolButton {
-            id: _backButton
-
-            readonly property string backIcon: "\uE5C4"
-
-            text: _backButton.backIcon
-            font.pixelSize: 22
-            font.family: "Material Icons"
-
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
-            onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
-                }
-            }
-        }
-    }
-
     background: Image {
         source: "qrc:/images/background.png"
         fillMode: Image.PreserveAspectCrop
