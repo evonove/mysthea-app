@@ -8,6 +8,35 @@ import Mysthea.Components 1.0
 Page {
     id: root
 
+    header: ToolBar {
+
+        // Back button shown only if there is more than a page in the StackView
+        ToolButton {
+            id: _backButton
+
+            readonly property string backIcon: "\uE5C4"
+
+            text: _backButton.backIcon
+            font.pixelSize: 22
+            font.family: "Material Icons"
+
+            visible: _mainStackView.depth > 1
+            opacity: visible ? 1 : 0
+
+            onClicked: {
+                if (_mainStackView.depth > 1) {
+                    _mainStackView.pop()
+                }
+            }
+
+            Behavior on opacity {
+                PropertyAnimation {
+                    duration: 200
+                }
+            }
+        }
+    }
+
     ColumnLayout {
         anchors.fill: parent
 
@@ -34,7 +63,8 @@ Page {
 
                         Layout.fillWidth: true
 
-                        onTextEdited: cardsModel.setCodeFilter(_searchField.text)
+                        onTextEdited: cardsModel.setCodeFilter(
+                                          _searchField.text)
                     }
                 }
 
@@ -44,13 +74,14 @@ Page {
 
                         Layout.minimumWidth: 150
 
-                        onActivated: cardsModel.setCategoryFilter(model[index]);
+                        onActivated: cardsModel.setCategoryFilter(model[index])
                     }
 
                     ColorComboBox {
                         Layout.minimumWidth: 150
 
-                        onActivated: cardsModel.setColorFilter(model.get(index).colorName);
+                        onActivated: cardsModel.setColorFilter(
+                                         model.get(index).colorName)
                     }
                 }
             }
@@ -96,12 +127,13 @@ Page {
 
                     onClicked: {
                         // Unfocuses search field so that keyboard is hidden
-                        _searchField.focus = false;
+                        _searchField.focus = false
 
                         root.StackView.view.push(
-                            "qrc:/qml/Mysthea/Pages/DetailPage.qml",
-                            { "model": _cardsList.model, "index": index }
-                        );
+                                    "qrc:/qml/Mysthea/Pages/DetailPage.qml", {
+                                        "model": _cardsList.model,
+                                        "index": index
+                                    })
                     }
                 }
             }
