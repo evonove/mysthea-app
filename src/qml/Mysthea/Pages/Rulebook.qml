@@ -32,12 +32,6 @@ Page {
                 }
             }
         }
-
-        Image {
-            anchors.centerIn: parent
-            sourceSize.height: 48
-            source: "qrc:/images/logo.png"
-        }
     }
 
     background: Image {

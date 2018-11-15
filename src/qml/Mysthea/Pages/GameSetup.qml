@@ -44,7 +44,7 @@ Page {
                 font.family: "Material Icons"
 
                 onClicked: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
-                                                             ) : root.currentIndex = 0
+                                                       ) : root.currentIndex = 0
             }
 
             ToolButton {
@@ -54,7 +54,6 @@ Page {
                 text: _nextButton.navigateNext
                 font.pixelSize: 22
                 font.family: "Material Icons"
-
                 onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
                                                        ) : root.currentIndex = 3
             }
