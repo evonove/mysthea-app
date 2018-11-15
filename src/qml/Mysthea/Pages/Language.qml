@@ -2,6 +2,9 @@ import QtQuick 2.0
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
+
+//Beacause of Page is handle by a StackView we can access to it by his attached property.
+//So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
     padding: 8
@@ -18,18 +21,9 @@ Page {
             font.pixelSize: 22
             font.family: "Material Icons"
 
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
             onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
+                if (root.StackView.view.depth > 1) {
+                    root.StackView.view.pop()
                 }
             }
         }
@@ -46,36 +40,36 @@ Page {
 
     Flickable {
         anchors.fill: parent
-        contentHeight:_layout.height
-        contentWidth:_layout.width
+        contentHeight: _layout.height
+        contentWidth: _layout.width
 
         ColumnLayout {
             id: _layout
             width: parent.width
             spacing: 16
             Label {
-                text: qsTr("Set Language of application");
+                text: qsTr("Set Language of application")
                 font.pixelSize: 16
             }
             Button {
                 text: qsTr("english")
-                onClicked: console.log("english");
+                onClicked: console.log("english")
             }
             Button {
                 text: qsTr("italian")
-                onClicked: console.log("italian");
+                onClicked: console.log("italian")
             }
             Button {
                 text: qsTr("deutsch")
-                onClicked: console.log("deutsch");
+                onClicked: console.log("deutsch")
             }
             Button {
                 text: qsTr("japanese")
-                onClicked: console.log("japanese");
+                onClicked: console.log("japanese")
             }
         }
 
-        ScrollIndicator.vertical: ScrollIndicator { }
-
+        ScrollIndicator.vertical: ScrollIndicator {
+        }
     }
 }

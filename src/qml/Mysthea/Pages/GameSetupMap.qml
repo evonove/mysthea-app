@@ -12,6 +12,7 @@ Page {
 
     ColumnLayout {
         anchors.horizontalCenter: parent.horizontalCenter
+
         Button {
             id: _firstButton
             text: qsTr("1")
@@ -19,6 +20,7 @@ Page {
                 root.stepClicked(1)
             }
         }
+
         Button {
             id: _secondButton
             text: qsTr("2")
@@ -26,6 +28,7 @@ Page {
                 root.stepClicked(2)
             }
         }
+
         Button {
             id: _thirdButton
             text: qsTr("3")

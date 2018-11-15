@@ -5,6 +5,9 @@ import QtQuick.Controls.Material 2.2
 
 import Mysthea.Components 1.0
 
+
+//Beacause of Page is handle by a StackView we can access to it by his attached property.
+//So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
 
@@ -20,18 +23,9 @@ Page {
             font.pixelSize: 22
             font.family: "Material Icons"
 
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
             onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
+                if (root.StackView.view.depth > 1) {
+                    root.StackView.view.pop()
                 }
             }
         }
@@ -96,7 +90,8 @@ Page {
             Layout.fillWidth: true
             Layout.fillHeight: true
 
-            ScrollIndicator.vertical: ScrollIndicator {}
+            ScrollIndicator.vertical: ScrollIndicator {
+            }
 
             delegate: Pane {
                 height: 80

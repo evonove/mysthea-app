@@ -60,12 +60,14 @@ ApplicationWindow {
 
         Component {
             id: _lore
-            Lore {}
+            Lore {
+            }
         }
 
         Component {
             id: _language
-            Language {}
+            Language {
+            }
         }
 
         Component {
