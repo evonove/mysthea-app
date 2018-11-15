@@ -13,14 +13,28 @@ Page {
             anchors.fill: parent
 
             ToolButton {
-                id: _appsButton
-                readonly property string apps: "\uE5C3"
+                id: _backButton
 
-                text: _appsButton.apps
+                readonly property string backIcon: "\uE5C4"
+
+                text: _backButton.backIcon
                 font.pixelSize: 22
                 font.family: "Material Icons"
 
-                onClicked: root.currentIndex = 0
+                visible: _mainStackView.depth > 1
+                opacity: visible ? 1 : 0
+
+                onClicked: {
+                    if (_mainStackView.depth > 1) {
+                        _mainStackView.pop()
+                    }
+                }
+
+                Behavior on opacity {
+                    PropertyAnimation {
+                        duration: 200
+                    }
+                }
             }
 
             Text {
@@ -57,15 +71,16 @@ Page {
                 onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
                                                        ) : root.currentIndex = 3
             }
-            ToolButton {
-                id: _menuButton
-                readonly property string menu: "\uE5D2"
 
-                text: _menuButton.menu
+            ToolButton {
+                id: _appsButton
+                readonly property string apps: "\uE5C3"
+
+                text: _appsButton.apps
                 font.pixelSize: 22
                 font.family: "Material Icons"
 
-                onClicked: _mainStackView.pop()
+                onClicked: root.currentIndex = 0
             }
         }
     }
