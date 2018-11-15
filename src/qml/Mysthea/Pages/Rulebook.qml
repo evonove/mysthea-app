@@ -2,6 +2,9 @@ import QtQuick 2.0
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
+
+//Beacause of Page is handle by a StackView we can access to it by his attached property.
+//So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
 
@@ -17,18 +20,9 @@ Page {
             font.pixelSize: 22
             font.family: "Material Icons"
 
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
             onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
+                if (root.StackView.view.depth > 1) {
+                    root.StackView.view.pop()
                 }
             }
         }
@@ -51,25 +45,25 @@ Page {
             spacing: 16
 
             Label {
-                text: qsTr("Download rulebook");
+                text: qsTr("Download rulebook")
                 font.pixelSize: 16
             }
 
             Button {
                 text: qsTr("english")
-                onClicked: console.log("download english rulebook");
+                onClicked: console.log("download english rulebook")
             }
             Button {
                 text: qsTr("italian")
-                onClicked: console.log("download italian rulebook");
+                onClicked: console.log("download italian rulebook")
             }
             Button {
                 text: qsTr("deutsch")
-                onClicked: console.log("download deutsch rulebook");
+                onClicked: console.log("download deutsch rulebook")
             }
             Button {
                 text: qsTr("japanese")
-                onClicked: console.log("download japanese rulebook");
+                onClicked: console.log("download japanese rulebook")
             }
         }
     }

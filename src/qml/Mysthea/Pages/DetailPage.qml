@@ -18,23 +18,13 @@ Page {
             font.pixelSize: 22
             font.family: "Material Icons"
 
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
             onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
+                if (root.StackView.view.depth > 1) {
+                    root.StackView.view.pop()
                 }
             }
         }
     }
-
 
     property var model: null
     property int index: -1
@@ -48,7 +38,8 @@ Page {
             model: root.model
 
             Loader {
-                active: SwipeView.isPreviousItem || SwipeView.isCurrentItem || SwipeView.isNextItem
+                active: SwipeView.isPreviousItem || SwipeView.isCurrentItem
+                        || SwipeView.isNextItem
                 asynchronous: true
 
                 sourceComponent: DetailDelegate {

@@ -6,12 +6,12 @@ Page {
     id: root
     padding: 8
 
-    signal cardsReferenceClicked();
-    signal gameSetupClicked();
-    signal rulesbookClicked();
-    signal loreClicked();
-    signal languageClicked();
-    signal creditsClicked();
+    signal cardsReferenceClicked
+    signal gameSetupClicked
+    signal rulesbookClicked
+    signal loreClicked
+    signal languageClicked
+    signal creditsClicked
 
     background: Image {
         source: "qrc:/images/background.png"

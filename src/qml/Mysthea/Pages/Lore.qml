@@ -1,8 +1,11 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.4
 
+
+//Beacause of Page is handle by a StackView we can access to it by his attached property.
+//So we use root.StackView.view.[property] to use StackView properties.
 Page {
-    id:root
+    id: root
 
     header: ToolBar {
 
@@ -16,18 +19,9 @@ Page {
             font.pixelSize: 22
             font.family: "Material Icons"
 
-            visible: _mainStackView.depth > 1
-            opacity: visible ? 1 : 0
-
             onClicked: {
-                if (_mainStackView.depth > 1) {
-                    _mainStackView.pop()
-                }
-            }
-
-            Behavior on opacity {
-                PropertyAnimation {
-                    duration: 200
+                if (root.StackView.view.depth > 1) {
+                    root.StackView.view.pop()
                 }
             }
         }
