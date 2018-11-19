@@ -6,7 +6,7 @@ SOURCES += \
 RESOURCES += \
     $$PWD/qml.qrc \
     $$PWD/translations.qrc \
-#    $$PWD/cards.qrc
+    $$PWD/cards.qrc
 
 include($$PWD/src.pri)
 
