@@ -10,18 +10,20 @@ INCLUDEPATH += \
 HEADERS += \
     $$PWD/models/cardsmodel.h \
     $$PWD/models/data.h \
-    $$PWD/models/searchmodel.h
+    $$PWD/models/searchmodel.h\
+    $$PWD/translationsmanager.h
 
 SOURCES += \
     $$PWD/models/cardsmodel.cpp \
-    $$PWD/models/searchmodel.cpp
+    $$PWD/models/searchmodel.cpp\
+    $$PWD/translationsmanager.cpp
 
 lupdate_only{
     SOURCES += \
-        $$PWD/../qml/Mysthea/*.qml \
-        $$PWD/../qml/Mysthea/Components/*.qml \
-        $$PWD/../qml/Mysthea/Pages/*.qml \
-        $$PWD/../qml/Mysthea/*.qml
+        $$PWD/qml/Mysthea/*.qml \
+        $$PWD/qml/Mysthea/Components/*.qml \
+        $$PWD/qml/Mysthea/Pages/*.qml \
+        $$PWD/qml/*.qml
 }
 
 TRANSLATIONS += \

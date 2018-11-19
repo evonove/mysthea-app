@@ -5,11 +5,139 @@
     <name>Credits</name>
     <message>
         <source>Game produced by</source>
-        <translation type="obsolete">Jeu produit par</translation>
+        <translation type="unfinished">Jeu produit par</translation>
     </message>
     <message>
         <source>App Designed and Developed by</source>
-        <translation type="obsolete">App conçue et développée par</translation>
+        <translation type="unfinished">App conçue et développée par</translation>
+    </message>
+</context>
+<context>
+    <name>GameSetup</name>
+    <message>
+        <source>Game Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wizard %1 of 3</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GameSetupMap</name>
+    <message>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GameSetupModel</name>
+    <message>
+        <source>1. One</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>2. Two</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>3. Three</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Language</name>
+    <message>
+        <source>Set Language of application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>english</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>italian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>german</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>french</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainMenu</name>
+    <message>
+        <source>Cards Reference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Game Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rulesbook</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Rulebook</name>
+    <message>
+        <source>Download rulebook</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>english</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>italian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>deutsch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>japanese</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchPage</name>
+    <message>
+        <source>Search code…</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Mysthea</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
