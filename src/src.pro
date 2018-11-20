@@ -6,7 +6,11 @@ SOURCES += \
 RESOURCES += \
     $$PWD/qml.qrc \
     $$PWD/translations.qrc \
-    $$PWD/cards.qrc
+    $$PWD/red-cards.qrc \
+    $$PWD/yellow-cards.qrc \
+    $$PWD/green-cards.qrc \
+    $$PWD/blue-cards.qrc \
+    $$PWD/gray-cards.qrc
 
 include($$PWD/src.pri)
 
