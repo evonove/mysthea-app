@@ -10,7 +10,8 @@ RESOURCES += \
     $$PWD/yellow-cards.qrc \
     $$PWD/green-cards.qrc \
     $$PWD/blue-cards.qrc \
-    $$PWD/gray-cards.qrc
+    $$PWD/gray-cards.qrc \
+    $$PWD/assets.qrc
 
 include($$PWD/src.pri)
 
