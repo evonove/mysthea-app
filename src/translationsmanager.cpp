@@ -19,38 +19,40 @@ TranslationsManager::TranslationsManager(QObject *parent)
 }
 
 void TranslationsManager::setCurrentLanguage(SupportedLanguage language) {
-  switch (language) {
-  case SupportedLanguage::English: {
+  if (language == m_currentLanguage) {
+    return;
+  } else {
     qGuiApp->removeTranslator(m_currentTranslator);
-    qGuiApp->installTranslator(&m_enTranslator);
-    m_currentTranslator = &m_enTranslator;
-    break;
-  }
 
-  case SupportedLanguage::Italian: {
-    qGuiApp->removeTranslator(m_currentTranslator);
-    qGuiApp->installTranslator(&m_itTranslator);
-    m_currentTranslator = &m_itTranslator;
-    break;
-  }
+    switch (language) {
+    case SupportedLanguage::English: {
+      qGuiApp->installTranslator(&m_enTranslator);
+      m_currentTranslator = &m_enTranslator;
+      break;
+    }
 
-  case SupportedLanguage::French: {
-    qGuiApp->removeTranslator(m_currentTranslator);
-    qGuiApp->installTranslator(&m_frTranslator);
-    m_currentTranslator = &m_frTranslator;
-    break;
-  }
+    case SupportedLanguage::Italian: {
+      qGuiApp->installTranslator(&m_itTranslator);
+      m_currentTranslator = &m_itTranslator;
+      break;
+    }
 
-  case SupportedLanguage::German: {
-    qGuiApp->removeTranslator(m_currentTranslator);
-    qGuiApp->installTranslator(&m_deTranslator);
-    m_currentTranslator = &m_deTranslator;
-    break;
-  }
-  }
+    case SupportedLanguage::French: {
+      qGuiApp->installTranslator(&m_frTranslator);
+      m_currentTranslator = &m_frTranslator;
+      break;
+    }
 
-  m_currentLanguage = language;
-  emit currentLanguageChanged();
+    case SupportedLanguage::German: {
+      qGuiApp->installTranslator(&m_deTranslator);
+      m_currentTranslator = &m_deTranslator;
+      break;
+    }
+    }
+
+    m_currentLanguage = language;
+    emit currentLanguageChanged();
+  }
 }
 
 TranslationsManager::SupportedLanguage TranslationsManager::currentLanguage() {
