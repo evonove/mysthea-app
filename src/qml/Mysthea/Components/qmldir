@@ -1,2 +1,3 @@
 module Mysthea.Components
 ColorComboBox 1.0 ColorComboBox.qml
+Button 1.0 Button.qml

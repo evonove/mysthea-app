@@ -15,6 +15,11 @@ ApplicationWindow {
         source: "qrc:/fonts/MaterialIcons-Regular.ttf"
     }
 
+    FontLoader {
+        id: myFont
+        source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
+    }
+
     StackView {
         id: _mainStackView
         anchors.fill: parent
