@@ -2,9 +2,10 @@ import QtQuick 2.0
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 
+import Mysthea.Components 1.0
+
 Page {
     id: root
-    padding: 8
 
     signal cardsReferenceClicked
     signal gameSetupClicked
@@ -14,78 +15,84 @@ Page {
     signal creditsClicked
 
     background: Image {
-        source: "qrc:/images/background.png"
+        source: "qrc:/assets/images/home-bg.jpg"
         fillMode: Image.PreserveAspectCrop
         smooth: false
 
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignTop
+
+        Rectangle {
+            anchors.fill: parent
+            color: "#212121"
+            opacity: 0.29
+        }
     }
 
     ColumnLayout {
-        spacing: 16
+        id: container
+        anchors.bottomMargin: 55
+        anchors.leftMargin: 32
+        anchors.rightMargin: 32
+
+        spacing: 24
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 46
-        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
 
         Button {
             id: cardsReferenceButton
-            text: qsTr("Cards Reference")
 
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
+            containerY: container.y
+            sourceItem: root.background
+
+            text: qsTr("Cards Reference")
+            font.capitalization: Font.AllUppercase
+
+            Layout.alignment: Qt.AlignHCenter
 
             onClicked: root.cardsReferenceClicked()
         }
 
         Button {
             id: gameSetupButton
-            text: qsTr("Game Setup")
 
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
+            containerY: container.y
+            sourceItem: root.background
+
+            text: qsTr("Game Setup")
+            font.capitalization: Font.AllUppercase
+
+            Layout.alignment: Qt.AlignHCenter
 
             onClicked: root.gameSetupClicked()
         }
 
         Button {
             id: rulesbookButton
-            text: qsTr("Rulesbook")
 
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
+            containerY: container.y
+            sourceItem: root.background
+
+            text: qsTr("Rulebook")
+            font.capitalization: Font.AllUppercase
+
+            Layout.alignment: Qt.AlignHCenter
 
             onClicked: root.rulesbookClicked()
         }
 
         Button {
             id: loreButton
-            text: qsTr("Lore")
 
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
+            containerY: container.y
+            sourceItem: root.background
+
+            text: qsTr("Lore")
+            font.capitalization: Font.AllUppercase
+
+            Layout.alignment: Qt.AlignHCenter
 
             onClicked: root.loreClicked()
-        }
-
-        Button {
-            id: languageButton
-            text: qsTr("Language")
-
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
-
-            onClicked: root.languageClicked()
-        }
-
-        Button {
-            id: creditsButton
-            text: qsTr("Credits")
-
-            Layout.alignment: Qt.AlignCenter
-            Layout.preferredWidth: 150
-
-            onClicked: root.creditsClicked()
         }
     }
 }
