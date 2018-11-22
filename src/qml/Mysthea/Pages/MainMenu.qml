@@ -29,6 +29,24 @@ Page {
         }
     }
 
+    RowLayout {
+        id:logoContainer
+        width: parent.width
+        height: parent.height - container.height
+        anchors.leftMargin: 32
+        anchors.rightMargin: 32
+        anchors.top: parent.top
+
+        Image {
+            source: "qrc:/assets/images/logo.png"
+            fillMode: Image.PreserveAspectFit
+            smooth: false
+            Layout.alignment: Qt.AlignCenter
+            Layout.fillWidth: true
+            Layout.minimumWidth: 311
+        }
+    }
+
     ColumnLayout {
         id: container
         anchors.bottomMargin: 55
