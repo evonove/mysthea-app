@@ -10,6 +10,15 @@
 #include "models/searchmodel.h"
 #include "translationsmanager.h"
 
+static QObject *
+translations_manager_singletontype_provider(QQmlEngine *engine,
+                                            QJSEngine *scriptEngine) {
+  Q_UNUSED(engine)
+  Q_UNUSED(scriptEngine)
+
+  return new TranslationsManager();
+}
+
 int main(int argc, char *argv[]) {
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
@@ -23,12 +32,14 @@ int main(int argc, char *argv[]) {
 
   auto context = engine.rootContext();
 
-  qmlRegisterType<TranslationsManager>("Language", 1, 0, "TranslationsManager");
+  qmlRegisterSingletonType<TranslationsManager>(
+      "Translations", 1, 0, "TranslationsManager",
+      translations_manager_singletontype_provider);
 
   auto searchModel = new SearchModel();
   searchModel->setSourceModel(new CardsModel);
   context->setContextProperty("cardsModel", searchModel);
-  context->setContextProperty("translationManager", &translationsManager);
+  //  context->setContextProperty("translationManager", &translationsManager);
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
   engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
