@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
+    <file>assets/images/home-bg.jpg</file>
     <file>assets/fonts/YanoneKaffeesatz-Regular.ttf</file>
     </qresource>
 </RCC>
