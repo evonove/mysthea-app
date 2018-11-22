@@ -2,7 +2,8 @@ import QtQuick 2.0
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
-import Language 1.0
+import Translations 1.0
+
 
 //Beacause of Page is handle by a StackView we can access to it by his attached property.
 //So we use root.StackView.view.[property] to use StackView properties.
@@ -54,19 +55,19 @@ Page {
             }
             Button {
                 text: qsTr("english")
-                onClicked: translationManager.currentLanguage = TranslationsManager.English;
+                onClicked: TranslationsManager.currentLanguage = TranslationsManager.English
             }
             Button {
                 text: qsTr("italian")
-                onClicked: translationManager.currentLanguage = TranslationsManager.Italian;
+                onClicked: TranslationsManager.currentLanguage = TranslationsManager.Italian
             }
             Button {
                 text: qsTr("german")
-                onClicked: translationManager.currentLanguage = TranslationsManager.German;
+                onClicked: TranslationsManager.currentLanguage = TranslationsManager.German
             }
             Button {
                 text: qsTr("french")
-                onClicked: translationManager.currentLanguage = TranslationsManager.French;
+                onClicked: TranslationsManager.currentLanguage = TranslationsManager.French
             }
         }
 
