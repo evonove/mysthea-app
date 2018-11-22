@@ -7,8 +7,6 @@
         <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
         <file>qml/Mysthea/Components/qmldir</file>
         <file>qml/Mysthea/Components/ColorComboBox.qml</file>
-        <file>fonts/MaterialIcons-Regular.ttf</file>
-        <file>images/logo.png</file>
         <file>images/background.png</file>
         <file>images/tabula-logo.png</file>
         <file>images/evonove-logo.png</file>
