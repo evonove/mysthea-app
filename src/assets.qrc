@@ -3,5 +3,6 @@
     <file>assets/images/home-bg.jpg</file>
     <file>assets/images/logo.png</file>
     <file>assets/fonts/YanoneKaffeesatz-Regular.ttf</file>
+    <file>assets/fonts/MaterialIcons-Regular.ttf</file>
     </qresource>
 </RCC>

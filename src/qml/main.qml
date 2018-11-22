@@ -12,11 +12,10 @@ ApplicationWindow {
 
     // Loads Material icons font
     FontLoader {
-        source: "qrc:/fonts/MaterialIcons-Regular.ttf"
+        source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
     }
 
     FontLoader {
-        id: myFont
         source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
     }
 

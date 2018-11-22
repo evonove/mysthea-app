@@ -29,8 +29,29 @@ Page {
         }
     }
 
+    ToolBar {
+        z: 2
+        width: parent.width
+        position: ToolBar.Header
+        padding: 0
+        background: null
+
+        ToolButton {
+            id: _drawerButton
+            anchors.leftMargin: 16
+            anchors.topMargin: 16
+            readonly property string menu: "\ue5d2"
+
+            text: _drawerButton.menu
+            font.pixelSize: 24
+            font.family: "Material Icons"
+
+            onClicked: console.log("drawer menu button clicked")
+        }
+    }
+
     RowLayout {
-        id:logoContainer
+        id: logoContainer
         width: parent.width
         height: parent.height - container.height
         anchors.leftMargin: 32
