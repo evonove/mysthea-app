@@ -20,7 +20,7 @@ Page {
         smooth: false
 
         horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignTop
+        verticalAlignment: Image.AlignBottom
 
         Rectangle {
             anchors.fill: parent
@@ -50,21 +50,24 @@ Page {
         }
     }
 
-    RowLayout {
+    ColumnLayout {
         id: logoContainer
         width: parent.width
-        height: parent.height - container.height
         anchors.leftMargin: 32
         anchors.rightMargin: 32
         anchors.top: parent.top
+        anchors.bottom: container.top
 
         Image {
             source: "qrc:/assets/images/logo.png"
             fillMode: Image.PreserveAspectFit
             smooth: false
+            asynchronous: true
             Layout.alignment: Qt.AlignCenter
             Layout.fillWidth: true
+            Layout.fillHeight: true
             Layout.minimumWidth: 311
+            Layout.maximumHeight: 274
         }
     }
 
