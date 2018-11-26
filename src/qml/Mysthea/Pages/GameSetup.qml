@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
+import Mysthea.Theme 1.0
 
 //Beacause of Page is handle by a StackView we can access to it by his attached property.
 //So we use root.StackView.view.[property] to use StackView properties.
@@ -16,11 +17,7 @@ Page {
             anchors.fill: parent
 
             ToolButton {
-                id: _backButton
-
-                readonly property string backIcon: "\uE5C4"
-
-                text: _backButton.backIcon
+                text: Icon.back
                 font.pixelSize: 22
                 font.family: "Material Icons"
 
@@ -44,10 +41,7 @@ Page {
             }
 
             ToolButton {
-                id: _beforeButton
-                readonly property string navigateBefore: "\uE408"
-
-                text: _beforeButton.navigateBefore
+                text: Icon.navigateBefore
                 font.pixelSize: 22
                 font.family: "Material Icons"
 
@@ -56,10 +50,7 @@ Page {
             }
 
             ToolButton {
-                id: _nextButton
-                readonly property string navigateNext: "\uE409"
-
-                text: _nextButton.navigateNext
+                text: Icon.navigateNext
                 font.pixelSize: 22
                 font.family: "Material Icons"
                 onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
@@ -67,10 +58,7 @@ Page {
             }
 
             ToolButton {
-                id: _appsButton
-                readonly property string apps: "\uE5C3"
-
-                text: _appsButton.apps
+                text: Icon.apps
                 font.pixelSize: 22
                 font.family: "Material Icons"
 
