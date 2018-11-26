@@ -7,4 +7,5 @@ QtObject {
     readonly property string navigateBefore: "\uE408"
     readonly property string navigateNext: "\uE409"
     readonly property string apps: "\uE5C3"
+    readonly property string search: "\uE8B6"
 }

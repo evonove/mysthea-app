@@ -40,8 +40,7 @@ Page {
 
                 RowLayout {
                     Label {
-                        readonly property string searchIcon: "\uE8B6"
-                        text: searchIcon
+                        text: Icon.search
                         font.pixelSize: 24
                         font.family: "Material Icons"
                         horizontalAlignment: Text.AlignHCenter
