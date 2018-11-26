@@ -2,6 +2,8 @@ import QtQuick 2.10
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 
+import Mysthea.Theme 1.0
+
 Page {
     id: root
 
@@ -10,11 +12,7 @@ Page {
 
         // Back button shown only if there is more than a page in the StackView
         ToolButton {
-            id: _backButton
-
-            readonly property string backIcon: "\uE5C4"
-
-            text: _backButton.backIcon
+            text: Icon.back
             font.pixelSize: 22
             font.family: "Material Icons"
 
