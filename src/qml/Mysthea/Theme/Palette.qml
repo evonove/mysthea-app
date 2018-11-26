@@ -13,5 +13,6 @@ QtObject {
     readonly property color mineShaft: "#212121"
 
     //Icon
+    readonly property string menu: "\ue5d2"
 }
 
