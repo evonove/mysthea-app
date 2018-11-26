@@ -21,5 +21,7 @@
         <file>qml/Mysthea/Pages/Language.qml</file>
         <file>qml/Mysthea/Pages/Lore.qml</file>
         <file>qml/Mysthea/Components/Button.qml</file>
+        <file>qml/Mysthea/Theme/qmldir</file>
+        <file>qml/Mysthea/Theme/Palette.qml</file>
     </qresource>
 </RCC>

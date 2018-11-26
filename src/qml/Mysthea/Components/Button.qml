@@ -3,6 +3,8 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
+import Mysthea.Theme 1.0
+
 Button {
     id: control
     //We use this property to take the y value of root page's container to draw correctly
@@ -29,7 +31,7 @@ Button {
         font: control.font
         text: control.text
 
-        color: "#F3E5F5"
+        color: Palette.snuff
         opacity: control.pressed ? 0.32 : 1
     }
 
@@ -50,7 +52,7 @@ Button {
 
         Rectangle {
             anchors.fill: parent
-            color: "white"
+            color: Palette.white
             opacity: 0.2
         }
     }
