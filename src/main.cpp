@@ -39,7 +39,6 @@ int main(int argc, char *argv[]) {
   auto searchModel = new SearchModel();
   searchModel->setSourceModel(new CardsModel);
   context->setContextProperty("cardsModel", searchModel);
-  //  context->setContextProperty("translationManager", &translationsManager);
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
   engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
