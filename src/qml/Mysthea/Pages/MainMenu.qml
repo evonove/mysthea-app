@@ -41,7 +41,7 @@ Page {
             anchors.leftMargin: 16
             anchors.topMargin: 16
 
-            text: Palette.menu
+            text: Icon.menu
             font.pixelSize: 24
             font.family: "Material Icons"
 
