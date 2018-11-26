@@ -3,6 +3,7 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 
 import Mysthea.Components 1.0
+import Mysthea.Theme 1.0
 
 Page {
     id: root
@@ -24,7 +25,7 @@ Page {
 
         Rectangle {
             anchors.fill: parent
-            color: "#212121"
+            color: Palette.mineShaft
             opacity: 0.29
         }
     }
@@ -37,12 +38,10 @@ Page {
         background: null
 
         ToolButton {
-            id: _drawerButton
             anchors.leftMargin: 16
             anchors.topMargin: 16
-            readonly property string menu: "\ue5d2"
 
-            text: _drawerButton.menu
+            text: Palette.menu
             font.pixelSize: 24
             font.family: "Material Icons"
 
