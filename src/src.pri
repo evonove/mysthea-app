@@ -23,6 +23,7 @@ lupdate_only{
         $$PWD/qml/Mysthea/*.qml \
         $$PWD/qml/Mysthea/Components/*.qml \
         $$PWD/qml/Mysthea/Pages/*.qml \
+        $$PWD/qml/Mysthea/Theme/*.qml \
         $$PWD/qml/*.qml
 }
 
