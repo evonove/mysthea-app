@@ -3,6 +3,7 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
 import Language 1.0
+import Mysthea.Theme 1.0
 
 //Beacause of Page is handle by a StackView we can access to it by his attached property.
 //So we use root.StackView.view.[property] to use StackView properties.
@@ -14,11 +15,7 @@ Page {
 
         // Back button shown only if there is more than a page in the StackView
         ToolButton {
-            id: _backButton
-
-            readonly property string backIcon: "\uE5C4"
-
-            text: _backButton.backIcon
+            text: Icon.back
             font.pixelSize: 22
             font.family: "Material Icons"
 
