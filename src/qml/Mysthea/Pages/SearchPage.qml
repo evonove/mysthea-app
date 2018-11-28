@@ -50,7 +50,6 @@ Page {
                     TextField {
                         id: _searchField
                         placeholderText: qsTr("Search code…")
-
                         Layout.fillWidth: true
 
                         onTextEdited: cardsModel.setCodeFilter(
@@ -96,18 +95,17 @@ Page {
                 width: parent.width
 
                 readonly property int numElementsInRow: 3
-
                 readonly property int currentCellWidth: Math.floor(
                                                             categoryPane.availableWidth
                                                             / categoryPane.numElementsInRow)
+
                 ColumnLayout {
-                    height: parent.height
                     anchors.fill: parent
 
                     Rectangle {
                         color: "#E0B226"
-                        implicitWidth: parent.width
-                        implicitHeight: 20
+                        width: parent.width
+                        height: 20
                         Label {
                             id: categoryLabel
                             text: category
@@ -116,35 +114,65 @@ Page {
                     GridView {
                         id: gridCard
                         interactive: false
-
                         Layout.fillWidth: true
-                        implicitHeight: Math.ceil(
-                                            cards.count / categoryPane.numElementsInRow) * 100
+                        Layout.alignment: Qt.AlignCenter
 
-                        cellHeight: 100
+                        implicitHeight: Math.ceil(
+                                            cards.count / categoryPane.numElementsInRow)
+                                        * cellHeight
+
+                        cellHeight: cellWidth * 1.815533980582524
                         cellWidth: categoryPane.currentCellWidth
 
                         model: cards
 
                         delegate: Pane {
-                            width: gridCard.cellWidth
                             height: gridCard.cellHeight
-                            spacing: 0
-                            padding: 0
-                            Rectangle {
-                                border.color: "#E05E26"
-                                color: "transparent"
-                                anchors.fill: images
-//                                anchors.margins: 2
+                            width: gridCard.cellWidth
+                            topPadding: 16
+                            bottomPadding: 16
+                            leftPadding: 8
+                            rightPadding: 8
+                            background: null
+
+                            ColumnLayout {
+                                id: col
+                                anchors.fill: parent
+                                spacing: 0
+
+                                Image {
+                                    id: images
+                                    fillMode: Image.PreserveAspectFit
+                                    source: "qrc:/images/cards/" + image
+                                    sourceSize.height: height
+                                    //                                    sourceSize.width: width
+
+                                    //                                    Layout.preferredHeight: parent.height - codeCard.height
+                                    Layout.fillHeight: true
+                                    Layout.maximumWidth: parent.width
+                                    Layout.alignment: Qt.AlignHCenter
+                                }
+
+                                Label {
+                                    id: codeCard
+                                    text: code
+
+                                    Layout.alignment: Qt.AlignHCenter
+                                }
                             }
-                            Image {
-                                id: images
-                                height: parent.height
-                                width: categoryPane.currentCellWidth
-                                fillMode: Image.PreserveAspectFit
-                                source: "qrc:/images/cards/" + image
-                                sourceSize.height: height
-                                sourceSize.width: width
+
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    // Unfocuses search field so that keyboard is hidden
+                                    _searchField.focus = false
+                                    root.StackView.view.push(
+                                                "qrc:/qml/Mysthea/Pages/DetailPage.qml",
+                                                {
+                                                    "model": cards,
+                                                    "index": index
+                                                })
+                                }
                             }
                         }
                     }
@@ -153,16 +181,3 @@ Page {
         }
     }
 }
-//   MouseArea {
-//       anchors.fill: parent
-//       onClicked: {
-//           // Unfocuses search field so that keyboard is hidden
-//           _searchField.focus = false
-//           root.StackView.view.push(
-//                       "qrc:/qml/Mysthea/Pages/DetailPage.qml", {
-//                           "model": _cardsList.model,
-//                           "index": index
-//                       })
-//       }
-//   }
-
