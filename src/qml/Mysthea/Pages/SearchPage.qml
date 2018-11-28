@@ -6,6 +6,7 @@ import QtQuick.Controls.Material 2.2
 import Mysthea.Components 1.0
 import Mysthea.Theme 1.0
 
+
 //Beacause of Page is handle by a StackView we can access to it by his attached property.
 //So we use root.StackView.view.[property] to use StackView properties.
 Page {
@@ -78,7 +79,9 @@ Page {
 
         ListView {
             id: _cardsList
-            model: cardsModel
+            model: MockList {
+                id: myMockList
+            }
 
             clip: true
 
@@ -89,44 +92,77 @@ Page {
             }
 
             delegate: Pane {
-                height: 80
+                id: categoryPane
                 width: parent.width
 
-                RowLayout {
+                readonly property int numElementsInRow: 3
+
+                readonly property int currentCellWidth: Math.floor(
+                                                            categoryPane.availableWidth
+                                                            / categoryPane.numElementsInRow)
+                ColumnLayout {
                     height: parent.height
-
-                    spacing: 8
-
-                    Image {
-                        height: parent.height
-                        width: 10
-                        fillMode: Image.PreserveAspectFit
-                        source: "qrc:/images/cards/" + image
-                        sourceSize.height: height
-                        sourceSize.width: width
-                    }
-
-                    Label {
-                        font.pixelSize: 18
-                        text: code
-                    }
-                }
-
-                MouseArea {
                     anchors.fill: parent
 
-                    onClicked: {
-                        // Unfocuses search field so that keyboard is hidden
-                        _searchField.focus = false
+                    Rectangle {
+                        color: "#E0B226"
+                        implicitWidth: parent.width
+                        implicitHeight: 20
+                        Label {
+                            id: categoryLabel
+                            text: category
+                        }
+                    }
+                    GridView {
+                        id: gridCard
+                        interactive: false
 
-                        root.StackView.view.push(
-                                    "qrc:/qml/Mysthea/Pages/DetailPage.qml", {
-                                        "model": _cardsList.model,
-                                        "index": index
-                                    })
+                        Layout.fillWidth: true
+                        implicitHeight: Math.ceil(
+                                            cards.count / categoryPane.numElementsInRow) * 100
+
+                        cellHeight: 100
+                        cellWidth: categoryPane.currentCellWidth
+
+                        model: cards
+
+                        delegate: Pane {
+                            width: gridCard.cellWidth
+                            height: gridCard.cellHeight
+                            spacing: 0
+                            padding: 0
+                            Rectangle {
+                                border.color: "#E05E26"
+                                color: "transparent"
+                                anchors.fill: images
+//                                anchors.margins: 2
+                            }
+                            Image {
+                                id: images
+                                height: parent.height
+                                width: categoryPane.currentCellWidth
+                                fillMode: Image.PreserveAspectFit
+                                source: "qrc:/images/cards/" + image
+                                sourceSize.height: height
+                                sourceSize.width: width
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+//   MouseArea {
+//       anchors.fill: parent
+//       onClicked: {
+//           // Unfocuses search field so that keyboard is hidden
+//           _searchField.focus = false
+//           root.StackView.view.push(
+//                       "qrc:/qml/Mysthea/Pages/DetailPage.qml", {
+//                           "model": _cardsList.model,
+//                           "index": index
+//                       })
+//       }
+//   }
+
