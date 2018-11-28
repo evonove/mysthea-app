@@ -8,26 +8,27 @@ ListModel {
             ListElement {
                 code: "C001"
                 image: "c001.jpg"
-            },
-            ListElement {
-                code: "C002"
-                image: "c001.jpg"
+                command: "Tactic"
             },
             ListElement {
                 code: "C003"
                 image: "c001.jpg"
+                command: "Objective"
             },
             ListElement {
                 code: "C004"
                 image: "c001.jpg"
+                command: "Accessory"
             },
             ListElement {
                 code: "C005"
                 image: "c001.jpg"
+                command: "Upgrade"
             },
             ListElement {
                 code: "C006"
                 image: "c001.jpg"
+                command: ""
             }
         ]
     }
@@ -37,26 +38,32 @@ ListModel {
             ListElement {
                 code: "C007"
                 image: "c002.jpg"
+                command: "Tactic"
             },
             ListElement {
                 code: "C008"
                 image: "c002.jpg"
+                command: "Tactic"
             },
             ListElement {
                 code: "C009"
                 image: "c002.jpg"
+                command: "Tactic"
             },
             ListElement {
                 code: "C010"
                 image: "c002.jpg"
+                command: "Objective"
             },
             ListElement {
                 code: "C011"
                 image: "c002.jpg"
+                command: "Objective"
             },
             ListElement {
                 code: "C012"
                 image: "c002.jpg"
+                command: "Objective"
             },
             ListElement {
                 code: "C013"
