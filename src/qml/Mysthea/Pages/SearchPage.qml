@@ -12,6 +12,21 @@ import Mysthea.Theme 1.0
 Page {
     id: root
 
+    background: Image {
+        source: "qrc:/assets/images/home-bg.jpg"
+        fillMode: Image.PreserveAspectCrop
+        smooth: false
+
+        horizontalAlignment: Image.AlignHCenter
+        verticalAlignment: Image.AlignBottom
+
+        Rectangle {
+            anchors.fill: parent
+            color: Palette.mineShaft
+            opacity: 0.29
+        }
+    }
+
     header: ToolBar {
 
         // Back button shown only if there is more than a page in the StackView
@@ -33,7 +48,6 @@ Page {
 
         Pane {
             Layout.fillWidth: true
-
             Material.elevation: 1
 
             ColumnLayout {
@@ -93,6 +107,7 @@ Page {
             delegate: Pane {
                 id: categoryPane
                 width: parent.width
+                background: null
 
                 readonly property int numElementsInRow: 3
                 readonly property int currentCellWidth: Math.floor(
@@ -102,15 +117,13 @@ Page {
                 ColumnLayout {
                     anchors.fill: parent
 
-                    Rectangle {
-                        color: "#E0B226"
+                    Label {
+                        id: categoryLabel
                         width: parent.width
-                        height: 20
-                        Label {
-                            id: categoryLabel
-                            text: category
-                        }
+                        text: category
+                        color: Palette.white
                     }
+
                     GridView {
                         id: gridCard
                         interactive: false
@@ -156,6 +169,17 @@ Page {
                                 Label {
                                     id: codeCard
                                     text: code
+                                    color: if (command == "Tactic") {
+                                               return Palette.flamingo
+                                           } else if (command == "Objective") {
+                                               return Palette.goldenFizz
+                                           } else if (command == "Accessory") {
+                                               return Palette.apple
+                                           } else if (command == "Upgrade") {
+                                               return Palette.cerulean
+                                           } else {
+                                               return Palette.white
+                                           }
 
                                     Layout.alignment: Qt.AlignHCenter
                                 }
