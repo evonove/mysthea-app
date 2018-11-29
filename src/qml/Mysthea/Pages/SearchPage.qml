@@ -11,6 +11,10 @@ import Mysthea.Theme 1.0
 //So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
+    padding: 0
+
+    font.family: "Yanone Kaffeesatz, Regular"
+    font.letterSpacing: 0.5
 
     background: Image {
         source: "qrc:/assets/images/home-bg.jpg"
@@ -27,44 +31,89 @@ Page {
         }
     }
 
-    header: ToolBar {
+    ToolBar {
+        id: toolbar
+        z: 2
+        width: parent.width
+        position: ToolBar.Header
+        padding: 0
+        background: null
+        RowLayout {
+            anchors.fill: parent
+            ToolButton {
+                anchors.leftMargin: 16
+                anchors.topMargin: 16
 
-        // Back button shown only if there is more than a page in the StackView
-        ToolButton {
-            text: Icon.back
-            font.pixelSize: 22
-            font.family: "Material Icons"
+                text: Icon.menu
+                font.pixelSize: 24
+                font.family: "Material Icons"
 
-            onClicked: {
-                if (root.StackView.view.depth > 1) {
-                    root.StackView.view.pop()
+                onClicked: {
+                    if (root.StackView.view.depth > 1) {
+                        root.StackView.view.pop()
+                    }
                 }
+            }
+
+            Label {
+                text: qsTr("CARDS REFERENCE")
+                font.pixelSize: 18
+                font.letterSpacing: 0.5
             }
         }
     }
 
     ColumnLayout {
-        anchors.fill: parent
+        //        anchors.top: toolbar.bottom
+        width: parent.width
+        height: parent.height
+        spacing: 0
 
         Pane {
+            id: comboBoxSection
             Layout.fillWidth: true
-            Material.elevation: 1
+            Layout.topMargin: 72
+
+            background: null
+            padding: 0
 
             ColumnLayout {
                 anchors.fill: parent
+                spacing: 16
 
                 RowLayout {
+                    id: searchBar
+                    Layout.leftMargin: 16
+                    Layout.rightMargin: 16
+
+                    //                    Layout.bottomMargin: 16
+                    Rectangle {
+                        width: searchBar.width
+                        height: searchBar.height
+                        color: Palette.white
+                        radius: 3
+                    }
+
                     Label {
                         text: Icon.search
-                        font.pixelSize: 24
+                        font.pixelSize: 17
+
+                        Layout.leftMargin: 19
+                        Layout.rightMargin: 14
+
                         font.family: "Material Icons"
                         horizontalAlignment: Text.AlignHCenter
                     }
 
                     TextField {
                         id: _searchField
-                        placeholderText: qsTr("Search code…")
                         Layout.fillWidth: true
+
+                        placeholderText: qsTr("Search cards by code")
+                        font.pixelSize: 18
+                        font.letterSpacing: 0
+
+                        Layout.leftMargin: 14
 
                         onTextEdited: cardsModel.setCodeFilter(
                                           _searchField.text)
@@ -72,26 +121,49 @@ Page {
                 }
 
                 RowLayout {
+                    Layout.fillWidth: true
+                    spacing: 0
+
+                    Layout.leftMargin: 16
+                    Layout.rightMargin: 16
+
                     ComboBox {
                         model: ["All Categories", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
 
                         Layout.minimumWidth: 150
+                        Layout.fillWidth: true
+                        Layout.rightMargin: 8
 
                         onActivated: cardsModel.setCategoryFilter(model[index])
                     }
 
                     ColorComboBox {
                         Layout.minimumWidth: 150
+                        Layout.fillWidth: true
+                        Layout.leftMargin: 8
 
                         onActivated: cardsModel.setColorFilter(
                                          model.get(index).colorName)
                     }
+                }
+
+                Rectangle {
+                    width: root.width
+                    height: 1
+
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignBottom
+                    Layout.topMargin: 16
+
+                    color: Palette.white
+                    border.color: Palette.white
                 }
             }
         }
 
         ListView {
             id: _cardsList
+
             model: MockList {
                 id: myMockList
             }
@@ -108,6 +180,7 @@ Page {
                 id: categoryPane
                 width: parent.width
                 background: null
+                font.pixelSize: 24
 
                 readonly property int numElementsInRow: 3
                 readonly property int currentCellWidth: Math.floor(
@@ -116,10 +189,13 @@ Page {
 
                 ColumnLayout {
                     anchors.fill: parent
-
+                    Layout.topMargin: 26
                     Label {
                         id: categoryLabel
                         width: parent.width
+                        Layout.bottomMargin: 16
+                        Layout.leftMargin: 16
+
                         text: category
                         color: Palette.white
                     }
@@ -129,6 +205,7 @@ Page {
                         interactive: false
                         Layout.fillWidth: true
                         Layout.alignment: Qt.AlignCenter
+                        Layout.topMargin: 16
 
                         implicitHeight: Math.ceil(
                                             cards.count / categoryPane.numElementsInRow)

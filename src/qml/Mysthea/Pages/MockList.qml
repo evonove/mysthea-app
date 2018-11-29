@@ -11,6 +11,11 @@ ListModel {
                 command: "Tactic"
             },
             ListElement {
+                code: "C002"
+                image: "c001.jpg"
+                command: "Tactic"
+            },
+            ListElement {
                 code: "C003"
                 image: "c001.jpg"
                 command: "Objective"
