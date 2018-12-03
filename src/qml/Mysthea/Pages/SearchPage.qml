@@ -13,11 +13,11 @@ Page {
     id: root
     padding: 0
 
-    font.family: "Yanone Kaffeesatz, Regular"
+    font.family: "Yanone Kaffeesatz"
     font.letterSpacing: 0.5
 
     background: Image {
-        source: "qrc:/assets/images/home-bg.jpg"
+        source: "qrc:/assets/images/cards-bg.jpg"
         fillMode: Image.PreserveAspectCrop
         smooth: false
 
@@ -181,6 +181,7 @@ Page {
                 width: parent.width
                 background: null
                 font.pixelSize: 24
+                topPadding: 25
 
                 readonly property int numElementsInRow: 3
                 readonly property int currentCellWidth: Math.floor(
@@ -189,14 +190,15 @@ Page {
 
                 ColumnLayout {
                     anchors.fill: parent
-                    Layout.topMargin: 26
+                    spacing: 0
+                    anchors.margins: 0
                     Label {
                         id: categoryLabel
                         width: parent.width
-                        Layout.bottomMargin: 16
+                        padding: 0
                         Layout.leftMargin: 16
 
-                        text: category
+                        text: model.category
                         color: Palette.white
                     }
 

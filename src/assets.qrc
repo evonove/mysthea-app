@@ -2,7 +2,9 @@
     <qresource prefix="/">
     <file>assets/images/home-bg.jpg</file>
     <file>assets/images/logo.png</file>
+    <file>assets/images/cards-bg.jpg</file>
     <file>assets/fonts/YanoneKaffeesatz-Regular.ttf</file>
+    <file>assets/fonts/YanoneKaffeesatz-Bold.ttf</file>
     <file>assets/fonts/MaterialIcons-Regular.ttf</file>
     </qresource>
 </RCC>

@@ -19,6 +19,10 @@ ApplicationWindow {
         source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
     }
 
+    FontLoader {
+        source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
+    }
+
     StackView {
         id: _mainStackView
         anchors.fill: parent
