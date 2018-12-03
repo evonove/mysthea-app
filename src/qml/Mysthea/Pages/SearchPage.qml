@@ -64,7 +64,6 @@ Page {
     }
 
     ColumnLayout {
-        //        anchors.top: toolbar.bottom
         width: parent.width
         height: parent.height
         spacing: 0
@@ -86,7 +85,6 @@ Page {
                     Layout.leftMargin: 16
                     Layout.rightMargin: 16
 
-                    //                    Layout.bottomMargin: 16
                     Rectangle {
                         width: searchBar.width
                         height: searchBar.height
@@ -233,13 +231,14 @@ Page {
                                 spacing: 0
 
                                 Image {
+
                                     id: images
                                     fillMode: Image.PreserveAspectFit
-                                    source: "qrc:/images/cards/" + image
+                                    source: "qrc:/images/cards/" + modelData.image
                                     sourceSize.height: height
-                                    //                                    sourceSize.width: width
+                                    sourceSize.width: width
 
-                                    //                                    Layout.preferredHeight: parent.height - codeCard.height
+                                    Layout.preferredHeight: parent.height - codeCard.height
                                     Layout.fillHeight: true
                                     Layout.maximumWidth: parent.width
                                     Layout.alignment: Qt.AlignHCenter
