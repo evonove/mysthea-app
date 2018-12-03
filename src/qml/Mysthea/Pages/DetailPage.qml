@@ -43,7 +43,6 @@ Page {
                 sourceComponent: DetailDelegate {
                     code: model.code
                     type: model.type
-                    category: model.category
                     image: model.image
                     description: model.description
                 }

@@ -162,10 +162,7 @@ Page {
         ListView {
             id: _cardsList
 
-            model: MockList {
-                id: myMockList
-            }
-
+            model: MockList {}
             clip: true
 
             Layout.fillWidth: true
@@ -234,7 +231,7 @@ Page {
 
                                     id: images
                                     fillMode: Image.PreserveAspectFit
-                                    source: "qrc:/images/cards/" + modelData.image
+                                    source: "qrc:/images/cards/" + image
                                     sourceSize.height: height
                                     sourceSize.width: width
 
@@ -248,13 +245,16 @@ Page {
                                     id: codeCard
                                     text: code
                                     font.weight: Font.Bold
-                                    color: if (command == "Tactic") {
+
+                                    Layout.topMargin: 6
+
+                                    color: if (command === "Tactic") {
                                                return Palette.flamingo
-                                           } else if (command == "Objective") {
+                                           } else if (command === "Objective") {
                                                return Palette.goldenFizz
-                                           } else if (command == "Accessory") {
+                                           } else if (command === "Accessory") {
                                                return Palette.apple
-                                           } else if (command == "Upgrade") {
+                                           } else if (command === "Upgrade") {
                                                return Palette.cerulean
                                            } else {
                                                return Palette.white
