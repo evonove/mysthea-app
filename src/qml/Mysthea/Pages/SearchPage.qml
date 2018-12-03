@@ -248,6 +248,7 @@ Page {
                                 Label {
                                     id: codeCard
                                     text: code
+                                    font.weight: Font.Bold
                                     color: if (command == "Tactic") {
                                                return Palette.flamingo
                                            } else if (command == "Objective") {
