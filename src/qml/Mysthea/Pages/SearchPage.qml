@@ -147,7 +147,6 @@ Page {
                     Layout.fillWidth: true
                     Layout.alignment: Qt.AlignBottom
                     Layout.topMargin: 16
-
                 }
             }
         }
@@ -155,8 +154,7 @@ Page {
         ListView {
             id: _cardsList
 
-            model: MockList {
-            }
+            model: cardsModel
             clip: true
 
             Layout.fillWidth: true
@@ -197,7 +195,7 @@ Page {
                         interactive: false
 
                         implicitHeight: Math.ceil(
-                                            cards.count / categoryPane.numElementsInRow)
+                                            cards.length / categoryPane.numElementsInRow)
                                         * cellHeight
                         cellHeight: cellWidth * 1.815533980582524
                         cellWidth: categoryPane.currentCellWidth
@@ -226,7 +224,7 @@ Page {
 
                                     id: images
                                     fillMode: Image.PreserveAspectFit
-                                    source: "qrc:/images/cards/" + image
+                                    source: "qrc:/images/cards/" + modelData.image
                                     sourceSize.height: height
                                     sourceSize.width: width
 
@@ -238,17 +236,17 @@ Page {
 
                                 Label {
                                     id: codeCard
-                                    text: code
+                                    text: modelData.code
                                     font.weight: Font.Bold
 
                                     color: {
-                                        if (command === "Tactic") {
+                                        if (modelData.command === "Tactic") {
                                             return Palette.flamingo
-                                        } else if (command === "Objective") {
+                                        } else if (modelData.command === "Objective") {
                                             return Palette.goldenFizz
-                                        } else if (command === "Accessory") {
+                                        } else if (modelData.command === "Accessory") {
                                             return Palette.apple
-                                        } else if (command === "Upgrade") {
+                                        } else if (modelData.command === "Upgrade") {
                                             return Palette.cerulean
                                         } else {
                                             return Palette.white

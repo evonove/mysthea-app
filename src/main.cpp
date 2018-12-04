@@ -6,6 +6,7 @@
 #include <QtAndroid>
 #endif
 
+#include "models/card_data.h"
 #include "models/cardsmodel.h"
 #include "models/searchmodel.h"
 #include "translationsmanager.h"
@@ -35,6 +36,8 @@ int main(int argc, char *argv[]) {
   qmlRegisterSingletonType<TranslationsManager>(
       "Translations", 1, 0, "TranslationsManager",
       translations_manager_singletontype_provider);
+
+  qRegisterMetaType<Card>();
 
   auto searchModel = new SearchModel();
   searchModel->setSourceModel(new CardsModel);

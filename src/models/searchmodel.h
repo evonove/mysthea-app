@@ -3,23 +3,25 @@
 
 #include <QSortFilterProxyModel>
 
-class SearchModel : public QSortFilterProxyModel
-{
-    Q_OBJECT
+class SearchModel : public QSortFilterProxyModel {
+  Q_OBJECT
 public:
-    SearchModel(QObject* parent = Q_NULLPTR);
+  SearchModel(QObject *parent = Q_NULLPTR);
 
-    Q_INVOKABLE void setCodeFilter(QString code);
-    Q_INVOKABLE void setCategoryFilter(QString era);
-    Q_INVOKABLE void setColorFilter(QString color);
-    Q_INVOKABLE void resetFilters();
+  Q_INVOKABLE void setCodeFilter(QString code);
+  Q_INVOKABLE void setCategoryFilter(QString era);
+  //    Q_INVOKABLE void setColorFilter(QString color);
+  Q_INVOKABLE void setCommandFilter(QString command);
+  Q_INVOKABLE void resetFilters();
 
-    bool filterAcceptsRow(int source_row, const QModelIndex& source_parent) const Q_DECL_OVERRIDE;
+  bool filterAcceptsRow(int source_row,
+                        const QModelIndex &source_parent) const Q_DECL_OVERRIDE;
 
 private:
-    QString m_code;
-    QString m_category;
-    QString m_color;
+  QString m_code;
+  QString m_category;
+  //  QString m_color;
+  QString m_command;
 };
 
 #endif // SEARCHMODEL_H

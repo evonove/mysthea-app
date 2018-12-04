@@ -11,7 +11,8 @@ HEADERS += \
     $$PWD/models/cardsmodel.h \
     $$PWD/models/data.h \
     $$PWD/models/searchmodel.h\
-    $$PWD/translationsmanager.h
+    $$PWD/translationsmanager.h \
+    $$PWD/models/card_data.h
 
 SOURCES += \
     $$PWD/models/cardsmodel.cpp \

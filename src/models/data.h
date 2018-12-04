@@ -4,17 +4,18 @@
 #include <QString>
 
 struct Card {
-    QString code;
-    QString type;
-    QString category;
-    QString color;
-    QString image;
-    QString description;
+  QString code;
+  QString type;
+  QString category;
+  QString color;
+  QString image;
+  QString description;
 };
 
 constexpr int CARDS_NUMBER = 94;
 
 const Card CARDS_DATA[CARDS_NUMBER] = {
+    // clang-format off
     {"C001", "Minieuro", "Era X",      "Red",      "c001.jpg", "Pay 2 Energy Points to execute a Travel operation with your Champion in any region. Your other units cannot Travel."},
     {"C002", "Minieuro", "Era X",      "Red",      "c002.jpg", "Pay 2 Energy Points to gain 2 Experience Points and perform the Develop action."},
     {"C003", "Minieuro", "Era X",      "Red",      "c003.jpg", "Pay 2 Energy Points to Act."},
@@ -110,5 +111,6 @@ const Card CARDS_DATA[CARDS_NUMBER] = {
     {"A09",  "Poker",    "Attunement", "Gray",     "a09.jpg",  "When you attune to the illustrated anomaly, receive 3 Glory Points for each Golem you have deployed."},
     {"A10",  "Poker",    "Attunement", "Gray",     "a10.jpg",  "When you attune to the illustrated anomaly, at the end of this Era, receive 8 Glory Points for each Monster defeated (even if you didn't take part in the attack)."},
 };
+// clang-format on
 
 #endif // CARDSDATA_H
