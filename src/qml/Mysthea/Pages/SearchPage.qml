@@ -23,12 +23,6 @@ Page {
 
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignBottom
-
-        Rectangle {
-            anchors.fill: parent
-            color: Palette.mineShaft
-            opacity: 0.29
-        }
     }
 
     ToolBar {
@@ -41,12 +35,12 @@ Page {
         RowLayout {
             anchors.fill: parent
             ToolButton {
-                anchors.leftMargin: 16
-                anchors.topMargin: 16
-
                 text: Icon.menu
                 font.pixelSize: 24
                 font.family: "Material Icons"
+
+                anchors.leftMargin: 16
+                anchors.topMargin: 16
 
                 onClicked: {
                     if (root.StackView.view.depth > 1) {
@@ -70,11 +64,11 @@ Page {
 
         Pane {
             id: comboBoxSection
-            Layout.fillWidth: true
-            Layout.topMargin: 72
-
             background: null
             padding: 0
+
+            Layout.fillWidth: true
+            Layout.topMargin: 72
 
             ColumnLayout {
                 anchors.fill: parent
@@ -95,23 +89,22 @@ Page {
                     Label {
                         text: Icon.search
                         font.pixelSize: 17
+                        font.family: "Material Icons"
 
                         Layout.leftMargin: 19
                         Layout.rightMargin: 14
-
-                        font.family: "Material Icons"
                         horizontalAlignment: Text.AlignHCenter
                     }
 
                     TextField {
                         id: _searchField
-                        Layout.fillWidth: true
 
                         placeholderText: qsTr("Search cards by code")
                         font.pixelSize: 18
                         font.letterSpacing: 0
 
                         Layout.leftMargin: 14
+                        Layout.fillWidth: true
 
                         onTextEdited: cardsModel.setCodeFilter(
                                           _searchField.text)
@@ -148,13 +141,13 @@ Page {
                 Rectangle {
                     width: root.width
                     height: 1
+                    color: Palette.white
+                    border.color: Palette.white
 
                     Layout.fillWidth: true
                     Layout.alignment: Qt.AlignBottom
                     Layout.topMargin: 16
 
-                    color: Palette.white
-                    border.color: Palette.white
                 }
             }
         }
@@ -162,7 +155,8 @@ Page {
         ListView {
             id: _cardsList
 
-            model: MockList {}
+            model: MockList {
+            }
             clip: true
 
             Layout.fillWidth: true
@@ -191,25 +185,26 @@ Page {
                         id: categoryLabel
                         width: parent.width
                         padding: 0
-                        Layout.leftMargin: 16
 
                         text: model.category
                         color: Palette.white
+
+                        Layout.leftMargin: 16
                     }
 
                     GridView {
                         id: gridCard
                         interactive: false
-                        Layout.fillWidth: true
-                        Layout.alignment: Qt.AlignCenter
-                        Layout.topMargin: 16
 
                         implicitHeight: Math.ceil(
                                             cards.count / categoryPane.numElementsInRow)
                                         * cellHeight
-
                         cellHeight: cellWidth * 1.815533980582524
                         cellWidth: categoryPane.currentCellWidth
+
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignCenter
+                        Layout.topMargin: 16
 
                         model: cards
 
@@ -246,20 +241,21 @@ Page {
                                     text: code
                                     font.weight: Font.Bold
 
+                                    color: {
+                                        if (command === "Tactic") {
+                                            return Palette.flamingo
+                                        } else if (command === "Objective") {
+                                            return Palette.goldenFizz
+                                        } else if (command === "Accessory") {
+                                            return Palette.apple
+                                        } else if (command === "Upgrade") {
+                                            return Palette.cerulean
+                                        } else {
+                                            return Palette.white
+                                        }
+                                    }
+
                                     Layout.topMargin: 6
-
-                                    color: if (command === "Tactic") {
-                                               return Palette.flamingo
-                                           } else if (command === "Objective") {
-                                               return Palette.goldenFizz
-                                           } else if (command === "Accessory") {
-                                               return Palette.apple
-                                           } else if (command === "Upgrade") {
-                                               return Palette.cerulean
-                                           } else {
-                                               return Palette.white
-                                           }
-
                                     Layout.alignment: Qt.AlignHCenter
                                 }
                             }
