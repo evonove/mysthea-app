@@ -35,12 +35,12 @@ Page {
         RowLayout {
             anchors.fill: parent
             ToolButton {
+                anchors.leftMargin: 16
+                anchors.topMargin: 16
+
                 text: Icon.menu
                 font.pixelSize: 24
                 font.family: "Material Icons"
-
-                anchors.leftMargin: 16
-                anchors.topMargin: 16
 
                 onClicked: {
                     if (root.StackView.view.depth > 1) {
