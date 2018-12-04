@@ -41,10 +41,10 @@ Page {
                 asynchronous: true
 
                 sourceComponent: DetailDelegate {
-                    code: model.code
-                    type: model.type
-                    image: model.image
-                    description: model.description
+                    code: modelData.code
+                    type: modelData.type
+                    image: modelData.image
+                    description: modelData.description
                 }
             }
         }
