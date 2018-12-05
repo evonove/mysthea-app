@@ -10,18 +10,18 @@ INCLUDEPATH += \
 HEADERS += \
     $$PWD/models/cardsmodel.h \
     $$PWD/models/data.h \
-    $$PWD/models/searchmodel.h\
     $$PWD/translationsmanager.h \
     $$PWD/models/card_data.h \
     $$PWD/models/typemodel.h \
-    $$PWD/models/cardsproxymodel.h
+    $$PWD/models/cardsproxymodel.h \
+    $$PWD/models/typeproxymodel.h
 
 SOURCES += \
     $$PWD/models/cardsmodel.cpp \
-    $$PWD/models/searchmodel.cpp\
     $$PWD/translationsmanager.cpp \
     $$PWD/models/typemodel.cpp \
-    $$PWD/models/cardsproxymodel.cpp
+    $$PWD/models/cardsproxymodel.cpp \
+    $$PWD/models/typeproxymodel.cpp
 
 lupdate_only{
     SOURCES += \

@@ -8,7 +8,7 @@
 
 #include "models/card_data.h"
 #include "models/cardsmodel.h"
-#include "models/searchmodel.h"
+#include "models/typeproxymodel.h"
 #include "models/typemodel.h"
 #include "translationsmanager.h"
 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
       "Translations", 1, 0, "TranslationsManager",
       translations_manager_singletontype_provider);
 
-  auto searchModel = new SearchModel();
+  auto searchModel = new TypeProxyModel();
   searchModel->setSourceModel(new TypeModel);
   context->setContextProperty("cardsModel", searchModel);
   engine.addImportPath(QStringLiteral("qrc:/"));

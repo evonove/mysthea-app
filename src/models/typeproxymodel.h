@@ -3,13 +3,13 @@
 
 #include <QSortFilterProxyModel>
 
-class SearchModel : public QSortFilterProxyModel {
+class TypeProxyModel : public QSortFilterProxyModel {
   Q_OBJECT
 public:
-  SearchModel(QObject *parent = Q_NULLPTR);
+  TypeProxyModel(QObject *parent = Q_NULLPTR);
 
-  Q_INVOKABLE void setCodeFilter(QString code);
   Q_INVOKABLE void setTypeFilter(QString type);
+  Q_INVOKABLE void setCodeFilter(QString code);
   Q_INVOKABLE void setCommandFilter(QString command);
   Q_INVOKABLE void resetFilters();
 
@@ -17,8 +17,8 @@ public:
                         const QModelIndex &source_parent) const Q_DECL_OVERRIDE;
 
 private:
-  QString m_code;
   QString m_type;
+  QString m_code;
   QString m_command;
 };
 
