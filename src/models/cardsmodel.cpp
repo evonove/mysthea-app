@@ -1,46 +1,40 @@
 #include "cardsmodel.h"
-//#include "data.h"
-#include "card_data.h"
 #include <QDebug>
 #include <QList>
 #include <QVariant>
 
-CardsModel::CardsModel(QObject *parent)
-    : QAbstractListModel{parent}, m_cards{cards_data.size()} {
-  // We create QVector<QVariantList> cards in constructor because
-  // in this way it is created only once. While if we put this code in
-  // data function it is created every time data is executed.
-  for (auto i = 0; i < cards_data.size(); i++) {
-    for (const auto &card : cards_data.value(i)) {
-      QVariant v;
-      v.setValue(card);
-      m_cards[i].append(v);
-    }
-  }
-}
+CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
+    : QAbstractListModel{parent}, m_cards{cards} {}
 
 QHash<int, QByteArray> CardsModel::roleNames() const {
-  return QHash<int, QByteArray>{{Roles::Category, "category"},
-                                {Roles::Cards, "cards"}};
+  return QHash<int, QByteArray>{{Roles::Code, "code"},
+                                {Roles::Type, "type"},
+                                {Roles::Command, "command"},
+                                {Roles::Image, "image"}};
 }
 
 int CardsModel::rowCount(const QModelIndex &parent) const {
   Q_UNUSED(parent);
-  return cards_data.size();
+  return m_cards.size();
 }
 
 QVariant CardsModel::data(const QModelIndex &index, int role) const {
   auto row = index.row();
-  if (row < 0 || row > cards_data.size() - 1) {
+  if (row < 0 || row > m_cards.size() - 1) {
     return QVariant();
   }
 
   switch (role) {
-  case Roles::Category:
-    return category.value(row);
-  case Roles::Cards: {
-    return m_cards[row];
-  }
+  case Roles::Code:
+    return m_cards.at(row).code;
+  case Roles::Type:
+    return m_cards.at(row).type;
+  case Roles::Command:
+    return m_cards.at(row).command;
+  case Roles::Image:
+    return m_cards.at(row).image;
+  case Roles::Description:
+    return m_cards.at(row).description;
   default:
     return QVariant();
   }

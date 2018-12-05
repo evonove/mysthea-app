@@ -1,17 +1,18 @@
-#ifndef CARDSMODEL_H
-#define CARDSMODEL_H
+#ifndef TYPEMODEL_H
+#define TYPEMODEL_H
 
-#include "card_data.h"
+#include "cardsproxymodel.h"
 #include <QAbstractListModel>
 #include <QVector>
 
-class CardsModel : public QAbstractListModel {
+class TypeModel : public QAbstractListModel {
   Q_OBJECT
 
 public:
-  CardsModel(QVector<Card> cards, QObject *parent = Q_NULLPTR);
+  TypeModel(QObject *parent = Q_NULLPTR);
+  ~TypeModel();
 
-  enum Roles { Code = Qt::UserRole + 1, Type, Command, Image, Description };
+  enum Roles { Type = Qt::UserRole + 1, Cards };
   Q_ENUM(Roles)
 
   QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
@@ -19,8 +20,7 @@ public:
   QVariant data(const QModelIndex &index,
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
 
-private:
-  QVector<Card> m_cards;
+  QVector<CardsProxyModel *> m_types;
 };
 
-#endif // CARDSMODEL_H
+#endif // TYPEMODEL_H

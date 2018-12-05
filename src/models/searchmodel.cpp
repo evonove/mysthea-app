@@ -1,9 +1,12 @@
 #include "searchmodel.h"
-#include "cardsmodel.h"
+#include "card_data.h"
+#include "typemodel.h"
+
+#include <QDebug>
 
 SearchModel::SearchModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_code{""}, m_category{"All Categories"} {}
-//      m_color{"All Colors"}
+    : QSortFilterProxyModel(parent), m_code{""}, m_type{"All types"},
+      m_command{"All commands"} {}
 
 void SearchModel::setCodeFilter(QString code) {
   code = code.toUpper();
@@ -13,31 +16,24 @@ void SearchModel::setCodeFilter(QString code) {
   }
 }
 
-void SearchModel::setCategoryFilter(QString category) {
-  if (m_category != category) {
-    m_category = category;
+void SearchModel::setTypeFilter(QString type) {
+  if (m_type != type) {
+    m_type = type;
     invalidateFilter();
   }
 }
 
-// void SearchModel::setColorFilter(QString color) {
-//  if (m_color != color) {
-//    m_color = color;
-//    invalidateFilter();
-//  }
-//}
-
-void SearchModel::setCommandFilter(QString commnand) {
-  if (m_command != commnand) {
-    m_command = commnand;
+void SearchModel::setCommandFilter(QString command) {
+  if (m_command != command) {
+    m_command = command;
     invalidateFilter();
   }
 }
 
 void SearchModel::resetFilters() {
   m_code = QString("");
-  m_category = QString("All Categories");
-  //  m_color = QString("All Colors");
+  m_type = QString("All types");
+  m_command = QString("All commands");
   invalidateFilter();
 }
 
@@ -45,39 +41,38 @@ bool SearchModel::filterAcceptsRow(int source_row,
                                    const QModelIndex &source_parent) const {
   Q_UNUSED(source_parent);
 
-  auto model = static_cast<CardsModel *>(sourceModel());
+  auto model = static_cast<TypeModel *>(sourceModel());
 
   auto acceptRow = true;
 
   // Gets all roles that can be filtered
-  //  auto code = model->data(createIndex(source_row, 0),
-  //  CardsModel::Roles::Code)
-  //                  .toString();
-  auto category =
-      model->data(createIndex(source_row, 0), CardsModel::Roles::Category)
-          .toString();
-  //    auto color = model->data(createIndex(source_row, 0),
-  //    CardsModel::Roles::Color).toString();
+  auto type = model->data(createIndex(source_row, 0), TypeModel::Roles::Type)
+                  .toString();
 
-  if (m_code.isEmpty()
-      //          || code.contains(m_code)
-  ) {
+  auto cards =
+      model->data(createIndex(source_row, 0), TypeModel::Roles::Cards).toList();
+
+  //      auto code = cards[i].value<Card>().m_code;
+
+  //  qDebug() << m_category;
+
+  //  if (m_code.isEmpty() || code.contains(m_code)) {
+  //    acceptRow = acceptRow && true;
+  //  } else {
+  //    acceptRow = acceptRow && false;
+  //  }
+
+  if (m_type == "All types" || m_type == type) {
     acceptRow = acceptRow && true;
   } else {
     acceptRow = acceptRow && false;
   }
 
-  if (m_category == "All Categories" || m_category == category) {
+  /* if (m_command == "All commands" || m_command == command) {
     acceptRow = acceptRow && true;
   } else {
     acceptRow = acceptRow && false;
-  }
-
-  //    if (m_color == "All Colors" || m_color == color) {
-  //        acceptRow = acceptRow && true;
-  //    } else {
-  //        acceptRow = acceptRow && false;
-  //    }
+  }*/
 
   return acceptRow;
 }

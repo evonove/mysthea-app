@@ -184,7 +184,7 @@ Page {
                         width: parent.width
                         padding: 0
 
-                        text: model.category
+                        text: model.type
                         color: Palette.white
 
                         Layout.leftMargin: 16
@@ -194,8 +194,10 @@ Page {
                         id: gridCard
                         interactive: false
 
+//                        Component.onCompleted: console.error(Object.keys(cards))
+
                         implicitHeight: Math.ceil(
-                                            cards.length / categoryPane.numElementsInRow)
+                                            cards.rowCount() / categoryPane.numElementsInRow)
                                         * cellHeight
                         cellHeight: cellWidth * 1.815533980582524
                         cellWidth: categoryPane.currentCellWidth
@@ -224,7 +226,7 @@ Page {
 
                                     id: images
                                     fillMode: Image.PreserveAspectFit
-                                    source: "qrc:/images/cards/" + modelData.image
+                                    source: "qrc:/images/cards/" + image
                                     sourceSize.height: height
                                     sourceSize.width: width
 
@@ -236,17 +238,17 @@ Page {
 
                                 Label {
                                     id: codeCard
-                                    text: modelData.code
+                                    text: code
                                     font.weight: Font.Bold
 
                                     color: {
-                                        if (modelData.command === "Tactic") {
+                                        if (command === "Tactic") {
                                             return Palette.flamingo
-                                        } else if (modelData.command === "Objective") {
+                                        } else if (command === "Objective") {
                                             return Palette.goldenFizz
-                                        } else if (modelData.command === "Accessory") {
+                                        } else if (command === "Accessory") {
                                             return Palette.apple
-                                        } else if (modelData.command === "Upgrade") {
+                                        } else if (command === "Upgrade") {
                                             return Palette.cerulean
                                         } else {
                                             return Palette.white

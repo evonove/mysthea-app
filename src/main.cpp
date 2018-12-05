@@ -9,6 +9,7 @@
 #include "models/card_data.h"
 #include "models/cardsmodel.h"
 #include "models/searchmodel.h"
+#include "models/typemodel.h"
 #include "translationsmanager.h"
 
 static QObject *
@@ -37,10 +38,8 @@ int main(int argc, char *argv[]) {
       "Translations", 1, 0, "TranslationsManager",
       translations_manager_singletontype_provider);
 
-  qRegisterMetaType<Card>();
-
   auto searchModel = new SearchModel();
-  searchModel->setSourceModel(new CardsModel);
+  searchModel->setSourceModel(new TypeModel);
   context->setContextProperty("cardsModel", searchModel);
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
