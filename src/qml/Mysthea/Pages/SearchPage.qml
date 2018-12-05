@@ -125,7 +125,7 @@ Page {
                         Layout.fillWidth: true
                         Layout.rightMargin: 8
 
-                        onActivated: cardsModel.setCategoryFilter(model[index])
+                        onActivated: cardsModel.setTypeFilter(model[index])
                     }
 
                     ColorComboBox {

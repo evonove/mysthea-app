@@ -1,7 +1,7 @@
 #include <QtTest/QtTest>
 
 #include "models/cardsmodel.h"
-#include "models/searchmodel.h"
+#include "models/typeproxymodel.h"
 #include "models/typemodel.h"
 
 class TestSearchModel : public QObject {
@@ -11,7 +11,7 @@ private slots:
   void testDefaultFilters();
   //    void testCodeFilter();
   void testTypeFilter();
-  //    void testColorFilter();
+  //  void testCommandFilter();
   //    void testMixedFilters();
   //    void testResetFilter();
   //    void testCaseInsensitiveFilter();
@@ -20,7 +20,7 @@ private slots:
 void TestSearchModel::testDefaultFilters() {
   // Verifies all cards are shown when no filter is applied
 
-  auto searchModel = new SearchModel();
+  auto searchModel = new TypeProxyModel();
   searchModel->setSourceModel(new TypeModel);
 
   QCOMPARE(searchModel->rowCount(QModelIndex()), 6);
@@ -51,7 +51,7 @@ void TestSearchModel::testDefaultFilters() {
 void TestSearchModel::testTypeFilter() {
   // Verifies that changing only Category to filter rows are filtered
   // correctly
-  auto searchModel = new SearchModel();
+  auto searchModel = new TypeProxyModel();
   searchModel->setSourceModel(new TypeModel);
 
   // Applies various Category filters and verifies expected number of rows is
@@ -78,28 +78,29 @@ void TestSearchModel::testTypeFilter() {
   QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
 }
 
-// void TestSearchModel::testColorFilter() {
+// void TestSearchModel::testCommandFilter() {
 //  // Verifies that changing only Color to filter rows are filtered correctly
 //  auto searchModel = new SearchModel();
-//  searchModel->setSourceModel(new CardsModel);
+//  searchModel->setSourceModel(new TypeModel);
 
 //  // Applies various Color filters and verifies expected number of rows is
-//  shown searchModel->setColorFilter("All Colors");
+//  //  shown
+//  searchModel->setCommandFilter("All commands");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 94);
 
-//  searchModel->setColorFilter("Red");
+//  searchModel->setCommandFilter("Tactic");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
 
-//  searchModel->setColorFilter("Green");
+//  searchModel->setCommandFilter("Objective");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
 
-//  searchModel->setColorFilter("Blue");
+//  searchModel->setCommandFilter("Accessory");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
 
-//  searchModel->setColorFilter("Yellow");
+//  searchModel->setCommandFilter("Upgrade");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
 
-//  searchModel->setColorFilter("Gray");
+//  searchModel->setCommandFilter("");
 //  QCOMPARE(searchModel->rowCount(QModelIndex()), 14);
 //}
 
