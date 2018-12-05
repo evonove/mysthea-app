@@ -1,15 +1,15 @@
 #include <QtTest/QtTest>
 
 #include "models/cardsmodel.h"
-#include "models/typeproxymodel.h"
 #include "models/typemodel.h"
+#include "models/typeproxymodel.h"
 
 class TestSearchModel : public QObject {
   Q_OBJECT
 
 private slots:
   void testDefaultFilters();
-  //    void testCodeFilter();
+  void testCodeFilter();
   void testTypeFilter();
   //  void testCommandFilter();
   //    void testMixedFilters();
@@ -20,88 +20,114 @@ private slots:
 void TestSearchModel::testDefaultFilters() {
   // Verifies all cards are shown when no filter is applied
 
-  auto searchModel = new TypeProxyModel();
-  searchModel->setSourceModel(new TypeModel);
+  auto typeProxy = new TypeProxyModel();
+  typeProxy->setSourceModel(new TypeModel);
 
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 6);
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
 }
 
-// void TestSearchModel::testCodeFilter() {
-//  // Verifies that changing only Code to filter rows are filtered correctly
-//  auto searchModel = new SearchModel();
-//  searchModel->setSourceModel(new CardsModel);
+void TestSearchModel::testCodeFilter() {
+  // Verifies that changing only Code to filter rows are filtered correctly
+  auto typeProxy = new TypeProxyModel();
+  typeProxy->setSourceModel(new TypeModel);
 
-//  // Applies various Code filters and verifies expected number of rows is
-//  shown searchModel->setCodeFilter("C");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 80);
+  // Applies various Code filters and verifies expected number of rows is
+  //  shown
+  typeProxy->setCodeFilter("C");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
+  auto cardsX = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
+                    .value<CardsProxyModel *>();
+  QCOMPARE(cardsX->rowCount(QModelIndex()), 20);
+  auto cardsI = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
+                    .value<CardsProxyModel *>();
+  QCOMPARE(cardsI->rowCount(QModelIndex()), 20);
+  auto cardsII = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
+                     .value<CardsProxyModel *>();
+  QCOMPARE(cardsII->rowCount(QModelIndex()), 20);
+  auto cardsIII = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
+                      .value<CardsProxyModel *>();
+  QCOMPARE(cardsIII->rowCount(QModelIndex()), 20);
 
-//  searchModel->setCodeFilter("H");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 4);
+  typeProxy->setCodeFilter("H");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsHero = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
+                       .value<CardsProxyModel *>();
+  QCOMPARE(cardsHero->rowCount(QModelIndex()), 4);
 
-//  searchModel->setCodeFilter("A");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 10);
+  typeProxy->setCodeFilter("A");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsAttunement =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
+          .value<CardsProxyModel *>();
+  QCOMPARE(cardsAttunement->rowCount(QModelIndex()), 10);
 
-//  searchModel->setCodeFilter("C01");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 10);
+  typeProxy->setCodeFilter("C01");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsC01 = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
+                      .value<CardsProxyModel *>();
+  QCOMPARE(cardsC01->rowCount(QModelIndex()), 10);
 
-//  searchModel->setCodeFilter("H04");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
-//}
+  typeProxy->setCodeFilter("H04");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsH04 = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
+                      .value<CardsProxyModel *>();
+  QCOMPARE(cardsH04->rowCount(QModelIndex()), 1);
+}
 
 void TestSearchModel::testTypeFilter() {
   // Verifies that changing only Category to filter rows are filtered
   // correctly
-  auto searchModel = new TypeProxyModel();
-  searchModel->setSourceModel(new TypeModel);
+  auto typeProxy = new TypeProxyModel();
+  typeProxy->setSourceModel(new TypeModel);
 
   // Applies various Category filters and verifies expected number of rows is
   // shown
-  searchModel->setTypeFilter("All types");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 6);
+  typeProxy->setTypeFilter("All types");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
 
-  searchModel->setTypeFilter("Era X");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Era X");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 
-  searchModel->setTypeFilter("Era I");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Era I");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 
-  searchModel->setTypeFilter("Era II");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Era II");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 
-  searchModel->setTypeFilter("Era III");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Era III");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 
-  searchModel->setTypeFilter("Hero");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Hero");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 
-  searchModel->setTypeFilter("Attunement");
-  QCOMPARE(searchModel->rowCount(QModelIndex()), 1);
+  typeProxy->setTypeFilter("Attunement");
+  QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
 }
 
 // void TestSearchModel::testCommandFilter() {
 //  // Verifies that changing only Color to filter rows are filtered correctly
-//  auto searchModel = new SearchModel();
-//  searchModel->setSourceModel(new TypeModel);
+//  auto typeProxy = new TypeProxyModel();
+//  typeProxy->setSourceModel(new TypeModel);
 
 //  // Applies various Color filters and verifies expected number of rows is
 //  //  shown
-//  searchModel->setCommandFilter("All commands");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 94);
+//  typeProxy->setCommandFilter("All commands");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 94);
 
-//  searchModel->setCommandFilter("Tactic");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
+//  typeProxy->setCommandFilter("Tactic");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 20);
 
-//  searchModel->setCommandFilter("Objective");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
+//  typeProxy->setCommandFilter("Objective");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 20);
 
-//  searchModel->setCommandFilter("Accessory");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
+//  typeProxy->setCommandFilter("Accessory");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 20);
 
-//  searchModel->setCommandFilter("Upgrade");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 20);
+//  typeProxy->setCommandFilter("Upgrade");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 20);
 
-//  searchModel->setCommandFilter("");
-//  QCOMPARE(searchModel->rowCount(QModelIndex()), 14);
+//  typeProxy->setCommandFilter("");
+//  QCOMPARE(typeProxy->rowCount(QModelIndex()), 14);
 //}
 
 // void TestSearchModel::testMixedFilters() {
