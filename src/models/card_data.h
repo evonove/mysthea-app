@@ -6,45 +6,23 @@
 #include <QString>
 
 struct Card {
-  Q_GADGET
-
-public:
-  Card() {}
-  Card(QString code, QString type, QString command, QString image,
-       QString description)
-      : m_code{code}, m_type{type}, m_command{command}, m_image{image},
-        m_description{description} {}
-
-  QString m_code;
-  QString m_type;
-  QString m_command;
-  QString m_image;
-  QString m_description;
-
-  Q_PROPERTY(QString code MEMBER m_code)
-  Q_PROPERTY(QString type MEMBER m_type)
-  Q_PROPERTY(QString command MEMBER m_command)
-  Q_PROPERTY(QString image MEMBER m_image)
-  Q_PROPERTY(QString description MEMBER m_description)
+  QString code;
+  QString type;
+  QString command;
+  QString image;
+  QString description;
 };
 
 Q_DECLARE_METATYPE(Card)
 
-struct CategoryList {
-  QString category;
-  QList<Card> cards;
-};
+const QVector<QString> types{
+    {"Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"}};
 
-const QHash<int, QString> category = {{0, "Era X"},  {1, "Era I"},
-                                      {2, "Era II"}, {3, "Era III"},
-                                      {4, "Hero"},   {5, "Attunement"}};
-
-const QHash<int, QList<Card>> cards_data = {
-    {// category EraX
-     0,
-     {
-         // List of cards
-         // clang-format off
+// clang-format off
+const QVector<QList<Card>> cards_data = {
+    // category EraX
+    {
+        // List of cards
          {"C001", "Era X",      "Tactic",      "c001.jpg", "Pay 2 Energy Points to execute a Travel operation with your Champion in any region. Your other units cannot Travel."},
          {"C002", "Era X",      "Tactic",      "c002.jpg", "Pay 2 Energy Points to gain 2 Experience Points and perform the Develop action."},
          {"C003", "Era X",      "Tactic",      "c003.jpg", "Pay 2 Energy Points to Act."},
@@ -65,14 +43,11 @@ const QHash<int, QList<Card>> cards_data = {
          {"C018", "Era X",      "Upgrade",     "c018.jpg", "As long as this card is on your playerboard, when you Recruit 1 Golem, you may Deploy it at no cost."},
          {"C019", "Era X",      "Upgrade",     "c019.jpg", "As long as this card is on your playerboard, add 2 to the Strengh of your Champion."},
          {"C020", "Era X",      "Upgrade",     "c020.jpg", "As long as this card is on your playerboard, when you play a Development Card, you won't have to spend its placing cost."},
-     }
-    },
-    {
+     },
+
     //Category: EraI
-    1,
     {
     //List of cards EraI
-    // clang-format off
         {"C021", "Era I",      "Tactic",      "c021.jpg", "Pay 1 Energy Point to Recharge your Artefact."},
         {"C022", "Era I",      "Tactic",      "c022.jpg", "Pay 1 Energy Point to execute a Travel operation with 1 Golem to any region (also in regions where you are not present). The Golem cannot carry any unit."},
         {"C023", "Era I",      "Tactic",      "c023.jpg", "Pay 2 Energy Points to choose any region and remove 1 Fortification from each Opponent present in that region."},
@@ -93,15 +68,10 @@ const QHash<int, QList<Card>> cards_data = {
         {"C038", "Era I",      "Upgrade",     "c038.jpg", "As long as this card is on your player board, when your Champion Travels, you may carry 1 of any unit. The carried unit has to start in the same region as your Champion. (You cannot carry a unit that has already Travelled this turn. If your Champion Travels several times, you can carry a different unit each time.)"},
         {"C039", "Era I",      "Upgrade",     "c039.jpg", "As long as this card is on your playerboard, when you Recruit 1 Troop, you may Deploy it without cost."},
         {"C040", "Era I",      "Upgrade",     "c040.jpg", "As long as this card is on your playerboard, when you play a Accessory Card, you won't have to spend its placing cost."},
-    // clang format on
-    }
     },
-    {
     //Category: EraII
-    2,
     {
     //List of cards EraII
-    // clang-format off
         {"C041", "Era II",     "Tactic",      "c041.jpg", "Pay 1 Energy Point to draw up to 2 cards from the top of Command Deck of the current Era at no cost."},
         {"C042", "Era II",     "Tactic",      "c042.jpg", "Pay 2 Energy Points to execute a Travel operation with up to 2 Troops to any region (also in regions where you are not present). The Troops cannot carry any units. The 2 Troops can Travel to 2 different regions, independently."},
         {"C043", "Era II",     "Tactic",      "c043.jpg", "Pay 3 Energy Points to Start a Battle in any region with at least 1 Opponent and add 3 to your Stength. (To perform this effect your Artefact keeps the current state. The Artefact does not discharge.)"},
@@ -122,15 +92,10 @@ const QHash<int, QList<Card>> cards_data = {
         {"C058", "Era II",     "Upgrade",     "c058.jpg", "As long as this card is on your playerboard, add 1 to the Strengh of your Golems."},
         {"C059", "Era II",     "Upgrade",     "c059.jpg", "As long as this card is on your player board, when 1 Troop Travels, it can carry another unit to the same region. The carried unit has to start in the same region as your Troop. (You cannot carry a unit that has already Traveled this turn.)"},
         {"C060", "Era II",     "Upgrade",     "c060.jpg", "As long as this card is on your playerboard, add 1 to the Strengh of your Fortifications."},
-    // clang format on
-    }
     },
-    {
     //Category: EraIII
-    3,
     {
     //List of cards EraIII
-    // clang-format off
         {"C061", "Era III",    "Tactic",      "c061.jpg", "Pay 1 Energy Point to gain 12 Energy Points."},
         {"C062", "Era III",    "Tactic",      "c062.jpg", "Pay 2 Energy Points to choose any region and remove 1 Golem from each Opponent present in that region."},
         {"C063", "Era III",    "Tactic",      "c063.jpg", "Pay 3 Energy Points to choose a Monster. You can only choose a Monster whose card has already been placed in the Event Board during this Era. The chosen Monster attacks immediately."},
@@ -151,28 +116,18 @@ const QHash<int, QList<Card>> cards_data = {
         {"C078", "Era III",    "Upgrade",     "c078.jpg", "As long as this card is on your playerboard, when you play a Objective Card, you won't have to spend its Energy cost."},
         {"C079", "Era III",    "Upgrade",     "c079.jpg", "As long as this card is on your playerboard, when you Deploy 1 Fortification, you may gain 4 Glory Points."},
         {"C080", "Era III",    "Upgrade",     "c080.jpg", "As long as this card is on your playerboard, add 1 to the Strengh of your Troops."},
-    // clang format on
-    }
     },
-    {
     //Category: Hero
-    4,
     {
     //List of cards Hero
-    // clang-format off
         {"H01",  "Hero",       "",        "h01.jpg",  "When you start a Battle in the region where Anuth is, or if Anuth is in an island attacked by a Monster, Anuth receive 3 Strength Points until the end of the Battle or Monster attack."},
         {"H02",  "Hero",       "",        "h02.jpg",  "When Celethe is on an island attacked by a Monster, if the Monster loses, the player holding Celethe doubles their reward."},
         {"H03",  "Hero",       "",        "h03.jpg",  "When you Start a Battle, yout receive 1 extra Glory Point for each unit, including your and enemy units, that is removed or retreats."},
         {"H04",  "Hero",       "",        "h04.jpg",  "At the beginning of each Era, you will receive 4 extra Energy Points. If Telron is wounded, you won't receive the 4 extra Energy Points at the beginning of the next Era."},
-    // clang format on
-    }
     },
-    {
     //Category: Attunement
-    5,
     {
     //List of cards Attunement
-    // clang-format off
         {"A01",  "Attunement", "",        "a01.jpg",  "When you attune to the illustrated anomaly, receive 3 Glory Points for each Development card in play on your player board."},
         {"A02",  "Attunement", "",        "a02.jpg",  "When you attune to the illustrated anomaly, receive 4 Glory Points for each Encounter card you have faced."},
         {"A03",  "Attunement", "",        "a03.jpg",  "When you attune to the illustrated anomaly, receive 3 Glory Points for each region you control."},
@@ -183,11 +138,7 @@ const QHash<int, QList<Card>> cards_data = {
         {"A08",  "Attunement", "",        "a08.jpg",  "When you attune to the illustrated anomaly, receive 1 Glory Point for each region where you have at least one unit."},
         {"A09",  "Attunement", "",        "a09.jpg",  "When you attune to the illustrated anomaly, receive 3 Glory Points for each Golem you have deployed."},
         {"A10",  "Attunement", "",        "a10.jpg",  "When you attune to the illustrated anomaly, at the end of this Era, receive 8 Glory Points for each Monster defeated (even if you didn't take part in the attack)."},
-    // clang format on
     }
-    },
-
    };
-
-
+    // clang format on
 #endif // CARD_DATA_H

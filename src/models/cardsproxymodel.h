@@ -1,15 +1,13 @@
-#ifndef SEARCHMODEL_H
-#define SEARCHMODEL_H
-
+#ifndef CARDSPROXYMODEL_H
+#define CARDSPROXYMODEL_H
 #include <QSortFilterProxyModel>
 
-class SearchModel : public QSortFilterProxyModel {
+class CardsProxyModel : public QSortFilterProxyModel {
   Q_OBJECT
 public:
-  SearchModel(QObject *parent = Q_NULLPTR);
+  CardsProxyModel(QObject *parent = Q_NULLPTR);
 
   Q_INVOKABLE void setCodeFilter(QString code);
-  Q_INVOKABLE void setTypeFilter(QString type);
   Q_INVOKABLE void setCommandFilter(QString command);
   Q_INVOKABLE void resetFilters();
 
@@ -18,8 +16,7 @@ public:
 
 private:
   QString m_code;
-  QString m_type;
   QString m_command;
 };
 
-#endif // SEARCHMODEL_H
+#endif // CARDSPROXYMODEL_H
