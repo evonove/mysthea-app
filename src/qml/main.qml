@@ -10,15 +10,18 @@ ApplicationWindow {
     height: 667
     title: qsTr("Mysthea")
 
+    font.family: "Yanone Kaffeesatz"
+    font.pixelSize: 24
+    font.letterSpacing: 1.0
+
     // Loads Material icons font
     FontLoader {
         source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
     }
-
+    // Loads test font
     FontLoader {
         source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
     }
-
     FontLoader {
         source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
     }

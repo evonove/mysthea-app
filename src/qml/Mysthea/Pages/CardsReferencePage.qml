@@ -13,9 +13,6 @@ Page {
     id: root
     padding: 0
 
-    font.family: "Yanone Kaffeesatz"
-    font.letterSpacing: 0.5
-
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
         fillMode: Image.PreserveAspectCrop
@@ -120,6 +117,8 @@ Page {
 
                     ComboBox {
                         model: ["All Categories", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
+                        font.pixelSize: 18
+                        font.letterSpacing: 0
 
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
@@ -129,6 +128,9 @@ Page {
                     }
 
                     ColorComboBox {
+                        font.pixelSize: 18
+                        font.letterSpacing: 0
+
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
                         Layout.leftMargin: 8
@@ -167,7 +169,6 @@ Page {
                 id: categoryPane
                 width: parent.width
                 background: null
-                font.pixelSize: 24
                 topPadding: 25
 
                 readonly property int numElementsInRow: 3
@@ -185,6 +186,7 @@ Page {
                         padding: 0
 
                         text: model.type
+                        font.letterSpacing: 0.5
                         color: Palette.white
 
                         Layout.leftMargin: 16
@@ -237,6 +239,7 @@ Page {
                                     id: codeCard
                                     text: code
                                     font.weight: Font.Bold
+                                    font.letterSpacing: 0.5
 
                                     color: {
                                         if (command === "Tactic") {
