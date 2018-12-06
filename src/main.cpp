@@ -6,7 +6,6 @@
 #include <QtAndroid>
 #endif
 
-#include "models/card_data.h"
 #include "models/cardsmodel.h"
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"

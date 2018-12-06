@@ -9,7 +9,7 @@ class CardsModel : public QAbstractListModel {
   Q_OBJECT
 
 public:
-  CardsModel(QVector<Card> cards, QObject *parent = Q_NULLPTR);
+  CardsModel(const QVector<Card> &cards, QObject *parent = Q_NULLPTR);
 
   enum Roles { Code = Qt::UserRole + 1, Type, Command, Image, Description };
   Q_ENUM(Roles)

@@ -1,5 +1,5 @@
 module Mysthea.Pages
-SearchPage 1.0 SearchPage.qml
+CardsReferencePage 1.0 CardsReferencePage.qml
 DetailPage 1.0 DetailPage.qml
 DetailDelegate 1.0 DetailDelegate.qml
 MainMenu 1.0 MainMenu.qml

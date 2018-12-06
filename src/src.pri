@@ -9,7 +9,6 @@ INCLUDEPATH += \
 
 HEADERS += \
     $$PWD/models/cardsmodel.h \
-    $$PWD/models/data.h \
     $$PWD/translationsmanager.h \
     $$PWD/models/card_data.h \
     $$PWD/models/typemodel.h \

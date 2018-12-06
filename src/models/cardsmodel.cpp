@@ -3,14 +3,17 @@
 #include <QList>
 #include <QVariant>
 
-CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
+CardsModel::CardsModel(const QVector<Card> &cards, QObject *parent)
     : QAbstractListModel{parent}, m_cards{cards} {}
 
 QHash<int, QByteArray> CardsModel::roleNames() const {
-  return QHash<int, QByteArray>{{Roles::Code, "code"},
-                                {Roles::Type, "type"},
-                                {Roles::Command, "command"},
-                                {Roles::Image, "image"}};
+  return QHash<int, QByteArray>{
+      {Roles::Code, "code"},
+      {Roles::Type, "type"},
+      {Roles::Command, "command"},
+      {Roles::Image, "image"},
+      {Roles::Description, "description"},
+  };
 }
 
 int CardsModel::rowCount(const QModelIndex &parent) const {

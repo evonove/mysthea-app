@@ -2,7 +2,7 @@
     <qresource prefix="/">
         <file>qml/main.qml</file>
         <file>qml/Mysthea/Pages/qmldir</file>
-        <file>qml/Mysthea/Pages/SearchPage.qml</file>
+        <file>qml/Mysthea/Pages/CardsReferencePage.qml</file>
         <file>qml/Mysthea/Pages/DetailPage.qml</file>
         <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
         <file>qml/Mysthea/Components/qmldir</file>

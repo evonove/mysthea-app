@@ -1,5 +1,4 @@
 #include "typeproxymodel.h"
-#include "card_data.h"
 #include "typemodel.h"
 
 #include <QDebug>

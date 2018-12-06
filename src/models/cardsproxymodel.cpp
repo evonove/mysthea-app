@@ -1,5 +1,4 @@
 #include "cardsproxymodel.h"
-#include "card_data.h"
 #include "cardsmodel.h"
 
 #include <QDebug>
