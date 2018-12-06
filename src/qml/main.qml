@@ -50,7 +50,7 @@ ApplicationWindow {
 
         Component {
             id: _cardReference
-            SearchPage {
+            CardsReferencePage {
             }
         }
 
