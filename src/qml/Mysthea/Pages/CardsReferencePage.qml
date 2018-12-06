@@ -97,6 +97,7 @@ Page {
                 Layout.rightMargin: 16
 
                 ComboBox {
+                    id: typeCombo
                     padding: 0
                     model: ["All types", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
                     font.letterSpacing: 0
@@ -105,17 +106,26 @@ Page {
                     Layout.fillWidth: true
 
                     onActivated: typeProxyModel.setTypeFilter(model[index])
+
                 }
 
                 ComboBox {
+                    id: commandsCombo
                     padding: 0
                     model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
                     font.letterSpacing: 0
+
+                    enabled: !(typeCombo.currentText === "Hero" || typeCombo.currentText === "Attunement")
 
                     Layout.minimumWidth: 150
                     Layout.fillWidth: true
 
                     onActivated: typeProxyModel.setCommandFilter(model[index])
+                    onEnabledChanged: {
+                        if (!enabled) {
+                            currentIndex = 0;
+                        }
+                    }
                 }
             }
 
