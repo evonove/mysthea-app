@@ -12,6 +12,7 @@ void CardsProxyModel::setCodeFilter(QString code) {
   if (m_code != code) {
     m_code = code;
     invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -19,6 +20,7 @@ void CardsProxyModel::setCommandFilter(QString command) {
   if (m_command != command) {
     m_command = command;
     invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -26,6 +28,7 @@ void CardsProxyModel::resetFilters() {
   m_code = QString("");
   m_command = QString("All commands");
   invalidateFilter();
+  emit filterChanged();
 }
 
 bool CardsProxyModel::filterAcceptsRow(int source_row,
