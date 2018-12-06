@@ -11,7 +11,7 @@ ApplicationWindow {
     title: qsTr("Mysthea")
 
     font.family: "Yanone Kaffeesatz"
-    font.pixelSize: 24
+    font.pixelSize: 18
 
     // Loads Material icons font
     FontLoader {

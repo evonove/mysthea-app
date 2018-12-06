@@ -48,6 +48,3 @@ ios {
      QMAKE_ASSET_CATALOGS = $$PWD/ios/Images.xcassets
      QMAKE_ASSET_CATALOGS_APP_ICON = "AppIcon"
 }
-
-DISTFILES += \
-    qml/Mysthea/Pages/MockList.qml
