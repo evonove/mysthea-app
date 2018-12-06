@@ -24,6 +24,24 @@ void TestSearchModel::testDefaultFilters() {
   typeProxy->setSourceModel(new TypeModel);
 
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
+  auto cardsX =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsX, "Era X");
+  auto cardsI =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsI, "Era I");
+  auto cardsII =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsII, "Era II");
+  auto cardsIII =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsIII, "Era III");
+  auto cardsHero =
+      typeProxy->data(typeProxy->index(4, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsHero, "Hero");
+  auto cardsAtt =
+      typeProxy->data(typeProxy->index(5, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsAtt, "Attunement");
 }
 
 void TestSearchModel::testCodeFilter() {
@@ -38,21 +56,39 @@ void TestSearchModel::testCodeFilter() {
   auto cardsX = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(cardsX->rowCount(QModelIndex()), 20);
+  auto typeX =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeX, "Era X");
+
   auto cardsI = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(cardsI->rowCount(QModelIndex()), 20);
+  auto typeI =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(typeI, "Era I");
+
   auto cardsII = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                      .value<CardsProxyModel *>();
   QCOMPARE(cardsII->rowCount(QModelIndex()), 20);
+  auto typeII =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(typeII, "Era II");
+
   auto cardsIII = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsIII->rowCount(QModelIndex()), 20);
+  auto typeIII =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(typeIII, "Era III");
 
   typeProxy->setCodeFilter("H");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   auto cardsHero = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                        .value<CardsProxyModel *>();
   QCOMPARE(cardsHero->rowCount(QModelIndex()), 4);
+  auto typeHero =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeHero, "Hero");
 
   typeProxy->setCodeFilter("A");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
@@ -60,18 +96,27 @@ void TestSearchModel::testCodeFilter() {
       typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
           .value<CardsProxyModel *>();
   QCOMPARE(cardsAttunement->rowCount(QModelIndex()), 10);
+  auto typeAtt =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeAtt, "Attunement");
 
   typeProxy->setCodeFilter("C01");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   auto cardsC01 = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsC01->rowCount(QModelIndex()), 10);
+  auto Xtype =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(Xtype, "Era X");
 
   typeProxy->setCodeFilter("H04");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   auto cardsH04 = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsH04->rowCount(QModelIndex()), 1);
+  auto heroType =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(heroType, "Hero");
 }
 
 void TestSearchModel::testTypeFilter() {
@@ -87,21 +132,39 @@ void TestSearchModel::testTypeFilter() {
 
   typeProxy->setTypeFilter("Era X");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsX =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsX, "Era X");
 
   typeProxy->setTypeFilter("Era I");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsI =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsI, "Era I");
 
   typeProxy->setTypeFilter("Era II");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsII =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsII, "Era II");
 
   typeProxy->setTypeFilter("Era III");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsIII =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsIII, "Era III");
 
   typeProxy->setTypeFilter("Hero");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsHero =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsHero, "Hero");
 
   typeProxy->setTypeFilter("Attunement");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
+  auto cardsAtt =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(cardsAtt, "Attunement");
 }
 
 void TestSearchModel::testCommandFilter() {
@@ -116,37 +179,67 @@ void TestSearchModel::testCommandFilter() {
   auto cardsX = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(cardsX->rowCount(QModelIndex()), 20);
+  auto typeX =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeX, "Era X");
   auto cardsI = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(cardsI->rowCount(QModelIndex()), 20);
+  auto typeI =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(typeI, "Era I");
   auto cardsII = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                      .value<CardsProxyModel *>();
   QCOMPARE(cardsII->rowCount(QModelIndex()), 20);
+  auto typeII =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(typeII, "Era II");
   auto cardsIII = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsIII->rowCount(QModelIndex()), 20);
+  auto typeIII =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(typeIII, "Era III");
   auto cardsHero = typeProxy->data(typeProxy->index(4, 0), TypeModel::Cards)
                        .value<CardsProxyModel *>();
   QCOMPARE(cardsHero->rowCount(QModelIndex()), 4);
+  auto typeHero =
+      typeProxy->data(typeProxy->index(4, 0), TypeModel::Type).toString();
+  QCOMPARE(typeHero, "Hero");
   auto cardsAttunement =
       typeProxy->data(typeProxy->index(5, 0), TypeModel::Cards)
           .value<CardsProxyModel *>();
   QCOMPARE(cardsAttunement->rowCount(QModelIndex()), 10);
+  auto typeAtt =
+      typeProxy->data(typeProxy->index(5, 0), TypeModel::Type).toString();
+  QCOMPARE(typeAtt, "Attunement");
 
   typeProxy->setCommandFilter("Tactic");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
   auto X = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                .value<CardsProxyModel *>();
   QCOMPARE(X->rowCount(QModelIndex()), 5);
+  auto Xtype =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(Xtype, "Era X");
   auto I = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
                .value<CardsProxyModel *>();
   QCOMPARE(I->rowCount(QModelIndex()), 5);
+  auto Itype =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(Itype, "Era I");
   auto II = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                 .value<CardsProxyModel *>();
   QCOMPARE(II->rowCount(QModelIndex()), 5);
-  auto III = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
+  auto IItype =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(IItype, "Era II");
+  auto III = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                  .value<CardsProxyModel *>();
   QCOMPARE(III->rowCount(QModelIndex()), 5);
+  auto IIItype =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(IIItype, "Era III");
 
   typeProxy->setCommandFilter("Objective");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
@@ -159,9 +252,20 @@ void TestSearchModel::testCommandFilter() {
   auto cardII = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(cardII->rowCount(QModelIndex()), 5);
-  auto cardIII = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
+  auto cardIII = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                      .value<CardsProxyModel *>();
   QCOMPARE(cardIII->rowCount(QModelIndex()), 5);
+
+  auto tX = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(tX, "Era X");
+  auto tI = typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(tI, "Era I");
+  auto tII =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(tII, "Era II");
+  auto tIII =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(tIII, "Era III");
 
   typeProxy->setCommandFilter("Accessory");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
@@ -174,9 +278,20 @@ void TestSearchModel::testCommandFilter() {
   auto ii = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                 .value<CardsProxyModel *>();
   QCOMPARE(ii->rowCount(QModelIndex()), 5);
-  auto iii = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
+  auto iii = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                  .value<CardsProxyModel *>();
   QCOMPARE(iii->rowCount(QModelIndex()), 5);
+
+  auto Xt = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(Xt, "Era X");
+  auto It = typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(tI, "Era I");
+  auto IIt =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(IIt, "Era II");
+  auto IIIt =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(IIIt, "Era III");
 
   typeProxy->setCommandFilter("Upgrade");
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
@@ -189,7 +304,7 @@ void TestSearchModel::testCommandFilter() {
   auto eraII = typeProxy->data(typeProxy->index(2, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(eraII->rowCount(QModelIndex()), 5);
-  auto eraIII = typeProxy->data(typeProxy->index(1, 0), TypeModel::Cards)
+  auto eraIII = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                     .value<CardsProxyModel *>();
   QCOMPARE(eraIII->rowCount(QModelIndex()), 5);
 }
@@ -323,6 +438,25 @@ void TestSearchModel::testResetFilter() {
   auto cardsAtt = typeProxy->data(typeProxy->index(5, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsAtt->rowCount(QModelIndex()), 10);
+
+  auto Xty =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(Xty, "Era X");
+  auto Ity =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(Ity, "Era I");
+  auto IIty =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(IIty, "Era II");
+  auto IIIty =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(IIIty, "Era III");
+  auto Heroty =
+      typeProxy->data(typeProxy->index(4, 0), TypeModel::Type).toString();
+  QCOMPARE(Heroty, "Hero");
+  auto attuTy =
+      typeProxy->data(typeProxy->index(5, 0), TypeModel::Type).toString();
+  QCOMPARE(attuTy, "Attunement");
 }
 
 void TestSearchModel::testCaseInsensitiveFilter() {
@@ -350,6 +484,24 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   auto cardsAtt = typeProxy->data(typeProxy->index(5, 0), TypeModel::Cards)
                       .value<CardsProxyModel *>();
   QCOMPARE(cardsAtt->rowCount(QModelIndex()), 10);
+  auto Xty =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(Xty, "Era X");
+  auto Ity =
+      typeProxy->data(typeProxy->index(1, 0), TypeModel::Type).toString();
+  QCOMPARE(Ity, "Era I");
+  auto IIty =
+      typeProxy->data(typeProxy->index(2, 0), TypeModel::Type).toString();
+  QCOMPARE(IIty, "Era II");
+  auto IIIty =
+      typeProxy->data(typeProxy->index(3, 0), TypeModel::Type).toString();
+  QCOMPARE(IIIty, "Era III");
+  auto Heroty =
+      typeProxy->data(typeProxy->index(4, 0), TypeModel::Type).toString();
+  QCOMPARE(Heroty, "Hero");
+  auto attuTy =
+      typeProxy->data(typeProxy->index(5, 0), TypeModel::Type).toString();
+  QCOMPARE(attuTy, "Attunement");
 
   // Applies filter with uppercase Code
   typeProxy->setCodeFilter("H");
@@ -357,6 +509,9 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   auto heroCards = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                        .value<CardsProxyModel *>();
   QCOMPARE(heroCards->rowCount(QModelIndex()), 4);
+  auto typeHero =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeHero, "Hero");
 
   // Applies filter with lowercase code
   typeProxy->setCodeFilter("h");
@@ -364,6 +519,9 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   auto Hero = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                   .value<CardsProxyModel *>();
   QCOMPARE(Hero->rowCount(QModelIndex()), 4);
+  auto typeH =
+      typeProxy->data(typeProxy->index(0, 0), TypeModel::Type).toString();
+  QCOMPARE(typeH, "Hero");
 }
 
 QTEST_MAIN(TestSearchModel)
