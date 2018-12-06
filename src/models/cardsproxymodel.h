@@ -4,6 +4,7 @@
 
 class CardsProxyModel : public QSortFilterProxyModel {
   Q_OBJECT
+  Q_PROPERTY(int size READ rowCount NOTIFY filterChanged)
 public:
   CardsProxyModel(QObject *parent = Q_NULLPTR);
 
@@ -13,6 +14,8 @@ public:
 
   bool filterAcceptsRow(int source_row,
                         const QModelIndex &source_parent) const Q_DECL_OVERRIDE;
+signals:
+  void filterChanged();
 
 private:
   QString m_code;

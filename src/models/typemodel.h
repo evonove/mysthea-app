@@ -10,7 +10,7 @@ class TypeModel : public QAbstractListModel {
 
 public:
   TypeModel(QObject *parent = Q_NULLPTR);
-  ~TypeModel();
+  ~TypeModel() Q_DECL_OVERRIDE;
 
   enum Roles { Type = Qt::UserRole + 1, Cards };
   Q_ENUM(Roles)

@@ -106,7 +106,7 @@ Page {
                         Layout.leftMargin: 14
                         Layout.fillWidth: true
 
-                        onTextEdited: cardsModel.setCodeFilter(
+                        onTextEdited: typeProxyModel.setCodeFilter(
                                           _searchField.text)
                     }
                 }
@@ -125,7 +125,7 @@ Page {
                         Layout.fillWidth: true
                         Layout.rightMargin: 8
 
-                        onActivated: cardsModel.setTypeFilter(model[index])
+                        onActivated: typeProxyModel.setTypeFilter(model[index])
                     }
 
                     ColorComboBox {
@@ -133,7 +133,7 @@ Page {
                         Layout.fillWidth: true
                         Layout.leftMargin: 8
 
-                        onActivated: cardsModel.setColorFilter(
+                        onActivated: typeProxyModel.setColorFilter(
                                          model.get(index).colorName)
                     }
                 }
@@ -154,7 +154,7 @@ Page {
         ListView {
             id: _cardsList
 
-            model: cardsModel
+            model: typeProxyModel
             clip: true
 
             Layout.fillWidth: true
@@ -194,11 +194,9 @@ Page {
                         id: gridCard
                         interactive: false
 
-//                        Component.onCompleted: console.error(Object.keys(cards))
+                        implicitHeight:
+                            Math.ceil(cards.size / categoryPane.numElementsInRow) * cellHeight
 
-                        implicitHeight: Math.ceil(
-                                            cards.rowCount() / categoryPane.numElementsInRow)
-                                        * cellHeight
                         cellHeight: cellWidth * 1.815533980582524
                         cellWidth: categoryPane.currentCellWidth
 
@@ -231,7 +229,6 @@ Page {
                                     sourceSize.width: width
 
                                     Layout.preferredHeight: parent.height - codeCard.height
-                                    Layout.fillHeight: true
                                     Layout.maximumWidth: parent.width
                                     Layout.alignment: Qt.AlignHCenter
                                 }
