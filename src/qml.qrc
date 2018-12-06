@@ -24,7 +24,7 @@
         <file>qml/Mysthea/Theme/qmldir</file>
         <file>qml/Mysthea/Theme/Palette.qml</file>
         <file>qml/Mysthea/Theme/Icon.qml</file>
-        <file>qml/Mysthea/Pages/MockList.qml</file>
         <file>qml/Mysthea/Components/ScrollIndicator.qml</file>
+        <file>qml/Mysthea/Components/SearchField.qml</file>
     </qresource>
 </RCC>
