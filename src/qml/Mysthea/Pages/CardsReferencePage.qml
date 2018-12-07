@@ -64,20 +64,22 @@ Page {
 
         ToolBar {
             id: comboBoxSection
-            topPadding: 16
+            padding: 16
+
             Layout.fillWidth: true
 
-            background: null
-            padding: 0
-
+            background: Rectangle {
+                anchors.bottom: parent.bottom
+                width: root.width
+                height: 1
+                color: Palette.white
+            }
             ColumnLayout {
                 anchors.fill: parent
                 spacing: 16
 
                 RowLayout {
                     id: searchBar
-                    Layout.leftMargin: 16
-                    Layout.rightMargin: 16
 
                     SearchField {
                         id: _searchField
@@ -93,11 +95,9 @@ Page {
                 }
 
                 RowLayout {
-                    Layout.fillWidth: true
                     spacing: 16
 
-                    Layout.leftMargin: 16
-                    Layout.rightMargin: 16
+                    Layout.fillWidth: true
 
                     ComboBox {
                         id: typeCombo
@@ -107,8 +107,14 @@ Page {
 
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
-
-                        onActivated: typeProxyModel.setTypeFilter(model[index])
+                        onActivated: {
+                            typeProxyModel.setTypeFilter(model[index])
+                            // In loader we don't have only listView so we check if the item has this property
+                            if (_contentLoader.item.hasOwnProperty(
+                                        'positionViewAtBeginning')) {
+                                _contentLoader.item.positionViewAtBeginning()
+                            }
+                        }
                     }
 
                     ComboBox {
@@ -123,8 +129,15 @@ Page {
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
 
-                        onActivated: typeProxyModel.setCommandFilter(
-                                         model[index])
+                        onActivated: {
+                            typeProxyModel.setCommandFilter(model[index])
+                            // In loader we don't have only listView so we check if the item has this property
+                            if (_contentLoader.item.hasOwnProperty(
+                                        'positionViewAtBeginning')) {
+                                _contentLoader.item.positionViewAtBeginning()
+                            }
+                        }
+
                         onEnabledChanged: {
                             if (!enabled) {
                                 currentIndex = 0
@@ -132,21 +145,11 @@ Page {
                         }
                     }
                 }
-
-                Rectangle {
-                    width: root.width
-                    height: 1
-                    color: Palette.white
-                    border.color: Palette.white
-
-                    Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignBottom
-                    Layout.topMargin: 16
-                }
             }
         }
 
         Loader {
+            id: _contentLoader
             sourceComponent: typeProxyModel.size > 0 ? cardListComponent : emptyCardListComponent
 
             Layout.fillHeight: true
