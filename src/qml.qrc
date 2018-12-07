@@ -26,5 +26,6 @@
         <file>qml/Mysthea/Theme/Icon.qml</file>
         <file>qml/Mysthea/Components/ScrollIndicator.qml</file>
         <file>qml/Mysthea/Components/SearchField.qml</file>
+        <file>qml/Mysthea/Pages/CardsList.qml</file>
     </qresource>
 </RCC>

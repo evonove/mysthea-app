@@ -11,6 +11,7 @@ void TypeProxyModel::setTypeFilter(QString type) {
   if (m_type != type) {
     m_type = type;
     invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -25,6 +26,7 @@ void TypeProxyModel::setCodeFilter(QString code) {
           ->setCodeFilter(code);
     }
     invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -38,6 +40,7 @@ void TypeProxyModel::setCommandFilter(QString command) {
           ->setCommandFilter(command);
     }
     invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -50,6 +53,7 @@ void TypeProxyModel::resetFilters() {
   }
   m_type = QString("All types");
   invalidateFilter();
+  emit filterChanged();
 }
 
 bool TypeProxyModel::filterAcceptsRow(int source_row,
