@@ -5,7 +5,9 @@
 
 TypeProxyModel::TypeProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent), m_type{"All types"}, m_code{""},
-      m_command{"All commands"} {}
+      m_command{"All commands"} {
+  setSourceModel(new TypeModel);
+}
 
 void TypeProxyModel::setTypeFilter(QString type) {
   if (m_type != type) {
