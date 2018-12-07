@@ -17,26 +17,25 @@ TextField {
 
     color: Palette.black
 
-    RowLayout {
+    Label {
+        id: iconSearch
         anchors.fill: parent
-        Label {
-            text: Icon.search
-            font.pixelSize: 24
-            font.family: "Material Icons"
-            color: Palette.black
-            opacity: 0.5
-            verticalAlignment: control.verticalAlignment
-            Layout.leftMargin: 16
-            Layout.rightMargin: 16
-        }
+        text: Icon.search
+        font.pixelSize: 24
+        font.family: "Material Icons"
+        color: Palette.black
+        opacity: 0.5
+        leftPadding: 16
+        rightPadding: 16
+        verticalAlignment: control.verticalAlignment
+    }
 
-        PlaceholderText {
-            id: placeholder
-            color: Palette.black
-            verticalAlignment: control.verticalAlignment
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-        }
+    PlaceholderText {
+        id: placeholder
+        anchors.left: iconSearch.right
+        anchors.fill: parent
+        color: Palette.black
+        verticalAlignment: control.verticalAlignment
     }
 
     background: Rectangle {
