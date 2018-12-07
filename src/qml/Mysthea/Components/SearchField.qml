@@ -12,7 +12,7 @@ TextField {
 
     implicitHeight: 48
     topPadding: 8
-    leftPadding: padding + 4 + 50
+    leftPadding: 54
     bottomPadding: 8
 
     color: Palette.black
