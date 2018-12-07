@@ -4,6 +4,7 @@ import QtQuick.Controls 2.3
 import QtQuick.Controls.Material 2.2
 
 import Mysthea.Components 1.0
+import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
 
 
@@ -21,255 +22,172 @@ Page {
         verticalAlignment: Image.AlignBottom
     }
 
-    ToolBar {
-        id: toolbar
-        z: 2
-        width: parent.width
-        height: 56
-        position: ToolBar.Header
-        background: null
-
-        ToolButton {
-            id: toolButton
-            height: parent.height
-            text: Icon.menu
-            font.pixelSize: 24
-            font.family: "Material Icons"
-
-            onClicked: {
-                typeProxyModel.resetFilters()
-                if (root.StackView.view.depth > 1) {
-                    root.StackView.view.pop()
-                }
-            }
-        }
-
-        Label {
-            id: label
-            width: parent.width
-            height: parent.height
-            anchors.topMargin: 16
-            text: qsTr("CARDS REFERENCE")
-            font.pixelSize: 20
-            font.letterSpacing: 0.5
-            horizontalAlignment: Qt.AlignHCenter
-            verticalAlignment: Qt.AlignVCenter
-        }
-    }
-
-    ToolBar {
-        id: comboBoxSection
-        anchors.top: toolbar.bottom
-        anchors.topMargin: 16
-        width: parent.width
-
-        background: null
-        padding: 0
-
-        ColumnLayout {
-            anchors.fill: parent
-            spacing: 16
-
-            RowLayout {
-                id: searchBar
-                Layout.leftMargin: 16
-                Layout.rightMargin: 16
-
-                SearchField {
-                    id: _searchField
-
-                    placeholderText: qsTr("Search cards by code")
-                    font.pixelSize: 18
-                    font.letterSpacing: 0
-                    Layout.fillWidth: true
-
-                    onTextEdited: typeProxyModel.setCodeFilter(
-                                      _searchField.text)
-                }
-            }
-
-            RowLayout {
-                Layout.fillWidth: true
-                spacing: 16
-
-                Layout.leftMargin: 16
-                Layout.rightMargin: 16
-
-                ComboBox {
-                    id: typeCombo
-                    padding: 0
-                    model: ["All types", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
-                    font.letterSpacing: 0
-
-                    Layout.minimumWidth: 150
-                    Layout.fillWidth: true
-
-                    onActivated: {
-                        typeProxyModel.setTypeFilter(model[index])
-                        _cardsList.positionViewAtBeginning()
-                    }
-                }
-
-                ComboBox {
-                    id: commandsCombo
-                    padding: 0
-                    model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
-                    font.letterSpacing: 0
-
-                    enabled: !(typeCombo.currentText === "Hero"
-                               || typeCombo.currentText === "Attunement")
-
-                    Layout.minimumWidth: 150
-                    Layout.fillWidth: true
-
-                    onActivated: {
-                        typeProxyModel.setCommandFilter(model[index])
-                        _cardsList.positionViewAtBeginning()
-                    }
-                    onEnabledChanged: {
-                        if (!enabled) {
-                            currentIndex = 0
-                        }
-                    }
-                }
-            }
-
-            Rectangle {
-                width: root.width
-                height: 1
-                color: Palette.white
-                border.color: Palette.white
-
-                Layout.fillWidth: true
-                Layout.alignment: Qt.AlignBottom
-                Layout.topMargin: 16
-            }
-        }
-    }
-
-    ListView {
-        id: _cardsList
-        anchors.top: comboBoxSection.bottom
-        model: typeProxyModel
-        clip: true
-
-        width: parent.width
-        height: parent.height - (toolbar.height + comboBoxSection.height)
-
-        ScrollIndicator.vertical: ScrollIndicator {
-        }
-
-        delegate: Pane {
-            id: categoryPane
-            width: parent.width
+    ColumnLayout {
+        anchors.fill: parent
+        spacing: 0
+        ToolBar {
+            id: toolbar
+            z: 2
+            height: 56
+            position: ToolBar.Header
             background: null
-            topPadding: 25
 
-            readonly property int numElementsInRow: 3
-            readonly property int currentCellWidth: Math.floor(
-                                                        categoryPane.availableWidth
-                                                        / categoryPane.numElementsInRow)
+            Layout.fillWidth: true
+
+            ToolButton {
+                id: toolButton
+                height: parent.height
+                text: Icon.menu
+                font.pixelSize: 24
+                font.family: "Material Icons"
+
+                onClicked: {
+                    typeProxyModel.resetFilters()
+                    if (root.StackView.view.depth > 1) {
+                        root.StackView.view.pop()
+                    }
+                }
+            }
+
+            Label {
+                id: label
+                width: parent.width
+                height: parent.height
+                anchors.topMargin: 16
+                text: qsTr("CARDS REFERENCE")
+                font.pixelSize: 20
+                font.letterSpacing: 0.5
+                horizontalAlignment: Qt.AlignHCenter
+                verticalAlignment: Qt.AlignVCenter
+            }
+        }
+
+        ToolBar {
+            id: comboBoxSection
+            topPadding: 16
+            Layout.fillWidth: true
+
+            background: null
+            padding: 0
 
             ColumnLayout {
                 anchors.fill: parent
-                spacing: 0
-                anchors.margins: 0
-                Label {
-                    id: categoryLabel
-                    width: parent.width
-                    padding: 0
+                spacing: 16
 
-                    text: model.type
-                    font.letterSpacing: 0.5
-                    font.pixelSize: 24
-                    color: Palette.white
-
+                RowLayout {
+                    id: searchBar
                     Layout.leftMargin: 16
+                    Layout.rightMargin: 16
+
+                    SearchField {
+                        id: _searchField
+
+                        placeholderText: qsTr("Search cards by code")
+                        font.pixelSize: 18
+                        font.letterSpacing: 0
+                        Layout.fillWidth: true
+
+                        onTextEdited: typeProxyModel.setCodeFilter(
+                                          _searchField.text)
+                    }
                 }
 
-                GridView {
-                    id: gridCard
-                    interactive: false
-
-                    implicitHeight: Math.ceil(
-                                        cards.size / categoryPane.numElementsInRow) * cellHeight
-
-                    cellHeight: cellWidth * 1.815533980582524
-                    cellWidth: categoryPane.currentCellWidth
-
+                RowLayout {
                     Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignCenter
-                    Layout.topMargin: 16
+                    spacing: 16
 
-                    model: cards
+                    Layout.leftMargin: 16
+                    Layout.rightMargin: 16
 
-                    delegate: Pane {
-                        height: gridCard.cellHeight
-                        width: gridCard.cellWidth
-                        topPadding: 16
-                        bottomPadding: 16
-                        leftPadding: 8
-                        rightPadding: 8
-                        background: null
+                    ComboBox {
+                        id: typeCombo
+                        padding: 0
+                        model: ["All types", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
+                        font.letterSpacing: 0
 
-                        ColumnLayout {
-                            id: col
-                            anchors.fill: parent
-                            spacing: 0
+                        Layout.minimumWidth: 150
+                        Layout.fillWidth: true
 
-                            Image {
+                        onActivated: typeProxyModel.setTypeFilter(model[index])
+                    }
 
-                                id: images
-                                fillMode: Image.PreserveAspectFit
-                                source: "qrc:/images/cards/" + image
-                                sourceSize.height: height
-                                sourceSize.width: width
+                    ComboBox {
+                        id: commandsCombo
+                        padding: 0
+                        model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
+                        font.letterSpacing: 0
 
-                                Layout.preferredHeight: parent.height - codeCard.height
-                                Layout.maximumWidth: parent.width
-                                Layout.alignment: Qt.AlignHCenter
-                            }
+                        enabled: !(typeCombo.currentText === "Hero"
+                                   || typeCombo.currentText === "Attunement")
 
-                            Label {
-                                id: codeCard
-                                text: code
-                                font.weight: Font.Bold
-                                font.letterSpacing: 0.5
-                                font.pixelSize: 24
+                        Layout.minimumWidth: 150
+                        Layout.fillWidth: true
 
-                                color: {
-                                    if (command === "Tactic") {
-                                        return Palette.flamingo
-                                    } else if (command === "Objective") {
-                                        return Palette.goldenFizz
-                                    } else if (command === "Accessory") {
-                                        return Palette.apple
-                                    } else if (command === "Upgrade") {
-                                        return Palette.cerulean
-                                    } else {
-                                        return Palette.white
-                                    }
-                                }
-
-                                Layout.topMargin: 6
-                                Layout.alignment: Qt.AlignHCenter
-                            }
-                        }
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                // Unfocuses search field so that keyboard is hidden
-                                _searchField.focus = false
-                                root.StackView.view.push(
-                                            "qrc:/qml/Mysthea/Pages/DetailPage.qml",
-                                            {
-                                                "model": cards,
-                                                "index": index
-                                            })
+                        onActivated: typeProxyModel.setCommandFilter(
+                                         model[index])
+                        onEnabledChanged: {
+                            if (!enabled) {
+                                currentIndex = 0
                             }
                         }
                     }
+                }
+
+                Rectangle {
+                    width: root.width
+                    height: 1
+                    color: Palette.white
+                    border.color: Palette.white
+
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignBottom
+                    Layout.topMargin: 16
+                }
+            }
+        }
+
+        Loader {
+            sourceComponent: typeProxyModel.size > 0 ? cardListComponent : emptyCardListComponent
+
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+        }
+    }
+
+    Component {
+        id: cardListComponent
+        CardsList {
+        }
+    }
+
+    Component {
+        id: emptyCardListComponent
+        Pane {
+            background: null
+            padding: 16
+            topPadding: 32
+            bottomPadding: 32
+
+            ColumnLayout {
+                width: parent.width
+                spacing: 8
+
+                Label {
+                    text: qsTr("Ooops! Card not found.")
+                    font.pixelSize: 24
+                    color: Palette.white
+                    wrapMode: Text.WordWrap
+
+                    Layout.fillWidth: true
+                }
+
+                Label {
+                    text: qsTr("Please try to type a different code or to change filter options.")
+                    color: Palette.white
+                    opacity: 0.5
+                    wrapMode: Text.WordWrap
+
+                    Layout.fillWidth: true
                 }
             }
         }
