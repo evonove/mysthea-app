@@ -37,6 +37,7 @@ Page {
             font.family: "Material Icons"
 
             onClicked: {
+                typeProxyModel.resetFilters();
                 if (root.StackView.view.depth > 1) {
                     root.StackView.view.pop()
                 }
@@ -148,9 +149,8 @@ Page {
         model: typeProxyModel
         clip: true
 
-//        anchors.fill: parent
         width: parent.width
-        height: parent.height - (toolbar.height + comboBoxSection.height) - 32
+        height: parent.height - (toolbar.height + comboBoxSection.height)
 
         ScrollIndicator.vertical: ScrollIndicator {
         }
