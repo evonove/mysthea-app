@@ -37,7 +37,7 @@ Page {
             font.family: "Material Icons"
 
             onClicked: {
-                typeProxyModel.resetFilters();
+                typeProxyModel.resetFilters()
                 if (root.StackView.view.depth > 1) {
                     root.StackView.view.pop()
                 }
@@ -75,8 +75,6 @@ Page {
                 Layout.leftMargin: 16
                 Layout.rightMargin: 16
 
-
-
                 SearchField {
                     id: _searchField
 
@@ -106,8 +104,10 @@ Page {
                     Layout.minimumWidth: 150
                     Layout.fillWidth: true
 
-                    onActivated: typeProxyModel.setTypeFilter(model[index])
-
+                    onActivated: {
+                        typeProxyModel.setTypeFilter(model[index])
+                        _cardsList.positionViewAtBeginning()
+                    }
                 }
 
                 ComboBox {
@@ -116,15 +116,19 @@ Page {
                     model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
                     font.letterSpacing: 0
 
-                    enabled: !(typeCombo.currentText === "Hero" || typeCombo.currentText === "Attunement")
+                    enabled: !(typeCombo.currentText === "Hero"
+                               || typeCombo.currentText === "Attunement")
 
                     Layout.minimumWidth: 150
                     Layout.fillWidth: true
 
-                    onActivated: typeProxyModel.setCommandFilter(model[index])
+                    onActivated: {
+                        typeProxyModel.setCommandFilter(model[index])
+                        _cardsList.positionViewAtBeginning()
+                    }
                     onEnabledChanged: {
                         if (!enabled) {
-                            currentIndex = 0;
+                            currentIndex = 0
                         }
                     }
                 }

@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
+import QtQuick.Controls.Material 2.4
 
 import Mysthea.Components 1.0
 import Mysthea.Theme 1.0
@@ -31,23 +32,24 @@ Page {
     }
 
     ToolBar {
+        id: toolbar
         z: 2
         width: parent.width
+        height: 56
         position: ToolBar.Header
-        padding: 0
         background: null
 
         ToolButton {
-            anchors.leftMargin: 16
-            anchors.topMargin: 16
-
+            id: toolButton
+            height: parent.height
             text: Icon.menu
+            Material.foreground: Palette.white
             font.pixelSize: 24
             font.family: "Material Icons"
 
             onClicked: console.log("drawer menu button clicked")
+            }
         }
-    }
 
     ColumnLayout {
         id: logoContainer
