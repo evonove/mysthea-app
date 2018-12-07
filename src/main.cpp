@@ -31,15 +31,14 @@ int main(int argc, char *argv[]) {
   QObject::connect(&translationsManager, SIGNAL(currentLanguageChanged()),
                    &engine, SLOT(retranslate()));
 
-  auto context = engine.rootContext();
-
   qmlRegisterSingletonType<TranslationsManager>(
       "Translations", 1, 0, "TranslationsManager",
       translations_manager_singletontype_provider);
 
   auto typeProxyModel = new TypeProxyModel();
   typeProxyModel->setSourceModel(new TypeModel);
-  context->setContextProperty("typeProxyModel", typeProxyModel);
+  qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
+
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
   engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));

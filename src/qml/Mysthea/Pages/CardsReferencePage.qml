@@ -6,12 +6,17 @@ import QtQuick.Controls.Material 2.2
 import Mysthea.Components 1.0
 import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
+import Mysthea.Models 1.0
 
 
 //Beacause of Page is handle by a StackView we can access to it by his attached property.
 //So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
+
+    TypeProxyModel {
+        id: typeProxyModel
+    }
 
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
@@ -89,8 +94,7 @@ Page {
                         font.letterSpacing: 0
                         Layout.fillWidth: true
 
-                        onTextEdited: typeProxyModel.setCodeFilter(
-                                          _searchField.text)
+                        onTextEdited: typeProxyModel.setCodeFilter(_searchField.text)
                     }
                 }
 
@@ -150,6 +154,8 @@ Page {
 
         Loader {
             id: _contentLoader
+
+            Component.onCompleted: console.error(typeProxyModel.size)
             sourceComponent: typeProxyModel.size > 0 ? cardListComponent : emptyCardListComponent
 
             Layout.fillHeight: true
@@ -160,6 +166,7 @@ Page {
     Component {
         id: cardListComponent
         CardsList {
+            model: typeProxyModel
         }
     }
 
