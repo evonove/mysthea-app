@@ -3,7 +3,7 @@
 #include <QList>
 #include <QVariant>
 
-CardsModel::CardsModel(const QVector<Card> &cards, QObject *parent)
+CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
     : QAbstractListModel{parent}, m_cards{cards} {}
 
 QHash<int, QByteArray> CardsModel::roleNames() const {

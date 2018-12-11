@@ -12,7 +12,7 @@ TypeModel::TypeModel(QObject *parent)
   // data function it is created every time data is executed.
   for (auto i = 0; i < cards_data.size(); i++) {
     m_types[i] = new CardsProxyModel();
-    m_types[i]->setSourceModel(new CardsModel(cards_data[i].toVector()));
+    m_types[i]->setSourceModel(new CardsModel(cards_data.at(i)));
   }
 }
 
