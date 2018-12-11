@@ -4,7 +4,6 @@ import QtQuick.Controls 2.3
 
 Pane {
     id: root
-
     padding: 8
 
     property string code: ""

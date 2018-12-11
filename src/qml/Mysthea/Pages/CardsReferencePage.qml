@@ -8,11 +8,11 @@ import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
 
-
-//Since this page is handled by a StackView we can
-//use root.StackView.view.[property] to use the its properties
 Page {
     id: root
+
+    signal cardClicked(var cards, int clickedIndex)
+    signal backClicked
 
     TypeProxyModel {
         id: typeProxyModel
@@ -48,9 +48,7 @@ Page {
 
                 onClicked: {
                     typeProxyModel.resetFilters()
-                    if (root.StackView.view.depth > 1) {
-                        root.StackView.view.pop()
-                    }
+                    root.backClicked()
                 }
             }
 
@@ -175,6 +173,7 @@ Page {
         id: cardListComponent
         CardsList {
             model: typeProxyModel
+            onCardClicked: root.cardClicked(cards, clickedIndex)
         }
     }
 

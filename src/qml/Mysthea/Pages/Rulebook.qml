@@ -4,10 +4,10 @@ import QtQuick.Layouts 1.3
 
 import Mysthea.Theme 1.0
 
-//Beacause of Page is handle by a StackView we can access to it by his attached property.
-//So we use root.StackView.view.[property] to use StackView properties.
 Page {
     id: root
+
+    signal backClicked
 
     header: ToolBar {
 
@@ -18,9 +18,7 @@ Page {
             font.family: "Material Icons"
 
             onClicked: {
-                if (root.StackView.view.depth > 1) {
-                    root.StackView.view.pop()
-                }
+                root.backClicked()
             }
         }
     }
