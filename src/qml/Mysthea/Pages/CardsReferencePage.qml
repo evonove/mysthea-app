@@ -9,8 +9,8 @@ import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
 
 
-//Beacause of Page is handle by a StackView we can access to it by his attached property.
-//So we use root.StackView.view.[property] to use StackView properties.
+//Since this page is handled by a StackView we can
+//use root.StackView.view.[property] to use the its properties
 Page {
     id: root
 
@@ -113,12 +113,13 @@ Page {
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
                         onActivated: {
-                            if(typeCombo.currentText === "Hero" || typeCombo.currentText === "Attunement") {
-                                typeProxyModel.setCommandFilter(commandsCombo.model[0]);
+                            if (typeCombo.currentText === "Hero"
+                                    || typeCombo.currentText === "Attunement") {
+                                typeProxyModel.setCommandFilter(
+                                            commandsCombo.model[0])
                             }
 
                             typeProxyModel.setTypeFilter(model[index])
-
 
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
@@ -141,7 +142,7 @@ Page {
                         Layout.fillWidth: true
 
                         onActivated: {
-                                typeProxyModel.setCommandFilter(model[index])
+                            typeProxyModel.setCommandFilter(model[index])
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
                                         'positionViewAtBeginning')) {
