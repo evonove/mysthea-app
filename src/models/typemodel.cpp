@@ -35,7 +35,7 @@ QVariant TypeModel::data(const QModelIndex &index, int role) const {
 
   switch (role) {
   case Roles::Type:
-    return types.at(row);
+    return types_map.value(row);
   case Roles::Cards: {
     return QVariant::fromValue(m_types.at(row));
   }
