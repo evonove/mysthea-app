@@ -10,6 +10,8 @@ import Mysthea.Models 1.0
 ListView {
     id: _cardsList
 
+    signal cardClicked(var card, int clickedIndex)
+
     clip: true
 
     ScrollIndicator.vertical: ScrollIndicator {
@@ -117,12 +119,7 @@ ListView {
                         onClicked: {
                             // Unfocuses search field so that keyboard is hidden
                             _searchField.focus = false
-                            root.StackView.view.push(
-                                        "qrc:/qml/Mysthea/Pages/DetailPage.qml",
-                                        {
-                                            "model": cards,
-                                            "index": index
-                                        })
+                            root.cardClicked(cards, index)
                         }
                     }
                 }

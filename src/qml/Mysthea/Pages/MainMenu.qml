@@ -48,8 +48,8 @@ Page {
             font.family: "Material Icons"
 
             onClicked: console.log("drawer menu button clicked")
-            }
         }
+    }
 
     ColumnLayout {
         id: logoContainer

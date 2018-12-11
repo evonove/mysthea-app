@@ -7,6 +7,8 @@ import Mysthea.Theme 1.0
 Page {
     id: root
 
+    signal backClicked
+
     padding: 8
     header: ToolBar {
 
@@ -17,9 +19,7 @@ Page {
             font.family: "Material Icons"
 
             onClicked: {
-                if (root.StackView.view.depth > 1) {
-                    root.StackView.view.pop()
-                }
+                root.backClicked()
             }
         }
     }
