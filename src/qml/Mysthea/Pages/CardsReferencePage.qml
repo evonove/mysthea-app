@@ -94,7 +94,8 @@ Page {
                         font.letterSpacing: 0
                         Layout.fillWidth: true
 
-                        onTextEdited: typeProxyModel.setCodeFilter(_searchField.text)
+                        onTextEdited: typeProxyModel.setCodeFilter(
+                                          _searchField.text)
                     }
                 }
 
@@ -112,7 +113,14 @@ Page {
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
                         onActivated: {
+                            if(typeCombo.currentText === "Hero" || typeCombo.currentText === "Attunement") {
+                                console.log("sono qui" + commandsCombo.model[0]);
+                                typeProxyModel.setCommandFilter(commandsCombo.model[0]);
+                            }
+
                             typeProxyModel.setTypeFilter(model[index])
+
+
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
                                         'positionViewAtBeginning')) {
@@ -134,7 +142,7 @@ Page {
                         Layout.fillWidth: true
 
                         onActivated: {
-                            typeProxyModel.setCommandFilter(model[index])
+                                typeProxyModel.setCommandFilter(model[index])
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
                                         'positionViewAtBeginning')) {

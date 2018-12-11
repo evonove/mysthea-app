@@ -19,7 +19,7 @@ const QVector<QString> types{
     {"Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"}};
 
 // clang-format off
-const QVector<QList<Card>> cards_data = {
+const QVector<QVector<Card>> cards_data = {
     // category EraX
     {
         // List of cards
