@@ -11,7 +11,7 @@ import Mysthea.Models 1.0
 Page {
     id: root
 
-    signal cardClicked(var cards, int clickedIndex)
+    signal cardClicked(CardsModel cards, int clickedIndex)
     signal backClicked
 
     TypeProxyModel {

@@ -10,7 +10,7 @@ import Mysthea.Models 1.0
 ListView {
     id: _cardsList
 
-    signal cardClicked(var card, int clickedIndex)
+    signal cardClicked(CardsModel cards, int clickedIndex)
 
     clip: true
 

@@ -39,6 +39,9 @@ int main(int argc, char *argv[]) {
   typeProxyModel->setSourceModel(new TypeModel);
   qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
 
+  qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
+                                         "CardsModel cannot be created");
+
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
   engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
