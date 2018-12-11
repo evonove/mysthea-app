@@ -114,7 +114,6 @@ Page {
                         Layout.fillWidth: true
                         onActivated: {
                             if(typeCombo.currentText === "Hero" || typeCombo.currentText === "Attunement") {
-                                console.log("sono qui" + commandsCombo.model[0]);
                                 typeProxyModel.setCommandFilter(commandsCombo.model[0]);
                             }
 
