@@ -16,4 +16,5 @@ QtObject {
     readonly property color apple: "#62BB46"
     readonly property color cerulean: "#0099D8"
     readonly property color maroonFlush: "#B01B55"
+    readonly property color grayNurse: "#DFE1DF"
 }

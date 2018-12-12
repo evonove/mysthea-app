@@ -8,6 +8,8 @@ Page {
     id: root
 
     signal backClicked
+    property var model: null
+    property int index: -1
 
     padding: 0
     background: Image {
@@ -60,8 +62,6 @@ Page {
         }
     }
 
-    property var model: null
-    property int index: -1
 
     SwipeView {
         id: _swipeView
@@ -69,6 +69,7 @@ Page {
         height: root.height - toolbar.height
         anchors.top: toolbar.bottom
         currentIndex: root.index
+        clip: true
 
         Repeater {
             model: root.model
@@ -81,6 +82,7 @@ Page {
                 sourceComponent: DetailDelegate {
                     code: model.code
                     type: model.type
+                    command: model.command
                     image: model.image
                     description: model.description
                 }
