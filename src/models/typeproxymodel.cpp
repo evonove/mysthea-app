@@ -73,7 +73,6 @@ CardsModel *TypeProxyModel::visibleCards() {
       cards.append(card);
     }
   }
-
   m_visibleCardsModel->setCards(cards);
   return m_visibleCardsModel;
 }
