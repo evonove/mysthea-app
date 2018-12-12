@@ -6,6 +6,8 @@
 CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
     : QAbstractListModel{parent}, m_cards{cards} {}
 
+CardsModel::CardsModel(QObject *parent) : QAbstractListModel{parent} {}
+
 QHash<int, QByteArray> CardsModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Code, "code"},
                                 {Roles::Type, "type"},
@@ -43,3 +45,14 @@ QVariant CardsModel::data(const QModelIndex &index, int role) const {
     return QVariant();
   }
 }
+
+int CardsModel::indexOf(const QString &code) const {
+  for (auto i = 0; i < m_cards.size(); i++) {
+    if (m_cards.at(i).code == code) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+void CardsModel::setCards(QVector<Card> cards) { m_cards = cards; }

@@ -6,15 +6,11 @@
 
 TypeProxyModel::TypeProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent), m_type{"All types"}, m_code{""},
-      m_command{"All commands"}, m_visibleCardsModel{nullptr} {
+      m_command{"All commands"}, m_visibleCardsModel{new CardsModel} {
   setSourceModel(new TypeModel);
 }
 
-TypeProxyModel::~TypeProxyModel() {
-  if (m_visibleCardsModel != nullptr) {
-    m_visibleCardsModel->deleteLater();
-  }
-}
+TypeProxyModel::~TypeProxyModel() { m_visibleCardsModel->deleteLater(); }
 
 void TypeProxyModel::setTypeFilter(QString type) {
   if (m_type != type) {
@@ -77,10 +73,8 @@ CardsModel *TypeProxyModel::visibleCards() {
       cards.append(card);
     }
   }
-  if (m_visibleCardsModel != nullptr) {
-    m_visibleCardsModel->deleteLater();
-  }
-  m_visibleCardsModel = new CardsModel(cards);
+
+  m_visibleCardsModel->setCards(cards);
   return m_visibleCardsModel;
 }
 

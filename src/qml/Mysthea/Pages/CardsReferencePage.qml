@@ -11,7 +11,7 @@ import Mysthea.Models 1.0
 Page {
     id: root
 
-    signal cardClicked(CardsModel cards, int clickedIndex)
+    signal cardClicked(CardsModel cards, int index)
     signal backClicked
 
     TypeProxyModel {
@@ -174,7 +174,8 @@ Page {
         CardsList {
             model: typeProxyModel
             onCardClicked: {
-                root.cardClicked(typeProxyModel.visibleCards(), clickedIndex)
+                var cardsModel = typeProxyModel.visibleCards()
+                root.cardClicked(cardsModel, cardsModel.indexOf(clickedCode))
             }
         }
     }
