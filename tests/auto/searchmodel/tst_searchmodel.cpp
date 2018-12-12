@@ -15,6 +15,8 @@ private slots:
   void testMixedFilters();
   void testResetFilter();
   void testCaseInsensitiveFilter();
+
+  void testIndexOf();
 };
 
 void TestSearchModel::testDefaultFilters() {
@@ -524,5 +526,19 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   QCOMPARE(typeH, "Hero");
 }
 
+void TestSearchModel::testIndexOf() {
+  auto cardModel = new CardsModel();
+  QVector<Card> cards;
+  cards.append({"C001", "", "", "", " "});
+  cards.append({"C002", "", "", "", " "});
+  cards.append({"C003", "", "", "", " "});
+  cards.append({"C004", "", "", "", " "});
+  cards.append({"H01", "", "", "", " "});
+  cards.append({"H02", "", "", "", " "});
+  cards.append({"A01", "", "", "", " "});
+  cardModel->setCards(cards);
+  QCOMPARE(cardModel->indexOf("C003"), 2);
+  QCOMPARE(cardModel->indexOf("X484373738"), -1);
+}
 QTEST_MAIN(TestSearchModel)
 #include "tst_searchmodel.moc"
