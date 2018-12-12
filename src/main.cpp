@@ -39,6 +39,10 @@ int main(int argc, char *argv[]) {
   typeProxyModel->setSourceModel(new TypeModel);
   qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
 
+  qmlRegisterUncreatableType<CardsProxyModel>(
+      "Mysthea.Models", 1, 0, "CardsProxyModel",
+      "CardsProxyModel cannot be created");
+
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
 

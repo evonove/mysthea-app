@@ -1,12 +1,19 @@
 #include "typeproxymodel.h"
+#include "cardsmodel.h"
 #include "typemodel.h"
 
 #include <QDebug>
 
 TypeProxyModel::TypeProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent), m_type{"All types"}, m_code{""},
-      m_command{"All commands"} {
+      m_command{"All commands"}, m_visibleCardsModel{nullptr} {
   setSourceModel(new TypeModel);
+}
+
+TypeProxyModel::~TypeProxyModel() {
+  if (m_visibleCardsModel != nullptr) {
+    m_visibleCardsModel->deleteLater();
+  }
 }
 
 void TypeProxyModel::setTypeFilter(QString type) {
@@ -56,6 +63,25 @@ void TypeProxyModel::resetFilters() {
   m_type = QString("All types");
   invalidateFilter();
   emit filterChanged();
+}
+
+CardsModel *TypeProxyModel::visibleCards() {
+  QVector<Card> cards;
+  for (int i = 0; i < rowCount(); i++) {
+    auto cardsModel =
+        data(index(i, 0), TypeModel::Roles::Cards).value<CardsProxyModel *>();
+    for (int j = 0; j < cardsModel->rowCount(); j++) {
+      auto card =
+          cardsModel->data(cardsModel->index(j, 0), CardsModel::Roles::CardRole)
+              .value<Card>();
+      cards.append(card);
+    }
+  }
+  if (m_visibleCardsModel != nullptr) {
+    m_visibleCardsModel->deleteLater();
+  }
+  m_visibleCardsModel = new CardsModel(cards);
+  return m_visibleCardsModel;
 }
 
 bool TypeProxyModel::filterAcceptsRow(int source_row,

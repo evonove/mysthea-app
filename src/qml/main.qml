@@ -5,6 +5,7 @@ import QtQuick.Controls.Material 2.4
 
 import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
+import Mysthea.Models 1.0
 
 ApplicationWindow {
     visible: true
