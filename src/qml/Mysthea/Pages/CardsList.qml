@@ -10,7 +10,7 @@ import Mysthea.Models 1.0
 ListView {
     id: _cardsList
 
-    signal cardClicked(int clickedIndex)
+    signal cardClicked(string clickedCode)
 
     clip: true
 
@@ -119,7 +119,7 @@ ListView {
                         onClicked: {
                             // Unfocuses search field so that keyboard is hidden
                             _searchField.focus = false
-                            _cardsList.cardClicked(index)
+                            _cardsList.cardClicked(code)
                         }
                     }
                 }

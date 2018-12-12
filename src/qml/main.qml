@@ -59,7 +59,7 @@ ApplicationWindow {
                 onBackClicked: _mainStackView.pop()
                 onCardClicked: _mainStackView.push(_detailPage, {
                                                        "model": cards,
-                                                       "index": clickedIndex
+                                                       "index": index
                                                    })
             }
         }
