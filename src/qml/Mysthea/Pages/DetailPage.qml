@@ -9,18 +9,54 @@ Page {
 
     signal backClicked
 
-    padding: 8
-    header: ToolBar {
+    padding: 0
+    background: Image {
+        source: "qrc:/assets/images/cards-bg.jpg"
+        fillMode: Image.PreserveAspectCrop
+        smooth: false
 
-        // Back button shown only if there is more than a page in the StackView
+        horizontalAlignment: Image.AlignHCenter
+        verticalAlignment: Image.AlignBottom
+    }
+
+    ToolBar {
+        id: toolbar
+        padding: 0
+        z: 2
+        width: root.width
+        height: 56
+        position: ToolBar.Header
+
+        background: Rectangle {
+            anchors.bottom: parent.bottom
+            width: root.width
+            height: 0.5
+            color: Palette.white
+            opacity: 0.5
+        }
+
         ToolButton {
+            id: toolButton
+            height: parent.height
             text: Icon.back
-            font.pixelSize: 22
+            font.pixelSize: 24
             font.family: "Material Icons"
 
             onClicked: {
                 root.backClicked()
             }
+        }
+
+        Label {
+            id: label
+            width: parent.width
+            height: parent.height
+            anchors.topMargin: 16
+            text: qsTr("CARD DETAIL")
+            font.pixelSize: 20
+            font.letterSpacing: 0.5
+            horizontalAlignment: Qt.AlignHCenter
+            verticalAlignment: Qt.AlignVCenter
         }
     }
 
@@ -29,7 +65,9 @@ Page {
 
     SwipeView {
         id: _swipeView
-        anchors.fill: parent
+        width: root.width
+        height: root.height - toolbar.height
+        anchors.top: toolbar.bottom
         currentIndex: root.index
 
         Repeater {
@@ -41,10 +79,10 @@ Page {
                 asynchronous: true
 
                 sourceComponent: DetailDelegate {
-                    code: modelData.code
-                    type: modelData.type
-                    image: modelData.image
-                    description: modelData.description
+                    code: model.code
+                    type: model.type
+                    image: model.image
+                    description: model.description
                 }
             }
         }

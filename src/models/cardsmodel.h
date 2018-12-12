@@ -11,7 +11,14 @@ class CardsModel : public QAbstractListModel {
 public:
   CardsModel(QVector<Card> cards, QObject *parent = Q_NULLPTR);
 
-  enum Roles { Code = Qt::UserRole + 1, Type, Command, Image, Description };
+  enum Roles {
+    Code = Qt::UserRole + 1,
+    Type,
+    Command,
+    Image,
+    Description,
+    CardRole
+  };
   Q_ENUM(Roles)
 
   QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;

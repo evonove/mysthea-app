@@ -173,7 +173,9 @@ Page {
         id: cardListComponent
         CardsList {
             model: typeProxyModel
-            onCardClicked: root.cardClicked(cards, clickedIndex)
+            onCardClicked: {
+                root.cardClicked(typeProxyModel.visibleCards(), clickedIndex)
+            }
         }
     }
 
