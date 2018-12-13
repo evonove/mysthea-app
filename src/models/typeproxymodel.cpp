@@ -16,15 +16,13 @@ TypeProxyModel::~TypeProxyModel() { m_visibleCardsModel->deleteLater(); }
 void TypeProxyModel::setTypeFilter(int type) {
   if (m_type != type) {
     m_type = type;
-    invalidateFilter();
-
-    if (type == 5 || type == 6) {
-      m_enable = false;
-    } else {
-      m_enable = true;
-    }
-    emit filterChanged();
     emit enableCommandChanged();
+    if (type == 5 || type == 6) {
+      setCommandFilter("All commands");
+      return;
+    }
+    invalidateFilter();
+    emit filterChanged();
   }
 }
 
@@ -116,9 +114,6 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   return acceptRow;
 }
 
-bool TypeProxyModel::enableCommand() {
-  if (!m_enable) {
-    setCommandFilter("All commands");
-  }
-  return m_enable;
+bool TypeProxyModel::enableCommand() const {
+  return !(m_type == 5 || m_type == 6);
 }
