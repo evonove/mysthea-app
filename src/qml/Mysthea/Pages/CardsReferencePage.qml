@@ -160,8 +160,6 @@ Page {
 
         Loader {
             id: _contentLoader
-
-            Component.onCompleted: console.error(typeProxyModel.size)
             sourceComponent: typeProxyModel.size > 0 ? cardListComponent : emptyCardListComponent
 
             Layout.fillHeight: true
