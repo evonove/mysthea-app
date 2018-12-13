@@ -31,7 +31,7 @@ Pane {
                 Layout.fillWidth: true
                 spacing: 8
                 RowLayout {
-                    width: parent.width
+                    Layout.fillWidth: true
                     spacing: 12
                     Label {
                         text: root.code
@@ -64,7 +64,7 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
-                            if(root.command != ""){
+                            if (root.command != "") {
                                 return qsTr("Command")
                             } else {
                                 return root.type
@@ -76,7 +76,8 @@ Pane {
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 12
-                    visible: !(root.type === "Hero" || root.type === "Attunement")
+                    visible: !(root.type === "Hero"
+                               || root.type === "Attunement")
 
                     Label {
                         text: qsTr("Era")
