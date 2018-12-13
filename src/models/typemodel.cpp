@@ -32,10 +32,11 @@ QVariant TypeModel::data(const QModelIndex &index, int role) const {
   if (row < 0 || row >= cards_data.size()) {
     return QVariant();
   }
-
   switch (role) {
   case Roles::Type:
-    return types_map.value(row);
+    // added 1 to row value because our type_map ids started from 1.
+    // the value 0 is reserved for "all types" string.
+    return types_map.value(row + 1);
   case Roles::Cards: {
     return QVariant::fromValue(m_types.at(row));
   }

@@ -9,6 +9,7 @@
 #include "models/cardsmodel.h"
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"
+#include "models/typeslistmodel.h"
 #include "translationsmanager.h"
 
 static QObject *
@@ -45,6 +46,8 @@ int main(int argc, char *argv[]) {
 
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
+
+  qmlRegisterType<TypesListModel>("Mysthea.Models", 1, 0, "TypesListModel");
 
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));

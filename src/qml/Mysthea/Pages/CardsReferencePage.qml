@@ -105,7 +105,13 @@ Page {
                     ComboBox {
                         id: typeCombo
                         padding: 0
-                        model: ["All types", "Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"]
+                        Component.onCompleted: {
+                            console.error(TypesListModel.Type)
+                        }
+
+                        textRole: "type"
+                        model: TypesListModel {
+                        }
                         font.letterSpacing: 0
 
                         Layout.minimumWidth: 150
