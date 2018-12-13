@@ -79,7 +79,6 @@ Page {
                 active: SwipeView.isPreviousItem || SwipeView.isCurrentItem
                         || SwipeView.isNextItem
                 asynchronous: true
-
                 sourceComponent: DetailDelegate {
                     code: model.code
                     type: model.type

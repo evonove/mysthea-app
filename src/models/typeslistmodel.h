@@ -19,6 +19,8 @@ public:
   QVariant data(const QModelIndex &index,
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
 
+  Q_INVOKABLE QString getTypeFromIndex(int index) const;
+
 private:
   QHash<int, QString> m_types;
 };
