@@ -3,12 +3,13 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 
 import Mysthea.Theme 1.0
+import Mysthea.Models 1.0
 
 Page {
     id: root
 
     signal backClicked
-    property var model: null
+    property CardsModel model: null
     property int index: -1
 
     padding: 0
