@@ -13,20 +13,18 @@ TypeProxyModel::TypeProxyModel(QObject *parent)
 
 TypeProxyModel::~TypeProxyModel() { m_visibleCardsModel->deleteLater(); }
 
-// void TypeProxyModel::setTypeFilter(QString type, int indexType) {
-//  if (m_type != type) {
-//    TypesListModel list;
-//    m_type =
-//        list.data(createIndex(indexType, 0), TypesListModel::Type).toString();
-//    invalidateFilter();
-//    emit filterChanged();
-//  }
-//}
 void TypeProxyModel::setTypeFilter(int type) {
   if (m_type != type) {
     m_type = type;
     invalidateFilter();
+
+    if (type == 5 || type == 6) {
+      m_enable = false;
+    } else {
+      m_enable = true;
+    }
     emit filterChanged();
+    emit enableCommandChanged();
   }
 }
 
@@ -105,6 +103,7 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   } else {
     acceptRow = acceptRow && false;
   }
+
   auto count = model->data(createIndex(source_row, 0), TypeModel::Roles::Cards)
                    .value<CardsProxyModel *>()
                    ->rowCount();
@@ -115,4 +114,11 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   }
 
   return acceptRow;
+}
+
+bool TypeProxyModel::enableCommand() {
+  if (!m_enable) {
+    setCommandFilter("All commands");
+  }
+  return m_enable;
 }

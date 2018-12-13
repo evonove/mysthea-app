@@ -114,11 +114,6 @@ Page {
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true
                         onActivated: {
-                            if (typeCombo.currentText === "Hero"
-                                    || typeCombo.currentText === "Attunement") {
-                                typeProxyModel.setCommandFilter(
-                                            commandsCombo.model[0])
-                            }
                             typeProxyModel.setTypeFilter(
                                         typeListModel.data(typeListModel.index(
                                                                index, 0),
@@ -138,8 +133,7 @@ Page {
                         model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
                         font.letterSpacing: 0
 
-                        enabled: !(typeCombo.currentText === "Hero"
-                                   || typeCombo.currentText === "Attunement")
+                        enabled: typeProxyModel.enableCommand
 
                         Layout.minimumWidth: 150
                         Layout.fillWidth: true

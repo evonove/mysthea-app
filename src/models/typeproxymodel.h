@@ -7,6 +7,7 @@
 class TypeProxyModel : public QSortFilterProxyModel {
   Q_OBJECT
   Q_PROPERTY(int size READ rowCount NOTIFY filterChanged)
+  Q_PROPERTY(int enableCommand READ enableCommand NOTIFY enableCommandChanged)
 public:
   TypeProxyModel(QObject *parent = Q_NULLPTR);
   ~TypeProxyModel() override;
@@ -19,14 +20,17 @@ public:
 
   bool filterAcceptsRow(int source_row,
                         const QModelIndex &source_parent) const Q_DECL_OVERRIDE;
+  bool enableCommand();
 signals:
   void filterChanged();
+  void enableCommandChanged();
 
 private:
   int m_type;
   QString m_code;
   QString m_command;
   CardsModel *m_visibleCardsModel;
+  bool m_enable;
 };
 
 #endif // SEARCHMODEL_H
