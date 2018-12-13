@@ -17,6 +17,7 @@ private slots:
   void testCaseInsensitiveFilter();
 
   void testIndexOf();
+  void testVisibleCards();
 };
 
 void TestSearchModel::testDefaultFilters() {
@@ -540,5 +541,37 @@ void TestSearchModel::testIndexOf() {
   QCOMPARE(cardModel->indexOf("C003"), 2);
   QCOMPARE(cardModel->indexOf("X484373738"), -1);
 }
+
+void TestSearchModel::testVisibleCards() {
+  auto typeProxy = new TypeProxyModel();
+  typeProxy->setSourceModel(new TypeModel);
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 94);
+
+  typeProxy->setCodeFilter("01");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 13);
+  typeProxy->setCodeFilter("C01");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 10);
+  typeProxy->setCodeFilter("A01");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 1);
+  typeProxy->setCodeFilter("ASDFGH");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 0);
+
+  typeProxy->resetFilters();
+  typeProxy->setTypeFilter("Era X");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 20);
+  typeProxy->setTypeFilter("Era II");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 20);
+
+  typeProxy->setTypeFilter("Era I");
+  typeProxy->setCommandFilter("Objective");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 5);
+
+  typeProxy->setTypeFilter("Hero");
+  typeProxy->setCommandFilter("All commands");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 4);
+  typeProxy->setCodeFilter("01");
+  QCOMPARE(typeProxy->visibleCards()->rowCount(), 1);
+}
+
 QTEST_MAIN(TestSearchModel)
 #include "tst_searchmodel.moc"
