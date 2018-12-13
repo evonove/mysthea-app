@@ -9,9 +9,9 @@ class TypeProxyModel : public QSortFilterProxyModel {
   Q_PROPERTY(int size READ rowCount NOTIFY filterChanged)
 public:
   TypeProxyModel(QObject *parent = Q_NULLPTR);
-  ~TypeProxyModel();
+  ~TypeProxyModel() override;
 
-  Q_INVOKABLE void setTypeFilter(QString type);
+  Q_INVOKABLE void setTypeFilter(int type);
   Q_INVOKABLE void setCodeFilter(QString code);
   Q_INVOKABLE void setCommandFilter(QString command);
   Q_INVOKABLE void resetFilters();
@@ -23,7 +23,7 @@ signals:
   void filterChanged();
 
 private:
-  QString m_type;
+  int m_type;
   QString m_code;
   QString m_command;
   CardsModel *m_visibleCardsModel;

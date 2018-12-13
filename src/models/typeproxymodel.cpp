@@ -1,18 +1,28 @@
 #include "typeproxymodel.h"
 #include "cardsmodel.h"
 #include "typemodel.h"
+#include "typeslistmodel.h"
 
 #include <QDebug>
 
 TypeProxyModel::TypeProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_type{"All types"}, m_code{""},
+    : QSortFilterProxyModel(parent), m_type{0}, m_code{""},
       m_command{"All commands"}, m_visibleCardsModel{new CardsModel} {
   setSourceModel(new TypeModel);
 }
 
 TypeProxyModel::~TypeProxyModel() { m_visibleCardsModel->deleteLater(); }
 
-void TypeProxyModel::setTypeFilter(QString type) {
+// void TypeProxyModel::setTypeFilter(QString type, int indexType) {
+//  if (m_type != type) {
+//    TypesListModel list;
+//    m_type =
+//        list.data(createIndex(indexType, 0), TypesListModel::Type).toString();
+//    invalidateFilter();
+//    emit filterChanged();
+//  }
+//}
+void TypeProxyModel::setTypeFilter(int type) {
   if (m_type != type) {
     m_type = type;
     invalidateFilter();
@@ -56,7 +66,7 @@ void TypeProxyModel::resetFilters() {
         .value<CardsProxyModel *>()
         ->resetFilters();
   }
-  m_type = QString("All types");
+  m_type = 0;
   invalidateFilter();
   emit filterChanged();
 }
@@ -88,9 +98,9 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   auto acceptRow = true;
 
   // Gets all roles that can be filtered
-  auto type = model->data(createIndex(source_row, 0), TypeModel::Roles::Type)
-                  .toString();
-  if (m_type == "All types" || m_type == type) {
+  auto type = model->data(createIndex(source_row, 0), TypeModel::Roles::Type);
+
+  if (m_type == 0 || m_type == type) {
     acceptRow = acceptRow && true;
   } else {
     acceptRow = acceptRow && false;

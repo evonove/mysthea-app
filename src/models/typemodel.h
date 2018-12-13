@@ -12,7 +12,7 @@ public:
   TypeModel(QObject *parent = Q_NULLPTR);
   ~TypeModel() Q_DECL_OVERRIDE;
 
-  enum Roles { Type = Qt::UserRole + 1, Cards };
+  enum Roles { Type = Qt::UserRole + 1, TypeText, Cards };
   Q_ENUM(Roles)
 
   QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;

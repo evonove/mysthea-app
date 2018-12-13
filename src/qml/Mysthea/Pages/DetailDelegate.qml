@@ -3,6 +3,7 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 
 import Mysthea.Theme 1.0
+import Mysthea.Models 1.0
 
 Pane {
     id: root
@@ -64,6 +65,7 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
+                            console.log(root.command)
                             if (root.command != "") {
                                 return qsTr("Command")
                             } else {
@@ -76,8 +78,10 @@ Pane {
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 12
-                    visible: !(root.type === "Hero"
-                               || root.type === "Attunement")
+                    visible: !(root.type === "5"
+                               || root.type === "6")
+//                    visible: !(root.type === "Hero"
+//                               || root.type === "Attunement")
 
                     Label {
                         text: qsTr("Era")

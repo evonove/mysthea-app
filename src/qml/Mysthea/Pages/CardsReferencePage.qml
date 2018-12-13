@@ -105,12 +105,9 @@ Page {
                     ComboBox {
                         id: typeCombo
                         padding: 0
-                        Component.onCompleted: {
-                            console.error(TypesListModel.Type)
-                        }
-
                         textRole: "type"
                         model: TypesListModel {
+                            id: typeListModel
                         }
                         font.letterSpacing: 0
 
@@ -122,8 +119,10 @@ Page {
                                 typeProxyModel.setCommandFilter(
                                             commandsCombo.model[0])
                             }
-
-                            typeProxyModel.setTypeFilter(model[index])
+                            typeProxyModel.setTypeFilter(
+                                        typeListModel.data(typeListModel.index(
+                                                               index, 0),
+                                                           TypesListModel.Key))
 
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(

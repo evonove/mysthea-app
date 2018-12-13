@@ -44,4 +44,8 @@ QVariant TypesListModel::data(const QModelIndex &index, int role) const {
   }
 }
 
+QString TypesListModel::getTypeFromIndex(int index) const {
+  return m_types.value(index);
+}
+
 #endif // TYPESLISTMODEL_CPP

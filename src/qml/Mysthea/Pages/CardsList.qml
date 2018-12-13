@@ -37,7 +37,7 @@ ListView {
                 width: parent.width
                 padding: 0
 
-                text: model.type
+                text: model.typeText
                 font.letterSpacing: 0.5
                 font.pixelSize: 24
                 color: Palette.white

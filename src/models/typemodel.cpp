@@ -19,7 +19,9 @@ TypeModel::TypeModel(QObject *parent)
 TypeModel::~TypeModel() { qDeleteAll(m_types); }
 
 QHash<int, QByteArray> TypeModel::roleNames() const {
-  return QHash<int, QByteArray>{{Roles::Type, "type"}, {Roles::Cards, "cards"}};
+  return QHash<int, QByteArray>{{Roles::Type, "type"},
+                                {Roles::TypeText, "typeText"},
+                                {Roles::Cards, "cards"}};
 }
 
 int TypeModel::rowCount(const QModelIndex &parent) const {
@@ -34,6 +36,8 @@ QVariant TypeModel::data(const QModelIndex &index, int role) const {
   }
   switch (role) {
   case Roles::Type:
+    return row + 1;
+  case Roles::TypeText:
     // added 1 to row value because our type_map ids started from 1.
     // the value 0 is reserved for "all types" string.
     return types_map.value(row + 1);
