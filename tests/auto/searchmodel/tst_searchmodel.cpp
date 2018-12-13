@@ -528,7 +528,9 @@ void TestSearchModel::testCaseInsensitiveFilter() {
 }
 
 void TestSearchModel::testIndexOf() {
+  // Verfies indexOf function returns the correct position of clicked card.
   auto cardModel = new CardsModel();
+  // create a mock vector of cards.
   QVector<Card> cards;
   cards.append({"C001", "", "", "", " "});
   cards.append({"C002", "", "", "", " "});
@@ -543,10 +545,12 @@ void TestSearchModel::testIndexOf() {
 }
 
 void TestSearchModel::testVisibleCards() {
+  // Verfies changing differents filters to check visibleCards
+  // function return the correct number of filtered cards.
   auto typeProxy = new TypeProxyModel();
   typeProxy->setSourceModel(new TypeModel);
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 94);
-
+  // Applies code filter.
   typeProxy->setCodeFilter("01");
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 13);
   typeProxy->setCodeFilter("C01");
@@ -557,11 +561,13 @@ void TestSearchModel::testVisibleCards() {
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 0);
 
   typeProxy->resetFilters();
+  // Applies type filters.
   typeProxy->setTypeFilter("Era X");
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 20);
   typeProxy->setTypeFilter("Era II");
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 20);
 
+  // Applies mixed filters.
   typeProxy->setTypeFilter("Era I");
   typeProxy->setCommandFilter("Objective");
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 5);
