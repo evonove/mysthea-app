@@ -61,6 +61,8 @@ void TypeProxyModel::resetFilters() {
   emit filterChanged();
 }
 
+// We use this function to see all the filtered cards current visible.
+// In this way the swipe view allow us to slice between all filtered cards.
 CardsModel *TypeProxyModel::visibleCards() {
   QVector<Card> cards;
   for (int i = 0; i < rowCount(); i++) {

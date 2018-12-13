@@ -28,7 +28,7 @@ Pane {
             width: parent.width
             spacing: 24
             ColumnLayout {
-                width: parent.width
+                Layout.fillWidth: true
                 spacing: 8
                 RowLayout {
                     width: parent.width
@@ -64,24 +64,22 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
-                            if (root.type == "Hero") {
-                                return "Hero"
-                            } else if (root.type == "Attunement") {
-                                return "Attunement"
+                            if(root.command != ""){
+                                return qsTr("Command")
                             } else {
-                                return "Command"
+                                return root.type
                             }
                         }
                         color: Palette.grayNurse
                     }
                 }
                 RowLayout {
-                    width: parent.width
+                    Layout.fillWidth: true
                     spacing: 12
                     visible: !(root.type === "Hero" || root.type === "Attunement")
 
                     Label {
-                        text: "Era"
+                        text: qsTr("Era")
                         font.pixelSize: 24
                         font.letterSpacing: 0.5
                         font.weight: Font.Bold
