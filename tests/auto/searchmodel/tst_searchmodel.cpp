@@ -532,13 +532,13 @@ void TestSearchModel::testIndexOf() {
   auto cardModel = new CardsModel();
   // create a mock vector of cards.
   QVector<Card> cards;
-  cards.append({"C001", "", "", "", " "});
-  cards.append({"C002", "", "", "", " "});
-  cards.append({"C003", "", "", "", " "});
-  cards.append({"C004", "", "", "", " "});
-  cards.append({"H01", "", "", "", " "});
-  cards.append({"H02", "", "", "", " "});
-  cards.append({"A01", "", "", "", " "});
+  cards.append({"C001", 0, "", "", ""});
+  cards.append({"C002", 0, "", "", " "});
+  cards.append({"C003", 0, "", "", " "});
+  cards.append({"C004", 0, "", "", " "});
+  cards.append({"H01", 0, "", "", " "});
+  cards.append({"H02", 0, "", "", " "});
+  cards.append({"A01", 0, "", "", " "});
   cardModel->setCards(cards);
   QCOMPARE(cardModel->indexOf("C003"), 2);
   QCOMPARE(cardModel->indexOf("X484373738"), -1);

@@ -13,14 +13,16 @@ HEADERS += \
     $$PWD/models/card_data.h \
     $$PWD/models/typemodel.h \
     $$PWD/models/cardsproxymodel.h \
-    $$PWD/models/typeproxymodel.h
+    $$PWD/models/typeproxymodel.h \
+    $$PWD/models/typeslistmodel.h
 
 SOURCES += \
     $$PWD/models/cardsmodel.cpp \
     $$PWD/translationsmanager.cpp \
     $$PWD/models/typemodel.cpp \
     $$PWD/models/cardsproxymodel.cpp \
-    $$PWD/models/typeproxymodel.cpp
+    $$PWD/models/typeproxymodel.cpp \
+    $$PWD/models/typeslistmodel.cpp
 
 lupdate_only{
     SOURCES += \
