@@ -14,8 +14,8 @@ HEADERS += \
     $$PWD/models/typemodel.h \
     $$PWD/models/cardsproxymodel.h \
     $$PWD/models/typeproxymodel.h \
-    $$PWD/models/typeslistmodel.h \
-    $$PWD/models/commandlistmodel.h
+    $$PWD/models/commandcomboboxmodel.h \
+    $$PWD/models/typecomboboxmodel.h
 
 SOURCES += \
     $$PWD/models/cardsmodel.cpp \
@@ -23,8 +23,8 @@ SOURCES += \
     $$PWD/models/typemodel.cpp \
     $$PWD/models/cardsproxymodel.cpp \
     $$PWD/models/typeproxymodel.cpp \
-    $$PWD/models/typeslistmodel.cpp \
-    $$PWD/models/commandlistmodel.cpp
+    $$PWD/models/commandcomboboxmodel.cpp \
+    $$PWD/models/typecomboboxmodel.cpp
 
 lupdate_only{
     SOURCES += \

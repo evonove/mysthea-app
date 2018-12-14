@@ -1,7 +1,7 @@
 #include "typeproxymodel.h"
 #include "cardsmodel.h"
 #include "typemodel.h"
-#include "typeslistmodel.h"
+#include "typecomboboxmodel.h"
 
 #include <QDebug>
 
@@ -97,7 +97,8 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   auto acceptRow = true;
 
   // Gets all roles that can be filtered
-  auto type = model->data(createIndex(source_row, 0), TypeModel::Roles::Type);
+  auto type =
+      model->data(createIndex(source_row, 0), TypeModel::Roles::Type).toInt();
 
   if (m_type == 0 || m_type == type) {
     acceptRow = acceptRow && true;

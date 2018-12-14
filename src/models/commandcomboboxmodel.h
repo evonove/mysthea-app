@@ -1,15 +1,15 @@
-#ifndef COMMANDLISTMODEL_H
-#define COMMANDLISTMODEL_H
+#ifndef COMMANDCOMBOBOXMODEL_H
+#define COMMANDCOMBOBOXMODEL_H
 
 #include <QAbstractListModel>
 #include <QVector>
 
-class CommandListModel : public QAbstractListModel {
+class CommandComboBoxModel : public QAbstractListModel {
   Q_OBJECT
 
 public:
-  CommandListModel(QObject *parent = Q_NULLPTR);
-  ~CommandListModel() Q_DECL_OVERRIDE;
+  CommandComboBoxModel(QObject *parent = Q_NULLPTR);
+  ~CommandComboBoxModel() Q_DECL_OVERRIDE;
 
   enum Roles { Key = Qt::UserRole + 1, Command };
   Q_ENUM(Roles)
@@ -19,10 +19,8 @@ public:
   QVariant data(const QModelIndex &index,
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
 
-  Q_INVOKABLE QString getTypeFromIndex(int index) const;
-
 private:
   QHash<int, QString> m_commands;
 };
 
-#endif // COMMANDLISTMODEL_H
+#endif // COMMANDCOMBOBOXMODEL_H

@@ -106,8 +106,8 @@ Page {
                         id: typeCombo
                         padding: 0
                         textRole: "type"
-                        model: TypesListModel {
-                            id: typeListModel
+                        model: TypeComboBoxModel {
+                            id: typeComboModel
                         }
                         font.letterSpacing: 0
 
@@ -115,9 +115,9 @@ Page {
                         Layout.fillWidth: true
                         onActivated: {
                             typeProxyModel.setTypeFilter(
-                                        typeListModel.data(typeListModel.index(
+                                        typeComboModel.data(typeComboModel.index(
                                                                index, 0),
-                                                           TypesListModel.Key))
+                                                           TypeComboBoxModel.Key))
 
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
@@ -131,8 +131,8 @@ Page {
                         id: commandsCombo
                         padding: 0
                         textRole: "command"
-                        model: CommandListModel {
-                            id: commandListModel
+                        model: CommandComboBoxModel {
+                            id: commandComboModel
                         }
                         font.letterSpacing: 0
 
@@ -143,9 +143,9 @@ Page {
 
                         onActivated: {
                             typeProxyModel.setCommandFilter(
-                                        commandListModel.data(
-                                            commandListModel.index(index, 0),
-                                            CommandListModel.Key))
+                                        commandComboModel.data(
+                                            commandComboModel.index(index, 0),
+                                            CommandComboBoxModel.Key))
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
                                         'positionViewAtBeginning')) {
