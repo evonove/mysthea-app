@@ -22,9 +22,6 @@ struct Card {
 
 Q_DECLARE_METATYPE(Card)
 
-// const QVector<QString> types{
-//    {"Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"}};
-
 const QHash<int, QString> types_map{{1, ERAX_TEXT},  {2, ERAI_TEXT},
                                     {3, ERAII_TEXT}, {4, ERAIII_TEXT},
                                     {5, HERO_TEXT},  {6, ATTUNEMENT_TEXT}};

@@ -14,7 +14,8 @@ Pane {
     background: null
 
     property string code: ""
-    property string type: ""
+    property int type: -1
+    property string typeText: ""
     property string command: ""
     property string image: ""
     property string description: ""
@@ -68,7 +69,7 @@ Pane {
                             if (root.command != "") {
                                 return qsTr("Command")
                             } else {
-                                return root.type
+                                return root.typeText
                             }
                         }
                         color: Palette.grayNurse
@@ -77,10 +78,8 @@ Pane {
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 12
-                    visible: !(root.type === "5"
-                               || root.type === "6")
-//                    visible: !(root.type === "Hero"
-//                               || root.type === "Attunement")
+                    visible: !(root.type === 5
+                               || root.type === 6)
 
                     Label {
                         text: qsTr("Era")
@@ -93,13 +92,13 @@ Pane {
                     Image {
                         fillMode: Image.PreserveAspectFit
                         source: {
-                            if (root.type === "Era X") {
+                            if (root.type === 1) {
                                 return "qrc:/assets/icons/era_x.svg"
-                            } else if (root.type === "Era I") {
+                            } else if (root.type === 2) {
                                 return "qrc:/assets/icons/era_1.svg"
-                            } else if (root.type === "Era II") {
+                            } else if (root.type === 3) {
                                 return "qrc:/assets/icons/era_2.svg"
-                            } else if (root.type === "Era III") {
+                            } else if (root.type === 4) {
                                 return "qrc:/assets/icons/era_3.svg"
                             } else {
                                 return ""
