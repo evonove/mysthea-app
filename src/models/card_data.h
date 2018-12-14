@@ -5,6 +5,13 @@
 #include <QList>
 #include <QString>
 
+static constexpr auto ERAX_TEXT = QT_TR_NOOP("Era X");
+static constexpr auto ERAI_TEXT = QT_TR_NOOP("Era I");
+static constexpr auto ERAII_TEXT = QT_TR_NOOP("Era II");
+static constexpr auto ERAIII_TEXT = QT_TR_NOOP("Era III");
+static constexpr auto HERO_TEXT = QT_TR_NOOP("Hero");
+static constexpr auto ATTUNEMENT_TEXT = QT_TR_NOOP("Attunement");
+
 struct Card {
   QString code;
   int type;
@@ -18,10 +25,9 @@ Q_DECLARE_METATYPE(Card)
 // const QVector<QString> types{
 //    {"Era X", "Era I", "Era II", "Era III", "Hero", "Attunement"}};
 
-const QHash<int, QString> types_map{
-    {1, QT_TR_NOOP("Era X")},  {2, QT_TR_NOOP("Era I")},
-    {3, QT_TR_NOOP("Era II")}, {4, QT_TR_NOOP("Era III")},
-    {5, QT_TR_NOOP("Hero")},   {6, QT_TR_NOOP("Attunement")}};
+const QHash<int, QString> types_map{{1, ERAX_TEXT},  {2, ERAI_TEXT},
+                                    {3, ERAII_TEXT}, {4, ERAIII_TEXT},
+                                    {5, HERO_TEXT},  {6, ATTUNEMENT_TEXT}};
 
 // clang-format off
 const QVector<QVector<Card>> cards_data = {

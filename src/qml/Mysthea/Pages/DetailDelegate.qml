@@ -65,7 +65,6 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
-                            console.log(root.command)
                             if (root.command != "") {
                                 return qsTr("Command")
                             } else {
