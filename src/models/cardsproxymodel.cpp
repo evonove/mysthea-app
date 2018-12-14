@@ -44,7 +44,8 @@ bool CardsProxyModel::filterAcceptsRow(int source_row,
                   .toString();
 
   auto command =
-      model->data(createIndex(source_row, 0), CardsModel::Roles::Command);
+      model->data(createIndex(source_row, 0), CardsModel::Roles::Command)
+          .toInt();
 
   if (m_code.isEmpty() || code.contains(m_code)) {
     acceptRow = acceptRow && true;

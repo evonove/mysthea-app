@@ -1,33 +1,33 @@
-#ifndef TYPESLISTMODEL_CPP
-#define TYPESLISTMODEL_CPP
+#ifndef COMMANDCOMBOBOXMODEL_CPP
+#define COMMANDCOMBOBOXMODEL_CPP
 
-#include "commandlistmodel.h"
+#include "commandcomboboxmodel.h"
 #include "card_data.h"
 
 #include <QDebug>
 #include <QList>
 #include <QVariant>
 
-CommandListModel::CommandListModel(QObject *parent)
+CommandComboBoxModel::CommandComboBoxModel(QObject *parent)
     : QAbstractListModel{parent}, m_commands{{0, ALL_COMMANDS_TEXT},
                                              {1, TACTIC_TEXT},
                                              {2, OBJECTIVE_TEXT},
                                              {3, ACCESSORY_TEXT},
                                              {4, UPGRADE_TEXT}} {}
 
-CommandListModel::~CommandListModel() {}
+CommandComboBoxModel::~CommandComboBoxModel() {}
 
-QHash<int, QByteArray> CommandListModel::roleNames() const {
+QHash<int, QByteArray> CommandComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Key, "key"},
                                 {Roles::Command, "command"}};
 }
 
-int CommandListModel::rowCount(const QModelIndex &parent) const {
+int CommandComboBoxModel::rowCount(const QModelIndex &parent) const {
   Q_UNUSED(parent);
   return m_commands.size();
 }
 
-QVariant CommandListModel::data(const QModelIndex &index, int role) const {
+QVariant CommandComboBoxModel::data(const QModelIndex &index, int role) const {
   auto row = index.row();
   if (row < 0 || row >= m_commands.size()) {
     return QVariant();
@@ -43,8 +43,4 @@ QVariant CommandListModel::data(const QModelIndex &index, int role) const {
   }
 }
 
-QString CommandListModel::getTypeFromIndex(int index) const {
-  return m_commands.value(index);
-}
-
-#endif // TYPESLISTMODEL_CPP
+#endif // COMMANDCOMBOBOXMODEL_CPP

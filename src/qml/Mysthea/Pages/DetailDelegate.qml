@@ -13,13 +13,7 @@ Pane {
     rightPadding: 20
     background: null
 
-    property string code: ""
-    property int type: -1
-    property string typeText: ""
-    property int command: -1
-    property string commandText: ""
-    property string image: ""
-    property string description: ""
+    property CardsModel card: null
 
     Flickable {
         anchors.fill: parent
@@ -37,18 +31,18 @@ Pane {
                     Layout.fillWidth: true
                     spacing: 12
                     Label {
-                        text: root.code
+                        text: code
                         font.pixelSize: 32
                         font.letterSpacing: 0.5
                         font.weight: Font.Bold
                         color: {
-                            if (root.command === 1) {
+                            if (command === 1) {
                                 return Palette.flamingo
-                            } else if (root.command === 2) {
+                            } else if (command === 2) {
                                 return Palette.goldenFizz
-                            } else if (root.command === 3) {
+                            } else if (command === 3) {
                                 return Palette.apple
-                            } else if (root.command === 4) {
+                            } else if (command === 4) {
                                 return Palette.cerulean
                             } else {
                                 return Palette.grayNurse
@@ -67,10 +61,10 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
-                            if (root.command != -1) {
+                            if (command !== -1) {
                                 return qsTr("Command")
                             } else {
-                                return root.typeText
+                                return typeText
                             }
                         }
                         color: Palette.grayNurse
@@ -79,8 +73,7 @@ Pane {
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 12
-                    visible: !(root.type === 5
-                               || root.type === 6)
+                    visible: !(type === 5 || type === 6)
 
                     Label {
                         text: qsTr("Era")
@@ -93,13 +86,13 @@ Pane {
                     Image {
                         fillMode: Image.PreserveAspectFit
                         source: {
-                            if (root.type === 1) {
+                            if (type === 1) {
                                 return "qrc:/assets/icons/era_x.svg"
-                            } else if (root.type === 2) {
+                            } else if (type === 2) {
                                 return "qrc:/assets/icons/era_1.svg"
-                            } else if (root.type === 3) {
+                            } else if (type === 3) {
                                 return "qrc:/assets/icons/era_2.svg"
-                            } else if (root.type === 4) {
+                            } else if (type === 4) {
                                 return "qrc:/assets/icons/era_3.svg"
                             } else {
                                 return ""
@@ -116,13 +109,13 @@ Pane {
                     Image {
                         fillMode: Image.PreserveAspectFit
                         source: {
-                            if (root.command === 1) {
+                            if (command === 1) {
                                 return "qrc:/assets/icons/tactic.svg"
-                            } else if (root.command === 2) {
+                            } else if (command === 2) {
                                 return "qrc:/assets/icons/objective.svg"
-                            } else if (root.command === 3) {
+                            } else if (command === 3) {
                                 return "qrc:/assets/icons/accessory.svg"
-                            } else if (root.command === 4) {
+                            } else if (command === 4) {
                                 return "qrc:/assets/icons/upgrade.svg"
                             } else {
                                 return ""
@@ -131,7 +124,7 @@ Pane {
                     }
 
                     Label {
-                        text: root.commandText
+                        text: commandText
                         font.pixelSize: 24
                         font.letterSpacing: 0.5
                         font.weight: Font.Bold
@@ -141,7 +134,7 @@ Pane {
             }
 
             Label {
-                text: root.description
+                text: description
                 font.pixelSize: 24
                 font.letterSpacing: 0.5
                 color: Palette.grayNurse

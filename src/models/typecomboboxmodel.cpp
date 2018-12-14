@@ -1,31 +1,31 @@
-#ifndef TYPESLISTMODEL_CPP
-#define TYPESLISTMODEL_CPP
+#ifndef TYPECOMBOBOXMODEL_CPP
+#define TYPECOMBOBOXMODEL_CPP
 
-#include "typeslistmodel.h"
+#include "typecomboboxmodel.h"
 #include "card_data.h"
 
 #include <QDebug>
 #include <QList>
 #include <QVariant>
 
-TypesListModel::TypesListModel(QObject *parent)
+TypeComboBoxModel::TypeComboBoxModel(QObject *parent)
     : QAbstractListModel{parent}, m_types{{0, ALL_TYPES_TEXT}, {1, ERAX_TEXT},
                                           {2, ERAI_TEXT},      {3, ERAII_TEXT},
                                           {4, ERAIII_TEXT},    {5, HERO_TEXT},
                                           {6, ATTUNEMENT_TEXT}} {}
 
-TypesListModel::~TypesListModel() {}
+TypeComboBoxModel::~TypeComboBoxModel() {}
 
-QHash<int, QByteArray> TypesListModel::roleNames() const {
+QHash<int, QByteArray> TypeComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Key, "key"}, {Roles::Type, "type"}};
 }
 
-int TypesListModel::rowCount(const QModelIndex &parent) const {
+int TypeComboBoxModel::rowCount(const QModelIndex &parent) const {
   Q_UNUSED(parent);
   return m_types.size();
 }
 
-QVariant TypesListModel::data(const QModelIndex &index, int role) const {
+QVariant TypeComboBoxModel::data(const QModelIndex &index, int role) const {
   auto row = index.row();
   if (row < 0 || row >= m_types.size()) {
     return QVariant();
@@ -41,8 +41,8 @@ QVariant TypesListModel::data(const QModelIndex &index, int role) const {
   }
 }
 
-QString TypesListModel::getTypeFromIndex(int index) const {
+QString TypeComboBoxModel::getTypeFromIndex(int index) const {
   return m_types.value(index);
 }
 
-#endif // TYPESLISTMODEL_CPP
+#endif // TYPECOMBOBOXMODEL_CPP

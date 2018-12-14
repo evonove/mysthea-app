@@ -1,15 +1,15 @@
-#ifndef TYPESLISTMODEL_H
-#define TYPESLISTMODEL_H
+#ifndef TYPECOMBOBOXMODEL_H
+#define TYPECOMBOBOXMODEL_H
 
 #include <QAbstractListModel>
 #include <QVector>
 
-class TypesListModel : public QAbstractListModel {
+class TypeComboBoxModel : public QAbstractListModel {
   Q_OBJECT
 
 public:
-  TypesListModel(QObject *parent = Q_NULLPTR);
-  ~TypesListModel() Q_DECL_OVERRIDE;
+  TypeComboBoxModel(QObject *parent = Q_NULLPTR);
+  ~TypeComboBoxModel() Q_DECL_OVERRIDE;
 
   enum Roles { Key = Qt::UserRole + 1, Type };
   Q_ENUM(Roles)
@@ -25,4 +25,4 @@ private:
   QHash<int, QString> m_types;
 };
 
-#endif // TYPESLISTMODEL_H
+#endif // TYPECOMBOBOXMODEL_H
