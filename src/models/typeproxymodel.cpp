@@ -18,6 +18,8 @@ void TypeProxyModel::setTypeFilter(int type) {
     m_type = type;
     emit enableCommandChanged();
     if (type == 5 || type == 6) {
+      invalidateFilter();
+      emit filterChanged();
       setCommandFilter("All commands");
       return;
     }
