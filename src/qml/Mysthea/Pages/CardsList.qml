@@ -96,13 +96,13 @@ ListView {
                             font.pixelSize: 24
 
                             color: {
-                                if (command === "Tactic") {
+                                if (command === 1) {
                                     return Palette.flamingo
-                                } else if (command === "Objective") {
+                                } else if (command === 2) {
                                     return Palette.goldenFizz
-                                } else if (command === "Accessory") {
+                                } else if (command === 3) {
                                     return Palette.apple
-                                } else if (command === "Upgrade") {
+                                } else if (command === 4) {
                                     return Palette.cerulean
                                 } else {
                                     return Palette.white

@@ -221,7 +221,7 @@ void TestSearchModel::testCommandFilter() {
 
   // Applies various Color filters and verifies expected number of rows is
   //  shown
-  typeProxy->setCommandFilter("All commands");
+  typeProxy->setCommandFilter(0);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
   auto cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                         .value<CardsProxyModel *>();
@@ -277,7 +277,7 @@ void TestSearchModel::testCommandFilter() {
   type = typeProxy->data(typeProxy->index(5, 0), TypeModel::Type);
   QCOMPARE(type, 6);
 
-  typeProxy->setCommandFilter("Tactic");
+  typeProxy->setCommandFilter(1);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
@@ -315,7 +315,7 @@ void TestSearchModel::testCommandFilter() {
   type = typeProxy->data(typeProxy->index(3, 0), TypeModel::Type);
   QCOMPARE(type, 4);
 
-  typeProxy->setCommandFilter("Objective");
+  typeProxy->setCommandFilter(2);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
@@ -351,7 +351,7 @@ void TestSearchModel::testCommandFilter() {
   type = typeProxy->data(typeProxy->index(3, 0), TypeModel::Type);
   QCOMPARE(type, 4);
 
-  typeProxy->setCommandFilter("Accessory");
+  typeProxy->setCommandFilter(3);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
@@ -379,7 +379,7 @@ void TestSearchModel::testCommandFilter() {
       typeProxy->data(typeProxy->index(3, 0), TypeModel::TypeText).toString();
   QCOMPARE(typeText, "Era III");
 
-  typeProxy->setCommandFilter("Upgrade");
+  typeProxy->setCommandFilter(4);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 4);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
@@ -407,32 +407,32 @@ void TestSearchModel::testMixedFilters() {
   QCOMPARE(typeText, "Hero");
   auto type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
-  typeProxy->setCommandFilter("");
+  typeProxy->setCommandFilter(-1);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   auto cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                         .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 4);
 
   typeProxy->setTypeFilter(4);
-  typeProxy->setCommandFilter("Tactic");
+  typeProxy->setCommandFilter(1);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 5);
 
   typeProxy->setTypeFilter(5);
-  typeProxy->setCommandFilter("Tactic");
+  typeProxy->setCommandFilter(1);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 0);
 
   typeProxy->setTypeFilter(6);
-  typeProxy->setCommandFilter("");
+  typeProxy->setCommandFilter(-1);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 10);
 
   typeProxy->setTypeFilter(0);
-  typeProxy->setCommandFilter("All commands");
+  typeProxy->setCommandFilter(0);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
@@ -634,13 +634,13 @@ void TestSearchModel::testIndexOf() {
   auto cardModel = new CardsModel();
   // create a mock vector of cards.
   QVector<Card> cards;
-  cards.append({"C001", 0, "", "", ""});
-  cards.append({"C002", 0, "", "", " "});
-  cards.append({"C003", 0, "", "", " "});
-  cards.append({"C004", 0, "", "", " "});
-  cards.append({"H01", 0, "", "", " "});
-  cards.append({"H02", 0, "", "", " "});
-  cards.append({"A01", 0, "", "", " "});
+  cards.append({"C001", 0, -1, "", ""});
+  cards.append({"C002", 0, -1, "", " "});
+  cards.append({"C003", 0, -1, "", " "});
+  cards.append({"C004", 0, -1, "", " "});
+  cards.append({"H01", 0, -1, "", " "});
+  cards.append({"H02", 0, -1, "", " "});
+  cards.append({"A01", 0, -1, "", " "});
   cardModel->setCards(cards);
   QCOMPARE(cardModel->indexOf("C003"), 2);
   QCOMPARE(cardModel->indexOf("X484373738"), -1);
@@ -671,11 +671,11 @@ void TestSearchModel::testVisibleCards() {
 
   // Applies mixed filters.
   typeProxy->setTypeFilter(2);
-  typeProxy->setCommandFilter("Objective");
+  typeProxy->setCommandFilter(2);
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 5);
 
   typeProxy->setTypeFilter(5);
-  typeProxy->setCommandFilter("All commands");
+  typeProxy->setCommandFilter(0);
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 4);
   typeProxy->setCodeFilter("01");
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 1);

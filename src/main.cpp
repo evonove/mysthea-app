@@ -7,6 +7,7 @@
 #endif
 
 #include "models/cardsmodel.h"
+#include "models/commandlistmodel.h"
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"
 #include "models/typeslistmodel.h"
@@ -44,6 +45,7 @@ int main(int argc, char *argv[]) {
                                          "CardsModel cannot be created");
 
   qmlRegisterType<TypesListModel>("Mysthea.Models", 1, 0, "TypesListModel");
+  qmlRegisterType<CommandListModel>("Mysthea.Models", 1, 0, "CommandListModel");
 
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));

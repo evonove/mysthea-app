@@ -130,7 +130,10 @@ Page {
                     ComboBox {
                         id: commandsCombo
                         padding: 0
-                        model: ["All commands", "Tactic", "Objective", "Accessory", "Upgrade"]
+                        textRole: "command"
+                        model: CommandListModel {
+                            id: commandListModel
+                        }
                         font.letterSpacing: 0
 
                         enabled: typeProxyModel.enableCommand
@@ -139,7 +142,10 @@ Page {
                         Layout.fillWidth: true
 
                         onActivated: {
-                            typeProxyModel.setCommandFilter(model[index])
+                            typeProxyModel.setCommandFilter(
+                                        commandListModel.data(
+                                            commandListModel.index(index, 0),
+                                            CommandListModel.Key))
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(
                                         'positionViewAtBeginning')) {

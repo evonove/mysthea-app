@@ -14,7 +14,7 @@ public:
 
   Q_INVOKABLE void setTypeFilter(int type);
   Q_INVOKABLE void setCodeFilter(QString code);
-  Q_INVOKABLE void setCommandFilter(QString command);
+  Q_INVOKABLE void setCommandFilter(int command);
   Q_INVOKABLE void resetFilters();
   Q_INVOKABLE CardsModel *visibleCards();
 
@@ -28,7 +28,7 @@ signals:
 private:
   int m_type;
   QString m_code;
-  QString m_command;
+  int m_command;
   CardsModel *m_visibleCardsModel;
 };
 

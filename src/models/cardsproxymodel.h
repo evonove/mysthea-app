@@ -9,7 +9,7 @@ public:
   CardsProxyModel(QObject *parent = Q_NULLPTR);
 
   Q_INVOKABLE void setCodeFilter(QString code);
-  Q_INVOKABLE void setCommandFilter(QString command);
+  Q_INVOKABLE void setCommandFilter(int command);
   Q_INVOKABLE void resetFilters();
 
   bool filterAcceptsRow(int source_row,
@@ -19,7 +19,7 @@ signals:
 
 private:
   QString m_code;
-  QString m_command;
+  int m_command;
 };
 
 #endif // CARDSPROXYMODEL_H
