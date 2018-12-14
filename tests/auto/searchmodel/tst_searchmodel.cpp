@@ -215,17 +215,20 @@ void TestSearchModel::testTypeFilter() {
 }
 
 void TestSearchModel::testCommandFilter() {
-  // Verifies that changing only Color to filter rows are filtered correctly
+  // Verifies that changing only Commands to filter rows are filtered correctly
   auto typeProxy = new TypeProxyModel();
   typeProxy->setSourceModel(new TypeModel);
 
-  // Applies various Color filters and verifies expected number of rows is
+  // Applies various Commands filters and verifies expected number of rows is
   //  shown
   typeProxy->setCommandFilter(0);
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
   auto cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                         .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 20);
+  cardsModel->setCommandFilter(1);
+  auto commandCards = cardsModel->rowCount();
+  QCOMPARE(commandCards, 5);
   auto typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
   QCOMPARE(typeText, "Era X");
@@ -393,6 +396,31 @@ void TestSearchModel::testCommandFilter() {
   cardsModel = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 5);
+
+  // check cardsModel command filter
+  cardsModel->setCommandFilter(1);
+  auto commandText =
+      cardsModel->data(cardsModel->index(0, 0), CardsModel::CommandText)
+          .toString();
+  QCOMPARE(commandText, "Tactic");
+
+  cardsModel->setCommandFilter(2);
+  commandText =
+      cardsModel->data(cardsModel->index(0, 0), CardsModel::CommandText)
+          .toString();
+  QCOMPARE(commandText, "Objective");
+
+  cardsModel->setCommandFilter(3);
+  commandText =
+      cardsModel->data(cardsModel->index(0, 0), CardsModel::CommandText)
+          .toString();
+  QCOMPARE(commandText, "Accessory");
+
+  cardsModel->setCommandFilter(4);
+  commandText =
+      cardsModel->data(cardsModel->index(0, 0), CardsModel::CommandText)
+          .toString();
+  QCOMPARE(commandText, "Upgrade");
 }
 
 void TestSearchModel::testMixedFilters() {
@@ -419,6 +447,10 @@ void TestSearchModel::testMixedFilters() {
   cardsModel = typeProxy->data(typeProxy->index(0, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 5);
+  auto commandText =
+      cardsModel->data(cardsModel->index(0, 0), CardsModel::CommandText)
+          .toString();
+  QCOMPARE(commandText, "Tactic");
 
   typeProxy->setTypeFilter(5);
   typeProxy->setCommandFilter(1);
