@@ -59,7 +59,6 @@ ApplicationWindow {
                 onBackClicked: _mainStackView.pop()
                 onCardClicked: _mainStackView.push(_detailPage, {
                                                        "model": cards,
-                                                       "typeText": typeText,
                                                        "index": index
                                                    })
             }
