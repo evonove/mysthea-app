@@ -79,7 +79,6 @@ Page {
                         || SwipeView.isNextItem
                 asynchronous: true
                 sourceComponent: DetailDelegate {
-                    card: root.model
                 }
             }
         }

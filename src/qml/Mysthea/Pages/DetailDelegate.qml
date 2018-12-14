@@ -13,8 +13,9 @@ Pane {
     rightPadding: 20
     background: null
 
-    property CardsModel card: null
 
+    //Since DetailDelegate is used in a Repeater it can access to its CardsModel. So we use CardsModel's roles
+    //to access a card data.
     Flickable {
         anchors.fill: parent
         contentHeight: _layout.height
