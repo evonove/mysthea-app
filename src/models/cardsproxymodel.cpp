@@ -4,7 +4,7 @@
 #include <QDebug>
 
 CardsProxyModel::CardsProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_code{""}, m_command{"All commands"} {}
+    : QSortFilterProxyModel(parent), m_code{""}, m_command{0} {}
 
 void CardsProxyModel::setCodeFilter(QString code) {
   code = code.toUpper();
@@ -15,7 +15,7 @@ void CardsProxyModel::setCodeFilter(QString code) {
   }
 }
 
-void CardsProxyModel::setCommandFilter(QString command) {
+void CardsProxyModel::setCommandFilter(int command) {
   if (m_command != command) {
     m_command = command;
     invalidateFilter();
@@ -25,7 +25,7 @@ void CardsProxyModel::setCommandFilter(QString command) {
 
 void CardsProxyModel::resetFilters() {
   m_code = QString("");
-  m_command = QString("All commands");
+  m_command = 0;
   invalidateFilter();
   emit filterChanged();
 }
@@ -44,8 +44,7 @@ bool CardsProxyModel::filterAcceptsRow(int source_row,
                   .toString();
 
   auto command =
-      model->data(createIndex(source_row, 0), CardsModel::Roles::Command)
-          .toString();
+      model->data(createIndex(source_row, 0), CardsModel::Roles::Command);
 
   if (m_code.isEmpty() || code.contains(m_code)) {
     acceptRow = acceptRow && true;
@@ -53,7 +52,7 @@ bool CardsProxyModel::filterAcceptsRow(int source_row,
     acceptRow = acceptRow && false;
   }
 
-  if (m_command == "All commands" || m_command == command) {
+  if (m_command == 0 || m_command == command) {
     acceptRow = acceptRow && true;
   } else {
     acceptRow = acceptRow && false;

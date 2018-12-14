@@ -2,20 +2,17 @@
 #define TYPESLISTMODEL_CPP
 
 #include "typeslistmodel.h"
+#include "card_data.h"
 
 #include <QDebug>
 #include <QList>
 #include <QVariant>
 
-TypesListModel::TypesListModel(QObject *parent) : QAbstractListModel{parent} {
-  m_types.insert(0, "All types");
-  m_types.insert(1, "Era X");
-  m_types.insert(2, "Era I");
-  m_types.insert(3, "Era II");
-  m_types.insert(4, "Era III");
-  m_types.insert(5, "Hero");
-  m_types.insert(6, "Attunement");
-}
+TypesListModel::TypesListModel(QObject *parent)
+    : QAbstractListModel{parent}, m_types{{0, ALL_TYPES_TEXT}, {1, ERAX_TEXT},
+                                          {2, ERAI_TEXT},      {3, ERAII_TEXT},
+                                          {4, ERAIII_TEXT},    {5, HERO_TEXT},
+                                          {6, ATTUNEMENT_TEXT}} {}
 
 TypesListModel::~TypesListModel() {}
 

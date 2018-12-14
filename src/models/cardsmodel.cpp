@@ -9,11 +9,14 @@ CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
 CardsModel::CardsModel(QObject *parent) : QAbstractListModel{parent} {}
 
 QHash<int, QByteArray> CardsModel::roleNames() const {
-  return QHash<int, QByteArray>{
-      {Roles::Code, "code"},         {Roles::Type, "type"},
-      {Roles::TypeText, "typeText"}, {Roles::Command, "command"},
-      {Roles::Image, "image"},       {Roles::Description, "description"},
-      {Roles::CardRole, "card"}};
+  return QHash<int, QByteArray>{{Roles::Code, "code"},
+                                {Roles::Type, "type"},
+                                {Roles::TypeText, "typeText"},
+                                {Roles::Command, "command"},
+                                {Roles::CommandText, "commandText"},
+                                {Roles::Image, "image"},
+                                {Roles::Description, "description"},
+                                {Roles::CardRole, "card"}};
 }
 
 int CardsModel::rowCount(const QModelIndex &parent) const {
@@ -36,6 +39,8 @@ QVariant CardsModel::data(const QModelIndex &index, int role) const {
     return types_map.value(m_cards.at(row).type);
   case Roles::Command:
     return m_cards.at(row).command;
+  case Roles::CommandText:
+    return commands_map.value(m_cards.at(row).command);
   case Roles::Image:
     return m_cards.at(row).image;
   case Roles::Description:

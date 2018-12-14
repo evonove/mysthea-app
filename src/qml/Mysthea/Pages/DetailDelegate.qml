@@ -16,7 +16,8 @@ Pane {
     property string code: ""
     property int type: -1
     property string typeText: ""
-    property string command: ""
+    property int command: -1
+    property string commandText: ""
     property string image: ""
     property string description: ""
 
@@ -41,13 +42,13 @@ Pane {
                         font.letterSpacing: 0.5
                         font.weight: Font.Bold
                         color: {
-                            if (root.command === "Tactic") {
+                            if (root.command === 1) {
                                 return Palette.flamingo
-                            } else if (root.command === "Objective") {
+                            } else if (root.command === 2) {
                                 return Palette.goldenFizz
-                            } else if (root.command === "Accessory") {
+                            } else if (root.command === 3) {
                                 return Palette.apple
-                            } else if (root.command === "Upgrade") {
+                            } else if (root.command === 4) {
                                 return Palette.cerulean
                             } else {
                                 return Palette.grayNurse
@@ -66,7 +67,7 @@ Pane {
                         font.letterSpacing: 0.5
 
                         text: {
-                            if (root.command != "") {
+                            if (root.command != -1) {
                                 return qsTr("Command")
                             } else {
                                 return root.typeText
@@ -115,13 +116,13 @@ Pane {
                     Image {
                         fillMode: Image.PreserveAspectFit
                         source: {
-                            if (root.command === "Tactic") {
+                            if (root.command === 1) {
                                 return "qrc:/assets/icons/tactic.svg"
-                            } else if (root.command === "Objective") {
+                            } else if (root.command === 2) {
                                 return "qrc:/assets/icons/objective.svg"
-                            } else if (root.command === "Accessory") {
+                            } else if (root.command === 3) {
                                 return "qrc:/assets/icons/accessory.svg"
-                            } else if (root.command === "Upgrade") {
+                            } else if (root.command === 4) {
                                 return "qrc:/assets/icons/upgrade.svg"
                             } else {
                                 return ""
@@ -130,7 +131,7 @@ Pane {
                     }
 
                     Label {
-                        text: root.command
+                        text: root.commandText
                         font.pixelSize: 24
                         font.letterSpacing: 0.5
                         font.weight: Font.Bold

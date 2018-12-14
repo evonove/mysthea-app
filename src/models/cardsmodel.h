@@ -17,6 +17,7 @@ public:
     Type,
     TypeText,
     Command,
+    CommandText,
     Image,
     Description,
     CardRole

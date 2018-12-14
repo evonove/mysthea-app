@@ -83,6 +83,7 @@ Page {
                     type: model.type
                     typeText: model.typeText
                     command: model.command
+                    commandText: model.commandText
                     image: model.image
                     description: model.description
                 }

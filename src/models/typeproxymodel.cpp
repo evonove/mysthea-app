@@ -6,8 +6,8 @@
 #include <QDebug>
 
 TypeProxyModel::TypeProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_type{0}, m_code{""},
-      m_command{"All commands"}, m_visibleCardsModel{new CardsModel} {
+    : QSortFilterProxyModel(parent), m_type{0}, m_code{""}, m_command{0},
+      m_visibleCardsModel{new CardsModel} {
   setSourceModel(new TypeModel);
 }
 
@@ -20,7 +20,7 @@ void TypeProxyModel::setTypeFilter(int type) {
     if (type == 5 || type == 6) {
       invalidateFilter();
       emit filterChanged();
-      setCommandFilter("All commands");
+      setCommandFilter(0);
       return;
     }
     invalidateFilter();
@@ -43,10 +43,11 @@ void TypeProxyModel::setCodeFilter(QString code) {
   }
 }
 
-void TypeProxyModel::setCommandFilter(QString command) {
+void TypeProxyModel::setCommandFilter(int command) {
   if (m_command != command) {
     auto model = static_cast<TypeModel *>(sourceModel());
     m_command = command;
+
     for (int i = 0; i < model->rowCount(); i++) {
       model->data(createIndex(i, 0), TypeModel::Roles::Cards)
           .value<CardsProxyModel *>()
