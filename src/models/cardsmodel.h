@@ -15,6 +15,7 @@ public:
   enum Roles {
     Code = Qt::UserRole + 1,
     Type,
+    TypeText,
     Command,
     Image,
     Description,
