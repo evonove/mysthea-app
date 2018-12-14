@@ -10,6 +10,7 @@ Page {
 
     signal backClicked
     property CardsModel model: null
+    property string typeText: ""
     property int index: -1
 
     padding: 0
@@ -82,6 +83,7 @@ Page {
                 sourceComponent: DetailDelegate {
                     code: model.code
                     type: model.type
+                    typeText: root.typeText
                     command: model.command
                     image: model.image
                     description: model.description
