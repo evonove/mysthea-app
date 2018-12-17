@@ -11,7 +11,7 @@ Page {
                                          root.currentIndex)
 
     property bool hasToolbarLine: false
-    property Action leftAction: null
+    property Action leftAction
     property list<Action> rightActions: [
         Action {
             id: beforeAction
