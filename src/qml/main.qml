@@ -8,6 +8,7 @@ import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
 
 ApplicationWindow {
+    id: root
     visible: true
     width: 375
     height: 667
@@ -16,6 +17,68 @@ ApplicationWindow {
     font.family: "Yanone Kaffeesatz"
     font.pixelSize: 18
     Material.accent: Palette.maroonFlush
+
+    Action {
+        id: drawerAction
+        text: Icon.menu
+        onTriggered: console.log("drawer clicked.")
+    }
+
+    Action {
+        id: backAction
+        text: Icon.back
+        onTriggered: _mainStackView.pop()
+    }
+
+    ToolBar {
+        id: toolbar
+        padding: 0
+        z: 2
+        width: parent.width
+        height: 56
+        position: ToolBar.Header
+
+        background: Rectangle {
+            //TODO: not visible in main and card reference page
+            visible: false
+            anchors.bottom: parent.bottom
+            width: parent.width
+            height: 0.5
+            color: Palette.white
+            opacity: 0.5
+        }
+        ToolButton {
+            id: toolButton
+            height: parent.height
+            font.pixelSize: 24
+            font.family: "Material Icons"
+            action: _mainStackView.currentItem.leftAction
+        }
+        RowLayout {
+            anchors.fill: parent
+            Label {
+                id: label
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                anchors.topMargin: 16
+                text: _mainStackView.currentItem.title
+                font.pixelSize: 20
+                font.letterSpacing: 0.5
+                horizontalAlignment: Qt.AlignHCenter
+                verticalAlignment: Qt.AlignVCenter
+            }
+
+            Repeater {
+                model: _mainStackView.currentItem.rightActions
+                ToolButton {
+                    height: parent.height
+                    font.pixelSize: 24
+                    font.family: "Material Icons"
+                    action: modelData
+                }
+            }
+        }
+    }
 
     // Loads Material icons font
     FontLoader {
@@ -31,7 +94,6 @@ ApplicationWindow {
     StackView {
         id: _mainStackView
         anchors.fill: parent
-
         focus: true
 
         // Handles click of back button by popping current page from StackView

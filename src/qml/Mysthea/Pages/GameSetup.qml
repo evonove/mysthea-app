@@ -6,6 +6,9 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
+    title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr(
+                                         "Wizard %1 of 3").arg(
+                                         root.currentIndex)
 
     signal backClicked
 
@@ -13,58 +16,32 @@ Page {
 
     property alias currentIndex: _swipeView.currentIndex
 
-    header: ToolBar {
-        RowLayout {
-            anchors.fill: parent
-
-            ToolButton {
-                text: Icon.back
-                font.pixelSize: 22
-                font.family: "Material Icons"
-
-                onClicked: {
-                    root.backClicked()
-                }
+    property Action leftAction: drawerAction
+    property list<Action> rightActions: [
+        Action {
+            id: beforeAction
+            text: Icon.navigateBefore
+            onTriggered: {
+                console.log("before pressed")
+                root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
+                                            ) : root.currentIndex = 0
             }
-
-            Text {
-                text: root.currentIndex === 0 ? qsTr("Game Setup") : qsTr(
-                                                    "Wizard %1 of 3").arg(
-                                                    root.currentIndex)
-                font.pixelSize: 16
-                color: "white"
+        },
+        Action {
+            id: nextAction
+            text: Icon.navigateNext
+            onTriggered: {
+                console.log("next pressed")
+                root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
+                                            ) : root.currentIndex = 3
             }
-
-            Item {
-                Layout.fillWidth: true
-            }
-
-            ToolButton {
-                text: Icon.navigateBefore
-                font.pixelSize: 22
-                font.family: "Material Icons"
-
-                onClicked: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
-                                                       ) : root.currentIndex = 0
-            }
-
-            ToolButton {
-                text: Icon.navigateNext
-                font.pixelSize: 22
-                font.family: "Material Icons"
-                onClicked: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
-                                                       ) : root.currentIndex = 3
-            }
-
-            ToolButton {
-                text: Icon.apps
-                font.pixelSize: 22
-                font.family: "Material Icons"
-
-                onClicked: root.currentIndex = 0
-            }
+        },
+        Action {
+            id: mainAction
+            text: Icon.apps
+            onTriggered: root.currentIndex = 0
         }
-    }
+    ]
 
     background: Image {
         source: "qrc:/images/background.png"

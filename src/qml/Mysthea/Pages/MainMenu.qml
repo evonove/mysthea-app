@@ -8,6 +8,7 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
+    property var leftAction: drawerAction
 
     signal cardsReferenceClicked
     signal gameSetupClicked
@@ -28,26 +29,6 @@ Page {
             anchors.fill: parent
             color: Palette.mineShaft
             opacity: 0.29
-        }
-    }
-
-    ToolBar {
-        id: toolbar
-        z: 2
-        width: parent.width
-        height: 56
-        position: ToolBar.Header
-        background: null
-
-        ToolButton {
-            id: toolButton
-            height: parent.height
-            text: Icon.menu
-            Material.foreground: Palette.white
-            font.pixelSize: 24
-            font.family: "Material Icons"
-
-            onClicked: console.log("drawer menu button clicked")
         }
     }
 
