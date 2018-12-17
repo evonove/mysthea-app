@@ -8,10 +8,8 @@ Page {
     id: root
 
     title: "CREDITS"
-    property var leftAction: backAction
+    property Action leftAction: null
     property bool hasToolbarLine: false
-
-    signal backClicked
 
     padding: 16
 

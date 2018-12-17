@@ -11,7 +11,7 @@ Page {
                                          root.currentIndex)
 
     property bool hasToolbarLine: false
-    property Action leftAction: drawerAction
+    property Action leftAction: null
     property list<Action> rightActions: [
         Action {
             id: beforeAction
@@ -33,8 +33,6 @@ Page {
     ]
 
     property alias currentIndex: _swipeView.currentIndex
-
-    signal backClicked
 
     padding: 8
     background: Image {

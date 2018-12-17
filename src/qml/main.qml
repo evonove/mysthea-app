@@ -95,6 +95,10 @@ ApplicationWindow {
         anchors.fill: parent
         focus: true
 
+        background: Rectangle {
+            color: Palette.mineShaft
+        }
+
         // Handles click of back button by popping current page from StackView
         Keys.onPressed: {
             if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
@@ -106,6 +110,7 @@ ApplicationWindow {
         }
 
         initialItem: MainMenu {
+            leftAction: drawerAction
             onCardsReferenceClicked: _mainStackView.push(_cardReference)
             onGameSetupClicked: _mainStackView.push(_gameSetup)
             onRulesbookClicked: _mainStackView.push(_rulebook)
@@ -117,7 +122,7 @@ ApplicationWindow {
         Component {
             id: _cardReference
             CardsReferencePage {
-                onBackClicked: _mainStackView.pop()
+                leftAction: drawerAction
                 onCardClicked: _mainStackView.push(_detailPage, {
                                                        "model": cards,
                                                        "index": index
@@ -127,42 +132,42 @@ ApplicationWindow {
         Component {
             id: _detailPage
             DetailPage {
-                onBackClicked: _mainStackView.pop()
+                leftAction: backAction
             }
         }
 
         Component {
             id: _gameSetup
             GameSetup {
-                onBackClicked: _mainStackView.pop()
+                leftAction: drawerAction
             }
         }
 
         Component {
             id: _rulebook
             Rulebook {
-                onBackClicked: _mainStackView.pop()
+                leftAction: backAction
             }
         }
 
         Component {
             id: _lore
             Lore {
-                onBackClicked: _mainStackView.pop()
+                leftAction: backAction
             }
         }
 
         Component {
             id: _language
             Language {
-                onBackClicked: _mainStackView.pop()
+                leftAction: backAction
             }
         }
 
         Component {
             id: _credits
             Credits {
-                onBackClicked: _mainStackView.pop()
+                leftAction: backAction
             }
         }
     }

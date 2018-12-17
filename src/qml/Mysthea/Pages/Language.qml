@@ -8,10 +8,8 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     title: "LANGUAGE"
-    property var leftAction: backAction
+    property Action leftAction: null
     property bool hasToolbarLine: false
-
-    signal backClicked
 
     padding: 8
 

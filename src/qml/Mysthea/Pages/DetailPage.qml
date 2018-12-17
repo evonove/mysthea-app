@@ -8,13 +8,11 @@ import Mysthea.Models 1.0
 Page {
     id: root
     title: "CARD DETAIL"
-    property var leftAction: backAction
+    property Action leftAction: null
     property bool hasToolbarLine: true
 
     property CardsModel model: null
     property int index: -1
-
-    signal backClicked
 
     padding: 0
     background: Image {
