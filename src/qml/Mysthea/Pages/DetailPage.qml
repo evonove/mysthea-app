@@ -7,7 +7,7 @@ import Mysthea.Models 1.0
 
 Page {
     id: root
-    title: "CARD DETAIL"
+    title: qsTr("CARD DETAIL")
     property Action leftAction: null
     property bool hasToolbarLine: true
 

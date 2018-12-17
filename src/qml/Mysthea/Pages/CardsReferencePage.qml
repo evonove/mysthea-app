@@ -10,7 +10,7 @@ import Mysthea.Models 1.0
 
 Page {
     id: root
-    title: "CARDS REFERENCE"
+    title: qsTr("CARDS REFERENCE")
     property Action leftAction: null
     property bool hasToolbarLine: false
 

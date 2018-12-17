@@ -7,7 +7,7 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
-    title: "LANGUAGE"
+    title: qsTr("LANGUAGE")
     property Action leftAction: null
     property bool hasToolbarLine: false
 

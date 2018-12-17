@@ -7,7 +7,7 @@ import Mysthea.Theme 1.0
 Page {
     id: root
 
-    title: "CREDITS"
+    title: qsTr("CREDITS")
     property Action leftAction: null
     property bool hasToolbarLine: false
 

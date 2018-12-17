@@ -5,7 +5,7 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
-    title: "LORE"
+    title: qsTr("LORE")
     property Action leftAction: null
     property bool hasToolbarLine: false
 
