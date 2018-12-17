@@ -11,11 +11,11 @@ import Mysthea.Models 1.0
 Page {
     id: root
     title: "CARDS REFERENCE"
-    property var leftAction: drawerAction
+    property Action leftAction: null
     property bool hasToolbarLine: false
 
+
     signal cardClicked(CardsModel cards, int index)
-    signal backClicked
 
     TypeProxyModel {
         id: typeProxyModel

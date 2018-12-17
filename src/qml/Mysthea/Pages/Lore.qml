@@ -6,10 +6,8 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     title: "LORE"
-    property var leftAction: backAction
+    property Action leftAction: null
     property bool hasToolbarLine: false
-
-    signal backClicked
 
     background: Image {
         source: "qrc:/images/background.png"

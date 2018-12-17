@@ -8,7 +8,7 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
-    property var leftAction: drawerAction
+    property Action leftAction: null
     property bool hasToolbarLine: false
 
     signal cardsReferenceClicked
