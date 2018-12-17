@@ -8,6 +8,7 @@ Page {
     id: root
     title: "RULEBOOK"
     property var leftAction: backAction
+    property bool hasToolbarLine: false
 
     signal backClicked
 

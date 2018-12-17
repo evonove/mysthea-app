@@ -7,22 +7,13 @@ import Mysthea.Theme 1.0
 Page {
     id: root
 
+    title: "CREDITS"
+    property var leftAction: backAction
+    property bool hasToolbarLine: false
+
     signal backClicked
 
     padding: 16
-    header: ToolBar {
-
-        // Back button shown only if there is more than a page in the StackView
-        ToolButton {
-            text: Icon.back
-            font.pixelSize: 22
-            font.family: "Material Icons"
-
-            onClicked: {
-                root.backClicked()
-            }
-        }
-    }
 
     background: Image {
         anchors.fill: root

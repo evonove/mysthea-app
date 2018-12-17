@@ -7,6 +7,7 @@ Page {
     id: root
     title: "LORE"
     property var leftAction: backAction
+    property bool hasToolbarLine: false
 
     signal backClicked
 

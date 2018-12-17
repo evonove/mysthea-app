@@ -9,6 +9,7 @@ Page {
     id: root
     title: "LANGUAGE"
     property var leftAction: backAction
+    property bool hasToolbarLine: false
 
     signal backClicked
 
