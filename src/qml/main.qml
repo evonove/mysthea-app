@@ -39,8 +39,7 @@ ApplicationWindow {
         position: ToolBar.Header
 
         background: Rectangle {
-            //TODO: not visible in main and card reference page
-            visible: false
+            visible: _mainStackView.currentItem.hasToolbarLine
             anchors.bottom: parent.bottom
             width: parent.width
             height: 0.5

@@ -12,6 +12,7 @@ Page {
     id: root
     title: "CARDS REFERENCE"
     property var leftAction: drawerAction
+    property bool hasToolbarLine: false
 
     signal cardClicked(CardsModel cards, int index)
     signal backClicked
@@ -32,40 +33,6 @@ Page {
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
-/*       ToolBar {
-//            id: toolbar
-//            z: 2
-//            height: 56
-//            position: ToolBar.Header
-//            background: null
-
-//            Layout.fillWidth: true
-
-//            ToolButton {
-//                id: toolButton
-//                height: parent.height
-//                text: Icon.menu
-//                font.pixelSize: 24
-//                font.family: "Material Icons"
-
-//                onClicked: {
-//                    typeProxyModel.resetFilters()
-//                    root.backClicked()
-//                }
-//            }
-
-//            Label {
-//                id: label
-//                width: parent.width
-//                height: parent.height
-//                anchors.topMargin: 16
-//                text: qsTr("CARDS REFERENCE")
-//                font.pixelSize: 20
-//                font.letterSpacing: 0.5
-//                horizontalAlignment: Qt.AlignHCenter
-//                verticalAlignment: Qt.AlignVCenter
-//            }
-        }*/
 
         ToolBar {
             id: comboBoxSection
@@ -118,9 +85,9 @@ Page {
                         Layout.fillWidth: true
                         onActivated: {
                             typeProxyModel.setTypeFilter(
-                                        typeComboModel.data(typeComboModel.index(
-                                                               index, 0),
-                                                           TypeComboBoxModel.Key))
+                                        typeComboModel.data(
+                                            typeComboModel.index(index, 0),
+                                            TypeComboBoxModel.Key))
 
                             // In loader we don't have only listView so we check if the item has this property
                             if (_contentLoader.item.hasOwnProperty(

@@ -10,31 +10,20 @@ Page {
                                          "Wizard %1 of 3").arg(
                                          root.currentIndex)
 
-    signal backClicked
-
-    padding: 8
-
-    property alias currentIndex: _swipeView.currentIndex
-
+    property bool hasToolbarLine: false
     property Action leftAction: drawerAction
     property list<Action> rightActions: [
         Action {
             id: beforeAction
             text: Icon.navigateBefore
-            onTriggered: {
-                console.log("before pressed")
-                root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
-                                            ) : root.currentIndex = 0
-            }
+            onTriggered: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
+                                                     ) : root.currentIndex = 0
         },
         Action {
             id: nextAction
             text: Icon.navigateNext
-            onTriggered: {
-                console.log("next pressed")
-                root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
-                                            ) : root.currentIndex = 3
-            }
+            onTriggered: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
+                                                     ) : root.currentIndex = 3
         },
         Action {
             id: mainAction
@@ -43,6 +32,11 @@ Page {
         }
     ]
 
+    property alias currentIndex: _swipeView.currentIndex
+
+    signal backClicked
+
+    padding: 8
     background: Image {
         source: "qrc:/images/background.png"
         fillMode: Image.PreserveAspectCrop

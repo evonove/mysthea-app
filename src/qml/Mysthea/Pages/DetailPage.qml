@@ -9,10 +9,12 @@ Page {
     id: root
     title: "CARD DETAIL"
     property var leftAction: backAction
+    property bool hasToolbarLine: true
 
-    signal backClicked
     property CardsModel model: null
     property int index: -1
+
+    signal backClicked
 
     padding: 0
     background: Image {
