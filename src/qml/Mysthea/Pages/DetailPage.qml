@@ -7,6 +7,8 @@ import Mysthea.Models 1.0
 
 Page {
     id: root
+    title: "CARD DETAIL"
+    property var leftAction: backAction
 
     signal backClicked
     property CardsModel model: null
@@ -22,63 +24,23 @@ Page {
         verticalAlignment: Image.AlignBottom
     }
 
-    ToolBar {
-        id: toolbar
-        padding: 0
-        z: 2
-        width: root.width
-        height: 56
-        position: ToolBar.Header
-
-        background: Rectangle {
-            anchors.bottom: parent.bottom
-            width: root.width
-            height: 0.5
-            color: Palette.white
-            opacity: 0.5
-        }
-
-        ToolButton {
-            id: toolButton
-            height: parent.height
-            text: Icon.back
-            font.pixelSize: 24
-            font.family: "Material Icons"
-
-            onClicked: {
-                root.backClicked()
-            }
-        }
-
-        Label {
-            id: label
-            width: parent.width
-            height: parent.height
-            anchors.topMargin: 16
-            text: qsTr("CARD DETAIL")
-            font.pixelSize: 20
-            font.letterSpacing: 0.5
-            horizontalAlignment: Qt.AlignHCenter
-            verticalAlignment: Qt.AlignVCenter
-        }
-    }
-
     SwipeView {
         id: _swipeView
         width: root.width
-        height: root.height - toolbar.height
-        anchors.top: toolbar.bottom
+        height: root.height
+        topPadding: 56
         currentIndex: root.index
-        clip: true
 
         Repeater {
             model: root.model
-
             Loader {
                 active: SwipeView.isPreviousItem || SwipeView.isCurrentItem
                         || SwipeView.isNextItem
                 asynchronous: true
                 sourceComponent: DetailDelegate {
+                    width: root.width
+                    height: root.height - _swipeView.topPadding
+                    clip: true
                 }
             }
         }

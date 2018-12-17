@@ -6,22 +6,10 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
+    title: "RULEBOOK"
+    property var leftAction: backAction
 
     signal backClicked
-
-    header: ToolBar {
-
-        // Back button shown only if there is more than a page in the StackView
-        ToolButton {
-            text: Icon.back
-            font.pixelSize: 22
-            font.family: "Material Icons"
-
-            onClicked: {
-                root.backClicked()
-            }
-        }
-    }
 
     background: Image {
         source: "qrc:/images/background.png"

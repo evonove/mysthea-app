@@ -10,6 +10,8 @@ import Mysthea.Models 1.0
 
 Page {
     id: root
+    title: "CARDS REFERENCE"
+    property var leftAction: drawerAction
 
     signal cardClicked(CardsModel cards, int index)
     signal backClicked
@@ -30,44 +32,45 @@ Page {
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
-        ToolBar {
-            id: toolbar
-            z: 2
-            height: 56
-            position: ToolBar.Header
-            background: null
+/*       ToolBar {
+//            id: toolbar
+//            z: 2
+//            height: 56
+//            position: ToolBar.Header
+//            background: null
 
-            Layout.fillWidth: true
+//            Layout.fillWidth: true
 
-            ToolButton {
-                id: toolButton
-                height: parent.height
-                text: Icon.menu
-                font.pixelSize: 24
-                font.family: "Material Icons"
+//            ToolButton {
+//                id: toolButton
+//                height: parent.height
+//                text: Icon.menu
+//                font.pixelSize: 24
+//                font.family: "Material Icons"
 
-                onClicked: {
-                    typeProxyModel.resetFilters()
-                    root.backClicked()
-                }
-            }
+//                onClicked: {
+//                    typeProxyModel.resetFilters()
+//                    root.backClicked()
+//                }
+//            }
 
-            Label {
-                id: label
-                width: parent.width
-                height: parent.height
-                anchors.topMargin: 16
-                text: qsTr("CARDS REFERENCE")
-                font.pixelSize: 20
-                font.letterSpacing: 0.5
-                horizontalAlignment: Qt.AlignHCenter
-                verticalAlignment: Qt.AlignVCenter
-            }
-        }
+//            Label {
+//                id: label
+//                width: parent.width
+//                height: parent.height
+//                anchors.topMargin: 16
+//                text: qsTr("CARDS REFERENCE")
+//                font.pixelSize: 20
+//                font.letterSpacing: 0.5
+//                horizontalAlignment: Qt.AlignHCenter
+//                verticalAlignment: Qt.AlignVCenter
+//            }
+        }*/
 
         ToolBar {
             id: comboBoxSection
             padding: 16
+            topPadding: 56
 
             Layout.fillWidth: true
 

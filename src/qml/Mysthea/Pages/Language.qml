@@ -7,23 +7,12 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
+    title: "LANGUAGE"
+    property var leftAction: backAction
 
     signal backClicked
 
     padding: 8
-    header: ToolBar {
-
-        // Back button shown only if there is more than a page in the StackView
-        ToolButton {
-            text: Icon.back
-            font.pixelSize: 22
-            font.family: "Material Icons"
-
-            onClicked: {
-                root.backClicked()
-            }
-        }
-    }
 
     background: Image {
         source: "qrc:/images/background.png"
