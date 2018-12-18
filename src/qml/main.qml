@@ -2,6 +2,7 @@ import QtQuick 2.10
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 import QtQuick.Controls.Material 2.4
+import QtQml.Models 2.1
 
 import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
@@ -21,13 +22,178 @@ ApplicationWindow {
     Action {
         id: drawerAction
         text: Icon.menu
-        onTriggered: console.log("drawer clicked.")
+        onTriggered: menuDrawer.open()
     }
 
     Action {
         id: backAction
         text: Icon.back
         onTriggered: _mainStackView.pop()
+    }
+
+    ObjectModel {
+        id: drawerMenuElement
+
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Cards Reference")
+            Material.foreground: Palette.white
+            icon.source: "qrc:/assets/icons/cards-reference.svg"
+            icon.color: Palette.white
+            opacity: 0.8
+            display: AbstractButton.TextBesideIcon
+            onClicked: console.log("cards reference clicked")
+        }
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Game Setup")
+            Material.foreground: Palette.white
+            icon.source: "qrc:/assets/icons/game-setup.svg"
+            icon.color: Palette.white
+            opacity: 0.8
+            onClicked: console.log("game setup clicked")
+        }
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Rulebook")
+            Material.foreground: Palette.white
+            icon.source: "qrc:/assets/icons/rulebook.svg"
+            icon.color: Palette.white
+            opacity: 0.8
+            onClicked: console.log("rulebook clicked")
+        }
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Lore")
+            Material.foreground: Palette.white
+            icon.source: "qrc:/assets/icons/lore.svg"
+            icon.color: Palette.white
+            opacity: 0.8
+            onClicked: console.log("lore clicked")
+        }
+
+        Rectangle {
+            width: menuDrawer.width
+            height: 1
+            color: Palette.white
+            opacity: 0.5
+        }
+
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            contentItem: RowLayout {
+                width: parent.width
+                spacing: 16
+                Image {
+                    source: "qrc:/assets/icons/language.svg"
+                }
+                Label {
+                    Layout.fillWidth: true
+                    text: "Langauge"
+                }
+                Image {
+                    source: "qrc:/assets/icons/arrow.svg"
+                }
+            }
+            Material.foreground: Palette.white
+            opacity: 0.8
+            onClicked: console.log("language clicked")
+        }
+
+        Rectangle {
+            width: menuDrawer.width
+            height: 1
+            color: Palette.white
+            opacity: 0.5
+        }
+
+        ItemDelegate {
+            width: menuDrawer.width
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Tabula Games Newsletter")
+            Material.foreground: Palette.white
+            icon.source: "qrc:/assets/icons/newsletter.svg"
+            icon.color: Palette.white
+            opacity: 0.8
+            onClicked: console.log("lore clicked")
+        }
+
+        Rectangle {
+            width: menuDrawer.width
+            height: 1
+            color: Palette.white
+            opacity: 0.5
+        }
+        ColumnLayout {
+            id: _layout
+            width: menuDrawer.width
+            Material.foreground: Palette.white
+            spacing: 8
+            Label {
+                text: qsTr("Game created and produced by")
+                font.letterSpacing: 0.5
+                opacity: 0.8
+                topPadding: 24
+                leftPadding: 16
+                Layout.fillWidth: true
+            }
+            Image {
+                Layout.leftMargin: 16
+                source: "qrc:/assets/icons/tabula-logo.svg"
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: Qt.openUrlExternally("https://tabula.games")
+                }
+            }
+            Label {
+                text: qsTr("App designed and developed by")
+                font.letterSpacing: 0.5
+                opacity: 0.8
+                leftPadding: 16
+                Layout.fillWidth: true
+            }
+            Image {
+                Layout.leftMargin: 16
+                source: "qrc:/assets/icons/evonove-logo.svg"
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: Qt.openUrlExternally("https://evonove.it")
+                }
+            }
+
+        }
+ }
+
+    Drawer {
+        id: menuDrawer
+        width: 0.8 * root.width
+        height: root.height
+        background: Rectangle {
+            width: parent.width
+            height: parent.height
+            color: Palette.mineShaft
+        }
+
+        ColumnLayout {
+            anchors.fill: parent
+            spacing: 0
+            ListView {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                model: drawerMenuElement
+            }
+        }
     }
 
     ToolBar {
