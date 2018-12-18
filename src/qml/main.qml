@@ -88,6 +88,8 @@ ApplicationWindow {
         }
 
         ItemDelegate {
+            id: languageItemDelegate
+            checkable: true
             width: menuDrawer.width
             topPadding: 21
             bottomPadding: 21
@@ -102,12 +104,50 @@ ApplicationWindow {
                     text: "Langauge"
                 }
                 Image {
+                    id: arrowImage
                     source: "qrc:/assets/icons/arrow.svg"
+                }
+                Loader {
+                    id: loader
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    sourceComponent: languagesRadio
+                    active: false
+                }
+
+                Component {
+                    id: languagesRadio
+                    ListView {
+                        model: [qsTr("English"), qsTr("French"), qsTr(
+                                "Spanish"), qsTr("German"), qsTr(
+                                "Italian"), qsTr("Japanese")]
+                        delegate: RadioButton {
+                            text: modelData
+                            checked: index == 0
+                            Material.accent: Palette.white
+                        }
+                    }
                 }
             }
             Material.foreground: Palette.white
-            opacity: 0.8
-            onClicked: console.log("language clicked")
+
+            onClicked: {
+                console.log(languageItemDelegate.pressed)
+////                loader.active == true ? loader.active = false : loader.active = true
+////                languageItemDelegate.expanded == true ? languageItemDelegate.expanded = false : languageItemDelegate.expanded = true
+            }
+
+            states: [
+                State {
+                    name: 'open'
+                    when: languageItemDelegate.checked
+                    PropertyChanges {
+                        target: arrowImage
+                        rotation: 90
+                    }
+                }
+            ]
+
         }
 
         Rectangle {
@@ -171,9 +211,8 @@ ApplicationWindow {
                     onClicked: Qt.openUrlExternally("https://evonove.it")
                 }
             }
-
         }
- }
+    }
 
     Drawer {
         id: menuDrawer
