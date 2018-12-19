@@ -1,15 +1,20 @@
-import QtQuick 2.10
+import QtQuick 2.11
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
 import QtQuick.Controls.Material 2.4
 import QtQml.Models 2.1
+import QtGraphicalEffects 1.0
 
 import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
+import Translations 1.0
 
 ApplicationWindow {
     id: root
+
+    signal changed
+
     visible: true
     width: 375
     height: 667
@@ -35,48 +40,48 @@ ApplicationWindow {
         id: drawerMenuElement
 
         ItemDelegate {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
+            implicitHeight: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Cards Reference")
-            Material.foreground: Palette.white
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/cards-reference.svg"
-            icon.color: Palette.white
-            opacity: 0.8
+            icon.color: Palette.silverChalice
             display: AbstractButton.TextBesideIcon
             onClicked: console.log("cards reference clicked")
         }
         ItemDelegate {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
+            implicitHeight: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Game Setup")
-            Material.foreground: Palette.white
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/game-setup.svg"
-            icon.color: Palette.white
-            opacity: 0.8
+            icon.color: Palette.silverChalice
             onClicked: console.log("game setup clicked")
         }
         ItemDelegate {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
+            implicitHeight: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Rulebook")
-            Material.foreground: Palette.white
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/rulebook.svg"
-            icon.color: Palette.white
-            opacity: 0.8
+            icon.color: Palette.silverChalice
             onClicked: console.log("rulebook clicked")
         }
         ItemDelegate {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
+            implicitHeight: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Lore")
-            Material.foreground: Palette.white
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/lore.svg"
-            icon.color: Palette.white
-            opacity: 0.8
+            icon.color: Palette.silverChalice
             onClicked: console.log("lore clicked")
         }
 
@@ -91,119 +96,184 @@ ApplicationWindow {
             id: languageItemDelegate
             checkable: true
             width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
-            contentItem: RowLayout {
-                width: parent.width
-                spacing: 16
-                Image {
-                    source: "qrc:/assets/icons/language.svg"
-                }
-                Label {
+            Material.foreground: Palette.silverChalice
+
+            contentItem: ColumnLayout {
+                id: content
+                spacing: 0
+                Layout.margins: 0
+                RowLayout {
                     Layout.fillWidth: true
-                    text: "Langauge"
+                    spacing: 16
+                    Image {
+                        source: "qrc:/assets/icons/language.svg"
+                    }
+                    Label {
+                        id: labelLanguage
+                        Layout.fillWidth: true
+                        text: "Language - " + TranslationsManager.currentLanguageText
+                    }
+                    Image {
+                        id: arrowImage
+                        source: "qrc:/assets/icons/arrow.svg"
+                    }
                 }
-                Image {
-                    id: arrowImage
-                    source: "qrc:/assets/icons/arrow.svg"
-                }
+
                 Loader {
                     id: loader
                     Layout.fillHeight: true
                     Layout.fillWidth: true
+                    Layout.leftMargin: 64
                     sourceComponent: languagesRadio
                     active: false
                 }
-
                 Component {
                     id: languagesRadio
-                    ListView {
-                        model: [qsTr("English"), qsTr("French"), qsTr(
-                                "Spanish"), qsTr("German"), qsTr(
-                                "Italian"), qsTr("Japanese")]
-                        delegate: RadioButton {
-                            text: modelData
-                            checked: index == 0
-                            Material.accent: Palette.white
+                    ButtonGroup {
+                        id: radioGroup
+                        buttons: column.children
+                        onCheckedButtonChanged: {
+                            radioGroup.checkedButton.text.color = Palette.gallery
+                            root.changed();
                         }
                     }
                 }
-            }
-            Material.foreground: Palette.white
 
-            onClicked: {
-                console.log(languageItemDelegate.pressed)
-////                loader.active == true ? loader.active = false : loader.active = true
-////                languageItemDelegate.expanded == true ? languageItemDelegate.expanded = false : languageItemDelegate.expanded = true
+                Column {
+                    id: column
+                    visible: false
+                    spacing: 0
+                    padding: 0
+                    leftPadding: 32
+                    Material.foreground: Palette.silverChalice
+                    Material.accent: Palette.gallery
+                    RadioButton {
+                        padding: 0
+                        checked: true
+                        text: "English"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.English
+                    }
+                    RadioButton {
+                        padding: 0
+                        text: "Français"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.French
+                    }
+                    RadioButton {
+                        padding: 0
+                        text: "Español"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Spanish
+                    }
+
+                    RadioButton {
+                        padding: 0
+                        text: "Duitse"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.German
+                    }
+                    RadioButton {
+                        padding: 0
+                        text: "Italiano"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Italian
+                    }
+                    RadioButton {
+                        padding: 0
+                        text: "日本人"
+                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Japanese
+                    }
+                }
             }
+
+            onClicked: { }
 
             states: [
                 State {
-                    name: 'open'
+                    name: 'expanded'
                     when: languageItemDelegate.checked
                     PropertyChanges {
                         target: arrowImage
                         rotation: 90
                     }
+                    PropertyChanges {
+                        target: languageItemDelegate
+                        height: 268
+                    }
+                    PropertyChanges {
+                        target: loader
+                        active: true
+                    }
+                    PropertyChanges {
+                        target: column
+                        visible: true
+                    }
                 }
             ]
-
         }
 
         Rectangle {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
 
         ItemDelegate {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
+            implicitHeight: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Tabula Games Newsletter")
-            Material.foreground: Palette.white
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/newsletter.svg"
-            icon.color: Palette.white
-            opacity: 0.8
+            icon.color: Palette.silverChalice
             onClicked: console.log("lore clicked")
         }
 
         Rectangle {
-            width: menuDrawer.width
+            implicitWidth: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
         ColumnLayout {
             id: _layout
-            width: menuDrawer.width
-            Material.foreground: Palette.white
+            implicitWidth: menuDrawer.width
+            Material.foreground: Palette.silverChalice
             spacing: 8
             Label {
                 text: qsTr("Game created and produced by")
                 font.letterSpacing: 0.5
-                opacity: 0.8
+                opacity: 0.5
                 topPadding: 24
                 leftPadding: 16
                 Layout.fillWidth: true
             }
             Image {
+                id: tabulaLogo
                 Layout.leftMargin: 16
                 source: "qrc:/assets/icons/tabula-logo.svg"
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("https://tabula.games")
                 }
+                // this color tabula logo with white color.
+                ColorOverlay {
+                    anchors.fill: tabulaLogo
+                    source: tabulaLogo
+                    color: Palette.white
+                }
             }
+
             Label {
                 text: qsTr("App designed and developed by")
                 font.letterSpacing: 0.5
-                opacity: 0.8
+                opacity: 0.5
                 leftPadding: 16
                 Layout.fillWidth: true
             }
             Image {
+                id: evonoveLogo
                 Layout.leftMargin: 16
                 source: "qrc:/assets/icons/evonove-logo.svg"
                 MouseArea {
@@ -218,20 +288,16 @@ ApplicationWindow {
         id: menuDrawer
         width: 0.8 * root.width
         height: root.height
+        bottomPadding: 32
         background: Rectangle {
             width: parent.width
             height: parent.height
             color: Palette.mineShaft
         }
 
-        ColumnLayout {
+        ListView {
             anchors.fill: parent
-            spacing: 0
-            ListView {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                model: drawerMenuElement
-            }
+            model: drawerMenuElement
         }
     }
 
@@ -299,6 +365,7 @@ ApplicationWindow {
         id: _mainStackView
         anchors.fill: parent
         focus: true
+        padding: 0
 
         background: Rectangle {
             color: Palette.mineShaft
