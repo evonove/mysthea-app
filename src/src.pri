@@ -36,7 +36,9 @@ lupdate_only{
 }
 
 TRANSLATIONS += \
-    $$PWD/translations/mysthea_it.ts \
     $$PWD/translations/mysthea_en.ts \
     $$PWD/translations/mysthea_fr.ts \
-    $$PWD/translations/mysthea_de.ts
+    $$PWD/translations/mysthea_es.ts \
+    $$PWD/translations/mysthea_de.ts \
+    $$PWD/translations/mysthea_it.ts \
+    $$PWD/translations/mysthea_ja.ts

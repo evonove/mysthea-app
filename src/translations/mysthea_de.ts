@@ -2,6 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de_DE">
 <context>
+    <name>CardsReferencePage</name>
+    <message>
+        <source>CARDS REFERENCE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search cards by code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ooops! Card not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please try to type a different code or to change filter options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Credits</name>
     <message>
         <source>Game produced by</source>
@@ -11,15 +30,37 @@
         <source>App Designed and Developed by</source>
         <translation type="unfinished">App ontworpen en ontwikkeld door</translation>
     </message>
+    <message>
+        <source>CREDITS</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DetailDelegate</name>
+    <message>
+        <source>Command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DetailPage</name>
+    <message>
+        <source>CARD DETAIL</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GameSetup</name>
     <message>
-        <source>Game Setup</source>
+        <source>Wizard %1 of 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Wizard %1 of 3</source>
+        <source>GAME SETUP</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -75,6 +116,17 @@
         <source>french</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>LANGUAGE</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Lore</name>
+    <message>
+        <source>LORE</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainMenu</name>
@@ -87,19 +139,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Rulesbook</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Lore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Credits</source>
+        <source>Rulebook</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -125,11 +169,8 @@
         <source>japanese</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>SearchPage</name>
     <message>
-        <source>Search code…</source>
+        <source>RULEBOOK</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -137,6 +178,34 @@
     <name>main</name>
     <message>
         <source>Mysthea</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cards Reference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Game Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rulebook</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabula Games Newsletter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Game created and produced by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>App designed and developed by</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
