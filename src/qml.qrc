@@ -26,6 +26,9 @@
         <file>qml/Mysthea/Theme/Icon.qml</file>
         <file>qml/Mysthea/Components/ScrollIndicator.qml</file>
         <file>qml/Mysthea/Components/SearchField.qml</file>
+        <file>qml/Mysthea/Components/RadioButton.qml</file>
+        <file>qml/Mysthea/Components/RadioIndicator.qml</file>
+        <file>qml/Mysthea/Pages/LanguageListModel.qml</file>
         <file>qml/Mysthea/Pages/CardsList.qml</file>
     </qresource>
 </RCC>

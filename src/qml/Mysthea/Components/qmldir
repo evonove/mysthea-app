@@ -3,3 +3,6 @@ ColorComboBox 1.0 ColorComboBox.qml
 Button 1.0 Button.qml
 ScrollIndicator 1.0 ScrollIndicator.qml
 SearchField 1.0 SearchField.qml
+RadioLanguage 1.0 RadioButton.qml
+RadioIndicatorLanguage 1.0 RadioIndicator.qml
+

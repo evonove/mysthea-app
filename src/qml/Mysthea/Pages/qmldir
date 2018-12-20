@@ -9,3 +9,4 @@ Rulebook 1.0 Rulebook.qml
 Language 1.0 Language.qml
 Lore 1.0 Lore.qml
 CardsList 1.0 CardsList.qml
+LanguageListModel 1.0 LanguageListModel.qml

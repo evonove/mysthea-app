@@ -9,6 +9,7 @@ import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
 import Translations 1.0
+import Mysthea.Components 1.0
 
 ApplicationWindow {
     id: root
@@ -40,8 +41,8 @@ ApplicationWindow {
         id: drawerMenuElement
 
         ItemDelegate {
-            implicitWidth: menuDrawer.width
-            implicitHeight: 64
+            width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Cards Reference")
@@ -52,8 +53,8 @@ ApplicationWindow {
             onClicked: console.log("cards reference clicked")
         }
         ItemDelegate {
-            implicitWidth: menuDrawer.width
-            implicitHeight: 64
+            width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Game Setup")
@@ -63,8 +64,8 @@ ApplicationWindow {
             onClicked: console.log("game setup clicked")
         }
         ItemDelegate {
-            implicitWidth: menuDrawer.width
-            implicitHeight: 64
+            width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Rulebook")
@@ -74,8 +75,8 @@ ApplicationWindow {
             onClicked: console.log("rulebook clicked")
         }
         ItemDelegate {
-            implicitWidth: menuDrawer.width
-            implicitHeight: 64
+            width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Lore")
@@ -98,24 +99,30 @@ ApplicationWindow {
             width: menuDrawer.width
             height: 64
             topPadding: 21
-            bottomPadding: 21
             Material.foreground: Palette.silverChalice
 
             contentItem: ColumnLayout {
                 id: content
-                spacing: 0
-                Layout.margins: 0
+                spacing: 25
                 RowLayout {
                     Layout.fillWidth: true
+                    implicitHeight: 64
                     spacing: 16
                     Image {
                         source: "qrc:/assets/icons/language.svg"
                     }
-                    Label {
-                        id: labelLanguage
+                    Row {
                         Layout.fillWidth: true
-                        text: "Language - " + TranslationsManager.currentLanguageText
+                        Label {
+                            id: labelLanguage
+                            text: "Language - "
+                        }
+                        Label {
+                            text: TranslationsManager.currentLanguageText
+                            color: Palette.gallery
+                        }
                     }
+
                     Image {
                         id: arrowImage
                         source: "qrc:/assets/icons/arrow.svg"
@@ -124,68 +131,40 @@ ApplicationWindow {
 
                 Loader {
                     id: loader
-                    Layout.fillHeight: true
                     Layout.fillWidth: true
                     Layout.leftMargin: 64
                     sourceComponent: languagesRadio
                     active: false
                 }
+
                 Component {
                     id: languagesRadio
-                    ButtonGroup {
-                        id: radioGroup
-                        buttons: column.children
-                        onCheckedButtonChanged: {
-                            radioGroup.checkedButton.text.color = Palette.gallery
-                            root.changed();
+                    Column {
+                        id: column
+                        spacing: 0
+                        padding: 0
+
+                        ButtonGroup {
+                            id: radioGroup
+                            buttons: column.children
+
+                            onCheckedButtonChanged: {
+                                radioGroup.checkedButton.text.color = Palette.gallery
+                                root.changed()
+                            }
+                        }
+
+                        Repeater {
+                            model: LanguageListModel {
+                            }
+                            RadioLanguage {
+                                text: model.language
+                                onClicked: TranslationsManager.currentLanguage = model.translation
+                            }
                         }
                     }
                 }
-
-                Column {
-                    id: column
-                    visible: false
-                    spacing: 0
-                    padding: 0
-                    leftPadding: 32
-                    Material.foreground: Palette.silverChalice
-                    Material.accent: Palette.gallery
-                    RadioButton {
-                        padding: 0
-                        checked: true
-                        text: "English"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.English
-                    }
-                    RadioButton {
-                        padding: 0
-                        text: "Français"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.French
-                    }
-                    RadioButton {
-                        padding: 0
-                        text: "Español"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Spanish
-                    }
-
-                    RadioButton {
-                        padding: 0
-                        text: "Duitse"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.German
-                    }
-                    RadioButton {
-                        padding: 0
-                        text: "Italiano"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Italian
-                    }
-                    RadioButton {
-                        padding: 0
-                        text: "日本人"
-                        onClicked: TranslationsManager.currentLanguage = TranslationsManager.Japanese
-                    }
-                }
             }
-
-            onClicked: { }
 
             states: [
                 State {
@@ -197,15 +176,11 @@ ApplicationWindow {
                     }
                     PropertyChanges {
                         target: languageItemDelegate
-                        height: 268
+                        height: languageItemDelegate.implicitHeight
                     }
                     PropertyChanges {
                         target: loader
                         active: true
-                    }
-                    PropertyChanges {
-                        target: column
-                        visible: true
                     }
                 }
             ]
@@ -219,26 +194,27 @@ ApplicationWindow {
         }
 
         ItemDelegate {
-            implicitWidth: menuDrawer.width
-            implicitHeight: 64
+            width: menuDrawer.width
+            height: 64
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Tabula Games Newsletter")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/newsletter.svg"
             icon.color: Palette.silverChalice
-            onClicked: console.log("lore clicked")
+            onClicked: console.log("Newsletter clicked")
         }
 
         Rectangle {
-            implicitWidth: menuDrawer.width
+            width: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
+
         ColumnLayout {
             id: _layout
-            implicitWidth: menuDrawer.width
+            width: menuDrawer.width
             Material.foreground: Palette.silverChalice
             spacing: 8
             Label {
@@ -288,7 +264,6 @@ ApplicationWindow {
         id: menuDrawer
         width: 0.8 * root.width
         height: root.height
-        bottomPadding: 32
         background: Rectangle {
             width: parent.width
             height: parent.height
