@@ -14,8 +14,8 @@ import Mysthea.Components 1.0
 Drawer {
     id: menuDrawer
     background: Rectangle {
-        width: parent.width
-        height: parent.height
+        width: menuDrawer.width
+        height: menuDrawer.height
         color: Palette.mineShaft
     }
 
@@ -140,6 +140,7 @@ Drawer {
                             }
                             RadioLanguage {
                                 text: model.language
+                                checked: TranslationsManager.currentLanguageText === model.language
                                 onClicked: TranslationsManager.currentLanguage = model.translation
                             }
                         }
