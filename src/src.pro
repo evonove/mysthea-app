@@ -50,4 +50,5 @@ ios {
 }
 
 DISTFILES += \
-    qml/Mysthea/Pages/CardsList.qml
+    qml/Mysthea/Components/RadioIndicator.qml \
+    qml/Mysthea/Pages/LanguageListModel.qml
