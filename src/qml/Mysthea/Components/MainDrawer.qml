@@ -13,6 +13,12 @@ import Mysthea.Components 1.0
 
 Drawer {
     id: menuDrawer
+
+    signal cardsReferenceClicked
+    signal gameSetupClicked
+    signal rulesbookClicked
+    signal loreClicked
+
     background: Rectangle {
         width: menuDrawer.width
         height: menuDrawer.height
@@ -31,7 +37,7 @@ Drawer {
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/cards-reference.svg"
             icon.color: Palette.silverChalice
-            onClicked: console.log("cards reference clicked")
+            onClicked: menuDrawer.cardsReferenceClicked()
         }
         ItemDelegate {
             width: menuDrawer.width
@@ -42,7 +48,7 @@ Drawer {
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/game-setup.svg"
             icon.color: Palette.silverChalice
-            onClicked: console.log("game setup clicked")
+            onClicked: menuDrawer.gameSetupClicked()
         }
         ItemDelegate {
             width: menuDrawer.width
@@ -53,7 +59,7 @@ Drawer {
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/rulebook.svg"
             icon.color: Palette.silverChalice
-            onClicked: console.log("rulebook clicked")
+            onClicked: menuDrawer.rulesbookClicked()
         }
         ItemDelegate {
             width: menuDrawer.width
@@ -64,7 +70,7 @@ Drawer {
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/lore.svg"
             icon.color: Palette.silverChalice
-            onClicked: console.log("lore clicked")
+            onClicked: menuDrawer.loreClicked()
         }
 
         Rectangle {

@@ -41,6 +41,23 @@ ApplicationWindow {
         id: menuDrawer
         width: 0.8 * root.width
         height: root.height
+
+        onCardsReferenceClicked: {
+            menuDrawer.close()
+            _mainStackView.push(_cardReference)
+        }
+        onGameSetupClicked: {
+            _mainStackView.push(_gameSetup)
+            menuDrawer.close()
+        }
+        onRulesbookClicked: {
+            _mainStackView.push(_rulebook)
+            menuDrawer.close()
+        }
+        onLoreClicked: {
+            _mainStackView.push(_lore)
+            menuDrawer.close()
+        }
     }
 
     ToolBar {
@@ -106,9 +123,8 @@ ApplicationWindow {
     StackView {
         id: _mainStackView
         anchors.fill: parent
-        focus: true
+        focus: !menuDrawer.activeFocus
         padding: 0
-
         background: Rectangle {
             color: Palette.mineShaft
         }
@@ -149,35 +165,30 @@ ApplicationWindow {
                 leftAction: backAction
             }
         }
-
         Component {
             id: _gameSetup
             GameSetup {
                 leftAction: drawerAction
             }
         }
-
         Component {
             id: _rulebook
             Rulebook {
                 leftAction: backAction
             }
         }
-
         Component {
             id: _lore
             Lore {
                 leftAction: backAction
             }
         }
-
         Component {
             id: _language
             Language {
                 leftAction: backAction
             }
         }
-
         Component {
             id: _credits
             Credits {
