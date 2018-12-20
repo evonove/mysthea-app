@@ -30,5 +30,6 @@
         <file>qml/Mysthea/Components/RadioIndicator.qml</file>
         <file>qml/Mysthea/Pages/LanguageListModel.qml</file>
         <file>qml/Mysthea/Pages/CardsList.qml</file>
+        <file>qml/Mysthea/Components/MainDrawer.qml</file>
     </qresource>
 </RCC>

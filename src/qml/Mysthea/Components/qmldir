@@ -5,4 +5,5 @@ ScrollIndicator 1.0 ScrollIndicator.qml
 SearchField 1.0 SearchField.qml
 RadioLanguage 1.0 RadioButton.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
+MainDrawer 1.0 MainDrawer.qml
 
