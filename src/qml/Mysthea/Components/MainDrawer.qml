@@ -31,7 +31,7 @@ Drawer {
         id: pagesDelegate
         states: [
             State {
-                name: "homePage"
+                name: PageName.homePage
                 PropertyChanges {
                     target: homeDelegate
                     Material.foreground: Palette.gallery
@@ -39,7 +39,7 @@ Drawer {
                 }
             },
             State {
-                name: "cardsReferencePage"
+                name: PageName.cardPage
                 PropertyChanges {
                     target: cardsReferenceDelegate
                     Material.foreground: Palette.gallery
@@ -47,7 +47,7 @@ Drawer {
                 }
             },
             State {
-                name: "gameSetupPage"
+                name: PageName.gameSetupPage
                 PropertyChanges {
                     target: gameSetupDelegate
                     Material.foreground: Palette.gallery
@@ -55,7 +55,7 @@ Drawer {
                 }
             },
             State {
-                name: "rulebookPage"
+                name: PageName.rulebookPage
                 PropertyChanges {
                     target: rulebookDelegate
                     Material.foreground: Palette.gallery
@@ -63,7 +63,7 @@ Drawer {
                 }
             },
             State {
-                name: "lorePage"
+                name: PageName.lorePage
                 PropertyChanges {
                     target: loreDelegate
                     Material.foreground: Palette.gallery

@@ -29,5 +29,6 @@
         <file>qml/Mysthea/Pages/LanguageListModel.qml</file>
         <file>qml/Mysthea/Pages/CardsList.qml</file>
         <file>qml/Mysthea/Components/MainDrawer.qml</file>
+        <file>qml/Mysthea/Pages/PageName.qml</file>
     </qresource>
 </RCC>

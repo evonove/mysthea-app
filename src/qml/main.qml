@@ -126,20 +126,20 @@ ApplicationWindow {
         // and avoid pushing a page while one is being
         // loaded
         onHomeClicked: {
-            root.pushToStack(_homePage, "homePage")
+            root.pushToStack(_homePage, PageName.homePage)
         }
 
         onCardsReferenceClicked: {
-            root.pushToStack(_cardReference, "cardsReferencePage")
+            root.pushToStack(_cardReference, PageName.cardPage)
         }
         onGameSetupClicked: {
-            root.pushToStack(_gameSetup, "gameSetupPage")
+            root.pushToStack(_gameSetup, PageName.gameSetupPage)
         }
         onRulesbookClicked: {
-            root.pushToStack(_rulebook, "rulebookPage")
+            root.pushToStack(_rulebook, PageName.rulebookPage)
         }
         onLoreClicked: {
-            root.pushToStack(_lore, "lorePage")
+            root.pushToStack(_lore, PageName.lorePage)
         }
     }
 
@@ -167,10 +167,10 @@ ApplicationWindow {
             id: _homePage
             MainMenu {
                 leftAction: drawerAction
-                onCardsReferenceClicked: _mainStackView.push(_cardReference)
-                onGameSetupClicked: _mainStackView.push(_gameSetup)
-                onRulesbookClicked: _mainStackView.push(_rulebook)
-                onLoreClicked: _mainStackView.push(_lore)
+                onCardsReferenceClicked:  root.pushToStack(_cardReference, PageName.cardPage)
+                onGameSetupClicked: root.pushToStack(_gameSetup, PageName.gameSetupPage)
+                onRulesbookClicked: root.pushToStack(_rulebook, PageName.rulebookPage)
+                onLoreClicked: root.pushToStack(_lore, PageName.lorePage)
             }
         }
 
@@ -214,24 +214,24 @@ ApplicationWindow {
         id: pages
         states: [
             State {
-                name: "homePage"
-                when: _mainStackView.currentItem.objectName === "homePage"
+                name: PageName.homePage
+                when: _mainStackView.currentItem.objectName === PageName.homePage
             },
             State {
-                name: "cardsReferencePage"
-                when: _mainStackView.currentItem.objectName === "cardsReferencePage"
+                name: PageName.cardPage
+                when: _mainStackView.currentItem.objectName === PageName.cardPage
             },
             State {
-                name: "gameSetupPage"
-                when: _mainStackView.currentItem.objectName === "gameSetupPage"
+                name: PageName.gameSetupPage
+                when: _mainStackView.currentItem.objectName === PageName.gameSetupPage
             },
             State {
-                name: "rulebookPage"
-                when: _mainStackView.currentItem.objectName === "rulebookPage"
+                name: PageName.rulebookPage
+                when: _mainStackView.currentItem.objectName === PageName.rulebookPage
             },
             State {
-                name: "lorePage"
-                when: _mainStackView.currentItem.objectName === "lorePage"
+                name: PageName.lorePage
+                when: _mainStackView.currentItem.objectName === PageName.lorePage
             }
         ]
     }
