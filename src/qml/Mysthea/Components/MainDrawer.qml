@@ -13,6 +13,7 @@ import Mysthea.Components 1.0
 
 Drawer {
     id: menuDrawer
+    signal homeClicked
     signal cardsReferenceClicked
     signal gameSetupClicked
     signal rulesbookClicked
@@ -30,10 +31,19 @@ Drawer {
         id: pagesDelegate
         states: [
             State {
+                name: "homePage"
+                PropertyChanges {
+                    target: homeDelegate
+                    Material.foreground: Palette.gallery
+                    icon.color: Palette.gallery
+                }
+            },
+            State {
                 name: "cardsReferencePage"
                 PropertyChanges {
                     target: cardsReferenceDelegate
                     Material.foreground: Palette.gallery
+                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -41,6 +51,7 @@ Drawer {
                 PropertyChanges {
                     target: gameSetupDelegate
                     Material.foreground: Palette.gallery
+                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -48,6 +59,7 @@ Drawer {
                 PropertyChanges {
                     target: rulebookDelegate
                     Material.foreground: Palette.gallery
+                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -55,6 +67,7 @@ Drawer {
                 PropertyChanges {
                     target: loreDelegate
                     Material.foreground: Palette.gallery
+                    icon.color: Palette.gallery
                 }
             }
         ]
@@ -63,6 +76,18 @@ Drawer {
     ObjectModel {
         id: drawerMenuElement
 
+        ItemDelegate {
+            id: homeDelegate
+            width: menuDrawer.width
+            height: 64
+            topPadding: 21
+            bottomPadding: 21
+            text: qsTr("Home")
+            Material.foreground: Palette.silverChalice
+            icon.source: "qrc:/assets/icons/cards-reference.svg"
+            icon.color: Palette.silverChalice
+            onClicked: menuDrawer.homeClicked()
+        }
         ItemDelegate {
             id: cardsReferenceDelegate
             width: menuDrawer.width

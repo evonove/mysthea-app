@@ -126,6 +126,10 @@ ApplicationWindow {
         // This property is used to throttle clicks
         // and avoid pushing a page while one is being
         // loaded
+        onHomeClicked: {
+            root.pushToStack(_homePage, "homePage")
+        }
+
         onCardsReferenceClicked: {
             root.pushToStack(_cardReference, "cardsReferencePage")
         }
@@ -159,12 +163,16 @@ ApplicationWindow {
             }
         }
 
-        initialItem: MainMenu {
-            leftAction: drawerAction
-            onCardsReferenceClicked: _mainStackView.push(_cardReference)
-            onGameSetupClicked: _mainStackView.push(_gameSetup)
-            onRulesbookClicked: _mainStackView.push(_rulebook)
-            onLoreClicked: _mainStackView.push(_lore)
+        initialItem: _homePage
+        Component {
+            id: _homePage
+            MainMenu {
+                leftAction: drawerAction
+                onCardsReferenceClicked: _mainStackView.push(_cardReference)
+                onGameSetupClicked: _mainStackView.push(_gameSetup)
+                onRulesbookClicked: _mainStackView.push(_rulebook)
+                onLoreClicked: _mainStackView.push(_lore)
+            }
         }
 
         Component {
@@ -192,13 +200,13 @@ ApplicationWindow {
         Component {
             id: _rulebook
             Rulebook {
-                leftAction: backAction
+                leftAction: drawerAction
             }
         }
         Component {
             id: _lore
             Lore {
-                leftAction: backAction
+                leftAction: drawerAction
             }
         }
     }
@@ -206,6 +214,10 @@ ApplicationWindow {
     StateGroup {
         id: pages
         states: [
+            State {
+                name: "homePage"
+                when: _mainStackView.currentItem.objectName === "homePage"
+            },
             State {
                 name: "cardsReferencePage"
                 when: _mainStackView.currentItem.objectName === "cardsReferencePage"
