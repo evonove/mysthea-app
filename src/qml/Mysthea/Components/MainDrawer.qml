@@ -13,7 +13,6 @@ import Mysthea.Components 1.0
 
 Drawer {
     id: menuDrawer
-
     signal cardsReferenceClicked
     signal gameSetupClicked
     signal rulesbookClicked
@@ -25,10 +24,47 @@ Drawer {
         color: Palette.mineShaft
     }
 
+    property alias state: pagesDelegate.state
+
+    StateGroup {
+        id: pagesDelegate
+        states: [
+            State {
+                name: "cardsReferencePage"
+                PropertyChanges {
+                    target: cardsReferenceDelegate
+                    Material.foreground: Palette.gallery
+                }
+            },
+            State {
+                name: "gameSetupPage"
+                PropertyChanges {
+                    target: gameSetupDelegate
+                    Material.foreground: Palette.gallery
+                }
+            },
+            State {
+                name: "rulebookPage"
+                PropertyChanges {
+                    target: rulebookDelegate
+                    Material.foreground: Palette.gallery
+                }
+            },
+            State {
+                name: "lorePage"
+                PropertyChanges {
+                    target: loreDelegate
+                    Material.foreground: Palette.gallery
+                }
+            }
+        ]
+    }
+
     ObjectModel {
         id: drawerMenuElement
 
         ItemDelegate {
+            id: cardsReferenceDelegate
             width: menuDrawer.width
             height: 64
             topPadding: 21
@@ -40,6 +76,7 @@ Drawer {
             onClicked: menuDrawer.cardsReferenceClicked()
         }
         ItemDelegate {
+            id: gameSetupDelegate
             width: menuDrawer.width
             height: 64
             topPadding: 21
@@ -51,6 +88,7 @@ Drawer {
             onClicked: menuDrawer.gameSetupClicked()
         }
         ItemDelegate {
+            id: rulebookDelegate
             width: menuDrawer.width
             height: 64
             topPadding: 21
@@ -62,6 +100,7 @@ Drawer {
             onClicked: menuDrawer.rulesbookClicked()
         }
         ItemDelegate {
+            id: loreDelegate
             width: menuDrawer.width
             height: 64
             topPadding: 21
@@ -72,14 +111,12 @@ Drawer {
             icon.color: Palette.silverChalice
             onClicked: menuDrawer.loreClicked()
         }
-
         Rectangle {
             width: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
-
         ItemDelegate {
             id: languageItemDelegate
             checkable: true
@@ -173,14 +210,12 @@ Drawer {
                 }
             ]
         }
-
         Rectangle {
             implicitWidth: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
-
         ItemDelegate {
             width: menuDrawer.width
             height: 64
@@ -192,14 +227,12 @@ Drawer {
             icon.color: Palette.silverChalice
             onClicked: console.log("Newsletter clicked")
         }
-
         Rectangle {
             width: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
-
         ColumnLayout {
             id: _layout
             width: menuDrawer.width

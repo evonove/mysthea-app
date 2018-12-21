@@ -25,39 +25,46 @@ ApplicationWindow {
     font.pixelSize: 18
     Material.accent: Palette.maroonFlush
 
+    property bool isPushing: false
+
+    function pushToStack(component, stateToCheck) {
+        // throttle clicks
+        if (root.isPushing)
+            return
+
+        // avoid to push a page if it is the
+        // current visible page
+        console.log(stateToCheck)
+        console.log(component)
+
+        if (pages.state !== stateToCheck) {
+            root.isPushing = true
+            _mainStackView.push(component)
+        }
+        drawer.close()
+        root.isPushing = false
+    }
+
+    // Loads Material icons font
+    FontLoader {
+        source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
+    }
+    FontLoader {
+        source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
+    }
+    FontLoader {
+        source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
+    }
+
     Action {
         id: drawerAction
         text: Icon.menu
-        onTriggered: menuDrawer.open()
+        onTriggered: drawer.open()
     }
-
     Action {
         id: backAction
         text: Icon.back
         onTriggered: _mainStackView.pop()
-    }
-
-    MainDrawer {
-        id: menuDrawer
-        width: 0.8 * root.width
-        height: root.height
-
-        onCardsReferenceClicked: {
-            menuDrawer.close()
-            _mainStackView.push(_cardReference)
-        }
-        onGameSetupClicked: {
-            _mainStackView.push(_gameSetup)
-            menuDrawer.close()
-        }
-        onRulesbookClicked: {
-            _mainStackView.push(_rulebook)
-            menuDrawer.close()
-        }
-        onLoreClicked: {
-            _mainStackView.push(_lore)
-            menuDrawer.close()
-        }
     }
 
     ToolBar {
@@ -109,21 +116,34 @@ ApplicationWindow {
         }
     }
 
-    // Loads Material icons font
-    FontLoader {
-        source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
-    }
-    FontLoader {
-        source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
-    }
-    FontLoader {
-        source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
+    MainDrawer {
+        id: drawer
+        width: 0.8 * root.width
+        height: root.height
+
+        state: pages.state
+
+        // This property is used to throttle clicks
+        // and avoid pushing a page while one is being
+        // loaded
+        onCardsReferenceClicked: {
+            root.pushToStack(_cardReference, "cardsReferencePage")
+        }
+        onGameSetupClicked: {
+            root.pushToStack(_gameSetup, "gameSetupPage")
+        }
+        onRulesbookClicked: {
+            root.pushToStack(_rulebook, "rulebookPage")
+        }
+        onLoreClicked: {
+            root.pushToStack(_lore, "lorePage")
+        }
     }
 
     StackView {
         id: _mainStackView
         anchors.fill: parent
-        focus: !menuDrawer.activeFocus
+        focus: !drawer.activeFocus
         padding: 0
         background: Rectangle {
             color: Palette.mineShaft
@@ -145,8 +165,6 @@ ApplicationWindow {
             onGameSetupClicked: _mainStackView.push(_gameSetup)
             onRulesbookClicked: _mainStackView.push(_rulebook)
             onLoreClicked: _mainStackView.push(_lore)
-            onLanguageClicked: _mainStackView.push(_language)
-            onCreditsClicked: _mainStackView.push(_credits)
         }
 
         Component {
@@ -183,17 +201,27 @@ ApplicationWindow {
                 leftAction: backAction
             }
         }
-        Component {
-            id: _language
-            Language {
-                leftAction: backAction
+    }
+
+    StateGroup {
+        id: pages
+        states: [
+            State {
+                name: "cardsReferencePage"
+                when: _mainStackView.currentItem.objectName === "cardsReferencePage"
+            },
+            State {
+                name: "gameSetupPage"
+                when: _mainStackView.currentItem.objectName === "gameSetupPage"
+            },
+            State {
+                name: "rulebookPage"
+                when: _mainStackView.currentItem.objectName === "rulebookPage"
+            },
+            State {
+                name: "lorePage"
+                when: _mainStackView.currentItem.objectName === "lorePage"
             }
-        }
-        Component {
-            id: _credits
-            Credits {
-                leftAction: backAction
-            }
-        }
+        ]
     }
 }
