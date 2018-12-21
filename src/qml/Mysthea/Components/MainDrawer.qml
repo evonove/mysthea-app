@@ -181,7 +181,6 @@ Drawer {
                 Loader {
                     id: loader
                     Layout.fillWidth: true
-                    Layout.leftMargin: 64
                     sourceComponent: languagesRadio
                     active: false
                 }
@@ -208,6 +207,7 @@ Drawer {
                             }
                             RadioLanguage {
                                 text: model.language
+                                leftPadding: 64
                                 checked: TranslationsManager.currentLanguageText === model.language
                                 onClicked: TranslationsManager.currentLanguage = model.translation
                             }
