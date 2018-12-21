@@ -291,6 +291,7 @@ Drawer {
                 text: qsTr("App designed and developed by")
                 font.letterSpacing: 0.5
                 opacity: 0.5
+                topPadding: 8
                 leftPadding: 16
                 Layout.fillWidth: true
             }

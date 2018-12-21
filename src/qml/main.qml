@@ -31,12 +31,8 @@ ApplicationWindow {
         // throttle clicks
         if (root.isPushing)
             return
-
         // avoid to push a page if it is the
         // current visible page
-        console.log(stateToCheck)
-        console.log(component)
-
         if (pages.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
@@ -64,7 +60,10 @@ ApplicationWindow {
     Action {
         id: backAction
         text: Icon.back
-        onTriggered: _mainStackView.pop()
+        onTriggered: {
+            _mainStackView.pop()
+            _mainStackView.currentItem.forceActiveFocus()
+        }
     }
 
     ToolBar {

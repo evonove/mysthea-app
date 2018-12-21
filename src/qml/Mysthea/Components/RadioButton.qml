@@ -16,7 +16,7 @@ RadioButton {
 
     spacing: 12
     padding: 0
-    bottomPadding: 14
+    bottomPadding: 12
 
     indicator: RadioIndicatorLanguage {
         x: text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2
@@ -25,6 +25,7 @@ RadioButton {
     }
 
     contentItem: Text {
+        padding: 0
         leftPadding: control.indicator && !control.mirrored ? control.indicator.width + control.spacing : 0
         rightPadding: control.indicator && control.mirrored ? control.indicator.width + control.spacing : 0
 
