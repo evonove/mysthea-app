@@ -311,4 +311,8 @@ Drawer {
         anchors.fill: parent
         model: drawerMenuElement
     }
+
+    onClosed: {
+        languageItemDelegate.state = ""
+    }
 }
