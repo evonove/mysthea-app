@@ -12,13 +12,11 @@
         <file>images/evonove-logo.png</file>
         <file>qtquickcontrols2.conf</file>
         <file>qml/Mysthea/Pages/MainMenu.qml</file>
-        <file>qml/Mysthea/Pages/Credits.qml</file>
         <file>qml/Mysthea/Pages/GameSetup.qml</file>
         <file>qml/Mysthea/Pages/GameSetupModel.qml</file>
         <file>qml/Mysthea/Pages/GameSetupStep.qml</file>
         <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
         <file>qml/Mysthea/Pages/Rulebook.qml</file>
-        <file>qml/Mysthea/Pages/Language.qml</file>
         <file>qml/Mysthea/Pages/Lore.qml</file>
         <file>qml/Mysthea/Components/Button.qml</file>
         <file>qml/Mysthea/Theme/qmldir</file>

@@ -7,6 +7,9 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     title: qsTr("RULEBOOK")
+
+    objectName: "rulebookPage"
+
     property Action leftAction: null
     property bool hasToolbarLine: false
 
