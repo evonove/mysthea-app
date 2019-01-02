@@ -7,7 +7,7 @@ Page {
     id: root
     title: qsTr("LORE")
 
-    objectName: "lorePage"
+    objectName: PageName.lorePage
 
     property Action leftAction: null
     property bool hasToolbarLine: false

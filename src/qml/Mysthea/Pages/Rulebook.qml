@@ -8,7 +8,7 @@ Page {
     id: root
     title: qsTr("RULEBOOK")
 
-    objectName: "rulebookPage"
+    objectName: PageName.rulebookPage
 
     property Action leftAction: null
     property bool hasToolbarLine: false

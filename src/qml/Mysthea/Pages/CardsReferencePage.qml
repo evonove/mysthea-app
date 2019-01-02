@@ -11,7 +11,7 @@ import Mysthea.Models 1.0
 Page {
     id: root
     title: qsTr("CARDS REFERENCE")
-    objectName: "cardsReferencePage"
+    objectName: PageName.cardPage
     property Action leftAction: null
     property bool hasToolbarLine: false
 
