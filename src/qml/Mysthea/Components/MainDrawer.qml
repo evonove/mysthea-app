@@ -183,6 +183,7 @@ Drawer {
                     Layout.fillWidth: true
                     sourceComponent: languagesRadio
                     active: false
+                    opacity: 0
                 }
 
                 Component {
@@ -232,8 +233,33 @@ Drawer {
                         target: loader
                         active: true
                     }
+                    PropertyChanges {
+                        target: loader
+                        opacity: 1
+                    }
                 }
             ]
+
+            transitions: Transition {
+                reversible: true
+                to: 'expanded'
+                animations: [
+                    SequentialAnimation {
+                        PropertyAnimation {
+                            target: languageItemDelegate
+                            property: "height"
+                        }
+                        NumberAnimation {
+                            target: loader
+                            property: "opacity"
+                        }
+                    },
+                    PropertyAnimation {
+                        target: arrowImage
+                        property: "rotation"
+                    }
+                ]
+            }
         }
         Rectangle {
             implicitWidth: menuDrawer.width
