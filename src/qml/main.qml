@@ -14,8 +14,6 @@ import Mysthea.Components 1.0
 ApplicationWindow {
     id: root
 
-    signal changed
-
     visible: true
     width: 375
     height: 667
@@ -33,7 +31,7 @@ ApplicationWindow {
             return
         // avoid to push a page if it is the
         // current visible page
-        if (pages.state !== stateToCheck) {
+        if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
         }
@@ -120,7 +118,7 @@ ApplicationWindow {
         width: 0.8 * root.width
         height: root.height
 
-        state: pages.state
+        state: pageStatesList.state
 
         // This property is used to throttle clicks
         // and avoid pushing a page while one is being
@@ -211,7 +209,7 @@ ApplicationWindow {
     }
 
     StateGroup {
-        id: pages
+        id: pageStatesList
         states: [
             State {
                 name: PageName.homePage

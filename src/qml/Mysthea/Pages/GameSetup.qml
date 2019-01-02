@@ -10,7 +10,7 @@ Page {
                                          "Wizard %1 of 3").arg(
                                          root.currentIndex)
 
-    objectName: "gameSetupPage"
+    objectName: PageName.gameSetupPage
 
     property bool hasToolbarLine: false
     property Action leftAction

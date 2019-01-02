@@ -8,7 +8,7 @@ import Mysthea.Theme 1.0
 
 Page {
     id: root
-    objectName: "homePage"
+    objectName: PageName.homePage
     property Action leftAction: null
     property bool hasToolbarLine: false
 

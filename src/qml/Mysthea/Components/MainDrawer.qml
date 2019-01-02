@@ -35,7 +35,6 @@ Drawer {
                 PropertyChanges {
                     target: homeDelegate
                     Material.foreground: Palette.gallery
-                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -43,7 +42,6 @@ Drawer {
                 PropertyChanges {
                     target: cardsReferenceDelegate
                     Material.foreground: Palette.gallery
-                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -51,7 +49,6 @@ Drawer {
                 PropertyChanges {
                     target: gameSetupDelegate
                     Material.foreground: Palette.gallery
-                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -59,7 +56,6 @@ Drawer {
                 PropertyChanges {
                     target: rulebookDelegate
                     Material.foreground: Palette.gallery
-                    icon.color: Palette.gallery
                 }
             },
             State {
@@ -67,7 +63,6 @@ Drawer {
                 PropertyChanges {
                     target: loreDelegate
                     Material.foreground: Palette.gallery
-                    icon.color: Palette.gallery
                 }
             }
         ]
@@ -85,7 +80,6 @@ Drawer {
             text: qsTr("Home")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/cards-reference.svg"
-            icon.color: Palette.silverChalice
             onClicked: menuDrawer.homeClicked()
         }
         ItemDelegate {
@@ -97,7 +91,6 @@ Drawer {
             text: qsTr("Cards Reference")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/cards-reference.svg"
-            icon.color: Palette.silverChalice
             onClicked: menuDrawer.cardsReferenceClicked()
         }
         ItemDelegate {
@@ -109,7 +102,6 @@ Drawer {
             text: qsTr("Game Setup")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/game-setup.svg"
-            icon.color: Palette.silverChalice
             onClicked: menuDrawer.gameSetupClicked()
         }
         ItemDelegate {
@@ -121,7 +113,6 @@ Drawer {
             text: qsTr("Rulebook")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/rulebook.svg"
-            icon.color: Palette.silverChalice
             onClicked: menuDrawer.rulesbookClicked()
         }
         ItemDelegate {
@@ -133,7 +124,6 @@ Drawer {
             text: qsTr("Lore")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/lore.svg"
-            icon.color: Palette.silverChalice
             onClicked: menuDrawer.loreClicked()
         }
         Rectangle {
@@ -164,7 +154,7 @@ Drawer {
                         Layout.fillWidth: true
                         Label {
                             id: labelLanguage
-                            text: "Language - "
+                            text: qsTr("Language") + " - "
                         }
                         Label {
                             text: TranslationsManager.currentLanguageText
@@ -262,7 +252,7 @@ Drawer {
             }
         }
         Rectangle {
-            implicitWidth: menuDrawer.width
+            width: menuDrawer.width
             height: 1
             color: Palette.white
             opacity: 0.5
@@ -275,7 +265,6 @@ Drawer {
             text: qsTr("Tabula Games Newsletter")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/newsletter.svg"
-            icon.color: Palette.silverChalice
             onClicked: console.log("Newsletter clicked")
         }
         Rectangle {
