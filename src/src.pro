@@ -39,6 +39,7 @@ android {
 }
 
 ios {
+    QT += svg
     OTHER_FILES += $$PWD/ios/*
 
     # Custom plist
