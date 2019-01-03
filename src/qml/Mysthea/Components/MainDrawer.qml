@@ -151,6 +151,7 @@ Drawer {
                     spacing: 16
                     Image {
                         source: "qrc:/assets/icons/language.svg"
+                        sourceSize: Qt.size(24, 24)
                     }
                     Row {
                         Layout.fillWidth: true
@@ -167,6 +168,7 @@ Drawer {
                     Image {
                         id: arrowImage
                         source: "qrc:/assets/icons/arrow.svg"
+                        sourceSize.height: 24
                     }
                 }
 
@@ -291,8 +293,11 @@ Drawer {
             }
             Image {
                 id: tabulaLogo
-                Layout.leftMargin: 16
                 source: "qrc:/assets/icons/tabula-logo.svg"
+                sourceSize.width: parent.width - 180
+
+                Layout.leftMargin: 16
+
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("https://tabula.games")
@@ -317,6 +322,7 @@ Drawer {
                 id: evonoveLogo
                 Layout.leftMargin: 16
                 source: "qrc:/assets/icons/evonove-logo.svg"
+                sourceSize.width: parent.width - 180
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("https://evonove.it")

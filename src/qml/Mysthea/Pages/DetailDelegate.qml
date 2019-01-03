@@ -84,6 +84,7 @@ Pane {
 
                     Image {
                         fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 24
                         source: {
                             if (type === 1) {
                                 return "qrc:/assets/icons/era_x.svg"
@@ -107,6 +108,7 @@ Pane {
 
                     Image {
                         fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 24
                         source: {
                             if (command === 1) {
                                 return "qrc:/assets/icons/tactic.svg"
