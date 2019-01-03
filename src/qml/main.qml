@@ -117,6 +117,7 @@ ApplicationWindow {
         id: drawer
         width: 0.8 * root.width
         height: root.height
+        interactive: _mainStackView.currentItem.leftAction === drawerAction
 
         state: pageStatesList.state
 
@@ -165,9 +166,12 @@ ApplicationWindow {
             id: _homePage
             MainMenu {
                 leftAction: drawerAction
-                onCardsReferenceClicked:  root.pushToStack(_cardReference, PageName.cardPage)
-                onGameSetupClicked: root.pushToStack(_gameSetup, PageName.gameSetupPage)
-                onRulesbookClicked: root.pushToStack(_rulebook, PageName.rulebookPage)
+                onCardsReferenceClicked: root.pushToStack(_cardReference,
+                                                          PageName.cardPage)
+                onGameSetupClicked: root.pushToStack(_gameSetup,
+                                                     PageName.gameSetupPage)
+                onRulesbookClicked: root.pushToStack(_rulebook,
+                                                     PageName.rulebookPage)
                 onLoreClicked: root.pushToStack(_lore, PageName.lorePage)
             }
         }

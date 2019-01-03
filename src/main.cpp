@@ -56,8 +56,7 @@ int main(int argc, char *argv[]) {
     return -1;
 
 #ifdef Q_OS_ANDROID
-  QtAndroid::hideSplashScreen();
+//  QtAndroid::hideSplashScreen();
 #endif
-
   return app.exec();
 }
