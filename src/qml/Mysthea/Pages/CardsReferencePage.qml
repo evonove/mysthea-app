@@ -82,7 +82,6 @@ Page {
                         }
                         font.letterSpacing: 0
 
-                        Layout.minimumWidth: 150
                         Layout.fillWidth: true
                         onActivated: {
                             typeProxyModel.setTypeFilter(
@@ -109,7 +108,6 @@ Page {
 
                         enabled: typeProxyModel.enableCommand
 
-                        Layout.minimumWidth: 150
                         Layout.fillWidth: true
 
                         onActivated: {
