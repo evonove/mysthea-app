@@ -80,8 +80,6 @@ ListView {
                             id: images
                             fillMode: Image.PreserveAspectFit
                             source: "qrc:/images/cards/" + image
-                            sourceSize.height: height
-                            sourceSize.width: width
 
                             Layout.preferredHeight: parent.height - codeCard.height
                             Layout.maximumWidth: parent.width
