@@ -19,6 +19,8 @@ Drawer {
     signal rulesbookClicked
     signal loreClicked
 
+    bottomPadding: 24
+
     background: Rectangle {
         width: menuDrawer.width
         height: menuDrawer.height
@@ -178,10 +180,9 @@ Drawer {
 
                 Component {
                     id: languagesRadio
-                    Column {
+                    ColumnLayout {
                         id: column
                         spacing: 0
-                        padding: 0
 
                         ButtonGroup {
                             id: radioGroup
@@ -189,7 +190,6 @@ Drawer {
 
                             onCheckedButtonChanged: {
                                 radioGroup.checkedButton.text.color = Palette.gallery
-                                root.changed()
                             }
                         }
 
@@ -197,10 +197,13 @@ Drawer {
                             model: LanguageListModel {
                             }
                             RadioLanguage {
+                                id: radioLanguage
                                 text: model.language
                                 leftPadding: 64
                                 checked: TranslationsManager.currentLanguageText === model.language
                                 onClicked: TranslationsManager.currentLanguage = model.translation
+
+                                Layout.fillWidth: true
                             }
                         }
                     }
