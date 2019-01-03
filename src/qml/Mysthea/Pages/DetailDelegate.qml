@@ -13,8 +13,22 @@ Pane {
     rightPadding: 20
     background: null
 
+    property bool activeInSwipe: false
+
+    BusyIndicator {
+        anchors.centerIn: parent
+        running: !loader.visible
+    }
+
     //Since DetailDelegate is used in a Repeater it can access to its CardsModel. So we use CardsModel's roles
     //to access a card data.
+    Loader {
+        id: loader
+        anchors.fill: parent
+        asynchronous: true
+        active: activeInSwipe
+        visible: status === Loader.Ready
+        sourceComponent: Component {
     Flickable {
         anchors.fill: parent
         contentHeight: _layout.height
@@ -150,4 +164,7 @@ Pane {
             }
         }
     }
+        }
+    }
+
 }
