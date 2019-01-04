@@ -116,7 +116,7 @@ ListView {
                         anchors.fill: parent
                         onClicked: {
                             // Unfocuses search field so that keyboard is hidden
-                            _searchField.focus = false
+//                            _searchField.focus = false
                             _cardsList.cardClicked(code)
                         }
                     }
