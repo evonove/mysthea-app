@@ -1,7 +1,5 @@
 #include "typemodel.h"
 #include "card_data.h"
-#include "cardsmodel.h"
-#include <QDebug>
 #include <QList>
 #include <QVariant>
 
@@ -9,14 +7,24 @@ TypeModel::TypeModel(QObject *parent)
     : QAbstractListModel{parent}, m_types{cards_data.size()} {
   // We create QVector<QVariantList> cards in constructor because
   // in this way it is created only once. While if we put this code in
-  // data function it is created every time data is executed.
+  // data function it is created every time data is executed.auto
+  QVector<Card> allCards;
   for (auto i = 0; i < cards_data.size(); i++) {
-    m_types[i] = new CardsProxyModel();
-    m_types[i]->setSourceModel(new CardsModel(cards_data.at(i)));
+    allCards.append(cards_data[i]);
+  }
+
+  m_allCardsModel = new CardsModel(allCards);
+
+  for (auto i = 0; i < cards_data.size(); i++) {
+    m_types[i] = new CardsProxyModel(i + 1);
+    m_types[i]->setSourceModel(m_allCardsModel);
   }
 }
 
-TypeModel::~TypeModel() { qDeleteAll(m_types); }
+TypeModel::~TypeModel() {
+  qDeleteAll(m_types);
+  m_allCardsModel->deleteLater();
+}
 
 QHash<int, QByteArray> TypeModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Type, "type"},

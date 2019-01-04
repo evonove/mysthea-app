@@ -44,6 +44,10 @@ int main(int argc, char *argv[]) {
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
 
+  qmlRegisterUncreatableType<CardsProxyModel>(
+      "Mysthea.Models", 1, 0, "CardsProxyModel",
+      "CardsProxyModel cannot be created");
+
   qmlRegisterType<TypeComboBoxModel>("Mysthea.Models", 1, 0,
                                      "TypeComboBoxModel");
   qmlRegisterType<CommandComboBoxModel>("Mysthea.Models", 1, 0,

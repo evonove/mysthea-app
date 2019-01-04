@@ -11,7 +11,7 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
 
-    property CardsModel model: null
+    property CardsProxyModel model: null
     property int index: -1
 
     padding: 0
@@ -33,6 +33,7 @@ Page {
 
         Repeater {
             model: root.model
+
             DetailDelegate {
                 width: root.width
                 height: root.height - _swipeView.topPadding

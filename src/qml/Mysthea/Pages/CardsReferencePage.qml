@@ -16,7 +16,7 @@ Page {
     property bool hasToolbarLine: false
 
 
-    signal cardClicked(CardsModel cards, int index)
+    signal cardClicked(CardsProxyModel cards, int index)
 
     TypeProxyModel {
         id: typeProxyModel
@@ -146,7 +146,7 @@ Page {
         CardsList {
             model: typeProxyModel
             onCardClicked: {
-                var cardsModel = typeProxyModel.visibleCards()
+                var cardsModel = typeProxyModel.visibleCards
                 root.cardClicked(cardsModel, cardsModel.indexOf(clickedCode))
             }
         }
