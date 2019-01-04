@@ -161,13 +161,16 @@ ApplicationWindow {
             }
         }
 
+
+
         initialItem: _homePage
         Component {
             id: _homePage
             MainMenu {
                 leftAction: drawerAction
-                onCardsReferenceClicked: root.pushToStack(_cardReference,
-                                                          PageName.cardPage)
+
+                onCardsReferenceClicked: root.pushToStack(_cardReference, PageName.cardPage)
+
                 onGameSetupClicked: root.pushToStack(_gameSetup,
                                                      PageName.gameSetupPage)
                 onRulesbookClicked: root.pushToStack(_rulebook,

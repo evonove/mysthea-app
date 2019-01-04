@@ -28,7 +28,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 android {
-    QT += androidextras
+    QT += androidextras svg
 
     OTHER_FILES += \
         $$PWD/android/res/values/* \
