@@ -1,10 +1,9 @@
 #include "cardsproxymodel.h"
-#include "cardsmodel.h"
 
-#include <QDebug>
-
-CardsProxyModel::CardsProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_code{""}, m_command{0} {}
+CardsProxyModel::CardsProxyModel(int type, QObject *parent)
+    : QSortFilterProxyModel(parent), m_code{""}, m_command{0} {
+  m_type = type;
+}
 
 void CardsProxyModel::setCodeFilter(QString code) {
   code = code.toUpper();
@@ -40,6 +39,16 @@ bool CardsProxyModel::filterAcceptsRow(int source_row,
 
   // Gets all roles that can be filtered
 
+  if (m_type == 0) {
+    acceptRow = acceptRow && true;
+  } else {
+    auto type = model->data(createIndex(source_row, 0), CardsModel::Roles::Type)
+                    .toInt();
+    if (m_type != type) {
+      return false;
+    }
+  }
+
   auto code = model->data(createIndex(source_row, 0), CardsModel::Roles::Code)
                   .toString();
 
@@ -60,4 +69,13 @@ bool CardsProxyModel::filterAcceptsRow(int source_row,
   }
 
   return acceptRow;
+}
+
+int CardsProxyModel::indexOf(const QString &code) const {
+  for (auto i = 0; i < rowCount(); i++) {
+    if (data(index(i, 0), CardsModel::Roles::Code).toString() == code) {
+      return i;
+    }
+  }
+  return -1;
 }

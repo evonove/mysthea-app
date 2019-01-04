@@ -1,6 +1,7 @@
 #ifndef TYPEMODEL_H
 #define TYPEMODEL_H
 
+#include "cardsmodel.h"
 #include "cardsproxymodel.h"
 #include <QAbstractListModel>
 #include <QVector>
@@ -19,8 +20,11 @@ public:
   int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
   QVariant data(const QModelIndex &index,
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
+  CardsModel *allCardsModel() const { return m_allCardsModel; }
 
+private:
   QVector<CardsProxyModel *> m_types;
+  CardsModel *m_allCardsModel;
 };
 
 #endif // TYPEMODEL_H

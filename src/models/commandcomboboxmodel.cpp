@@ -4,7 +4,6 @@
 #include "commandcomboboxmodel.h"
 #include "card_data.h"
 
-#include <QDebug>
 #include <QList>
 #include <QVariant>
 

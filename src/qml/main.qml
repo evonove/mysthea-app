@@ -186,6 +186,7 @@ ApplicationWindow {
                                                    })
             }
         }
+
         Component {
             id: _detailPage
             DetailPage {
