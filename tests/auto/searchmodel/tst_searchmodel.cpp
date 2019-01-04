@@ -67,7 +67,6 @@ void TestSearchModel::testDefaultFilters() {
 void TestSearchModel::testCodeFilter() {
   // Verifies that changing only Code to filter rows are filtered correctly
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Applies various Code filters and verifies expected number of rows is
   //  shown
@@ -158,7 +157,6 @@ void TestSearchModel::testTypeFilter() {
   // Verifies that changing only Category to filter rows are filtered
   // correctly
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Applies various Type filters and verifies expected number of rows is
   // shown
@@ -217,7 +215,6 @@ void TestSearchModel::testTypeFilter() {
 void TestSearchModel::testCommandFilter() {
   // Verifies that changing only Commands to filter rows are filtered correctly
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Applies various Commands filters and verifies expected number of rows is
   //  shown
@@ -426,7 +423,6 @@ void TestSearchModel::testCommandFilter() {
 void TestSearchModel::testMixedFilters() {
   // Verifies changing differents filters row are filtered correctly
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Applies various filters and verifies expected number of rows is shown
   typeProxy->setTypeFilter(5);
@@ -510,7 +506,6 @@ void TestSearchModel::testMixedFilters() {
 void TestSearchModel::testResetFilter() {
   // Verifies filters are reset to default values
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Verifies default number of rows
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
@@ -585,7 +580,6 @@ void TestSearchModel::testResetFilter() {
 void TestSearchModel::testCaseInsensitiveFilter() {
   // Verifies Code filter is case insensitive
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
 
   // Verifies default number of rows
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 6);
@@ -663,7 +657,7 @@ void TestSearchModel::testCaseInsensitiveFilter() {
 
 void TestSearchModel::testIndexOf() {
   // Verfies indexOf function returns the correct position of clicked card.
-  auto cardModel = new CardsModel();
+
   // create a mock vector of cards.
   QVector<Card> cards;
   cards.append({"C001", 0, -1, "", ""});
@@ -673,16 +667,19 @@ void TestSearchModel::testIndexOf() {
   cards.append({"H01", 0, -1, "", " "});
   cards.append({"H02", 0, -1, "", " "});
   cards.append({"A01", 0, -1, "", " "});
-  cardModel->setCards(cards);
-  QCOMPARE(cardModel->indexOf("C003"), 2);
-  QCOMPARE(cardModel->indexOf("X484373738"), -1);
+  auto cardModel = new CardsModel(cards);
+
+  auto cardsProxyModel = new CardsProxyModel(0);
+  cardsProxyModel->setSourceModel(cardModel);
+
+  QCOMPARE(cardsProxyModel->indexOf("C003"), 2);
+  QCOMPARE(cardsProxyModel->indexOf("X484373738"), -1);
 }
 
 void TestSearchModel::testVisibleCards() {
   // Verfies changing differents filters to check visibleCards
   // function return the correct number of filtered cards.
   auto typeProxy = new TypeProxyModel();
-  typeProxy->setSourceModel(new TypeModel);
   QCOMPARE(typeProxy->visibleCards()->rowCount(), 94);
   // Applies code filter.
   typeProxy->setCodeFilter("01");
