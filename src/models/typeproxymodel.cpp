@@ -2,6 +2,8 @@
 #include "cardsmodel.h"
 #include "typecomboboxmodel.h"
 
+#include <QDebug>
+
 TypeProxyModel::TypeProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent), m_type{0}, m_code{""}, m_command{0},
       m_allCardsModel{new CardsProxyModel(0)}, m_sourceModel{new TypeModel} {
