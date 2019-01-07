@@ -17,7 +17,7 @@ ListModel {
         translation: TranslationsManager.Spanish
     }
     ListElement {
-        language: "Duitse"
+        language: "Deutsch"
         translation:TranslationsManager.German
     }
     ListElement {
