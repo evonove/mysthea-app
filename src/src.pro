@@ -31,6 +31,7 @@ android {
     QT += androidextras svg
 
     OTHER_FILES += \
+        $$PWD/android/res/drawable/* \
         $$PWD/android/res/values/* \
         $$PWD/android/AndroidManifest.xml \
         $$PWD/android/build.gradle
