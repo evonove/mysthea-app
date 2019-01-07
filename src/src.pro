@@ -46,9 +46,14 @@ ios {
     # Custom plist
     QMAKE_INFO_PLIST = $$PWD/ios/Info.plist
 
+    # launch images
+    launchimages.files = $$files($$PWD/ios/LaunchImage*.png)
+    QMAKE_BUNDLE_DATA += launchimages
+
     # App assets
      QMAKE_ASSET_CATALOGS = $$PWD/ios/Images.xcassets
      QMAKE_ASSET_CATALOGS_APP_ICON = "AppIcon"
+    QMAKE_ASSET_CATALOGS_LAUNCH_IMAGE = "LaunchImage"
 }
 
 DISTFILES += \
