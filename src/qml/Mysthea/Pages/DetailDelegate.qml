@@ -90,7 +90,8 @@ Pane {
                     RowLayout {
                         Layout.fillWidth: true
                         spacing: 12
-                        visible: !(type === 5 || type === 6)
+                        // Era text must only be visible for Command cards
+                        visible: type >= 1 && type <= 4
 
                         Label {
                             text: qsTr("Era")

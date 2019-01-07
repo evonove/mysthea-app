@@ -119,5 +119,7 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
 }
 
 bool TypeProxyModel::enableCommand() const {
-  return !(m_type == 5 || m_type == 6);
+  // Returns wether command combo box should be enabled or not.
+  // Command combo box must be enabled when at least a command card is visible.
+  return m_type >= 0 && m_type <= 4;
 }
