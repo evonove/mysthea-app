@@ -8,10 +8,12 @@
 #include <QVariant>
 
 TypeComboBoxModel::TypeComboBoxModel(QObject *parent)
-    : QAbstractListModel{parent}, m_types{{0, ALL_TYPES_TEXT}, {1, ERAX_TEXT},
-                                          {2, ERAI_TEXT},      {3, ERAII_TEXT},
-                                          {4, ERAIII_TEXT},    {5, HERO_TEXT},
-                                          {6, ATTUNEMENT_TEXT}} {}
+    : QAbstractListModel{parent}, m_types{
+                                      {0, ALL_TYPES_TEXT},  {1, ERAX_TEXT},
+                                      {2, ERAI_TEXT},       {3, ERAII_TEXT},
+                                      {4, ERAIII_TEXT},     {5, HERO_TEXT},
+                                      {6, ATTUNEMENT_TEXT}, {7, ENCOUNTER_TEXT},
+                                      {8, EVENT_TEXT}} {}
 
 TypeComboBoxModel::~TypeComboBoxModel() {}
 
