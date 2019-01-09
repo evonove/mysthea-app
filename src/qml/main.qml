@@ -86,19 +86,23 @@ ApplicationWindow {
             font.pixelSize: 24
             font.family: "Material Icons"
             action: _mainStackView.currentItem.leftAction
+
+            Material.foreground: Palette.white
         }
         RowLayout {
             anchors.fill: parent
             Label {
                 id: label
-                Layout.fillWidth: true
-                Layout.fillHeight: true
                 anchors.topMargin: 16
                 text: _mainStackView.currentItem.title
                 font.pixelSize: 20
                 font.letterSpacing: 0.5
                 horizontalAlignment: Qt.AlignHCenter
                 verticalAlignment: Qt.AlignVCenter
+
+                Material.foreground: Palette.white
+                Layout.fillWidth: true
+                Layout.fillHeight: true
             }
 
             Repeater {
@@ -108,6 +112,8 @@ ApplicationWindow {
                     font.pixelSize: 24
                     font.family: "Material Icons"
                     action: modelData
+
+                    Material.foreground: Palette.white
                 }
             }
         }
