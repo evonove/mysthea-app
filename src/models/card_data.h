@@ -5,20 +5,26 @@
 #include <QList>
 #include <QString>
 // types
-static constexpr auto ALL_TYPES_TEXT = QT_TRANSLATE_NOOP("CardsData", "All types");
+static constexpr auto ALL_TYPES_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "All types");
 static constexpr auto ERAX_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era X");
 static constexpr auto ERAI_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era I");
 static constexpr auto ERAII_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era II");
 static constexpr auto ERAIII_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era III");
 static constexpr auto HERO_TEXT = QT_TRANSLATE_NOOP("CardsData", "Hero");
-static constexpr auto ATTUNEMENT_TEXT = QT_TRANSLATE_NOOP("CardsData", "Attunement");
-static constexpr auto ENCOUNTER_TEXT = QT_TRANSLATE_NOOP("CardsData", "Encounter");
+static constexpr auto ATTUNEMENT_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "Attunement");
+static constexpr auto ENCOUNTER_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "Encounter");
 static constexpr auto EVENT_TEXT = QT_TRANSLATE_NOOP("CardsData", "Event");
 // commands
-static constexpr auto ALL_COMMANDS_TEXT = QT_TRANSLATE_NOOP("CardsData", "All commands");
+static constexpr auto ALL_COMMANDS_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "All commands");
 static constexpr auto TACTIC_TEXT = QT_TRANSLATE_NOOP("CardsData", "Tactic");
-static constexpr auto OBJECTIVE_TEXT = QT_TRANSLATE_NOOP("CardsData", "Objective");
-static constexpr auto ACCESSORY_TEXT = QT_TRANSLATE_NOOP("CardsData", "Accessory");
+static constexpr auto OBJECTIVE_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "Objective");
+static constexpr auto ACCESSORY_TEXT =
+    QT_TRANSLATE_NOOP("CardsData", "Accessory");
 static constexpr auto UPGRADE_TEXT = QT_TRANSLATE_NOOP("CardsData", "Upgrade");
 
 struct Card {
@@ -31,10 +37,9 @@ struct Card {
 
 Q_DECLARE_METATYPE(Card)
 
-const QHash<int, QString> types_map{{1, ERAX_TEXT},  {2, ERAI_TEXT},
-                                    {3, ERAII_TEXT}, {4, ERAIII_TEXT},
-                                    {5, HERO_TEXT},  {6, ATTUNEMENT_TEXT},
-                                    {7, ENCOUNTER_TEXT}, {8, EVENT_TEXT}};
+const QHash<int, QString> types_map{
+    {1, ERAX_TEXT}, {2, ERAI_TEXT},       {3, ERAII_TEXT},     {4, ERAIII_TEXT},
+    {5, HERO_TEXT}, {6, ATTUNEMENT_TEXT}, {7, ENCOUNTER_TEXT}, {8, EVENT_TEXT}};
 
 const QHash<int, QString> commands_map{{1, TACTIC_TEXT},
                                        {2, OBJECTIVE_TEXT},
@@ -64,8 +69,8 @@ const QVector<QVector<Card>> cards_data = {
         {"C017",    1,  4,      "c017.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Construct a Troop, gain 1 Experience Point.")},
         {"C018",    1,  4,      "c018.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Construct a Golem, you may Deploy it at no cost.")},
         {"C019",    1,  4,      "c019.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 2 Strength Points to your Champion.")},
-        {"C020",    1,  4,      "c020.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.")},
-    },
+        {"C020",    1,  4,      "c020.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it."}
+    )},
     // Era I
     {
         {"C021",    2,  1,      "c021.jpg",     QT_TRANSLATE_NOOP("CardsData", "Pay 1 Energy Point to Recharge your Artefact.")},
@@ -87,7 +92,7 @@ const QVector<QVector<Card>> cards_data = {
         {"C037",    2,  4,      "c037.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Deploy a Golem, you may gain 3 Glory Points.")},
         {"C038",    2,  4,      "c038.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever your Champion Travels, they may carry one of your units from the same region that has not yet traveled this turn. If your Champion Travels several times, they can carry a different unit each time.")},
         {"C039",    2,  4,      "c039.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Construct a Troop, you may Deploy it at no cost.")},
-        {"C040",    2,  4,      "c040.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Accessory Card, you do not have to spend Energy Points to place it.")},
+        {"C040",    2,  4,      "c040.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Accessory Card, you do not have to spend Energy Points to place it.")}
     },
     // Era II
     {
@@ -110,7 +115,7 @@ const QVector<QVector<Card>> cards_data = {
         {"C057",    3,  4,      "c057.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play a Tactic Card, you do not have to pay its Energy cost.")},
         {"C058",    3,  4,      "c058.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength Point to each of your Golems.")},
         {"C059",    3,  4,      "c059.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever one of your Troops Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Troop.")},
-        {"C060",    3,  4,      "c060.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength to each of your Fortifications.")},
+        {"C060",    3,  4,      "c060.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength to each of your Fortifications.")}
     },
     // Era III
     {
@@ -133,7 +138,7 @@ const QVector<QVector<Card>> cards_data = {
         {"C077",    4,  4,      "c077.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever one of your Golems Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Golem.")},
         {"C078",    4,  4,      "c078.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Objective Card, you do not have to pay its Energy cost.")},
         {"C079",    4,  4,      "c079.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Deploy a Fortification, gain 4 Glory Points.")},
-        {"C080",    4,  4,      "c080.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength Point to each of your Troops.")},
+        {"C080",    4,  4,      "c080.jpg",     QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength Point to each of your Troops.")}
     },
     // Hero
     {
@@ -142,13 +147,13 @@ const QVector<QVector<Card>> cards_data = {
         {"H03",     5,  -1,     "h03.jpg",      QT_TRANSLATE_NOOP("CardsData", "Leheir: When you Start a Battle, Leheir gives you 1 extra Glory Point for each unit which are removed or retreat (including your own), and for each Champion that becomes wounded.")},
         {"H04",     5,  -1,     "h04.jpg",      QT_TRANSLATE_NOOP("CardsData", "Telron: At the very beginning of each Era (before Champions are restored), Telron gives you 4 extra Energy Points if not wounded.")},
         {"H05",     5,  -1,     "h05.jpg",      QT_TRANSLATE_NOOP("CardsData", "CR-2T1: At the end of each Era, you receive 3 extra Glory Points for each 2 regions you control.")},
-        {"H06",     5,  -1,     "h06.jpg",      QT_TRANSLATE_NOOP("CardsData", "Sanya: When you Start a Battle or Face an 7, you may first choose to take the card on top of the Era Deck of the current Era and add it to your hand, at no cost.")},
-        {"H07",     5,  -1,     "h07.jpg",      QT_TRANSLATE_NOOP("CardsData", "Kolbor & Malabor: When you Move an Island, you can perform one of any of the 6s available, regardless of which Island you moved.")},
+        {"H06",     5,  -1,     "h06.jpg",      QT_TRANSLATE_NOOP("CardsData", "Sanya: When you Start a Battle or Face an Encounter, you may first choose to take the card on top of the Era Deck of the current Era and add it to your hand, at no cost.")},
+        {"H07",     5,  -1,     "h07.jpg",      QT_TRANSLATE_NOOP("CardsData", "Kolbor & Malabor: When you Move an Island, you can perform one of any of the Attunements available, regardless of which Island you moved.")}
     },
     // Attunenement
     {
         {"A01",     6,  -1,     "a01.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 3 Glory Points for each Upgrade Card in play on your Player Board.")},
-        {"A02",     6,  -1,     "a02.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 4 Glory Points for each 7 you faced.")},
+        {"A02",     6,  -1,     "a02.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 4 Glory Points for each Encounter you faced.")},
         {"A03",     6,  -1,     "a03.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 3 Glory Points for each region you control.")},
         {"A04",     6,  -1,     "a04.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 2 Glory Points for each of your Troops currently deployed.")},
         {"A05",     6,  -1,     "a05.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 2 Glory Points for each Command Card in your discard pile.")},
@@ -156,7 +161,7 @@ const QVector<QVector<Card>> cards_data = {
         {"A07",     6,  -1,     "a07.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 2 Glory Points for each Experience Point you currently possess.")},
         {"A08",     6,  -1,     "a08.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 1 Glory Point for each region where you have at least one unit.")},
         {"A09",     6,  -1,     "a09.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. Receive 3 Glory Points for each of your Golems currently deployed.")},
-        {"A10",     6,  -1,     "a10.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. At the end of this Era, receive 8 Glory Points for each Monster defeated (even if you did not take part in the attack).")},
+        {"A10",     6,  -1,     "a10.jpg",      QT_TRANSLATE_NOOP("CardsData", "Attune to the anomaly. At the end of this Era, receive 8 Glory Points for each Monster defeated (even if you did not take part in the attack).")}
     },
     // Encounter
     {
@@ -166,7 +171,7 @@ const QVector<QVector<Card>> cards_data = {
         {"EN04",    7,  -1,     "en04.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Axe: Gain 3 Glory Points for each Forest region you control / Dialogue: Gain 1 Experience Point and Travel with your Champion.")},
         {"EN05",    7,  -1,     "en05.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Boots: Gain 2 Command Points / Chest: Gain 1 Energy Point and Develop.")},
         {"EN06",    7,  -1,     "en06.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Chest: Gain 3 Energy Points / Boots: Draw 1 card from the top of the Era Deck.")},
-        {"EN07",    7,  -1,     "en07.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Construct 1 Troop or Travel with 1 Troop you control. ")},
+        {"EN07",    7,  -1,     "en07.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Construct 1 Troop or Travel with 1 Troop you control.")},
         {"EN08",    7,  -1,     "en08.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Dialogue: Gain 1 Energy Point and 1 Command Point / Boots: Remove 1 Troop from each Opponent.")},
         {"EN09",    7,  -1,     "en09.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Chest: Discard a Tactic Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card / Dialogue: Construct or Deploy 1 Troop.")},
         {"EN10",    7,  -1,     "en10.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Dialogue: Gain 3 Glory Points for each Land of Myst region you control / Boots: Choose 1 Golem and 1 Troop you control, then Travel to any region.")},
@@ -179,17 +184,17 @@ const QVector<QVector<Card>> cards_data = {
         {"EN17",    7,  -1,     "en17.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Draw 1 card from the top of the Era Deck.")},
         {"EN18",    7,  -1,     "en18.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Chest: Construct 1 Troop or Construct 1 Golem / Axe: Discard an Accessory Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.")},
         {"EN19",    7,  -1,     "en19.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Chest: Gain 2 Energy Points or gain 2 Command Points / Dialogue: Gain 2 Experience Points.")},
-        {"EN20",    7,  -1,     "en20.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Boots: Travel to any region with your Champion / Axe: Choose a Monster placed on the 8s Board. The Monster attacks immediately.")},
+        {"EN20",    7,  -1,     "en20.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Boots: Travel to any region with your Champion / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.")},
         {"EN21",    7,  -1,     "en21.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Dialogue: Construct or Deploy 1 Golem / Boots: Gain 3 Glory Points and Start a Battle in any region with at least 1 Opponent.")},
         {"EN22",    7,  -1,     "en22.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Chest: Pay 1 Energy Point to gain 3 Glory Points / Boots: Travel to any region with 2 Troops you control.")},
         {"EN23",    7,  -1,     "en23.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Dialogue: Draw 1 card from the top of the Era Deck / Axe: Discard an Upgrade Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.")},
         {"EN24",    7,  -1,     "en24.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 8 Glory Points. Boots: Deploy 1 Golem or Travel with 1 Golem / Dialogue: Gain 3 Glory Points for each River region you control.")},
         {"EN25",    7,  -1,     "en25.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Axe: Pay 1 Energy Point to gain 2 Glory Points and 1 Experience Point / Boots: Choose a region with at least 1 Troop or 1 Golem you control. Travel with all Troops and Golems you control in the chosen region to any other region.")},
         {"EN26",    7,  -1,     "en26.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Boots: Recharge your Artefact and gain 1 Experience Point / Dialogue: Gain 4 Glory Points.")},
-        {"EN27",    7,  -1,     "en27.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Chest: Meditate / Axe: Choose a Monster placed on the 8s Board. The Monster attacks immediately.")},
+        {"EN27",    7,  -1,     "en27.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 6 Glory Points. Chest: Meditate / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.")},
         {"EN28",    7,  -1,     "en28.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Boots: Travel with 2 Troops / Axe: Deploy a Fortification or 1 Golem.")},
         {"EN29",    7,  -1,     "en29.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Axe: Recharge your Artefact and Start a Battle in any region with at least 1 Opponent / Boots: Discard an Objective Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.")},
-        {"EN30",    7,  -1,     "en30.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Dialogue: Act / Chest: Gain 3 Glory Points for each Mountain region you control.")},
+        {"EN30",    7,  -1,     "en30.jpg",     QT_TRANSLATE_NOOP("CardsData", "Gain 7 Glory Points. Dialogue: Act / Chest: Gain 3 Glory Points for each Mountain region you control.")}
     },
     // Event
     {
@@ -201,11 +206,13 @@ const QVector<QVector<Card>> cards_data = {
         {"EV06",    8,  -1,     "ev06.jpg",     QT_TRANSLATE_NOOP("CardsData", "Storm")},
         {"EV07",    8,  -1,     "ev07.jpg",     QT_TRANSLATE_NOOP("CardsData", "Boulron the Reaper:\nStrength 11\nRewards:\nGold - Gain 9 Glory Points.\nSilver - Gain 4 Glory Points.\nBronze - Gain 2 Glory Points.\nBehaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.")},
         {"EV08",    8,  -1,     "ev08.jpg",     QT_TRANSLATE_NOOP("CardsData", "Onygauros the Collector:\nStrength 13\nRewards:\nGold - Gain 4 Command Points and 4 Glory Points.\nSilver - Gain 3 Command Points and 3 Glory Points.\nBronze - Gain 2 Command Points and 2 Glory Points.\nBehaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.")},
-        {"EV09",    8,  -1,     "ev09.jpg",     QT_TRANSLATE_NOOP("CardsData", "Caerulas the Inhabitant from Below:\nStrength 15\nRewards:\nGold - Gain 5 Experience Points and 5 Glory Points.\nSilver - Gain 4 Experience Points and 4 Glory Points.\nBronze - Gain 3 Experience Points and 3 Glory Points.\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation. ")},
-        {"EV10",    8,  -1,     "ev10.jpg",     QT_TRANSLATE_NOOP("CardsData", "Utcoro the Swarmer:\nStrength 10\nRewards:\nGold - Gain 3 Glory Points. You may also Face an 7.\nSilver - Gain 2 Glory Points. You may also Face an 7.\nBronze - Gain 1 Glory Point. You may also Face an 7.\nYou can Face these 7s even if your Champion and your 7 token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing 7s apply.\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.")},
+        {"EV09",    8,  -1,     "ev09.jpg",     QT_TRANSLATE_NOOP("CardsData", "Caerulas the Inhabitant from Below:\nStrength 15\nRewards:\nGold - Gain 5 Experience Points and 5 Glory Points.\nSilver - Gain 4 Experience Points and 4 Glory Points.\nBronze - Gain 3 Experience Points and 3 Glory Points.\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.")},
+        {"EV10",    8,  -1,     "ev10.jpg",     QT_TRANSLATE_NOOP("CardsData", "Utcoro the Swarmer:\nStrength 10\nRewards:\nGold - Gain 3 Glory Points. You may also Face an Encounter.\nSilver - Gain 2 Glory Points. You may also Face an Encounter.\nBronze - Gain 1 Glory Point. You may also Face an Encounter.\nYou can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.")},
         {"EV11",    8,  -1,     "ev11.jpg",     QT_TRANSLATE_NOOP("CardsData", "Cannibarok the Qoam Eater:\nStrength 12\nRewards:\nGold - Gain 6 Energy Points and 6 Glory Points.\nSilver - Gain 4 Energy Points and 4 Glory Points.\nBronze - Gain 2 Energy Points and 2 Glory Points.\nBehaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.")},
         {"EV12",    8,  -1,     "ev12.jpg",     QT_TRANSLATE_NOOP("CardsData", "Obsidusa The Devourer:\nStrength 14\nRewards:\nGold - Gain 7 Glory Points and draw 1 Command card.\nSilver - Gain 5 Glory Points and draw 1 Command card.\nBronze - Gain 3 Glory Points and draw 1 Command card.\nCommand cards are drawn from the Era Deck of the current Era.\nBehaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.")},
-        {"EV13",    8,  -1,     "ev13.jpg",     QT_TRANSLATE_NOOP("CardsData", "Kodror the Infestation:\nStrength 16\nRewards:\nGold - Gain 16 Glory Points.\nSilver - Gain 12 Glory Points.\nBronze - Gain 8 Glory Points.\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its 8 Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s 8 Card from the game.")}
+        {"EV13",    8,  -1,     "ev13.jpg",     QT_TRANSLATE_NOOP("CardsData", "Kodror the Infestation:\nStrength 16\nRewards:\nGold - Gain 16 Glory Points.\nSilver - Gain 12 Glory Points.\nBronze - Gain 8 Glory Points.\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.")}
+
+
     }
 };
 // clang-format on
