@@ -27,6 +27,10 @@ Drawer {
         color: Palette.mineShaft
     }
 
+    LanguageListModel {
+        id: _languageListModel
+    }
+
     property alias state: pagesDelegate.state
 
     StateGroup {
@@ -157,10 +161,19 @@ Drawer {
                         Layout.fillWidth: true
                         Label {
                             id: labelLanguage
-                            text: qsTr("Language") + " - "
+                            text: qsTr("Language - ")
                         }
+
                         Label {
-                            text: TranslationsManager.currentLanguageText
+                            text: {
+                                // Find name of current language
+                                for (var i = 0; i < _languageListModel.count; i++) {
+                                    var element = _languageListModel.get(i);
+                                    if (element.translation === TranslationsManager.currentLanguage) {
+                                        return element.language;
+                                    }
+                                }
+                            }
                             color: Palette.gallery
                         }
                     }
@@ -196,13 +209,12 @@ Drawer {
                         }
 
                         Repeater {
-                            model: LanguageListModel {
-                            }
+                            model: _languageListModel
                             RadioLanguage {
                                 id: radioLanguage
                                 text: model.language
                                 leftPadding: 64
-                                checked: TranslationsManager.currentLanguageText === model.language
+                                checked: TranslationsManager.currentLanguage === model.translation
                                 onClicked: TranslationsManager.currentLanguage = model.translation
 
                                 Layout.fillWidth: true

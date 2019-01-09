@@ -16,10 +16,13 @@
 static QObject *
 translations_manager_singletontype_provider(QQmlEngine *engine,
                                             QJSEngine *scriptEngine) {
-  Q_UNUSED(engine)
   Q_UNUSED(scriptEngine)
+  auto translationsManager = new TranslationsManager();
 
-  return new TranslationsManager();
+  QObject::connect(translationsManager, SIGNAL(currentLanguageChanged()),
+                   engine, SLOT(retranslate()));
+
+  return translationsManager;
 }
 
 int main(int argc, char *argv[]) {
@@ -28,10 +31,6 @@ int main(int argc, char *argv[]) {
   QGuiApplication app(argc, argv);
 
   QQmlApplicationEngine engine;
-  TranslationsManager translationsManager;
-
-  QObject::connect(&translationsManager, SIGNAL(currentLanguageChanged()),
-                   &engine, SLOT(retranslate()));
 
   qmlRegisterSingletonType<TranslationsManager>(
       "Translations", 1, 0, "TranslationsManager",
