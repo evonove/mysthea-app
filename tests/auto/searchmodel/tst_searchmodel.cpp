@@ -660,13 +660,13 @@ void TestSearchModel::testIndexOf() {
 
   // create a mock vector of cards.
   QVector<Card> cards;
-  cards.append({"C001", 0, -1, "", ""});
-  cards.append({"C002", 0, -1, "", " "});
-  cards.append({"C003", 0, -1, "", " "});
-  cards.append({"C004", 0, -1, "", " "});
-  cards.append({"H01", 0, -1, "", " "});
-  cards.append({"H02", 0, -1, "", " "});
-  cards.append({"A01", 0, -1, "", " "});
+  cards.append({"C001", 0, -1, "", "", ""});
+  cards.append({"C002", 0, -1, "", "", " "});
+  cards.append({"C003", 0, -1, "", "", " "});
+  cards.append({"C004", 0, -1, "", "", " "});
+  cards.append({"H01", 0, -1, "", "", " "});
+  cards.append({"H02", 0, -1, "", "", " "});
+  cards.append({"A01", 0, -1, "", "", " "});
   auto cardModel = new CardsModel(cards);
 
   auto cardsProxyModel = new CardsProxyModel(0);

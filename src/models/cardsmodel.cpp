@@ -1,7 +1,7 @@
 #include "cardsmodel.h"
+#include <QGuiApplication>
 #include <QList>
 #include <QVariant>
-#include <QGuiApplication>
 
 CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
     : QAbstractListModel{parent}, m_cards{cards} {}
@@ -13,6 +13,7 @@ QHash<int, QByteArray> CardsModel::roleNames() const {
                                 {Roles::Command, "command"},
                                 {Roles::CommandText, "commandText"},
                                 {Roles::Image, "image"},
+                                {Roles::BackImage, "backImage"},
                                 {Roles::Description, "description"},
                                 {Roles::CardRole, "card"}};
 }
@@ -45,6 +46,8 @@ QVariant CardsModel::data(const QModelIndex &index, int role) const {
   }
   case Roles::Image:
     return m_cards.at(row).image;
+  case Roles::BackImage:
+    return m_cards.at(row).backImage;
   case Roles::Description: {
     auto description = m_cards.at(row).description;
     return qGuiApp->translate("CardsData", description.toStdString().c_str());
