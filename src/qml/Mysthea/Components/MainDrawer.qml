@@ -270,7 +270,7 @@ Drawer {
             text: qsTr("Tabula Games Newsletter")
             Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/newsletter.svg"
-            onClicked: console.log("Newsletter clicked")
+            onClicked: Qt.openUrlExternally("https://mysthea.tabula.games/newsletter/")
         }
         Rectangle {
             width: menuDrawer.width
