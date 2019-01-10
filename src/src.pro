@@ -4,14 +4,17 @@ SOURCES += \
     $$PWD/main.cpp
 
 RESOURCES += \
+    $$PWD/assets.qrc \
+    $$PWD/attunement.qrc \
+    $$PWD/encounter.qrc \
+    $$PWD/era-i.qrc \
+    $$PWD/era-ii.qrc \
+    $$PWD/era-iii.qrc \
+    $$PWD/era-x.qrc \
+    $$PWD/event.qrc \
+    $$PWD/hero.qrc \
     $$PWD/qml.qrc \
-    $$PWD/translations.qrc \
-    $$PWD/red-cards.qrc \
-    $$PWD/yellow-cards.qrc \
-    $$PWD/green-cards.qrc \
-    $$PWD/blue-cards.qrc \
-    $$PWD/gray-cards.qrc \
-    $$PWD/assets.qrc
+    $$PWD/translations.qrc
 
 include($$PWD/src.pri)
 
