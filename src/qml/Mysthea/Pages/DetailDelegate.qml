@@ -37,6 +37,7 @@ Pane {
             anchors.fill: parent
             contentHeight: _layout.height
             contentWidth: parent.width
+
             ColumnLayout {
                 id: _layout
                 width: parent.width
@@ -166,6 +167,7 @@ Pane {
                 // Card's image, Attunements and Encounters are rotated since they're stored
                 // vertically but should be read horizontally
                 Image {
+                    id: _cardImage
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/images/cards/" + image
                     sourceSize.width: type === 6 || type === 7 ? 0 : width
@@ -180,6 +182,26 @@ Pane {
                     transform: type === 6 || type === 7 ? rotationTransform : []
 
                     Layout.maximumWidth: parent.width
+                }
+
+                // Encounter cards are front and back so we must show both
+                Loader {
+                    id: _backImageLoader
+                    active: backImage.length > 0
+
+                    sourceComponent: Component {
+                        Image {
+                            fillMode: Image.PreserveAspectFit
+                            source: "qrc:/images/cards/" + backImage
+                            sourceSize.height: _layout.width
+
+                            transform: [
+                                // Rotates image 90 degrees clockwise, then moves it to the right
+                                Rotation { origin.x: 0; origin.y: 0; angle: 90 },
+                                Translate { x: _layout.width; y: width - height }
+                            ]
+                        }
+                    }
                 }
             }
         }

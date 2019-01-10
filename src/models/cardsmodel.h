@@ -18,6 +18,7 @@ public:
     Command,
     CommandText,
     Image,
+    BackImage,
     Description,
     CardRole
   };

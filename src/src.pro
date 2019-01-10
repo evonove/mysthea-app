@@ -7,6 +7,7 @@ RESOURCES += \
     $$PWD/assets.qrc \
     $$PWD/attunement.qrc \
     $$PWD/encounter.qrc \
+    $$PWD/encounter-back.qrc \
     $$PWD/era-i.qrc \
     $$PWD/era-ii.qrc \
     $$PWD/era-iii.qrc \
