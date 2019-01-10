@@ -159,13 +159,27 @@ Pane {
                     font.letterSpacing: 0.5
                     color: Palette.grayNurse
                     wrapMode: Text.Wrap
+
                     Layout.maximumWidth: parent.width
                 }
+
+                // Card's image, Attunements and Encounters are rotated since they're stored
+                // vertically but should be read horizontally
                 Image {
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/images/cards/" + image
-                    sourceSize.width: width
-                    Layout.fillWidth: true
+                    sourceSize.width: type === 6 || type === 7 ? 0 : width
+                    sourceSize.height: type === 6 || type === 7 ? parent.width : 0
+
+                    property list<QtObject> rotationTransform: [
+                        // Rotates image 90 degrees clockwise, then moves it to the right
+                        Rotation { origin.x: 0; origin.y: 0; angle: 90 },
+                        Translate { x: width }
+                    ]
+
+                    transform: type === 6 || type === 7 ? rotationTransform : []
+
+                    Layout.maximumWidth: parent.width
                 }
             }
         }
