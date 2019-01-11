@@ -34,13 +34,27 @@ Page {
         Repeater {
             model: root.model
 
-            DetailDelegate {
+            Loader {
                 width: root.width
                 height: root.height - _swipeView.topPadding
-                clip: true
-                activeInSwipe: SwipeView.isPreviousItem
+                active: SwipeView.isPreviousItem
                                || SwipeView.isCurrentItem
                                || SwipeView.isNextItem
+                asynchronous: true
+
+                sourceComponent: Component {
+                    DetailDelegate {
+                        clip: true
+                        code: model.code
+                        type: model.type
+                        typeText: model.typeText
+                        command: model.command
+                        commandText: model.commandText
+                        image: model.image
+                        backImage: model.backImage
+                        description: model.description
+                    }
+                }
             }
         }
     }

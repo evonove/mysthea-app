@@ -76,18 +76,17 @@ ListView {
                         spacing: 0
 
                         Image {
-
-                            id: images
                             fillMode: Image.PreserveAspectFit
                             source: "qrc:/images/cards/" + image
+                            asynchronous: true
 
-                            Layout.preferredHeight: parent.height - codeCard.height
+                            Layout.preferredHeight: parent.height - _cardCodeLabel.height
                             Layout.maximumWidth: parent.width
                             Layout.alignment: Qt.AlignHCenter
                         }
 
                         Label {
-                            id: codeCard
+                            id: _cardCodeLabel
                             text: code
                             font.weight: Font.Bold
                             font.letterSpacing: 0.5
