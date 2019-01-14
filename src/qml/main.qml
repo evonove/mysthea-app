@@ -18,6 +18,7 @@ ApplicationWindow {
     width: 375
     height: 667
     title: qsTr("Mysthea")
+    flags: Qt.MaximizeUsingFullscreenGeometryHint
 
     font.family: "Yanone Kaffeesatz"
     font.pixelSize: 18
