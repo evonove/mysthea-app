@@ -85,7 +85,7 @@ Drawer {
             bottomPadding: 21
             text: qsTr("Home")
             Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/cards-reference.svg"
+            icon.source: "qrc:/assets/icons/home.svg"
             onClicked: menuDrawer.homeClicked()
         }
         ItemDelegate {
@@ -106,7 +106,10 @@ Drawer {
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Game Setup")
-            Material.foreground: Palette.silverChalice
+            // Game Setup is disabled until next release when it will be completed
+            enabled: false
+//            Material.foreground: Palette.silverChalice
+            Material.theme: Material.Dark
             icon.source: "qrc:/assets/icons/game-setup.svg"
             onClicked: menuDrawer.gameSetupClicked()
         }
@@ -128,7 +131,10 @@ Drawer {
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Lore")
-            Material.foreground: Palette.silverChalice
+            // Lore is disabled until next release when it will be completed
+            enabled: false
+//            Material.foreground: Palette.silverChalice
+            Material.theme: Material.Dark
             icon.source: "qrc:/assets/icons/lore.svg"
             onClicked: menuDrawer.loreClicked()
         }
