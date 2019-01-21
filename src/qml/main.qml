@@ -127,8 +127,7 @@ ApplicationWindow {
 
     MainDrawer {
         id: drawer
-        topPadding: 34
-        bottomPadding: 34
+        topPadding: root.safeTopMargin
         width: 0.8 * root.width
         height: root.height
         interactive: _mainStackView.currentItem.leftAction === drawerAction
@@ -161,7 +160,6 @@ ApplicationWindow {
         anchors.fill: parent
         focus: !drawer.activeFocus
         padding: 0
-        topPadding: toolbar.height
         background: Rectangle {
             color: Palette.mineShaft
         }
