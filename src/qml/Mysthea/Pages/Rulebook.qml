@@ -68,7 +68,6 @@ Page {
     ListView {
         id: _languageListView
         anchors.fill: parent
-        anchors.topMargin: 16
         spacing: 16
         clip: true
 
