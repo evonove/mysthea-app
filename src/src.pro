@@ -44,6 +44,14 @@ android {
 }
 
 ios {
+    LIBS += -framework Foundation -framework CoreFoundation -framework UIKit
+
+    HEADERS += \
+        $$PWD/ios/helpers/nativeidentifier.h
+
+    OBJECTIVE_SOURCES += \
+        $$PWD/ios/helpers/nativeidentifier.mm
+
     QT += svg
     OTHER_FILES += $$PWD/ios/*
 

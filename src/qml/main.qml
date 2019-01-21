@@ -18,7 +18,11 @@ ApplicationWindow {
     width: 375
     height: 667
     title: qsTr("Mysthea")
-    flags: Qt.MaximizeUsingFullscreenGeometryHint
+    flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
+
+    // A top margin added to various components so that they're not covered
+    // by the iPhone top notch
+    readonly property int safeTopMargin: hasNotch ? 34 : 0
 
     font.family: "Yanone Kaffeesatz"
     font.pixelSize: 18
@@ -68,9 +72,10 @@ ApplicationWindow {
     ToolBar {
         id: toolbar
         padding: 0
+        topPadding: root.safeTopMargin
         z: 2
         width: parent.width
-        height: 56
+        height: 56 + root.safeTopMargin
         position: ToolBar.Header
 
         background: Rectangle {
@@ -122,6 +127,8 @@ ApplicationWindow {
 
     MainDrawer {
         id: drawer
+        topPadding: 34
+        bottomPadding: 34
         width: 0.8 * root.width
         height: root.height
         interactive: _mainStackView.currentItem.leftAction === drawerAction
@@ -154,6 +161,7 @@ ApplicationWindow {
         anchors.fill: parent
         focus: !drawer.activeFocus
         padding: 0
+        topPadding: toolbar.height
         background: Rectangle {
             color: Palette.mineShaft
         }
@@ -167,8 +175,6 @@ ApplicationWindow {
                 }
             }
         }
-
-
 
         initialItem: _homePage
         Component {
@@ -189,6 +195,7 @@ ApplicationWindow {
         Component {
             id: _cardReference
             CardsReferencePage {
+                topPadding: toolbar.height
                 leftAction: drawerAction
                 onCardClicked: _mainStackView.push(_detailPage, {
                                                        "model": cards,
@@ -200,6 +207,7 @@ ApplicationWindow {
         Component {
             id: _detailPage
             DetailPage {
+                topPadding: toolbar.height
                 leftAction: backAction
             }
         }
@@ -212,6 +220,7 @@ ApplicationWindow {
         Component {
             id: _rulebook
             Rulebook {
+                topPadding: toolbar.height
                 leftAction: drawerAction
             }
         }

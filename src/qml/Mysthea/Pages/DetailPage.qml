@@ -28,7 +28,6 @@ Page {
         id: _swipeView
         width: root.width
         height: root.height
-        topPadding: 56
         currentIndex: root.index
 
         Repeater {
