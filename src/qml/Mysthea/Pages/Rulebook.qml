@@ -68,14 +68,13 @@ Page {
     ListView {
         id: _languageListView
         anchors.fill: parent
-        spacing: 16
         clip: true
 
         model: _rulebooksModel
 
         delegate: Item {
             width: parent.width
-            height: 55
+            height: 80
 
             Button {
                 anchors.centerIn: parent

@@ -32,7 +32,7 @@ Button {
         text: control.text
 
         color: Palette.snuff
-        opacity: control.pressed ? 0.32 : 1
+        opacity: control.pressed || !control.enabled ? 0.32 : 1
     }
 
     background: Item {

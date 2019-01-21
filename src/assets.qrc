@@ -23,5 +23,6 @@
     <file>assets/icons/newsletter.svg</file>
     <file>assets/icons/rulebook.svg</file>
     <file>assets/icons/tabula-logo.svg</file>
+    <file>assets/icons/home.svg</file>
     </qresource>
 </RCC>
