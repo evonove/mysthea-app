@@ -10,7 +10,6 @@ Page {
     id: root
     title: qsTr("RULEBOOK")
     objectName: PageName.rulebookPage
-    topPadding: 68
 
     property Action leftAction: null
     property bool hasToolbarLine: true
@@ -69,6 +68,7 @@ Page {
     ListView {
         id: _languageListView
         anchors.fill: parent
+        anchors.topMargin: 16
         spacing: 16
         clip: true
 

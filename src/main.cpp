@@ -6,6 +6,10 @@
 #include <QtAndroid>
 #endif
 
+#ifdef Q_OS_IOS
+#include "ios/helpers/nativeidentifier.h"
+#endif
+
 #include "models/cardsmodel.h"
 #include "models/commandcomboboxmodel.h"
 #include "models/typecomboboxmodel.h"
@@ -51,6 +55,14 @@ int main(int argc, char *argv[]) {
                                      "TypeComboBoxModel");
   qmlRegisterType<CommandComboBoxModel>("Mysthea.Models", 1, 0,
                                         "CommandComboBoxModel");
+
+  bool hasNotch = false;
+
+#ifdef Q_OS_IOS
+    hasNotch = iOSHasNotch();
+#endif
+
+  engine.rootContext()->setContextProperty("hasNotch", QVariant{hasNotch});
 
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));

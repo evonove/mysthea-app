@@ -51,7 +51,6 @@ Page {
             ToolBar {
                 id: comboBoxSection
                 padding: 16
-                topPadding: 56
 
                 Layout.fillWidth: true
 

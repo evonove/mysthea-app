@@ -1,0 +1,6 @@
+#ifndef NATIVEIDENTIFIER_H
+#define NATIVEIDENTIFIER_H
+
+bool iOSHasNotch();
+
+#endif // NATIVEIDENTIFIER_H
