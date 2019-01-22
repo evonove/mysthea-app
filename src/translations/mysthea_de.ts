@@ -6,72 +6,72 @@
     <message>
         <location filename="../models/card_data.h" line="9"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Typen</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="10"/>
         <source>Era X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära X</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="11"/>
         <source>Era I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära I</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="12"/>
         <source>Era II</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära II</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="13"/>
         <source>Era III</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära III</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="14"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>Helden</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="16"/>
         <source>Attunement</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstimmungen</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="18"/>
         <source>Encounter</source>
-        <translation type="unfinished"></translation>
+        <translation>Begegnungen</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="19"/>
         <source>Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Ereignis</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="22"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Befehl</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="23"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>Taktik</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="25"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="27"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>Zusatz</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="28"/>
         <source>Upgrade</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbesserungs</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="54"/>
@@ -864,22 +864,22 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>KARTENREFERENZ</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="73"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>Karten nach Code suchen</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ooops! Karte nicht gefunden.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte geben Sie einen anderen Code ein oder ändern Sie die Filteroptionen.</translation>
     </message>
 </context>
 <context>
@@ -887,12 +887,12 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="68"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="83"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära</translation>
     </message>
 </context>
 <context>
@@ -900,7 +900,7 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/DetailPage.qml" line="10"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>KARTE DETAILS</translation>
     </message>
 </context>
 <context>
@@ -908,7 +908,7 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>SPIELEINSTELLUNG</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
@@ -957,7 +957,7 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/Lore.qml" line="8"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>HINTERGRUNDGESCHICHTE</translation>
     </message>
 </context>
 <context>
@@ -965,47 +965,47 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="86"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="97"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenreferenz</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="108"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Spieleinrichtung</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="122"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Regelbuch</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="133"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundgeschichte</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="170"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>Sprache - </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="288"/>
         <source>Tabula Games Newsletter</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="305"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiel erstellt und produziert von</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="332"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>App entworfen und entwickelt von</translation>
     </message>
 </context>
 <context>
@@ -1013,22 +1013,22 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="74"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenreferenz</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="90"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Spieleinrichtung</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="104"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Regelbuch</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="120"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundgeschichte</translation>
     </message>
 </context>
 <context>
@@ -1036,7 +1036,7 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>REGELBUCH</translation>
     </message>
 </context>
 <context>
@@ -1044,7 +1044,7 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     <message>
         <location filename="../qml/main.qml" line="20"/>
         <source>Mysthea</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>

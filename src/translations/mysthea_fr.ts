@@ -6,72 +6,72 @@
     <message>
         <location filename="../models/card_data.h" line="9"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout type</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="10"/>
         <source>Era X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère X</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="11"/>
         <source>Era I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère I</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="12"/>
         <source>Era II</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère II</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="13"/>
         <source>Era III</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère III</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="14"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>Champion</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="16"/>
         <source>Attunement</source>
-        <translation type="unfinished"></translation>
+        <translation>Harmonisation</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="18"/>
         <source>Encounter</source>
-        <translation type="unfinished"></translation>
+        <translation>Rencontre</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="19"/>
         <source>Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Événement</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="22"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes commandements</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="23"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>Tactiques</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="25"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>Objectifs</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="27"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>Accessoires</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="28"/>
         <source>Upgrade</source>
-        <translation type="unfinished"></translation>
+        <translation>Améliorations</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="54"/>
@@ -887,22 +887,22 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>RÉFÉRENCE DE CARTES</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="73"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des cartes par code</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ooops! Carte non trouvée.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Essayez de saisir un code différent ou de modifier les options de filtrage.</translation>
     </message>
 </context>
 <context>
@@ -910,12 +910,12 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="68"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Commandement</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="83"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère</translation>
     </message>
 </context>
 <context>
@@ -923,7 +923,7 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/DetailPage.qml" line="10"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>DÉTAIL DE LA CARTE</translation>
     </message>
 </context>
 <context>
@@ -931,7 +931,7 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>CONFIGURATION DU JEU</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
@@ -980,7 +980,7 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/Lore.qml" line="8"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>LORE</translation>
     </message>
 </context>
 <context>
@@ -988,47 +988,47 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="86"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="97"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Référence de cartes</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="108"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration du jeu</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="122"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Livret de règles</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="133"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>Lore</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="170"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>Langue - </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="288"/>
         <source>Tabula Games Newsletter</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="305"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeu créé et produit par</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="332"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>Application conçue et développée par</translation>
     </message>
 </context>
 <context>
@@ -1036,22 +1036,22 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="74"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Référence de la carte</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="90"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration du jeu</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="104"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Livret de règles</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="120"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>Lore</translation>
     </message>
 </context>
 <context>
@@ -1059,7 +1059,7 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>LIVRET DE RÈGLES</translation>
     </message>
 </context>
 <context>
@@ -1067,7 +1067,7 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="../qml/main.qml" line="20"/>
         <source>Mysthea</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
