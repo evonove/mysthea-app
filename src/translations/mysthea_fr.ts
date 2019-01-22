@@ -883,6 +883,14 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     </message>
 </context>
 <context>
+    <name>CardsList</name>
+    <message>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="61"/>
+        <source>Era</source>
+        <translation>Ère</translation>
+    </message>
+</context>
+<context>
     <name>CardsReferencePage</name>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>

@@ -32,17 +32,58 @@ ListView {
             anchors.fill: parent
             spacing: 0
             anchors.margins: 0
-            Label {
-                id: categoryLabel
-                width: parent.width
-                padding: 0
 
-                text: model.typeText
-                font.letterSpacing: 0.5
-                font.pixelSize: 24
-                color: Palette.white
+            Loader {
+                width: parent.width
+                sourceComponent: model.type >= 1 && model.type <= 4 ? _eraTypeText : _otherTypeText
 
                 Layout.leftMargin: 16
+
+                Component {
+                    id: _otherTypeText
+                    Label {
+                        padding: 0
+
+                        text: model.typeText
+                        font.letterSpacing: 0.5
+                        font.pixelSize: 28
+                        color: Palette.white
+                    }
+                }
+
+                Component {
+                    id: _eraTypeText
+                    RowLayout {
+                        spacing: 8
+
+                        Label {
+                            padding: 0
+                            text: qsTr("Era")
+                            font.pixelSize: 28
+                            font.letterSpacing: 0.5
+                            font.weight: Font.Bold
+                            color: Palette.grayNurse
+
+                            Layout.alignment: Qt.AlignHCenter
+                        }
+
+                        Image {
+                            fillMode: Image.PreserveAspectFit
+                            sourceSize.height: 24
+                            source: {
+                                switch (model.type) {
+                                    case 1: return "qrc:/assets/icons/era_x.svg";
+                                    case 2: return "qrc:/assets/icons/era_1.svg";
+                                    case 3: return "qrc:/assets/icons/era_2.svg";
+                                    case 4: return  "qrc:/assets/icons/era_3.svg";
+                                    default: return "";
+                                }
+                            }
+
+                            Layout.alignment: Qt.AlignHCenter
+                        }
+                    }
+                }
             }
 
             GridView {
