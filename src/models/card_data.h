@@ -11,7 +11,7 @@ static constexpr auto ERAX_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era X");
 static constexpr auto ERAI_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era I");
 static constexpr auto ERAII_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era II");
 static constexpr auto ERAIII_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era III");
-static constexpr auto HERO_TEXT = QT_TRANSLATE_NOOP("CardsData", "Hero");
+static constexpr auto HERO_TEXT = QT_TRANSLATE_NOOP("CardsData", "Champion");
 static constexpr auto ATTUNEMENT_TEXT =
     QT_TRANSLATE_NOOP("CardsData", "Attunement");
 static constexpr auto ENCOUNTER_TEXT =
@@ -141,7 +141,7 @@ const QVector<QVector<Card>> cards_data = {
         {"C079",    4,  4,      "c079.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Deploy a Fortification, gain 4 Glory Points.")},
         {"C080",    4,  4,      "c080.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 1 Strength Point to each of your Troops.")}
     },
-    // Hero
+    // Champion
     {
         {"H01",     5,  -1,     "h01.jpg", "",       QT_TRANSLATE_NOOP("CardsData", "Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monster’s attack.")},
         {"H02",     5,  -1,     "h02.jpg", "",       QT_TRANSLATE_NOOP("CardsData", "Celethe: When Celethe is on an Island attacked by a Monster, if the Monster loses, the player controlling Celethe doubles their reward.")},

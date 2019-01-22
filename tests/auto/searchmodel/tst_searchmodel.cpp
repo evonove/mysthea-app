@@ -55,10 +55,10 @@ void TestSearchModel::testDefaultFilters() {
   type = typeProxy->data(typeProxy->index(3, 0), TypeModel::Type);
   QCOMPARE(type, 4);
 
-  // Hero
+  // Champion
   typeText =
       typeProxy->data(typeProxy->index(4, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   type = typeProxy->data(typeProxy->index(4, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -135,7 +135,7 @@ void TestSearchModel::testCodeFilter() {
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
   typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -171,7 +171,7 @@ void TestSearchModel::testCodeFilter() {
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 1);
   typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -270,7 +270,7 @@ void TestSearchModel::testTypeFilter() {
   QCOMPARE(typeProxy->rowCount(QModelIndex()), 1);
   typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -355,7 +355,7 @@ void TestSearchModel::testCommandFilter() {
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
   typeText =
       typeProxy->data(typeProxy->index(4, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   type = typeProxy->data(typeProxy->index(4, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -526,7 +526,7 @@ void TestSearchModel::testMixedFilters() {
   typeProxy->setTypeFilter(5);
   auto typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   auto type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
   // Applies filter
@@ -581,7 +581,7 @@ void TestSearchModel::testMixedFilters() {
   cardsModel = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 20);
-  // Hero
+  // Champion
   cardsModel = typeProxy->data(typeProxy->index(4, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
@@ -621,7 +621,7 @@ void TestSearchModel::testResetFilter() {
   cardsModel = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 20);
-  // Hero
+  // Champion
   cardsModel = typeProxy->data(typeProxy->index(4, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
@@ -664,7 +664,7 @@ void TestSearchModel::testResetFilter() {
   cardsModel = typeProxy->data(typeProxy->index(3, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 20);
-  // Hero
+  // Champion
   cardsModel = typeProxy->data(typeProxy->index(4, 0), TypeModel::Cards)
                    .value<CardsProxyModel *>();
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
@@ -695,7 +695,7 @@ void TestSearchModel::testResetFilter() {
   QCOMPARE(typeText, "Era III");
   typeText =
       typeProxy->data(typeProxy->index(4, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   typeText =
       typeProxy->data(typeProxy->index(5, 0), TypeModel::TypeText).toString();
   QCOMPARE(typeText, "Attunement");
@@ -719,7 +719,7 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
   auto typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
   auto type = typeProxy->data(typeProxy->index(0, 0), TypeModel::Type);
   QCOMPARE(type, 5);
 
@@ -731,7 +731,7 @@ void TestSearchModel::testCaseInsensitiveFilter() {
   QCOMPARE(cardsModel->rowCount(QModelIndex()), 7);
   typeText =
       typeProxy->data(typeProxy->index(0, 0), TypeModel::TypeText).toString();
-  QCOMPARE(typeText, "Hero");
+  QCOMPARE(typeText, "Champion");
 }
 
 void TestSearchModel::testIndexOf() {
