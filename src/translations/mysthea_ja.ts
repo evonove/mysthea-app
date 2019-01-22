@@ -6,72 +6,72 @@
     <message>
         <location filename="../models/card_data.h" line="9"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>全タイプ</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="10"/>
         <source>Era X</source>
-        <translation type="unfinished"></translation>
+        <translation>時代 X</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="11"/>
         <source>Era I</source>
-        <translation type="unfinished"></translation>
+        <translation>時代 1</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="12"/>
         <source>Era II</source>
-        <translation type="unfinished"></translation>
+        <translation>時代 2</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="13"/>
         <source>Era III</source>
-        <translation type="unfinished"></translation>
+        <translation>時代 3</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="14"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>全タイプ</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="16"/>
         <source>Attunement</source>
-        <translation type="unfinished"></translation>
+        <translation>同調</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="18"/>
         <source>Encounter</source>
-        <translation type="unfinished"></translation>
+        <translation>エンカウンター</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="19"/>
         <source>Event</source>
-        <translation type="unfinished"></translation>
+        <translation>イベント</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="22"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>全コマンド</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="23"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>戦術</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="25"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>目的</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="27"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>エネルギ</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="28"/>
         <source>Upgrade</source>
-        <translation type="unfinished"></translation>
+        <translation>数と同じエネル</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="54"/>
@@ -880,22 +880,22 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>カードレファレンス</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="73"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>カード番号検索</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>カードが見つかりません</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>別番号の入力や検索条件の変更を試してください</translation>
     </message>
 </context>
 <context>
@@ -903,12 +903,12 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="68"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/DetailDelegate.qml" line="83"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>時代</translation>
     </message>
 </context>
 <context>
@@ -916,7 +916,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/DetailPage.qml" line="10"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>カードの詳細</translation>
     </message>
 </context>
 <context>
@@ -924,7 +924,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="9"/>
@@ -973,7 +973,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/Lore.qml" line="8"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの世界</translation>
     </message>
 </context>
 <context>
@@ -981,47 +981,47 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="86"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>ホーム</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="97"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>カードレファレンス</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="108"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="122"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブック</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="133"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの世界</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="170"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>言語 - </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="288"/>
         <source>Tabula Games Newsletter</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabula Gamesのニュースレター</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="305"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームのデザインと制作元</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Components/MainDrawer.qml" line="332"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリの開発元</translation>
     </message>
 </context>
 <context>
@@ -1029,22 +1029,22 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="74"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>カードレファレンス</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="90"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="104"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブック</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Pages/MainMenu.qml" line="120"/>
         <source>Lore</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの世界</translation>
     </message>
 </context>
 <context>
@@ -1052,7 +1052,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブック</translation>
     </message>
 </context>
 <context>
@@ -1060,7 +1060,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/main.qml" line="20"/>
         <source>Mysthea</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
