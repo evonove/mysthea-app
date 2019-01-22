@@ -860,6 +860,14 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
 </context>
 <context>
+    <name>CardsList</name>
+    <message>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="61"/>
+        <source>Era</source>
+        <translation>Era</translation>
+    </message>
+</context>
+<context>
     <name>CardsReferencePage</name>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>

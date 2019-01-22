@@ -876,6 +876,14 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     </message>
 </context>
 <context>
+    <name>CardsList</name>
+    <message>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="61"/>
+        <source>Era</source>
+        <translation>時代</translation>
+    </message>
+</context>
+<context>
     <name>CardsReferencePage</name>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>

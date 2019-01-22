@@ -860,6 +860,14 @@ Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wur
     </message>
 </context>
 <context>
+    <name>CardsList</name>
+    <message>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="61"/>
+        <source>Era</source>
+        <translation>Ära</translation>
+    </message>
+</context>
+<context>
     <name>CardsReferencePage</name>
     <message>
         <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
