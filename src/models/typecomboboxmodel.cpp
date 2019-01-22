@@ -4,6 +4,7 @@
 #include "typecomboboxmodel.h"
 #include "card_data.h"
 
+#include <QGuiApplication>
 #include <QList>
 #include <QVariant>
 
@@ -36,7 +37,8 @@ QVariant TypeComboBoxModel::data(const QModelIndex &index, int role) const {
   case Roles::Key:
     return row;
   case Roles::Type:
-    return m_types.value(row);
+    return qGuiApp->translate("CardsData",
+                              m_types.value(row).toStdString().c_str());
   default:
     return QVariant();
   }
