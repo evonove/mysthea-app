@@ -225,6 +225,7 @@ ApplicationWindow {
         Component {
             id: _lore
             Lore {
+                topPadding: toolbar.height
                 leftAction: drawerAction
             }
         }

@@ -114,8 +114,6 @@ Page {
 
             containerY: container.y
             sourceItem: root.background
-            // Lore is disabled until next release when it will be completed
-            enabled: false
 
             text: qsTr("Lore")
             font.capitalization: Font.AllUppercase
