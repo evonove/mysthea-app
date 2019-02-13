@@ -17,35 +17,35 @@ Page {
     ListModel {
         id: _rulebooksModel
         ListElement {
-            language: "Deutsch Rulebook"
+            language: "Deutsch"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_DE_web_v1.pdf"
         }
         ListElement {
-            language: "English Rulebook"
+            language: "English"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_EN_web_v1.pdf"
         }
         ListElement {
-            language: "Español Rulebook"
+            language: "Español"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_ES_web_v1.pdf"
         }
         ListElement {
-            language: "Français Rulebook"
+            language: "Français"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_FR_web_v1.pdf"
         }
         ListElement {
-            language: "Ελληνικά Rulebook"
+            language: "Ελληνικά"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_GR_web_v1.pdf"
         }
         ListElement {
-            language: "Italiano Rulebook"
+            language: "Italiano"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_IT_web_v1.pdf"
         }
         ListElement {
-            language: "日本人 Rulebook"
+            language: "日本人"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_JPN_web_v1.pdf"
         }
         ListElement {
-            language: "Português Rulebook"
+            language: "Português"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_PT_web_v1.pdf"
         }
     }
