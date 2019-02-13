@@ -131,10 +131,7 @@ Drawer {
             topPadding: 21
             bottomPadding: 21
             text: qsTr("Lore")
-            // Lore is disabled until next release when it will be completed
-            enabled: false
-//            Material.foreground: Palette.silverChalice
-            Material.theme: Material.Dark
+            Material.foreground: Palette.silverChalice
             icon.source: "qrc:/assets/icons/lore.svg"
             onClicked: menuDrawer.loreClicked()
         }
