@@ -8,4 +8,5 @@ QtObject {
     readonly property string navigateNext: "\uE409"
     readonly property string apps: "\uE5C3"
     readonly property string search: "\uE8B6"
+    readonly property string download: "\ue258"
 }

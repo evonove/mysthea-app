@@ -17,41 +17,41 @@ Page {
     ListModel {
         id: _rulebooksModel
         ListElement {
-            language: "Deutsch"
+            language: "Deutsch Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_DE_web_v1.pdf"
         }
         ListElement {
-            language: "English"
+            language: "English Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_EN_web_v1.pdf"
         }
         ListElement {
-            language: "Español"
+            language: "Español Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_ES_web_v1.pdf"
         }
         ListElement {
-            language: "Français"
+            language: "Français Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_FR_web_v1.pdf"
         }
         ListElement {
-            language: "Ελληνικά"
+            language: "Ελληνικά Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_GR_web_v1.pdf"
         }
         ListElement {
-            language: "Italiano"
+            language: "Italiano Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_IT_web_v1.pdf"
         }
         ListElement {
-            language: "日本人"
+            language: "日本人 Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_JPN_web_v1.pdf"
         }
         ListElement {
-            language: "Português"
+            language: "Português Rulebook"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_PT_web_v1.pdf"
         }
     }
 
     background: Image {
-        source: "qrc:/assets/images/home-bg.jpg"
+        source: "qrc:/assets/images/cards-bg.jpg"
         fillMode: Image.PreserveAspectCrop
         smooth: false
 
@@ -64,25 +64,32 @@ Page {
             opacity: 0.29
         }
     }
-
-    ListView {
-        id: _languageListView
+    ColumnLayout {
         anchors.fill: parent
-        clip: true
+        Label {
+            text: qsTr("Download the rulebook in your preferred language")
+            wrapMode: Text.WordWrap
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 0.5
+            padding: 20
+            Layout.fillWidth: true
+        }
 
-        model: _rulebooksModel
+        ListView {
+            id: _languageListView
+            clip: true
+            spacing: 36
+            model: _rulebooksModel
 
-        delegate: Item {
-            width: parent.width
-            height: 80
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+            Layout.leftMargin: 20
+            Layout.rightMargin: 20
 
-            Button {
-                anchors.centerIn: parent
-                containerY: parent.y - _languageListView.contentY + root.topPadding
-                sourceItem: root.background
+            delegate: RulebookButton {
                 text: language
-                font.capitalization: Font.AllUppercase
-
+                iconText: Icon.download
                 onClicked: Qt.openUrlExternally(downloadUrl)
             }
         }

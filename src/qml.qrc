@@ -30,5 +30,6 @@
         <file>qml/Mysthea/Pages/CardsList.qml</file>
         <file>qml/Mysthea/Components/MainDrawer.qml</file>
         <file>qml/Mysthea/Pages/PageName.qml</file>
+        <file>qml/Mysthea/Components/RulebookButton.qml</file>
     </qresource>
 </RCC>
