@@ -11,12 +11,16 @@ ObjectModel {
     property int width: 100
     // General Setting
     Label {
-        width: root.width
+        width: root.width - padding * 2
         text: qsTr("General Setting")
         color: Palette.grayNurse
         font.pixelSize: 35
         font.letterSpacing: 1
-        topPadding: 20
+        padding: 20
+        bottomPadding: 0
+
+        Layout.fillWidth: true
+        Layout.maximumWidth: root.width
     }
     // The Planet Icaion
     ColumnLayout {
@@ -28,8 +32,11 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
+            padding: 20
+            bottomPadding: 0
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Label {
             text: qsTr("Millenia ago, a planet called Icaion"
@@ -44,18 +51,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image21.jpg"
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: parent.width
+            sourceSize.width: root.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
 
         Label {
@@ -63,18 +73,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image5.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
     }
     // Mysthea
@@ -85,10 +98,13 @@ ObjectModel {
             text: qsTr("Mysthea")
             color: Palette.grayNurse
             font.pixelSize: 27
+            padding: 20
             topPadding: 35
+            bottomPadding: 0
             font.letterSpacing: 1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -98,18 +114,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image15.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
     }
     // The Five
@@ -120,10 +139,13 @@ ObjectModel {
             text: qsTr("The Five")
             color: Palette.grayNurse
             font.pixelSize: 27
+            padding: 20
             topPadding: 35
+            bottomPadding: 0
             font.letterSpacing: 1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -131,18 +153,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image4.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
     }
 
@@ -154,9 +179,12 @@ ObjectModel {
         color: Palette.grayNurse
         font.pixelSize: 35
         font.letterSpacing: 1
+        padding: 20
         topPadding: 48
+        bottomPadding: 0
 
         Layout.fillWidth: true
+        Layout.maximumWidth: root.width
     }
     // Society
     ColumnLayout {
@@ -167,9 +195,12 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 27
             font.letterSpacing: 1
+            padding: 20
             topPadding: 18
+            bottomPadding: 0
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -178,18 +209,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image22.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
 
         Label {
@@ -205,11 +239,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Ilvash and the Kingdom of Ahatils
@@ -221,9 +257,12 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 27
             font.letterSpacing: 1
+            padding: 20
             topPadding: 18
+            bottomPadding: 0
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -231,11 +270,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // A Breakthrough
@@ -247,9 +288,12 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 27
             font.letterSpacing: 1
+            padding: 20
             topPadding: 18
+            bottomPadding: 0
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -270,11 +314,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
 
@@ -291,6 +337,11 @@ ObjectModel {
             font.pixelSize: 35
             font.letterSpacing: 1
             topPadding: 48
+            padding: 20
+            bottomPadding: 0
+
+            Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Label {
             width: root.width
@@ -299,11 +350,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Varorin – Guild of Merchants
@@ -316,14 +369,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image25.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -346,11 +403,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Volarees – Guild of Nobility
@@ -363,14 +422,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image24.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -389,11 +452,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Lusma – Guild of Faith
@@ -406,14 +471,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image26.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -440,11 +509,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Kaetur – Guild of Soldiers
@@ -457,14 +528,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image29.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -483,11 +558,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Magista – Guild of Scholars
@@ -500,14 +577,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image12.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -535,11 +616,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Shinglori - Order of Champions
@@ -552,14 +635,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image11.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -580,11 +667,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
 
@@ -600,7 +689,9 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 35
             font.letterSpacing: 1
+            padding: 20
             topPadding: 48
+            bottomPadding: 0
         }
         Label {
             width: root.width
@@ -625,11 +716,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Telron
@@ -642,14 +735,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image9.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -673,11 +770,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Anuth
@@ -690,14 +789,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image28.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -718,11 +821,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Celethe
@@ -735,14 +840,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image1.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -764,11 +873,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Leheir
@@ -781,7 +892,7 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
         }
@@ -789,6 +900,9 @@ ObjectModel {
             source: "qrc:/images/lore/image19.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -812,11 +926,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Sanya
@@ -829,14 +945,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image18.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -862,11 +982,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Kolbor & Malabor
@@ -879,14 +1001,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image20.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -931,11 +1057,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // CR 2T1
@@ -948,14 +1076,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image8.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -982,11 +1114,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
 
@@ -1002,7 +1136,9 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 35
             font.letterSpacing: 1
+            padding: 20
             topPadding: 48
+            bottomPadding: 0
         }
         Label {
             width: root.width
@@ -1025,17 +1161,22 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image7.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
     }
     // Onygauros the Collector
@@ -1048,14 +1189,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image16.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1081,11 +1226,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Boulron the Reaper
@@ -1098,14 +1245,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image13.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1135,11 +1286,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Caerulas the Inhabitant from Below
@@ -1152,14 +1305,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image23.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1184,11 +1341,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Obsidusa the Devourer
@@ -1201,14 +1360,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image6.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1243,11 +1406,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Cannibarok the Qoam Eater
@@ -1260,14 +1425,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image14.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1294,11 +1463,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Kodror the Infestation
@@ -1311,14 +1482,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image17.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr(
@@ -1335,11 +1510,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
     // Utcoro the Swarmer
@@ -1352,14 +1529,18 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
+            padding: 20
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
         Image {
             source: "qrc:/images/lore/image27.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.leftMargin: 20
+            Layout.rightMargin: Layout.leftMargin
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
         Label {
             text: qsTr("Utcoros are predatory beasts with a short lifespan of just a couple "+
@@ -1381,11 +1562,13 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
+            padding: 20
+            bottomPadding: 0
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
     }
 
@@ -1398,7 +1581,12 @@ ObjectModel {
         color: Palette.grayNurse
         font.pixelSize: 35
         font.letterSpacing: 1
+        padding: 20
         topPadding: 48
+        bottomPadding: 0
+
+        Layout.fillWidth: true
+        Layout.maximumWidth: root.width
     }
     // Qoam Manipulation
     ColumnLayout {
@@ -1409,9 +1597,12 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 27
             font.letterSpacing: 1
+            padding: 20
             topPadding: 18
+            bottomPadding: 0
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Label {
@@ -1431,18 +1622,21 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
             Layout.fillWidth: true
+            Layout.maximumWidth: root.width
         }
 
         Image {
             source: "qrc:/images/lore/image3.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: parent.width
+            Layout.margins: 20
+            Layout.topMargin: 0
+            Layout.maximumWidth: root.width - Layout.leftMargin - Layout.rightMargin
         }
     }
 
