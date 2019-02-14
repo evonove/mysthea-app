@@ -11,3 +11,4 @@ Lore 1.0 Lore.qml
 CardsList 1.0 CardsList.qml
 LanguageListModel 1.0 LanguageListModel.qml
 singleton PageName 1.0 PageName.qml
+TableOfContents 1.0 TableOfContents.qml
