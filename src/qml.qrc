@@ -32,32 +32,5 @@
         <file>qml/Mysthea/Pages/PageName.qml</file>
         <file>qml/Mysthea/Pages/LoreModel.qml</file>
         <file>qml/Mysthea/Components/RulebookButton.qml</file>
-        <file>images/lore/image1.jpg</file>
-        <file>images/lore/image3.jpg</file>
-        <file>images/lore/image4.jpg</file>
-        <file>images/lore/image5.jpg</file>
-        <file>images/lore/image6.jpg</file>
-        <file>images/lore/image7.jpg</file>
-        <file>images/lore/image8.jpg</file>
-        <file>images/lore/image9.jpg</file>
-        <file>images/lore/image11.jpg</file>
-        <file>images/lore/image12.jpg</file>
-        <file>images/lore/image13.jpg</file>
-        <file>images/lore/image14.jpg</file>
-        <file>images/lore/image15.jpg</file>
-        <file>images/lore/image16.jpg</file>
-        <file>images/lore/image17.jpg</file>
-        <file>images/lore/image18.jpg</file>
-        <file>images/lore/image19.jpg</file>
-        <file>images/lore/image20.jpg</file>
-        <file>images/lore/image21.jpg</file>
-        <file>images/lore/image22.jpg</file>
-        <file>images/lore/image23.jpg</file>
-        <file>images/lore/image24.jpg</file>
-        <file>images/lore/image25.jpg</file>
-        <file>images/lore/image26.jpg</file>
-        <file>images/lore/image27.jpg</file>
-        <file>images/lore/image28.jpg</file>
-        <file>images/lore/image29.jpg</file>
     </qresource>
 </RCC>
