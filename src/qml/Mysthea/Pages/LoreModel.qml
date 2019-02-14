@@ -1400,7 +1400,6 @@ ObjectModel {
         font.letterSpacing: 1
         topPadding: 48
     }
-
     // Qoam Manipulation
     ColumnLayout {
         width: root.width
@@ -1411,7 +1410,6 @@ ObjectModel {
             font.pixelSize: 27
             font.letterSpacing: 1
             topPadding: 18
-            bottomPadding: 20
 
             Layout.fillWidth: true
         }
@@ -1434,6 +1432,7 @@ ObjectModel {
             font.pixelSize: 20
             font.letterSpacing: 1
             topPadding: 20
+            bottomPadding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
