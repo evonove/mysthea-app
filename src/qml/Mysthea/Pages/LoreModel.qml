@@ -990,4 +990,461 @@ ObjectModel {
         }
     }
 
+
+
+    // Monsters
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            width: root.width
+            text: qsTr("Monsters")
+            color: Palette.grayNurse
+            font.pixelSize: 35
+            font.letterSpacing: 1
+            topPadding: 48
+        }
+        Label {
+            width: root.width
+            text: qsTr("The world of Icaion is populated by so many creatures and monsters "+
+                       "that the discovery of new species is almost expected when venturing "+
+                       "far from the city walls. Most creatures are peaceful and even show a "+
+                       "great amount of intelligence, to the point that they are accepted inside"+
+                       " the city walls and are also given roles in society.\n\n"+
+
+                       "This coexistence between monsters and people is taken for granted by "+
+                       "the citizens of Ilvash, but those used to traveling around Icaion know "+
+                       "that this is not always the case. Monsters can be unpredictable and even "+
+                       "dangerous when exposed to the wild energy of Qoam, to the point that "+
+                       "creatures that  normally cooperate in the city, are known to become "+
+                       "aggressive in certain areas of the world. Monsters become uncontrollable "+
+                       "when hit by energy that vibrates at a certain frequency, but the source of "+
+                       "this energy is undetectable. Due to this uncertainty, the army employs "+
+                       "these troops only for the defence of the city or in areas where they are "+
+                       "sure they are safe from dangerous energies.\n\n")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+
+        Image {
+            source: "qrc:/images/lore/image7.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+    }
+    // Onygauros the Collector
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Onygauros the Collector")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image16.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "The Onygauros are a species of huge scarab-like monsters with four arms"+
+                      " and they are probably the smartest creatures after humans. Onygauros are "+
+                      "called “the collectors”, since they live in small caves where they store "+
+                      "huge collections of weird items that usually have no value at all for humans,"+
+                      " but seem extremely precious to them. Each Onygauros is fascinated by a "+
+                      "different kind of item and tend to collect as many variations as possible of "+
+                      "that specific item. For example, you might see a Onygauros cave filled with "+
+                      "all sorts of bottles and another filled with drawers, cogs, and other bizarre"+
+                      " things. Be aware when venturing into their caves because they may become "+
+                      "violent to defend their collections. \n\n"+
+
+                      "Their bizarre behaviour has long been the basis for collaboration with "+
+                      "humans, who quickly understood how to please these powerful beasts, making"+
+                      " them allies and valuable assets to their armies. While they are excellent"+
+                      " warriors due to their size and ability to wield four weapons at once, some"+
+                      " are uninterested in engaging in war and can instead be seen trading their "+
+                      "strange objects with human merchants. They naturally understand what is "+
+                      "valuable to other beings and use this to obtain what they want from each "+
+                      "trade.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Boulron the Reaper
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Boulron the Reaper")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image13.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "Boulron are eerie, elegant creatures that appeared on Mysthea some years"+
+                      " ago. Their presence is unsettling to many, especially because they were"+
+                      " unknown to man until their surprising appearance one day. It was an odd"+
+                      " day. The citizens woke up to see these strange creatures roaming through"+
+                      " the city like they’d always lived there. At first this created a panic, "+
+                      "but soon the people understood that Boulron did not pose too great a"+
+                      " threat.\n\n"+
+
+                      "The creatures move slowly with sinuous, elegant gestures. Boulron roam "+
+                      "and observe other beings, but try not to interact. They are considered "+
+                      "a sign of bad luck by many because they seem attracted by death. It is "+
+                      "not unusual to see Boulron congregate where someone has died, just to stand"+
+                      "for hours in what seems a form of sorrow.\n\n"+
+
+                      "Another sign of their dark nature is their habit, while roaming, to become"+
+                      " suddenly attracted by and follow soldiers, mercenaries, or anyone who has"+
+                      " had an encounter with death recently.\n\n"+
+
+                      "In the wild not only is their behaviour unsettling and unpredictable, but "+
+                      "the idea that crystal energy can enrage them at any moment is a cause for"+
+                      " great fear. Boulron are known to forget their calm and slow movement and "+
+                      "to become machines of war when triggered by the crystals, capable of "+
+                      "destroying entire armies at once.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Caerulas the Inhabitant from Below
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Caerulas the Inhabitant from Below")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image23.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "Caerulas, nicknamed “the inhabitant from below”, is a strange three-headed"+
+                      " creature that appears from the storm. Usually it tends to appear from the"+
+                      " clouds, fly over the floating island while screeching strange harmonic"+
+                      " sounds, then disappearing back below. Its appearance is similar to the"+
+                      " rest of the mist that surrounds the planet, and it is not clear if Caerulas"+
+                      " is made of the same or if the cloud sticks to its body as it travels through "+
+                      "it. Caerulas  seems to ignore humanity and all living beings. It’s most important"+
+                      " goal is to fly freely around Icaion. \n\n"+
+
+                      "Some scholars studying Caerulas more closely reported there had actually"+
+                      " been some interactions between Caerulas and humans. But these reports are"+
+                      " strange, like tales of madmen, and all uncannily similar to each other. "+
+                      "Once they had Caerulas’ attention, the raconteurs felt that Caerulas was"+
+                      " staring directly into their souls, comprehending every detail of their "+
+                      "existence before quickly disappearing into the skies. This is what is reported"+
+                      " by those who survived the encounter, since there are also many reports of "+
+                      "people being brutally slaughtered by Caerulas, perhaps people whose souls"+
+                      " may not have impressed the creature.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Obsidusa the Devourer
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Obsidusa the Devourer")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image6.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "Obsidusa is a walking abomination fused with Qoam. The story goes that he"+
+                      " captures unfortunate adventurers and proceeds to absorb the victims, "+
+                      "engulfing them in his own body made by flesh and remnants of other people"+
+                      " that were unable to fight him. It is said he was once human. Obsidusa is not"+
+                      " the only abomination infused with Qoam that roams the lands of Mysthea. "+
+                      "Horrors of all kinds with Qoam embed in their flesh turn up often and their "+
+                      "origin is a chapter of Ilvash history that most people prefer to not"+
+                      " remember.\n\n"+
+
+                      "That sad history starts with a Champion that disappeared in mysterious"+
+                      " circumstances during the Great War of Dulkodel. The Champion was known "+
+                      "for making strange experiments with Qoam, involving other living creatures."+
+                      " The experiments were unethical and at some point almost all the guilds"+
+                      " decided to cut ties with him. Kaetur was the only guild interested in his"+
+                      " services, using his “inventions” and discoveries in battle. His experiments"+
+                      " may have been unethical, but they created things of great power, irreplicable"+
+                      " by other means. During the Great War, he was given unlimited freedom and"+
+                      " resources to pursue his research, as the philosophy of “victory at any"+
+                      " cost” was normal during those times and justified practices that today "+
+                      "would only be considered mad. Until one day toward the end of the war he"+
+                      " suddenly went missing along with much of the equipment from his laboratory."+
+                      " Some speculate that he escaped to avoid risk of being persecuted for the"+
+                      " unspeakable things he did during the war; others think that he needed to"+
+                      " throw off any pressure from society to pursue his mad research. No one"+
+                      " has seen him since that day, but shortly after creatures never seen before"+
+                      " appeared in Mysthea disseminating horror everywhere they turn up."+
+                      " Abominations with the likes of Obsidusa are just the waste of his"+
+                      " experiments, thrown away when they no longer serve a use to him.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Cannibarok the Qoam Eater
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Cannibarok the Qoam Eater")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image14.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "Cannibarok is a huge and dangerously stupid creature that lives only to "+
+                      "satisfy his most basic needs. He feeds himself off Qoam and little else"+
+                      " matters to this great beast. Cannibarok seems to be able to sense Qoam,"+
+                      " even at a great distance, and when he reaches it he uses his multiple mouths"+
+                      " to feed himself with the precious Crystal. \n\n"+
+
+                      "It is possible to tell the age of a Qoam Eater by his size, since the diet"+
+                      " seems to have an effect on the growth of the beast. Usually Qoam Eaters"+
+                      " do not live more than a decade, but during this time they can grow to "+
+                      "incredible proportions, which poses a great risk for everyone around them. "+
+                      "Sometimes these Qoam Eaters enter unnoticed into caves filled with Crystal"+
+                      " and come out many years later, having grown to gigantic proportions from"+
+                      " feasting on the crystals within and henceforth wreaking havoc on their path"+
+                      " toward some new Qoam field. For this reason the Kaetur Guild monitors "+
+                      "closely the presence of Cannibaroks around cities and settlements,trying"+
+                      " to exterminate the creatures before they grow too large. This movement "+
+                      "started after an enormous Cannibarook entered the walls of Ilvash, attracted"+
+                      " by the Qoam embedded in almost every building of the city. He destroyed a"+
+                      " large portion of the city and a day of fighting ensued before Champions and"+
+                      " soldiers were able to bring down the beast.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Kodror the Infestation
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Kodror the Infestation")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image17.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr(
+                      "Kodror is a unique kind of mold-like lifeform that seems to develop "+
+                      "and grow only when in contact with Qoam. Highly toxic and caustic for "+
+                      "all kinds of living creatures, Kodror takes its nutrients by attaching"+
+                      " itself to living beings and killing them. It rarely creates issues on "+
+                      "the ground since it usually gets eradicated before it can grow to any "+
+                      "considerable amount. But a situation can become deadly when Kodror grows "+
+                      "on large chunks of floating Qoam, since Kodror does not become noticeable"+
+                      " until it is already dangerously large. At that point Kodror becomes a "+
+                      "frightening, floating abomination with huge  tentacles that reach to kill"+
+                      " anything passing below them.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+    // Utcoro the Swarmer
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Utcoro the Swarmer")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+        Image {
+            source: "qrc:/images/lore/image27.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+        Label {
+            text: qsTr("Utcoros are predatory beasts with a short lifespan of just a couple "+
+                       "of months. They hatch from eggs and immediately begin to hunt for "+
+                       "sustenance. Utcoros try to kill and eat almost anything they encounter,"+
+                       " if their size allows it. If their size does not allow it, they tend to"+
+                       " aggregate themselves in packs to swarm and overwhelm their prey. Utcoros "+
+                       "continuously hunt until they are ready to lay eggs. When this happens, "+
+                       "it means that their life span is near its end. Utcoros die on top of their"+
+                       " offspring, so that their toxic dead bodies can protect their eggs from "+
+                       "the elements and from any other predators until the eggs hatch and the "+
+                       "cycle repeats. \n\n"+
+
+                       "They are sometimes used by soldiers and militias of Mysthea as a sort"+
+                       " of rite of passage: after their training young recruits are required"+
+                       " to kill them as a test of courage and strength. For this reason military"+
+                       " veterans see fleeing in front of them as an act of cowardice, an admission"+
+                       " of weakness and unpreparedness.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+    }
+
+
+
+    // Misc
+    Label {
+        width: root.width
+        text: qsTr("Misc")
+        color: Palette.grayNurse
+        font.pixelSize: 35
+        font.letterSpacing: 1
+        topPadding: 48
+    }
+
+    // Qoam Manipulation
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+        Label {
+            text: qsTr("Qoam Manipulation")
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 1
+            topPadding: 18
+            bottomPadding: 20
+
+            Layout.fillWidth: true
+        }
+
+        Label {
+            width: root.width
+            text: qsTr("The process of manipulating Qoam to move it telekinetically"+
+                       " is common practice for all of the city. The practice is "+
+                       "considered as natural as breathing. In reality the process is very"+
+                       " complex, but only some are aware of this or are able to use this "+
+                       "knowledge to their advantage. Highly talented individuals put a lot "+
+                       "of concentration into what they do. For them, the goal is to sense "+
+                       "crystals whose electromagnetic fields vibrate at a frequency that works"+
+                       " well for them. Finding such a crystal makes a great difference, as "+
+                       "choosing the right crystal can make the process immensely easier, enabling"+
+                       " the user to perform greater feats. Usually, when one is interacting with"+
+                       " a Qoam, others cannot take control of it unless the first user allows "+
+                       "them to do so.")
+            color: Palette.grayNurse
+            font.pixelSize: 20
+            font.letterSpacing: 1
+            topPadding: 20
+            wrapMode: Text.Wrap
+            lineHeight: 1.1
+
+            Layout.fillWidth: true
+        }
+
+        Image {
+            source: "qrc:/images/lore/image3.jpg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width
+        }
+    }
+
 }
