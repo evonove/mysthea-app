@@ -18,7 +18,18 @@ Page {
         running: _contentLoader.status !== Loader.Ready
     }
 
+    signal openTableOfContents
+
     property Action leftAction: null
+    property Action rightActions: Action {
+        id: indexAction
+        text: Icon.index
+        onTriggered: {
+            console.log("open table")
+            root.openTableOfContents()
+        }
+    }
+
     property bool hasToolbarLine: true
 
     background: Image {

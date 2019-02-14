@@ -227,6 +227,15 @@ ApplicationWindow {
             Lore {
                 topPadding: toolbar.height
                 leftAction: drawerAction
+                onOpenTableOfContents: root.pushToStack(_loreTableOfContents, PageName.tableOfContentsPage)
+            }
+        }
+
+        Component {
+            id: _loreTableOfContents
+            TableOfContents {
+                topPadding: toolbar.height
+                leftAction: backAction
             }
         }
     }
