@@ -10,19 +10,18 @@ ObjectModel {
 
     property int width: 100
 
+    Label {
+        width: root.width
+        text: qsTr("General Setting")
+        color: Palette.grayNurse
+        font.pixelSize: 35
+        font.letterSpacing: 0.5
+        topPadding: 20
+    }
+
     ColumnLayout {
         width: root.width
         spacing: 0
-
-        Label {
-            text: qsTr("General Setting")
-            color: Palette.grayNurse
-            font.pixelSize: 35
-            font.letterSpacing: 0.5
-            topPadding: 20
-
-            Layout.fillWidth: true
-        }
         Label {
             text: qsTr("The Planet Icaion")
             color: Palette.grayNurse
@@ -78,7 +77,11 @@ ObjectModel {
 
             Layout.fillWidth: true
         }
+}
 
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         Label {
             text: qsTr("Mysthea")
             color: Palette.grayNurse
