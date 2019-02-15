@@ -13,6 +13,11 @@ Page {
     bottomPadding: 0
     padding: 0
 
+    BusyIndicator {
+        anchors.centerIn: parent
+        running: _contentLoader.status !== Loader.Ready
+    }
+
     property Action leftAction: null
     property bool hasToolbarLine: true
 
@@ -31,6 +36,16 @@ Page {
         }
     }
 
+    Loader {
+        id: _contentLoader
+        anchors.fill: parent
+        asynchronous: true
+        sourceComponent: _listView
+        visible: status === Loader.Ready
+    }
+
+Component {
+    id: _listView
     ListView {
         anchors.fill: parent
         clip: true
@@ -42,4 +57,5 @@ Page {
 
         ScrollIndicator.vertical: ScrollIndicator {}
     }
+}
 }

@@ -59,7 +59,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image21.jpg"
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: root.width
+            sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
             Layout.fillWidth: true
@@ -1675,7 +1675,9 @@ ObjectModel {
             source: "qrc:/images/lore/image3.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
-            Layout.margins: 20
+            Layout.bottomMargin: 20
+            Layout.rightMargin: 20
+            Layout.leftMargin: 20
             Layout.topMargin: 0
             Layout.fillWidth: true
         }
