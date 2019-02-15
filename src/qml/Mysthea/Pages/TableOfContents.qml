@@ -91,7 +91,6 @@ Page {
                             verticalAlignment: Text.AlignVCenter
                         }
                         onClicked: {
-                            console.log(element, title)
                             root.openSection(element)
                         }
                     }
@@ -99,7 +98,6 @@ Page {
             }
 
             onClicked: {
-                console.log(element, chapter)
                 root.openSection(element)
             }
         }
