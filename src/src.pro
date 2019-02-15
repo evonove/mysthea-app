@@ -68,8 +68,3 @@ ios {
     QMAKE_ASSET_CATALOGS_LAUNCH_IMAGE = "LaunchImage"
 }
 
-DISTFILES += \
-    qml/Mysthea/Components/RadioIndicator.qml \
-    qml/Mysthea/Pages/LanguageListModel.qml \
-    qml/Mysthea/Pages/PageName.qml \
-    qml/Mysthea/Components/LinkButton.qml

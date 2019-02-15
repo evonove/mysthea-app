@@ -43,5 +43,3 @@ TRANSLATIONS += \
     $$PWD/translations/mysthea_it.ts \
     $$PWD/translations/mysthea_ja.ts
 
-DISTFILES += \
-    $$PWD/qml/Mysthea/Components/RadioButton.qml
