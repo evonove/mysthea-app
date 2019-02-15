@@ -86,24 +86,25 @@ ApplicationWindow {
             color: Palette.white
             opacity: 0.5
         }
-        ToolButton {
-            id: toolButton
-            height: parent.height
-            font.pixelSize: 24
-            font.family: "Material Icons"
-            action: _mainStackView.currentItem.leftAction
 
-            Material.foreground: Palette.white
-        }
         RowLayout {
             anchors.fill: parent
+            ToolButton {
+                id: toolButton
+                height: parent.height
+                font.pixelSize: 24
+                font.family: "Material Icons"
+                action: _mainStackView.currentItem.leftAction
+
+                Material.foreground: Palette.white
+                Layout.fillHeight: true
+            }
             Label {
                 id: label
                 anchors.topMargin: 16
                 text: _mainStackView.currentItem.title
                 font.pixelSize: 20
                 font.letterSpacing: 0.5
-                horizontalAlignment: Qt.AlignHCenter
                 verticalAlignment: Qt.AlignVCenter
 
                 Material.foreground: Palette.white
@@ -120,6 +121,7 @@ ApplicationWindow {
                     action: modelData
 
                     Material.foreground: Palette.white
+                    Layout.fillHeight: true
                 }
             }
         }
@@ -180,7 +182,8 @@ ApplicationWindow {
             MainMenu {
                 leftAction: drawerAction
 
-                onCardsReferenceClicked: root.pushToStack(_cardReference, PageName.cardPage)
+                onCardsReferenceClicked: root.pushToStack(_cardReference,
+                                                          PageName.cardPage)
 
                 onGameSetupClicked: root.pushToStack(_gameSetup,
                                                      PageName.gameSetupPage)
@@ -227,7 +230,9 @@ ApplicationWindow {
             Lore {
                 topPadding: toolbar.height
                 leftAction: drawerAction
-                onOpenTableOfContents: root.pushToStack(_loreTableOfContents, PageName.tableOfContentsPage)
+                onOpenTableOfContents: root.pushToStack(
+                                           _loreTableOfContents,
+                                           PageName.tableOfContentsPage)
             }
         }
 
