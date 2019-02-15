@@ -14,8 +14,9 @@ Page {
     padding: 0
 
     property Action leftAction: null
-
     property bool hasToolbarLine: true
+
+    signal openSection(int element)
 
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
@@ -34,7 +35,6 @@ Page {
 
     ListView {
         anchors.fill: parent
-        anchors.leftMargin: 20
         spacing: 12
         clip: true
 
@@ -47,7 +47,7 @@ Page {
             font.letterSpacing: 1
             topPadding: 20
             bottomPadding: 12
-            leftPadding: 0
+            leftPadding: 20
             rightPadding: 0
 
             color: Palette.grayNurse
@@ -69,7 +69,7 @@ Page {
                     font.letterSpacing: 1
                     topPadding: 0
                     bottomPadding: 4
-                    leftPadding: 0
+                    leftPadding: 20
                     rightPadding: 0
                     color: Palette.grayNurse
                 }
@@ -86,16 +86,22 @@ Page {
                             text: title
                             font.pixelSize: 20
                             font.letterSpacing: 1
-                            leftPadding: 12
+                            leftPadding: 32
                             color: Palette.grayNurse
                             verticalAlignment: Text.AlignVCenter
                         }
-                        onClicked: console.log(title)
+                        onClicked: {
+                            console.log(element, title)
+                            root.openSection(element)
+                        }
                     }
                 }
             }
 
-            onClicked: console.log(chapter)
+            onClicked: {
+                console.log(element, chapter)
+                root.openSection(element)
+            }
         }
     }
 }

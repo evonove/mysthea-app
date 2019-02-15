@@ -44,6 +44,8 @@ ApplicationWindow {
         root.isPushing = false
     }
 
+    signal moveToSection(int element)
+
     // Loads Material icons font
     FontLoader {
         source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
@@ -122,6 +124,7 @@ ApplicationWindow {
 
                     Material.foreground: Palette.white
                     Layout.fillHeight: true
+
                 }
             }
         }
@@ -233,6 +236,12 @@ ApplicationWindow {
                 onOpenTableOfContents: root.pushToStack(
                                            _loreTableOfContents,
                                            PageName.tableOfContentsPage)
+                Connections {
+                    target: root
+                    onMoveToSection: {
+                        scrollTo(element)
+                    }
+                }
             }
         }
 
@@ -241,6 +250,11 @@ ApplicationWindow {
             TableOfContents {
                 topPadding: toolbar.height
                 leftAction: backAction
+
+                onOpenSection: {
+                    root.moveToSection(element)
+                    _mainStackView.pop()
+                }
             }
         }
     }
