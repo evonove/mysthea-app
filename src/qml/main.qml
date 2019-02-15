@@ -218,6 +218,7 @@ ApplicationWindow {
         Component {
             id: _gameSetup
             GameSetup {
+                topPadding: toolbar.height
                 leftAction: drawerAction
             }
         }

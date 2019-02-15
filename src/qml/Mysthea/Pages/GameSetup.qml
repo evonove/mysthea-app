@@ -7,38 +7,17 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr(
-                                         "Wizard %1 of 3").arg(
+                                         "GAME SETUP - %1 of 3").arg(
                                          root.currentIndex)
-
     objectName: PageName.gameSetupPage
+    padding: 0
 
-    property bool hasToolbarLine: false
+    property bool hasToolbarLine: true
     property Action leftAction
-    property list<Action> rightActions: [
-        Action {
-            id: beforeAction
-            text: Icon.navigateBefore
-            onTriggered: root.currentIndex > 0 ? _swipeView.decrementCurrentIndex(
-                                                     ) : root.currentIndex = 0
-        },
-        Action {
-            id: nextAction
-            text: Icon.navigateNext
-            onTriggered: root.currentIndex < 3 ? _swipeView.incrementCurrentIndex(
-                                                     ) : root.currentIndex = 3
-        },
-        Action {
-            id: mainAction
-            text: Icon.apps
-            onTriggered: root.currentIndex = 0
-        }
-    ]
-
     property alias currentIndex: _swipeView.currentIndex
 
-    padding: 8
     background: Image {
-        source: "qrc:/images/background.png"
+        source: "qrc:/assets/images/cards-bg.jpg"
         fillMode: Image.PreserveAspectCrop
         smooth: false
 

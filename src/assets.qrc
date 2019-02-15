@@ -51,5 +51,23 @@
     <file>images/lore/image27.jpg</file>
     <file>images/lore/image28.jpg</file>
     <file>images/lore/image29.jpg</file>
+    <file>images/game_setup/blocco1_a.png</file>
+    <file>images/game_setup/blocco1_b.png</file>
+    <file>images/game_setup/blocco1_c.png</file>
+    <file>images/game_setup/d1.png</file>
+    <file>images/game_setup/d2.png</file>
+    <file>images/game_setup/d3.png</file>
+    <file>images/game_setup/d4.png</file>
+    <file>images/game_setup/d5.png</file>
+    <file>images/game_setup/d6.png</file>
+    <file>images/game_setup/d7.png</file>
+    <file>images/game_setup/d8.png</file>
+    <file>images/game_setup/d9.png</file>
+    <file>images/game_setup/d10.png</file>
+    <file>images/game_setup/d11.png</file>
+    <file>images/game_setup/fortification.svg</file>
+    <file>images/game_setup/hero.svg</file>
+    <file>images/game_setup/icon_golem.svg</file>
+    <file>images/game_setup/icon_troop.svg</file>
     </qresource>
 </RCC>
