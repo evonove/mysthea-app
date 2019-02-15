@@ -7,4 +7,4 @@ RadioLanguage 1.0 RadioButton.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
 MainDrawer 1.0 MainDrawer.qml
 RulebookButton 1.0 RulebookButton.qml
-
+RoundButton 1.0 RoundButton.qml

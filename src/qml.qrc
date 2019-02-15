@@ -34,5 +34,6 @@
         <file>qml/Mysthea/Components/RulebookButton.qml</file>
         <file>qml/Mysthea/Pages/TableOfContents.qml</file>
         <file>qml/Mysthea/Pages/TableOfContentsModel.qml</file>
+        <file>qml/Mysthea/Components/RoundButton.qml</file>
     </qresource>
 </RCC>
