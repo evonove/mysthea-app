@@ -1,4 +1,4 @@
-import QtQuick 2.0
+    import QtQuick 2.0
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.5
 
@@ -9,8 +9,6 @@ Page {
     id: root
     title: qsTr("LORE")
     objectName: PageName.lorePage
-    topPadding: 0
-    bottomPadding: 0
     padding: 0
 
     BusyIndicator {
@@ -25,12 +23,13 @@ Page {
         id: indexAction
         text: Icon.index
         onTriggered: {
-            console.log("open table")
             root.openTableOfContents()
         }
     }
 
+
     property bool hasToolbarLine: true
+
 
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
@@ -55,18 +54,18 @@ Page {
         visible: status === Loader.Ready
     }
 
-Component {
-    id: _listView
-    ListView {
+    Component {
+        id: _listView
+        ListView {
         anchors.fill: parent
         clip: true
         spacing: 0
         model: LoreModel {
             width: root.availableWidth
         }
+        ScrollIndicator.vertical: ScrollIndicator {
 
-
-        ScrollIndicator.vertical: ScrollIndicator {}
+        }
+        }
     }
-}
 }

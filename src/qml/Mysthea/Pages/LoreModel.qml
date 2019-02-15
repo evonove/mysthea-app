@@ -11,6 +11,7 @@ ObjectModel {
     property int width: 100
     // General Setting
     Label {
+        width: root.width
         text: qsTr("General Setting")
         color: Palette.grayNurse
         font.pixelSize: 35
@@ -111,10 +112,7 @@ ObjectModel {
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
-            topPadding: 20
-            rightPadding: 20
-            leftPadding: 20
-            bottomPadding: 20
+            padding: 20
             wrapMode: Text.Wrap
             lineHeight: 1.1
 
@@ -203,7 +201,7 @@ ObjectModel {
 
         Label {
             text: qsTr("People living on Mysthea are naturally able to " + "interact telekinetically with Qoam shards. Some " + "have a more natural predisposition and are able to " + "perform amazing feats, but generally almost anyone " + "is able to sense the presence of Qoam and to move it " + "in small quantities. This telekinetic ability has " + "been used during the development of society in the most " + "creative ways and has shaped the evolution of the whole " + "species. Qoam itself, but more particularly rocks with " + "the crystal embedded in it, have been used for the most " + "diverse applications, from something as simple as a tool " + "to a base material used to build whole cities. The most " + "virtuous and talented Qoam manipulators are able to use " + "it as a weapon, weightless to them and deadly to others. " + "Some are able to walk around covered in otherworldly " + "crystal armor without compromising any mobility. Some " + "even manage to bring these materials to life: using Qoam " + "shards and stones with the crystal embedded in it to " + "generate golems with a will of their own. Everyone manages" + " to find some clever and unique way to use Qoam and this "
-                       + "makes it an integral part of the fabric of society.")
+                       + "makes it an integral part of the fabric of society. ")
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
@@ -227,12 +225,12 @@ ObjectModel {
             text: qsTr(
                       "Society prospered, living and building on the "
                       + "lands, admiring from afar the Henakor with its five "
-                      + "floating islands.\n\n" + "For centuries the inhabitants battled "
+                      + "floating islands. \n\n" + "For centuries the inhabitants battled "
                       + "among themselves for power and land, cities were built,"
                       + " and kingdoms went to war, while society relentlessly developed "
                       + "and evolved. Now the Kingdom of Ahatils has proven its "
                       + "supremacy and domain over Mysthea, undisputed for decades. "
-                      + "This is a stability previously unknown in the land’s history.")
+                      + "This is a stability previously unknown in the land’s history. ")
             color: Palette.grayNurse
             font.pixelSize: 20
             font.letterSpacing: 1
