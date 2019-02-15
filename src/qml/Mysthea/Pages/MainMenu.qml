@@ -84,9 +84,6 @@ Page {
 
             containerY: container.y
             sourceItem: root.background
-            // Game Setup is disabled until next release when it will be completed
-            enabled: false
-
             text: qsTr("Game Setup")
             font.capitalization: Font.AllUppercase
 
