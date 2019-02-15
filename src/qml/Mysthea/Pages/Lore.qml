@@ -34,6 +34,7 @@ Page {
     ListView {
         anchors.fill: parent
         clip: true
+        spacing: 0
         model: LoreModel {
             width: root.availableWidth
         }
