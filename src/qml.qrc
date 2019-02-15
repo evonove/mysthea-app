@@ -33,5 +33,6 @@
         <file>qml/Mysthea/Pages/LoreModel.qml</file>
         <file>qml/Mysthea/Components/RulebookButton.qml</file>
         <file>qml/Mysthea/Pages/TableOfContents.qml</file>
+        <file>qml/Mysthea/Pages/TableOfContentsModel.qml</file>
     </qresource>
 </RCC>

@@ -68,3 +68,4 @@ ios {
     QMAKE_ASSET_CATALOGS_LAUNCH_IMAGE = "LaunchImage"
 }
 
+
