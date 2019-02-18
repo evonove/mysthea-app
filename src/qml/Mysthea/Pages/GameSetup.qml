@@ -7,7 +7,7 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr(
-                                         "GAME SETUP - %1 of 3").arg(
+                                         "GAME SETUP - %1 of 11").arg(
                                          root.currentIndex)
     objectName: PageName.gameSetupPage
     padding: 0
@@ -29,6 +29,7 @@ Page {
         id: _swipeView
         currentIndex: 0
         anchors.fill: parent
+        clip: true
 
         Loader {
             asynchronous: true

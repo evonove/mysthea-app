@@ -3,6 +3,7 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
 import Mysthea.Components 1.0
+import QtQuick.Controls.Material 2.12
 
 Page {
     id: root
@@ -41,7 +42,6 @@ Page {
                     anchors.horizontalCenter: imgBlockA.horizontalCenter
                     anchors.horizontalCenterOffset: 60
                     text: "1"
-                    containerY: imgBlockA.y
                     onClicked: root.stepClicked(1)
                 }
                 RoundButton {
@@ -50,7 +50,6 @@ Page {
                     anchors.verticalCenter: imgBlockA.verticalCenter
                     anchors.verticalCenterOffset: -100
                     text: "4"
-                    containerY: imgBlockA.y
                     onClicked: root.stepClicked(4)
                 }
                 RoundButton {
@@ -58,7 +57,6 @@ Page {
                     anchors.verticalCenter: imgBlockA.verticalCenter
                     anchors.verticalCenterOffset: 20
                     text: "5"
-                    containerY: imgBlockA.y
                     onClicked: root.stepClicked(5)
                 }
                 RoundButton {
@@ -67,7 +65,6 @@ Page {
                     anchors.verticalCenterOffset: -10
                     anchors.horizontalCenterOffset: -20
                     text: "11"
-                    containerY: imgBlockA.y
                     onClicked: root.stepClicked(11)
                 }
             }
@@ -88,7 +85,6 @@ Page {
                         anchors.verticalCenter: imgBlockB.verticalCenter
                         anchors.right: imgBlockB.right
                         text: "2"
-                        containerY: imgBlockB.y
                         onClicked: root.stepClicked(2)
                     }
                     RoundButton {
@@ -98,7 +94,6 @@ Page {
                         anchors.verticalCenterOffset: -20
 
                         text: "3"
-                        containerY: imgBlockB.y
                         onClicked: root.stepClicked(3)
                     }
                     RoundButton {
@@ -107,7 +102,6 @@ Page {
                         anchors.horizontalCenterOffset: 70
                         anchors.verticalCenterOffset: -10
                         text: "6"
-                        containerY: imgBlockB.y
                         onClicked: root.stepClicked(6)
                     }
                 }
@@ -130,7 +124,6 @@ Page {
                         anchors.bottom: imgBlockC.bottom
                         anchors.right: imgBlockC.right
                         text: "7"
-                        containerY: imgBlockC.y
                         onClicked: root.stepClicked(7)
                     }
                     RoundButton {
@@ -138,21 +131,18 @@ Page {
                         anchors.horizontalCenter: imgBlockC.horizontalCenter
                         anchors.horizontalCenterOffset: 20
                         text: "8"
-                        containerY: imgBlockC.y
                         onClicked: root.stepClicked(8)
                     }
                     RoundButton {
                         anchors.left: imgBlockC.left
                         anchors.verticalCenter: imgBlockC.verticalCenter
                         text: "9"
-                        containerY: imgBlockC.y
                         onClicked: root.stepClicked(9)
                     }
                     RoundButton {
                         anchors.right: imgBlockC.right
                         anchors.rightMargin: 30
                         text: "10"
-                        containerY: imgBlockC.y
                         onClicked: root.stepClicked(10)
                     }
                 }

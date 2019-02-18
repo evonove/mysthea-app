@@ -1,56 +1,87 @@
-import QtQuick 2.0
+import QtQuick 2.11
+import QtQuick.Templates 2.4 as T
 import QtQuick.Controls 2.4
-import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.0
-
+import QtQuick.Controls.impl 2.4
+import QtQuick.Controls.Material 2.4
+import QtQuick.Controls.Material.impl 2.4
 import Mysthea.Theme 1.0
 
-Button {
+T.Button {
     id: control
-    //We use this property to take the y value of root page's container to draw correctly
-    //the FastBlur in Button.
-    property real containerY
 
+    implicitWidth: Math.max(background ? background.implicitWidth : 0,
+                            contentItem.implicitWidth + leftPadding + rightPadding)
+    implicitHeight: Math.max(background ? background.implicitHeight : 0,
+                             contentItem.implicitHeight)
+    baselineOffset: contentItem.y + contentItem.baselineOffset
+
+    // external vertical padding is 6 (to increase touch area)
+    padding: 12
+    leftPadding: padding - 4
+    rightPadding: padding - 4
+    spacing: 6
     font.pixelSize: 27
-    font.family: "Yanone Kaffeesatz"
-    font.letterSpacing: 1.5
-    font.bold: true
 
-    padding: 0
-    implicitHeight: 52
-    implicitWidth: 52
+    icon.width: 24
+    icon.height: 24
+    icon.color: !enabled ? Material.hintTextColor :
+        flat && highlighted ? Material.accentColor :
+        highlighted ? Material.primaryHighlightedTextColor : Material.foreground
 
-    contentItem: Label {
-        topPadding: 5
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Image.AlignVCenter
+    Material.elevation: 0
+    Material.background: flat ? "transparent" : undefined
 
-        font: control.font
+    contentItem: IconLabel {
+        topPadding: 6
+        spacing: control.spacing
+        mirrored: control.mirrored
+        display: control.display
+
+        icon: control.icon
         text: control.text
-
-        color: Palette.snuff
-        opacity: control.pressed || !control.enabled ? 0.7 : 1
+        font: control.font
+        color: !control.enabled ? control.Material.hintTextColor :
+            control.flat && control.highlighted ? control.Material.accentColor :
+            control.highlighted ? control.Material.primaryHighlightedTextColor : control.Material.foreground
     }
 
-    background: Item {
+    background: Rectangle {
+        implicitWidth: 52
+        implicitHeight: 52
 
+        // external vertical padding is 6 (to increase touch area)
+        y: 6
+        width: parent.width
+        height: parent.height
+        radius: width / 2
+        color:  Qt.hsla(Palette.voodoo.hslHue, Palette.voodoo.hslSaturation, Palette.voodoo.hslLightness, 0.85)
         Rectangle {
-            id: rect
-            height: 52
-            width: 52
-            opacity: 0.2
-            radius: width/2
-            color: Palette.snuff
-        }
-
-        Rectangle {
-            id: borderRect
-            height: 52
-            width: 52
-            radius: width/2
+            anchors.fill: parent
             color: "transparent"
             border.color: Palette.snuff
             border.width: 4
+            radius: width/2
+        }
+
+
+        // The layer is disabled when the button color is transparent so you can do
+        // Material.background: "transparent" and get a proper flat button without needing
+        // to set Material.elevation as well
+        layer.enabled: control.enabled && control.Material.buttonColor.a > 0
+        layer.effect: ElevationEffect {
+            elevation: control.Material.elevation
+        }
+
+        Ripple {
+            clipRadius: width / 2
+            width: parent.width
+            height: parent.height
+            pressed: control.pressed
+            anchor: control
+            active: control.down || control.visualFocus || control.hovered
+            color: control.Material.rippleColor
         }
     }
 }
+
+

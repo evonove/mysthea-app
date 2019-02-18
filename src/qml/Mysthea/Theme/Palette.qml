@@ -20,4 +20,6 @@ QtObject {
     readonly property color dustyGray: "#999999"
     readonly property color gallery: "#EEEEEE"
     readonly property color silverChalice: "#AFAFAF"
+    readonly property color cadillac: "#B7537A"
+    readonly property color voodoo: "#4E3A53"
 }
