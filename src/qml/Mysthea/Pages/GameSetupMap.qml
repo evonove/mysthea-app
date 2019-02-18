@@ -29,39 +29,134 @@ Page {
                 Layout.topMargin: 16
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                implicitHeight: img.height
+                implicitHeight: imgBlockA.height
                 Image {
-                    id: img
-//                    anchors.fill: parent
+                    id: imgBlockA
                     source: "qrc:/images/game_setup/blocco1_a.png"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: parent.width
                 }
-                 RoundButton {
-                     anchors.left: img.left
-                     text: "1"
-                     sourceItem: img
-                     containerY: img.y
-                 }
+                RoundButton {
+                    anchors.verticalCenter: imgBlockA.verticalCenter
+                    anchors.horizontalCenter: imgBlockA.horizontalCenter
+                    anchors.horizontalCenterOffset: 60
+                    text: "1"
+                    containerY: imgBlockA.y
+                    onClicked: root.stepClicked(1)
+                }
+                RoundButton {
+                    anchors.right: imgBlockA.right
+                    anchors.rightMargin: 50
+                    anchors.verticalCenter: imgBlockA.verticalCenter
+                    anchors.verticalCenterOffset: -100
+                    text: "4"
+                    containerY: imgBlockA.y
+                    onClicked: root.stepClicked(4)
+                }
+                RoundButton {
+                    anchors.left: imgBlockA.left
+                    anchors.verticalCenter: imgBlockA.verticalCenter
+                    anchors.verticalCenterOffset: 20
+                    text: "5"
+                    containerY: imgBlockA.y
+                    onClicked: root.stepClicked(5)
+                }
+                RoundButton {
+                    anchors.verticalCenter: imgBlockA.verticalCenter
+                    anchors.horizontalCenter: imgBlockA.horizontalCenter
+                    anchors.verticalCenterOffset: -10
+                    anchors.horizontalCenterOffset: -20
+                    text: "11"
+                    containerY: imgBlockA.y
+                    onClicked: root.stepClicked(11)
+                }
             }
-
-            Image {
-                source: "qrc:/images/game_setup/blocco1_b.png"
-                fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+            Item {
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
+                Layout.topMargin: 16
                 Layout.fillWidth: true
+                Layout.fillHeight: true
+                implicitHeight: imgBlockB.height
+                Image {
+                    id: imgBlockB
+                    source: "qrc:/images/game_setup/blocco1_b.png"
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.width: parent.width
+
+                    RoundButton {
+                        anchors.verticalCenter: imgBlockB.verticalCenter
+                        anchors.right: imgBlockB.right
+                        text: "2"
+                        containerY: imgBlockB.y
+                        onClicked: root.stepClicked(2)
+                    }
+                    RoundButton {
+                        anchors.left: imgBlockB.left
+                        anchors.leftMargin: 20
+                        anchors.verticalCenter: imgBlockB.verticalCenter
+                        anchors.verticalCenterOffset: -20
+
+                        text: "3"
+                        containerY: imgBlockB.y
+                        onClicked: root.stepClicked(3)
+                    }
+                    RoundButton {
+                        anchors.verticalCenter: imgBlockB.verticalCenter
+                        anchors.horizontalCenter: imgBlockB.horizontalCenter
+                        anchors.horizontalCenterOffset: 70
+                        anchors.verticalCenterOffset: -10
+                        text: "6"
+                        containerY: imgBlockB.y
+                        onClicked: root.stepClicked(6)
+                    }
+                }
             }
-//            Image {
-//                source: "qrc:/images/game_setup/blocco1_c.png"
-//                fillMode: Image.PreserveAspectFit
-//                sourceSize.width: width
-//                Layout.leftMargin: 20
-//                Layout.rightMargin: 20
-//                Layout.bottomMargin: 20
-//                Layout.fillWidth: true
-//            }
+            Item {
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
+                Layout.topMargin: 16
+                Layout.bottomMargin: 20
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                implicitHeight: imgBlockC.height
+                Image {
+                    id: imgBlockC
+                    source: "qrc:/images/game_setup/blocco1_c.png"
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.width: parent.width
+
+                    RoundButton {
+                        anchors.bottom: imgBlockC.bottom
+                        anchors.right: imgBlockC.right
+                        text: "7"
+                        containerY: imgBlockC.y
+                        onClicked: root.stepClicked(7)
+                    }
+                    RoundButton {
+                        anchors.verticalCenter: imgBlockC.verticalCenter
+                        anchors.horizontalCenter: imgBlockC.horizontalCenter
+                        anchors.horizontalCenterOffset: 20
+                        text: "8"
+                        containerY: imgBlockC.y
+                        onClicked: root.stepClicked(8)
+                    }
+                    RoundButton {
+                        anchors.left: imgBlockC.left
+                        anchors.verticalCenter: imgBlockC.verticalCenter
+                        text: "9"
+                        containerY: imgBlockC.y
+                        onClicked: root.stepClicked(9)
+                    }
+                    RoundButton {
+                        anchors.right: imgBlockC.right
+                        anchors.rightMargin: 30
+                        text: "10"
+                        containerY: imgBlockC.y
+                        onClicked: root.stepClicked(10)
+                    }
+                }
+            }
         }
     }
 }

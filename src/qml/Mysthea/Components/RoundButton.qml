@@ -10,12 +10,11 @@ Button {
     //We use this property to take the y value of root page's container to draw correctly
     //the FastBlur in Button.
     property real containerY
-    //We use this property to take the sourceItem that we have to Blur in Button.
-    property alias sourceItem: effectSourceCard.sourceItem
 
     font.pixelSize: 27
     font.family: "Yanone Kaffeesatz"
     font.letterSpacing: 1.5
+    font.bold: true
 
     padding: 0
     implicitHeight: 52
@@ -35,24 +34,11 @@ Button {
 
     background: Item {
 
-        ShaderEffectSource {
-            id: effectSourceCard
-            anchors.fill: parent
-            sourceRect: Qt.rect(control.x, control.containerY + control.y,
-                                control.width, control.height)
-        }
-
-        FastBlur {
-            anchors.fill: effectSourceCard
-            source: effectSourceCard
-            radius: 32
-        }
-
         Rectangle {
             id: rect
             height: 52
             width: 52
-            opacity: 0.6
+            opacity: 0.2
             radius: width/2
             color: Palette.snuff
         }
