@@ -340,7 +340,7 @@ ObjectModel {
             }
 
             Label {
-                text: qsTr("<b><u>1 Energy Token</u></b><br> and 1 Experience Token Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.")
+                text: qsTr("<b><u>1 Energy Token and 1 Experience Token</u></b><br> Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
