@@ -3,6 +3,7 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
 import Mysthea.Theme 1.0
+import Mysthea.Components 1.0
 
 Page {
     id: root
@@ -39,18 +40,12 @@ Page {
         }
 
         Repeater {
-            model: GameSetupModel {
-            }
-            Loader {
-                asynchronous: true
-                active: SwipeView.isCurrentItem || SwipeView.isNextItem
-                        || SwipeView.isPreviousItem
-                sourceComponent: GameSetupStep {
-                    title: model.title
-                    mainImageSource: model.image
-                    content: model.content
+            model:
+                GameSetupModel {
+                    id: _gameSetupModel
+                    width: root.availableWidth
                 }
-            }
+
         }
     }
 }

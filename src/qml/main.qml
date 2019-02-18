@@ -56,6 +56,9 @@ ApplicationWindow {
     FontLoader {
         source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
     }
+    FontLoader {
+        source: "qrc:/assets/fonts/EraIcons.ttf"
+    }
 
     Action {
         id: drawerAction
