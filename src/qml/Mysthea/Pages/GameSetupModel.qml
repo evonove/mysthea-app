@@ -355,7 +355,7 @@ ObjectModel {
 
             Label {
                 text: qsTr(" Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. ")
-                color: Palette.grayNurse
+                color: Palette.silverChalice
                 font.pixelSize: 20
                 font.letterSpacing: 1
                 wrapMode: Text.Wrap
