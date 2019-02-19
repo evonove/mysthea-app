@@ -89,6 +89,7 @@ Page {
                             id: typeCombo
                             padding: 0
                             textRole: "type"
+                            iconRole: "iconUrl"
                             model: TypeComboBoxModel {
                                 id: typeComboModel
                             }

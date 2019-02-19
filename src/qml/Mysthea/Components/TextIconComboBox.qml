@@ -6,9 +6,12 @@ import QtQuick.Templates 2.4 as T
 import QtQuick.Controls.Material 2.4
 import QtQuick.Controls.Material.impl 2.4
 import QtQuick.Layouts 1.12
+import Mysthea.Models 1.0
 
 T.ComboBox {
     id: control
+    property string iconRole
+    property string displayIcon
 
     implicitWidth: Math.max(
                        background ? background.implicitWidth : 0,
@@ -35,8 +38,11 @@ T.ComboBox {
                              === index ? parent.Material.accent : parent.Material.foreground
         highlighted: control.highlightedIndex === index
         hoverEnabled: control.hoverEnabled
+        onTriggered: control.displayIcon = iconUrl
+
         RowLayout {
             spacing: 10
+            height: parent.height
             Label {
                 text: control.textRole ? (Array.isArray(
                                               control.model) ? modelData[control.textRole] : model[control.textRole]) : modelData
@@ -44,8 +50,8 @@ T.ComboBox {
                 Layout.alignment: Qt.AlignVCenter
             }
             Image {
-                source: iconUrl
-                visible: iconUrl.length > 0
+                source: control.iconRole ? (Array.isArray(
+                                                control.model) ? modelData[control.iconRole] : model[control.iconRole]) : modelData
                 fillMode: Image.PreserveAspectFit
 
                 Layout.preferredHeight: 16
@@ -61,26 +67,28 @@ T.ComboBox {
         source: "qrc:/qt-project.org/imports/QtQuick/Controls.2/Material/images/drop-indicator.png"
     }
 
-    contentItem: T.TextField {
-        padding: 6
-        leftPadding: control.editable ? 2 : control.mirrored ? 0 : 12
-        rightPadding: control.editable ? 2 : control.mirrored ? 12 : 0
+    contentItem: Item {
+        RowLayout {
+            spacing: 8
+            height: parent.height
+            Label {
+                height: parent.height
+                text: control.editable ? control.editText : control.displayText
+                font: control.font
+                color: control.enabled ? control.Material.foreground : control.Material.hintTextColor
 
-        text: control.editable ? control.editText : control.displayText
+                leftPadding: control.editable ? 2 : control.mirrored ? 0 : 12
+                Layout.alignment: Qt.AlignVCenter
+            }
 
-        enabled: control.editable
-        autoScroll: control.editable
-        readOnly: control.down
-        inputMethodHints: control.inputMethodHints
-        validator: control.validator
+            Image {
+                source: control.displayIcon
+                visible: control.displayIcon.length > 0
+                fillMode: Image.PreserveAspectFit
 
-        font: control.font
-        color: control.enabled ? control.Material.foreground : control.Material.hintTextColor
-        selectionColor: control.Material.accentColor
-        selectedTextColor: control.Material.primaryHighlightedTextColor
-        verticalAlignment: Text.AlignVCenter
-
-        cursorDelegate: CursorDelegate {
+                Layout.preferredHeight: 16
+                Layout.alignment: Qt.AlignVCenter
+            }
         }
     }
 
