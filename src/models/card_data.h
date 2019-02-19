@@ -7,6 +7,7 @@
 // types
 static constexpr auto ALL_TYPES_TEXT =
     QT_TRANSLATE_NOOP("CardsData", "All types");
+static constexpr auto ERA_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era");
 static constexpr auto ERAX_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era X");
 static constexpr auto ERAI_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era I");
 static constexpr auto ERAII_TEXT = QT_TRANSLATE_NOOP("CardsData", "Era II");

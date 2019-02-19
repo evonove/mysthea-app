@@ -11,7 +11,7 @@ public:
   TypeComboBoxModel(QObject *parent = Q_NULLPTR);
   ~TypeComboBoxModel() Q_DECL_OVERRIDE;
 
-  enum Roles { Key = Qt::UserRole + 1, Type };
+  enum Roles { Key = Qt::UserRole + 1, Type, IconUrl };
   Q_ENUM(Roles)
 
   QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
@@ -23,6 +23,7 @@ public:
 
 private:
   QHash<int, QString> m_types;
+  QHash<int, QString> m_typesIcon;
 };
 
 #endif // TYPECOMBOBOXMODEL_H
