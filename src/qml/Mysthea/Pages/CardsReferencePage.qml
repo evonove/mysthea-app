@@ -111,10 +111,11 @@ Page {
                             }
                         }
 
-                        ComboBox {
+                        TextIconComboBox {
                             id: commandsCombo
                             padding: 0
                             textRole: "command"
+                            iconRole: "iconUrl"
                             model: CommandComboBoxModel {
                                 id: commandComboModel
                             }

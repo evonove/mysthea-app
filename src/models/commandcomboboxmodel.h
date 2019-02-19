@@ -11,7 +11,7 @@ public:
   CommandComboBoxModel(QObject *parent = Q_NULLPTR);
   ~CommandComboBoxModel() Q_DECL_OVERRIDE;
 
-  enum Roles { Key = Qt::UserRole + 1, Command };
+  enum Roles { Key = Qt::UserRole + 1, Command, IconUrl };
   Q_ENUM(Roles)
 
   QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
@@ -21,6 +21,7 @@ public:
 
 private:
   QHash<int, QString> m_commands;
+  QHash<int, QString> m_commandsIcon;
 };
 
 #endif // COMMANDCOMBOBOXMODEL_H

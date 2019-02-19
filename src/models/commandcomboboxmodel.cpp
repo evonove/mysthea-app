@@ -13,13 +13,18 @@ CommandComboBoxModel::CommandComboBoxModel(QObject *parent)
                                              {1, TACTIC_TEXT},
                                              {2, OBJECTIVE_TEXT},
                                              {3, ACCESSORY_TEXT},
-                                             {4, UPGRADE_TEXT}} {}
+                                             {4, UPGRADE_TEXT}},
+      m_commandsIcon{{1, "qrc:/assets/icons/tactic.svg"},
+                     {2, "qrc:/assets/icons/objective.svg"},
+                     {3, "qrc:/assets/icons/accessory.svg"},
+                     {4, "qrc:/assets/icons/upgrade.svg"}} {}
 
 CommandComboBoxModel::~CommandComboBoxModel() {}
 
 QHash<int, QByteArray> CommandComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Key, "key"},
-                                {Roles::Command, "command"}};
+                                {Roles::Command, "command"},
+                                {Roles::IconUrl, "iconUrl"}};
 }
 
 int CommandComboBoxModel::rowCount(const QModelIndex &parent) const {
@@ -39,6 +44,8 @@ QVariant CommandComboBoxModel::data(const QModelIndex &index, int role) const {
   case Roles::Command:
     return qGuiApp->translate("CardsData",
                               m_commands.value(row).toStdString().c_str());
+  case Roles::IconUrl:
+    return m_commandsIcon.value(row, "");
   default:
     return QVariant();
   }
