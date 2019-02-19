@@ -50,10 +50,8 @@ Page {
     }
 
     footer: Pane {
-        anchors.bottom: parent.bottom
         width: parent.width
         height: 56
-        clip: true
         visible: root.currentIndex >= 1
         background: Rectangle {
             anchors.top: parent.top
@@ -68,7 +66,6 @@ Page {
             currentIndex: root.currentIndex - 1
             count: repeater.model.count
             visible: _swipeView.currentIndex >= 1
-            clip: true
         }
     }
 }
