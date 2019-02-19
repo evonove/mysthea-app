@@ -141,6 +141,7 @@ Page {
                             onEnabledChanged: {
                                 if (!enabled) {
                                     currentIndex = 0
+                                    displayIcon = ""
                                 }
                             }
                         }
