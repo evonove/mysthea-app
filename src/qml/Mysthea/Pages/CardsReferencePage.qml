@@ -85,13 +85,14 @@ Page {
 
                         Layout.fillWidth: true
 
-                        ComboBox {
+                        TextIconComboBox {
                             id: typeCombo
                             padding: 0
                             textRole: "type"
                             model: TypeComboBoxModel {
                                 id: typeComboModel
                             }
+
                             font.letterSpacing: 0
 
                             Layout.fillWidth: true
