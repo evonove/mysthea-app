@@ -220,9 +220,20 @@ ApplicationWindow {
         }
         Component {
             id: _gameSetup
+
             GameSetup {
+                id: gameSetupPage
+
+                Action {
+                    id: gamesetupMapAction
+                    text: Icon.back
+                    onTriggered: {
+                        gameSetupPage.currentIndex = 0;
+                    }
+                }
+
                 topPadding: toolbar.height
-                leftAction: drawerAction
+                leftAction: currentIndex === 0 ? drawerAction : gamesetupMapAction
             }
         }
         Component {
