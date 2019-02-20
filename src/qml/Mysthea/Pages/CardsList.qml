@@ -115,9 +115,15 @@ ListView {
                         spacing: 0
 
                         Image {
+                            id: img
                             fillMode: Image.PreserveAspectFit
                             source: "qrc:/images/cards/" + image
                             asynchronous: true
+
+                            BusyIndicator {
+                                anchors.centerIn: parent
+                                running: img.status !== Image.Ready
+                            }
 
                             Layout.preferredHeight: parent.height - _cardCodeLabel.height
                             Layout.maximumWidth: parent.width
