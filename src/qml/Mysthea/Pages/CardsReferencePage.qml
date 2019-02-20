@@ -13,15 +13,17 @@ Page {
     title: qsTr("CARDS REFERENCE")
     objectName: PageName.cardPage
     property Action leftAction: null
-    property bool hasToolbarLine: false
+    property bool hasToolbarLine: true
 
     signal cardClicked(CardsProxyModel cards, int index)
 
+
+    /*
     BusyIndicator {
         anchors.centerIn: parent
         running: _contentLoader.status !== Loader.Ready
     }
-
+*/
     TypeProxyModel {
         id: typeProxyModel
     }
@@ -35,6 +37,8 @@ Page {
         verticalAlignment: Image.AlignBottom
     }
 
+
+    /*
     Loader {
         id: _contentLoader
         anchors.fill: parent
@@ -42,7 +46,140 @@ Page {
         sourceComponent: content
         visible: status === Loader.Ready
     }
+*/
+    Flickable {
+        anchors.fill: parent
+        contentWidth: width
+        contentHeight: cardsPage.height
+        clip: true
 
+        ScrollIndicator.vertical: ScrollIndicator {
+        }
+
+        ColumnLayout {
+            id: cardsPage
+            width: parent.width
+            height: cardsList.contentItem.height + comboBoxSection.contentItem.height
+            ToolBar {
+                id: comboBoxSection
+                padding: 16
+
+                Layout.fillWidth: true
+                background: Rectangle {
+                    anchors.bottom: parent.bottom
+                    width: root.width
+                    height: 1
+                    color: Palette.white
+                }
+
+                ColumnLayout {
+                    anchors.fill: parent
+                    spacing: 16
+
+                    RowLayout {
+                        id: searchBar
+
+                        SearchField {
+                            id: _searchField
+
+                            placeholderText: qsTr("Search cards by code")
+                            font.pixelSize: 18
+                            font.letterSpacing: 0
+                            Layout.fillWidth: true
+
+                            onTextEdited: typeProxyModel.setCodeFilter(
+                                              _searchField.text)
+                        }
+                    }
+
+                    RowLayout {
+                        spacing: 16
+
+                        Layout.fillWidth: true
+
+                        TextIconComboBox {
+                            id: typeCombo
+                            padding: 0
+                            textRole: "type"
+                            iconRole: "iconUrl"
+                            model: TypeComboBoxModel {
+                                id: typeComboModel
+                            }
+
+                            font.letterSpacing: 0
+
+                            Layout.fillWidth: true
+                            onActivated: {
+                                typeProxyModel.setTypeFilter(
+                                            typeComboModel.data(
+                                                typeComboModel.index(index, 0),
+                                                TypeComboBoxModel.Key))
+
+                                // In loader we don't have only listView so we check if the item has this property
+                                if (_listLoader.item.hasOwnProperty(
+                                            'positionViewAtBeginning')) {
+                                    _listLoader.item.positionViewAtBeginning()
+                                }
+                            }
+                        }
+
+                        TextIconComboBox {
+                            id: commandsCombo
+                            padding: 0
+                            textRole: "command"
+                            iconRole: "iconUrl"
+                            model: CommandComboBoxModel {
+                                id: commandComboModel
+                            }
+                            font.letterSpacing: 0
+
+                            enabled: typeProxyModel.enableCommand
+
+                            Layout.fillWidth: true
+
+                            onActivated: {
+                                typeProxyModel.setCommandFilter(
+                                            commandComboModel.data(
+                                                commandComboModel.index(index,
+                                                                        0),
+                                                CommandComboBoxModel.Key))
+                                // In loader we don't have only listView so we check if the item has this property
+                                if (_listLoader.item.hasOwnProperty(
+                                            'positionViewAtBeginning')) {
+                                    _listLoader.item.positionViewAtBeginning()
+                                }
+                            }
+
+                            onEnabledChanged: {
+                                if (!enabled) {
+                                    currentIndex = 0
+                                    displayIcon = ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            CardsList {
+                id: cardsList
+                interactive: false
+                model: typeProxyModel
+                onCardClicked: {
+                    var cardsModel = typeProxyModel.visibleCards
+                    root.cardClicked(cardsModel,
+                                     cardsModel.indexOf(clickedCode))
+                }
+
+                //                anchors.fill: parent
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
+        }
+    }
+    //    }
+
+
+    /*
     Component {
         id: content
         ColumnLayout {
@@ -203,4 +340,5 @@ Page {
             }
         }
     }
+*/
 }
