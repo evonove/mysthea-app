@@ -17,10 +17,10 @@ Page {
 
     signal cardClicked(CardsProxyModel cards, int index)
 
-    BusyIndicator {
-        anchors.centerIn: parent
-        running: _contentLoader.status !== Loader.Ready
-    }
+//    BusyIndicator {
+//        anchors.centerIn: parent
+//        running: _contentLoader.status !== Loader.Ready
+//    }
 
     TypeProxyModel {
         id: typeProxyModel
@@ -35,27 +35,25 @@ Page {
         verticalAlignment: Image.AlignBottom
     }
 
-    Loader {
-        id: _contentLoader
-        anchors.fill: parent
-//        asynchronous: true
-        sourceComponent: content
-        visible: status === Loader.Ready
-    }
-
-    Component {
-        id: content
+//    Loader {
+//        id: _contentLoader
+//        anchors.fill: parent
+//        sourceComponent: flick
+//        visible: status === Loader.Ready
+//    }
+//    Component {
+//        id: flick
         Flickable {
             anchors.fill: parent
             contentWidth: width
-            contentHeight: cardsPage.height
+            contentHeight: content.height
             clip: true
 
             ScrollIndicator.vertical: ScrollIndicator {
             }
 
             Column {
-                id: cardsPage
+                id: content
                 width: parent.width
                 height: comboBoxSection.height + spacing + _listLoader.item.contentHeight
 
@@ -169,7 +167,7 @@ Page {
                 }
             }
         }
-    }
+//    }
 
     Component {
         id: cardListComponent
