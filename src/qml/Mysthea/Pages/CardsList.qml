@@ -14,8 +14,6 @@ ListView {
 
     clip: true
 
-    ScrollIndicator.vertical: ScrollIndicator {
-    }
 
     delegate: Pane {
         id: categoryPane
