@@ -9,6 +9,8 @@ ObjectModel {
     id: root
 
     property int width: 100
+    property bool asynchronous: true
+
     // General Setting
     Label {
         width: root.width
@@ -64,6 +66,7 @@ ObjectModel {
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
             Layout.fillWidth: true
+            asynchronous: root.asynchronous
         }
 
         Label {
@@ -86,6 +89,7 @@ ObjectModel {
             Layout.rightMargin: Layout.leftMargin
 
             Layout.fillWidth: true
+            asynchronous: root.asynchronous
         }
     }
     // Mysthea
@@ -121,6 +125,7 @@ ObjectModel {
 
         Image {
             source: "qrc:/images/lore/image15.jpg"
+            asynchronous: root.asynchronous
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -158,6 +163,7 @@ ObjectModel {
         }
 
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image4.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -213,6 +219,7 @@ ObjectModel {
         }
 
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image22.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -373,6 +380,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image25.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -430,6 +438,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image24.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -481,6 +490,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image26.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -540,6 +550,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image29.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -591,6 +602,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image12.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -651,6 +663,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image11.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -755,6 +768,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image9.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -811,6 +825,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image28.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -862,6 +877,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image1.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -918,6 +934,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image19.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -974,6 +991,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image18.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -1032,6 +1050,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image20.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -1109,6 +1128,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image8.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -1201,6 +1221,7 @@ ObjectModel {
         Image {
             source: "qrc:/images/lore/image7.jpg"
             fillMode: Image.PreserveAspectFit
+            asynchronous: root.asynchronous
             sourceSize.width: width
             Layout.leftMargin: 20
             Layout.rightMargin: Layout.leftMargin
@@ -1224,6 +1245,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image16.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1282,6 +1304,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image13.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1344,6 +1367,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image23.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1401,6 +1425,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image6.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1468,6 +1493,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image14.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1527,6 +1553,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image17.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1576,6 +1603,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image27.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
@@ -1670,6 +1698,7 @@ ObjectModel {
         }
 
         Image {
+            asynchronous: root.asynchronous
             source: "qrc:/images/lore/image3.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
