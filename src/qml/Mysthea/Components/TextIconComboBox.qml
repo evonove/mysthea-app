@@ -31,7 +31,7 @@ T.ComboBox {
                                || control.hovered ? 2 : 0 : control.pressed ? 8 : 2
     Material.background: flat ? "transparent" : undefined
     Material.foreground: flat ? undefined : Material.primaryTextColor
-    Material.accent: control.palette.plum
+    Material.accent: "plum"
 
     delegate: MenuItem {
         width: parent.width

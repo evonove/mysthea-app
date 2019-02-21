@@ -16,7 +16,7 @@ TextField {
     bottomPadding: 8
 
     Material.theme: Material.Darks
-    Material.accent: control.palette.plum
+    Material.accent: "plum"
 
     Label {
         id: iconSearch
