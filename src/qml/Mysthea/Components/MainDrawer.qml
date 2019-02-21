@@ -255,15 +255,18 @@ Drawer {
                         PropertyAnimation {
                             target: languageItemDelegate
                             property: "height"
+                            duration: 100
                         }
                         NumberAnimation {
                             target: loader
                             property: "opacity"
+                            duration: 100
                         }
                     },
                     PropertyAnimation {
                         target: arrowImage
                         property: "rotation"
+                        duration: 100
                     }
                 ]
             }
