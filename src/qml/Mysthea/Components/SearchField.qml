@@ -15,7 +15,8 @@ TextField {
     leftPadding: 54
     bottomPadding: 8
 
-    color: Palette.black
+    Material.theme: Material.Darks
+    Material.accent: "plum"
 
     Label {
         id: iconSearch
@@ -23,7 +24,7 @@ TextField {
         text: Icon.search
         font.pixelSize: 24
         font.family: "Material Icons"
-        color: Palette.black
+        color: control.Material.primaryTextColor
         opacity: 0.5
         leftPadding: 16
         rightPadding: 16
@@ -34,13 +35,13 @@ TextField {
         id: placeholder
         anchors.left: iconSearch.right
         anchors.fill: parent
-        color: Palette.black
+        color: control.activeFocus ? control.Material.accentColor : control.Material.primaryTextColor
         verticalAlignment: control.verticalAlignment
     }
 
     background: Rectangle {
         anchors.fill: control
-        color: Palette.white
+        color:  control.Material.dialogColor
         radius: 3
     }
 }
