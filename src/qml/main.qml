@@ -136,7 +136,7 @@ ApplicationWindow {
     MainDrawer {
         id: drawer
         topPadding: root.safeTopMargin
-        width: 0.8 * root.width
+        width: Math.min(0.8 * root.width, 320)
         height: root.height
         interactive: _mainStackView.currentItem.leftAction === drawerAction
 
