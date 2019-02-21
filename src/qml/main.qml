@@ -92,43 +92,40 @@ ApplicationWindow {
             opacity: 0.5
         }
 
-        RowLayout {
-            anchors.fill: parent
+        ToolButton {
+            id: toolButton
+            height: parent.height
+            font.pixelSize: 24
+            font.family: "Material Icons"
+            action: _mainStackView.currentItem.leftAction
+
+            Material.foreground: Palette.white
+        }
+
+        Label {
+            id: label
+            anchors.topMargin: 16
+            text: _mainStackView.currentItem.title
+            font.pixelSize: 20
+            font.letterSpacing: 0.5
+            verticalAlignment: Qt.AlignVCenter
+            horizontalAlignment: Qt.AlignHCenter
+
+            Material.foreground: Palette.white
+            anchors.centerIn: parent
+            height: parent.height
+        }
+
+        Repeater {
+            model: _mainStackView.currentItem.rightActions
             ToolButton {
-                id: toolButton
                 height: parent.height
+                anchors.right: parent.right
                 font.pixelSize: 24
                 font.family: "Material Icons"
-                action: _mainStackView.currentItem.leftAction
+                action: modelData
 
                 Material.foreground: Palette.white
-                Layout.fillHeight: true
-            }
-            Label {
-                id: label
-                anchors.topMargin: 16
-                text: _mainStackView.currentItem.title
-                font.pixelSize: 20
-                font.letterSpacing: 0.5
-                verticalAlignment: Qt.AlignVCenter
-
-                Material.foreground: Palette.white
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-            }
-
-            Repeater {
-                model: _mainStackView.currentItem.rightActions
-                ToolButton {
-                    height: parent.height
-                    font.pixelSize: 24
-                    font.family: "Material Icons"
-                    action: modelData
-
-                    Material.foreground: Palette.white
-                    Layout.fillHeight: true
-
-                }
             }
         }
     }
@@ -228,7 +225,7 @@ ApplicationWindow {
                     id: gamesetupMapAction
                     text: Icon.back
                     onTriggered: {
-                        gameSetupPage.currentIndex = 0;
+                        gameSetupPage.currentIndex = 0
                     }
                 }
 
