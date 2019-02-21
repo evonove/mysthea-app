@@ -210,7 +210,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">6</strong> ∙ Sort the Command Cards by Era (<span style=\"font-family:EraIcons;\">0</span>/ <span style=\"font-family:EraIcons;\">1</span>/ <span style=\"font-family:EraIcons;\">2</span> or <span style=\"font-family:EraIcons;\">3</span> in the top-right hand corner). Shuffle the 20 Era I cards, 20 Era II cards, and 20 Era III cards separately, and place the three decks face down on the Events Board, as Era Decks.")
+                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">6</strong> ∙ Sort the Command Cards by Era (<span style=\"font-family:EraIcons; font-size: 15px;\">0</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">1</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> or <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> in the top-right hand corner). Shuffle the 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">1</span> cards, 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> cards, and 20 Era <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> cards separately, and place the three decks face down on the Events Board, as Era Decks.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -255,7 +255,21 @@ ObjectModel {
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
+            }
+            Label {
+                text: qsTr("<strong style=\"color: #F9A973;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
+                color: Palette.tequila
+                font.pixelSize: 20
+                font.letterSpacing: 1
+                textFormat: Text.RichText
+                wrapMode: Text.Wrap
+                lineHeight: 1.1
+
+                Layout.fillWidth: true
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
                 Layout.bottomMargin: 20
+                Layout.topMargin: 10
             }
         }
     }
@@ -289,7 +303,21 @@ ObjectModel {
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
+            }
+            Label {
+                text: qsTr("<strong style=\"color: #F9A973;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
+                color: Palette.tequila
+                font.pixelSize: 20
+                font.letterSpacing: 1
+                textFormat: Text.RichText
+                wrapMode: Text.Wrap
+                lineHeight: 1.1
+
+                Layout.fillWidth: true
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
                 Layout.bottomMargin: 20
+                Layout.topMargin: 10
             }
         }
     }
@@ -356,6 +384,34 @@ ObjectModel {
             Label {
                 text: qsTr(" Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. ")
                 color: Palette.silverChalice
+                font.pixelSize: 20
+                font.letterSpacing: 1
+                wrapMode: Text.Wrap
+                textFormat: Text.RichText
+                lineHeight: 1.1
+
+                Layout.fillWidth: true
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
+            }
+
+            Label {
+                text: qsTr("<b><u>Glory Token</u></b><br> Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.")
+                color: Palette.grayNurse
+                font.pixelSize: 20
+                font.letterSpacing: 1
+                wrapMode: Text.Wrap
+                textFormat: Text.RichText
+                lineHeight: 1.1
+
+                Layout.fillWidth: true
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
+            }
+
+            Label {
+                text: qsTr("<b><u>Encounter Token</u></b><br> Place this on your Champion Card.")
+                color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
                 wrapMode: Text.Wrap
@@ -435,6 +491,70 @@ ObjectModel {
 
                 Label {
                     text: qsTr("- <b><u>8 Troops</u></b><br> Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.")
+                    color: Palette.grayNurse
+                    font.pixelSize: 20
+                    font.letterSpacing: 1
+                    wrapMode: Text.Wrap
+                    textFormat: Text.RichText
+                    lineHeight: 1.1
+
+                    Layout.fillWidth: true
+                }
+            }
+            RowLayout {
+                width: root.width
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
+                spacing: 12
+                Image {
+                    id: golemIcon
+                    source: "qrc:/images/game_setup/icon_golem.svg"
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.width: 18
+                    Layout.alignment: Qt.AlignTop
+                    Layout.fillWidth: true
+                    // this color icon troop with white color.
+                    ColorOverlay {
+                        anchors.fill: golemIcon
+                        source: golemIcon
+                        color: Palette.white
+                    }
+                }
+
+                Label {
+                    text: qsTr("- <b><u>4 Golems</u></b><br> Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.")
+                    color: Palette.grayNurse
+                    font.pixelSize: 20
+                    font.letterSpacing: 1
+                    wrapMode: Text.Wrap
+                    textFormat: Text.RichText
+                    lineHeight: 1.1
+
+                    Layout.fillWidth: true
+                }
+            }
+            RowLayout {
+                width: root.width
+                Layout.leftMargin: 20
+                Layout.rightMargin: 20
+                spacing: 12
+                Image {
+                    id: fortificationIcon
+                    source: "qrc:/images/game_setup/fortification.svg"
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.width: 18
+                    Layout.alignment: Qt.AlignTop
+                    Layout.fillWidth: true
+                    // this color icon troop with white color.
+                    ColorOverlay {
+                        anchors.fill: fortificationIcon
+                        source: fortificationIcon
+                        color: Palette.white
+                    }
+                }
+
+                Label {
+                    text: qsTr("- <b><u>4 Fortifications</u></b><br> Keep all 4 next to your Player Board.")
                     color: Palette.grayNurse
                     font.pixelSize: 20
                     font.letterSpacing: 1
