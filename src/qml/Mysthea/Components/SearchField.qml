@@ -18,7 +18,6 @@ TextField {
     Material.theme: Material.Darks
     Material.accent: control.palette.plum
 
-
     Label {
         id: iconSearch
         anchors.fill: parent
