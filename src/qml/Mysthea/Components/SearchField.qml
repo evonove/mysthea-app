@@ -15,7 +15,8 @@ TextField {
     leftPadding: 54
     bottomPadding: 8
 
-    Material.theme: Material.Dark
+    Material.theme: Material.Darks
+    Material.accent: control.palette.plum
 
 
     Label {
