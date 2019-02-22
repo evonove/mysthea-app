@@ -22,8 +22,8 @@ Page {
         id: typeProxyModel
     }
 
-    // We created this connection to show translated content text of
-    // combobox when changed application language.
+    // We created this connection because the currentText of combobox doesn't change when changing
+    // language and its displayText will not update.
     Connections {
         target: TranslationsManager
         onCurrentLanguageChanged: {
