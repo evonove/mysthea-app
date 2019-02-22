@@ -14,7 +14,6 @@ ListView {
 
     clip: true
 
-
     delegate: Pane {
         id: categoryPane
         width: parent.width
@@ -51,18 +50,21 @@ ListView {
 
                 Component {
                     id: _eraTypeText
-                    RowLayout {
+                    Row {
+                        id: row
                         spacing: 8
+                        width: parent.width
 
                         Label {
+                            height: parent.height
                             padding: 0
                             text: qsTr("Era")
                             font.pixelSize: 28
                             font.letterSpacing: 0.5
                             font.weight: Font.Bold
                             color: Palette.grayNurse
+                            verticalAlignment: Text.AlignVCenter
 
-                            Layout.alignment: Qt.AlignHCenter
                         }
 
                         Image {
@@ -78,7 +80,7 @@ ListView {
                                 }
                             }
 
-                            Layout.alignment: Qt.AlignHCenter
+                            verticalAlignment: Image.AlignVCenter
                         }
                     }
                 }
