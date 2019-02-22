@@ -7,6 +7,7 @@ import Mysthea.Components 1.0
 import Mysthea.Pages 1.0
 import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
+import Translations 1.0
 
 Page {
     id: root
@@ -19,6 +20,20 @@ Page {
 
     TypeProxyModel {
         id: typeProxyModel
+    }
+
+    // We created this connection to show translated content text of
+    // combobox when changed application language.
+    Connections {
+        target: TranslationsManager
+        onCurrentLanguageChanged: {
+            typeCombo.displayText = typeComboModel.data(
+                        typeComboModel.index(typeCombo.currentIndex, 0),
+                        TypeComboBoxModel.Type)
+            commandsCombo.displayText = commandComboModel.data(
+                        commandComboModel.index(commandsCombo.currentIndex, 0),
+                        CommandComboBoxModel.Command)
+        }
     }
 
     background: Image {
@@ -115,10 +130,10 @@ Page {
                             model: CommandComboBoxModel {
                                 id: commandComboModel
                             }
+
                             font.letterSpacing: 0
 
                             enabled: typeProxyModel.enableCommand
-
                             Layout.fillWidth: true
 
                             onActivated: {
