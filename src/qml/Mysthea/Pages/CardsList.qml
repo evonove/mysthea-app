@@ -32,7 +32,8 @@ ListView {
 
             Loader {
                 width: parent.width
-                sourceComponent: model.type >= 1 && model.type <= 4 ? _eraTypeText : _otherTypeText
+                sourceComponent: model.type >= 1
+                                 && model.type <= 4 ? _eraTypeText : _otherTypeText
 
                 Layout.leftMargin: 16
 
@@ -64,7 +65,6 @@ ListView {
                             font.weight: Font.Bold
                             color: Palette.grayNurse
                             verticalAlignment: Text.AlignVCenter
-
                         }
 
                         Image {
@@ -72,11 +72,16 @@ ListView {
                             sourceSize.height: 24
                             source: {
                                 switch (model.type) {
-                                    case 1: return "qrc:/assets/icons/era_x.svg";
-                                    case 2: return "qrc:/assets/icons/era_1.svg";
-                                    case 3: return "qrc:/assets/icons/era_2.svg";
-                                    case 4: return  "qrc:/assets/icons/era_3.svg";
-                                    default: return "";
+                                case 1:
+                                    return "qrc:/assets/icons/era_x.svg"
+                                case 2:
+                                    return "qrc:/assets/icons/era_1.svg"
+                                case 3:
+                                    return "qrc:/assets/icons/era_2.svg"
+                                case 4:
+                                    return "qrc:/assets/icons/era_3.svg"
+                                default:
+                                    return ""
                                 }
                             }
 
@@ -116,20 +121,24 @@ ListView {
                         anchors.fill: parent
                         spacing: 0
 
-                        Image {
-                            id: img
-                            fillMode: Image.PreserveAspectFit
-                            source: "qrc:/images/cards/" + image
-                            asynchronous: true
+                        Rectangle {
 
-                            BusyIndicator {
-                                anchors.centerIn: parent
-                                running: img.status !== Image.Ready
-                            }
-
+                            color: img.status === Image.Ready ? "transparent" : "dimgray"
+                            opacity: img.status === Image.Ready ? 1 : 0.5
                             Layout.preferredHeight: parent.height - _cardCodeLabel.height
                             Layout.maximumWidth: parent.width
                             Layout.alignment: Qt.AlignHCenter
+                            Layout.fillHeight: true
+                            Layout.fillWidth: true
+
+                            Image {
+                                id: img
+                                fillMode: Image.PreserveAspectFit
+                                source: "qrc:/images/cards/" + image
+                                asynchronous: true
+
+                                anchors.fill: parent
+                            }
                         }
 
                         Label {
