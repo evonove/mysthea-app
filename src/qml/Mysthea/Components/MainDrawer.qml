@@ -353,5 +353,6 @@ Drawer {
 
     onClosed: {
         languageItemDelegate.state = ""
+        languageItemDelegate.checked = false
     }
 }
