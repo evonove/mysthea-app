@@ -173,6 +173,7 @@ Page {
         id: cardListComponent
         CardsList {
             height: contentHeight
+            width: parent.width
             model: typeProxyModel
             interactive: false
             onCardClicked: {
