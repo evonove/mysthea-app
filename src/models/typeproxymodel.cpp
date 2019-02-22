@@ -20,7 +20,7 @@ void TypeProxyModel::setTypeFilter(int type) {
   if (m_type != type) {
     m_type = type;
     emit enableCommandChanged();
-    if (type == 5 || type == 6) {
+    if (type == 5 || type == 6 || type == 7 || type == 8) {
       invalidateFilter();
       emit filterChanged();
       setCommandFilter(0);
