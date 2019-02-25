@@ -12,6 +12,7 @@ T.ComboBox {
     id: control
     property string iconRole
     property string displayIcon
+    property bool fillAvailableWidth
 
     implicitWidth: Math.max(
                        background ? background.implicitWidth : 0,
@@ -42,13 +43,16 @@ T.ComboBox {
         onTriggered: control.displayIcon = iconUrl
 
         RowLayout {
-            spacing: 10
+            spacing: 8
+            width: control.fillAvailableWidth ? parent.width : undefined
             height: parent.height
             Label {
                 text: control.textRole ? (Array.isArray(
                                               control.model) ? modelData[control.textRole] : model[control.textRole]) : modelData
+                elide: Text.ElideRight
                 Layout.leftMargin: 20
                 Layout.alignment: Qt.AlignVCenter
+                Layout.fillWidth: control.fillAvailableWidth
             }
             Image {
                 source: control.iconRole ? (Array.isArray(
@@ -57,10 +61,12 @@ T.ComboBox {
 
                 Layout.preferredHeight: 16
                 Layout.rightMargin: 20
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignRight
+                Layout.fillWidth: true
             }
         }
     }
+
     indicator: ColorImage {
         x: control.mirrored ? control.padding : control.width - width - control.padding
         y: control.topPadding + (control.availableHeight - height) / 2
@@ -71,15 +77,17 @@ T.ComboBox {
     contentItem: Item {
         RowLayout {
             spacing: 8
+            width: control.fillAvailableWidth ? parent.width : undefined
             height: parent.height
             Label {
-                height: parent.height
                 text: control.editable ? control.editText : control.displayText
                 font: control.font
                 color: control.enabled ? control.Material.foreground : control.Material.hintTextColor
+                elide: Text.ElideRight
 
                 leftPadding: control.editable ? 2 : control.mirrored ? 0 : 12
                 Layout.alignment: Qt.AlignVCenter
+                Layout.fillWidth: control.fillAvailableWidth
             }
 
             Image {
