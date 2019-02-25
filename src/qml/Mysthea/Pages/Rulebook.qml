@@ -64,34 +64,51 @@ Page {
             opacity: 0.29
         }
     }
-    ColumnLayout {
+
+    Flickable {
         anchors.fill: parent
-        Label {
-            text: qsTr("Download the rulebook in your preferred language")
-            wrapMode: Text.WordWrap
-            color: Palette.grayNurse
-            font.pixelSize: 27
-            font.letterSpacing: 0.5
-            padding: 20
-            Layout.fillWidth: true
-        }
+        contentWidth: parent.width
+        contentHeight: contentColumn.height
+        clip: true
+        ScrollIndicator.vertical: ScrollIndicator {}
 
-        ListView {
-            id: _languageListView
-            clip: true
-            spacing: 36
-            model: _rulebooksModel
+        Column {
+            id: contentColumn
+            width: parent.width
+            height: label.height + _languageListView.contentHeight + _languageListView.bottomMargin + spacing
 
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.leftMargin: 20
-            Layout.rightMargin: 20
-
-            delegate: RulebookButton {
-                text: language
-                iconText: Icon.download
-                onClicked: Qt.openUrlExternally(downloadUrl)
+            Label {
+                id: label
+                text: qsTr("Download the rulebook in your preferred language")
+                wrapMode: Text.WordWrap
+                color: Palette.grayNurse
+                font.pixelSize: 27
+                font.letterSpacing: 0.5
+                width: parent.width
+                padding: 20
             }
+
+
+           ListView {
+                id: _languageListView
+                clip: true
+                spacing: 36
+                model: _rulebooksModel
+
+                width: parent.width
+                height: availableHeight
+                leftMargin: 20
+                rightMargin: 20
+                bottomMargin: 32
+                interactive: false
+
+                delegate: RulebookButton {
+                    text: language
+                    iconText: Icon.download
+                    onClicked: Qt.openUrlExternally(downloadUrl)
+                }
+            }
+
         }
     }
 }
