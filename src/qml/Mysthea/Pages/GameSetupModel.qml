@@ -9,6 +9,7 @@ import Mysthea.Theme 1.0
 ObjectModel {
     id: root
     property int width: 100
+    property int numberElements: root.count
 
     Flickable {
         contentWidth: root.width
