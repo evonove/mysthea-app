@@ -16,7 +16,8 @@ Page {
 
     property bool hasToolbarLine: true
     property Action leftAction
-    property alias currentIndex: _swipeView.currentIndex
+    property int currentIndex
+    property int numberSteps: 0
 
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
@@ -27,24 +28,47 @@ Page {
         verticalAlignment: Image.AlignTop
     }
 
-    SwipeView {
-        id: _swipeView
-        currentIndex: 0
+    BusyIndicator {
+        anchors.centerIn: parent
+        running: _componentLoader.status !== Loader.Ready
+    }
+    Loader {
+        id: _componentLoader
         anchors.fill: parent
-        clip: true
+        asynchronous: true
+        sourceComponent: _component
+        visible: _componentLoader.status === Loader.Ready
+    }
 
-        Loader {
-            asynchronous: true
-            sourceComponent: GameSetupMap {
-                onStepClicked: root.currentIndex = step
+    Component {
+        id: _component
+
+        SwipeView {
+            id: _swipeView
+            currentIndex: root.currentIndex
+            anchors.fill: parent
+            clip: true
+
+            Loader {
+                asynchronous: true
+                sourceComponent: GameSetupMap {
+                    onStepClicked: root.currentIndex = step
+                }
             }
-        }
 
-        Repeater {
-            id: repeater
-            model: GameSetupModel {
-                id: _gameSetupModel
-                width: root.availableWidth
+            Repeater {
+                id: repeater
+                model: GameSetupModel {
+                    id: _gameSetupModel
+                    width: root.availableWidth
+                    Component.onCompleted: {
+                        root.numberSteps = _gameSetupModel.count
+                    }
+                }
+            }
+
+            onCurrentIndexChanged: {
+                root.currentIndex = currentIndex
             }
         }
     }
@@ -64,8 +88,8 @@ Page {
         PageIndicator {
             anchors.centerIn: parent
             currentIndex: root.currentIndex - 1
-            count: repeater.model.count
-            visible: _swipeView.currentIndex >= 1
+            count: root.numberSteps
+            visible: root.currentIndex >= 1
         }
     }
 }
