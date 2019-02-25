@@ -22,9 +22,6 @@ Button {
     implicitWidth: 311
 
     contentItem: Label {
-        topPadding: 10
-        bottomPadding: 16
-
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Image.AlignVCenter
 
