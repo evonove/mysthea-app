@@ -62,7 +62,7 @@ Page {
                     id: _gameSetupModel
                     width: root.availableWidth
                     Component.onCompleted: {
-                        root.numberSteps = _gameSetupModel.numberElements
+                        root.numberSteps = _gameSetupModel.count
                     }
                 }
             }
