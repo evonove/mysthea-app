@@ -22,20 +22,6 @@ Page {
         id: typeProxyModel
     }
 
-    // We created this connection because the currentText of combobox doesn't change when changing
-    // language and its displayText will not update.
-    Connections {
-        target: TranslationsManager
-        onCurrentLanguageChanged: {
-            typeCombo.displayText = typeComboModel.data(
-                        typeComboModel.index(typeCombo.currentIndex, 0),
-                        TypeComboBoxModel.Type)
-            commandsCombo.displayText = commandComboModel.data(
-                        commandComboModel.index(commandsCombo.currentIndex, 0),
-                        CommandComboBoxModel.Command)
-        }
-    }
-
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
         fillMode: Image.PreserveAspectCrop
@@ -66,6 +52,26 @@ Page {
             clip: true
 
             ScrollIndicator.vertical: ScrollIndicator {
+            }
+
+            // We created this connection because the currentText of combobox doesn't change when changing
+            // language and its displayText will not update.
+            Connections {
+                target: TranslationsManager
+                onCurrentLanguageChanged: {
+                    typeCombo.displayText = Qt.binding(function () {
+                        return typeComboModel.data(typeComboModel.index(
+                                                       typeCombo.currentIndex,
+                                                       0),
+                                                   TypeComboBoxModel.Type)
+                    })
+                    commandsCombo.displayText = Qt.binding(function () {
+                        return commandComboModel.data(
+                                    commandComboModel.index(
+                                        commandsCombo.currentIndex, 0),
+                                    CommandComboBoxModel.Command)
+                    })
+                }
             }
 
             Column {
@@ -115,6 +121,7 @@ Page {
                                 padding: 0
                                 textRole: "type"
                                 iconRole: "iconUrl"
+                                fillAvailableWidth: false
                                 model: TypeComboBoxModel {
                                     id: typeComboModel
                                 }
@@ -130,7 +137,8 @@ Page {
                                                     TypeComboBoxModel.Key))
 
                                     // In loader we don't have only listView so we check if the item has this property
-                                    if (_listLoader.item.hasOwnProperty(
+                                    if (_listLoader.item
+                                            && _listLoader.item.hasOwnProperty(
                                                 'positionViewAtBeginning')) {
                                         _listLoader.item.positionViewAtBeginning()
                                     }
@@ -142,6 +150,7 @@ Page {
                                 padding: 0
                                 textRole: "command"
                                 iconRole: "iconUrl"
+                                fillAvailableWidth: true
                                 model: CommandComboBoxModel {
                                     id: commandComboModel
                                 }
