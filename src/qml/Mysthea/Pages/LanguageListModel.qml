@@ -25,7 +25,7 @@ ListModel {
         translation: TranslationsManager.Italian
     }
     ListElement {
-        language: "日本人"
+        language: "日本語"
         translation: TranslationsManager.Japanese
     }
 }

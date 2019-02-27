@@ -883,7 +883,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsList</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="59"/>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="62"/>
         <source>Era</source>
         <translation>時代</translation>
     </message>
@@ -891,22 +891,22 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsReferencePage</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="14"/>
         <source>CARDS REFERENCE</source>
         <translation>カードレファレンス</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="69"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="104"/>
         <source>Search cards by code</source>
         <translation>カード番号検索</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="225"/>
         <source>Ooops! Card not found.</source>
         <translation>カードが見つかりません</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="234"/>
         <source>Please try to type a different code or to change filter options.</source>
         <translation>別番号の入力や検索条件の変更を試してください</translation>
     </message>
@@ -942,7 +942,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="11"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished">ゲームの準備 - %1 of 11</translation>
+        <translation type="unfinished">ゲームの準備 - %1 / 11</translation>
     </message>
 </context>
 <context>
@@ -1578,9 +1578,9 @@ That sad history starts with a Champion that disappeared in mysterious circumsta
         <translation>ルールブック</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="70"/>
+        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="82"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ルールブックを任意の言語でダウンロードする</translation>
     </message>
 </context>
 <context>
