@@ -867,7 +867,7 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
 <context>
     <name>CardsList</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="59"/>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="62"/>
         <source>Era</source>
         <translation>Era</translation>
     </message>
@@ -875,22 +875,22 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
 <context>
     <name>CardsReferencePage</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="14"/>
         <source>CARDS REFERENCE</source>
         <translation>CARTA DE REFERENCIA</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="69"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="104"/>
         <source>Search cards by code</source>
         <translation>Buscar tarjetas por código</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="225"/>
         <source>Ooops! Card not found.</source>
         <translation>Ups! Tarjeta no encontrada.</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="234"/>
         <source>Please try to type a different code or to change filter options.</source>
         <translation>Intente escribir un código diferente o cambiar las opciones de filtro.</translation>
     </message>
@@ -926,7 +926,7 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="11"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">CONFIGURACIÓN DEL JUEGO - %1 de 11</translation>
     </message>
 </context>
 <context>
@@ -1560,9 +1560,9 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
         <translation>LIBRO DE REGLAS</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="70"/>
+        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="82"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Descarga el Manual de Instrucciones en tu idioma preferido</translation>
     </message>
 </context>
 <context>

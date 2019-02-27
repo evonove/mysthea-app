@@ -822,7 +822,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsList</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="59"/>
+        <location filename="../qml/Mysthea/Pages/CardsList.qml" line="62"/>
         <source>Era</source>
         <translation type="unfinished"></translation>
     </message>
@@ -830,22 +830,22 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsReferencePage</name>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="13"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="14"/>
         <source>CARDS REFERENCE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="69"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="104"/>
         <source>Search cards by code</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="183"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="225"/>
         <source>Ooops! Card not found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="192"/>
+        <location filename="../qml/Mysthea/Pages/CardsReferencePage.qml" line="234"/>
         <source>Please try to type a different code or to change filter options.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1515,7 +1515,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="70"/>
+        <location filename="../qml/Mysthea/Pages/Rulebook.qml" line="82"/>
         <source>Download the rulebook in your preferred language</source>
         <translation type="unfinished"></translation>
     </message>
