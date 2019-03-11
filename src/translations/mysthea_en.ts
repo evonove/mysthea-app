@@ -174,6 +174,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../models/card_data.h" line="78"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
         <translation type="unfinished"></translation>

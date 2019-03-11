@@ -174,6 +174,11 @@
         <translation>Befindet sich diese Karte auf dem Spielertableau erhält Dein Held 2 zusätzliche Stärkepunkte.</translation>
     </message>
     <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Befindet sich diese Karte auf dem Spielertableau kannst Du gespielte Verbesserungskarten ohne Energiepunkte platzieren.</translation>
+    </message>
+    <message>
         <location filename="../models/card_data.h" line="78"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
         <translation>Zahle 1 Energiepunkt um Dein Artefakt aufzuladen.</translation>

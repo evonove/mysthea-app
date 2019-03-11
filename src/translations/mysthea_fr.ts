@@ -174,6 +174,11 @@
         <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 2 à la Force de votre Champion.</translation>
     </message>
     <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous n’avez pas besoin de dépenser d’Énergie pour poser une carte Amélioration.</translation>
+    </message>
+    <message>
         <location filename="../models/card_data.h" line="78"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
         <translation>Payez 1 point d’Énergie pour recharger votre Artefact.</translation>

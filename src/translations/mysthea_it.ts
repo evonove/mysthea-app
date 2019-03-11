@@ -11,7 +11,7 @@
     <message>
         <location filename="../models/card_data.h" line="10"/>
         <source>Era</source>
-        <translation type="unfinished">Era</translation>
+        <translation>Era</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="11"/>
@@ -172,6 +172,11 @@
         <location filename="../models/card_data.h" line="73"/>
         <source>While this card is on your Player Board, add 2 Strength Points to your Champion.</source>
         <translation>Mentre questa carta è sulla tua Plancia Giocatore, aggiungi 2 Punti Forza al tuo Campione.</translation>
+    </message>
+    <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Mentre questa carta è sulla tua Plancia Giocatore, ogni volta che giochi una Carta Miglioria non devi spendere Punti Energia per posizionarla.</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="78"/>

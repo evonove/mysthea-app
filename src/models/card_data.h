@@ -71,8 +71,8 @@ const QVector<QVector<Card>> cards_data = {
         {"C017",    1,  4,      "c017.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Construct a Troop, gain 1 Experience Point.")},
         {"C018",    1,  4,      "c018.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you Construct a Golem, you may Deploy it at no cost.")},
         {"C019",    1,  4,      "c019.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, add 2 Strength Points to your Champion.")},
-        {"C020",    1,  4,      "c020.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it."}
-    )},
+        {"C020",    1,  4,      "c020.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.")}
+    },
     // Era I
     {
         {"C021",    2,  1,      "c021.jpg", "",      QT_TRANSLATE_NOOP("CardsData", "Pay 1 Energy Point to Recharge your Artefact.")},
