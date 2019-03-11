@@ -31,6 +31,8 @@ translations_manager_singletontype_provider(QQmlEngine *engine,
 
 int main(int argc, char *argv[]) {
   QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+  QCoreApplication::setApplicationName("Mysthea");
+  QCoreApplication::setOrganizationName("Tabula Game");
 
   QGuiApplication app(argc, argv);
 
