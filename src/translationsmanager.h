@@ -2,6 +2,7 @@
 #define TRANSLATIONSMANAGER_H
 #include <QLocale>
 #include <QTranslator>
+#include <QSettings>
 
 class TranslationsManager : public QObject {
   Q_OBJECT
@@ -37,6 +38,8 @@ private:
   QTranslator m_jaTranslator;
   QTranslator *m_currentTranslator;
   SupportedLanguage m_currentLanguage;
+
+  QSettings m_settings;
 };
 
 #endif // TRANSLATIONSMANAGER_H
