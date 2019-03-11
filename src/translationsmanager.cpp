@@ -21,34 +21,11 @@ TranslationsManager::TranslationsManager(QObject *parent)
   m_jaTranslator.load(QLocale{QLocale::Japanese}, QLatin1String("mysthea"),
                       QLatin1String("_"), QLatin1String(":/translations/"));
 
-  if (m_settings.value("translation", "") == "") {
-    setCurrentLanguage(SupportedLanguage::English);
-    m_settings.setValue("translation", SupportedLanguage::English);
+  m_settings.value("userLanguage", SupportedLanguage::English);
 
-  } else {
-    auto currentEnumLanguage = m_settings.value("translation", "").toInt();
+  auto currentEnumLanguage =  static_cast<SupportedLanguage>(m_settings.value("userLanguage", SupportedLanguage::English).toInt());
+  setCurrentLanguage(currentEnumLanguage);
 
-    switch (currentEnumLanguage) {
-    case 31:
-      setCurrentLanguage(SupportedLanguage::English);
-      break;
-    case 37:
-      setCurrentLanguage(SupportedLanguage::French);
-      break;
-    case 111:
-      setCurrentLanguage(SupportedLanguage::Spanish);
-      break;
-    case 42:
-      setCurrentLanguage(SupportedLanguage::German);
-      break;
-    case 58:
-      setCurrentLanguage(SupportedLanguage::Italian);
-      break;
-    case 108:
-      setCurrentLanguage(SupportedLanguage::Japanese);
-      break;
-    }
-  }
 }
 
 void TranslationsManager::setCurrentLanguage(SupportedLanguage language) {
@@ -93,7 +70,7 @@ void TranslationsManager::setCurrentLanguage(SupportedLanguage language) {
     }
 
     m_currentLanguage = language;
-    m_settings.setValue("translation", m_currentLanguage);
+    m_settings.setValue("userLanguage", m_currentLanguage);
     emit currentLanguageChanged();
   }
 }
