@@ -174,6 +174,11 @@
         <translation>Mientras esta carta esté sobre tu Tablero de Jugador, suma 2 Puntos de Fuerza a tu Campeón.</translation>
     </message>
     <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Mientras esta carta esté sobre tu Tablero de Jugador, cuando juegues una Carta de Mejora, no tienes que gastar Puntos de Energía para colocarla.</translation>
+    </message>
+    <message>
         <location filename="../models/card_data.h" line="78"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
         <translation>Paga 1 Punto de Energía para Recargar tu Artefacto.</translation>

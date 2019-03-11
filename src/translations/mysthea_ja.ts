@@ -174,6 +174,11 @@
         <translation>このアップグレードを装備中に、自分のチャンピオンが＋2バトルポイントになります。</translation>
     </message>
     <message>
+        <location filename="../models/card_data.h" line="74"/>
+        <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">このアップグレードを 装備中に、アップグレードの コマンドカードをプレイ するたびにエネルギー ポイントを消費しなくても 装備できます。</translation>
+    </message>
+    <message>
         <location filename="../models/card_data.h" line="78"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
         <translation>1エネルギーポイントを消費すると自分のアーチファクトタイルをチャージできます。</translation>
