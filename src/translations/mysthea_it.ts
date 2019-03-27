@@ -176,7 +176,7 @@
     <message>
         <location filename="../models/card_data.h" line="74"/>
         <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
-        <translation type="unfinished">Mentre questa carta è sulla tua Plancia Giocatore, ogni volta che giochi una Carta Miglioria non devi spendere Punti Energia per posizionarla.</translation>
+        <translation>Mentre questa carta è sulla tua Plancia Giocatore, ogni volta che giochi una Carta Miglioria non devi spendere Punti Energia per posizionarla.</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="78"/>
@@ -501,7 +501,7 @@
     <message>
         <location filename="../models/card_data.h" line="151"/>
         <source>CR-2T1: At the end of each Era, you receive 3 extra Glory Points for each 2 regions you control.</source>
-        <translation>CR-2T1: alla fine di ogni Era, ricevi 3 Punti Gloria extra per ogni regione che controlli.</translation>
+        <translation>CR-2T1: alla fine di ogni Era, ricevi 3 Punti Gloria extra per ogni 2 regioni che controlli.</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="152"/>
@@ -931,7 +931,7 @@ Comportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è 
     <message>
         <location filename="../qml/Mysthea/Pages/GameSetup.qml" line="11"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished">PREPARAZIONE - %1 di 11</translation>
+        <translation>PREPARAZIONE - %1 di 11</translation>
     </message>
 </context>
 <context>
