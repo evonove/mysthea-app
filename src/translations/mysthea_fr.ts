@@ -151,7 +151,7 @@
     <message>
         <location filename="../models/card_data.h" line="69"/>
         <source>While this card is on your Player Board, once per turn you may discard any Command Card to gain X Command Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte de Commandement pour gagner X points de Gloire, où X est le nombre de points de Commandement de la carte défaussée.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte de Commandement pour gagner X points de Commandement, où X est le nombre de points de Commandement de la carte défaussée.</translation>
     </message>
     <message>
         <location filename="../models/card_data.h" line="70"/>
