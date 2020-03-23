@@ -1,4 +1,4 @@
-QT += qml quick svg
+QT += qml quick svg core
 CONFIG += c++11
 
 DEFINES += QT_DEPRECATED_WARNINGS

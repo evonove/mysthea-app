@@ -4,6 +4,7 @@
 #include <QHash>
 #include <QList>
 #include <QString>
+#include <QMetaType>
 // types
 static constexpr auto ALL_TYPES_TEXT =
     QT_TRANSLATE_NOOP("CardsData", "All types");
