@@ -22,7 +22,8 @@ Page {
     ColumnLayout {
         id: logoContainer
         anchors.fill: parent
-        anchors.margins: 32
+        anchors.margins: 16
+        spacing: 16
 
 
         ProjectButton {
