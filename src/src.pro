@@ -19,6 +19,9 @@ RESOURCES += \
 
 include($$PWD/src.pri)
 
+OTHER_FILES += \
+    $$files($$PWD/*.qml, true)
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH = \
     $$PWD/qml \
