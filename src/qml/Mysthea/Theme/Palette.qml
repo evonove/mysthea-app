@@ -23,4 +23,7 @@ QtObject {
     readonly property color cadillac: "#B7537A"
     readonly property color voodoo: "#4E3A53"
     readonly property color tequila: "#FEE4CD"
+    readonly property color mystheaMain: "#FF1371"
+    readonly property color icaionMain: "#6DE4E9"
+    readonly property color thefallMain: "#2FFF20"
 }

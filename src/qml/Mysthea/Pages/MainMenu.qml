@@ -13,111 +13,42 @@ Page {
     property bool hasToolbarLine: false
 
     signal cardsReferenceClicked
-    signal gameSetupClicked
-    signal rulesbookClicked
-    signal loreClicked
-    signal languageClicked
-    signal creditsClicked
 
-    background: Image {
-        source: "qrc:/assets/images/home-bg.jpg"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignBottom
-
-        Rectangle {
-            anchors.fill: parent
-            color: Palette.mineShaft
-            opacity: 0.29
-        }
+    background: Rectangle {
+        color: Palette.mineShaft
+        opacity: 0.29
     }
 
     ColumnLayout {
         id: logoContainer
-        width: parent.width
-        anchors.leftMargin: 32
-        anchors.rightMargin: 32
-        anchors.top: parent.top
-        anchors.bottom: container.top
+        anchors.fill: parent
+        anchors.margins: 16
+        spacing: 16
 
-        Image {
-            source: "qrc:/assets/images/logo.png"
-            fillMode: Image.PreserveAspectFit
-            smooth: false
-            asynchronous: true
-            Layout.alignment: Qt.AlignCenter
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            Layout.minimumWidth: 311
-            Layout.maximumHeight: 274
-        }
-    }
 
-    ColumnLayout {
-        id: container
-        anchors.bottomMargin: 55
-        anchors.leftMargin: 32
-        anchors.rightMargin: 32
-
-        spacing: 24
-        anchors.bottom: parent.bottom
-        width: parent.width
-
-        Button {
-            id: cardsReferenceButton
-
-            containerY: container.y
-            sourceItem: root.background
-
-            text: qsTr("Cards Reference")
-            font.capitalization: Font.AllUppercase
-
-            Layout.alignment: Qt.AlignHCenter
-
+        ProjectButton {
+            mainColor: Palette.mystheaMain
+            imageSource: "qrc:/assets/images/logo.png"
+            indicatorSource: "qrc:/assets/images/logo.png"
             onClicked: root.cardsReferenceClicked()
+            Layout.fillHeight: true
+            Layout.fillWidth: true
         }
-
-        Button {
-            id: gameSetupButton
-
-            containerY: container.y
-            sourceItem: root.background
-            text: qsTr("Game Setup")
-            font.capitalization: Font.AllUppercase
-
-            Layout.alignment: Qt.AlignHCenter
-
-            onClicked: root.gameSetupClicked()
+        ProjectButton {
+            mainColor: Palette.icaionMain
+            imageSource: "qrc:/assets/images/logo.png"
+            indicatorSource: "qrc:/assets/images/logo.png"
+            onClicked: root.cardsReferenceClicked()
+            Layout.fillHeight: true
+            Layout.fillWidth: true
         }
-
-        Button {
-            id: rulesbookButton
-
-            containerY: container.y
-            sourceItem: root.background
-
-            text: qsTr("Rulebook")
-            font.capitalization: Font.AllUppercase
-
-            Layout.alignment: Qt.AlignHCenter
-
-            onClicked: root.rulesbookClicked()
-        }
-
-        Button {
-            id: loreButton
-
-            containerY: container.y
-            sourceItem: root.background
-
-            text: qsTr("Lore")
-            font.capitalization: Font.AllUppercase
-
-            Layout.alignment: Qt.AlignHCenter
-
-            onClicked: root.loreClicked()
+        ProjectButton {
+            mainColor: Palette.thefallMain
+            imageSource: "qrc:/assets/images/logo.png"
+            indicatorSource: "qrc:/assets/images/logo.png"
+            onClicked: root.cardsReferenceClicked()
+            Layout.fillHeight: true
+            Layout.fillWidth: true
         }
     }
 }
