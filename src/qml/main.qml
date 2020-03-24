@@ -24,7 +24,6 @@ ApplicationWindow {
     // by the iPhone top notch
     readonly property int safeTopMargin: hasNotch ? 34 : 0
 
-    font.family: "Yanone Kaffeesatz"
     font.pixelSize: 18
     Material.accent: Palette.maroonFlush
 
