@@ -26,7 +26,7 @@ Page {
 
 
         ProjectButton {
-            mainColor: "black"
+            mainColor: Palette.mystheaMain
             imageSource: "qrc:/assets/images/logo.png"
             indicatorSource: "qrc:/assets/images/logo.png"
             onClicked: root.cardsReferenceClicked()
@@ -34,7 +34,7 @@ Page {
             Layout.fillWidth: true
         }
         ProjectButton {
-            mainColor: "white"
+            mainColor: Palette.icaionMain
             imageSource: "qrc:/assets/images/logo.png"
             indicatorSource: "qrc:/assets/images/logo.png"
             onClicked: root.cardsReferenceClicked()
@@ -42,7 +42,7 @@ Page {
             Layout.fillWidth: true
         }
         ProjectButton {
-            mainColor: "yellow"
+            mainColor: Palette.thefallMain
             imageSource: "qrc:/assets/images/logo.png"
             indicatorSource: "qrc:/assets/images/logo.png"
             onClicked: root.cardsReferenceClicked()
