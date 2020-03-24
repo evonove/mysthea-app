@@ -12,7 +12,7 @@ AbstractButton {
     background: Rectangle {
         color: "transparent"
         radius: 10
-        border.width: 4
+        border.width: 2
         border.color: root.mainColor
         Image {
             id: _backgroundImage
