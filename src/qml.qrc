@@ -37,6 +37,8 @@
         <file>qml/Mysthea/Components/RoundButton.qml</file>
         <file>qml/Mysthea/Components/TextIconComboBox.qml</file>
         <file>qml/Mysthea/Components/ProjectButton.qml</file>
+        <file>qml/Mysthea/Components/AppContainer.qml</file>
+        <file>qml/Mysthea/Components/Header.qml</file>
         <file>style/TheFall/Components/qmldir</file>
         <file>style/TheFall/Theme/qmldir</file>
     </qresource>

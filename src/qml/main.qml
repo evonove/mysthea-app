@@ -82,26 +82,21 @@ ApplicationWindow {
         Component {
             id: _homePage
             MainMenu {
-                onCardsReferenceClicked: root.pushToStack(_cardReference,
-                                                          PageName.cardPage)
+                onCardsReferenceClicked: root.pushToStack(_mystheaApp,
+                                                          PageName.mystheaPage)
             }
         }
         Component {
-            id: _cardReference
-            CardsReferencePage {
-                onCardClicked: _mainStackView.push(_detailPage, {
-                                                       "model": cards,
-                                                       "index": index
-                                                   })
-            }
+            id: _mystheaApp
+            AppContainer { logo: "qrc:/assets/images/logo.png" }
         }
     }
     StateGroup {
         id: pageStatesList
         states: [
             State {
-                name: PageName.cardPage
-                when: _mainStackView.currentItem.objectName === PageName.cardPage
+                name: PageName.mystheaPage
+                when: _mainStackView.currentItem.objectName === PageName.mystheaPage
             }
         ]
     }
