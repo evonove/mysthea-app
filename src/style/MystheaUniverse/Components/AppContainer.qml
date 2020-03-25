@@ -3,6 +3,7 @@ import QtQuick.Controls 2.3
 
 import MystheaUniverse.Theme 1.0
 import Mysthea.Components 1.0
+import Mysthea.Pages 1.0
 
 Page {
     id: root
@@ -10,6 +11,7 @@ Page {
     property real headerHeight: 54
 
     property alias logo: _header.logo
+    property alias appContents: _swipe.contentData
 
     property color mainColor
     property color whiteColor
@@ -30,6 +32,12 @@ Page {
             id: _backAction
             icon.source: "qrc:/assets/icons/menu.svg"
         }
+    }
+
+    contentItem: SwipeView {
+        id: _swipe
+        width: parent.width
+        height: parent.height - header.height - footer.height
     }
 
     footer: TabBar {

@@ -87,13 +87,21 @@ ApplicationWindow {
                                                           PageName.mystheaPage)
             }
         }
+
         Component {
             id: _mystheaApp
             AppContainer {
+                id: _mysthea
                 logo: "qrc:/assets/images/logo.png"
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
+                appContents: [
+                    CardsReferencePage {},
+                    GameSetup {},
+                    Rulebook {},
+                    Lore {}
+                ]
             }
         }
     }
