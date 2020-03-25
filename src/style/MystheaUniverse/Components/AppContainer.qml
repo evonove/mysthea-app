@@ -22,6 +22,36 @@ Page {
     signal rulebookClicked
     signal extrasClicked
 
+    QtObject {
+        // These functions take tracks of swipe history.
+        id: history
+
+        // It stores the index of pages that we visited.
+        property var items: [0]
+
+        function push(index) {
+            let lastIndex = items[items.length - 1]
+            if (lastIndex !== index) {
+                items.push(index)
+                // Update the item in swipe view.
+                _swipe.currentIndex = index
+            }
+            _swipe.currentItem.forceActiveFocus()
+        }
+
+        function pop() {
+            if (items.length > 1) {
+                items.pop()
+                let index = items[items.length - 1]
+                // Update the item in swipe view.
+                _swipe.currentIndex = index
+                // Update the current item of tabbar to highlight the correct button.
+                _tabbar.currentIndex = index
+            }
+            _swipe.currentItem.forceActiveFocus()
+        }
+    }
+
     header: Header {
         id: _header
         width: parent.width
@@ -38,9 +68,22 @@ Page {
         id: _swipe
         width: parent.width
         height: parent.height - header.height - footer.height
+        focus: true
+        interactive: false
+
+        // Handles click of back button by popping current page from Swipe
+        Keys.onPressed: {
+            if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
+                if (history.items.length > 1) {
+                    history.pop()
+                    event.accepted = true
+                }
+            }
+        }
     }
 
     footer: TabBar {
+        id: _tabbar
         width: parent.width
         height: 49
 
@@ -53,7 +96,7 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: root.cardsReferenceClicked()
+            onClicked: history.push(TabBar.index)
         }
 
         TabButton {
@@ -63,7 +106,7 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: root.gameSetupClicked()
+            onClicked: history.push(TabBar.index)
         }
 
         TabButton {
@@ -73,7 +116,7 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: root.rulebookClicked()
+            onClicked: history.push(TabBar.index)
         }
 
         TabButton {
@@ -83,7 +126,7 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: root.extrasClicked()
+            onClicked: history.push(TabBar.index)
         }
     }
 }
