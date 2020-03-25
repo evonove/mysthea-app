@@ -9,6 +9,7 @@ QtObject {
     //Color
     readonly property color black: "#000000"
     readonly property color white: "#FFFFFF"
+    readonly property color background: "#170E12"
     readonly property color snuff: "#F3E5F5"
     readonly property color mineShaft: "#212121"
     readonly property color flamingo: "#F04937"
@@ -26,4 +27,5 @@ QtObject {
     readonly property color mystheaMain: "#FF1371"
     readonly property color icaionMain: "#6DE4E9"
     readonly property color thefallMain: "#2FFF20"
+    readonly property color pink: "#FFC1DC"
 }

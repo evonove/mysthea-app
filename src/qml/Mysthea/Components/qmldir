@@ -10,5 +10,3 @@ RulebookButton 1.0 RulebookButton.qml
 RoundButton 1.0 RoundButton.qml
 TextIconComboBox 1.0 TextIconComboBox.qml
 ProjectButton 1.0 ProjectButton.qml
-AppContainer 1.0 AppContainer.qml
-Header 1.0 Header.qml

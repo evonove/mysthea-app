@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 import QtGraphicalEffects 1.12
 
-import Mysthea.Theme 1.0
+import MystheaUniverse.Theme 1.0
 
 ObjectModel {
     id: root

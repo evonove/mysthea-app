@@ -4,8 +4,8 @@ import QtQuick.Controls 2.3
 import QtQuick.Controls.Material 2.2
 
 import Mysthea.Components 1.0
-import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
+import MystheaUniverse.Theme 1.0
 
 ListView {
     id: _cardsList

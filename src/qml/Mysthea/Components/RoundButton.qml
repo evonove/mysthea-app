@@ -4,7 +4,7 @@ import QtQuick.Controls 2.4
 import QtQuick.Controls.impl 2.4
 import QtQuick.Controls.Material 2.4
 import QtQuick.Controls.Material.impl 2.4
-import Mysthea.Theme 1.0
+import MystheaUniverse.Theme 1.0
 
 T.Button {
     id: control

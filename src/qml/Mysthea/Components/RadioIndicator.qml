@@ -1,7 +1,7 @@
 
 import QtQuick 2.11
 import QtQuick.Controls.Material 2.4
-import Mysthea.Theme 1.0
+import MystheaUniverse.Theme 1.0
 
 Rectangle {
     implicitWidth: 16
