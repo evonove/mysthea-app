@@ -89,7 +89,9 @@ ApplicationWindow {
         }
         Component {
             id: _mystheaApp
-            AppContainer { logo: "qrc:/assets/images/logo.png" }
+            AppContainer {
+                logo: "qrc:/assets/images/logo.png"
+            }
         }
     }
     StateGroup {

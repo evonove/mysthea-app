@@ -41,6 +41,8 @@
         <file>style/MystheaUniverse/Components/qmldir</file>
         <file>style/MystheaUniverse/ToolBar.qml</file>
         <file>style/MystheaUniverse/ToolButton.qml</file>
+        <file>style/MystheaUniverse/TabBar.qml</file>
+        <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/qmldir</file>
         <file>style/MystheaUniverse/Theme/Palette.qml</file>
     </qresource>
