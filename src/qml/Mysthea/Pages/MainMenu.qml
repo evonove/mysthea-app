@@ -9,10 +9,13 @@ import Mysthea.Theme 1.0
 Page {
     id: root
     objectName: PageName.homePage
+
     property Action leftAction: null
     property bool hasToolbarLine: false
 
     signal cardsReferenceClicked
+
+    padding: 16
 
     background: Rectangle {
         color: Palette.mineShaft
@@ -22,30 +25,31 @@ Page {
     ColumnLayout {
         id: logoContainer
         anchors.fill: parent
-        anchors.margins: 16
-        spacing: 16
-
+        spacing: 18
 
         ProjectButton {
             mainColor: Palette.mystheaMain
-            imageSource: "qrc:/assets/images/logo.png"
-            indicatorSource: "qrc:/assets/images/logo.png"
+            backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+            logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
             onClicked: root.cardsReferenceClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
         ProjectButton {
             mainColor: Palette.icaionMain
-            imageSource: "qrc:/assets/images/logo.png"
-            indicatorSource: "qrc:/assets/images/logo.png"
+            backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
+            logoImageSource: "qrc:/assets/images/icaion_logo.png"
+            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
             onClicked: root.cardsReferenceClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
         ProjectButton {
             mainColor: Palette.thefallMain
-            imageSource: "qrc:/assets/images/logo.png"
-            indicatorSource: "qrc:/assets/images/logo.png"
+            backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
+            logoImageSource: "qrc:/assets/images/the_fall_logo.png"
+            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
             onClicked: root.cardsReferenceClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
