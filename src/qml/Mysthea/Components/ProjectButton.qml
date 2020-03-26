@@ -1,10 +1,11 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.4
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Controls.impl 2.14
 
 AbstractButton {
     id: root
     property alias backgroundImageSource: _backgroundImage.source
-    property alias indicatorImageSource: _indicatorImage.source
+    property alias indicatorImageSource: _indicatorImage.icon.source
     property alias logoImageSource: _logoImage.source
     property color mainColor: "white"
 
@@ -31,14 +32,14 @@ AbstractButton {
     }
 
     contentItem: Item {
-        Image {
+        IconLabel {
             id: _indicatorImage
             anchors.right: parent.right
             anchors.bottom: parent.bottom
 
-            smooth: false
-            sourceSize.width: 16
-            sourceSize.height: 16
+            icon.width: 16
+            icon.height: 16
+            icon.color: root.mainColor
         }
     }
 }
