@@ -10,10 +10,10 @@ Page {
     property real headerHeight: 54
     property alias logo: _header.logo
 
-    signal cardsReferenceClicked()
-    signal gameSetupClicked()
-    signal rulebookClicked()
-    signal extrasClicked()
+    signal cardsReferenceClicked
+    signal gameSetupClicked
+    signal rulebookClicked
+    signal extrasClicked
 
     header: Header {
         id: _header
@@ -30,6 +30,8 @@ Page {
     footer: TabBar {
         width: parent.width
         height: 49
+
+        borderColor: Palette.darkPink
 
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"

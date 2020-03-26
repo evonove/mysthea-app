@@ -1,3 +1,5 @@
+
+
 /****************************************************************************
 **
 ** Copyright (C) 2017 The Qt Company Ltd.
@@ -33,7 +35,6 @@
 ** $QT_END_LICENSE$
 **
 ****************************************************************************/
-
 import QtQuick 2.12
 import QtQuick.Templates 2.12 as T
 
@@ -41,6 +42,8 @@ import MystheaUniverse.Theme 1.0
 
 T.TabBar {
     id: control
+
+    property alias borderColor: _border.color
 
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             contentWidth + leftPadding + rightPadding)
@@ -69,12 +72,11 @@ T.TabBar {
         color: Palette.background
 
         Rectangle {
+            id: _border
             anchors.top: parent.top
 
             width: parent.width
             height: 1
-
-            color: Palette.darkPink
         }
     }
 }
