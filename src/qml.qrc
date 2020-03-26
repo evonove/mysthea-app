@@ -32,10 +32,14 @@
         <file>qml/TheFall/qmldir</file>
         <file>qml/main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>style/MystheaUniverse/ComboBox.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
+        <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>
+        <file>style/MystheaUniverse/Pages/CardsReference.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
+        <file>style/MystheaUniverse/Components/LabelComboBox.qml</file>
         <file>style/MystheaUniverse/Components/MainDrawer.qml</file>
         <file>style/MystheaUniverse/Components/ImageButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioButton.qml</file>
@@ -50,8 +54,8 @@
         <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>
-        <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
         <file>style/MystheaUniverse/Pages/qmldir</file>
+        <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/Icon.qml</file>

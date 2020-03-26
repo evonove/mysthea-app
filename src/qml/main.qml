@@ -20,7 +20,7 @@ ApplicationWindow {
     visible: true
     width: 375
     height: 667
-    title: qsTr("Mysthea-Icaion-Thefall")
+    title: qsTr("Mysthea Universe")
     flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
 
     // A top margin added to various components so that they're not covered
@@ -102,8 +102,14 @@ ApplicationWindow {
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
+                headerSeparatorColor: Palette.pink
                 appContents: [
-                    Mysthea.CardsReference {},
+                    Mysthea.CardsReference {
+                        searchFieldBorderColor: Palette.pinkLavenderBlush
+                        onCardClicked: {
+                            console.log("Open detail of card with index:", index)
+                        }
+                    },
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},
                     Mysthea.Extras {}
@@ -119,6 +125,7 @@ ApplicationWindow {
                 mainColor: Palette.icaionMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
+                headerSeparatorColor: Palette.pink
                 appContents: [
                     Icaion.CardsReference {},
                     Icaion.GameSetup {},
@@ -136,6 +143,7 @@ ApplicationWindow {
                 mainColor: Palette.thefallMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
+                headerSeparatorColor: Palette.pink
                 appContents: [
                     TheFall.CardsReference {},
                     TheFall.GameSetup {},

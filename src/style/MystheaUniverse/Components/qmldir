@@ -1,8 +1,10 @@
-module TheFall.Components
+module MystheaUniverse.Components
 AppContainer 1.0 AppContainer.qml
 Button 1.0 Button.qml
+CardsFiltersHeader 1.0 CardsFiltersHeader.qml
 ColorComboBox 1.0 ColorComboBox.qml
 Header 1.0 Header.qml
+LabelComboBox 1.0 LabelComboBox.qml
 MainDrawer 1.0 MainDrawer.qml
 ImageButton 1.0 ImageButton.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
