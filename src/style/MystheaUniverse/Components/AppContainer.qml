@@ -39,7 +39,7 @@ Page {
         borderColor: root.accentColor
 
         TabButton {
-            icon.source: "qrc:/assets/icons/cards-reference_icon.svg"
+            icon.source: "qrc:/assets/icons/card_reference_icon.svg"
             text: qsTr("Cards Reference")
 
             checkedColor: root.mainColor
