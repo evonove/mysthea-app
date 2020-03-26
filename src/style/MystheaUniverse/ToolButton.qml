@@ -13,11 +13,11 @@ T.ToolButton {
     implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
                              implicitContentHeight + topPadding + bottomPadding)
 
-    padding: 6
-    spacing: 6
+    padding: 20
+    spacing: 0
 
-    icon.width: 24
-    icon.height: 24
+    icon.width: 16
+    icon.height: 14
     icon.color: Palette.white
 
     contentItem: IconLabel {
@@ -32,8 +32,8 @@ T.ToolButton {
     }
 
     background: Rectangle {
-        implicitWidth: 40
-        implicitHeight: 40
+        implicitWidth: 56
+        implicitHeight: 54
 
         opacity: 1.0
         color: "transparent"
