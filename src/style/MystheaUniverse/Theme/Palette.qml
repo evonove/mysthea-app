@@ -28,4 +28,6 @@ QtObject {
     readonly property color icaionMain: "#6DE4E9"
     readonly property color thefallMain: "#2FFF20"
     readonly property color pink: "#FFC1DC"
+    readonly property color darkPink: "#CF2568"
+    readonly property color lightPink: "#FFDEEC"
 }
