@@ -18,7 +18,7 @@ Page {
 
         rightAction: Action {
             id: _backAction
-            icon.source: "qrc:/assets/icons/game-setup.svg"
+            icon.source: "qrc:/assets/icons/menu.svg"
         }
     }
 }
