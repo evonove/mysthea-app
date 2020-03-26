@@ -39,7 +39,7 @@ Page {
         borderColor: root.accentColor
 
         TabButton {
-            icon.source: "qrc:/assets/icons/accessory.svg"
+            icon.source: "qrc:/assets/icons/cards-reference_icon.svg"
             text: qsTr("Cards Reference")
 
             checkedColor: root.mainColor
@@ -49,7 +49,7 @@ Page {
         }
 
         TabButton {
-            icon.source: "qrc:/assets/icons/accessory.svg"
+            icon.source: "qrc:/assets/icons/game_setup_icon.svg"
             text: qsTr("Game Setup")
 
             checkedColor: root.mainColor
@@ -59,7 +59,7 @@ Page {
         }
 
         TabButton {
-            icon.source: "qrc:/assets/icons/accessory.svg"
+            icon.source: "qrc:/assets/icons/rulebook_icon.svg"
             text: qsTr("Rulebook")
 
             checkedColor: root.mainColor
@@ -69,7 +69,7 @@ Page {
         }
 
         TabButton {
-            icon.source: "qrc:/assets/icons/accessory.svg"
+            icon.source: "qrc:/assets/icons/extras_icon.svg"
             text: qsTr("Extras")
 
             checkedColor: root.mainColor
