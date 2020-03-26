@@ -44,6 +44,9 @@ import MystheaUniverse.Theme 1.0
 T.TabButton {
     id: control
 
+    property color checkedColor: Palette.mystheaMain
+    property color uncheckedColor: Palette.lightPink
+
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             implicitContentWidth + leftPadding + rightPadding)
     implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
@@ -54,7 +57,7 @@ T.TabButton {
 
     icon.width: 24
     icon.height: 24
-    icon.color: checked ? Palette.mystheaMain : Palette.lightPink
+    icon.color: control.checked ? control.checkedColor : control.uncheckedColor
     font.pixelSize: 14
 
     display: IconLabel.TextUnderIcon
@@ -67,7 +70,7 @@ T.TabButton {
         icon: control.icon
         text: control.text
         font: control.font
-        color: control.checked ? Palette.mystheaMain : Palette.lightPink
+        color: control.checked ? control.checkedColor : control.uncheckedColor
     }
 
     background: Rectangle {

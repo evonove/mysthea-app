@@ -36,24 +36,40 @@ Page {
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Cards Reference")
+
+            checkedColor: Palette.mystheaMain
+            uncheckedColor: Palette.lightPink
+
             onClicked: root.cardsReferenceClicked()
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Game Setup")
+
+            checkedColor: Palette.mystheaMain
+            uncheckedColor: Palette.lightPink
+
             onClicked: root.gameSetupClicked()
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Rulebook")
+
+            checkedColor: Palette.mystheaMain
+            uncheckedColor: Palette.lightPink
+
             onClicked: root.rulebookClicked()
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Extras")
+
+            checkedColor: Palette.mystheaMain
+            uncheckedColor: Palette.lightPink
+
             onClicked: root.extrasClicked()
         }
     }
