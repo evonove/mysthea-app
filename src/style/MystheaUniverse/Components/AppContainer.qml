@@ -8,7 +8,12 @@ Page {
     id: root
 
     property real headerHeight: 54
+
     property alias logo: _header.logo
+
+    property color mainColor
+    property color whiteColor
+    property color accentColor
 
     signal cardsReferenceClicked
     signal gameSetupClicked
@@ -31,13 +36,13 @@ Page {
         width: parent.width
         height: 49
 
-        borderColor: Palette.darkPink
+        borderColor: root.accentColor
 
         TabButton {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Cards Reference")
 
-            checkedColor: Palette.mystheaMain
+            checkedColor: root.mainColor
             uncheckedColor: Palette.lightPink
 
             onClicked: root.cardsReferenceClicked()
@@ -47,8 +52,8 @@ Page {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Game Setup")
 
-            checkedColor: Palette.mystheaMain
-            uncheckedColor: Palette.lightPink
+            checkedColor: root.mainColor
+            uncheckedColor: root.whiteColor
 
             onClicked: root.gameSetupClicked()
         }
@@ -57,8 +62,8 @@ Page {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Rulebook")
 
-            checkedColor: Palette.mystheaMain
-            uncheckedColor: Palette.lightPink
+            checkedColor: root.mainColor
+            uncheckedColor: root.whiteColor
 
             onClicked: root.rulebookClicked()
         }
@@ -67,8 +72,8 @@ Page {
             icon.source: "qrc:/assets/icons/accessory.svg"
             text: qsTr("Extras")
 
-            checkedColor: Palette.mystheaMain
-            uncheckedColor: Palette.lightPink
+            checkedColor: root.mainColor
+            uncheckedColor: root.whiteColor
 
             onClicked: root.extrasClicked()
         }

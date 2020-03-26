@@ -44,8 +44,8 @@ import MystheaUniverse.Theme 1.0
 T.TabButton {
     id: control
 
-    property color checkedColor: Palette.mystheaMain
-    property color uncheckedColor: Palette.lightPink
+    property color checkedColor: Palette.white
+    property color uncheckedColor: Palette.mineShaft
 
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             implicitContentWidth + leftPadding + rightPadding)

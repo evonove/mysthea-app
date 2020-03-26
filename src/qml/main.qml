@@ -91,6 +91,9 @@ ApplicationWindow {
             id: _mystheaApp
             AppContainer {
                 logo: "qrc:/assets/images/logo.png"
+                mainColor: Palette.mystheaMain
+                whiteColor: Palette.lightPink
+                accentColor: Palette.darkPink
             }
         }
     }
