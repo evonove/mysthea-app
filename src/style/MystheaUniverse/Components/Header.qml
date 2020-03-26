@@ -12,9 +12,11 @@ ToolBar {
     property Action rightAction
 
     ToolButton {
+        action: root.leftAction
         anchors.left: parent.left
-        text: qsTr("⋮")
-        height: 54
+
+        visible: root.leftAction !== null
+        enabled: root.leftAction !== null
     }
     Image {
         id: _image
@@ -22,8 +24,10 @@ ToolBar {
         fillMode: Image.PreserveAspectFit
     }
     ToolButton {
+        action: root.rightAction
         anchors.right: parent.right
-        text: qsTr("⋮")
-        height: 54
+
+        visible: root.rightAction !== null
+        enabled: root.rightAction !== null
     }
 }
