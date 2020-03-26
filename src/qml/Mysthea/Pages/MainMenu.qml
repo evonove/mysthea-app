@@ -13,7 +13,9 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: false
 
-    signal cardsReferenceClicked
+    signal mystheaClicked
+    signal icaionClicked
+    signal theFallClicked
 
     padding: 16
 
@@ -32,7 +34,7 @@ Page {
             backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
             logoImageSource: "qrc:/assets/images/mysthea_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.cardsReferenceClicked()
+            onClicked: root.mystheaClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
@@ -41,7 +43,7 @@ Page {
             backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
             logoImageSource: "qrc:/assets/images/icaion_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.cardsReferenceClicked()
+            onClicked: root.icaionClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
@@ -50,7 +52,7 @@ Page {
             backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
             logoImageSource: "qrc:/assets/images/the_fall_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.cardsReferenceClicked()
+            onClicked: root.theFallClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }

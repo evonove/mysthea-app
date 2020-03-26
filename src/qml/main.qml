@@ -83,8 +83,12 @@ ApplicationWindow {
         Component {
             id: _homePage
             MainMenu {
-                onCardsReferenceClicked: root.pushToStack(_mystheaApp,
+                onMystheaClicked: root.pushToStack(_mystheaApp,
                                                           PageName.mystheaPage)
+                onIcaionClicked: root.pushToStack(_icaionApp,
+                                                          PageName.icaionPage)
+                onTheFallClicked: root.pushToStack(_theFallApp,
+                                                          PageName.theFallPage)
             }
         }
 
@@ -92,7 +96,7 @@ ApplicationWindow {
             id: _mystheaApp
             AppContainer {
                 id: _mysthea
-                logo: "qrc:/assets/images/logo.png"
+                logo: "qrc:/assets/images/mysthea_logo.png"
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
@@ -104,7 +108,30 @@ ApplicationWindow {
                 ]
             }
         }
+
+        Component {
+            id: _icaionApp
+            AppContainer {
+                id: _icaion
+                logo: "qrc:/assets/images/icaion_logo.png"
+                mainColor: Palette.icaionMain
+                whiteColor: Palette.lightPink
+                accentColor: Palette.darkPink
+            }
+        }
+
+        Component {
+            id: _theFallApp
+            AppContainer {
+                id: _theFall
+                logo: "qrc:/assets/images/the_fall_logo.png"
+                mainColor: Palette.thefallMain
+                whiteColor: Palette.lightPink
+                accentColor: Palette.darkPink
+            }
+        }
     }
+
     StateGroup {
         id: pageStatesList
         states: [

@@ -12,4 +12,6 @@ QtObject {
     property string lorePage: "lorePage"
     property string tableOfContentsPage: "tableOfContentsPage"
     property string mystheaPage: "mystheaPage"
+    property string icaionPage: "icaionPage"
+    property string theFallPage: "theFallPage"
 }
