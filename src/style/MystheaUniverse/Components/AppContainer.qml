@@ -43,7 +43,7 @@ Page {
             text: qsTr("Cards Reference")
 
             checkedColor: root.mainColor
-            uncheckedColor: Palette.lightPink
+            uncheckedColor: root.whiteColor
 
             onClicked: root.cardsReferenceClicked()
         }
