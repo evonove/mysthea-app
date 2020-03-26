@@ -1,3 +1,2 @@
 module Mysthea.Theme
-singleton Palette 1.0 Palette.qml
 singleton Icon 1.0 Icon.qml

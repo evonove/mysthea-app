@@ -20,7 +20,6 @@
         <file>qml/Mysthea/Pages/Lore.qml</file>
         <file>qml/Mysthea/Components/Button.qml</file>
         <file>qml/Mysthea/Theme/qmldir</file>
-        <file>qml/Mysthea/Theme/Palette.qml</file>
         <file>qml/Mysthea/Theme/Icon.qml</file>
         <file>qml/Mysthea/Components/ScrollIndicator.qml</file>
         <file>qml/Mysthea/Components/SearchField.qml</file>
@@ -36,8 +35,13 @@
         <file>qml/Mysthea/Pages/TableOfContentsModel.qml</file>
         <file>qml/Mysthea/Components/RoundButton.qml</file>
         <file>qml/Mysthea/Components/TextIconComboBox.qml</file>
-        <file>qml/Mysthea/Components/ProjectButton.qml</file>
-        <file>style/TheFall/Components/qmldir</file>
-        <file>style/TheFall/Theme/qmldir</file>
+        <file>style/MystheaUniverse/Components/ProjectButton.qml</file>
+        <file>style/MystheaUniverse/Components/AppContainer.qml</file>
+        <file>style/MystheaUniverse/Components/Header.qml</file>
+        <file>style/MystheaUniverse/Components/qmldir</file>
+        <file>style/MystheaUniverse/ToolBar.qml</file>
+        <file>style/MystheaUniverse/ToolButton.qml</file>
+        <file>style/MystheaUniverse/Theme/qmldir</file>
+        <file>style/MystheaUniverse/Theme/Palette.qml</file>
     </qresource>
 </RCC>

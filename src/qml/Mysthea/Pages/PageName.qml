@@ -11,4 +11,5 @@ QtObject {
     property string rulebookPage: "rulebookPage"
     property string lorePage: "lorePage"
     property string tableOfContentsPage: "tableOfContentsPage"
+    property string mystheaPage: "mystheaPage"
 }

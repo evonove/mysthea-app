@@ -5,7 +5,7 @@ import QtQuick.Controls.Material 2.2
 
 import Mysthea.Components 1.0
 import Mysthea.Pages 1.0
-import Mysthea.Theme 1.0
+import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
 import Translations 1.0
 

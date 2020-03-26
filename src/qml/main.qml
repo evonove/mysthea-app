@@ -7,10 +7,11 @@ import QtQml.Models 2.1
 import QtGraphicalEffects 1.0
 
 import Mysthea.Pages 1.0
-import Mysthea.Theme 1.0
 import Mysthea.Models 1.0
 import Translations 1.0
 import Mysthea.Components 1.0
+import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0
 
 ApplicationWindow {
     id: root
@@ -82,26 +83,21 @@ ApplicationWindow {
         Component {
             id: _homePage
             MainMenu {
-                onCardsReferenceClicked: root.pushToStack(_cardReference,
-                                                          PageName.cardPage)
+                onCardsReferenceClicked: root.pushToStack(_mystheaApp,
+                                                          PageName.mystheaPage)
             }
         }
         Component {
-            id: _cardReference
-            CardsReferencePage {
-                onCardClicked: _mainStackView.push(_detailPage, {
-                                                       "model": cards,
-                                                       "index": index
-                                                   })
-            }
+            id: _mystheaApp
+            AppContainer { logo: "qrc:/assets/images/logo.png" }
         }
     }
     StateGroup {
         id: pageStatesList
         states: [
             State {
-                name: PageName.cardPage
-                when: _mainStackView.currentItem.objectName === PageName.cardPage
+                name: PageName.mystheaPage
+                when: _mainStackView.currentItem.objectName === PageName.mystheaPage
             }
         ]
     }

@@ -1,6 +1,7 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Controls.impl 2.14
+import QtGraphicalEffects 1.12
 
 AbstractButton {
     id: root
@@ -15,7 +16,15 @@ AbstractButton {
         Image {
             id: _backgroundImage
             anchors.fill: parent
-            fillMode: Image.PreserveAspectFit
+            fillMode: Image.PreserveAspectCrop
+            layer.enabled: true
+            layer.effect: OpacityMask {
+                maskSource: Rectangle {
+                    width: _backgroundImage.width
+                    height: _backgroundImage.height
+                    radius: 10
+                }
+            }
         }
         Image {
             id: _logoImage
