@@ -84,11 +84,11 @@ ApplicationWindow {
             id: _homePage
             MainMenu {
                 onMystheaClicked: root.pushToStack(_mystheaApp,
-                                                          PageName.mystheaPage)
+                                                   PageName.mystheaPage)
                 onIcaionClicked: root.pushToStack(_icaionApp,
-                                                          PageName.icaionPage)
+                                                  PageName.icaionPage)
                 onTheFallClicked: root.pushToStack(_theFallApp,
-                                                          PageName.theFallPage)
+                                                   PageName.theFallPage)
             }
         }
 
