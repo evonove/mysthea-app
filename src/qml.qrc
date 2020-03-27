@@ -1,12 +1,15 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/main.qml</file>
-        <file>qtquickcontrols2.conf</file>
         <file>images/background.png</file>
         <file>images/evonove-logo.png</file>
         <file>images/tabula-logo.png</file>
+        <file>qml/Icaion/CardsReference.qml</file>
+        <file>qml/Icaion/GameSetup.qml</file>
+        <file>qml/Icaion/Lore.qml</file>
+        <file>qml/Icaion/Rulebook.qml</file>
+        <file>qml/Icaion/qmldir</file>
         <file>qml/Mysthea/CardsList.qml</file>
-        <file>qml/Mysthea/CardsReferencePage.qml</file>
+        <file>qml/Mysthea/CardsReference.qml</file>
         <file>qml/Mysthea/DetailDelegate.qml</file>
         <file>qml/Mysthea/DetailPage.qml</file>
         <file>qml/Mysthea/GameSetup.qml</file>
@@ -16,13 +19,18 @@
         <file>qml/Mysthea/LanguageListModel.qml</file>
         <file>qml/Mysthea/Lore.qml</file>
         <file>qml/Mysthea/LoreModel.qml</file>
-        <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>qml/Mysthea/Rulebook.qml</file>
         <file>qml/Mysthea/TableOfContents.qml</file>
         <file>qml/Mysthea/TableOfContentsModel.qml</file>
         <file>qml/Mysthea/qmldir</file>
-        <file>qml/Icaion/qmldir</file>
+        <file>qml/TheFall/CardsReference.qml</file>
+        <file>qml/TheFall/GameSetup.qml</file>
+        <file>qml/TheFall/Lore.qml</file>
+        <file>qml/TheFall/Rulebook.qml</file>
         <file>qml/TheFall/qmldir</file>
+        <file>qml/main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>

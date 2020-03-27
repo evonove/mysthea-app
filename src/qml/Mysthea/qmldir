@@ -1,6 +1,6 @@
 module Mysthea
 CardsList 1.0 CardsList.qml
-CardsReferencePage 1.0 CardsReferencePage.qml
+CardsReference 1.0 CardsReference.qml
 Credits 1.0 Credits.qml
 DetailDelegate 1.0 DetailDelegate.qml
 DetailPage 1.0 DetailPage.qml

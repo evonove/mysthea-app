@@ -7,6 +7,7 @@ import Mysthea.Models 1.0
 import Mysthea 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Pages 1.0
 import Translations 1.0
 
 Page {
