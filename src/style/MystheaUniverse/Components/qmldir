@@ -1,4 +1,14 @@
 module TheFall.Components
 AppContainer 1.0 AppContainer.qml
+Button 1.0 Button.qml
+ColorComboBox 1.0 ColorComboBox.qml
 Header 1.0 Header.qml
+MainDrawer 1.0 MainDrawer.qml
 ProjectButton 1.0 ProjectButton.qml
+RadioIndicatorLanguage 1.0 RadioIndicator.qml
+RadioLanguage 1.0 RadioButton.qml
+RoundButton 1.0 RoundButton.qml
+RulebookButton 1.0 RulebookButton.qml
+ScrollIndicator 1.0 ScrollIndicator.qml
+SearchField 1.0 SearchField.qml
+TextIconComboBox 1.0 TextIconComboBox.qml
