@@ -3,6 +3,7 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.5
 
+import Mysthea 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
 
@@ -18,6 +19,7 @@ Page {
     property Action leftAction
     property int currentIndex
     property int numberSteps: 0
+    property alias sourceComponent: _componentLoader.sourceComponent
 
     background: Image {
         source: "qrc:/assets/images/cards-bg.jpg"
@@ -36,41 +38,7 @@ Page {
         id: _componentLoader
         anchors.fill: parent
         asynchronous: true
-        sourceComponent: _component
         visible: _componentLoader.status === Loader.Ready
-    }
-
-    Component {
-        id: _component
-
-        SwipeView {
-            id: _swipeView
-            currentIndex: root.currentIndex
-            anchors.fill: parent
-            clip: true
-
-            Loader {
-                asynchronous: true
-                sourceComponent: GameSetupMap {
-                    onStepClicked: root.currentIndex = step
-                }
-            }
-
-            Repeater {
-                id: repeater
-                model: GameSetupModel {
-                    id: _gameSetupModel
-                    width: root.availableWidth
-                    Component.onCompleted: {
-                        root.numberSteps = _gameSetupModel.count
-                    }
-                }
-            }
-
-            onCurrentIndexChanged: {
-                root.currentIndex = currentIndex
-            }
-        }
     }
 
     footer: Pane {

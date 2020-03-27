@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.3
 
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Pages 1.0
 
 Page {
     id: root

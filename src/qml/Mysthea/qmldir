@@ -1,0 +1,16 @@
+module Mysthea
+CardsList 1.0 CardsList.qml
+CardsReference 1.0 CardsReference.qml
+Credits 1.0 Credits.qml
+DetailDelegate 1.0 DetailDelegate.qml
+DetailPage 1.0 DetailPage.qml
+GameSetup 1.0 GameSetup.qml
+GameSetupModel 1.0 GameSetupModel.qml
+GameSetupMap 1.0 GameSetupMap.qml
+Language 1.0 Language.qml
+LanguageListModel 1.0 LanguageListModel.qml
+Lore 1.0 Lore.qml
+MainMenu 1.0 MainMenu.qml
+Rulebook 1.0 Rulebook.qml
+TableOfContents 1.0 TableOfContents.qml
+TableOfContentsModel 1.0 TableOfContentsModel.qml
