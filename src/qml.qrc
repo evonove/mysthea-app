@@ -1,49 +1,47 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/main.qml</file>
-        <file>qml/Mysthea/Pages/qmldir</file>
-        <file>qml/Mysthea/Pages/CardsReferencePage.qml</file>
-        <file>qml/Mysthea/Pages/DetailPage.qml</file>
-        <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
-        <file>qml/Mysthea/Components/qmldir</file>
-        <file>qml/Mysthea/Components/ColorComboBox.qml</file>
         <file>images/background.png</file>
-        <file>images/tabula-logo.png</file>
         <file>images/evonove-logo.png</file>
-        <file>qtquickcontrols2.conf</file>
-        <file>qml/Mysthea/Pages/MainMenu.qml</file>
+        <file>images/tabula-logo.png</file>
+        <file>qml/Mysthea/Pages/CardsList.qml</file>
+        <file>qml/Mysthea/Pages/CardsReferencePage.qml</file>
+        <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
+        <file>qml/Mysthea/Pages/DetailPage.qml</file>
         <file>qml/Mysthea/Pages/GameSetup.qml</file>
+        <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
         <file>qml/Mysthea/Pages/GameSetupModel.qml</file>
         <file>qml/Mysthea/Pages/GameSetupStep.qml</file>
-        <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
-        <file>qml/Mysthea/Pages/Rulebook.qml</file>
-        <file>qml/Mysthea/Pages/Lore.qml</file>
-        <file>qml/Mysthea/Components/Button.qml</file>
-        <file>qml/Mysthea/Theme/qmldir</file>
-        <file>qml/Mysthea/Theme/Icon.qml</file>
-        <file>qml/Mysthea/Components/ScrollIndicator.qml</file>
-        <file>qml/Mysthea/Components/SearchField.qml</file>
-        <file>qml/Mysthea/Components/RadioButton.qml</file>
-        <file>qml/Mysthea/Components/RadioIndicator.qml</file>
         <file>qml/Mysthea/Pages/LanguageListModel.qml</file>
-        <file>qml/Mysthea/Pages/CardsList.qml</file>
-        <file>qml/Mysthea/Components/MainDrawer.qml</file>
-        <file>qml/Mysthea/Pages/PageName.qml</file>
+        <file>qml/Mysthea/Pages/Lore.qml</file>
         <file>qml/Mysthea/Pages/LoreModel.qml</file>
-        <file>qml/Mysthea/Components/RulebookButton.qml</file>
+        <file>qml/Mysthea/Pages/MainMenu.qml</file>
+        <file>qml/Mysthea/Pages/PageName.qml</file>
+        <file>qml/Mysthea/Pages/Rulebook.qml</file>
         <file>qml/Mysthea/Pages/TableOfContents.qml</file>
         <file>qml/Mysthea/Pages/TableOfContentsModel.qml</file>
-        <file>qml/Mysthea/Components/RoundButton.qml</file>
-        <file>qml/Mysthea/Components/TextIconComboBox.qml</file>
-        <file>style/MystheaUniverse/Components/ProjectButton.qml</file>
+        <file>qml/Mysthea/Pages/qmldir</file>
+        <file>qml/main.qml</file>
+        <file>qtquickcontrols2.conf</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
+        <file>style/MystheaUniverse/Components/Button.qml</file>
+        <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
+        <file>style/MystheaUniverse/Components/MainDrawer.qml</file>
+        <file>style/MystheaUniverse/Components/ProjectButton.qml</file>
+        <file>style/MystheaUniverse/Components/RadioButton.qml</file>
+        <file>style/MystheaUniverse/Components/RadioIndicator.qml</file>
+        <file>style/MystheaUniverse/Components/RoundButton.qml</file>
+        <file>style/MystheaUniverse/Components/RulebookButton.qml</file>
+        <file>style/MystheaUniverse/Components/ScrollIndicator.qml</file>
+        <file>style/MystheaUniverse/Components/SearchField.qml</file>
+        <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
-        <file>style/MystheaUniverse/ToolBar.qml</file>
-        <file>style/MystheaUniverse/ToolButton.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
-        <file>style/MystheaUniverse/Theme/qmldir</file>
+        <file>style/MystheaUniverse/Theme/Icon.qml</file>
         <file>style/MystheaUniverse/Theme/Palette.qml</file>
+        <file>style/MystheaUniverse/Theme/qmldir</file>
+        <file>style/MystheaUniverse/ToolBar.qml</file>
+        <file>style/MystheaUniverse/ToolButton.qml</file>
     </qresource>
 </RCC>

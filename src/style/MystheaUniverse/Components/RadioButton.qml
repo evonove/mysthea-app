@@ -2,7 +2,7 @@ import QtQuick 2.11
 import QtQuick.Templates 2.4
 import QtQuick.Controls.Material 2.4
 import MystheaUniverse.Theme 1.0
-import Mysthea.Components 1.0
+import MystheaUniverse.Components 1.0
 
 RadioButton {
     id: control
