@@ -1,27 +1,28 @@
 <RCC>
     <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qtquickcontrols2.conf</file>
         <file>images/background.png</file>
         <file>images/evonove-logo.png</file>
         <file>images/tabula-logo.png</file>
-        <file>qml/Mysthea/Pages/CardsList.qml</file>
-        <file>qml/Mysthea/Pages/CardsReferencePage.qml</file>
-        <file>qml/Mysthea/Pages/DetailDelegate.qml</file>
-        <file>qml/Mysthea/Pages/DetailPage.qml</file>
-        <file>qml/Mysthea/Pages/GameSetup.qml</file>
-        <file>qml/Mysthea/Pages/GameSetupMap.qml</file>
-        <file>qml/Mysthea/Pages/GameSetupModel.qml</file>
-        <file>qml/Mysthea/Pages/GameSetupStep.qml</file>
-        <file>qml/Mysthea/Pages/LanguageListModel.qml</file>
-        <file>qml/Mysthea/Pages/Lore.qml</file>
-        <file>qml/Mysthea/Pages/LoreModel.qml</file>
-        <file>qml/Mysthea/Pages/MainMenu.qml</file>
-        <file>qml/Mysthea/Pages/PageName.qml</file>
-        <file>qml/Mysthea/Pages/Rulebook.qml</file>
-        <file>qml/Mysthea/Pages/TableOfContents.qml</file>
-        <file>qml/Mysthea/Pages/TableOfContentsModel.qml</file>
-        <file>qml/Mysthea/Pages/qmldir</file>
-        <file>qml/main.qml</file>
-        <file>qtquickcontrols2.conf</file>
+        <file>qml/Mysthea/CardsList.qml</file>
+        <file>qml/Mysthea/CardsReferencePage.qml</file>
+        <file>qml/Mysthea/DetailDelegate.qml</file>
+        <file>qml/Mysthea/DetailPage.qml</file>
+        <file>qml/Mysthea/GameSetup.qml</file>
+        <file>qml/Mysthea/GameSetupMap.qml</file>
+        <file>qml/Mysthea/GameSetupModel.qml</file>
+        <file>qml/Mysthea/GameSetupStep.qml</file>
+        <file>qml/Mysthea/LanguageListModel.qml</file>
+        <file>qml/Mysthea/Lore.qml</file>
+        <file>qml/Mysthea/LoreModel.qml</file>
+        <file>style/MystheaUniverse/Pages/PageName.qml</file>
+        <file>qml/Mysthea/Rulebook.qml</file>
+        <file>qml/Mysthea/TableOfContents.qml</file>
+        <file>qml/Mysthea/TableOfContentsModel.qml</file>
+        <file>qml/Mysthea/qmldir</file>
+        <file>qml/Icaion/qmldir</file>
+        <file>qml/TheFall/qmldir</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
@@ -36,6 +37,9 @@
         <file>style/MystheaUniverse/Components/SearchField.qml</file>
         <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
+        <file>style/MystheaUniverse/Pages/qmldir</file>
+        <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
+        <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/Icon.qml</file>

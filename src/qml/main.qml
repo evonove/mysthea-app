@@ -6,11 +6,12 @@ import QtQuick.Controls.Material 2.4
 import QtQml.Models 2.1
 import QtGraphicalEffects 1.0
 
-import Mysthea.Pages 1.0
+import Mysthea 1.0 as Mysthea
 import Mysthea.Models 1.0
 import Translations 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
+import MystheaUniverse.Pages 1.0
 
 ApplicationWindow {
     id: root
@@ -100,10 +101,10 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 appContents: [
-                    CardsReferencePage {},
-                    GameSetup {},
-                    Rulebook {},
-                    Lore {}
+                    Mysthea.CardsReferencePage {},
+                    Mysthea.GameSetup {},
+                    Mysthea.Rulebook {},
+                    Mysthea.Lore {}
                 ]
             }
         }
