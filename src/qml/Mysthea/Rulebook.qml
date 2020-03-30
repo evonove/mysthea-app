@@ -7,6 +7,7 @@ import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Pages 1.0
 
 Rulebook {
+    backgroundImageSource: "qrc:/assets/images/cards-bg.jpg"
     rulebooksModel: ListModel {
         ListElement {
             language: "Deutsch"

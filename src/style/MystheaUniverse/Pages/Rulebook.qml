@@ -14,9 +14,10 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
     property alias rulebooksModel: _languageListView.model
+    property alias backgroundImageSource: _backgroundImage.source
 
     background: Image {
-        source: "qrc:/assets/images/cards-bg.jpg"
+        id: _backgroundImage
         fillMode: Image.PreserveAspectCrop
         smooth: false
 
