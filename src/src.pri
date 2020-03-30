@@ -29,9 +29,11 @@ SOURCES += \
 lupdate_only{
     SOURCES += \
         $$PWD/qml/Mysthea/*.qml \
-        $$PWD/qml/Mysthea/Components/*.qml \
-        $$PWD/qml/Mysthea/Pages/*.qml \
-        $$PWD/qml/Mysthea/Theme/*.qml \
+        $$PWD/qml/Icaion/*.qml \
+        $$PWD/qml/TheFall/*.qml \
+        $$PWD/style/MystheaUniverse/Compoents/*.qml \
+        $$PWD/style/MystheaUniverse/Pages/*.qml \
+        $$PWD/style/MystheaUniverse/Theme/*.qml \
         $$PWD/qml/*.qml
 }
 

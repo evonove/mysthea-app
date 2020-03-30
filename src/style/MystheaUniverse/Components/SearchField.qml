@@ -1,47 +1,46 @@
-import QtQuick 2.11
-import QtQuick.Templates 2.4
-import QtQuick.Controls 2.4
-import QtQuick.Controls.impl 2.4
-import QtQuick.Controls.Material 2.4
-import QtQuick.Layouts 1.3
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Controls.impl 2.14
+import QtQuick.Layouts 1.14
 
 import MystheaUniverse.Theme 1.0
 
 TextField {
     id: control
 
-    implicitHeight: 48
-    topPadding: 8
-    leftPadding: 54
-    bottomPadding: 8
+    property color borderColor
 
-    Material.theme: Material.Darks
-    Material.accent: "plum"
+    implicitHeight: 48
+    topPadding: 13
+    bottomPadding: 13
+    leftPadding: 64
+    rightPadding: 19
 
     Label {
         id: iconSearch
-        anchors.fill: parent
+        height: parent.height
+        leftPadding: 19
+
         text: Icon.search
+        color: control.activeFocus ? Palette.black : Palette.placeholderText
         font.pixelSize: 24
         font.family: "Material Icons"
-        color: control.Material.primaryTextColor
-        opacity: 0.5
-        leftPadding: 16
-        rightPadding: 16
         verticalAlignment: control.verticalAlignment
     }
 
     PlaceholderText {
         id: placeholder
         anchors.left: iconSearch.right
-        anchors.fill: parent
-        color: control.activeFocus ? control.Material.accentColor : control.Material.primaryTextColor
+        padding: 0
+
+        color: Palette.placeholderText
         verticalAlignment: control.verticalAlignment
     }
 
     background: Rectangle {
-        anchors.fill: control
-        color:  control.Material.dialogColor
-        radius: 3
+        color: Palette.white
+        border.color: control.borderColor
+        border.width: 1
+        radius: 5
     }
 }

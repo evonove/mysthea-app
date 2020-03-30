@@ -15,6 +15,7 @@ Page {
     property color mainColor
     property color whiteColor
     property color accentColor
+    property color headerSeparatorColor
 
     signal cardsReferenceClicked
     signal gameSetupClicked
@@ -56,6 +57,8 @@ Page {
         width: parent.width
         height: root.headerHeight
         z: 2
+
+        separatorColor: root.headerSeparatorColor
 
         rightAction: Action {
             id: _backAction

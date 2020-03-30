@@ -8,6 +8,7 @@ ToolBar {
     height: 54
 
     property alias logo: _image.source
+    property alias separatorColor: root.separatorColor
     property Action leftAction
     property Action rightAction
 

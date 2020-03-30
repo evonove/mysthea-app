@@ -24,12 +24,14 @@ QtObject {
     readonly property color cadillac: "#B7537A"
     readonly property color voodoo: "#4E3A53"
     readonly property color tequila: "#FEE4CD"
+    readonly property color placeholderText: "#7F7F7F"
 
     // Mysthea default colors
     readonly property color mystheaMain: "#FF1371"
     readonly property color pink: "#FFC1DC"
     readonly property color darkPink: "#CF2568"
     readonly property color lightPink: "#FFDEEC"
+    readonly property color pinkLavenderBlush: "#FFEDF5"
 
     // Icaion default colors
     readonly property color icaionMain: "#6DE4E9"

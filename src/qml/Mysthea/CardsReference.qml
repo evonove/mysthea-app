@@ -1,196 +1,62 @@
-import QtQuick 2.10
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.3
-import QtQuick.Controls.Material 2.2
+import QtQuick 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
 
-import Mysthea.Models 1.0
 import Mysthea 1.0
+import Mysthea.Models 1.0
 import MystheaUniverse.Components 1.0
+import MystheaUniverse.Pages 1.0 as BasePages
 import MystheaUniverse.Theme 1.0
-import MystheaUniverse.Pages 1.0
-import Translations 1.0
 
-Page {
+BasePages.CardsReference {
     id: root
-    title: qsTr("CARDS REFERENCE")
-    objectName: PageName.cardPage
-    property Action leftAction: null
-    property bool hasToolbarLine: true
 
     signal cardClicked(CardsProxyModel cards, int index)
 
     TypeProxyModel {
-        id: typeProxyModel
+        id: typeProxy
+    }
+    TypeComboBoxModel {
+        id: typeModel
     }
 
-    background: Image {
-        source: "qrc:/assets/images/cards-bg.jpg"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignBottom
+    CommandComboBoxModel {
+        id: commandModel
     }
 
-    BusyIndicator {
-        anchors.centerIn: parent
-        running: _contentLoader.status !== Loader.Ready
-    }
-
-    Loader {
-        id: _contentLoader
-        anchors.fill: parent
-        asynchronous: true
-        sourceComponent: _content
-    }
-
-    Component {
+    sourceComponent: Component {
         id: _content
-        Flickable {
+
+        Column {
+            id: content
             anchors.fill: parent
-            contentWidth: width
-            contentHeight: content.height
-            clip: true
 
-            ScrollIndicator.vertical: ScrollIndicator {
-            }
-
-            // We created this connection because the currentText of combobox doesn't change when changing
-            // language and its displayText will not update.
-            Connections {
-                target: TranslationsManager
-                onCurrentLanguageChanged: {
-                    typeCombo.displayText = Qt.binding(function () {
-                        return typeComboModel.data(typeComboModel.index(
-                                                       typeCombo.currentIndex,
-                                                       0),
-                                                   TypeComboBoxModel.Type)
-                    })
-                    commandsCombo.displayText = Qt.binding(function () {
-                        return commandComboModel.data(
-                                    commandComboModel.index(
-                                        commandsCombo.currentIndex, 0),
-                                    CommandComboBoxModel.Command)
-                    })
-                }
-            }
-
-            Column {
-                id: content
+            CardsFiltersHeader {
+                id: _filtersHeader
                 width: parent.width
-                height: comboBoxSection.height + spacing + _listLoader.item.contentHeight
 
-                ToolBar {
-                    id: comboBoxSection
-                    padding: 16
+                typeProxyModel: typeProxy
+                typeComboBoxModel: typeModel
+                commandComboBoxModel: commandModel
 
-                    width: parent.width
-                    background: Rectangle {
-                        anchors.bottom: parent.bottom
-                        width: root.width
-                        height: 1
-                        color: Palette.white
-                    }
+                separatorColor: root.searchFieldBorderColor
+            }
 
-                    ColumnLayout {
-                        anchors.fill: parent
-                        spacing: 16
+            Flickable {
+                width: parent.width
+                height: parent.height - _filtersHeader.height
+                contentWidth: width
+                contentHeight: _listLoader.height
+                clip: true
 
-                        RowLayout {
-                            id: searchBar
-
-                            SearchField {
-                                id: _searchField
-
-                                placeholderText: qsTr("Search cards by code")
-                                font.pixelSize: 18
-                                font.letterSpacing: 0
-                                Layout.fillWidth: true
-
-                                onTextEdited: typeProxyModel.setCodeFilter(
-                                                  _searchField.text)
-                            }
-                        }
-
-                        RowLayout {
-                            spacing: 16
-
-                            Layout.fillWidth: true
-
-                            TextIconComboBox {
-                                id: typeCombo
-                                padding: 0
-                                textRole: "type"
-                                iconRole: "iconUrl"
-                                fillAvailableWidth: false
-                                model: TypeComboBoxModel {
-                                    id: typeComboModel
-                                }
-
-                                font.letterSpacing: 0
-
-                                Layout.fillWidth: true
-                                onActivated: {
-                                    typeProxyModel.setTypeFilter(
-                                                typeComboModel.data(
-                                                    typeComboModel.index(index,
-                                                                         0),
-                                                    TypeComboBoxModel.Key))
-
-                                    // In loader we don't have only listView so we check if the item has this property
-                                    if (_listLoader.item
-                                            && _listLoader.item.hasOwnProperty(
-                                                'positionViewAtBeginning')) {
-                                        _listLoader.item.positionViewAtBeginning()
-                                    }
-                                }
-                            }
-
-                            TextIconComboBox {
-                                id: commandsCombo
-                                padding: 0
-                                textRole: "command"
-                                iconRole: "iconUrl"
-                                fillAvailableWidth: true
-                                model: CommandComboBoxModel {
-                                    id: commandComboModel
-                                }
-
-                                font.letterSpacing: 0
-
-                                enabled: typeProxyModel.enableCommand
-                                Layout.fillWidth: true
-
-                                onActivated: {
-                                    typeProxyModel.setCommandFilter(
-                                                commandComboModel.data(
-                                                    commandComboModel.index(
-                                                        index, 0),
-                                                    CommandComboBoxModel.Key))
-                                    // In loader we don't have only listView so we check if the item has this property
-                                    if (_listLoader.item.hasOwnProperty(
-                                                'positionViewAtBeginning')) {
-                                        _listLoader.item.positionViewAtBeginning()
-                                    }
-                                }
-
-                                onEnabledChanged: {
-                                    if (!enabled) {
-                                        currentIndex = 0
-                                        displayIcon = ""
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                ScrollIndicator.vertical: ScrollIndicator {}
 
                 Loader {
                     id: _listLoader
                     width: parent.width
+
                     asynchronous: true
-                    sourceComponent: typeProxyModel.size
-                                     > 0 ? cardListComponent : emptyCardListComponent
+                    sourceComponent: typeProxy.size > 0 ? cardListComponent : emptyCardListComponent
                 }
             }
         }
@@ -201,10 +67,10 @@ Page {
         CardsList {
             height: contentHeight
             width: parent.width
-            model: typeProxyModel
+            model: typeProxy
             interactive: false
             onCardClicked: {
-                var cardsModel = typeProxyModel.visibleCards
+                var cardsModel = typeProxy.visibleCards
                 root.cardClicked(cardsModel, cardsModel.indexOf(clickedCode))
             }
         }

@@ -8,6 +8,8 @@ import MystheaUniverse.Theme 1.0
 T.ToolBar {
     id: control
 
+    property alias separatorColor: _separator.color
+
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             contentWidth + leftPadding + rightPadding)
     implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
@@ -18,9 +20,9 @@ T.ToolBar {
         color: Palette.background
 
         Rectangle {
+            id: _separator
             width: parent.width
-            height: 2
-            color: Palette.pink
+            height: 1
             anchors.bottom: parent.bottom
         }
     }
