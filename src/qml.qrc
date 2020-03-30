@@ -5,7 +5,7 @@
         <file>images/tabula-logo.png</file>
         <file>qml/Icaion/CardsReference.qml</file>
         <file>qml/Icaion/GameSetup.qml</file>
-        <file>qml/Icaion/Lore.qml</file>
+        <file>qml/Icaion/Extras.qml</file>
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
         <file>qml/Mysthea/CardsList.qml</file>
@@ -17,6 +17,8 @@
         <file>qml/Mysthea/GameSetupModel.qml</file>
         <file>qml/Mysthea/GameSetupStep.qml</file>
         <file>qml/Mysthea/LanguageListModel.qml</file>
+        <file>qml/Mysthea/Extras.qml</file>
+        <file>qml/Mysthea/ExtrasMenu.qml</file>
         <file>qml/Mysthea/Lore.qml</file>
         <file>qml/Mysthea/LoreModel.qml</file>
         <file>qml/Mysthea/Rulebook.qml</file>
@@ -25,7 +27,7 @@
         <file>qml/Mysthea/qmldir</file>
         <file>qml/TheFall/CardsReference.qml</file>
         <file>qml/TheFall/GameSetup.qml</file>
-        <file>qml/TheFall/Lore.qml</file>
+        <file>qml/TheFall/Extras.qml</file>
         <file>qml/TheFall/Rulebook.qml</file>
         <file>qml/TheFall/qmldir</file>
         <file>qml/main.qml</file>
@@ -35,7 +37,7 @@
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
         <file>style/MystheaUniverse/Components/MainDrawer.qml</file>
-        <file>style/MystheaUniverse/Components/ProjectButton.qml</file>
+        <file>style/MystheaUniverse/Components/ImageButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioIndicator.qml</file>
         <file>style/MystheaUniverse/Components/RoundButton.qml</file>
@@ -44,6 +46,7 @@
         <file>style/MystheaUniverse/Components/SearchField.qml</file>
         <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
+        <file>style/MystheaUniverse/Pages/Extras.qml</file>
         <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>

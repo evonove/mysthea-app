@@ -106,7 +106,7 @@ ApplicationWindow {
                     Mysthea.CardsReference {},
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},
-                    Mysthea.Lore {}
+                    Mysthea.Extras {}
                 ]
             }
         }
@@ -123,7 +123,7 @@ ApplicationWindow {
                     Icaion.CardsReference {},
                     Icaion.GameSetup {},
                     Icaion.Rulebook {},
-                    Icaion.Lore {}
+                    Icaion.Extras {}
                 ]
             }
         }
@@ -140,7 +140,7 @@ ApplicationWindow {
                     TheFall.CardsReference {},
                     TheFall.GameSetup {},
                     TheFall.Rulebook {},
-                    TheFall.Lore {}
+                    TheFall.Extras {}
                 ]
             }
         }
@@ -152,6 +152,14 @@ ApplicationWindow {
             State {
                 name: PageName.mystheaPage
                 when: _mainStackView.currentItem.objectName === PageName.mystheaPage
+            },
+            State {
+                name: PageName.icaionPage
+                when: _mainStackView.currentItem.objectName === PageName.icaionPage
+            },
+            State {
+                name: PageName.theFallPage
+                when: _mainStackView.currentItem.objectName === PageName.theFallPage
             }
         ]
     }

@@ -1,27 +1,29 @@
 import QtQuick 2.0
-import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
-import QtQuick.Controls.Material 2.4
+import QtQuick.Controls 2.5
+import QtQuick.Controls.Material 2.5
 
+import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
+import Mysthea 1.0 as Mysthea
+
 
 Page {
     id: root
-    objectName: PageName.homePage
+    objectName: PageName.extrasPage
 
     property Action leftAction: null
     property bool hasToolbarLine: false
 
-    signal mystheaClicked
-    signal icaionClicked
-    signal theFallClicked
+    signal loreClicked
+    signal artworksClicked
+    signal miniaturesClicked
 
     padding: 16
 
     background: Rectangle {
-        color: Palette.mineShaft
-        opacity: 0.29
+        color: "black"
     }
 
     ColumnLayout {
@@ -30,31 +32,29 @@ Page {
         spacing: 18
 
         ImageButton {
-            mainColor: Palette.mystheaMain
+            label: qsTr("LORE")
             backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
-            logoImageSource: "qrc:/assets/images/mysthea_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.mystheaClicked()
+            onClicked: root.loreClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
         ImageButton {
-            mainColor: Palette.icaionMain
+            label: qsTr("ARTWORKS")
             backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
-            logoImageSource: "qrc:/assets/images/icaion_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.icaionClicked()
+            onClicked: root.artworksClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
         ImageButton {
-            mainColor: Palette.thefallMain
+            label: qsTr("MINIATURES")
             backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
-            logoImageSource: "qrc:/assets/images/the_fall_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: root.theFallClicked()
+            onClicked: root.miniaturesClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
     }
+
 }

@@ -46,7 +46,6 @@ AbstractButton {
             id: _label
             color: "white"
             font.pixelSize: 25
-            font.letterSpacing: 1
             font.weight: Font.Bold
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom

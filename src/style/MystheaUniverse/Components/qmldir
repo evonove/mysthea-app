@@ -4,7 +4,7 @@ Button 1.0 Button.qml
 ColorComboBox 1.0 ColorComboBox.qml
 Header 1.0 Header.qml
 MainDrawer 1.0 MainDrawer.qml
-ProjectButton 1.0 ProjectButton.qml
+ImageButton 1.0 ImageButton.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
 RadioLanguage 1.0 RadioButton.qml
 RoundButton 1.0 RoundButton.qml
