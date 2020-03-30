@@ -31,7 +31,7 @@ Page {
         anchors.fill: parent
         spacing: 18
 
-        ExtrasButton {
+        ImageButton {
             label: qsTr("LORE")
             backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
@@ -39,7 +39,7 @@ Page {
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
-        ExtrasButton {
+        ImageButton {
             label: qsTr("ARTWORKS")
             backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
@@ -47,7 +47,7 @@ Page {
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
-        ExtrasButton {
+        ImageButton {
             label: qsTr("MINIATURES")
             backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"

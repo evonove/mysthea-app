@@ -29,7 +29,7 @@ Page {
         anchors.fill: parent
         spacing: 18
 
-        ProjectButton {
+        ImageButton {
             mainColor: Palette.mystheaMain
             backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
             logoImageSource: "qrc:/assets/images/mysthea_logo.png"
@@ -38,7 +38,7 @@ Page {
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
-        ProjectButton {
+        ImageButton {
             mainColor: Palette.icaionMain
             backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
             logoImageSource: "qrc:/assets/images/icaion_logo.png"
@@ -47,7 +47,7 @@ Page {
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
-        ProjectButton {
+        ImageButton {
             mainColor: Palette.thefallMain
             backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
             logoImageSource: "qrc:/assets/images/the_fall_logo.png"

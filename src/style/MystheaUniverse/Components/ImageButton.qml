@@ -7,7 +7,9 @@ AbstractButton {
     id: root
     property alias backgroundImageSource: _backgroundImage.source
     property alias indicatorImageSource: _indicatorImage.icon.source
+    property alias logoImageSource: _logoImage.source
     property alias label: _label.text
+    property color mainColor: "white"
 
     padding: 18
 
@@ -25,14 +27,8 @@ AbstractButton {
                 }
             }
         }
-        Label {
-            id: _label
-            color: "white"
-            font.pixelSize: 25
-            font.letterSpacing: 1
-            font.weight: Font.Bold
-            topPadding: 10
-            bottomPadding: 10
+        Image {
+            id: _logoImage
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
         }
@@ -41,11 +37,19 @@ AbstractButton {
             color: "transparent"
             radius: 10
             border.width: 2
-            border.color: "white"
+            border.color: root.mainColor
         }
     }
 
     contentItem: Item {
+        Label {
+            id: _label
+            color: "white"
+            font.pixelSize: 25
+            font.weight: Font.Bold
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+        }
         IconLabel {
             id: _indicatorImage
             anchors.right: parent.right
@@ -53,7 +57,7 @@ AbstractButton {
 
             icon.width: 16
             icon.height: 16
-            icon.color: "white"
+            icon.color: root.mainColor
         }
     }
 }

@@ -35,10 +35,9 @@
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
-        <file>style/MystheaUniverse/Components/ExtrasButton.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
         <file>style/MystheaUniverse/Components/MainDrawer.qml</file>
-        <file>style/MystheaUniverse/Components/ProjectButton.qml</file>
+        <file>style/MystheaUniverse/Components/ImageButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioIndicator.qml</file>
         <file>style/MystheaUniverse/Components/RoundButton.qml</file>
