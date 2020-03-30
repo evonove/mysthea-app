@@ -30,7 +30,6 @@
         <file>qml/TheFall/qmldir</file>
         <file>qml/main.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
@@ -45,9 +44,11 @@
         <file>style/MystheaUniverse/Components/SearchField.qml</file>
         <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
-        <file>style/MystheaUniverse/Pages/qmldir</file>
         <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
+        <file>style/MystheaUniverse/Pages/PageName.qml</file>
+        <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
+        <file>style/MystheaUniverse/Pages/qmldir</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/Icon.qml</file>

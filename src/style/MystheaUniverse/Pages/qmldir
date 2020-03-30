@@ -1,4 +1,5 @@
 module MystheaUniverse.Pages
 GameSetup 1.0 GameSetup.qml
 MainMenu 1.0 MainMenu.qml
+Rulebook 1.0 Rulebook.qml
 singleton PageName 1.0 PageName.qml
