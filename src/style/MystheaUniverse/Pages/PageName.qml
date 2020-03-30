@@ -9,6 +9,7 @@ QtObject {
     property string cardPage: "cardsReferencePage"
     property string gameSetupPage: "gameSetupPage"
     property string rulebookPage: "rulebookPage"
+    property string extrasPage: "extrasPage"
     property string lorePage: "lorePage"
     property string tableOfContentsPage: "tableOfContentsPage"
     property string mystheaPage: "mystheaPage"

@@ -12,3 +12,4 @@ RulebookButton 1.0 RulebookButton.qml
 ScrollIndicator 1.0 ScrollIndicator.qml
 SearchField 1.0 SearchField.qml
 TextIconComboBox 1.0 TextIconComboBox.qml
+ExtrasButton 1.0 ExtrasButton.qml
