@@ -10,22 +10,17 @@ AbstractButton {
     property alias logoImageSource: _logoImage.source
     property alias label: _label.text
     property color mainColor: "white"
+    property bool disabled: false
 
     padding: 18
 
     background: Item {
+        id: _item
         Image {
             id: _backgroundImage
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
             layer.enabled: true
-            layer.effect: OpacityMask {
-                maskSource: Rectangle {
-                    width: _backgroundImage.width
-                    height: _backgroundImage.height
-                    radius: 10
-                }
-            }
         }
         Image {
             id: _logoImage
@@ -38,6 +33,20 @@ AbstractButton {
             radius: 10
             border.width: 2
             border.color: root.mainColor
+        }
+
+        Desaturate {
+            anchors.fill: _item
+            source: _item
+            desaturation: disabled ? 1.0 : 0.0
+        }
+
+        OpacityMask {
+            maskSource: Rectangle {
+                width: _backgroundImage.width
+                height: _backgroundImage.height
+                radius: 10
+            }
         }
     }
 
@@ -57,7 +66,7 @@ AbstractButton {
 
             icon.width: 16
             icon.height: 16
-            icon.color: root.mainColor
+            icon.color: root.disabled ? "white" : root.mainColor
         }
     }
 }

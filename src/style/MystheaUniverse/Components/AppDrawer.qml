@@ -62,35 +62,45 @@ Drawer {
 
     ObjectModel {
         id: drawerMenuElement
-        ImageButton {
-            id: mystheaDelegate
-            mainColor: Palette.mystheaMain
-            backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
-            logoImageSource: "qrc:/assets/images/mysthea_logo.png"
-            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: menuDrawer.mystheaClicked()
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        ImageButton {
-            id: icaionDelegate
-            mainColor: Palette.icaionMain
-            backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
-            logoImageSource: "qrc:/assets/images/icaion_logo.png"
-            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: menuDrawer.icaionClicked()
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        ImageButton {
-            id: theFallDelegate
-            mainColor: Palette.thefallMain
-            backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
-            logoImageSource: "qrc:/assets/images/the_fall_logo.png"
-            indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-            onClicked: menuDrawer.theFallClicked()
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+
+        ColumnLayout {
+            spacing: 18
+            width: menuDrawer.width
+            height: 512
+
+            ImageButton {
+                id: mystheaDelegate
+                disabled: false
+                mainColor: Palette.mystheaMain
+                backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+                logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                onClicked: menuDrawer.mystheaClicked()
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
+            ImageButton {
+                id: icaionDelegate
+                disabled: true
+                mainColor: Palette.icaionMain
+                backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
+                logoImageSource: "qrc:/assets/images/icaion_logo.png"
+                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                onClicked: menuDrawer.icaionClicked()
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
+            ImageButton {
+                id: theFallDelegate
+                disabled: true
+                mainColor: Palette.thefallMain
+                backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
+                logoImageSource: "qrc:/assets/images/the_fall_logo.png"
+                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                onClicked: menuDrawer.theFallClicked()
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
         }
         Rectangle {
             width: menuDrawer.width

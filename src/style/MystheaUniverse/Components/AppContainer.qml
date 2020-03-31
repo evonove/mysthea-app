@@ -83,16 +83,16 @@ Page {
         // and avoid pushing a page while one is being
         // loaded
         onMystheaClicked: {
-            root.mystheaClicked()
             drawer.close()
+            root.mystheaClicked()
         }
         onIcaionClicked: {
-            root.icaionClicked()
             drawer.close()
+            root.icaionClicked()
         }
         onTheFallClicked: {
-            root.theFallClicked()
             drawer.close()
+            root.theFallClicked()
         }
     }
 
