@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/fonts/FuturaPTMedium.otf</file>
+        <file>assets/fonts/FuturaPTBold.otf</file>
+        <file>assets/fonts/FuturaPTBook.otf</file>
+        <file>assets/fonts/FuturaPTLightOblique.otf</file>
+        <file>assets/fonts/MaterialIcons-Regular.ttf</file>
+        <file>assets/fonts/EraIcons.ttf</file>
+    </qresource>
+</RCC>
