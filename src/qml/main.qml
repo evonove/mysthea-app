@@ -49,22 +49,22 @@ ApplicationWindow {
 
     // Loads Material icons font
     FontLoader {
-        source: "qrc:/fonts/MaterialIcons-Regular.ttf"
+        source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
     }
     FontLoader {
-        source: "qrc:/fonts/FuturaPTMedium.otf"
+        source: "qrc:/assets/fonts/FuturaPTMedium.otf"
     }
     FontLoader {
-        source: "qrc:/fonts/FuturaPTBold.otf"
+        source: "qrc:/assets/fonts/FuturaPTBold.otf"
     }
     FontLoader {
-        source: "qrc:/fonts/FuturaPTBook.otf"
+        source: "qrc:/assets/fonts/FuturaPTBook.otf"
     }
     FontLoader {
-        source: "qrc:/fonts/FuturaPTLightOblique.otf"
+        source: "qrc:/assets/fonts/FuturaPTLightOblique.otf"
     }
     FontLoader {
-        source: "qrc:/fonts/EraIcons.ttf"
+        source: "qrc:/assets/fonts/EraIcons.ttf"
     }
 
     StackView {
