@@ -22,6 +22,10 @@ Page {
     signal rulebookClicked
     signal extrasClicked
 
+    signal mystheaClicked
+    signal icaionClicked
+    signal theFallClicked
+
     QtObject {
         // These functions take tracks of swipe history.
         id: history
@@ -61,8 +65,34 @@ Page {
         separatorColor: root.headerSeparatorColor
 
         rightAction: Action {
-            id: _backAction
+            id: drawerAction
             icon.source: "qrc:/assets/icons/menu.svg"
+            onTriggered: drawer.open()
+        }
+    }
+
+    AppDrawer {
+        id: drawer
+        topPadding: root.safeTopMargin
+        width: Math.min(0.8 * root.width, 320)
+        height: root.height
+        interactive: _mainStackView.currentItem.leftAction === drawerAction
+        state: pageStatesList.state
+
+        // This property is used to throttle clicks
+        // and avoid pushing a page while one is being
+        // loaded
+        onMystheaClicked: {
+            root.mystheaClicked()
+            drawer.close()
+        }
+        onIcaionClicked: {
+            root.icaionClicked()
+            drawer.close()
+        }
+        onTheFallClicked: {
+            root.theFallClicked()
+            drawer.close()
         }
     }
 

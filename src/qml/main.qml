@@ -109,6 +109,9 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
+                onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
+                onTheFallClicked: root.pushToStack(_theFallApp, PageName.theFallPage)
                 appContents: [
                     Mysthea.CardsReference {
                         searchFieldBorderColor: Palette.pinkLavenderBlush
@@ -133,6 +136,9 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
+                onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
+                onTheFallClicked: root.pushToStack(_theFallApp, PageName.theFallPage)
                 appContents: [
                     Icaion.CardsReference {},
                     Icaion.GameSetup {},
@@ -151,6 +157,9 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
+                onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
+                onTheFallClicked: root.pushToStack(_theFallApp, PageName.theFallPage)
                 appContents: [
                     TheFall.CardsReference {},
                     TheFall.GameSetup {},

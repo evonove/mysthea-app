@@ -34,6 +34,7 @@
         <file>qtquickcontrols2.conf</file>
         <file>style/MystheaUniverse/ComboBox.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
+        <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>
         <file>style/MystheaUniverse/Pages/CardsReference.qml</file>
