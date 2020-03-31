@@ -13,6 +13,7 @@ ToolBar {
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 
+    implicitHeight: 136
     padding: 16
 
     ColumnLayout {
@@ -23,7 +24,9 @@ ToolBar {
             id: _searchField
 
             borderColor: root.separatorColor
-            placeholderText: qsTr("Search cards by code")
+            placeholderText: qsTr("Search cards by code")            
+            font.family: "Futura PT Book"
+            font.pixelSize: 18
 
             Layout.fillWidth: true
 

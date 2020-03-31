@@ -13,9 +13,10 @@ RESOURCES += \
     $$PWD/era-iii.qrc \
     $$PWD/era-x.qrc \
     $$PWD/event.qrc \
+    $$PWD/fonts.qrc \
     $$PWD/hero.qrc \
     $$PWD/qml.qrc \
-    $$PWD/translations.qrc
+    $$PWD/translations.qrc \
 
 include($$PWD/src.pri)
 

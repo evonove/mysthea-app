@@ -14,6 +14,8 @@ RowLayout {
     Label {
         id: _label
         elide: Text.ElideRight
+        font.pixelSize: 18
+        font.letterSpacing: 0
 
         Layout.fillHeight: false
         Layout.fillWidth: false

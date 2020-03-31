@@ -58,7 +58,7 @@ T.TabButton {
     icon.width: 24
     icon.height: 24
     icon.color: control.checked ? control.checkedColor : control.uncheckedColor
-    font.pixelSize: 14
+    font.pixelSize: 12
 
     display: IconLabel.TextUnderIcon
 

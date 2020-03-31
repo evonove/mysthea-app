@@ -49,16 +49,22 @@ ApplicationWindow {
 
     // Loads Material icons font
     FontLoader {
-        source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
+        source: "qrc:/fonts/MaterialIcons-Regular.ttf"
     }
     FontLoader {
-        source: "qrc:/assets/fonts/YanoneKaffeesatz-Regular.ttf"
+        source: "qrc:/fonts/FuturaPTMedium.otf"
     }
     FontLoader {
-        source: "qrc:/assets/fonts/YanoneKaffeesatz-Bold.ttf"
+        source: "qrc:/fonts/FuturaPTBold.otf"
     }
     FontLoader {
-        source: "qrc:/assets/fonts/EraIcons.ttf"
+        source: "qrc:/fonts/FuturaPTBook.otf"
+    }
+    FontLoader {
+        source: "qrc:/fonts/FuturaPTLightOblique.otf"
+    }
+    FontLoader {
+        source: "qrc:/fonts/EraIcons.ttf"
     }
 
     StackView {
@@ -107,7 +113,8 @@ ApplicationWindow {
                     Mysthea.CardsReference {
                         searchFieldBorderColor: Palette.pinkLavenderBlush
                         onCardClicked: {
-                            console.log("Open detail of card with index:", index)
+                            console.log("Open detail of card with index:",
+                                        index)
                         }
                     },
                     Mysthea.GameSetup {},
