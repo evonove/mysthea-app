@@ -29,7 +29,8 @@ ApplicationWindow {
         // throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the current visible page
+        // avoid to push a page if it is the
+        // current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
@@ -128,7 +129,8 @@ ApplicationWindow {
                     Mysthea.CardsReference {
                         searchFieldBorderColor: Palette.pinkLavenderBlush
                         onCardClicked: {
-                            console.log("Open detail of card with index:", index)
+                            console.log("Open detail of card with index:",
+                                        index)
                         }
                     },
                     Mysthea.GameSetup {},

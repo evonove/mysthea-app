@@ -43,8 +43,8 @@ ListView {
                         padding: 0
 
                         text: model.typeText
-                        font.letterSpacing: 0.5
-                        font.pixelSize: 28
+                        font.letterSpacing: 0
+                        font.pixelSize: 18
                         color: Palette.white
                     }
                 }
@@ -60,16 +60,15 @@ ListView {
                             height: parent.height
                             padding: 0
                             text: qsTr("Era")
-                            font.pixelSize: 28
-                            font.letterSpacing: 0.5
-                            font.weight: Font.Bold
+                            font.pixelSize: 18
+                            font.letterSpacing: 0
                             color: Palette.grayNurse
                             verticalAlignment: Text.AlignVCenter
                         }
 
                         Image {
                             fillMode: Image.PreserveAspectFit
-                            sourceSize.height: 24
+                            sourceSize.height: 18
                             source: {
                                 switch (model.type) {
                                 case 1:
@@ -98,7 +97,7 @@ ListView {
                 implicitHeight: Math.ceil(
                                     cards.size / categoryPane.numElementsInRow) * cellHeight
 
-                cellHeight: cellWidth * 1.815533980582524
+                cellHeight: cellWidth * 1.9
                 cellWidth: categoryPane.currentCellWidth
 
                 Layout.fillWidth: true
@@ -144,9 +143,9 @@ ListView {
                         Label {
                             id: _cardCodeLabel
                             text: code
-                            font.weight: Font.Bold
-                            font.letterSpacing: 0.5
-                            font.pixelSize: 24
+                            font.family: "Futura PT Bold"
+                            font.letterSpacing: 0
+                            font.pixelSize: 25
 
                             color: {
                                 if (command === 1) {
