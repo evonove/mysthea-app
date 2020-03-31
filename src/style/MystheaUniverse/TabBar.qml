@@ -69,6 +69,7 @@ T.TabBar {
     }
 
     background: Rectangle {
+        implicitHeight: 49
         color: Palette.background
 
         Rectangle {
