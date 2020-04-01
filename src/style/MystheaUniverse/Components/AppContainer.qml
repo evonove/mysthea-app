@@ -11,7 +11,6 @@ Page {
     property alias logo: _header.logo
     property alias appContents: _swipe.contentData
     property alias rightAction: _header.rightAction
-    property alias page: _drawer.page
 
     property color mainColor
     property color whiteColor
@@ -62,11 +61,6 @@ Page {
         width: parent.width
         height: root.headerHeight
         separatorColor: root.headerSeparatorColor
-        rightAction: Action {
-            id: drawerAction
-            icon.source: "qrc:/assets/icons/menu.svg"
-            onTriggered: _drawer.open()
-        }
 
     }
 
@@ -86,16 +80,6 @@ Page {
             }
         }
     }
-
-    AppDrawer {
-        id: _drawer
-        width: Math.min(0.8 * root.width, 320)
-        height: root.height
-        onMystheaClicked: root.mystheaClicked()
-        onIcaionClicked: root.icaionClicked()
-        onTheFallClicked: root.theFallClicked()
-    }
-
 
     footer: TabBar {
         id: _tabbar

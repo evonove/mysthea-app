@@ -12,7 +12,12 @@ import Translations 1.0
 Drawer {
     id: root
 
-    property string page
+    property alias activeBackgroundImageSource: _activeBackground.backgroundImageSource
+    property alias activeLogoImageSource: _activeBackground.logoImageSource
+    property alias activeColor: _activeBorder.color
+    property alias mystheaButtonVisible: mystheaDelegate.visible
+    property alias icaionButtonVisible: icaionDelegate.visible
+    property alias theFallButtonVisible: theFallDelegate.visible
 
     signal mystheaClicked
     signal icaionClicked
@@ -30,58 +35,21 @@ Drawer {
         id: _languageListModel
     }
 
-    property alias state: pagesDelegate.state
-
-    StateGroup {
-        id: pagesDelegate
-        states: [
-            State {
-                name: PageName.mystheaPage
-                PropertyChanges {
-                    target: mystheaDelegate
-                }
-            },
-            State {
-                name: PageName.icaionPage
-                PropertyChanges {
-                    target: icaionDelegate
-                }
-            },
-            State {
-                name: PageName.theFallPage
-                PropertyChanges {
-                    target: theFallDelegate
-                }
-            }
-        ]
-    }
-
     ObjectModel {
         id: drawerMenuElement
 
         ImageButton {
+            id: _activeBackground
             disabled: false
             rounded: false
             withBorder: false
-            backgroundImageSource: root.page === PageName.mystheaPage ?
-            "qrc:/assets/images/main_menu/mysthea_button_back.png"
-            : root.page === PageName.icaionPage ? "qrc:/assets/images/main_menu/icaion_button_back.png"
-            : root.page === PageName.theFallPage ? "qrc:/assets/images/main_menu/the_fall_button_back.png"
-            : ""
-            logoImageSource: root.page === PageName.mystheaPage ? "qrc:/assets/images/mysthea_logo.png"
-            : root.page === PageName.icaionPage ? "qrc:/assets/images/icaion_logo.png"
-            : root.page === PageName.theFallPage ? "qrc:/assets/images/the_fall_logo.png"
-            : ""
             width: parent.width
             height: 150
         }
         Rectangle {
+            id: _activeBorder
             width: root.width
             height: 1
-            color: root.page === PageName.mystheaPage ? Palette.mystheaMain
-            : root.page === PageName.icaionPage ? Palette.icaionMain
-            : root.page === PageName.theFallPage ? Palette.theFallMain
-            : "white"
             opacity: 1
         }
 
@@ -94,7 +62,6 @@ Drawer {
                 id: mystheaDelegate
                 disabled: true
                 rounded: true
-                visible: root.page !== PageName.mystheaPage
 
                 mainColor: Palette.mystheaMain
                 onClicked: {
@@ -113,7 +80,6 @@ Drawer {
                 id: icaionDelegate
                 disabled: true
                 rounded: true
-                visible: root.page !== PageName.icaionPage
 
                 mainColor: Palette.icaionMain
                 onClicked: {
@@ -132,7 +98,6 @@ Drawer {
                 id: theFallDelegate
                 disabled: true
                 rounded: true
-                visible: root.page !== PageName.theFallPage
 
                 mainColor: Palette.theFallMain
                 onClicked: {
