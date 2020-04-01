@@ -118,6 +118,7 @@ ApplicationWindow {
             id: _mystheaApp
             AppContainer {
                 id: _mysthea
+                objectName: PageName.mystheaPage
                 logo: "qrc:/assets/images/mysthea_logo.png"
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
@@ -142,6 +143,7 @@ ApplicationWindow {
             id: _icaionApp
             AppContainer {
                 id: _icaion
+                objectName: PageName.icaionPage
                 logo: "qrc:/assets/images/icaion_logo.png"
                 mainColor: Palette.icaionMain
                 whiteColor: Palette.lightPink
@@ -161,6 +163,7 @@ ApplicationWindow {
             id: _theFallApp
             AppContainer {
                 id: _theFall
+                objectName: PageName.theFallPage
                 logo: "qrc:/assets/images/the_fall_logo.png"
                 mainColor: Palette.theFallMain
                 whiteColor: Palette.lightPink
@@ -185,7 +188,7 @@ ApplicationWindow {
                 when: _mainStackView.currentItem.objectName === PageName.mystheaPage
                 PropertyChanges {
                     target: _drawer
-                    activeColor: Paletta.mystheaMain
+                    activeColor: Palette.mystheaMain
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/mysthea_logo.png"
                     mystheaButtonVisible: false
@@ -198,7 +201,7 @@ ApplicationWindow {
                 when: _mainStackView.currentItem.objectName === PageName.icaionPage
                 PropertyChanges {
                     target: _drawer
-                    activeColor: Paletta.icaionMain
+                    activeColor: Palette.icaionMain
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/icaion_logo.png"
                     mystheaButtonVisible: true
@@ -211,7 +214,7 @@ ApplicationWindow {
                 when: _mainStackView.currentItem.objectName === PageName.theFallPage
                 PropertyChanges {
                     target: _drawer
-                    activeColor: Paletta.theFallMain
+                    activeColor: Palette.theFallMain
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/the_fall_logo.png"
                     mystheaButtonVisible: true

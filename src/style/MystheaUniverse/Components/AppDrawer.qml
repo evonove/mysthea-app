@@ -12,8 +12,8 @@ import Translations 1.0
 Drawer {
     id: root
 
-    property alias activeBackgroundImageSource: _activeBackground.backgroundImageSource
-    property alias activeLogoImageSource: _activeBackground.logoImageSource
+    property alias activeBackgroundImageSource: _activeBackgroundImage.source
+    property alias activeLogoImageSource: _activeLogoImage.source
     property alias activeColor: _activeBorder.color
     property alias mystheaButtonVisible: mystheaDelegate.visible
     property alias icaionButtonVisible: icaionDelegate.visible
@@ -38,19 +38,27 @@ Drawer {
     ObjectModel {
         id: drawerMenuElement
 
-        ImageButton {
-            id: _activeBackground
-            disabled: false
-            rounded: false
-            withBorder: false
+        Item {
             width: parent.width
             height: 150
-        }
-        Rectangle {
-            id: _activeBorder
-            width: root.width
-            height: 1
-            opacity: 1
+
+            Image {
+                id: _activeBackgroundImage
+                fillMode: Image.PreserveAspectCrop
+                anchors.fill: parent
+            }
+            Image {
+                id: _activeLogoImage
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+            }
+            Rectangle {
+                id: _activeBorder
+                width: root.width
+                anchors.bottom: parent.bottom
+                height: 1
+                opacity: 1
+            }
         }
 
         ColumnLayout {
