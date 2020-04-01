@@ -59,15 +59,41 @@ Drawer {
     ObjectModel {
         id: drawerMenuElement
 
-        ColumnLayout {
-            spacing: 18
+        ImageButton {
+            disabled: false
+            rounded: false
+            withBorder: false
+            backgroundImageSource: root.page === PageName.mystheaPage ?
+            "qrc:/assets/images/main_menu/mysthea_button_back.png"
+            : root.page === PageName.icaionPage ? "qrc:/assets/images/main_menu/icaion_button_back.png"
+            : root.page === PageName.theFallPage ? "qrc:/assets/images/main_menu/the_fall_button_back.png"
+            : ""
+            logoImageSource: root.page === PageName.mystheaPage ? "qrc:/assets/images/mysthea_logo.png"
+            : root.page === PageName.icaionPage ? "qrc:/assets/images/icaion_logo.png"
+            : root.page === PageName.theFallPage ? "qrc:/assets/images/the_fall_logo.png"
+            : ""
+            width: parent.width
+            height: 150
+        }
+        Rectangle {
             width: root.width
-            height: 512
+            height: 1
+            color: root.page === PageName.mystheaPage ? Palette.mystheaMain
+            : root.page === PageName.icaionPage ? Palette.icaionMain
+            : root.page === PageName.theFallPage ? Palette.theFallMain
+            : "white"
+            opacity: 1
+        }
+
+        ColumnLayout {
+            spacing: 1
+            width: root.width
+            height: 256
 
             ImageButton {
                 id: mystheaDelegate
                 disabled: true
-                rounded: false
+                rounded: true
                 visible: root.page !== PageName.mystheaPage
 
                 mainColor: Palette.mystheaMain
@@ -81,6 +107,7 @@ Drawer {
 
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                Layout.margins: 8
             }
             ImageButton {
                 id: icaionDelegate
@@ -99,6 +126,7 @@ Drawer {
 
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                Layout.margins: 8
             }
             ImageButton {
                 id: theFallDelegate
@@ -106,7 +134,7 @@ Drawer {
                 rounded: true
                 visible: root.page !== PageName.theFallPage
 
-                mainColor: Palette.thefallMain
+                mainColor: Palette.theFallMain
                 onClicked: {
                     root.close()
                     root.theFallClicked()
@@ -117,6 +145,7 @@ Drawer {
 
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                Layout.margins: 8
             }
         }
         Rectangle {

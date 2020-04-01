@@ -12,6 +12,7 @@ AbstractButton {
     property color mainColor: "white"
     property bool disabled: false
     property bool rounded: false
+    property bool withBorder: true
 
     padding: 18
 
@@ -38,7 +39,7 @@ AbstractButton {
             maskSource: Rectangle {
                 width: _desaturate.width
                 height: _desaturate.height
-                radius: rounded ? 10 : 0
+                radius: root.rounded ? 10 : 0
             }
         }
 
@@ -51,9 +52,10 @@ AbstractButton {
         Rectangle {
             anchors.fill: parent
             color: "transparent"
-            radius: 10
+            radius: root.rounded ? 10 : 0
             border.width: 2
-            border.color: disabled ? "white" : root.mainColor
+            border.color: root.disabled ? "white" : root.mainColor
+            visible: root.withBorder
         }
     }
 

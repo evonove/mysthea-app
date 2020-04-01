@@ -50,7 +50,7 @@ Page {
             rounded: true
         }
         ImageButton {
-            mainColor: Palette.thefallMain
+            mainColor: Palette.theFallMain
             backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
             logoImageSource: "qrc:/assets/images/the_fall_logo.png"
             indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"

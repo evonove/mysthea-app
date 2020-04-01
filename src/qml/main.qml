@@ -155,7 +155,7 @@ ApplicationWindow {
                 id: _theFall
                 page: PageName.theFallPage
                 logo: "qrc:/assets/images/the_fall_logo.png"
-                mainColor: Palette.thefallMain
+                mainColor: Palette.theFallMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
