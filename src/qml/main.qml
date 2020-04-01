@@ -36,8 +36,7 @@ ApplicationWindow {
         // throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the
-        // current visible page
+        // avoid to push a page if it is the current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
@@ -104,6 +103,7 @@ ApplicationWindow {
             id: _mystheaApp
             AppContainer {
                 id: _mysthea
+                page: PageName.mystheaPage
                 logo: "qrc:/assets/images/mysthea_logo.png"
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
@@ -131,6 +131,7 @@ ApplicationWindow {
             id: _icaionApp
             AppContainer {
                 id: _icaion
+                page: PageName.icaionPage
                 logo: "qrc:/assets/images/icaion_logo.png"
                 mainColor: Palette.icaionMain
                 whiteColor: Palette.lightPink
@@ -152,6 +153,7 @@ ApplicationWindow {
             id: _theFallApp
             AppContainer {
                 id: _theFall
+                page: PageName.theFallPage
                 logo: "qrc:/assets/images/the_fall_logo.png"
                 mainColor: Palette.thefallMain
                 whiteColor: Palette.lightPink

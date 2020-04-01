@@ -8,9 +8,10 @@ Page {
     id: root
 
     property real headerHeight: 54
-
     property alias logo: _header.logo
     property alias appContents: _swipe.contentData
+    property alias rightAction: _header.rightAction
+    property alias page: _drawer.page
 
     property color mainColor
     property color whiteColor
@@ -60,46 +61,18 @@ Page {
         id: _header
         width: parent.width
         height: root.headerHeight
-        z: 2
-
         separatorColor: root.headerSeparatorColor
-
         rightAction: Action {
             id: drawerAction
             icon.source: "qrc:/assets/icons/menu.svg"
-            onTriggered: drawer.open()
+            onTriggered: _drawer.open()
         }
+
     }
 
-    AppDrawer {
-        id: drawer
-        topPadding: root.safeTopMargin
-        width: Math.min(0.8 * root.width, 320)
-        height: root.height
-        interactive: _mainStackView.currentItem.leftAction === drawerAction
-        state: pageStatesList.state
-
-        // This property is used to throttle clicks
-        // and avoid pushing a page while one is being
-        // loaded
-        onMystheaClicked: {
-            drawer.close()
-            root.mystheaClicked()
-        }
-        onIcaionClicked: {
-            drawer.close()
-            root.icaionClicked()
-        }
-        onTheFallClicked: {
-            drawer.close()
-            root.theFallClicked()
-        }
-    }
-
-    contentItem: SwipeView {
+    SwipeView {
         id: _swipe
-        width: parent.width
-        height: parent.height - header.height - footer.height
+        anchors.fill: parent
         focus: true
         interactive: false
 
@@ -113,6 +86,16 @@ Page {
             }
         }
     }
+
+    AppDrawer {
+        id: _drawer
+        width: Math.min(0.8 * root.width, 320)
+        height: root.height
+        onMystheaClicked: root.mystheaClicked()
+        onIcaionClicked: root.icaionClicked()
+        onTheFallClicked: root.theFallClicked()
+    }
+
 
     footer: TabBar {
         id: _tabbar

@@ -1,19 +1,18 @@
-import QtQuick 2.11
-import QtQml.Models 2.11
-import QtQuick.Controls.Material 2.4
-import QtQuick.Controls 2.4
-import QtGraphicalEffects 1.0
-import QtQuick.Layouts 1.3
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtGraphicalEffects 1.14
+import QtQuick.Layouts 1.14
+import QtQml.Models 2.14
 
-import Mysthea.Models 1.0
-import Mysthea 1.0
+import Mysthea 1.0 as M
 import MystheaUniverse.Pages 1.0
-import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
 import Translations 1.0
 
 Drawer {
-    id: menuDrawer
+    id: root
+
+    property string page
 
     signal mystheaClicked
     signal icaionClicked
@@ -22,12 +21,12 @@ Drawer {
     bottomPadding: 24
 
     background: Rectangle {
-        width: menuDrawer.width
-        height: menuDrawer.height
+        width: root.width
+        height: root.height
         color: Palette.mineShaft
     }
 
-    LanguageListModel {
+    M.LanguageListModel {
         id: _languageListModel
     }
 
@@ -40,21 +39,18 @@ Drawer {
                 name: PageName.mystheaPage
                 PropertyChanges {
                     target: mystheaDelegate
-                    Material.foreground: Palette.gallery
                 }
             },
             State {
                 name: PageName.icaionPage
                 PropertyChanges {
                     target: icaionDelegate
-                    Material.foreground: Palette.gallery
                 }
             },
             State {
                 name: PageName.theFallPage
                 PropertyChanges {
                     target: theFallDelegate
-                    Material.foreground: Palette.gallery
                 }
             }
         ]
@@ -65,45 +61,66 @@ Drawer {
 
         ColumnLayout {
             spacing: 18
-            width: menuDrawer.width
+            width: root.width
             height: 512
 
             ImageButton {
                 id: mystheaDelegate
-                disabled: false
+                disabled: true
+                rounded: false
+                visible: root.page !== PageName.mystheaPage
+
                 mainColor: Palette.mystheaMain
+                onClicked: {
+                    root.close()
+                    root.mystheaClicked()
+                }
                 backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
-                logoImageSource: "qrc:/assets/images/mysthea_logo.png"
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                onClicked: menuDrawer.mystheaClicked()
+                logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
             ImageButton {
                 id: icaionDelegate
                 disabled: true
+                rounded: true
+                visible: root.page !== PageName.icaionPage
+
                 mainColor: Palette.icaionMain
+                onClicked: {
+                    root.close()
+                    root.icaionClicked()
+                }
                 backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
-                logoImageSource: "qrc:/assets/images/icaion_logo.png"
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                onClicked: menuDrawer.icaionClicked()
+                logoImageSource: "qrc:/assets/images/icaion_logo.png"
+
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
             ImageButton {
                 id: theFallDelegate
                 disabled: true
+                rounded: true
+                visible: root.page !== PageName.theFallPage
+
                 mainColor: Palette.thefallMain
+                onClicked: {
+                    root.close()
+                    root.theFallClicked()
+                }
                 backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
-                logoImageSource: "qrc:/assets/images/the_fall_logo.png"
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                onClicked: menuDrawer.theFallClicked()
+                logoImageSource: "qrc:/assets/images/the_fall_logo.png"
+
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
         }
         Rectangle {
-            width: menuDrawer.width
+            width: root.width
             height: 1
             color: Palette.white
             opacity: 0.5
@@ -111,10 +128,9 @@ Drawer {
         ItemDelegate {
             id: languageItemDelegate
             checkable: true
-            width: menuDrawer.width
+            width: root.width
             height: 64
             topPadding: 21
-            Material.foreground: Palette.silverChalice
 
             contentItem: ColumnLayout {
                 id: content
@@ -242,15 +258,14 @@ Drawer {
             }
         }
         Rectangle {
-            width: menuDrawer.width
+            width: root.width
             height: 1
             color: Palette.white
             opacity: 0.5
         }
         ColumnLayout {
             id: _layout
-            width: menuDrawer.width
-            Material.foreground: Palette.silverChalice
+            width: root.width
             spacing: 8
             Label {
                 text: qsTr("Game created and produced by")
