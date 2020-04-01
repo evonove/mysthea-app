@@ -40,7 +40,7 @@ Drawer {
 
         Item {
             width: parent.width
-            height: 150
+            height: 135
 
             Image {
                 id: _activeBackgroundImage
@@ -56,15 +56,15 @@ Drawer {
                 id: _activeBorder
                 width: root.width
                 anchors.bottom: parent.bottom
-                height: 1
+                height: 2
                 opacity: 1
             }
         }
 
         ColumnLayout {
-            spacing: 1
+            spacing: 0
             width: root.width
-            height: 256
+            height: 228
 
             ImageButton {
                 id: mystheaDelegate
@@ -79,9 +79,9 @@ Drawer {
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
                 logoImageSource: "qrc:/assets/images/mysthea_logo.png"
 
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-                Layout.margins: 8
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredHeight: 100
+                Layout.preferredWidth: 283
             }
             ImageButton {
                 id: icaionDelegate
@@ -96,9 +96,9 @@ Drawer {
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
                 logoImageSource: "qrc:/assets/images/icaion_logo.png"
 
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-                Layout.margins: 8
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredHeight: 100
+                Layout.preferredWidth: 283
             }
             ImageButton {
                 id: theFallDelegate
@@ -113,23 +113,23 @@ Drawer {
                 indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
                 logoImageSource: "qrc:/assets/images/the_fall_logo.png"
 
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-                Layout.margins: 8
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredHeight: 100
+                Layout.preferredWidth: 283
             }
         }
+
         Rectangle {
             width: root.width
-            height: 1
+            height: 2
             color: Palette.white
-            opacity: 0.5
         }
         ItemDelegate {
             id: languageItemDelegate
             checkable: true
             width: root.width
-            height: 64
-            topPadding: 21
+            height: 52
+            topPadding: 14
 
             contentItem: ColumnLayout {
                 id: content
@@ -138,15 +138,12 @@ Drawer {
                     Layout.fillWidth: true
                     implicitHeight: 64
                     spacing: 16
-                    Image {
-                        source: "qrc:/assets/icons/language.svg"
-                        sourceSize: Qt.size(24, 24)
-                    }
                     Row {
                         Layout.fillWidth: true
                         Label {
                             id: labelLanguage
                             text: qsTr("Language - ")
+                            color: Palette.gallery
                         }
 
                         Label {
@@ -159,6 +156,7 @@ Drawer {
                                     }
                                 }
                             }
+                            opacity: 0.5
                             color: Palette.gallery
                         }
                     }
@@ -258,9 +256,8 @@ Drawer {
         }
         Rectangle {
             width: root.width
-            height: 1
+            height: 2
             color: Palette.white
-            opacity: 0.5
         }
         ColumnLayout {
             id: _layout
@@ -269,10 +266,10 @@ Drawer {
             Label {
                 text: qsTr("Game created and produced by")
                 font.letterSpacing: 0.5
-                opacity: 0.5
                 topPadding: 24
                 leftPadding: 16
                 Layout.fillWidth: true
+                color: Palette.white
             }
             Image {
                 id: tabulaLogo
@@ -296,10 +293,10 @@ Drawer {
             Label {
                 text: qsTr("App designed and developed by")
                 font.letterSpacing: 0.5
-                opacity: 0.5
                 topPadding: 8
                 leftPadding: 16
                 Layout.fillWidth: true
+                color: Palette.white
             }
             Image {
                 id: evonoveLogo

@@ -52,7 +52,7 @@ AbstractButton {
             color: "transparent"
             radius: 10
             border.width: 2
-            border.color: root.disabled ? "white" : root.mainColor
+            border.color: root.mainColor
         }
     }
 
