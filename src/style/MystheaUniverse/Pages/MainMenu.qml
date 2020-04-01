@@ -37,7 +37,6 @@ Page {
             onClicked: root.mystheaClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
-            rounded: true
         }
         ImageButton {
             mainColor: Palette.icaionMain
@@ -47,7 +46,6 @@ Page {
             onClicked: root.icaionClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
-            rounded: true
         }
         ImageButton {
             mainColor: Palette.theFallMain
@@ -57,7 +55,6 @@ Page {
             onClicked: root.theFallClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
-            rounded: true
         }
     }
 }

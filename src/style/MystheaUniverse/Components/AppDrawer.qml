@@ -69,7 +69,6 @@ Drawer {
             ImageButton {
                 id: mystheaDelegate
                 disabled: true
-                rounded: true
 
                 mainColor: Palette.mystheaMain
                 onClicked: {
@@ -87,7 +86,6 @@ Drawer {
             ImageButton {
                 id: icaionDelegate
                 disabled: true
-                rounded: true
 
                 mainColor: Palette.icaionMain
                 onClicked: {
@@ -105,7 +103,6 @@ Drawer {
             ImageButton {
                 id: theFallDelegate
                 disabled: true
-                rounded: true
 
                 mainColor: Palette.theFallMain
                 onClicked: {
