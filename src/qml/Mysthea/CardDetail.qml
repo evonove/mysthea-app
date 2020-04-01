@@ -15,13 +15,8 @@ Page {
     property int index: -1
 
     padding: 0
-    background: Image {
-        source: "qrc:/assets/images/cards-bg.jpg"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignBottom
+    background: Rectangle {
+        color: Palette.black
     }
 
     SwipeView {

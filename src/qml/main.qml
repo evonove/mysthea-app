@@ -124,15 +124,12 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
-                leftAction: _mystheaExtras.leftAction
+                leftAction: _cardsRef.leftAction
                 rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
+                        id: _cardsRef
                         searchFieldBorderColor: Palette.pinkLavenderBlush
-                        onCardClicked: {
-                            console.log("Open detail of card with index:",
-                                        index)
-                        }
                     },
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},

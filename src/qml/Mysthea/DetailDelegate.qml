@@ -30,115 +30,115 @@ Pane {
         ColumnLayout {
             id: _layout
             width: parent.width
-            spacing: 24
-            ColumnLayout {
+            spacing: 8
+
+            RowLayout {
                 Layout.fillWidth: true
-                spacing: 8
-                RowLayout {
-                    Layout.fillWidth: true
-                    spacing: 12
-                    Label {
-                        text: code
-                        font.pixelSize: 32
-                        font.letterSpacing: 0.5
-                        font.weight: Font.Bold
-                        color: {
-                            switch (root.command) {
-                                case 1: return Palette.flamingo;
-                                case 2: return Palette.goldenFizz;
-                                case 3: return Palette.apple;
-                                case 4: return Palette.cerulean;
-                                default: return Palette.grayNurse;
-                            }
+                spacing: 14
+                Label {
+                    text: code
+                    font.family: "Futura PT Bold"
+                    font.pixelSize: 25
+                    font.letterSpacing: 0.38
+                    color: {
+                        switch (root.command) {
+                        case 1:
+                            return Palette.flamingo
+                        case 2:
+                            return Palette.goldenFizz
+                        case 3:
+                            return Palette.apple
+                        case 4:
+                            return Palette.cerulean
+                        default:
+                            return Palette.grayNurse
                         }
-                    }
-
-                    Label {
-                        text: "•"
-                        font.pixelSize: 24
-                        color: Palette.grayNurse
-                    }
-
-                    Label {
-                        font.pixelSize: 32
-                        font.letterSpacing: 0.5
-
-                        text: {
-                            if (root.command !== -1) {
-                                return qsTr("Command")
-                            } else {
-                                return typeText
-                            }
-                        }
-                        color: Palette.grayNurse
                     }
                 }
-                RowLayout {
-                    Layout.fillWidth: true
-                    spacing: 12
-                    // Era text must only be visible for Command cards
-                    visible: root.type >= 1 && root.type <= 4
 
-                    Label {
-                        text: qsTr("Era")
-                        font.pixelSize: 24
-                        font.letterSpacing: 0.5
-                        font.weight: Font.Bold
-                        color: Palette.grayNurse
+                Label {
+                    font.pixelSize: 25
+                    font.letterSpacing: 0.38
+                    font.capitalization: Font.AllUppercase
+
+                    text: {
+                        if (root.command !== -1) {
+                            return qsTr("Command")
+                        } else {
+                            return typeText
+                        }
                     }
+                    color: Palette.white
+                }
+            }
 
-                    Image {
-                        fillMode: Image.PreserveAspectFit
-                        sourceSize.height: 24
-                        source: {
-                            switch (root.type) {
-                                case 1: return "qrc:/assets/icons/era_x.svg";
-                                case 2: return "qrc:/assets/icons/era_1.svg";
-                                case 3: return "qrc:/assets/icons/era_2.svg";
-                                case 4: return  "qrc:/assets/icons/era_3.svg";
-                                default: return "";
-                            }
+            RowLayout {
+                Layout.fillWidth: true
+                spacing: 5
+                // Era text must only be visible for Command cards
+                visible: root.type >= 1 && root.type <= 4
+                Label {
+                    text: qsTr("Era")
+                    font.pixelSize: 18
+                    color: Palette.white
+                }
+
+                Image {
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.height: 16
+                    source: {
+                        switch (root.type) {
+                        case 1:
+                            return "qrc:/assets/icons/era_x.svg"
+                        case 2:
+                            return "qrc:/assets/icons/era_1.svg"
+                        case 3:
+                            return "qrc:/assets/icons/era_2.svg"
+                        case 4:
+                            return "qrc:/assets/icons/era_3.svg"
+                        default:
+                            return ""
                         }
                     }
 
-                    Label {
-                        text: "•"
-                        font.pixelSize: 24
-                        color: Palette.grayNurse
-                    }
+                    Layout.rightMargin: 14
+                }
 
-                    Image {
-                        fillMode: Image.PreserveAspectFit
-                        sourceSize.height: 24
-                        source: {
-                            switch (root.command) {
-                                case 1: return "qrc:/assets/icons/tactic.svg";
-                                case 2: return "qrc:/assets/icons/objective.svg";
-                                case 3: return "qrc:/assets/icons/accessory.svg";
-                                case 4: return "qrc:/assets/icons/upgrade.svg";
-                                default: return "";
-                            }
+                Image {
+                    fillMode: Image.PreserveAspectFit
+                    sourceSize.height: 20
+                    source: {
+                        switch (root.command) {
+                        case 1:
+                            return "qrc:/assets/icons/tactic.svg"
+                        case 2:
+                            return "qrc:/assets/icons/objective.svg"
+                        case 3:
+                            return "qrc:/assets/icons/accessory.svg"
+                        case 4:
+                            return "qrc:/assets/icons/upgrade.svg"
+                        default:
+                            return ""
                         }
                     }
+                }
 
-                    Label {
-                        text: root.commandText
-                        font.pixelSize: 24
-                        font.letterSpacing: 0.5
-                        font.weight: Font.Bold
-                        color: Palette.grayNurse
-                    }
+                Label {
+                    text: root.commandText
+                    font.pixelSize: 18
+                    color: Palette.white
                 }
             }
 
             Label {
                 text: description
-                font.pixelSize: 24
-                font.letterSpacing: 0.5
-                color: Palette.grayNurse
+                font.family: "Futura PT Book"
+                font.pixelSize: 18
+                color: Palette.white
                 wrapMode: Text.Wrap
 
-                Layout.maximumWidth: parent.width
+                Layout.fillWidth: true
+                Layout.topMargin: 15
             }
         }
 
@@ -147,24 +147,33 @@ Pane {
         Loader {
             id: _frontImageLoader
             anchors.top: _layout.bottom
-            anchors.topMargin: 24
+            anchors.topMargin: 25
             asynchronous: true
             width: root.type === 6 || root.type === 7 ? undefined : parent.width
-            height: root.type === 6 || root.type === 7 ? parent.width : undefined
+            height: root.type === 6
+                    || root.type === 7 ? parent.width : undefined
 
             sourceComponent: Component {
                 Image {
                     id: _cardImage
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/images/cards/" + root.image
+                    sourceSize.width: 225
 
                     property list<QtObject> rotationTransform: [
                         // Rotates image 90 degrees clockwise, then moves it to the right
-                        Rotation { origin.x: 0; origin.y: 0; angle: 90 },
-                        Translate { x: height }
+                        Rotation {
+                            origin.x: 0
+                            origin.y: 0
+                            angle: 90
+                        },
+                        Translate {
+                            x: height
+                        }
                     ]
 
-                    transform: root.type === 6 || root.type === 7 ? rotationTransform : []
+                    transform: root.type === 6
+                               || root.type === 7 ? rotationTransform : []
                 }
             }
         }
@@ -182,11 +191,19 @@ Pane {
                 Image {
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/images/cards/" + root.backImage
+                    sourceSize.width: 225
 
                     transform: [
                         // Rotates image 90 degrees clockwise, then moves it to the right
-                        Rotation { origin.x: 0; origin.y: 0; angle: 90 },
-                        Translate { x: _layout.width; y: width - height }
+                        Rotation {
+                            origin.x: 0
+                            origin.y: 0
+                            angle: 90
+                        },
+                        Translate {
+                            x: _layout.width
+                            y: width - height
+                        }
                     ]
                 }
             }

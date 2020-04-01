@@ -1,9 +1,9 @@
 module Mysthea
+CardDetail 1.0 CardDetail.qml
 CardsList 1.0 CardsList.qml
 CardsReference 1.0 CardsReference.qml
 Credits 1.0 Credits.qml
 DetailDelegate 1.0 DetailDelegate.qml
-DetailPage 1.0 DetailPage.qml
 Extras 1.0 Extras.qml
 ExtrasMenu 1.0 ExtrasMenu.qml
 GameSetup 1.0 GameSetup.qml
