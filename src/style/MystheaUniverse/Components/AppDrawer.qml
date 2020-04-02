@@ -60,6 +60,7 @@ Drawer {
             topPadding: 14
             leftPadding: 18
             rightPadding: 18
+            bottomPadding: 32
 
             ColumnLayout {
                 spacing: 14
@@ -97,7 +98,7 @@ Drawer {
 
                     Layout.alignment: Qt.AlignCenter
                     Layout.preferredHeight: 100
-                    Layout.preferredWidth: 283
+                    Layout.fillWidth: true
                 }
                 ImageButton {
                     id: theFallDelegate
@@ -114,7 +115,7 @@ Drawer {
 
                     Layout.alignment: Qt.AlignCenter
                     Layout.preferredHeight: 100
-                    Layout.preferredWidth: 283
+                    Layout.fillWidth: true
                 }
             }
         }
@@ -143,6 +144,7 @@ Drawer {
                         Label {
                             id: labelLanguage
                             text: qsTr("Language - ")
+                            font.weight: Font.Bold
                             color: Palette.gallery
                         }
 
@@ -266,6 +268,7 @@ Drawer {
             Label {
                 text: qsTr("Game created and produced by")
                 font.letterSpacing: 0.5
+                font.pixelSize: 12
                 topPadding: 24
                 leftPadding: 16
                 Layout.fillWidth: true
@@ -274,7 +277,7 @@ Drawer {
             Image {
                 id: tabulaLogo
                 source: "qrc:/assets/icons/tabula-logo.svg"
-                sourceSize.width: parent.width - 180
+                sourceSize.width: 82
 
                 Layout.leftMargin: 16
 
@@ -293,6 +296,7 @@ Drawer {
             Label {
                 text: qsTr("App designed and developed by")
                 font.letterSpacing: 0.5
+                font.pixelSize: 12
                 topPadding: 8
                 leftPadding: 16
                 Layout.fillWidth: true
@@ -302,7 +306,7 @@ Drawer {
                 id: evonoveLogo
                 Layout.leftMargin: 16
                 source: "qrc:/assets/icons/evonove-logo.svg"
-                sourceSize.width: parent.width - 180
+                sourceSize.width: 82
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("https://evonove.it")

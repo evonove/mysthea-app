@@ -72,7 +72,7 @@ AbstractButton {
 
             icon.width: 16
             icon.height: 16
-            icon.color: root.disabled ? "white" : root.mainColor
+            icon.color: root.mainColor
         }
     }
 }
