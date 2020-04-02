@@ -1,10 +1,9 @@
-import QtQuick 2.11
-import QtQuick.Window 2.3
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.3
-import QtQuick.Controls.Material 2.4
-import QtQml.Models 2.1
-import QtGraphicalEffects 1.0
+import QtQuick 2.14
+import QtQuick.Window 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
+import QtQml.Models 2.14
+import QtGraphicalEffects 1.14
 
 import Mysthea 1.0 as Mysthea
 import Icaion 1.0 as Icaion
@@ -17,18 +16,12 @@ import MystheaUniverse.Pages 1.0
 
 ApplicationWindow {
     id: root
-    visible: true
-    width: 375
-    height: 667
-    title: qsTr("Mysthea Universe")
-    flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
+
+    signal moveToSection(int element)
 
     // A top margin added to various components so that they're not covered
     // by the iPhone top notch
     readonly property int safeTopMargin: hasNotch ? 34 : 0
-
-    font.pixelSize: 18
-    Material.accent: Palette.maroonFlush
 
     property bool isPushing: false
 
@@ -44,7 +37,12 @@ ApplicationWindow {
         root.isPushing = false
     }
 
-    signal moveToSection(int element)
+    title: qsTr("Mysthea Universe")
+    width: 375; height: 667
+    visible: true
+    flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
+
+    font.pixelSize: 18
 
     palette {
         window: Palette.black
@@ -90,9 +88,6 @@ ApplicationWindow {
         anchors.fill: parent
         focus: true
         padding: 0
-        background: Rectangle {
-            color: Palette.mineShaft
-        }
 
         // Handles click of back button by popping current page from StackView
         Keys.onPressed: {

@@ -55,8 +55,8 @@ T.TabButton {
     padding: 6
     spacing: 0
 
-    icon.width: 24
-    icon.height: 24
+    icon.width: 26
+    icon.height: 26
     icon.color: control.checked ? control.checkedColor : control.uncheckedColor
     font.pixelSize: 12
 

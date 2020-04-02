@@ -19,11 +19,6 @@ Page {
 
     padding: 16
 
-    background: Rectangle {
-        color: Palette.mineShaft
-        opacity: 0.29
-    }
-
     ColumnLayout {
         id: logoContainer
         anchors.fill: parent
