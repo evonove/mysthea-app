@@ -46,6 +46,10 @@ ApplicationWindow {
 
     signal moveToSection(int element)
 
+    palette {
+        window: Palette.black
+    }
+
     // Loads Material icons font
     FontLoader {
         source: "qrc:/assets/fonts/MaterialIcons-Regular.ttf"
@@ -74,7 +78,7 @@ ApplicationWindow {
 
     AppDrawer {
         id: _drawer
-        width: Math.min(0.8 * root.width, 320)
+        width: 319
         height: root.height
         onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
         onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)

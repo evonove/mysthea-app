@@ -25,12 +25,6 @@ Drawer {
 
     bottomPadding: 24
 
-    background: Rectangle {
-        width: root.width
-        height: root.height
-        color: Palette.mineShaft
-    }
-
     M.LanguageListModel {
         id: _languageListModel
     }
@@ -61,61 +55,67 @@ Drawer {
             }
         }
 
-        ColumnLayout {
-            spacing: 0
+        Pane {
             width: root.width
-            height: 228
+            topPadding: 14
+            leftPadding: 18
+            rightPadding: 18
 
-            ImageButton {
-                id: mystheaDelegate
-                disabled: true
+            ColumnLayout {
+                spacing: 14
+                anchors.fill: parent
 
-                mainColor: Palette.mystheaMain
-                onClicked: {
-                    root.close()
-                    root.mystheaClicked()
+                ImageButton {
+                    id: mystheaDelegate
+                    disabled: true
+
+                    mainColor: Palette.mystheaMain
+                    onClicked: {
+                        root.close()
+                        root.mystheaClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.fillWidth: true
                 }
-                backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
-                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+                ImageButton {
+                    id: icaionDelegate
+                    disabled: true
 
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredHeight: 100
-                Layout.preferredWidth: 283
-            }
-            ImageButton {
-                id: icaionDelegate
-                disabled: true
+                    mainColor: Palette.icaionMain
+                    onClicked: {
+                        root.close()
+                        root.icaionClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/icaion_logo.png"
 
-                mainColor: Palette.icaionMain
-                onClicked: {
-                    root.close()
-                    root.icaionClicked()
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.preferredWidth: 283
                 }
-                backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
-                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                logoImageSource: "qrc:/assets/images/icaion_logo.png"
+                ImageButton {
+                    id: theFallDelegate
+                    disabled: true
 
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredHeight: 100
-                Layout.preferredWidth: 283
-            }
-            ImageButton {
-                id: theFallDelegate
-                disabled: true
+                    mainColor: Palette.theFallMain
+                    onClicked: {
+                        root.close()
+                        root.theFallClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/the_fall_logo.png"
 
-                mainColor: Palette.theFallMain
-                onClicked: {
-                    root.close()
-                    root.theFallClicked()
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.preferredWidth: 283
                 }
-                backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
-                indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
-                logoImageSource: "qrc:/assets/images/the_fall_logo.png"
-
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredHeight: 100
-                Layout.preferredWidth: 283
             }
         }
 
