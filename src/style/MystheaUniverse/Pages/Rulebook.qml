@@ -14,21 +14,10 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
     property alias rulebooksModel: _languageListView.model
-    property alias backgroundImageSource: _backgroundImage.source
 
-    background: Image {
-        id: _backgroundImage
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignBottom
-
-        Rectangle {
-            anchors.fill: parent
-            color: Palette.mineShaft
-            opacity: 0.29
-        }
+    background: Rectangle {
+        anchors.fill: parent
+        color: Palette.black
     }
 
     Flickable {
@@ -54,20 +43,25 @@ Page {
                 padding: 20
             }
 
-           GridView {
+            GridView {
                 id: _languageListView
                 clip: true
 
                 width: parent.width
                 height: availableHeight
+                cellWidth: 134 + 35
+                cellHeight: 77 + 29
+
                 leftMargin: 20
                 rightMargin: 20
                 bottomMargin: 32
                 interactive: false
 
                 delegate: RulebookButton {
-                    text: language
-                    iconText: Icon.download
+                    width: 134
+                    height: 77
+                    label: language
+                    backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
                     onClicked: Qt.openUrlExternally(downloadUrl)
                 }
             }
