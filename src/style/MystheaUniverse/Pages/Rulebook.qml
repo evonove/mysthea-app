@@ -24,11 +24,12 @@ Page {
         anchors.fill: parent
         contentWidth: parent.width
         contentHeight: contentColumn.height
-        clip: true
         ScrollIndicator.vertical: ScrollIndicator {}
+        clip: true
 
         Column {
             id: contentColumn
+            anchors.centerIn: parent
             width: parent.width
             height: label.height + _languageListView.contentHeight + _languageListView.bottomMargin + spacing
 
@@ -47,10 +48,12 @@ Page {
                 id: _languageListView
                 clip: true
 
-                width: parent.width
+                width: root.width
                 height: availableHeight
                 cellWidth: 134 + 35
                 cellHeight: 77 + 29
+
+                Component.onCompleted: console.log(width)
 
                 leftMargin: 20
                 rightMargin: 20
