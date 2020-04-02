@@ -36,8 +36,7 @@ ApplicationWindow {
         // throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the
-        // current visible page
+        // avoid to push a page if it is the current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
@@ -46,6 +45,10 @@ ApplicationWindow {
     }
 
     signal moveToSection(int element)
+
+    palette {
+        window: Palette.black
+    }
 
     // Loads Material icons font
     FontLoader {
@@ -65,6 +68,21 @@ ApplicationWindow {
     }
     FontLoader {
         source: "qrc:/assets/fonts/EraIcons.ttf"
+    }
+
+    Action {
+        id: _drawerOpenAction
+        icon.source: "qrc:/assets/icons/menu.svg"
+        onTriggered: _drawer.open()
+    }
+
+    AppDrawer {
+        id: _drawer
+        width: 319
+        height: root.height
+        onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
+        onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
+        onTheFallClicked: root.pushToStack(_theFallApp, PageName.theFallPage)
     }
 
     StackView {
@@ -104,17 +122,18 @@ ApplicationWindow {
             id: _mystheaApp
             AppContainer {
                 id: _mysthea
+                objectName: PageName.mystheaPage
                 logo: "qrc:/assets/images/mysthea_logo.png"
                 mainColor: Palette.mystheaMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
                         searchFieldBorderColor: Palette.pinkLavenderBlush
                         onCardClicked: {
-                            console.log("Open detail of card with index:",
-                                        index)
+                            console.log("Open detail of card with index:", index)
                         }
                     },
                     Mysthea.GameSetup {},
@@ -128,11 +147,13 @@ ApplicationWindow {
             id: _icaionApp
             AppContainer {
                 id: _icaion
+                objectName: PageName.icaionPage
                 logo: "qrc:/assets/images/icaion_logo.png"
                 mainColor: Palette.icaionMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                rightAction: _drawerOpenAction
                 appContents: [
                     Icaion.CardsReference {},
                     Icaion.GameSetup {},
@@ -146,11 +167,13 @@ ApplicationWindow {
             id: _theFallApp
             AppContainer {
                 id: _theFall
+                objectName: PageName.theFallPage
                 logo: "qrc:/assets/images/the_fall_logo.png"
-                mainColor: Palette.thefallMain
+                mainColor: Palette.theFallMain
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                rightAction: _drawerOpenAction
                 appContents: [
                     TheFall.CardsReference {},
                     TheFall.GameSetup {},
@@ -167,14 +190,41 @@ ApplicationWindow {
             State {
                 name: PageName.mystheaPage
                 when: _mainStackView.currentItem.objectName === PageName.mystheaPage
+                PropertyChanges {
+                    target: _drawer
+                    activeColor: Palette.mystheaMain
+                    activeBackgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+                    activeLogoImageSource: "qrc:/assets/images/mysthea_logo.png"
+                    mystheaButtonVisible: false
+                    icaionButtonVisible: true
+                    theFallButtonVisible: true
+                }
             },
             State {
                 name: PageName.icaionPage
                 when: _mainStackView.currentItem.objectName === PageName.icaionPage
+                PropertyChanges {
+                    target: _drawer
+                    activeColor: Palette.icaionMain
+                    activeBackgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
+                    activeLogoImageSource: "qrc:/assets/images/icaion_logo.png"
+                    mystheaButtonVisible: true
+                    icaionButtonVisible: false
+                    theFallButtonVisible: true
+                }
             },
             State {
                 name: PageName.theFallPage
                 when: _mainStackView.currentItem.objectName === PageName.theFallPage
+                PropertyChanges {
+                    target: _drawer
+                    activeColor: Palette.theFallMain
+                    activeBackgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
+                    activeLogoImageSource: "qrc:/assets/images/the_fall_logo.png"
+                    mystheaButtonVisible: true
+                    icaionButtonVisible: true
+                    theFallButtonVisible: false
+                }
             }
         ]
     }

@@ -1,150 +1,136 @@
-import QtQuick 2.11
-import QtQml.Models 2.11
-import QtQuick.Controls.Material 2.4
-import QtQuick.Controls 2.4
-import QtGraphicalEffects 1.0
-import QtQuick.Layouts 1.3
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtGraphicalEffects 1.14
+import QtQuick.Layouts 1.14
+import QtQml.Models 2.14
 
-import Mysthea.Models 1.0
-import Mysthea 1.0
-import MystheaUniverse.Components 1.0
+import Mysthea 1.0 as M
+import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Theme 1.0
 import Translations 1.0
 
 Drawer {
-    id: menuDrawer
-    signal homeClicked
-    signal cardsReferenceClicked
-    signal gameSetupClicked
-    signal rulesbookClicked
-    signal loreClicked
+    id: root
+
+    property alias activeBackgroundImageSource: _activeBackgroundImage.source
+    property alias activeLogoImageSource: _activeLogoImage.source
+    property alias activeColor: _activeBorder.color
+    property alias mystheaButtonVisible: mystheaDelegate.visible
+    property alias icaionButtonVisible: icaionDelegate.visible
+    property alias theFallButtonVisible: theFallDelegate.visible
+
+    signal mystheaClicked
+    signal icaionClicked
+    signal theFallClicked
 
     bottomPadding: 24
 
-    background: Rectangle {
-        width: menuDrawer.width
-        height: menuDrawer.height
-        color: Palette.mineShaft
-    }
-
-    LanguageListModel {
+    M.LanguageListModel {
         id: _languageListModel
-    }
-
-    property alias state: pagesDelegate.state
-
-    StateGroup {
-        id: pagesDelegate
-        states: [
-            State {
-                name: PageName.homePage
-                PropertyChanges {
-                    target: homeDelegate
-                    Material.foreground: Palette.gallery
-                }
-            },
-            State {
-                name: PageName.cardPage
-                PropertyChanges {
-                    target: cardsReferenceDelegate
-                    Material.foreground: Palette.gallery
-                }
-            },
-            State {
-                name: PageName.gameSetupPage
-                PropertyChanges {
-                    target: gameSetupDelegate
-                    Material.foreground: Palette.gallery
-                }
-            },
-            State {
-                name: PageName.rulebookPage
-                PropertyChanges {
-                    target: rulebookDelegate
-                    Material.foreground: Palette.gallery
-                }
-            },
-            State {
-                name: PageName.lorePage
-                PropertyChanges {
-                    target: loreDelegate
-                    Material.foreground: Palette.gallery
-                }
-            }
-        ]
     }
 
     ObjectModel {
         id: drawerMenuElement
 
-        ItemDelegate {
-            id: homeDelegate
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Home")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/home.svg"
-            onClicked: menuDrawer.homeClicked()
+        Item {
+            width: parent.width
+            height: 135
+
+            Image {
+                id: _activeBackgroundImage
+                fillMode: Image.PreserveAspectCrop
+                anchors.fill: parent
+            }
+            Image {
+                id: _activeLogoImage
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+            }
+            Rectangle {
+                id: _activeBorder
+                width: root.width
+                anchors.bottom: parent.bottom
+                height: 2
+                opacity: 1
+            }
         }
-        ItemDelegate {
-            id: cardsReferenceDelegate
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Cards Reference")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/cards-reference.svg"
-            onClicked: menuDrawer.cardsReferenceClicked()
+
+        Pane {
+            width: root.width
+            topPadding: 14
+            leftPadding: 18
+            rightPadding: 18
+            bottomPadding: 32
+
+            ColumnLayout {
+                spacing: 14
+                anchors.fill: parent
+
+                ImageButton {
+                    id: mystheaDelegate
+                    disabled: true
+
+                    mainColor: Palette.mystheaMain
+                    onClicked: {
+                        root.close()
+                        root.mystheaClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/mysthea_logo.png"
+
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.fillWidth: true
+                }
+                ImageButton {
+                    id: icaionDelegate
+                    disabled: true
+
+                    mainColor: Palette.icaionMain
+                    onClicked: {
+                        root.close()
+                        root.icaionClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/icaion_logo.png"
+
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.fillWidth: true
+                }
+                ImageButton {
+                    id: theFallDelegate
+                    disabled: true
+
+                    mainColor: Palette.theFallMain
+                    onClicked: {
+                        root.close()
+                        root.theFallClicked()
+                    }
+                    backgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
+                    indicatorImageSource: "qrc:/assets/icons/arrow_right.svg"
+                    logoImageSource: "qrc:/assets/images/the_fall_logo.png"
+
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredHeight: 100
+                    Layout.fillWidth: true
+                }
+            }
         }
-        ItemDelegate {
-            id: gameSetupDelegate
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Game Setup")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/game-setup.svg"
-            onClicked: menuDrawer.gameSetupClicked()
-        }
-        ItemDelegate {
-            id: rulebookDelegate
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Rulebook")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/rulebook.svg"
-            onClicked: menuDrawer.rulesbookClicked()
-        }
-        ItemDelegate {
-            id: loreDelegate
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Lore")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/lore.svg"
-            onClicked: menuDrawer.loreClicked()
-        }
+
         Rectangle {
-            width: menuDrawer.width
-            height: 1
+            width: root.width
+            height: 2
             color: Palette.white
-            opacity: 0.5
         }
         ItemDelegate {
             id: languageItemDelegate
             checkable: true
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            Material.foreground: Palette.silverChalice
+            width: root.width
+            height: 52
+            topPadding: 14
 
             contentItem: ColumnLayout {
                 id: content
@@ -153,15 +139,13 @@ Drawer {
                     Layout.fillWidth: true
                     implicitHeight: 64
                     spacing: 16
-                    Image {
-                        source: "qrc:/assets/icons/language.svg"
-                        sourceSize: Qt.size(24, 24)
-                    }
                     Row {
                         Layout.fillWidth: true
                         Label {
                             id: labelLanguage
                             text: qsTr("Language - ")
+                            font.weight: Font.Bold
+                            color: Palette.gallery
                         }
 
                         Label {
@@ -174,6 +158,7 @@ Drawer {
                                     }
                                 }
                             }
+                            opacity: 0.5
                             color: Palette.gallery
                         }
                     }
@@ -272,44 +257,27 @@ Drawer {
             }
         }
         Rectangle {
-            width: menuDrawer.width
-            height: 1
+            width: root.width
+            height: 2
             color: Palette.white
-            opacity: 0.5
-        }
-        ItemDelegate {
-            width: menuDrawer.width
-            height: 64
-            topPadding: 21
-            bottomPadding: 21
-            text: qsTr("Tabula Games Newsletter")
-            Material.foreground: Palette.silverChalice
-            icon.source: "qrc:/assets/icons/newsletter.svg"
-            onClicked: Qt.openUrlExternally("https://mysthea.tabula.games/newsletter/")
-        }
-        Rectangle {
-            width: menuDrawer.width
-            height: 1
-            color: Palette.white
-            opacity: 0.5
         }
         ColumnLayout {
             id: _layout
-            width: menuDrawer.width
-            Material.foreground: Palette.silverChalice
+            width: root.width
             spacing: 8
             Label {
                 text: qsTr("Game created and produced by")
                 font.letterSpacing: 0.5
-                opacity: 0.5
+                font.pixelSize: 12
                 topPadding: 24
                 leftPadding: 16
                 Layout.fillWidth: true
+                color: Palette.white
             }
             Image {
                 id: tabulaLogo
                 source: "qrc:/assets/icons/tabula-logo.svg"
-                sourceSize.width: parent.width - 180
+                sourceSize.width: 82
 
                 Layout.leftMargin: 16
 
@@ -328,16 +296,17 @@ Drawer {
             Label {
                 text: qsTr("App designed and developed by")
                 font.letterSpacing: 0.5
-                opacity: 0.5
+                font.pixelSize: 12
                 topPadding: 8
                 leftPadding: 16
                 Layout.fillWidth: true
+                color: Palette.white
             }
             Image {
                 id: evonoveLogo
                 Layout.leftMargin: 16
                 source: "qrc:/assets/icons/evonove-logo.svg"
-                sourceSize.width: parent.width - 180
+                sourceSize.width: 82
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("https://evonove.it")
@@ -356,3 +325,4 @@ Drawer {
         languageItemDelegate.checked = false
     }
 }
+

@@ -34,13 +34,13 @@
         <file>qtquickcontrols2.conf</file>
         <file>style/MystheaUniverse/ComboBox.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
+        <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>
         <file>style/MystheaUniverse/Pages/CardsReference.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
         <file>style/MystheaUniverse/Components/LabelComboBox.qml</file>
-        <file>style/MystheaUniverse/Components/MainDrawer.qml</file>
         <file>style/MystheaUniverse/Components/ImageButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioIndicator.qml</file>

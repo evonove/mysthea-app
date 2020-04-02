@@ -8,9 +8,9 @@ Page {
     id: root
 
     property real headerHeight: 54
-
     property alias logo: _header.logo
     property alias appContents: _swipe.contentData
+    property alias rightAction: _header.rightAction
 
     property color mainColor
     property color whiteColor
@@ -21,6 +21,10 @@ Page {
     signal gameSetupClicked
     signal rulebookClicked
     signal extrasClicked
+
+    signal mystheaClicked
+    signal icaionClicked
+    signal theFallClicked
 
     QtObject {
         // These functions take tracks of swipe history.
@@ -56,20 +60,13 @@ Page {
         id: _header
         width: parent.width
         height: root.headerHeight
-        z: 2
-
         separatorColor: root.headerSeparatorColor
 
-        rightAction: Action {
-            id: _backAction
-            icon.source: "qrc:/assets/icons/menu.svg"
-        }
     }
 
-    contentItem: SwipeView {
+    SwipeView {
         id: _swipe
-        width: parent.width
-        height: parent.height - header.height - footer.height
+        anchors.fill: parent
         focus: true
         interactive: false
 
