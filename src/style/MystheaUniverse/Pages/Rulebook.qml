@@ -54,11 +54,9 @@ Page {
                 padding: 20
             }
 
-
-           ListView {
+           GridView {
                 id: _languageListView
                 clip: true
-                spacing: 36
 
                 width: parent.width
                 height: availableHeight
