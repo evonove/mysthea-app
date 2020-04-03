@@ -25,7 +25,7 @@ Rulebook {
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_FR_web_v1.pdf"
         }
         ListElement {
-            language: "Ελληνικά"
+            language: "GR"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_GR_web_v1.pdf"
         }
         ListElement {
@@ -33,7 +33,7 @@ Rulebook {
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_IT_web_v1.pdf"
         }
         ListElement {
-            language: "日本人"
+            language: "JA"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_JPN_web_v1.pdf"
         }
         ListElement {

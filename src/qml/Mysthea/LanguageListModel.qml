@@ -5,23 +5,23 @@ ListModel {
     id: languageListModel
 
     ListElement {
-        language: "EN"
+        language: "English"
         translation: TranslationsManager.English
     }
     ListElement {
-        language: "FR"
+        language: "Français"
         translation: TranslationsManager.French
     }
     ListElement {
-        language: "ES"
+        language: "Español"
         translation: TranslationsManager.Spanish
     }
     ListElement {
-        language: "DE"
+        language: "Deutsch"
         translation:TranslationsManager.German
     }
     ListElement {
-        language: "IT"
+        language: "Italiano"
         translation: TranslationsManager.Italian
     }
     ListElement {
