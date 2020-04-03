@@ -7,6 +7,7 @@ import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Pages 1.0
 
 Rulebook {
+    buttonImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
     rulebooksModel: ListModel {
         ListElement {
             language: "DE"

@@ -14,6 +14,7 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
     property alias rulebooksModel: _languageListView.model
+    property string buttonImageSource
 
     GridView {
         id: _languageListView
@@ -37,11 +38,11 @@ Page {
             width: _languageListView.cellWidth
             height: _languageListView.cellHeight
             RulebookButton {
+                backgroundImageSource: buttonImageSource
                 width: 134
                 height: 77
                 anchors.centerIn: parent
                 label: language
-                backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
                 onClicked: Qt.openUrlExternally(downloadUrl)
             }
         }
