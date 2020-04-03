@@ -10,6 +10,7 @@ Page {
     property real headerHeight: 54
     property alias logo: _header.logo
     property alias appContents: _swipe.contentData
+    property alias leftAction: _header.leftAction
     property alias rightAction: _header.rightAction
 
     property color mainColor

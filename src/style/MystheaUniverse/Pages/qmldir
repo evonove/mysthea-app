@@ -1,6 +1,7 @@
 module MystheaUniverse.Pages
 CardsReference 1.0 CardsReference.qml
 GameSetup 1.0 GameSetup.qml
+Lore 1.0 Lore.qml
 MainMenu 1.0 MainMenu.qml
 Rulebook 1.0 Rulebook.qml
 Extras 1.0 Extras.qml

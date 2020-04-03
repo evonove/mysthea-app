@@ -15,6 +15,7 @@ ToolBar {
     ToolButton {
         action: root.leftAction
         anchors.left: parent.left
+        color: root.separatorColor
 
         visible: root.leftAction !== null
         enabled: root.leftAction !== null

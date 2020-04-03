@@ -39,7 +39,8 @@ ApplicationWindow {
     }
 
     title: qsTr("Mysthea Universe")
-    width: 375; height: 667
+    width: 375
+    height: 667
     visible: true
     flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
 
@@ -124,6 +125,7 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                leftAction: _mystheaExtras.leftAction
                 rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
@@ -135,7 +137,9 @@ ApplicationWindow {
                     },
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},
-                    Mysthea.Extras {}
+                    Mysthea.Extras {
+                        id: _mystheaExtras
+                    }
                 ]
             }
         }

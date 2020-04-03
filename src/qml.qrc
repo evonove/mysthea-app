@@ -63,5 +63,6 @@
         <file>style/MystheaUniverse/Theme/qmldir</file>
         <file>style/MystheaUniverse/ToolBar.qml</file>
         <file>style/MystheaUniverse/ToolButton.qml</file>
+        <file>style/MystheaUniverse/Pages/Lore.qml</file>
     </qresource>
 </RCC>

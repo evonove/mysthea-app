@@ -10,18 +10,25 @@ Page {
     property bool isPushing: false
     property alias menuPage: _extrasStackView.initialItem
     property alias pageStates: pageStatesList.states
+    property Action leftAction
 
     function pushToStack(component, stateToCheck) {
-        // throttle clicks
+        // Throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the
+        // Avoid to push a page if it is the
         // current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _extrasStackView.push(component)
         }
         root.isPushing = false
+        _extrasStackView.forceActiveFocus()
+    }
+
+    function pop() {
+        _extrasStackView.pop()
+        _extrasStackView.forceActiveFocus()
     }
 
     signal moveToSection(int element)

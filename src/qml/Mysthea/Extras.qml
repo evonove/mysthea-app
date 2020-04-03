@@ -1,6 +1,8 @@
-import QtQuick 2.11
+import QtQuick 2.14
+import QtQuick.Controls 2.14
 
 import MystheaUniverse.Pages 1.0
+import MystheaUniverse.Theme 1.0
 
 Extras {
     id: root
@@ -23,6 +25,20 @@ Extras {
 
     Component {
         id: _lorePage
-        Lore {}
+        Lore {
+            loreModel: LoreModel {
+                width: root.availableWidth
+            }
+
+            Action {
+                id: _backAction
+                text: Icon.back
+                onTriggered: root.pop()
+            }
+
+            Component.onCompleted: {
+                root.leftAction = _backAction
+            }
+        }
     }
 }
