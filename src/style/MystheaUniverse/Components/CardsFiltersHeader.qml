@@ -46,7 +46,7 @@ ToolBar {
                 textRole: "type"
                 iconRole: "iconUrl"
                 roleName: TypeComboBoxModel.IconUrl
-                iconAlignLeft: true
+                iconAlignLeft: false
 
                 Layout.fillWidth: true
 
@@ -73,7 +73,7 @@ ToolBar {
                 textRole: "command"
                 iconRole: "iconUrl"
                 roleName: CommandComboBoxModel.IconUrl
-                iconAlignLeft: false
+                iconAlignLeft: true
 
                 Layout.fillWidth: true
 
