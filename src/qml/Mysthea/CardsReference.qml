@@ -40,24 +40,23 @@ BasePages.CardsReference {
                 commandComboBoxModel: commandModel
 
                 separatorColor: root.searchFieldBorderColor
+
+                onComboboxValueChanged: {
+                    // In loader we don't have only listView so we check if the item has this property
+                    if (_listLoader.item.hasOwnProperty(
+                                'positionViewAtBeginning')) {
+                        _listLoader.item.positionViewAtBeginning()
+                    }
+                }
             }
 
-            Flickable {
+            Loader {
+                id: _listLoader
                 width: parent.width
                 height: parent.height - _filtersHeader.height
-                contentWidth: width
-                contentHeight: _listLoader.height
-                clip: true
 
-                ScrollIndicator.vertical: ScrollIndicator {}
-
-                Loader {
-                    id: _listLoader
-                    width: parent.width
-
-                    asynchronous: true
-                    sourceComponent: typeProxy.size > 0 ? cardListComponent : emptyCardListComponent
-                }
+                asynchronous: true
+                sourceComponent: typeProxy.size > 0 ? cardListComponent : emptyCardListComponent
             }
         }
     }
@@ -65,10 +64,8 @@ BasePages.CardsReference {
     Component {
         id: cardListComponent
         CardsList {
-            height: contentHeight
-            width: parent.width
+            anchors.fill: parent
             model: typeProxy
-            interactive: false
             onCardClicked: {
                 var cardsModel = typeProxy.visibleCards
                 root.cardClicked(cardsModel, cardsModel.indexOf(clickedCode))
