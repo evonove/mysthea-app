@@ -20,6 +20,8 @@ set(QML_IMPORT_PATH
     CACHE STRING "" FORCE
     )
 
+find_package(Qt5 COMPONENTS Core Quick Svg LinguistTools REQUIRED)
+
 # QML, javascript and qml dir
 file(GLOB_RECURSE QML_JS_FILES *.qml *.js qmldir)
 
@@ -34,19 +36,11 @@ set(SOURCE_FILES
     models/typemodel.cpp
     models/typeproxymodel.cpp
     assets.qrc
-    attunement.qrc
-    encounter-back.qrc
-    encounter.qrc
-    era-i.qrc
-    era-ii.qrc
-    era-iii.qrc
-    era-x.qrc
-    event.qrc
     fonts.qrc
-    hero.qrc
     qml.qrc
     ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc
     )
+qt5_add_big_resources(SOURCE_FILES mysthea-cards.qrc)
 
 # Translation files
 set(TS_FILES
@@ -57,10 +51,7 @@ set(TS_FILES
     translations/mysthea_it.ts
     translations/mysthea_ja.ts
     )
-
 configure_file(translations.qrc ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
-
-find_package(Qt5 COMPONENTS Core Quick Svg LinguistTools REQUIRED)
 qt5_create_translation(QM_FILES ${CMAKE_CURRENT_SOURCE_DIR} ${TS_FILES})
 
 if(ANDROID)
