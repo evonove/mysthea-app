@@ -17,9 +17,8 @@ Page {
 
     GridView {
         id: _languageListView
-
         anchors.fill: parent
-        cellWidth: 134 + 35
+        cellWidth: width / 2
         cellHeight: 77 + 29
 
         header: Label {
@@ -29,16 +28,22 @@ Page {
             color: Palette.grayNurse
             font.pixelSize: 27
             font.letterSpacing: 0.5
+            horizontalAlignment: Text.AlignHCenter
             width: parent.width
             padding: 20
         }
 
-        delegate: RulebookButton {
-            width: 134
-            height: 77
-            label: language
-            backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
-            onClicked: Qt.openUrlExternally(downloadUrl)
+        delegate: Item {
+            width: _languageListView.cellWidth
+            height: _languageListView.cellHeight
+            RulebookButton {
+                width: 134
+                height: 77
+                anchors.centerIn: parent
+                label: language
+                backgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
+                onClicked: Qt.openUrlExternally(downloadUrl)
+            }
         }
     }
 }
