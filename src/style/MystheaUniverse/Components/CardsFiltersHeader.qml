@@ -13,6 +13,8 @@ ToolBar {
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 
+    signal comboboxValueChanged()
+
     implicitHeight: 136
     padding: 16
 
@@ -46,7 +48,7 @@ ToolBar {
                 textRole: "type"
                 iconRole: "iconUrl"
                 roleName: TypeComboBoxModel.IconUrl
-                iconAlignLeft: true
+                iconAlignLeft: false
 
                 Layout.fillWidth: true
 
@@ -56,11 +58,7 @@ ToolBar {
                                     root.typeComboBoxModel.index(index, 0),
                                     TypeComboBoxModel.Key))
 
-                    // In loader we don't have only listView so we check if the item has this property
-                    if (_listLoader.item && _listLoader.item.hasOwnProperty(
-                                'positionViewAtBeginning')) {
-                        _listLoader.item.positionViewAtBeginning()
-                    }
+                    root.comboboxValueChanged()
                 }
             }
 
@@ -73,7 +71,7 @@ ToolBar {
                 textRole: "command"
                 iconRole: "iconUrl"
                 roleName: CommandComboBoxModel.IconUrl
-                iconAlignLeft: false
+                iconAlignLeft: true
 
                 Layout.fillWidth: true
 
@@ -82,11 +80,8 @@ ToolBar {
                                 root.commandComboBoxModel.data(
                                     root.commandComboBoxModel.index(index, 0),
                                     CommandComboBoxModel.Key))
-                    // In loader we don't have only listView so we check if the item has this property
-                    if (_listLoader.item.hasOwnProperty(
-                                'positionViewAtBeginning')) {
-                        _listLoader.item.positionViewAtBeginning()
-                    }
+
+                    root.comboboxValueChanged()
                 }
 
                 onEnabledChanged: {

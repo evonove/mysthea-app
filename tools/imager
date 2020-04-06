@@ -41,12 +41,13 @@ _process-image() {
 _process-csvfile() {
     local filepath=${1}
     local curdir=$(pwd -P)
+    local outdir=${curdir}/processed
 
-    for filepath cmd baselinesize format in "${(@s:,:)"${(f)"$(<$1)"}"}"
+    for filepath cmd baselinesize format quality in "${(@s:,:)"${(f)"$(<$1)"}"}"
     {
         if [[ $cmd = "process" ]]; then
             _info "Processing ${filepath}"
-            _process-images ${curdir}/orig/${filepath} ${baselinesize} ${format}
+            _process-images ${curdir}/orig/${filepath} ${baselinesize} ${format} ${quality}
         else
             _info "Copying ${filepath}"
             cp ${curdir}/orig/${filepath} ${outdir}/${filepath}
@@ -64,15 +65,16 @@ _process-images() {
     local baselinesize=$2
     local format=$3
     local outputfilename=$(basename "${inputfile%.*}")
+    local quality=${4=85}
 
     declare -i size=$(( baselinesize*1 ))
-    _process-image ${inputfile} ${outdir}/${outputfilename}.${format} ${size} 85 256 ${format}
+    _process-image ${inputfile} ${outdir}/${outputfilename}.${format} ${size} ${quality} 256 ${format}
     declare -i size=$(( baselinesize*2 ))
-    _process-image ${inputfile} ${outdir}/${outputfilename}@2x.${format} ${size} 85 256 ${format}
+    _process-image ${inputfile} ${outdir}/${outputfilename}@2x.${format} ${size} ${quality} 256 ${format}
     declare -i size=$(( baselinesize*3 ))
-    _process-image ${inputfile} ${outdir}/${outputfilename}@3x.${format} ${size} 85 256 ${format}
+    _process-image ${inputfile} ${outdir}/${outputfilename}@3x.${format} ${size} ${quality} 256 ${format}
     declare -i size=$(( baselinesize*4 ))
-    _process-image ${inputfile} ${outdir}/${outputfilename}@4x.${format} ${size} 85 256 ${format}
+    _process-image ${inputfile} ${outdir}/${outputfilename}@4x.${format} ${size} ${quality} 256 ${format}
 }
 
 main() {

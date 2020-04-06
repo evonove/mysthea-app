@@ -868,7 +868,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsFiltersHeader</name>
     <message>
-        <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="27"/>
+        <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="29"/>
         <source>Search cards by code</source>
         <translation type="unfinished"></translation>
     </message>
@@ -884,18 +884,18 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>CardsReference</name>
     <message>
-        <location filename="../qml/Mysthea/CardsReference.qml" line="92"/>
+        <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="8"/>
+        <source>CARDS REFERENCE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/CardsReference.qml" line="89"/>
         <source>Ooops! Card not found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/CardsReference.qml" line="101"/>
+        <location filename="../qml/Mysthea/CardsReference.qml" line="98"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="8"/>
-        <source>CARDS REFERENCE</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1700,7 +1700,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="40"/>
+        <location filename="../qml/main.qml" line="41"/>
         <source>Mysthea Universe</source>
         <translation type="unfinished"></translation>
     </message>

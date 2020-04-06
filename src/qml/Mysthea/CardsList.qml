@@ -1,7 +1,7 @@
-import QtQuick 2.10
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.3
-import QtQuick.Controls.Material 2.2
+import QtQuick 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
+import QtGraphicalEffects 1.14
 
 import Mysthea.Models 1.0
 import MystheaUniverse.Components 1.0
@@ -43,8 +43,8 @@ ListView {
                         padding: 0
 
                         text: model.typeText
-                        font.letterSpacing: 0.5
-                        font.pixelSize: 28
+                        font.letterSpacing: 0
+                        font.pixelSize: 18
                         color: Palette.white
                     }
                 }
@@ -60,16 +60,15 @@ ListView {
                             height: parent.height
                             padding: 0
                             text: qsTr("Era")
-                            font.pixelSize: 28
-                            font.letterSpacing: 0.5
-                            font.weight: Font.Bold
+                            font.pixelSize: 18
+                            font.letterSpacing: 0
                             color: Palette.grayNurse
                             verticalAlignment: Text.AlignVCenter
                         }
 
                         Image {
                             fillMode: Image.PreserveAspectFit
-                            sourceSize.height: 24
+                            sourceSize.height: 18
                             source: {
                                 switch (model.type) {
                                 case 1:
@@ -98,7 +97,7 @@ ListView {
                 implicitHeight: Math.ceil(
                                     cards.size / categoryPane.numElementsInRow) * cellHeight
 
-                cellHeight: cellWidth * 1.815533980582524
+                cellHeight: cellWidth * 1.9
                 cellWidth: categoryPane.currentCellWidth
 
                 Layout.fillWidth: true
@@ -122,9 +121,10 @@ ListView {
                         spacing: 0
 
                         Rectangle {
-
                             color: img.status === Image.Ready ? "transparent" : "dimgray"
                             opacity: img.status === Image.Ready ? 1 : 0.5
+                            radius: 5
+
                             Layout.preferredHeight: parent.height - _cardCodeLabel.height
                             Layout.maximumWidth: parent.width
                             Layout.alignment: Qt.AlignHCenter
@@ -134,19 +134,30 @@ ListView {
                             Image {
                                 id: img
                                 fillMode: Image.PreserveAspectFit
-                                source: "qrc:/images/cards/" + image
+                                source: "qrc:/assets/images/cards/" + image
                                 asynchronous: true
 
                                 anchors.fill: parent
+                                visible: false
+                            }
+
+                            OpacityMask {
+                                anchors.fill: img
+                                source: img
+                                maskSource: Rectangle {
+                                    width: img.width
+                                    height: img.height
+                                    radius: 5
+                                }
                             }
                         }
 
                         Label {
                             id: _cardCodeLabel
                             text: code
-                            font.weight: Font.Bold
-                            font.letterSpacing: 0.5
-                            font.pixelSize: 24
+                            font.family: "Futura PT Bold"
+                            font.letterSpacing: 0
+                            font.pixelSize: 25
 
                             color: {
                                 if (command === 1) {
