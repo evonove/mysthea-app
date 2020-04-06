@@ -14,7 +14,7 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
     property alias rulebooksModel: _languageListView.model
-    property string buttonImageSource
+    property url buttonImageSource
 
     GridView {
         id: _languageListView
@@ -38,7 +38,7 @@ Page {
             width: _languageListView.cellWidth
             height: _languageListView.cellHeight
             RulebookButton {
-                backgroundImageSource: buttonImageSource
+                backgroundImageSource: root.buttonImageSource
                 width: 134
                 height: 77
                 anchors.centerIn: parent
