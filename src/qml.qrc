@@ -1,8 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/background.png</file>
-        <file>images/evonove-logo.png</file>
-        <file>images/tabula-logo.png</file>
         <file>qml/Icaion/CardsReference.qml</file>
         <file>qml/Icaion/GameSetup.qml</file>
         <file>qml/Icaion/Extras.qml</file>
