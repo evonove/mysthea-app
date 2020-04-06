@@ -7,38 +7,38 @@ import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Pages 1.0
 
 Rulebook {
-    backgroundImageSource: "qrc:/assets/images/cards-bg.jpg"
+    buttonImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
     rulebooksModel: ListModel {
         ListElement {
-            language: "Deutsch"
+            language: "DE"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_DE_web_v1.pdf"
         }
         ListElement {
-            language: "English"
+            language: "EN"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_EN_web_v1.pdf"
         }
         ListElement {
-            language: "Español"
+            language: "ES"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_ES_web_v1.pdf"
         }
         ListElement {
-            language: "Français"
+            language: "FR"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_FR_web_v1.pdf"
         }
         ListElement {
-            language: "Ελληνικά"
+            language: "GR"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_GR_web_v1.pdf"
         }
         ListElement {
-            language: "Italiano"
+            language: "IT"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_IT_web_v1.pdf"
         }
         ListElement {
-            language: "日本人"
+            language: "JP"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_JPN_web_v1.pdf"
         }
         ListElement {
-            language: "Português"
+            language: "PT"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_PT_web_v1.pdf"
         }
     }

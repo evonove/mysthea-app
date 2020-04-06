@@ -14,66 +14,37 @@ Page {
     property Action leftAction: null
     property bool hasToolbarLine: true
     property alias rulebooksModel: _languageListView.model
-    property alias backgroundImageSource: _backgroundImage.source
+    property url buttonImageSource
 
-    background: Image {
-        id: _backgroundImage
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignBottom
-
-        Rectangle {
-            anchors.fill: parent
-            color: Palette.mineShaft
-            opacity: 0.29
-        }
-    }
-
-    Flickable {
+    GridView {
+        id: _languageListView
         anchors.fill: parent
-        contentWidth: parent.width
-        contentHeight: contentColumn.height
-        clip: true
-        ScrollIndicator.vertical: ScrollIndicator {}
+        cellWidth: width / 2
+        cellHeight: 77 + 29
 
-        Column {
-            id: contentColumn
+        header: Label {
+            id: label
+            text: qsTr("Download the rulebook in your preferred language")
+            wrapMode: Text.WordWrap
+            color: Palette.grayNurse
+            font.pixelSize: 27
+            font.letterSpacing: 0.5
+            horizontalAlignment: Text.AlignHCenter
             width: parent.width
-            height: label.height + _languageListView.contentHeight + _languageListView.bottomMargin + spacing
+            padding: 20
+        }
 
-            Label {
-                id: label
-                text: qsTr("Download the rulebook in your preferred language")
-                wrapMode: Text.WordWrap
-                color: Palette.grayNurse
-                font.pixelSize: 27
-                font.letterSpacing: 0.5
-                width: parent.width
-                padding: 20
+        delegate: Item {
+            width: _languageListView.cellWidth
+            height: _languageListView.cellHeight
+            RulebookButton {
+                backgroundImageSource: root.buttonImageSource
+                width: 134
+                height: 77
+                anchors.centerIn: parent
+                label: language
+                onClicked: Qt.openUrlExternally(downloadUrl)
             }
-
-
-           ListView {
-                id: _languageListView
-                clip: true
-                spacing: 36
-
-                width: parent.width
-                height: availableHeight
-                leftMargin: 20
-                rightMargin: 20
-                bottomMargin: 32
-                interactive: false
-
-                delegate: RulebookButton {
-                    text: language
-                    iconText: Icon.download
-                    onClicked: Qt.openUrlExternally(downloadUrl)
-                }
-            }
-
         }
     }
 }

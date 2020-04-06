@@ -1511,7 +1511,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="48"/>
+        <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="38"/>
         <source>Download the rulebook in your preferred language</source>
         <translation type="unfinished"></translation>
     </message>
