@@ -22,13 +22,15 @@ ObjectModel {
             RoundedImage {
                 source: "qrc:/images/game_setup/d1.png"
                 fillMode: Image.PreserveAspectFit
+                width: root.width
+                borderWidth: 1
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
-                Layout.rightMargin: 20
+                Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A;font-size: 30px;\">1</strong> ∙ Place the 5 Floating Islands at " + "random in the spaces marked on the board. The side showing the icons must be face up.")
+                text: qsTr("<strong style=\"font-size: 30px;\">1</strong> Place the 5 Floating Islands at " + "random in the spaces marked on the board. The side showing the icons must be face up.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1

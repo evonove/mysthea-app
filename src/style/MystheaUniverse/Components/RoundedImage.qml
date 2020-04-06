@@ -3,27 +3,40 @@ import QtQuick.Controls 2.14
 
 import QtGraphicalEffects 1.12
 
-Rectangle {
-    id: root
+Item {
+    id: _item
 
     property alias source: _image.source
     property alias fillMode: _image.fillMode
+    property alias borderWidth: _border.border.width
+    property alias borderRadius: _border.radius
 
-    color: "transparent"
-    radius: 10
-    border.width: 2
-    border.color: "white"
+    implicitWidth: _image.implicitWidth
+    implicitHeight: _image.implicitHeight
+    height: _image.height
 
     Image {
         id: _image
-        anchors.fill: parent
-        layer.enabled: true
-        layer.effect: OpacityMask {
-            maskSource: Rectangle {
-                width: _image.width
-                height: _image.height
-                radius: 10
-            }
+        width: _item.width
+        visible: false
+    }
+
+    OpacityMask {
+        anchors.fill: _image
+        source: _image
+        maskSource: Rectangle {
+            width: _image.width
+            height: _image.height
+            radius: 10
         }
+    }
+
+    Rectangle {
+        id: _border
+        anchors.fill: parent
+        color: "transparent"
+        radius: 10
+        border.width: 2
+        border.color: "white"
     }
 }

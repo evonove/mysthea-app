@@ -31,12 +31,12 @@ Page {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 implicitHeight: imgBlockA.height
+
                 RoundedImage {
                     id: imgBlockA
                     source: "qrc:/images/game_setup/blocco1_a.png"
                     fillMode: Image.PreserveAspectFit
                     width: parent.width
-                    height: 100
                 }
                 RoundButton {
                     anchors.verticalCenter: imgBlockA.verticalCenter
@@ -76,11 +76,11 @@ Page {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 implicitHeight: imgBlockB.height
-                Image {
+                RoundedImage {
                     id: imgBlockB
+                    width: parent.width
                     source: "qrc:/images/game_setup/blocco1_b.png"
                     fillMode: Image.PreserveAspectFit
-                    sourceSize.width: parent.width
 
                     RoundButton {
                         anchors.verticalCenter: imgBlockB.verticalCenter
@@ -115,11 +115,11 @@ Page {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 implicitHeight: imgBlockC.height
-                Image {
+                RoundedImage {
                     id: imgBlockC
+                    width: parent.width
                     source: "qrc:/images/game_setup/blocco1_c.png"
                     fillMode: Image.PreserveAspectFit
-                    sourceSize.width: parent.width
 
                     RoundButton {
                         anchors.bottom: imgBlockC.bottom
