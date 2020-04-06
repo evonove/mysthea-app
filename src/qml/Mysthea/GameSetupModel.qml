@@ -30,7 +30,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"font-size: 30px;\">1</strong> Place the 5 Floating Islands at " + "random in the spaces marked on the board. The side showing the icons must be face up.")
+                text: qsTr("<strong style=\"font-size: 57px;\">1</strong> Place the 5 Floating Islands at " + "random in the spaces marked on the board. The side showing the icons must be face up.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -43,9 +43,9 @@ ObjectModel {
                 Layout.rightMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color: #F9A973;\">In a 2-player game:</strong><br> Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.")
-                color: Palette.tequila
-                font.pixelSize: 20
+                text: qsTr("<strong style=\"color: #FFEDF5;\">In a 2-player game:</strong><br> Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.")
+                color: Palette.grayNurse
+                font.pixelSize: 14
                 font.letterSpacing: 1
                 textFormat: Text.RichText
                 wrapMode: Text.Wrap
@@ -67,17 +67,18 @@ ObjectModel {
             id: step2
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d2.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A;font-size: 30px;\">2</strong> ∙ Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.")
+                text: qsTr("<strong style=\"font-size: 57px;\">2</strong> Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -100,10 +101,11 @@ ObjectModel {
             id: step3
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d3.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -111,7 +113,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">3</strong> ∙ Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.")
+                text: qsTr("<strong style=\"font-size: 57px;\">3</strong> Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -134,10 +136,11 @@ ObjectModel {
             id: step4
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d4.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -145,11 +148,12 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A;font-size: 30px;\">4</strong> ∙ Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.")
+                text: qsTr("<strong style=\"font-size: 57px;\">4</strong> Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.")
+                color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
-                wrapMode: Text.Wrap
                 textFormat: Text.RichText
+                wrapMode: Text.Wrap
                 lineHeight: 1.1
 
                 Layout.fillWidth: true
@@ -167,10 +171,11 @@ ObjectModel {
             id: step5
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d5.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -178,7 +183,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">5</strong> ∙ Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.")
+                text: qsTr("<strong style=\"font-size: 57px;\">5</strong> Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -201,10 +206,11 @@ ObjectModel {
             id: step6
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d6.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -212,7 +218,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">6</strong> ∙ Sort the Command Cards by Era (<span style=\"font-family:EraIcons; font-size: 15px;\">0</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">1</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> or <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> in the top-right hand corner). Shuffle the 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">1</span> cards, 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> cards, and 20 Era <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> cards separately, and place the three decks face down on the Events Board, as Era Decks.")
+                text: qsTr("<strong style=\"font-size: 57px;\">6</strong> Sort the Command Cards by Era (<span style=\"font-family:EraIcons; font-size: 15px;\">0</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">1</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> or <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> in the top-right hand corner). Shuffle the 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">1</span> cards, 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> cards, and 20 Era <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> cards separately, and place the three decks face down on the Events Board, as Era Decks.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -235,10 +241,11 @@ ObjectModel {
             id: step7
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d7.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -246,7 +253,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">7</strong> ∙ Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
+                text: qsTr("<strong style=\"font-size: 57px;\">7</strong> Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -259,9 +266,9 @@ ObjectModel {
                 Layout.rightMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color: #F9A973;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
-                color: Palette.tequila
-                font.pixelSize: 20
+                text: qsTr("<strong style=\"color: #FFEDF5;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
+                color: Palette.grayNurse
+                font.pixelSize: 14
                 font.letterSpacing: 1
                 textFormat: Text.RichText
                 wrapMode: Text.Wrap
@@ -283,10 +290,11 @@ ObjectModel {
             id: step8
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d8.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -294,7 +302,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">8</strong> ∙ Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
+                text: qsTr("<strong style=\"font-size: 57px;\">8</strong> ∙ Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -307,9 +315,9 @@ ObjectModel {
                 Layout.rightMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color: #F9A973;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
-                color: Palette.tequila
-                font.pixelSize: 20
+                text: qsTr("<strong style=\"color: #FFEDF5;\">Expert Players Mode:</strong><br> Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.")
+                color: Palette.grayNurse
+                font.pixelSize: 14
                 font.letterSpacing: 1
                 textFormat: Text.RichText
                 wrapMode: Text.Wrap
@@ -331,10 +339,11 @@ ObjectModel {
             id: step9
             width: parent.width
             spacing: 20
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d9.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
+                borderWidth: 1
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -342,7 +351,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">9</strong> ∙ Each player chooses a color and takes the matching:")
+                text: qsTr("<strong style=\"font-size: 57px;\">9</strong> ∙ Each player chooses a color and takes the matching:")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -603,7 +612,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">10</strong> ∙ Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
+                text: qsTr("<strong style=\"font-size: 57px;\">10</strong> ∙ Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -652,7 +661,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"color:#B7537A; font-size: 30px;\">11</strong> ∙ In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
+                text: qsTr("<strong style=\"font-size: 57px;\">11</strong> ∙ In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
                 color: Palette.grayNurse
                 font.pixelSize: 20
                 font.letterSpacing: 1
@@ -666,9 +675,9 @@ ObjectModel {
             }
 
             Label {
-                text: qsTr("<strong style=\"color: #F9A973;\">In a 2-player game:</strong><br> You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.")
-                color: Palette.tequila
-                font.pixelSize: 20
+                text: qsTr("<strong style=\"color:#FFEDF5;\">In a 2-player game:</strong><br> You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.")
+                color: Palette.grayNurse
+                font.pixelSize: 14
                 font.letterSpacing: 1
                 textFormat: Text.RichText
                 wrapMode: Text.Wrap

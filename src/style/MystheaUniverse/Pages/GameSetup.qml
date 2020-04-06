@@ -9,9 +9,7 @@ import MystheaUniverse.Theme 1.0
 
 Page {
     id: root
-    title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr(
-                                         "GAME SETUP - %1 of 11").arg(
-                                         root.currentIndex)
+    title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr( "GAME SETUP - %1 of 11").arg( root.currentIndex)
     objectName: PageName.gameSetupPage
     padding: 0
 
@@ -36,13 +34,6 @@ Page {
         width: parent.width
         height: 56
         visible: root.currentIndex >= 1
-        background: Rectangle {
-            anchors.top: parent.top
-            width: parent.width
-            height: 1
-            color: Palette.white
-            opacity: 0.5
-        }
 
         PageIndicator {
             anchors.centerIn: parent
