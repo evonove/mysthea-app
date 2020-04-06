@@ -34,11 +34,11 @@ Rulebook {
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_IT_web_v1.pdf"
         }
         ListElement {
-            language: "JA"
+            language: "JP"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_JPN_web_v1.pdf"
         }
         ListElement {
-            language: "PG"
+            language: "PT"
             downloadUrl: "https://s3-eu-west-1.amazonaws.com/mysthea/Rulebooks/rulebook_PT_web_v1.pdf"
         }
     }
