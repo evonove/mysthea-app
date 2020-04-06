@@ -31,11 +31,12 @@ Page {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 implicitHeight: imgBlockA.height
-                Image {
+                RoundedImage {
                     id: imgBlockA
                     source: "qrc:/images/game_setup/blocco1_a.png"
                     fillMode: Image.PreserveAspectFit
-                    sourceSize.width: parent.width
+                    width: parent.width
+                    height: 100
                 }
                 RoundButton {
                     anchors.verticalCenter: imgBlockA.verticalCenter

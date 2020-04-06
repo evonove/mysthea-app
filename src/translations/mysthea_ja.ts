@@ -4,22 +4,22 @@
 <context>
     <name>AppContainer</name>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="93"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="92"/>
         <source>Cards Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="103"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="102"/>
         <source>Game Setup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="113"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="112"/>
         <source>Rulebook</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="123"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="122"/>
         <source>Extras</source>
         <translation type="unfinished"></translation>
     </message>

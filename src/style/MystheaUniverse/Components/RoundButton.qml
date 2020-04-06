@@ -20,7 +20,8 @@ T.Button {
     leftPadding: padding - 4
     rightPadding: padding - 4
     spacing: 6
-    font.pixelSize: 27
+    font.pixelSize: 32
+    font.weight: Font.Bold
 
     icon.width: 24
     icon.height: 24
@@ -32,7 +33,7 @@ T.Button {
     Material.background: flat ? "transparent" : undefined
 
     contentItem: IconLabel {
-        topPadding: 6
+        topPadding: 12
         spacing: control.spacing
         mirrored: control.mirrored
         display: control.display
@@ -40,9 +41,7 @@ T.Button {
         icon: control.icon
         text: control.text
         font: control.font
-        color: !control.enabled ? control.Material.hintTextColor :
-            control.flat && control.highlighted ? control.Material.accentColor :
-            control.highlighted ? control.Material.primaryHighlightedTextColor : control.Material.foreground
+        color: "white"
     }
 
     background: Rectangle {
@@ -54,7 +53,7 @@ T.Button {
         width: parent.width
         height: parent.height
         radius: width / 2
-        color:  Qt.hsla(Palette.voodoo.hslHue, Palette.voodoo.hslSaturation, Palette.voodoo.hslLightness, 0.85)
+        color:  Qt.hsla(Palette.black.hslHue, Palette.black.hslSaturation, Palette.black.hslLightness, 0.55)
         Rectangle {
             anchors.fill: parent
             color: "transparent"

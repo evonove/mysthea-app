@@ -21,15 +21,6 @@ Page {
     property int numberSteps: 0
     property alias sourceComponent: _componentLoader.sourceComponent
 
-    background: Image {
-        source: "qrc:/assets/images/cards-bg.jpg"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignTop
-    }
-
     BusyIndicator {
         anchors.centerIn: parent
         running: _componentLoader.status !== Loader.Ready

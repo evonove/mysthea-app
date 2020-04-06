@@ -10,6 +10,7 @@ ImageButton 1.0 ImageButton.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
 RadioLanguage 1.0 RadioButton.qml
 RoundButton 1.0 RoundButton.qml
+RoundedImage 1.0 RoundedImage.qml
 RulebookButton 1.0 RulebookButton.qml
 ScrollIndicator 1.0 ScrollIndicator.qml
 SearchField 1.0 SearchField.qml

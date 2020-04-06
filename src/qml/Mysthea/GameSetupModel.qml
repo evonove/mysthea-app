@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 import QtGraphicalEffects 1.12
 
+import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
 
 ObjectModel {
@@ -18,10 +19,9 @@ ObjectModel {
             width: parent.width
             spacing: 20
 
-            Image {
+            RoundedImage {
                 source: "qrc:/images/game_setup/d1.png"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
