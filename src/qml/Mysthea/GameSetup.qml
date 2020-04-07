@@ -14,7 +14,7 @@ GameSetup {
             id: _swipeView
             currentIndex: root.currentIndex
             anchors.fill: parent
-            clip: true
+            clip: false
 
             Loader {
                 asynchronous: true

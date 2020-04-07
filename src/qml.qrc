@@ -30,6 +30,7 @@
         <file>qml/main.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>style/MystheaUniverse/ComboBox.qml</file>
+        <file>style/MystheaUniverse/PageIndicator.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>

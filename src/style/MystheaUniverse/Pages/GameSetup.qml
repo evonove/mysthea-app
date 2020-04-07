@@ -32,14 +32,23 @@ Page {
 
     footer: Pane {
         width: parent.width
-        height: 56
+        height: 72
         visible: root.currentIndex >= 1
 
+        background: Rectangle {
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "transparent" }
+                GradientStop { position: 0.6; color: "#000000" }
+            }
+        }
+
         PageIndicator {
-            anchors.centerIn: parent
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
             currentIndex: root.currentIndex - 1
             count: root.numberSteps
             visible: root.currentIndex >= 1
+            mainColor: Palette.mystheaMain
         }
     }
 }

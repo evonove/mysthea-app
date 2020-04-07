@@ -955,133 +955,133 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <name>GameSetupModel</name>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="33"/>
-        <source>&lt;strong style=&quot;font-size: 30px;&quot;&gt;1&lt;/strong&gt; Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;1&lt;/strong&gt; Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="46"/>
-        <source>&lt;strong style=&quot;color: #F9A973;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
+        <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="80"/>
-        <source>&lt;strong style=&quot;color:#B7537A;font-size: 30px;&quot;&gt;2&lt;/strong&gt; ∙ Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="81"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;2&lt;/strong&gt; Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="114"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;3&lt;/strong&gt; ∙ Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="116"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;3&lt;/strong&gt; Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="148"/>
-        <source>&lt;strong style=&quot;color:#B7537A;font-size: 30px;&quot;&gt;4&lt;/strong&gt; ∙ Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="151"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;4&lt;/strong&gt; Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="181"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;5&lt;/strong&gt; ∙ Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="186"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;5&lt;/strong&gt; Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="215"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;6&lt;/strong&gt; ∙ Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="221"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;6&lt;/strong&gt; Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="249"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;7&lt;/strong&gt; ∙ Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="256"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;7&lt;/strong&gt; Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="262"/>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="310"/>
-        <source>&lt;strong style=&quot;color: #F9A973;&quot;&gt;Expert Players Mode:&lt;/strong&gt;&lt;br&gt; Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="269"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="318"/>
+        <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Expert Players Mode:&lt;/strong&gt;&lt;br&gt; Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="297"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;8&lt;/strong&gt; ∙ Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="305"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;8&lt;/strong&gt; ∙ Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="345"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;9&lt;/strong&gt; ∙ Each player chooses a color and takes the matching:</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="354"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;9&lt;/strong&gt; ∙ Each player chooses a color and takes the matching:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="359"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="368"/>
         <source>&lt;b&gt;&lt;u&gt;Player Board&lt;/u&gt;&lt;/b&gt; &lt;br&gt; To be placed in front of you, next to your Champion Card.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="373"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="382"/>
         <source>&lt;b&gt;&lt;u&gt;1 Energy Token and 1 Experience Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="387"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="396"/>
         <source> Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="401"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="410"/>
         <source>&lt;b&gt;&lt;u&gt;Glory Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="415"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="424"/>
         <source>&lt;b&gt;&lt;u&gt;Encounter Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place this on your Champion Card.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="429"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="438"/>
         <source>&lt;b&gt;&lt;u&gt;Your units&lt;/u&gt;&lt;/b&gt;&lt;br&gt; The area of your Player Board showing the illustration of your Guild Banner is referred to as your constructed unit space and is where you place all of your constructed units.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="463"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="472"/>
         <source>- &lt;b&gt;&lt;u&gt;1 Champion&lt;/u&gt;&lt;/b&gt; (the miniature corresponding to your Champion Card) Place it on your constructed unit space.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="495"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="504"/>
         <source>- &lt;b&gt;&lt;u&gt;8 Troops&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="527"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="536"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="559"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="568"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Keep all 4 next to your Player Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="572"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="581"/>
         <source>&lt;b&gt;&lt;u&gt;13 Colored Rings&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attach these onto the base of all your miniatures, matching your Guild’s color.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="606"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;10&lt;/strong&gt; ∙ Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="615"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;10&lt;/strong&gt; ∙ Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="620"/>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="664"/>
+        <source>&lt;strong style=&quot;font-size: 57px;&quot;&gt;11&lt;/strong&gt; ∙ In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="678"/>
+        <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/GameSetupModel.qml" line="629"/>
         <source>The Artefacts show the order of play: the player with Artefact “I” goes first, and the other players follow according to the Roman Numeral on their Artefact.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="655"/>
-        <source>&lt;strong style=&quot;color:#B7537A; font-size: 30px;&quot;&gt;11&lt;/strong&gt; ∙ In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Mysthea/GameSetupModel.qml" line="669"/>
-        <source>&lt;strong style=&quot;color: #F9A973;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
