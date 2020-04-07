@@ -302,7 +302,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">8</strong> ∙ Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
+                text: qsTr("<strong style=\"font-size: 57px;\">8</strong> Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -351,7 +351,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">9</strong> ∙ Each player chooses a color and takes the matching:")
+                text: qsTr("<strong style=\"font-size: 57px;\">9</strong> Each player chooses a color and takes the matching:")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -612,7 +612,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">10</strong> ∙ Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
+                text: qsTr("<strong style=\"font-size: 57px;\">10</strong> Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -661,7 +661,7 @@ ObjectModel {
                 Layout.topMargin: 20
             }
             Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">11</strong> ∙ In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
+                text: qsTr("<strong style=\"font-size: 57px;\">11</strong> In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
