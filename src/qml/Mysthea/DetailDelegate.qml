@@ -1,6 +1,7 @@
 import QtQuick 2.10
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.3
+import QtGraphicalEffects 1.14
 
 import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
@@ -24,7 +25,7 @@ Pane {
 
     Flickable {
         anchors.fill: parent
-        contentHeight: _layout.height + _frontImageLoader.height + _backImageLoader.height + 24
+        contentHeight: _layout.height + _frontImageLoader.height + _backImageLoader.height + 48
         contentWidth: parent.width
 
         ColumnLayout {
@@ -148,32 +149,50 @@ Pane {
             id: _frontImageLoader
             anchors.top: _layout.bottom
             anchors.topMargin: 25
+            anchors.horizontalCenter: parent.horizontalCenter
             asynchronous: true
-            width: root.type === 6 || root.type === 7 ? undefined : parent.width
-            height: root.type === 6
-                    || root.type === 7 ? parent.width : undefined
+            width: 225
+            height: 332
 
             sourceComponent: Component {
-                Image {
-                    id: _cardImage
-                    fillMode: Image.PreserveAspectFit
-                    source: "qrc:/assets/images/cards/" + root.image
-                    sourceSize.width: 225
+                Rectangle {
+                    color: _cardImage.status === Image.Ready ? "transparent" : "dimgray"
+                    opacity: _cardImage.status === Image.Ready ? 1 : 0.5
+                    radius: 5
 
-                    property list<QtObject> rotationTransform: [
-                        // Rotates image 90 degrees clockwise, then moves it to the right
-                        Rotation {
-                            origin.x: 0
-                            origin.y: 0
-                            angle: 90
-                        },
-                        Translate {
-                            x: height
+                    Image {
+                        id: _cardImage
+                        anchors.fill: parent
+                        visible: false
+                        fillMode: Image.PreserveAspectFit
+                        source: "qrc:/assets/images/cards/" + root.image
+
+                        property list<QtObject> rotationTransform: [
+                            // Rotates image 90 degrees clockwise, then moves it to the right
+                            Rotation {
+                                origin.x: 0
+                                origin.y: 0
+                                angle: 90
+                            },
+                            Translate {
+                                x: height
+                            }
+                        ]
+
+
+                        transform: root.type === 6
+                                   || root.type === 7 ? rotationTransform : []
+                    }
+
+                    OpacityMask {
+                        anchors.fill: _cardImage
+                        source: _cardImage
+                        maskSource: Rectangle {
+                            width: _cardImage.width
+                            height: _cardImage.height
+                            radius: 5
                         }
-                    ]
-
-                    transform: root.type === 6
-                               || root.type === 7 ? rotationTransform : []
+                    }
                 }
             }
         }
@@ -183,28 +202,47 @@ Pane {
             id: _backImageLoader
             anchors.top: _frontImageLoader.bottom
             anchors.topMargin: 24
+            anchors.horizontalCenter: parent.horizontalCenter
             active: root.backImage.length > 0
             asynchronous: true
-            height: active ? parent.width : 0
+            width: 225
+//            height: 332
+            height: active ? 332 : 0
 
             sourceComponent: Component {
-                Image {
-                    fillMode: Image.PreserveAspectFit
-                    source: "qrc:/assets/images/cards/" + root.backImage
-                    sourceSize.width: 225
+                Rectangle {
+                    color: _backImage.status === Image.Ready ? "transparent" : "dimgray"
+                    opacity: _backImage.status === Image.Ready ? 1 : 0.5
+                    radius: 5
+                    Image {
+                        id: _backImage
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                        source: "qrc:/assets/images/cards/" + root.backImage
+                        visible: false
 
-                    transform: [
-                        // Rotates image 90 degrees clockwise, then moves it to the right
-                        Rotation {
-                            origin.x: 0
-                            origin.y: 0
-                            angle: 90
-                        },
-                        Translate {
-                            x: _layout.width
-                            y: width - height
+                        transform: [
+                            // Rotates image 90 degrees clockwise, then moves it to the right
+                            Rotation {
+                                origin.x: 0
+                                origin.y: 0
+                                angle: 90
+                            },
+                            Translate {
+                                x: _layout.width
+                                y: width - height
+                            }
+                        ]
+                    }
+                    OpacityMask {
+                        anchors.fill: _backImage
+                        source: _backImage
+                        maskSource: Rectangle {
+                            width: _backImage.width
+                            height: _backImage.height
+                            radius: 5
                         }
-                    ]
+                    }
                 }
             }
         }
