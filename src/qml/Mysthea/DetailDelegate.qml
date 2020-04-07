@@ -190,7 +190,7 @@ Pane {
             sourceComponent: Component {
                 Image {
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/images/cards/" + root.backImage
+                    source: "qrc:/assets/images/cards/" + root.backImage
                     sourceSize.width: 225
 
                     transform: [
