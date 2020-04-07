@@ -2,7 +2,9 @@ module MystheaUniverse.Components
 AppContainer 1.0 AppContainer.qml
 AppDrawer 1.0 AppDrawer.qml
 Button 1.0 Button.qml
+CardDetailDelegate 1.0 CardDetailDelegate.qml
 CardsFiltersHeader 1.0 CardsFiltersHeader.qml
+CardsList 1.0 CardsList.qml
 ColorComboBox 1.0 ColorComboBox.qml
 DropCapLabel 1.0 DropCapLabel.qml
 Header 1.0 Header.qml

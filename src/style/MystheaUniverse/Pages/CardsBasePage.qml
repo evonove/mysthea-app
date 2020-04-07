@@ -6,8 +6,6 @@ import MystheaUniverse.Theme 1.0
 
 Page {
     id: root
-
-
     /*
       This page repersents the base of all CardsList or CardsNotFound pages.
       For default it contains the CardsFilterHeader and the models that it needs.

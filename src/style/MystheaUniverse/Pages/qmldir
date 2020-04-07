@@ -1,4 +1,5 @@
 module MystheaUniverse.Pages
+CardDetail 1.0 CardDetail.qml
 CardsBasePage 1.0 CardsBasePage.qml
 CardNotFound 1.0 CardNotFound.qml
 CardsReference 1.0 CardsReference.qml

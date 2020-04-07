@@ -18,6 +18,8 @@ BasePages.CardsReference {
         id: _cardsListComponent
         CardsList {
             anchors.fill: parent
+            commandComboBoxModel: root.commandComboBoxModel
+            typeComboBoxModel: root.typeComboBoxModel
             model: typeProxyModel
             onCardClicked: {
                 var cardsModel = typeProxyModel.visibleCards
@@ -33,6 +35,10 @@ BasePages.CardsReference {
         id: _cardDetail
         CardDetail {
             property bool isLoading: false
+
+            commandComboBoxModel: root.commandComboBoxModel
+            typeComboBoxModel: root.typeComboBoxModel
+
             Action {
                 id: _backAction
                 text: Icon.back

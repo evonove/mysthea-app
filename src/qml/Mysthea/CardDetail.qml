@@ -1,54 +1,12 @@
-import QtQuick 2.10
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.3
+import QtQuick 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
+import QtGraphicalEffects 1.14
 
+import MystheaUniverse.Pages 1.0 as Pages
 import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
 
-Page {
+Pages.CardDetail {
     id: root
-    title: qsTr("CARD DETAIL")
-    property Action leftAction: null
-    property bool hasToolbarLine: true
-
-    property CardsProxyModel model: null
-    property int index: -1
-
-    padding: 0
-    background: Rectangle {
-        color: Palette.black
-    }
-
-    SwipeView {
-        id: _swipeView
-        anchors.fill: parent
-        currentIndex: root.index
-
-        Repeater {
-            model: root.model
-
-            Loader {
-                width: root.width
-                height: root.height - _swipeView.topPadding
-                active: SwipeView.isPreviousItem
-                               || SwipeView.isCurrentItem
-                               || SwipeView.isNextItem
-                asynchronous: true
-
-                sourceComponent: Component {
-                    DetailDelegate {
-                        clip: true
-                        code: model.code
-                        type: model.type
-                        typeText: model.typeText
-                        command: model.command
-                        commandText: model.commandText
-                        image: model.image
-                        backImage: model.backImage
-                        description: model.description
-                    }
-                }
-            }
-        }
-    }
 }

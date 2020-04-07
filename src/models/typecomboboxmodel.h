@@ -1,5 +1,4 @@
-#ifndef TYPECOMBOBOXMODEL_H
-#define TYPECOMBOBOXMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QVector>
@@ -20,10 +19,10 @@ public:
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
 
   Q_INVOKABLE QString getTypeFromIndex(int index) const;
+  Q_INVOKABLE QString iconUrl(const int &type) const;
 
 private:
   QHash<int, QString> m_types;
   QHash<int, QString> m_typesIcon;
 };
 
-#endif // TYPECOMBOBOXMODEL_H

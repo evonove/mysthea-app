@@ -36,7 +36,9 @@
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
+        <file>style/MystheaUniverse/Components/CardDetailDelegate.qml</file>
         <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>
+        <file>style/MystheaUniverse/Components/CardsList.qml</file>
         <file>style/MystheaUniverse/Components/DropCapLabel.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
@@ -55,10 +57,12 @@
         <file>style/MystheaUniverse/Pages/CardsReference.qml</file>
         <file>style/MystheaUniverse/Pages/Extras.qml</file>
         <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
+        <file>style/MystheaUniverse/Pages/Lore.qml</file>
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>style/MystheaUniverse/Pages/qmldir</file>
         <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
+        <file>style/MystheaUniverse/Pages/StackPage.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/Icon.qml</file>
@@ -66,7 +70,5 @@
         <file>style/MystheaUniverse/Theme/qmldir</file>
         <file>style/MystheaUniverse/ToolBar.qml</file>
         <file>style/MystheaUniverse/ToolButton.qml</file>
-        <file>style/MystheaUniverse/Pages/Lore.qml</file>
-        <file>style/MystheaUniverse/Pages/StackPage.qml</file>
     </qresource>
 </RCC>
