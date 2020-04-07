@@ -260,7 +260,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "7"
-                text: qsTr("Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
+                otherText: qsTr("Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
