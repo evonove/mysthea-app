@@ -29,14 +29,15 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">1</strong> Place the 5 Floating Islands at " + "random in the spaces marked on the board. The side showing the icons must be face up.")
+            DropCapLabel {
+                dropLetter: "1"
+                otherText: qsTr("Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
                 textFormat: Text.RichText
                 wrapMode: Text.Wrap
-                lineHeight: 1.1
+                lineHeight: 1.0
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -77,8 +78,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">2</strong> Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.")
+            DropCapLabel {
+                dropLetter: "2"
+                otherText: qsTr("Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -112,8 +114,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">3</strong> Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.")
+            DropCapLabel {
+                dropLetter: "3"
+                otherText: qsTr("Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -147,8 +150,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">4</strong> Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.")
+            DropCapLabel {
+                dropLetter: "4"
+                otherText: qsTr("Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -182,8 +186,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">5</strong> Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.")
+            DropCapLabel {
+                dropLetter: "5"
+                otherText: qsTr("Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -217,8 +222,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">6</strong> Sort the Command Cards by Era (<span style=\"font-family:EraIcons; font-size: 15px;\">0</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">1</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> or <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> in the top-right hand corner). Shuffle the 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">1</span> cards, 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> cards, and 20 Era <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> cards separately, and place the three decks face down on the Events Board, as Era Decks.")
+            DropCapLabel {
+                dropLetter: "6"
+                otherText: qsTr("Sort the Command Cards by Era (<span style=\"font-family:EraIcons; font-size: 15px;\">0</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">1</span>/ <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> or <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> in the top-right hand corner). Shuffle the 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">1</span> cards, 20 Era <span style=\"font-family:EraIcons; font-size: 15px;\">2</span> cards, and 20 Era <span style=\"font-family:EraIcons; font-size: 17px;\">3</span> cards separately, and place the three decks face down on the Events Board, as Era Decks.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -252,8 +258,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">7</strong> Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
+            DropCapLabel {
+                dropLetter: "7"
+                text: qsTr("Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -301,8 +308,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">8</strong> Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
+            DropCapLabel {
+                dropLetter: "8"
+                otherText: qsTr("Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -350,8 +358,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">9</strong> Each player chooses a color and takes the matching:")
+            DropCapLabel {
+                dropLetter: "9"
+                otherText: qsTr("Each player chooses a color and takes the matching:")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -611,8 +620,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">10</strong> Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
+            DropCapLabel {
+                dropLetter: "10"
+                otherText: qsTr("Shuffle the Artefact Tokens and give each player one of them at random.<br>Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -660,8 +670,9 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
-            Label {
-                text: qsTr("<strong style=\"font-size: 57px;\">11</strong> In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
+            DropCapLabel {
+                dropLetter: "11"
+                otherText: qsTr("In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.")
                 color: Palette.grayNurse
                 font.pixelSize: 18
                 font.letterSpacing: 1
