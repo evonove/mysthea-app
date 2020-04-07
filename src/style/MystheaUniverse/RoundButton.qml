@@ -40,6 +40,6 @@ T.RoundButton {
         visible: true
         color: "#88000000"
         border.color: "white"
-        border.width: 5
+        border.width: 4
     }
 }

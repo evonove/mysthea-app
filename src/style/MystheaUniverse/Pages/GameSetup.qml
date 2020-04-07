@@ -11,7 +11,6 @@ Page {
     id: root
     title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr( "GAME SETUP - %1 of 11").arg( root.currentIndex)
     objectName: PageName.gameSetupPage
-    padding: 0
 
     property bool hasToolbarLine: true
     property Action leftAction

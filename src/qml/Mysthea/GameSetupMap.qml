@@ -25,8 +25,8 @@ Page {
             id: content
             width: root.width
             Item {
-                Layout.leftMargin: 20
-                Layout.rightMargin: 20
+                Layout.leftMargin: 40
+                Layout.rightMargin: 40
                 Layout.topMargin: 16
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -40,20 +40,22 @@ Page {
                 RoundButton {
                     anchors.verticalCenter: imgBlockA.verticalCenter
                     anchors.horizontalCenter: imgBlockA.horizontalCenter
-                    anchors.horizontalCenterOffset: 60
+                    anchors.horizontalCenterOffset: 50
+                    anchors.verticalCenterOffset: 30
                     text: "1"
                     onClicked: root.stepClicked(1)
                 }
                 RoundButton {
                     anchors.right: imgBlockA.right
-                    anchors.rightMargin: 50
+                    anchors.rightMargin: 30
                     anchors.verticalCenter: imgBlockA.verticalCenter
-                    anchors.verticalCenterOffset: -100
+                    anchors.verticalCenterOffset: -90
                     text: "4"
                     onClicked: root.stepClicked(4)
                 }
                 RoundButton {
                     anchors.left: imgBlockA.left
+                    anchors.leftMargin: -30
                     anchors.verticalCenter: imgBlockA.verticalCenter
                     anchors.verticalCenterOffset: 20
                     text: "5"
@@ -62,15 +64,15 @@ Page {
                 RoundButton {
                     anchors.verticalCenter: imgBlockA.verticalCenter
                     anchors.horizontalCenter: imgBlockA.horizontalCenter
-                    anchors.verticalCenterOffset: -10
-                    anchors.horizontalCenterOffset: -20
+                    anchors.verticalCenterOffset: -50
+                    anchors.horizontalCenterOffset: -40
                     text: "11"
                     onClicked: root.stepClicked(11)
                 }
             }
             Item {
-                Layout.leftMargin: 20
-                Layout.rightMargin: 20
+                Layout.leftMargin: 40
+                Layout.rightMargin: 40
                 Layout.topMargin: 16
                 Layout.fillWidth: true
                 Layout.fillHeight: true
@@ -83,7 +85,9 @@ Page {
 
                     RoundButton {
                         anchors.verticalCenter: imgBlockB.verticalCenter
+                        anchors.verticalCenterOffset: -80
                         anchors.right: imgBlockB.right
+                        anchors.rightMargin: -25
                         text: "2"
                         onClicked: root.stepClicked(2)
                     }
@@ -91,7 +95,7 @@ Page {
                         anchors.left: imgBlockB.left
                         anchors.leftMargin: 20
                         anchors.verticalCenter: imgBlockB.verticalCenter
-                        anchors.verticalCenterOffset: -20
+                        anchors.verticalCenterOffset: -10
 
                         text: "3"
                         onClicked: root.stepClicked(3)
@@ -99,7 +103,7 @@ Page {
                     RoundButton {
                         anchors.verticalCenter: imgBlockB.verticalCenter
                         anchors.horizontalCenter: imgBlockB.horizontalCenter
-                        anchors.horizontalCenterOffset: 70
+                        anchors.horizontalCenterOffset: 40
                         anchors.verticalCenterOffset: -10
                         text: "6"
                         onClicked: root.stepClicked(6)
@@ -107,8 +111,8 @@ Page {
                 }
             }
             Item {
-                Layout.leftMargin: 20
-                Layout.rightMargin: 20
+                Layout.leftMargin: 40
+                Layout.rightMargin: 40
                 Layout.topMargin: 16
                 Layout.bottomMargin: 20
                 Layout.fillWidth: true
@@ -123,6 +127,7 @@ Page {
                     RoundButton {
                         anchors.bottom: imgBlockC.bottom
                         anchors.right: imgBlockC.right
+                        anchors.rightMargin: -10
                         text: "7"
                         onClicked: root.stepClicked(7)
                     }
@@ -135,6 +140,7 @@ Page {
                     }
                     RoundButton {
                         anchors.left: imgBlockC.left
+                        anchors.leftMargin: -10
                         anchors.verticalCenter: imgBlockC.verticalCenter
                         text: "9"
                         onClicked: root.stepClicked(9)
