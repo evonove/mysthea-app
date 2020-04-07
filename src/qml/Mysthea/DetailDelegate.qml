@@ -157,7 +157,7 @@ Pane {
                 Image {
                     id: _cardImage
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/images/cards/" + root.image
+                    source: "qrc:/assets/images/cards/" + root.image
                     sourceSize.width: 225
 
                     property list<QtObject> rotationTransform: [
