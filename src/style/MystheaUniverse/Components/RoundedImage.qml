@@ -13,11 +13,11 @@ Item {
 
     implicitWidth: _image.implicitWidth
     implicitHeight: _image.implicitHeight
-    height: _image.height
 
     Image {
         id: _image
         width: _item.width
+        height: _item.height
         visible: false
     }
 

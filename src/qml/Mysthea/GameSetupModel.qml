@@ -14,6 +14,7 @@ ObjectModel {
     Flickable {
         contentWidth: root.width
         contentHeight: step1.height
+
         ColumnLayout {
             id: step1
             width: parent.width
@@ -29,6 +30,7 @@ ObjectModel {
                 Layout.rightMargin: Layout.leftMargin
                 Layout.topMargin: 20
             }
+
             DropCapLabel {
                 dropLetter: "1"
                 otherText: qsTr("Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.")
@@ -43,6 +45,7 @@ ObjectModel {
                 Layout.leftMargin: 20
                 Layout.rightMargin: 20
             }
+
             Label {
                 text: qsTr("<strong style=\"color: #FFEDF5;\">In a 2-player game:</strong><br> Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.")
                 color: Palette.grayNurse
