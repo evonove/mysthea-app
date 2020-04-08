@@ -40,6 +40,7 @@ set(SOURCE_FILES
     qml.qrc
     ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc
     )
+qt5_add_big_resources(SOURCE_FILES mysthea-assets.qrc)
 qt5_add_big_resources(SOURCE_FILES mysthea-cards.qrc)
 
 # Translation files
