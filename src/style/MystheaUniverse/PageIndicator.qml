@@ -52,19 +52,37 @@ T.PageIndicator {
     spacing: 6
 
     delegate: Rectangle {
-        implicitWidth: index === currentIndex ? 8 : 6
-        implicitHeight: index === currentIndex ? 8 : 6
-        y: index === currentIndex ? 0 : 1
+        implicitWidth: 6
+        implicitHeight: 6
+        y: 1
         radius: width / 2
-        color: index === currentIndex ? control.mainColor : "#8B8789"
+        color: "#8B8789"
     }
 
-    contentItem: Row {
-        spacing: control.spacing
+    contentItem: Item {
+        Row {
+            anchors.fill: parent
 
-        Repeater {
-            model: control.count
-            delegate: control.delegate
+            spacing: control.spacing
+
+            Repeater {
+                id: _repeater
+                model: control.count
+                delegate: control.delegate
+            }
+        }
+
+        Rectangle {
+            width: 8
+            height: 8
+            radius: width / 2
+            color: control.mainColor
+
+            x: _repeater.itemAt(control.currentIndex).x
+
+            Behavior on x {
+                NumberAnimation { duration: 200 }
+            }
         }
     }
 }
