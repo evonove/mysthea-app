@@ -60,9 +60,18 @@ T.PageIndicator {
     }
 
     contentItem: Item {
-        Row {
-            anchors.fill: parent
+        id: _item
 
+        implicitWidth: row.width
+        implicitHeight: row.height
+
+        property Item currentItem: _repeater.itemAt(control.currentIndex)
+        property real currentX: currentItem ? currentItem.x : 0
+
+        Row {
+            id: row
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
             spacing: control.spacing
 
             Repeater {
@@ -78,7 +87,7 @@ T.PageIndicator {
             radius: width / 2
             color: control.mainColor
 
-            x: _repeater.itemAt(control.currentIndex).x
+            x: _item.currentX
 
             Behavior on x {
                 NumberAnimation { duration: 200 }
