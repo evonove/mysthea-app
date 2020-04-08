@@ -20,7 +20,7 @@ ObjectModel {
             spacing: 20
 
             RoundedImage {
-                source: "qrc:/images/game_setup/d1.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup01.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: root.width
                 borderWidth: 1
@@ -69,7 +69,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d2.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup02.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -104,7 +104,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d3.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup03.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -140,7 +140,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d4.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup04.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -176,7 +176,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d5.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup05.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -212,7 +212,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d6.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup06.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -248,7 +248,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d7.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup07.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -298,7 +298,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d8.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup08.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -348,7 +348,7 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                source: "qrc:/images/game_setup/d9.png"
+                source: "qrc:/assets/images/game_setup/mysthea/setup09.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: width
                 borderWidth: 1
@@ -464,7 +464,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: heroIcon
-                    source: "qrc:/images/game_setup/hero.svg"
+                    source: "qrc:/assets/images/game_setup/mysthea/hero.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -496,7 +496,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: troopIcon
-                    source: "qrc:/images/game_setup/icon_troop.svg"
+                    source: "qrc:/assets/images/game_setup/mysthea/icon_troop.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -528,7 +528,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: golemIcon
-                    source: "qrc:/images/game_setup/icon_golem.svg"
+                    source: "qrc:/assets/images/game_setup/mysthea/icon_golem.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -560,7 +560,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: fortificationIcon
-                    source: "qrc:/images/game_setup/fortification.svg"
+                    source: "qrc:/assets/images/game_setup/mysthea/fortification.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -610,10 +610,10 @@ ObjectModel {
             id: step10
             width: parent.width
             spacing: 20
-            Image {
-                source: "qrc:/images/game_setup/d10.png"
+            RoundedImage {
+                source: "qrc:/assets/images/game_setup/mysthea/setup10.jpg"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20
@@ -660,10 +660,10 @@ ObjectModel {
             id: step11
             width: parent.width
             spacing: 20
-            Image {
-                source: "qrc:/images/game_setup/d11.png"
+            RoundedImage {
+                source: "qrc:/assets/images/game_setup/mysthea/setup11.jpg"
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: width
+                width: width
 
                 Layout.fillWidth: true
                 Layout.leftMargin: 20

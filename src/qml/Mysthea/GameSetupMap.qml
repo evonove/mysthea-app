@@ -33,7 +33,7 @@ Page {
                 implicitHeight: imgBlockA.height
                 Image {
                     id: imgBlockA
-                    source: "qrc:/images/game_setup/blocco1_a.png"
+                    source: "qrc:/assets/images/game_setup/mysthea/setup-map-1.jpg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: parent.width
                 }
@@ -79,7 +79,7 @@ Page {
                 implicitHeight: imgBlockB.height
                 Image {
                     id: imgBlockB
-                    source: "qrc:/images/game_setup/blocco1_b.png"
+                    source: "qrc:/assets/images/game_setup/mysthea/setup-map-2.jpg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: parent.width
 
@@ -120,7 +120,7 @@ Page {
                 implicitHeight: imgBlockC.height
                 Image {
                     id: imgBlockC
-                    source: "qrc:/images/game_setup/blocco1_c.png"
+                    source: "qrc:/assets/images/game_setup/mysthea/setup-map-3.jpg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: parent.width
 
