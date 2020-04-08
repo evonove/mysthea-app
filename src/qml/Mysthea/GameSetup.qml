@@ -8,13 +8,19 @@ import Mysthea 1.0 as Mysthea
 
 GameSetup {
     id: root
+
+    // Here I have to set z to a negative value
+    // otherwise the SwipeView with clip: false
+    // gets rendered on top of other pages
+    z: -10
+
     sourceComponent: Component {
         id: _component
         SwipeView {
             id: _swipeView
             currentIndex: root.currentIndex
             anchors.fill: parent
-            clip: true
+            clip: false
 
             Loader {
                 asynchronous: true

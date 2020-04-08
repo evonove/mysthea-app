@@ -61,7 +61,6 @@ Page {
         width: parent.width
         height: root.headerHeight
         separatorColor: root.headerSeparatorColor
-
     }
 
     SwipeView {

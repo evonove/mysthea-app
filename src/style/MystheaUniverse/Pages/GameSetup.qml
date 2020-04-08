@@ -9,26 +9,14 @@ import MystheaUniverse.Theme 1.0
 
 Page {
     id: root
-    title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr(
-                                         "GAME SETUP - %1 of 11").arg(
-                                         root.currentIndex)
+    title: root.currentIndex === 0 ? qsTr("GAME SETUP") : qsTr( "GAME SETUP - %1 of 11").arg( root.currentIndex)
     objectName: PageName.gameSetupPage
-    padding: 0
 
     property bool hasToolbarLine: true
     property Action leftAction
     property int currentIndex
     property int numberSteps: 0
     property alias sourceComponent: _componentLoader.sourceComponent
-
-    background: Image {
-        source: "qrc:/assets/images/cards-bg.jpg"
-        fillMode: Image.PreserveAspectCrop
-        smooth: false
-
-        horizontalAlignment: Image.AlignHCenter
-        verticalAlignment: Image.AlignTop
-    }
 
     BusyIndicator {
         anchors.centerIn: parent
@@ -43,21 +31,23 @@ Page {
 
     footer: Pane {
         width: parent.width
-        height: 56
+        height: 72
         visible: root.currentIndex >= 1
+
         background: Rectangle {
-            anchors.top: parent.top
-            width: parent.width
-            height: 1
-            color: Palette.white
-            opacity: 0.5
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "transparent" }
+                GradientStop { position: 0.6; color: "#000000" }
+            }
         }
 
         PageIndicator {
-            anchors.centerIn: parent
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
             currentIndex: root.currentIndex - 1
             count: root.numberSteps
             visible: root.currentIndex >= 1
+            mainColor: Palette.mystheaMain
         }
     }
 }
