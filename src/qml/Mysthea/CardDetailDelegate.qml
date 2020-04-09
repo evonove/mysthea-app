@@ -21,8 +21,8 @@ MystheaUniverse.CardDetailDelegate {
             spacing: 8
 
             RowLayout {
-                Layout.fillWidth: true
                 spacing: 14
+                Layout.fillWidth: true
                 Label {
                     text: code
                     font.family: "Futura PT Bold"
@@ -51,7 +51,7 @@ MystheaUniverse.CardDetailDelegate {
                 Layout.fillWidth: true
                 spacing: 5
                 // Era text must only be visible for Command cards
-                visible: cards.type >= 1 && cards.type <= 4
+                visible: cards.command !== -1
                 Label {
                     text: qsTr("Era")
                     font.pixelSize: 18
@@ -99,37 +99,32 @@ MystheaUniverse.CardDetailDelegate {
                 Layout.preferredWidth: 225
                 Layout.alignment: Qt.AlignHCenter
 
-                Rectangle {
-                    anchors.fill: parent
-                    border.color: "red"
-                    color: "transparent"
-                }
+                property list<QtObject> rotationTransform: [
+                    // Rotates image 90 degrees clockwise, then moves it to the right
+                    Rotation {
+                        origin.x: 0
+                        origin.y: 0
+                        angle: 90
+                    },
+                    Translate {
+                        x: 334 - 6 - topPadding - bottomPadding
+                    }
+                ]
+
+                transform: cards.type === 6
+                           || cards.type === 7 ? rotationTransform : []
 
                 sourceComponent: Item {
                     id: _frontCardItem
                     anchors.fill: parent
 
                     Rectangle {
+                        id: _frontRect
                         anchors.fill: parent
 
                         color: _frontCardImage.status === Image.Ready ? "transparent" : "dimgray"
                         opacity: _frontCardImage.status === Image.Ready ? 1 : 0.5
                         radius: 5
-
-                        property list<QtObject> rotationTransform: [
-                            // Rotates image 90 degrees clockwise, then moves it to the right
-                            Rotation {
-                                origin.x: 0
-                                origin.y: 0
-                                angle: 90
-                            },
-                            Translate {
-                                x: 334 - 6 - topPadding - bottomPadding
-                            }
-                        ]
-
-                        transform: cards.type === 6
-                                   || cards.type === 7 ? rotationTransform : []
 
                         Image {
                             id: _frontCardImage
@@ -138,8 +133,6 @@ MystheaUniverse.CardDetailDelegate {
                             fillMode: Image.PreserveAspectFit
                             asynchronous: true
                             source: "qrc:/assets/images/cards/" + cards.image
-
-                            rotation: 90
                         }
 
                         OpacityMask {
@@ -164,11 +157,17 @@ MystheaUniverse.CardDetailDelegate {
                 Layout.preferredWidth: _backCardLoader.active ? 225 : 0
                 Layout.alignment: Qt.AlignHCenter
 
-                Rectangle {
-                    anchors.fill: parent
-                    color: "transparent"
-                    border.color: "red"
-                }
+                transform: [
+                    // Rotates image 90 degrees clockwise, then moves it to the right
+                    Rotation {
+                        origin.x: 0
+                        origin.y: 0
+                        angle: 90
+                    },
+                    Translate {
+                        x: 334 - 6 - topPadding - bottomPadding
+                    }
+                ]
 
                 sourceComponent: Item {
                     id: _backCardItem
@@ -181,18 +180,6 @@ MystheaUniverse.CardDetailDelegate {
                         color: _backCardImage.status === Image.Ready ? "transparent" : "dimgray"
                         opacity: _backCardImage.status === Image.Ready ? 1 : 0.5
                         radius: 5
-
-                        transform: [
-                            // Rotates image 90 degrees clockwise, then moves it to the right
-                            Rotation {
-                                origin.x: 0
-                                origin.y: 0
-                                angle: 90
-                            },
-                            Translate {
-                                x: 334 - 6 - topPadding - bottomPadding
-                            }
-                        ]
 
                         Image {
                             id: _backCardImage
