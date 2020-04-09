@@ -1,8 +1,6 @@
 import QtQuick 2.14
-import QtQuick.Layouts 1.14
 import QtQuick.Controls 2.14
 
-import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
 
@@ -15,6 +13,8 @@ Page {
     property TypeComboBoxModel typeComboBoxModel: null
     property CardsProxyModel model: null
     property int index: -1
+
+    property string sourceComponentUrl: ""
 
     padding: 0
     background: Rectangle {
@@ -31,19 +31,19 @@ Page {
             model: root.model
 
             Loader {
+                id: _loader
                 width: root.width
                 height: root.height - _swipeView.topPadding
                 active: SwipeView.isPreviousItem || SwipeView.isCurrentItem
                         || SwipeView.isNextItem
                 asynchronous: true
 
-                sourceComponent: Component {
-                    CardDetailDelegate {
-                        commandComboBoxModel: root.commandComboBoxModel
-                        typeComboBoxModel: root.typeComboBoxModel
-
-                        cards: model
-                    }
+                Component.onCompleted: {
+                    _loader.setSource(root.sourceComponentUrl, {
+                                          "commandComboBoxModel": root.commandComboBoxModel,
+                                          "typeComboBoxModel": root.typeComboBoxModel,
+                                          "cards": model
+                                      })
                 }
             }
         }

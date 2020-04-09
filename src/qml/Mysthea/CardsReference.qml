@@ -39,6 +39,8 @@ BasePages.CardsReference {
             commandComboBoxModel: root.commandComboBoxModel
             typeComboBoxModel: root.typeComboBoxModel
 
+            sourceComponentUrl: (Qt.resolvedUrl("DetailDelegate.qml")).toString()
+
             Action {
                 id: _backAction
                 text: Icon.back
