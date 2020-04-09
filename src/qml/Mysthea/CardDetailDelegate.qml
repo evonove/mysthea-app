@@ -3,11 +3,11 @@ import QtQuick.Layouts 1.14
 import QtQuick.Controls 2.14
 import QtGraphicalEffects 1.14
 
-import MystheaUniverse.Components 1.0
+import MystheaUniverse.Components 1.0 as MystheaUniverse
 import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
 
-CardDetailDelegate {
+MystheaUniverse.CardDetailDelegate {
     id: root
 
     Flickable {

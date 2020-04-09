@@ -14,7 +14,7 @@ Page {
     property CardsProxyModel model: null
     property int index: -1
 
-    property string sourceComponentUrl: ""
+    property string cardDetailDelegateUrl: ""
 
     padding: 0
     background: Rectangle {
@@ -39,7 +39,7 @@ Page {
                 asynchronous: true
 
                 Component.onCompleted: {
-                    _loader.setSource(root.sourceComponentUrl, {
+                    _loader.setSource(root.cardDetailDelegateUrl, {
                                           "commandComboBoxModel": root.commandComboBoxModel,
                                           "typeComboBoxModel": root.typeComboBoxModel,
                                           "cards": model

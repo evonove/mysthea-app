@@ -39,7 +39,7 @@ BasePages.CardsReference {
             commandComboBoxModel: root.commandComboBoxModel
             typeComboBoxModel: root.typeComboBoxModel
 
-            sourceComponentUrl: (Qt.resolvedUrl("DetailDelegate.qml")).toString()
+            cardDetailDelegateUrl: (Qt.resolvedUrl("CardDetailDelegate.qml")).toString()
 
             Action {
                 id: _backAction

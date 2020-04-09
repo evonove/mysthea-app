@@ -8,7 +8,7 @@
         <file>qml/Mysthea/CardDetail.qml</file>
         <file>qml/Mysthea/CardsList.qml</file>
         <file>qml/Mysthea/CardsReference.qml</file>
-        <file>qml/Mysthea/DetailDelegate.qml</file>
+        <file>qml/Mysthea/CardDetailDelegate.qml</file>
         <file>qml/Mysthea/GameSetup.qml</file>
         <file>qml/Mysthea/GameSetupMap.qml</file>
         <file>qml/Mysthea/GameSetupModel.qml</file>
