@@ -88,36 +88,16 @@ ListView {
                         anchors.fill: parent
                         spacing: 0
 
-                        Rectangle {
-                            color: _img.status === Image.Ready ? "transparent" : "dimgray"
-                            opacity: _img.status === Image.Ready ? 1 : 0.5
-                            radius: 5
-
+                        RoundedImage {
+                            fillMode: Image.PreserveAspectFit
+                            source: "qrc:/assets/images/cards/" + image
+                            borderWidth: 0
+                            borderRadius: 5
                             Layout.preferredHeight: parent.height - _cardCodeLabel.height
                             Layout.maximumWidth: parent.width
                             Layout.alignment: Qt.AlignHCenter
                             Layout.fillHeight: true
                             Layout.fillWidth: true
-
-                            Image {
-                                id: _img
-                                fillMode: Image.PreserveAspectFit
-                                source: "qrc:/assets/images/cards/" + image
-                                asynchronous: true
-
-                                anchors.fill: parent
-                                visible: false
-                            }
-
-                            OpacityMask {
-                                anchors.fill: _img
-                                source: _img
-                                maskSource: Rectangle {
-                                    width: _img.width
-                                    height: _img.height
-                                    radius: 5
-                                }
-                            }
                         }
 
                         Label {

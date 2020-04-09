@@ -114,37 +114,11 @@ MystheaUniverse.CardDetailDelegate {
                 transform: cards.type === 6
                            || cards.type === 7 ? rotationTransform : []
 
-                sourceComponent: Item {
-                    id: _frontCardItem
-                    anchors.fill: parent
-
-                    Rectangle {
-                        id: _frontRect
-                        anchors.fill: parent
-
-                        color: _frontCardImage.status === Image.Ready ? "transparent" : "dimgray"
-                        opacity: _frontCardImage.status === Image.Ready ? 1 : 0.5
-                        radius: 5
-
-                        Image {
-                            id: _frontCardImage
-                            anchors.fill: parent
-                            visible: false
-                            fillMode: Image.PreserveAspectFit
-                            asynchronous: true
-                            source: "qrc:/assets/images/cards/" + cards.image
-                        }
-
-                        OpacityMask {
-                            anchors.fill: _frontCardImage
-                            source: _frontCardImage
-                            maskSource: Rectangle {
-                                width: _frontCardImage.width
-                                height: _frontCardImage.height
-                                radius: 5
-                            }
-                        }
-                    }
+                sourceComponent: MystheaUniverse.RoundedImage {
+                    source: "qrc:/assets/images/cards/" + cards.image
+                    fillMode: Image.PreserveAspectFit
+                    borderRadius: 5
+                    borderWidth: 0
                 }
             }
 
@@ -172,33 +146,11 @@ MystheaUniverse.CardDetailDelegate {
                 sourceComponent: Item {
                     id: _backCardItem
                     anchors.fill: parent
-
-                    Rectangle {
-                        id: _backRect
-                        anchors.fill: parent
-
-                        color: _backCardImage.status === Image.Ready ? "transparent" : "dimgray"
-                        opacity: _backCardImage.status === Image.Ready ? 1 : 0.5
-                        radius: 5
-
-                        Image {
-                            id: _backCardImage
-                            anchors.fill: parent
-                            visible: false
-                            fillMode: Image.PreserveAspectFit
-                            source: "qrc:/assets/images/cards/" + cards.backImage
-                            asynchronous: true
-                        }
-
-                        OpacityMask {
-                            anchors.fill: _backCardImage
-                            source: _backCardImage
-                            maskSource: Rectangle {
-                                width: _backCardImage.width
-                                height: _backCardImage.height
-                                radius: 5
-                            }
-                        }
+                    MystheaUniverse.RoundedImage {
+                        source: "qrc:/assets/images/cards/" + cards.backImage
+                        fillMode: Image.PreserveAspectFit
+                        borderRadius: 5
+                        borderWidth: 0
                     }
                 }
             }
