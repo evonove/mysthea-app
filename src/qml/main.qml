@@ -26,11 +26,10 @@ ApplicationWindow {
     property bool isPushing: false
 
     function pushToStack(component, stateToCheck) {
-        // throttle clicks
+        // Throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the
-        // current visible page
+        // Avoid to push a page if it is the current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)

@@ -64,5 +64,6 @@
         <file>style/MystheaUniverse/ToolBar.qml</file>
         <file>style/MystheaUniverse/ToolButton.qml</file>
         <file>style/MystheaUniverse/Pages/Lore.qml</file>
+        <file>style/MystheaUniverse/Pages/StackPage.qml</file>
     </qresource>
 </RCC>
