@@ -50,6 +50,7 @@ QString TypeComboBoxModel::getTypeFromIndex(int index) const {
   return m_types.value(index);
 }
 
-QString TypeComboBoxModel::iconUrl(const int &type) const {
-  return m_typesIcon.value(type, "");
+QUrl TypeComboBoxModel::iconUrl(const int &type) const {
+  QUrl url(m_typesIcon.value(type, ""));
+  return url.path();
 }

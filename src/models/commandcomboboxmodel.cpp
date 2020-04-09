@@ -58,6 +58,7 @@ QString CommandComboBoxModel::color(const int &command) const {
   return m_commandsColor.value(command, "#FFFFFF");
 }
 
-QString CommandComboBoxModel::iconUrl(const int &command) const {
-  return m_commandsIcon.value(command, "");
+QUrl CommandComboBoxModel::iconUrl(const int &command) const {
+  QUrl url(m_commandsIcon.value(command, ""));
+  return url.path();
 }

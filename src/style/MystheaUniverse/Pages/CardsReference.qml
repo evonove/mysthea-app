@@ -12,6 +12,10 @@ Page {
     property color searchFieldBorderColor
     property Action leftAction: null
     property Component cardsListComponent: null
+
+    // NOTE: Those models works only if all the apps have the same structure.
+    // Eventually, if the apps have not the same structure, it will be necessary
+    // to change it and moved into CardsBasePage component.
     property TypeProxyModel typeProxyModel: null
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null

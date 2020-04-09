@@ -14,12 +14,9 @@ Page {
     property CardsProxyModel model: null
     property int index: -1
 
-    property string cardDetailDelegateUrl: ""
+    property url cardDetailDelegateUrl: ""
 
     padding: 0
-    background: Rectangle {
-        color: Palette.black
-    }
 
     SwipeView {
         id: _swipeView

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <QUrl>
 #include <QVector>
 
 class CommandComboBoxModel : public QAbstractListModel {
@@ -18,7 +19,7 @@ public:
   QVariant data(const QModelIndex &index,
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
   Q_INVOKABLE QString color(const int &command) const;
-  Q_INVOKABLE QString iconUrl(const int &command) const;
+  Q_INVOKABLE QUrl iconUrl(const int &command) const;
 
 private:
   QHash<int, QString> m_commands;
