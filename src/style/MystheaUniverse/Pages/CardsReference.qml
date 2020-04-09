@@ -20,7 +20,6 @@ Page {
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 
-
     function push(component, properties) {
         _stack.push(component, properties)
         _stack.forceActiveFocus()
@@ -31,8 +30,15 @@ Page {
         _stack.forceActiveFocus()
     }
 
+    function clear() {
+        if (_stack.depth > 1) {
+            _stack.replace(_cardPage)
+        }
+        _stack.forceActiveFocus()
+    }
+
     function replace(component) {
-        _stack.replace(component)
+        _stack.replace(component, {}, StackView.Immediate)
         _stack.forceActiveFocus()
     }
 
@@ -51,13 +57,17 @@ Page {
         anchors.fill: parent
         focus: true
 
-        initialItem: CardsBasePage {
-            typeProxyModel: root.typeProxyModel
-            typeComboBoxModel: root.typeComboBoxModel
-            commandComboBoxModel: root.commandComboBoxModel
-            searchFieldBorderColor: root.searchFieldBorderColor
-            sourceComponent: root.typeProxyModel.size
-                             > 0 ? root.cardsListComponent : emptyCardListComponent
+        initialItem: Component {
+            id: _cardPage
+            CardsBasePage {
+                id: _cardBasePage
+                typeProxyModel: root.typeProxyModel
+                typeComboBoxModel: root.typeComboBoxModel
+                commandComboBoxModel: root.commandComboBoxModel
+                searchFieldBorderColor: root.searchFieldBorderColor
+                sourceComponent: root.typeProxyModel.size
+                                 > 0 ? root.cardsListComponent : emptyCardListComponent
+            }
         }
 
         // Handles click of back button by popping current page from Swipe

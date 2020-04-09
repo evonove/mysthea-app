@@ -139,6 +139,7 @@ ApplicationWindow {
                 ]
 
                 onTabButtonClicked: {
+                    _cardsRef.clear()
                     _mystheaExtras.clear()
                 }
             }
