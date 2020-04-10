@@ -31,8 +31,6 @@ Page {
                 id: _loader
                 width: root.width
                 height: root.height - _swipeView.topPadding
-                active: SwipeView.isPreviousItem || SwipeView.isCurrentItem
-                        || SwipeView.isNextItem
                 asynchronous: true
 
                 Component.onCompleted: {
