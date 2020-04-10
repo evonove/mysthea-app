@@ -33,8 +33,8 @@ Page {
     function clear() {
         if (_stack.depth > 1) {
             _stack.replace(_cardPage)
+            _stack.forceActiveFocus()
         }
-        _stack.forceActiveFocus()
     }
 
     function replace(component) {
