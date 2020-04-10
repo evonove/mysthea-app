@@ -22,6 +22,7 @@ Page {
         id: _swipeView
         anchors.fill: parent
         currentIndex: root.index
+        clip: true
 
         Repeater {
             id: _repeater
@@ -36,6 +37,11 @@ Page {
                 asynchronous: true
 
                 sourceComponent: root.sourceComponent
+
+                BusyIndicator {
+                    anchors.centerIn: parent
+                    running: _loader.status !== Loader.Ready
+                }
             }
         }
     }

@@ -24,7 +24,7 @@ MystheaUniverse.CardDetailDelegate {
                 spacing: 14
                 Layout.fillWidth: true
                 Label {
-                    text: code
+                    text: cards.code
                     font.family: "Futura PT Bold"
                     font.pixelSize: 25
                     font.letterSpacing: 0.38
@@ -40,7 +40,7 @@ MystheaUniverse.CardDetailDelegate {
                         if (cards.command !== -1) {
                             return qsTr("Command")
                         } else {
-                            return typeText
+                            return cards.typeText
                         }
                     }
                     color: Palette.white
