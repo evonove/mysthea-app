@@ -13,8 +13,8 @@ Page {
     property TypeComboBoxModel typeComboBoxModel: null
     property CardsProxyModel model: null
     property int index: -1
+    property Component sourceComponent
 
-    property url cardDetailDelegateUrl: ""
 
     padding: 0
 
@@ -29,17 +29,13 @@ Page {
 
             Loader {
                 id: _loader
+                property var modelCards: model
+
                 width: root.width
                 height: root.height - _swipeView.topPadding
                 asynchronous: true
 
-                Component.onCompleted: {
-                    _loader.setSource(root.cardDetailDelegateUrl, {
-                                          "commandComboBoxModel": root.commandComboBoxModel,
-                                          "typeComboBoxModel": root.typeComboBoxModel,
-                                          "cards": model
-                                      })
-                }
+                sourceComponent: root.sourceComponent
             }
         }
     }
