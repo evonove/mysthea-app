@@ -140,6 +140,10 @@ ApplicationWindow {
                         id: _mystheaExtras
                     }
                 ]
+
+                onTabButtonClicked: {
+                    _mystheaExtras.clear()
+                }
             }
         }
 

@@ -20,6 +20,7 @@ Page {
         id: _contentLoader
         anchors.fill: parent
         asynchronous: true
+        clip: true
         sourceComponent: _listComponent
         visible: status === Loader.Ready
     }
