@@ -10,6 +10,7 @@ QtObject {
     property string gameSetupPage: "gameSetupPage"
     property string rulebookPage: "rulebookPage"
     property string extrasPage: "extrasPage"
+    property string miniaturesPage: "miniaturesPage"
     property string lorePage: "lorePage"
     property string tableOfContentsPage: "tableOfContentsPage"
     property string mystheaPage: "mystheaPage"

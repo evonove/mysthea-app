@@ -20,6 +20,8 @@
         <file>qml/Mysthea/ExtrasMenu.qml</file>
         <file>qml/Mysthea/Lore.qml</file>
         <file>qml/Mysthea/LoreModel.qml</file>
+        <file>qml/Mysthea/Miniatures.qml</file>
+        <file>qml/Mysthea/MiniaturesGrid.qml</file>
         <file>qml/Mysthea/Rulebook.qml</file>
         <file>qml/Mysthea/TableOfContents.qml</file>
         <file>qml/Mysthea/TableOfContentsModel.qml</file>

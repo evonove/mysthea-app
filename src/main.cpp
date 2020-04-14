@@ -14,6 +14,8 @@
 #include "models/artworksmodel.h"
 #include "models/cardsmodel.h"
 #include "models/commandcomboboxmodel.h"
+#include "models/miniaturesfiltermodel.h"
+#include "models/miniaturesmodel.h"
 #include "models/typecomboboxmodel.h"
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"
@@ -47,6 +49,9 @@ int main(int argc, char *argv[]) {
   qmlRegisterType<ArtworksModel>("Mysthea.Models", 1, 0, "ArtworksModel");
   qmlRegisterType<ArtworksFilterModel>("Mysthea.Models", 1, 0,
                                        "ArtworksFilterModel");
+  qmlRegisterType<MiniaturesModel>("Mysthea.Models", 1, 0, "MiniaturesModel");
+  qmlRegisterType<MiniaturesFilterModel>("Mysthea.Models", 1, 0,
+                                       "MiniaturesFilterModel");
   qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
