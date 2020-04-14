@@ -10,6 +10,7 @@ Page {
     property real headerHeight: 54
     property alias logo: _header.logo
     property alias appContents: _swipe.contentData
+    property alias leftAction: _header.leftAction
     property alias rightAction: _header.rightAction
 
     property color mainColor
@@ -25,6 +26,8 @@ Page {
     signal mystheaClicked
     signal icaionClicked
     signal theFallClicked
+
+    signal tabButtonClicked
 
     QtObject {
         // These functions take tracks of swipe history.
@@ -94,7 +97,10 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: history.push(TabBar.index)
+            onClicked: {
+                root.tabButtonClicked()
+                history.push(TabBar.index)
+            }
         }
 
         TabButton {
@@ -104,7 +110,10 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: history.push(TabBar.index)
+            onClicked: {
+                root.tabButtonClicked()
+                history.push(TabBar.index)
+            }
         }
 
         TabButton {
@@ -114,7 +123,10 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: history.push(TabBar.index)
+            onClicked: {
+                root.tabButtonClicked()
+                history.push(TabBar.index)
+            }
         }
 
         TabButton {
@@ -124,7 +136,10 @@ Page {
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
-            onClicked: history.push(TabBar.index)
+            onClicked: {
+                root.tabButtonClicked()
+                history.push(TabBar.index)
+            }
         }
     }
 }

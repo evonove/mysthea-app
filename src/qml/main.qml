@@ -26,11 +26,10 @@ ApplicationWindow {
     property bool isPushing: false
 
     function pushToStack(component, stateToCheck) {
-        // throttle clicks
+        // Throttle clicks
         if (root.isPushing)
             return
-        // avoid to push a page if it is the
-        // current visible page
+        // Avoid to push a page if it is the current visible page
         if (pageStatesList.state !== stateToCheck) {
             root.isPushing = true
             _mainStackView.push(component)
@@ -39,7 +38,8 @@ ApplicationWindow {
     }
 
     title: qsTr("Mysthea Universe")
-    width: 375; height: 667
+    width: 375
+    height: 667
     visible: true
     flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
 
@@ -124,6 +124,7 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                leftAction: _mystheaExtras.leftAction
                 rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
@@ -135,8 +136,14 @@ ApplicationWindow {
                     },
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},
-                    Mysthea.Extras {}
+                    Mysthea.Extras {
+                        id: _mystheaExtras
+                    }
                 ]
+
+                onTabButtonClicked: {
+                    _mystheaExtras.clear()
+                }
             }
         }
 

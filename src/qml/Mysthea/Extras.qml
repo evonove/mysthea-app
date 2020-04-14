@@ -1,21 +1,18 @@
-import QtQuick 2.11
+import QtQuick 2.14
+import QtQuick.Controls 2.14
 
-import MystheaUniverse.Pages 1.0
+import MystheaUniverse.Pages 1.0 as MystheaUniverse
+import MystheaUniverse.Theme 1.0
 
-Extras {
+MystheaUniverse.Extras {
     id: root
-    menuPage: _extrasMenu
-    pageStates: [
-        State {
-            name: PageName.lorePage
-            when: _mainStackView.currentItem.objectName === PageName.lorePage
-        }
-    ]
+    property bool isLoading: false
 
-    Component {
+    initialItem: Component {
         id: _extrasMenu
         ExtrasMenu {
-            onLoreClicked: root.pushToStack(_lorePage, PageName.lorePage)
+            property bool isLoading: _extrasMenu.status != Component.Ready
+            onLoreClicked: root.push(_lorePage)
             onArtworksClicked: console.log("Artwork clicked")
             onMiniaturesClicked: console.log("Miniatures clicked")
         }
@@ -23,6 +20,21 @@ Extras {
 
     Component {
         id: _lorePage
-        Lore {}
+        Lore {
+            property bool isLoading: _lorePage.status != Component.Ready
+            loreModel: LoreModel {
+                width: root.availableWidth
+            }
+
+            Action {
+                id: _backAction
+                text: Icon.back
+                onTriggered: root.pop()
+            }
+
+            Component.onCompleted: {
+                root.leftAction = _backAction
+            }
+        }
     }
 }

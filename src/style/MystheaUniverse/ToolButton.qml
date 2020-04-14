@@ -8,6 +8,8 @@ import MystheaUniverse.Theme 1.0
 T.ToolButton {
     id: control
 
+    property color color: Palette.white
+
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             implicitContentWidth + leftPadding + rightPadding)
     implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
@@ -18,7 +20,7 @@ T.ToolButton {
 
     icon.width: 16
     icon.height: 14
-    icon.color: Palette.white
+    icon.color: control.color
 
     contentItem: IconLabel {
         spacing: control.spacing
@@ -28,7 +30,7 @@ T.ToolButton {
         icon: control.icon
         text: control.text
         font: control.font
-        color: Palette.white
+        color: control.color
     }
 
     background: Rectangle {
