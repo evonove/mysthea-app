@@ -4,7 +4,13 @@ import QtQuick.Controls 2.14
 import Mysthea.Models 1.0
 import MystheaUniverse.Theme 1.0
 
-Page {
+import QtQuick 2.11
+import QtQuick.Layouts 1.3
+import QtQuick.Controls 2.3
+
+import MystheaUniverse.Theme 1.0
+
+StackPage {
     id: root
     title: qsTr("CARDS REFERENCE")
     objectName: PageName.cardPage
@@ -12,7 +18,6 @@ Page {
     property color searchFieldBorderColor
     property Action leftAction: null
     property Component cardsListComponent: null
-
     // NOTE: Those models works only if all the apps have the same structure.
     // Eventually, if the apps have not the same structure, it will be necessary
     // to change it and moved into CardsBasePage component.
@@ -20,64 +25,16 @@ Page {
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 
-    function push(component, properties) {
-        _stack.push(component, properties)
-        _stack.forceActiveFocus()
-    }
-
-    function pop() {
-        _stack.pop()
-        _stack.forceActiveFocus()
-    }
-
-    function clear() {
-        if (_stack.depth > 1) {
-            _stack.replace(_cardPage)
-            _stack.forceActiveFocus()
-        }
-    }
-
-    function replace(component) {
-        _stack.replace(component, {}, StackView.Immediate)
-        _stack.forceActiveFocus()
-    }
-
-    background: Rectangle {
-        color: Palette.black
-    }
-
-    BusyIndicator {
-        anchors.centerIn: parent
-        running: _stack.currentItem.isLoading
-        z: 3
-    }
-
-    StackView {
-        id: _stack
-        anchors.fill: parent
-        focus: true
-
-        initialItem: Component {
-            id: _cardPage
-            CardsBasePage {
-                id: _cardBasePage
-                typeProxyModel: root.typeProxyModel
-                typeComboBoxModel: root.typeComboBoxModel
-                commandComboBoxModel: root.commandComboBoxModel
-                searchFieldBorderColor: root.searchFieldBorderColor
-                sourceComponent: root.typeProxyModel.size
-                                 > 0 ? root.cardsListComponent : emptyCardListComponent
-            }
-        }
-
-        // Handles click of back button by popping current page from Swipe
-        Keys.onPressed: {
-            if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
-                if (_stack.depth > 1) {
-                    _stack.pop()
-                    event.accepted = true
-                }
-            }
+    initialItem: Component {
+        id: _cardPage
+        CardsBasePage {
+            id: _cardBasePage
+            typeProxyModel: root.typeProxyModel
+            typeComboBoxModel: root.typeComboBoxModel
+            commandComboBoxModel: root.commandComboBoxModel
+            searchFieldBorderColor: root.searchFieldBorderColor
+            sourceComponent: root.typeProxyModel.size
+                             > 0 ? root.cardsListComponent : emptyCardListComponent
         }
     }
 
