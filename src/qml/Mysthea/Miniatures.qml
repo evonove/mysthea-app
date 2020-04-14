@@ -3,10 +3,13 @@ import QtQuick.Controls 2.14
 
 import Mysthea 1.0
 import Mysthea.Models 1.0
+import MystheaUniverse.Theme 1.0
 
 Page {
     id: root
     padding: 0
+
+    property Action leftAction: _stackView.currentItem.leftAction
 
     MiniaturesModel {
         id: _miniaturesModel
@@ -30,6 +33,8 @@ Page {
     Component {
         id: _miniaturesGrid
         ListView {
+            property Action leftAction: null
+
             model: _miniaturesGridModel
             delegate: MiniaturesGrid {
                 width: _stackView.width
@@ -46,6 +51,14 @@ Page {
     Component {
         id: _miniaturesSlides
         SwipeView {
+
+            Action {
+                id: _backAction
+                text: Icon.back
+                onTriggered: _stackView.pop()
+            }
+
+            property Action leftAction: _backAction
             clip: true
 
             Repeater {

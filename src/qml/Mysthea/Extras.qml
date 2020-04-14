@@ -41,14 +41,24 @@ MystheaUniverse.Extras {
     Component {
         id: _artworkPage
         Artwork {
+            id: _artworks
             property bool isLoading: _artworkPage.status != Component.Ready
+
+            onLeftActionChanged: {
+                root.leftAction = _artworks.leftAction
+            }
         }
     }
 
     Component {
         id: _miniaturesPage
         Miniatures {
+            id: _miniatures
             property bool isLoading: _miniaturesPage.status != Component.Ready
+
+            onLeftActionChanged: {
+                root.leftAction = _miniatures.leftAction
+            }
         }
     }
 }

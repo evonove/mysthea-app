@@ -4,18 +4,33 @@ import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.5
 
 import MystheaUniverse.Pages 1.0
+import MystheaUniverse.Theme 1.0
 import Mysthea 1.0 as Mysthea
 
 GameSetup {
     id: root
 
+
     sourceComponent: Component {
         id: _component
         SwipeView {
             id: _swipeView
+
+            Action {
+                id: _backAction
+                text: Icon.back
+                onTriggered: root.currentIndex = 0
+            }
+
+            property Action leftAction: _swipeView.currentIndex > 0 ? _backAction : null
+
             currentIndex: root.currentIndex
             anchors.fill: parent
             clip: false
+
+            onLeftActionChanged: {
+                root.leftAction = _swipeView.leftAction
+            }
 
             Loader {
                 asynchronous: true

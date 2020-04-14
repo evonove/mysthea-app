@@ -15,7 +15,7 @@ Page {
     clip: true
 
     property bool hasToolbarLine: true
-    property Action leftAction
+    property Action leftAction: null
     property int currentIndex
     property int numberSteps: 0
     property alias sourceComponent: _componentLoader.sourceComponent

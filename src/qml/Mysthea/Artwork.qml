@@ -3,10 +3,13 @@ import QtQuick.Controls 2.14
 
 import Mysthea 1.0
 import Mysthea.Models 1.0
+import MystheaUniverse.Theme 1.0
 
 Page {
     id: root
     padding: 0
+
+    property Action leftAction: _stackView.currentItem.leftAction
 
     ArtworksModel {
         id: _artworkModel
@@ -50,7 +53,10 @@ Page {
     Component {
         id: _artworkGrid
         ListView {
+            property Action leftAction: null
+
             model: _artworkGridModel
+
             delegate: ArtworkGrid {
                 width: _stackView.width
                 artworkModel: ArtworksFilterModel {
@@ -67,6 +73,14 @@ Page {
     Component {
         id: _artworkSlides
         SwipeView {
+
+            Action {
+                id: _backAction
+                text: Icon.back
+                onTriggered: _stackView.pop()
+            }
+
+            property Action leftAction: _backAction
             clip: true
 
             Repeater {
