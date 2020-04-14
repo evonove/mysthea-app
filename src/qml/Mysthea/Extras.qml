@@ -40,6 +40,9 @@ MystheaUniverse.Extras {
 
     Component {
         id: _artworkPage
-        Artwork {}
+        Artwork {
+            property bool isLoading: _artworkPage.status != Component.Ready
+
+        }
     }
 }
