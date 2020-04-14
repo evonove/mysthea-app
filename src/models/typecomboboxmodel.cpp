@@ -1,6 +1,3 @@
-#ifndef TYPECOMBOBOXMODEL_CPP
-#define TYPECOMBOBOXMODEL_CPP
-
 #include "typecomboboxmodel.h"
 #include "card_data.h"
 
@@ -53,4 +50,7 @@ QString TypeComboBoxModel::getTypeFromIndex(int index) const {
   return m_types.value(index);
 }
 
-#endif // TYPECOMBOBOXMODEL_CPP
+QUrl TypeComboBoxModel::iconUrl(const int &type) const {
+  QUrl url(m_typesIcon.value(type, ""));
+  return url;
+}

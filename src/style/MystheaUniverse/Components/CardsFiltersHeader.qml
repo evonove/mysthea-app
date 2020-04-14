@@ -57,7 +57,6 @@ ToolBar {
                                 root.typeComboBoxModel.data(
                                     root.typeComboBoxModel.index(index, 0),
                                     TypeComboBoxModel.Key))
-
                     root.comboboxValueChanged()
                 }
             }
@@ -80,7 +79,6 @@ ToolBar {
                                 root.commandComboBoxModel.data(
                                     root.commandComboBoxModel.index(index, 0),
                                     CommandComboBoxModel.Key))
-
                     root.comboboxValueChanged()
                 }
 

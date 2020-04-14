@@ -1,6 +1,3 @@
-#ifndef COMMANDCOMBOBOXMODEL_CPP
-#define COMMANDCOMBOBOXMODEL_CPP
-
 #include "commandcomboboxmodel.h"
 #include "card_data.h"
 
@@ -17,14 +14,17 @@ CommandComboBoxModel::CommandComboBoxModel(QObject *parent)
       m_commandsIcon{{1, "qrc:/assets/icons/tactic.svg"},
                      {2, "qrc:/assets/icons/objective.svg"},
                      {3, "qrc:/assets/icons/accessory.svg"},
-                     {4, "qrc:/assets/icons/upgrade.svg"}} {}
+                     {4, "qrc:/assets/icons/upgrade.svg"}},
+      m_commandsColor{
+          {1, "#F04937"}, {2, "#FDEF30"}, {3, "#62BB46"}, {4, "#0099D8"}} {}
 
 CommandComboBoxModel::~CommandComboBoxModel() {}
 
 QHash<int, QByteArray> CommandComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Key, "key"},
                                 {Roles::Command, "command"},
-                                {Roles::IconUrl, "iconUrl"}};
+                                {Roles::IconUrl, "iconUrl"},
+                                {Roles::Color, "color"}};
 }
 
 int CommandComboBoxModel::rowCount(const QModelIndex &parent) const {
@@ -46,9 +46,19 @@ QVariant CommandComboBoxModel::data(const QModelIndex &index, int role) const {
                               m_commands.value(row).toStdString().c_str());
   case Roles::IconUrl:
     return m_commandsIcon.value(row, "");
+  case Roles::Color:
+    return m_commandsColor.value(row, "#FFFFFF");
+
   default:
     return QVariant();
   }
 }
 
-#endif // COMMANDCOMBOBOXMODEL_CPP
+QString CommandComboBoxModel::color(const int &command) const {
+  return m_commandsColor.value(command, "#FFFFFF");
+}
+
+QUrl CommandComboBoxModel::iconUrl(const int &command) const {
+  QUrl url(m_commandsIcon.value(command, ""));
+  return url;
+}

@@ -43,6 +43,7 @@ Page {
                 // Update the item in swipe view.
                 _swipe.currentIndex = index
             }
+
             _swipe.currentItem.forceActiveFocus()
         }
 
@@ -63,6 +64,8 @@ Page {
         id: _header
         width: parent.width
         height: root.headerHeight
+        z: 2
+
         separatorColor: root.headerSeparatorColor
     }
 
