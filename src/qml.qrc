@@ -6,6 +6,8 @@
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
         <file>qml/Mysthea/CardDetail.qml</file>
+        <file>qml/Mysthea/Artwork.qml</file>
+        <file>qml/Mysthea/ArtworkGrid.qml</file>
         <file>qml/Mysthea/CardsList.qml</file>
         <file>qml/Mysthea/CardsReference.qml</file>
         <file>qml/Mysthea/CardDetailDelegate.qml</file>

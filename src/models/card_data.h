@@ -1,5 +1,4 @@
-#ifndef CARD_DATA_H
-#define CARD_DATA_H
+#pragma once
 
 #include <QHash>
 #include <QList>
@@ -219,5 +218,3 @@ const QVector<QVector<Card>> cards_data = {
     }
 };
 // clang-format on
-
-#endif // CARD_DATA_H

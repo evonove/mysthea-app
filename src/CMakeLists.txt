@@ -29,6 +29,8 @@ file(GLOB_RECURSE QML_JS_FILES *.qml *.js qmldir)
 set(SOURCE_FILES
     main.cpp
     translationsmanager.cpp
+    models/artworksmodel.cpp
+    models/artworksfiltermodel.cpp
     models/cardsmodel.cpp
     models/cardsproxymodel.cpp
     models/commandcomboboxmodel.cpp

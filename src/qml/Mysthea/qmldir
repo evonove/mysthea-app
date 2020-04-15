@@ -1,6 +1,8 @@
 module Mysthea
 CardDetail 1.0 CardDetail.qml
 CardDetailDelegate 1.0 CardDetailDelegate.qml
+Artwork 1.0 Artwork.qml
+ArtworkGrid 1.0 ArtworkGrid.qml
 CardsList 1.0 CardsList.qml
 CardsReference 1.0 CardsReference.qml
 Credits 1.0 Credits.qml

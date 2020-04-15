@@ -10,6 +10,8 @@
 #include "ios/helpers/nativeidentifier.h"
 #endif
 
+#include "models/artworksfiltermodel.h"
+#include "models/artworksmodel.h"
 #include "models/cardsmodel.h"
 #include "models/commandcomboboxmodel.h"
 #include "models/typecomboboxmodel.h"
@@ -42,10 +44,10 @@ int main(int argc, char *argv[]) {
       "Translations", 1, 0, "TranslationsManager",
       translations_manager_singletontype_provider);
 
-  auto typeProxyModel = new TypeProxyModel();
-  typeProxyModel->setSourceModel(new TypeModel);
+  qmlRegisterType<ArtworksModel>("Mysthea.Models", 1, 0, "ArtworksModel");
+  qmlRegisterType<ArtworksFilterModel>("Mysthea.Models", 1, 0,
+                                       "ArtworksFilterModel");
   qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
-
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
 
@@ -61,7 +63,7 @@ int main(int argc, char *argv[]) {
   bool hasNotch = false;
 
 #ifdef Q_OS_IOS
-    hasNotch = iOSHasNotch();
+  hasNotch = iOSHasNotch();
 #endif
 
   engine.rootContext()->setContextProperty("hasNotch", QVariant{hasNotch});

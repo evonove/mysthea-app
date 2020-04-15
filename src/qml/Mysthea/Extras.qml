@@ -13,7 +13,7 @@ MystheaUniverse.Extras {
         ExtrasMenu {
             property bool isLoading: _extrasMenu.status != Component.Ready
             onLoreClicked: root.push(_lorePage)
-            onArtworksClicked: console.log("Artwork clicked")
+            onArtworksClicked: root.push(_artworkPage)
             onMiniaturesClicked: console.log("Miniatures clicked")
         }
     }
@@ -35,6 +35,14 @@ MystheaUniverse.Extras {
             Component.onCompleted: {
                 root.leftAction = _backAction
             }
+        }
+    }
+
+    Component {
+        id: _artworkPage
+        Artwork {
+            property bool isLoading: _artworkPage.status != Component.Ready
+
         }
     }
 }
