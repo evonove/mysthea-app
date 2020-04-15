@@ -1,15 +1,21 @@
 <RCC>
     <qresource prefix="/">
+        <file>qml/Icaion/Artwork.qml</file>
         <file>qml/Icaion/CardsReference.qml</file>
         <file>qml/Icaion/GameSetup.qml</file>
         <file>qml/Icaion/GameSetupMap.qml</file>
         <file>qml/Icaion/GameSetupModel.qml</file>
+        <file>qml/Icaion/Lore.qml</file>
+        <file>qml/Icaion/LoreModel.qml</file>
+        <file>qml/Icaion/Miniatures.qml</file>
         <file>qml/Icaion/Extras.qml</file>
+        <file>qml/Icaion/ExtrasMenu.qml</file>
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
         <file>qml/Mysthea/CardDetail.qml</file>
         <file>qml/Mysthea/Artwork.qml</file>
-        <file>qml/Mysthea/ArtworkGrid.qml</file>
+        <file>style/MystheaUniverse/Components/ArtworkGrid.qml</file>
+        <file>style/MystheaUniverse/Components/ExtrasMenu.qml</file>
         <file>qml/Mysthea/CardsList.qml</file>
         <file>qml/Mysthea/CardsReference.qml</file>
         <file>qml/Mysthea/CardDetailDelegate.qml</file>
@@ -22,7 +28,7 @@
         <file>qml/Mysthea/Lore.qml</file>
         <file>qml/Mysthea/LoreModel.qml</file>
         <file>qml/Mysthea/Miniatures.qml</file>
-        <file>qml/Mysthea/MiniaturesGrid.qml</file>
+        <file>style/MystheaUniverse/Components/MiniaturesGrid.qml</file>
         <file>qml/Mysthea/Rulebook.qml</file>
         <file>qml/Mysthea/TableOfContents.qml</file>
         <file>qml/Mysthea/TableOfContentsModel.qml</file>

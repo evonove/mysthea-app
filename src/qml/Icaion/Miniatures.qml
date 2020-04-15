@@ -1,15 +1,16 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
+import QtQuick 2.0
+import QtQuick.Layouts 1.3
+import QtQuick.Controls 2.5
+import QtQuick.Controls.Material 2.5
 
-import Mysthea 1.0
 import Mysthea.Models 1.0
+import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Theme 1.0
-import MystheaUniverse.Components 1.0 as MystheaUniverse
+import MystheaUniverse.Components 1.0
+
 
 Page {
     id: root
-    padding: 0
-
     property Action leftAction: _stackView.currentItem.leftAction
 
     MiniaturesModel {
@@ -19,8 +20,8 @@ Page {
     ListModel {
         id: _miniaturesGridModel
         ListElement {
-            game: 1
-            title: qsTr("Heroes")
+            game: 2
+            title: qsTr("Colossus?")
         }
     }
 
@@ -37,10 +38,10 @@ Page {
             property Action leftAction: null
 
             model: _miniaturesGridModel
-            delegate: MystheaUniverse.MiniaturesGrid {
+            delegate: MiniaturesGrid {
                 width: _stackView.width
                 miniaturesModel: MiniaturesFilterModel {
-                    game: 1
+                    game: 2
                     sourceModel: _miniaturesModel
                 }
                 title: model.title
@@ -83,4 +84,3 @@ Page {
         }
     }
 }
-

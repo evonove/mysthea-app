@@ -1,10 +1,9 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 
-import Mysthea 1.0
 import Mysthea.Models 1.0
+import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
-import MystheaUniverse.Components 1.0 as MystheaUniverse
 
 Page {
     id: root
@@ -12,45 +11,51 @@ Page {
 
     property Action leftAction: _stackView.currentItem.leftAction
 
-    MiniaturesModel {
-        id: _miniaturesModel
+    ArtworksModel {
+        id: _artworkModel
     }
 
     ListModel {
-        id: _miniaturesGridModel
+        id: _artworkGridModel
         ListElement {
-            game: 1
-            title: qsTr("Heroes")
+            type: 1
+            title: qsTr("Colossus")
+        }
+        ListElement {
+            type: 2
+            title: qsTr("Seekers")
         }
     }
 
     StackView {
         id: _stackView
         anchors.fill: parent
-        initialItem: _miniaturesGrid
+        initialItem: _artworkGrid
         padding: 0
     }
 
     Component {
-        id: _miniaturesGrid
+        id: _artworkGrid
         ListView {
             property Action leftAction: null
 
-            model: _miniaturesGridModel
-            delegate: MystheaUniverse.MiniaturesGrid {
+            model: _artworkGridModel
+
+            delegate: ArtworkGrid {
                 width: _stackView.width
-                miniaturesModel: MiniaturesFilterModel {
-                    game: 1
-                    sourceModel: _miniaturesModel
+                artworkModel: ArtworksFilterModel {
+                    game: 2
+                    sourceModel: _artworkModel
+                    type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_miniaturesSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row })
             }
         }
     }
 
     Component {
-        id: _miniaturesSlides
+        id: _artworkSlides
         SwipeView {
 
             Action {
@@ -63,9 +68,9 @@ Page {
             clip: true
 
             Repeater {
-                model: MiniaturesFilterModel {
-                    game: 1
-                    sourceModel: _miniaturesModel
+                model: ArtworksFilterModel {
+                    game: 2
+                    sourceModel: _artworkModel
                 }
                 Pane {
                     width: _stackView.width
@@ -83,4 +88,3 @@ Page {
         }
     }
 }
-

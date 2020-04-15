@@ -3,6 +3,7 @@ import QtQuick.Controls 2.14
 
 import MystheaUniverse.Pages 1.0 as MystheaUniverse
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Theme 1.0
 
 MystheaUniverse.Extras {
     id: root
