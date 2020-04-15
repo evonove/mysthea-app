@@ -4,22 +4,22 @@
 <context>
     <name>AppContainer</name>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="98"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="99"/>
         <source>Cards Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="111"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="112"/>
         <source>Game Setup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="124"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="125"/>
         <source>Rulebook</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="137"/>
+        <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="138"/>
         <source>Extras</source>
         <translation type="unfinished"></translation>
     </message>
@@ -45,32 +45,32 @@
 <context>
     <name>Artwork</name>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="19"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="22"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="23"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="26"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="27"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="30"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="31"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="34"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="35"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="38"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="39"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1561,7 +1561,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="19"/>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="22"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>

@@ -9,6 +9,7 @@ T.ToolBar {
     id: control
 
     property alias separatorColor: _separator.color
+    property alias backgroundColor: _rectangle.color
 
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             contentWidth + leftPadding + rightPadding)
@@ -16,8 +17,8 @@ T.ToolBar {
                              contentHeight + topPadding + bottomPadding)
 
     background: Rectangle {
+        id: _rectangle
         implicitHeight: 40
-        color: Palette.background
 
         Rectangle {
             id: _separator
