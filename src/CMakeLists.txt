@@ -34,6 +34,8 @@ set(SOURCE_FILES
     models/cardsmodel.cpp
     models/cardsproxymodel.cpp
     models/commandcomboboxmodel.cpp
+    models/miniaturesmodel.cpp
+    models/miniaturesfiltermodel.cpp
     models/typecomboboxmodel.cpp
     models/typemodel.cpp
     models/typeproxymodel.cpp

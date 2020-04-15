@@ -1532,6 +1532,14 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     </message>
 </context>
 <context>
+    <name>Miniatures</name>
+    <message>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="19"/>
+        <source>Heroes</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Rulebook</name>
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="11"/>

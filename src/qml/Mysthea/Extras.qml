@@ -14,7 +14,7 @@ MystheaUniverse.Extras {
             property bool isLoading: _extrasMenu.status != Component.Ready
             onLoreClicked: root.push(_lorePage)
             onArtworksClicked: root.push(_artworkPage)
-            onMiniaturesClicked: console.log("Miniatures clicked")
+            onMiniaturesClicked: root.push(_miniaturesPage)
         }
     }
 
@@ -42,7 +42,13 @@ MystheaUniverse.Extras {
         id: _artworkPage
         Artwork {
             property bool isLoading: _artworkPage.status != Component.Ready
+        }
+    }
 
+    Component {
+        id: _miniaturesPage
+        Miniatures {
+            property bool isLoading: _miniaturesPage.status != Component.Ready
         }
     }
 }
