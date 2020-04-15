@@ -17,6 +17,7 @@
         <file>qml/Mysthea/CardDetailDelegate.qml</file>
         <file>qml/Mysthea/CardsList.qml</file>
         <file>qml/Mysthea/CardsReference.qml</file>
+        <file>qml/Mysthea/CardDetailDelegate.qml</file>
         <file>qml/Mysthea/Extras.qml</file>
         <file>qml/Mysthea/ExtrasMenu.qml</file>
         <file>qml/Mysthea/GameSetup.qml</file>
@@ -44,6 +45,8 @@
         <file>qml/main.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>style/MystheaUniverse/ComboBox.qml</file>
+        <file>style/MystheaUniverse/PageIndicator.qml</file>
+        <file>style/MystheaUniverse/RoundButton.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/ArtworkGrid.qml</file>
@@ -53,7 +56,6 @@
         <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>
         <file>style/MystheaUniverse/Components/CardsList.qml</file>
         <file>style/MystheaUniverse/Components/ColorComboBox.qml</file>
-        <file>style/MystheaUniverse/Components/DropCapLabel.qml</file>
         <file>style/MystheaUniverse/Components/DropCapLabel.qml</file>
         <file>style/MystheaUniverse/Components/ExtrasMenu.qml</file>
         <file>style/MystheaUniverse/Components/Header.qml</file>
@@ -71,7 +73,6 @@
         <file>style/MystheaUniverse/Components/SearchField.qml</file>
         <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
-        <file>style/MystheaUniverse/PageIndicator.qml</file>
         <file>style/MystheaUniverse/Pages/CardDetail.qml</file>
         <file>style/MystheaUniverse/Pages/CardNotFound.qml</file>
         <file>style/MystheaUniverse/Pages/CardsBasePage.qml</file>
@@ -81,9 +82,9 @@
         <file>style/MystheaUniverse/Pages/Lore.qml</file>
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>
+        <file>style/MystheaUniverse/Pages/qmldir</file>
         <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
         <file>style/MystheaUniverse/Pages/StackPage.qml</file>
-        <file>style/MystheaUniverse/Pages/qmldir</file>
         <file>style/MystheaUniverse/RoundButton.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>

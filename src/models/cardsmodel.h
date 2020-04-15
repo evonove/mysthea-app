@@ -1,5 +1,4 @@
-#ifndef CARDSMODEL_H
-#define CARDSMODEL_H
+#pragma once
 
 #include "card_data.h"
 #include <QAbstractListModel>
@@ -9,11 +8,13 @@ class CardsModel : public QAbstractListModel {
   Q_OBJECT
 
 public:
-  CardsModel(QVector<Card> cards, QObject *parent = Q_NULLPTR);
+  CardsModel(QVector<Card> cards, QHash<int, QString> types,
+             QHash<int, QString> commands, QObject *parent = Q_NULLPTR);
 
   enum Roles {
     Code = Qt::UserRole + 1,
     Type,
+    Name,
     TypeText,
     Command,
     CommandText,
@@ -31,6 +32,6 @@ public:
 
 private:
   QVector<Card> m_cards;
+  QHash<int, QString> m_types;
+  QHash<int, QString> m_commands;
 };
-
-#endif // CARDSMODEL_H

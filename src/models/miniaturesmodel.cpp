@@ -1,17 +1,38 @@
 #include "miniaturesmodel.h"
-#include "miniatures_data.h"
+#include <QFile>
 #include <QGuiApplication>
-#include <QList>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QVariant>
 
 MiniaturesModel::MiniaturesModel(QObject *parent)
-    : QAbstractListModel{parent}, m_miniatures{miniatures_data} {}
+    : QAbstractListModel{parent} {}
+
+void MiniaturesModel::classBegin() {}
+
+void MiniaturesModel::componentComplete() {
+  if (!m_configurationFilePath.isEmpty()) {
+    this->processFile();
+  }
+}
+
+QUrl MiniaturesModel::configurationFilePath() const {
+  return m_configurationFilePath;
+}
+
+void MiniaturesModel::setConfigurationFilePath(const QUrl &url) {
+  if (m_configurationFilePath != url) {
+    m_configurationFilePath = url;
+
+    this->processFile();
+    emit configurationFilePathChanged();
+  }
+}
 
 QHash<int, QByteArray> MiniaturesModel::roleNames() const {
-  return QHash<int, QByteArray>{{Roles::Game, "game"},
-                                {Roles::Type, "type"},
-                                {Roles::Image, "image"},
-                                {Roles::Name, "name"}};
+  return QHash<int, QByteArray>{
+      {Roles::Type, "type"}, {Roles::Image, "image"}, {Roles::Name, "name"}};
 }
 
 int MiniaturesModel::rowCount(const QModelIndex &parent) const {
@@ -27,8 +48,6 @@ QVariant MiniaturesModel::data(const QModelIndex &index, int role) const {
   }
 
   switch (role) {
-  case Roles::Game:
-    return m_miniatures.at(row).game;
   case Roles::Type:
     return m_miniatures.at(row).type;
   case Roles::Image:
@@ -40,3 +59,49 @@ QVariant MiniaturesModel::data(const QModelIndex &index, int role) const {
   }
 }
 
+void MiniaturesModel::processFile() {
+
+  auto filePath = convertUrlToFilePath(m_configurationFilePath);
+
+  QFile file;
+  file.setFileName(filePath);
+  QJsonDocument confFile;
+
+  if (file.open(QIODevice::ReadOnly)) {
+    QJsonParseError error;
+    confFile = QJsonDocument::fromJson(file.readAll(), &error);
+  }
+
+  this->beginResetModel();
+  m_miniatures.clear();
+  //   Check the validity of file.
+  if (!confFile.isNull()) {
+    auto contentFile = confFile.object();
+    if (contentFile.contains("miniatures") &&
+        contentFile["miniatures"].isArray()) {
+      QJsonArray miniaturesArray = contentFile["miniatures"].toArray();
+      for (auto i = 0; i < miniaturesArray.size(); ++i) {
+        if (miniaturesArray[i].isObject()) {
+          auto miniatureObject = miniaturesArray[i].toObject();
+
+          Miniature miniature;
+          miniature.name = miniatureObject["name"].toString();
+          miniature.type = miniatureObject["type"].toInt();
+          miniature.image = miniatureObject["image"].toString();
+          m_miniatures.append(miniature);
+        }
+      }
+    }
+  }
+  this->endResetModel();
+}
+
+QString MiniaturesModel::convertUrlToFilePath(const QUrl &url) {
+  // This function convert the url passed from qml in a valid resource path.
+  if (url.scheme().compare(QLatin1String("qrc"), Qt::CaseInsensitive) == 0) {
+    if (url.authority().isEmpty()) {
+      return QLatin1Char(':') + url.path();
+    }
+  }
+  return QString();
+}

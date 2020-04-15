@@ -1,15 +1,46 @@
 #include "artworksmodel.h"
-#include "artworks_data.h"
+#include <QFile>
 #include <QGuiApplication>
-#include <QList>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QVariant>
 
-ArtworksModel::ArtworksModel(QObject *parent)
-    : QAbstractListModel{parent}, m_artworks{artworks_data} {}
+ArtworksModel::ArtworksModel(QObject *parent) : QAbstractListModel{parent} {}
+
+void ArtworksModel::classBegin() {}
+
+void ArtworksModel::componentComplete() {
+  if (!m_configurationFilePath.isEmpty()) {
+    this->processFile();
+  }
+}
+
+void ArtworksModel::setConfigurationFilePath(const QUrl &url) {
+  if (m_configurationFilePath != url) {
+    m_configurationFilePath = url;
+
+    this->processFile();
+    emit configurationFilePathChanged();
+  }
+}
+
+QString ArtworksModel::convertUrlToFilePath(const QUrl &url) {
+  // This function convert the url passed from qml in a valid resource path.
+  if (url.scheme().compare(QLatin1String("qrc"), Qt::CaseInsensitive) == 0) {
+    if (url.authority().isEmpty()) {
+      return QLatin1Char(':') + url.path();
+    }
+  }
+  return QString();
+}
+
+QUrl ArtworksModel::configurationFilePath() const {
+  return m_configurationFilePath;
+}
 
 QHash<int, QByteArray> ArtworksModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Type, "type"},
-                                {Roles::Game, "game"},
                                 {Roles::Image, "image"},
                                 {Roles::Name, "name"},
                                 {Roles::Author, "author"}};
@@ -28,8 +59,6 @@ QVariant ArtworksModel::data(const QModelIndex &index, int role) const {
   }
 
   switch (role) {
-  case Roles::Game:
-    return m_artworks.at(row).game;
   case Roles::Type:
     return m_artworks.at(row).type;
   case Roles::Image:
@@ -41,4 +70,44 @@ QVariant ArtworksModel::data(const QModelIndex &index, int role) const {
   default:
     return QVariant();
   }
+}
+
+void ArtworksModel::processFile() {
+
+  auto filePath = convertUrlToFilePath(m_configurationFilePath);
+
+  QFile file;
+  file.setFileName(filePath);
+  QJsonDocument confFile;
+
+  if (file.open(QIODevice::ReadOnly)) {
+    QJsonParseError error;
+    confFile = QJsonDocument::fromJson(file.readAll(), &error);
+  }
+
+  this->beginResetModel();
+  m_artworks.clear();
+
+  //   Check the validity of file.
+  if (!confFile.isNull()) {
+    auto contentFile = confFile.object();
+    if (contentFile.contains("artworks") && contentFile["artworks"].isArray()) {
+
+      QJsonArray artworksArray = contentFile["artworks"].toArray();
+
+      for (auto i = 0; i < artworksArray.size(); ++i) {
+        if (artworksArray[i].isObject()) {
+          auto artworkObject = artworksArray[i].toObject();
+
+          Artwork artwork;
+          artwork.name = artworkObject["name"].toString();
+          artwork.type = artworkObject["type"].toInt();
+          artwork.author = artworkObject["author"].toString();
+          artwork.image = artworkObject["image"].toString();
+          m_artworks.append(artwork);
+        }
+      }
+    }
+  }
+  this->endResetModel();
 }
