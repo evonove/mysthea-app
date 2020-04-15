@@ -1,5 +1,7 @@
 module Icaion
 CardsReference 1.0 CardsReference.qml
 GameSetup 1.0 GameSetup.qml
+GameSetupMap 1.0 GameSetupMap.qml
+GameSetupModel 1.0 GameSetupModel.qml
 Extras 1.0 Extras.qml
 Rulebook 1.0 Rulebook.qml

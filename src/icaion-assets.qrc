@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/images/game_setup/icaion/setup-map01.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map01@2x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map01@3x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map01@4x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map02.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map02@2x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map02@3x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map02@4x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map03.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map03@2x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map03@3x.jpg</file>
+        <file>assets/images/game_setup/icaion/setup-map03@4x.jpg</file>
+    </qresource>
+</RCC>
