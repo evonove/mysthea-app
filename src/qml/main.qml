@@ -124,7 +124,6 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
-                leftAction: _cardsRef.leftAction
                 rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
