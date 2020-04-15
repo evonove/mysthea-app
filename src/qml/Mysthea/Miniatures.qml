@@ -42,7 +42,6 @@ StackPage {
             delegate: MUComponents.MiniaturesGrid {
                 width: root.width
                 miniaturesModel: MiniaturesFilterModel {
-                    game: 1
                     sourceModel: _miniaturesModel
                 }
                 title: model.title
@@ -64,7 +63,6 @@ StackPage {
             Repeater {
                 model: MiniaturesFilterModel {
                     id: _miniaturesSlidesProxyModel
-                    game: 1
                     sourceModel: _miniaturesModel
                 }
                 Pane {

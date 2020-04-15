@@ -1,5 +1,4 @@
-#ifndef CARDSPROXYMODEL_H
-#define CARDSPROXYMODEL_H
+#pragma once
 #include "cardsmodel.h"
 #include <QSortFilterProxyModel>
 
@@ -24,5 +23,3 @@ private:
   int m_command;
   int m_type;
 };
-
-#endif // CARDSPROXYMODEL_H

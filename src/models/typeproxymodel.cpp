@@ -2,34 +2,13 @@
 #include "cardsmodel.h"
 #include "typecomboboxmodel.h"
 
-#include <QDebug>
-
 TypeProxyModel::TypeProxyModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_type{0}, m_code{""}, m_command{0},
-      m_allCardsModel{new CardsProxyModel(0)}, m_sourceModel{new TypeModel} {
-  setSourceModel(m_sourceModel);
-  m_allCardsModel->setSourceModel(m_sourceModel->allCardsModel());
-}
+    : QSortFilterProxyModel(parent), m_type{0}, m_code{""},
+      m_allCardsModel{new CardsProxyModel(0)}, m_sourceModel{new TypeModel} {}
 
-TypeProxyModel::~TypeProxyModel() {
-  m_allCardsModel->deleteLater();
-  m_sourceModel->deleteLater();
-}
+void TypeProxyModel::classBegin() {}
 
-void TypeProxyModel::setTypeFilter(int type) {
-  if (m_type != type) {
-    m_type = type;
-    emit enableCommandChanged();
-    if (type == 5 || type == 6 || type == 7 || type == 8) {
-      invalidateFilter();
-      emit filterChanged();
-      setCommandFilter(0);
-      return;
-    }
-    invalidateFilter();
-    emit filterChanged();
-  }
-}
+void TypeProxyModel::componentComplete() { this->processSource(); }
 
 void TypeProxyModel::setCodeFilter(QString code) {
   code = code.toUpper();
@@ -46,20 +25,6 @@ void TypeProxyModel::setCodeFilter(QString code) {
   }
 }
 
-void TypeProxyModel::setCommandFilter(int command) {
-  if (m_command != command) {
-    m_command = command;
-    for (int i = 0; i < m_sourceModel->rowCount(); i++) {
-      m_sourceModel->data(createIndex(i, 0), TypeModel::Roles::Cards)
-          .value<CardsProxyModel *>()
-          ->setCommandFilter(command);
-    }
-    m_allCardsModel->setCommandFilter(command);
-    invalidateFilter();
-    emit filterChanged();
-  }
-}
-
 void TypeProxyModel::resetFilters() {
   for (int i = 0; i < m_sourceModel->rowCount(); i++) {
     m_sourceModel->data(createIndex(i, 0), TypeModel::Roles::Cards)
@@ -68,7 +33,6 @@ void TypeProxyModel::resetFilters() {
   }
   m_type = 0;
   m_allCardsModel->setCodeFilter("");
-  m_allCardsModel->setCommandFilter(0);
 
   invalidateFilter();
   emit filterChanged();
@@ -83,9 +47,36 @@ CardsProxyModel *TypeProxyModel::visibleCards() {
   } else {
     // If there is a type filter active returns the first index because
     // there can't be any other type visible.
-    return data(index(0, 0), TypeModel::Roles::Cards)
+    return m_sourceModel->data(createIndex(m_type - 1, 0), TypeModel::Cards)
         .value<CardsProxyModel *>();
   }
+}
+
+void TypeProxyModel::setConfigurationFilePath(const QUrl &url) {
+  if (m_configurationFilePath != url) {
+    m_configurationFilePath = url;
+
+    this->processSource();
+
+    emit configurationFilePathChanged();
+  }
+}
+
+QString TypeProxyModel::convertUrlToFilePath(const QUrl &url) {
+  // This function convert the url passed from qml in a valid resource path.
+  if (url.scheme().compare(QLatin1String("qrc"), Qt::CaseInsensitive) == 0) {
+    if (url.authority().isEmpty()) {
+      return QLatin1Char(':') + url.path();
+    }
+  }
+  return QString();
+}
+
+void TypeProxyModel::processSource() {
+  auto filePath = convertUrlToFilePath(m_configurationFilePath);
+  m_sourceModel->setConfigurationFilePath(filePath);
+  setSourceModel(m_sourceModel);
+  m_allCardsModel->setSourceModel(m_sourceModel->allCardsModel());
 }
 
 bool TypeProxyModel::filterAcceptsRow(int source_row,
@@ -116,10 +107,4 @@ bool TypeProxyModel::filterAcceptsRow(int source_row,
   }
 
   return acceptRow;
-}
-
-bool TypeProxyModel::enableCommand() const {
-  // Returns wether command combo box should be enabled or not.
-  // Command combo box must be enabled when at least a command card is visible.
-  return m_type >= 0 && m_type <= 4;
 }

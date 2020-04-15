@@ -57,7 +57,6 @@ StackPage {
             delegate: MiniaturesGrid {
                 width: root.width
                 miniaturesModel: MiniaturesFilterModel {
-                    game: 2
                     sourceModel: _miniaturesModel
                     type: model.type
                 }
@@ -81,7 +80,6 @@ StackPage {
             Repeater {
                 model: MiniaturesFilterModel {
                     id: _miniaturesSlidesProxyModel
-                    game: 2
                     sourceModel: _miniaturesModel
                 }
                 Pane {

@@ -1,24 +1,24 @@
 #include "commandcomboboxmodel.h"
 #include "card_data.h"
 
+#include <QFile>
 #include <QGuiApplication>
-#include <QList>
+#include <QJsonArray>
+#include <QJsonObject>
 #include <QVariant>
 
 CommandComboBoxModel::CommandComboBoxModel(QObject *parent)
-    : QAbstractListModel{parent}, m_commands{{0, ALL_COMMANDS_TEXT},
-                                             {1, TACTIC_TEXT},
-                                             {2, OBJECTIVE_TEXT},
-                                             {3, ACCESSORY_TEXT},
-                                             {4, UPGRADE_TEXT}},
-      m_commandsIcon{{1, "qrc:/assets/icons/tactic.svg"},
-                     {2, "qrc:/assets/icons/objective.svg"},
-                     {3, "qrc:/assets/icons/accessory.svg"},
-                     {4, "qrc:/assets/icons/upgrade.svg"}},
-      m_commandsColor{
-          {1, "#F04937"}, {2, "#FDEF30"}, {3, "#62BB46"}, {4, "#0099D8"}} {}
+    : QAbstractListModel{parent} {}
 
 CommandComboBoxModel::~CommandComboBoxModel() {}
+
+void CommandComboBoxModel::classBegin() {}
+
+void CommandComboBoxModel::componentComplete() {
+  if (!m_configurationFile.isEmpty()) {
+    this->processFile();
+  }
+}
 
 QHash<int, QByteArray> CommandComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Key, "key"},
@@ -61,4 +61,61 @@ QString CommandComboBoxModel::color(const int &command) const {
 QUrl CommandComboBoxModel::iconUrl(const int &command) const {
   QUrl url(m_commandsIcon.value(command, ""));
   return url;
+}
+
+void CommandComboBoxModel::setConfigurationFilePath(const QUrl &url) {
+  if (m_configurationFilePath != url) {
+    m_configurationFilePath = url;
+    auto filePath = convertUrlToFilePath(url);
+    QFile file;
+    file.setFileName(filePath);
+    if (file.open(QIODevice::ReadOnly)) {
+      QJsonDocument confFile;
+      QJsonParseError error;
+      confFile = QJsonDocument::fromJson(file.readAll(), &error);
+      m_configurationFile = confFile;
+    }
+
+    this->processFile();
+    emit configurationFilePathChanged();
+  }
+}
+
+QString CommandComboBoxModel::convertUrlToFilePath(const QUrl &url) {
+  // This function convert the url passed from qml in a valid resource path.
+  if (url.scheme().compare(QLatin1String("qrc"), Qt::CaseInsensitive) == 0) {
+    if (url.authority().isEmpty()) {
+      return QLatin1Char(':') + url.path();
+    }
+  }
+  return QString();
+}
+
+void CommandComboBoxModel::processFile() {
+  m_commands.clear();
+  m_commandsIcon.clear();
+  m_commandsColor.clear();
+  // Check the validity of file.
+  if (!m_configurationFile.isNull()) {
+    auto contentFile = m_configurationFile.object();
+
+    if (contentFile.contains("cards_commands") &&
+        contentFile["cards_commands"].isArray()) {
+      QJsonArray commandsArray = contentFile["cards_commands"].toArray();
+      for (auto i = 0; i < commandsArray.size(); ++i) {
+        if (commandsArray[i].isObject()) {
+          auto commandObj = commandsArray[i].toObject();
+
+          auto id = commandObj["id"].toInt();
+          auto text = commandObj["text"].toString();
+          auto icon = commandObj["icon"].toString();
+          auto color = commandObj["color"].toString();
+
+          m_commands.insert(id, text);
+          m_commandsIcon.insert(id, icon);
+          m_commandsColor.insert(id, color);
+        }
+      }
+    }
+  }
 }

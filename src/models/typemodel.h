@@ -1,9 +1,9 @@
-#ifndef TYPEMODEL_H
-#define TYPEMODEL_H
+#pragma once
 
 #include "cardsmodel.h"
 #include "cardsproxymodel.h"
 #include <QAbstractListModel>
+#include <QJsonDocument>
 #include <QVector>
 
 class TypeModel : public QAbstractListModel {
@@ -22,9 +22,20 @@ public:
                 int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
   CardsModel *allCardsModel() const { return m_allCardsModel; }
 
+  void setConfigurationFilePath(const QString &path);
+
+signals:
+  void configurationFileChanged();
+
 private:
+  void processFile();
+
   QVector<CardsProxyModel *> m_types;
   CardsModel *m_allCardsModel;
-};
+  QVector<Card> m_cards;
+  QHash<int, QString> m_typesMap;
+  QHash<int, QString> m_commandsMap;
 
-#endif // TYPEMODEL_H
+  QString m_configurationFilePath;
+  QJsonDocument m_configurationFile;
+};
