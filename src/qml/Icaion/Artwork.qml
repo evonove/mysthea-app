@@ -18,12 +18,36 @@ Page {
     ListModel {
         id: _artworkGridModel
         ListElement {
-            type: 1
+            type: 7
             title: qsTr("Colossus")
         }
         ListElement {
-            type: 2
+            type: 8
             title: qsTr("Seekers")
+        }
+        ListElement {
+            type: 9
+            title: qsTr("Machines")
+        }
+        ListElement {
+            type: 10
+            title: qsTr("Specialized Gear")
+        }
+        ListElement {
+            type: 11
+            title: qsTr("Wonders")
+        }
+        ListElement {
+            type: 12
+            title: qsTr("Events")
+        }
+        ListElement {
+            type: 13
+            title: qsTr("Parasites")
+        }
+        ListElement {
+            type: 14
+            title: qsTr("Playerboards")
         }
     }
 
@@ -49,7 +73,11 @@ Page {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: {
+                    // FIXME: 45 is the number of elements in mysthea, so we get the right index.
+                    // This is really hacky, maybe reimplement artworkModel.mapToSource()?
+                    _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row - 45 })
+                }
             }
         }
     }
