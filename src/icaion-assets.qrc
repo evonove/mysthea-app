@@ -1,5 +1,54 @@
 <RCC>
     <qresource prefix="/">
+        <file>assets/images/extras/lore/icaion/img_lore1.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore1@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore1@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore1@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore2.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore2@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore2@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore2@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore3.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore3@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore3@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore3@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore4.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore4@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore4@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore4@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore5.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore5@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore5@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore5@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore6.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore6@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore6@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore6@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore7.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore7@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore7@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore7@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore8.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore8@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore8@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore8@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore9.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore9@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore9@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore9@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lor10.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lor10@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lor10@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lor10@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore11.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore11@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore11@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore11@4x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore12.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore12@2x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore12@3x.jpg</file>
+        <file>assets/images/extras/lore/icaion/img_lore12@4x.jpg</file>
+
         <file>assets/images/game_setup/icaion/icon_harvester.svg</file>
         <file>assets/images/game_setup/icaion/icon_max_curio_upgrades.svg</file>
         <file>assets/images/game_setup/icaion/icon_max_hands.svg</file>

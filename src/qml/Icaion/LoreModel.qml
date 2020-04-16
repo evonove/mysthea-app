@@ -1,7 +1,7 @@
-import QtQuick 2.0
-import QtQml.Models 2.11
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.5
+import QtQuick 2.14
+import QtQml.Models 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
 
 import MystheaUniverse.Theme 1.0
 
@@ -10,15 +10,15 @@ ObjectModel {
 
     property int width: 100
     property bool asynchronous: true
+    LoreHeading {
+        text: qsTr("Icaion Lore")
+        color: Palette.icaionLight
+    }
 
     ColumnLayout {
         width: root.width
         spacing: 0
 
-        LoreHeading {
-            text: qsTr("Icaion Lore")
-            color: Palette.icaionLight
-        }
 
         LoreTitle {
             text: qsTr("A cold dark planet")
@@ -31,7 +31,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore01.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore1.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -50,6 +50,11 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
+
         LoreTitle {
             text: qsTr("The city")
             color: Palette.icaionLight
@@ -61,7 +66,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore02.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore2.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -74,6 +79,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("Society inside the walls")
             color: Palette.icaionLight
@@ -90,7 +99,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore03.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore3.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -103,6 +112,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("Classes of the city")
             color: Palette.icaionLight
@@ -114,7 +127,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore04.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore4.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -162,7 +175,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore05.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore5.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -170,6 +183,10 @@ ObjectModel {
             Layout.fillWidth: true
             asynchronous: root.asynchronous
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The organization")
             color: Palette.icaionLight
@@ -199,10 +216,14 @@ ObjectModel {
             Layout.fillWidth: true
         }
         LoreHeading {
-            width: root.width
             text: qsTr("Seekers’ Backstories & Design")
             color: Palette.icaionLight
+            Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Lone Survivor")
             color: Palette.icaionLight
@@ -214,7 +235,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore06.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore6.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -227,6 +248,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Heir")
             color: Palette.icaionLight
@@ -238,7 +263,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore07.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore7.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -251,6 +276,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Machine")
             color: Palette.icaionLight
@@ -262,7 +291,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore08.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore8.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -275,6 +304,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Creature")
             color: Palette.icaionLight
@@ -287,7 +320,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore09.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore9.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -295,6 +328,10 @@ ObjectModel {
             Layout.fillWidth: true
             asynchronous: root.asynchronous
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Outsider")
             color: Palette.icaionLight
@@ -307,7 +344,7 @@ ObjectModel {
             Layout.fillWidth: true
         }
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore10.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lor10.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -320,6 +357,10 @@ ObjectModel {
             color: Palette.icaionLight
             Layout.fillWidth: true
         }
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Criminal")
             color: Palette.icaionLight
@@ -333,7 +374,7 @@ ObjectModel {
         }
 
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore11.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore11.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20
@@ -343,6 +384,10 @@ ObjectModel {
         }
 
 
+    }
+    ColumnLayout {
+        width: root.width
+        spacing: 0
         LoreTitle {
             text: qsTr("The Cursed")
             color: Palette.icaionLight
@@ -356,7 +401,7 @@ ObjectModel {
         }
 
         Image {
-            source: "qrc:/assets/images/extras/lore/icaion/lore12.jpg"
+            source: "qrc:/assets/images/extras/lore/icaion/img_lore12.jpg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: width
             Layout.leftMargin: 20

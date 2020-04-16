@@ -10,5 +10,3 @@ Pages.Lore {
         width: root.availableWidth
     }
 }
-
-
