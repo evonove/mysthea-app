@@ -320,8 +320,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: harvesterIcon
-                    // TODO: Icon missing
-                    source: "qrc:/assets/images/game_setup/mysthea/icon_harvester.svg"
+                    source: "qrc:/assets/images/game_setup/icaion/icon_harvester.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -352,8 +351,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: scavengerIcon
-                    // TODO: Icon missing
-                    source: "qrc:/assets/images/game_setup/mysthea/icon_scavenger.svg"
+                    source: "qrc:/assets/images/game_setup/icaion/icon_scavenger.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -384,8 +382,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: refinersIcon
-                    // TODO: Icon missing
-                    source: "qrc:/assets/images/game_setup/mysthea/icon_refiners.svg"
+                    source: "qrc:/assets/images/game_setup/icaion/icon_refiners.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -521,8 +518,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: maximumHandsIcon
-                    // TODO: Icon missing
-                    source: "qrc:/assets/images/game_setup/mysthea/icon_max_hands.svg"
+                    source: "qrc:/assets/images/game_setup/icaion/icon_max_hands.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
@@ -553,8 +549,7 @@ ObjectModel {
                 spacing: 12
                 Image {
                     id: maximumUpgradeIcon
-                    // TODO: Icon missing
-                    source: "qrc:/assets/images/game_setup/mysthea/icon_max_curio_upgrades.svg"
+                    source: "qrc:/assets/images/game_setup/icaion/icon_max_curio_upgrades.svg"
                     fillMode: Image.PreserveAspectFit
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
