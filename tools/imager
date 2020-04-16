@@ -33,7 +33,7 @@ _process-image() {
         pngquant ${colors} --strip --quality ${quality} --force --ext .png ${destination}
         optipng -strip all ${destination} &> /dev/null
     else
-        jpegoptim ${destination}
+        jpegoptim ${destination} &> /dev/null
     fi
 }
 
@@ -57,15 +57,18 @@ _process-csvfile() {
 
 _process-images() {
     local curdir=$(pwd -P)
-    local outdir=${curdir}/processed
-
-    # Create the output directory
-    mkdir -p ${outdir}
     local inputfile=$1
     local baselinesize=$2
     local format=$3
     local outputfilename=$(basename "${inputfile%.*}")
+    local directory=$(realpath --relative-to=${curdir}/orig $(dirname "${inputfile}"))
     local quality=${4=85}
+    local dirname
+
+    local outdir=${curdir}/processed/${directory}
+
+    # Create the output directory
+    mkdir -p ${outdir}
 
     declare -i size=$(( baselinesize*1 ))
     _process-image ${inputfile} ${outdir}/${outputfilename}.${format} ${size} ${quality} 256 ${format}
