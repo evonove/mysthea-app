@@ -1,5 +1,17 @@
 <RCC>
     <qresource prefix="/">
+        <file>assets/images/extras/menu/icaion/lore.jpg</file>
+        <file>assets/images/extras/menu/icaion/lore@2x.jpg</file>
+        <file>assets/images/extras/menu/icaion/lore@3x.jpg</file>
+        <file>assets/images/extras/menu/icaion/lore@4x.jpg</file>
+        <file>assets/images/extras/menu/icaion/artworks.jpg</file>
+        <file>assets/images/extras/menu/icaion/artworks@2x.jpg</file>
+        <file>assets/images/extras/menu/icaion/artworks@3x.jpg</file>
+        <file>assets/images/extras/menu/icaion/artworks@4x.jpg</file>
+        <file>assets/images/extras/menu/icaion/miniatures.jpg</file>
+        <file>assets/images/extras/menu/icaion/miniatures@2x.jpg</file>
+        <file>assets/images/extras/menu/icaion/miniatures@3x.jpg</file>
+        <file>assets/images/extras/menu/icaion/miniatures@4x.jpg</file>
         <file>assets/images/extras/lore/icaion/img_lore1.jpg</file>
         <file>assets/images/extras/lore/icaion/img_lore1@2x.jpg</file>
         <file>assets/images/extras/lore/icaion/img_lore1@3x.jpg</file>

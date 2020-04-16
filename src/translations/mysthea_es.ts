@@ -1954,27 +1954,27 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="23"/>
         <source>Colossus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="27"/>
         <source>Seekers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="35"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="31"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="40"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="35"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="45"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="39"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
