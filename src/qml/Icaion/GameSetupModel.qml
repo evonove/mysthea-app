@@ -255,7 +255,6 @@ ObjectModel {
             width: parent.width
             spacing: 20
             RoundedImage {
-                // TODO: This is image is missing
                 source: "qrc:/assets/images/game_setup/icaion/setup05.jpg"
                 fillMode: Image.PreserveAspectFit
                 width: root.width
