@@ -76,7 +76,7 @@ Page {
                 onCardClicked: {
                     // FIXME: 45 is the number of elements in mysthea, so we get the right index.
                     // This is really hacky, maybe reimplement artworkModel.mapToSource()?
-                    _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row - 45 })
+                    _stackView.push(_artworkSlides, { sourceIndex: sourceIndex })
                 }
             }
         }
@@ -85,6 +85,13 @@ Page {
     Component {
         id: _artworkSlides
         SwipeView {
+            property Action leftAction: _backAction
+
+            property var sourceIndex
+
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
+
+            clip: true
 
             Action {
                 id: _backAction
@@ -92,11 +99,9 @@ Page {
                 onTriggered: _stackView.pop()
             }
 
-            property Action leftAction: _backAction
-            clip: true
-
             Repeater {
                 model: ArtworksFilterModel {
+                    id: _artworkSlidesProxyModel
                     game: 2
                     sourceModel: _artworkModel
                 }
