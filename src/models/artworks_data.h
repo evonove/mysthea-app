@@ -5,18 +5,27 @@
 #include <QString>
 
 /*
- * Games:
+ * GAME:
  * 1 - Mysthea
- * 2 - Icaion
- * 3 - TheFall
- *
- * Types:
+ * TYPES:
  * 1 - Champions
  * 2 - Attunements
  * 3 - Encounters
  * 4 - Monsters
  * 5 - Regions
  * 6 - Guilds
+ *
+ * GAME:
+ * 2 - Icaion
+ * TYPES:
+ * 7 - Colossus
+ * 8 - Seekers
+ * 9 - Machines
+ * 10 - Specialized Gear
+ * 11 - Wonders
+ * 12 - Events
+ * 13 - Parasites
+ * 14 - Playerboards
  */
 
 struct Artwork {

@@ -20,6 +20,7 @@ Page {
         id: _miniaturesGridModel
         ListElement {
             game: 1
+            type: 1
             title: qsTr("Heroes")
         }
     }

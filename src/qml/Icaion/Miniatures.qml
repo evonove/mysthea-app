@@ -1,16 +1,15 @@
-import QtQuick 2.0
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.5
-import QtQuick.Controls.Material 2.5
+import QtQuick 2.14
+import QtQuick.Controls 2.14
 
 import Mysthea.Models 1.0
-import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
 
 
 Page {
     id: root
+    padding: 0
+
     property Action leftAction: _stackView.currentItem.leftAction
 
     MiniaturesModel {
@@ -20,8 +19,24 @@ Page {
     ListModel {
         id: _miniaturesGridModel
         ListElement {
-            game: 2
-            title: qsTr("Colossus?")
+            type: 2
+            title: qsTr("Colossus")
+        }
+        ListElement {
+            type: 3
+            title: qsTr("Seekers")
+        }
+        ListElement {
+            type: 4
+            title: qsTr("Machines")
+        }
+        ListElement {
+            type: 5
+            title: qsTr("Wonders")
+        }
+        ListElement {
+            type: 6
+            title: qsTr("Parasites")
         }
     }
 
@@ -38,14 +53,18 @@ Page {
             property Action leftAction: null
 
             model: _miniaturesGridModel
+
             delegate: MiniaturesGrid {
                 width: _stackView.width
                 miniaturesModel: MiniaturesFilterModel {
                     game: 2
                     sourceModel: _miniaturesModel
+                    type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_miniaturesSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: {
+                    _stackView.push(_miniaturesSlides, { sourceIndex: sourceIndex })
+                }
             }
         }
     }
@@ -53,6 +72,11 @@ Page {
     Component {
         id: _miniaturesSlides
         SwipeView {
+            property Action leftAction: _backAction
+            property var sourceIndex
+
+            currentIndex: _miniaturesSlidesProxyModel.mapFromSource(sourceIndex).row
+            clip: true
 
             Action {
                 id: _backAction
@@ -60,12 +84,10 @@ Page {
                 onTriggered: _stackView.pop()
             }
 
-            property Action leftAction: _backAction
-            clip: true
-
             Repeater {
                 model: MiniaturesFilterModel {
-                    game: 1
+                    id: _miniaturesSlidesProxyModel
+                    game: 2
                     sourceModel: _miniaturesModel
                 }
                 Pane {

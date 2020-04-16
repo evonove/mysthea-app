@@ -1954,12 +1954,32 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="24"/>
-        <source>Colossus?</source>
+        <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
+        <source>Colossus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="23"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
+        <source>Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="35"/>
+        <source>Machines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="40"/>
+        <source>Wonders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="45"/>
+        <source>Parasites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="24"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>

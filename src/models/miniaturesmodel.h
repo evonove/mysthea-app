@@ -12,6 +12,7 @@ public:
 
   enum Roles {
     Game = Qt::UserRole + 1,
+    Type,
     Image,
     Name,
   };
