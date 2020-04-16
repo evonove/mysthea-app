@@ -31,6 +31,7 @@ Page {
             id: _filtersHeader
             width: parent.width
             separatorColor: root.searchFieldBorderColor
+            backgroundColor: Palette.black
 
             onComboboxValueChanged: {
                 // In loader we don't have only listView so we check if the item has this property

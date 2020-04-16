@@ -1,9 +1,8 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.4
-import QtQuick.Layouts 1.3
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Layouts 1.14
 
 import MystheaUniverse.Components 1.0
-import QtQuick.Controls.Material 2.12
 
 Page {
     id: root

@@ -1,8 +1,8 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.5
-import QtQuick.Layouts 1.12
-import QtQml.Models 2.12
-import QtGraphicalEffects 1.12
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Layouts 1.14
+import QtQml.Models 2.14
+import QtGraphicalEffects 1.14
 
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
@@ -356,8 +356,8 @@ ObjectModel {
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
                     ColorOverlay {
-                        anchors.fill: harvesterIcon
-                        source: harvesterIcon
+                        anchors.fill: scavengerIcon
+                        source: scavengerIcon
                         color: Palette.white
                     }
                 }
@@ -523,8 +523,8 @@ ObjectModel {
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
                     ColorOverlay {
-                        anchors.fill: refinersIcon
-                        source: refinersIcon
+                        anchors.fill: maximumHandsIcon
+                        source: maximumHandsIcon
                         color: Palette.white
                     }
                 }
@@ -554,8 +554,8 @@ ObjectModel {
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
                     ColorOverlay {
-                        anchors.fill: refinersIcon
-                        source: refinersIcon
+                        anchors.fill: maximumUpgradeIcon
+                        source: maximumUpgradeIcon
                         color: Palette.white
                     }
                 }
