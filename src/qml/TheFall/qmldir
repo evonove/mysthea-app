@@ -1,6 +1,7 @@
 module Icaion
 Artwork 1.0 Artwork.qml
 CardsReference 1.0 CardsReference.qml
+CardDetailDelegate 1.0 CardDetailDelegate.qml
 Extras 1.0 Extras.qml
 ExtrasMenu 1.0 ExtrasMenu.qml
 GameSetup 1.0 GameSetup.qml

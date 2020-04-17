@@ -13,6 +13,7 @@ import Translations 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Pages 1.0
+import MystheaUniverse.Models 1.0
 
 ApplicationWindow {
     id: root
@@ -126,6 +127,7 @@ ApplicationWindow {
                 headerSeparatorColor: Palette.pink
                 headerBackgroundColor: Palette.background
                 rightAction: _drawerOpenAction
+
                 appContents: [
                     Mysthea.CardsReference {
                         id: _cardsRef
@@ -157,6 +159,7 @@ ApplicationWindow {
                 headerSeparatorColor: Palette.icaionLight
                 headerBackgroundColor: Palette.icaionBlack
                 rightAction: _drawerOpenAction
+
                 appContents: [
                     Icaion.CardsReference {},
                     Icaion.GameSetup {},
@@ -178,6 +181,7 @@ ApplicationWindow {
                 headerSeparatorColor: Palette.theFallLight
                 headerBackgroundColor: Palette.theFallBlack
                 rightAction: _drawerOpenAction
+
                 appContents: [
                     TheFall.CardsReference {},
                     TheFall.GameSetup {},

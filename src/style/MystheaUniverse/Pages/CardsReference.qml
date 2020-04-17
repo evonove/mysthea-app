@@ -3,6 +3,7 @@ import QtQuick.Controls 2.14
 
 import MystheaUniverse.Models 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Models 1.0
 
 StackPage {
     id: root
@@ -15,7 +16,7 @@ StackPage {
     // NOTE: Those models works only if all the apps have the same structure.
     // Eventually, if the apps have not the same structure, it will be necessary
     // to change it and moved into CardsBasePage component.
-    property TypeProxyModel typeProxyModel: null
+    property TypeProxyModel typeProxyModel
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 

@@ -65,10 +65,12 @@ ToolBar {
                 id: _commandsCombo
                 padding: 0
                 model: root.commandComboBoxModel
-                enabled: root.typeProxyModel.enableCommand
+                enabled: root.commandComboBoxModel != null ? root.typeProxyModel.enableCommand : false
+
+                visible: root.commandComboBoxModel != null
 
                 textRole: "command"
-                iconRole: "iconUrl"
+                iconRole: root.commandComboBoxModel != null ? "iconUrl" : ""
                 roleName: CommandComboBoxModel.IconUrl
                 iconAlignLeft: true
 

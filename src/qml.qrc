@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/Icaion/Artwork.qml</file>
+        <file>qml/Icaion/CardDetailDelegate.qml</file>
         <file>qml/Icaion/CardsReference.qml</file>
         <file>qml/Icaion/Extras.qml</file>
         <file>qml/Icaion/ExtrasMenu.qml</file>
@@ -17,7 +18,6 @@
         <file>qml/Mysthea/CardDetailDelegate.qml</file>
         <file>qml/Mysthea/CardsList.qml</file>
         <file>qml/Mysthea/CardsReference.qml</file>
-        <file>qml/Mysthea/CardDetailDelegate.qml</file>
         <file>qml/Mysthea/Extras.qml</file>
         <file>qml/Mysthea/ExtrasMenu.qml</file>
         <file>qml/Mysthea/GameSetup.qml</file>
@@ -32,6 +32,7 @@
         <file>qml/Mysthea/TableOfContentsModel.qml</file>
         <file>qml/Mysthea/qmldir</file>
         <file>qml/TheFall/Artwork.qml</file>
+        <file>qml/TheFall/CardDetailDelegate.qml</file>
         <file>qml/TheFall/CardsReference.qml</file>
         <file>qml/TheFall/Extras.qml</file>
         <file>qml/TheFall/ExtrasMenu.qml</file>
@@ -73,9 +74,9 @@
         <file>style/MystheaUniverse/Components/SearchField.qml</file>
         <file>style/MystheaUniverse/Components/TextIconComboBox.qml</file>
         <file>style/MystheaUniverse/Components/qmldir</file>
+        <file>style/MystheaUniverse/Pages/CardsBasePage.qml</file>
         <file>style/MystheaUniverse/Pages/CardDetail.qml</file>
         <file>style/MystheaUniverse/Pages/CardNotFound.qml</file>
-        <file>style/MystheaUniverse/Pages/CardsBasePage.qml</file>
         <file>style/MystheaUniverse/Pages/CardsReference.qml</file>
         <file>style/MystheaUniverse/Pages/Extras.qml</file>
         <file>style/MystheaUniverse/Pages/GameSetup.qml</file>
@@ -83,9 +84,9 @@
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>style/MystheaUniverse/Pages/qmldir</file>
+        <file>style/MystheaUniverse/RoundButton.qml</file>
         <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
         <file>style/MystheaUniverse/Pages/StackPage.qml</file>
-        <file>style/MystheaUniverse/RoundButton.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>
         <file>style/MystheaUniverse/TabButton.qml</file>
         <file>style/MystheaUniverse/Theme/Icon.qml</file>
