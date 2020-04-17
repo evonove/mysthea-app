@@ -1,7 +1,7 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.4
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.5
+import QtQuick 2.14
+import QtQuick.Controls 2.14
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 2.14
 
 import MystheaUniverse.Pages 1.0 as MystheaUniverse
 import MystheaUniverse.Theme 1.0
