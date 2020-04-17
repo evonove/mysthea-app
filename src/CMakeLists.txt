@@ -51,7 +51,9 @@ set(SOURCE_FILES
 qt5_add_big_resources(SOURCE_FILES mysthea-assets.qrc)
 qt5_add_big_resources(SOURCE_FILES mysthea-cards.qrc)
 qt5_add_big_resources(SOURCE_FILES icaion-assets.qrc)
+qt5_add_big_resources(SOURCE_FILES icaion-cards.qrc)
 qt5_add_big_resources(SOURCE_FILES thefall-assets.qrc)
+qt5_add_big_resources(SOURCE_FILES thefall-cards.qrc)
 
 # Translation files
 set(TS_FILES
