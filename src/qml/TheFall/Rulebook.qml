@@ -13,7 +13,7 @@ Rulebook {
         }
         ListElement {
             language: "EN"
-            downloadUrl: ""
+            downloadUrl: "https://storage.googleapis.com/mystheauniverse/rulebooks/%5BENG%5D_Mysthea_the_Fall_rulebook_web_2020.pdf"
         }
         ListElement {
             language: "ES"
@@ -21,7 +21,7 @@ Rulebook {
         }
         ListElement {
             language: "FR"
-            downloadUrl: ""
+            downloadUrl: "https://storage.googleapis.com/mystheauniverse/rulebooks/FR_tfa_rulebook.pdf"
         }
         ListElement {
             language: "GR"
