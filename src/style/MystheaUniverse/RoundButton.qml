@@ -38,7 +38,7 @@ T.RoundButton {
         radius: control.radius
         opacity: 1
         visible: true
-        color: "#88000000"
+        color: "#99000000"
         border.color: "white"
         border.width: 4
     }
