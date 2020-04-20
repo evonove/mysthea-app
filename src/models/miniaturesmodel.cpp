@@ -9,6 +9,7 @@ MiniaturesModel::MiniaturesModel(QObject *parent)
 
 QHash<int, QByteArray> MiniaturesModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Game, "game"},
+                                {Roles::Type, "type"},
                                 {Roles::Image, "image"},
                                 {Roles::Name, "name"}};
 }
@@ -28,6 +29,8 @@ QVariant MiniaturesModel::data(const QModelIndex &index, int role) const {
   switch (role) {
   case Roles::Game:
     return m_miniatures.at(row).game;
+  case Roles::Type:
+    return m_miniatures.at(row).type;
   case Roles::Image:
     return m_miniatures.at(row).image;
   case Roles::Name:

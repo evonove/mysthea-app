@@ -45,32 +45,72 @@
 <context>
     <name>Artwork</name>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="22"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="22"/>
+        <source>Colossus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="26"/>
+        <source>Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="30"/>
+        <source>Machines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="34"/>
+        <source>Specialized Gear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="38"/>
+        <source>Wonders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="42"/>
+        <source>Events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="46"/>
+        <source>Parasites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Artwork.qml" line="50"/>
+        <source>Playerboards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/Artwork.qml" line="23"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="26"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="27"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="30"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="31"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="34"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="35"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="38"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="39"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="43"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
@@ -951,17 +991,17 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>ExtrasMenu</name>
     <message>
-        <location filename="../qml/Mysthea/ExtrasMenu.qml" line="35"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="31"/>
         <source>LORE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/ExtrasMenu.qml" line="43"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="39"/>
         <source>ARTWORKS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/ExtrasMenu.qml" line="51"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="47"/>
         <source>MINIATURES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1273,6 +1313,236 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 </context>
 <context>
     <name>LoreModel</name>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="14"/>
+        <source>Icaion Lore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="24"/>
+        <source>A cold dark planet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="29"/>
+        <source>Being completely engulfed by the eternal storm of clouds above, Icaion is an extremely cold and dark planet. &lt;strong&gt;Sunlight is one of the most scarce resources&lt;/strong&gt; and this forced civilizations to develop only on the rare places where the sun reaches the ground, allowing them to cultivate lands obtaining steady food supplies impossible to have anywhere else. These spots are so scarce and so far away one from another, that these civilizations never met and are unaware of each other&apos;s existence. The regions that surround the City are mainly barren and there are no other known cities or settlements in them, just Seeker&apos;s outposts to help the process of harvest different kinds of crystals.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="43"/>
+        <source>The lands not touched by light are &lt;strong&gt;barren and dangerous places&lt;/strong&gt;, twisted by the devastating cataclysm which happened millennia ago. The effects of the crystal can vary wildly from one region to another, causing some places to have perennial snowstorms, others are submerged in mist, others are places with eternal rain and so on, with &lt;strong&gt;frightening weather phenomena going on in different regions.&lt;/strong&gt; Those unstable regions offer &lt;strong&gt;different types of Qoam crystals.&lt;/strong&gt; It isn’t known if the instability depends from these crystals or it is the instability itself that altered the crystal.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="49"/>
+        <source>In these unforgiving lands other forms of life developed, creating the most unimaginable and dangerous creatures. For all these reasons the barren lands are highly inhospitable and not inhabited by any civilized species. These grim places are extremely rich in treasures, Qoam and rare artifacts, making exploration always worthwhile, even if risky.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="59"/>
+        <source>The city</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="64"/>
+        <source>Directly below the floating regions of Mysthea is present one of the biggest cities of Icaion, &lt;strong&gt;built around the enormous crystal that comes out of the land.&lt;/strong&gt; The crystal emanates such powerful energies that the clouds above are constantly moved by it and the City around the crystal lies inside the eye of a permanent cyclone. &lt;strong&gt;The movement of the clouds created a permanent circle, a ring of sunlight between the crystal and clouds&lt;/strong&gt;, where society developed over the years. The absence of storms with the constant sunny daylight makes this &lt;strong&gt;ring of cultivable land excellent for farming&lt;/strong&gt;. Around the fields lies a huge City. Since cultivable land is a finite and extremely rare asset, the City developed in every spot that wouldn’t waste precious soil.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="78"/>
+        <source>The City is divided into &lt;strong&gt;two circles&lt;/strong&gt;, the first one, closer to the crystal, is where the sunlight is present. This circle is considered the &lt;strong&gt;core of the whole society, where the most powerful and influential individuals reside&lt;/strong&gt;. Outside there is the &lt;strong&gt;&apos;region of eternal dusk&apos;&lt;/strong&gt;, an outer circle where the rest of society lives crammed as tightly as possible. All of this is surrounded by a huge wall that encloses the whole City from the dangers present outside. The walls are a mix of natural boundaries which were thrust up by earthquakes when the crystal arose millennia ago, and artificial ones made to fill the gaps.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="87"/>
+        <source>Society inside the walls</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="92"/>
+        <source>The inhabitants of the City have extremely limited to almost no manipulation abilities with Qoam, but they are able to use the crystal as a fuel to power machines. The Qoam is extracted from the Henakor itself, from mines that go for miles below the surface, and other new varieties are brought from the outside by Seekers themselves.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="97"/>
+        <source>Since the sun only reaches a small circle of land around the crystal, this zone of the City is the only place where cultivation of land is possible. This made land owners in this region the most powerful and wealthy individuals of the society. Farming is considered an activity reserved exclusively for the elite, the few people that can live their lives in constant sunlight while eating genuine produce from the earth and not just processed by-products.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="111"/>
+        <source>The rest of society lives in a state of wild and ruthless capitalism, instead, with everyone crossing each other trying to find some ways to earn a better life. Citizens of the City are divided into a strict class system, where their place in society and privileges are strictly tied to the occupation an individual can do. Occupations are generally inherited and it is very difficult for somebody who was born into a certain class to change occupation by rising to another one.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="120"/>
+        <source>Classes of the city</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="125"/>
+        <source>Citizens of the City are &lt;strong&gt;divided into a strict class system&lt;/strong&gt;, where their place in society and privileges are tied to the occupation an individual can do. Occupations are generally inherited and it is very difficult for somebody who was born into a certain class to change occupation by rising to another one.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="139"/>
+        <source>Inside each class, individuals often form &lt;strong&gt;organizations&lt;/strong&gt; to work on what is their class expertise and knowledge. Most of these organizations are centered and managed by a single family and employ only people from that lineage to manage their process. Some organizations are of course richer and more powerful than others.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="144"/>
+        <source>&lt;strong&gt;Farmers are the wealthiest and most powerful individuals,&lt;/strong&gt; referred to as those &lt;strong&gt;&apos;blessed with the gift of light&apos;&lt;/strong&gt;. They own all of the lands where cultivation is undertaken, they make good use of heavy machines and other automated equipment to work the land, since the Workers are not deemed worthy of being under the sun. The Farmer class live an enviable life, as being able to live their whole lives bathed in sunlight and working with something so rare and precious as plants is considered the most luxurious thing a human could dream of. &lt;strong&gt;They spend their days in orchards and gardens cultivating rare and precious species&lt;/strong&gt;, while the mostly automated mass cultivation of their other lands makes them rich.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="150"/>
+        <source>&lt;strong&gt;Extractors are the people that own and operate the Qoam mines&lt;/strong&gt; on the Henakor. Their organizations always have a booming business and they employ all kinds of machinery and people to extract the precious crystal.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="156"/>
+        <source>The &lt;strong&gt;Industrialists hold the well guarded knowledge, technology and resources to build Qoam powered tools.&lt;/strong&gt; Their organizations are driving forward society and are in high competition between each other.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="162"/>
+        <source>&lt;strong&gt;Workers are the backbone of society,&lt;/strong&gt; these people are employed in the most various activities around the City and are in a constant struggle to sustain themselves and their families. They commonly do &lt;strong&gt;manual labor and menial tasks&lt;/strong&gt; for the organizations of the elites, that usually consider them as replaceable and dispensable. Some of them show more initiative and manage small activities in the region of eternal dusk to service other Workers, such as shops and taverns.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="168"/>
+        <source>Lastly, the &lt;strong&gt;Seekers are elite soldiers that go outside the City walls to explore wild lands&lt;/strong&gt; trying to extract resources and find treasures. Due to the fact that the temperatures are cold and the constant darkness has strange effects on the mind, &lt;strong&gt;only a few people have what it takes to take this path.&lt;/strong&gt; Considering that dangerous monsters are sometimes spotted in the dark around the City, every journey outside could be the last. Almost anyone could become a Seeker, and joining the Organization is often seen as the only way for common folks to become a more respected member of society.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="173"/>
+        <source>Seekers are the only citizens that live outside the walls, in the Organization Headquarters.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="191"/>
+        <source>The organization</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="196"/>
+        <source>On the outer rim of the City perched just outside the City walls there are the headquarters, living chambers and hangars of the Organization. This rich and powerful organization &lt;strong&gt;manages expeditions to explore, excavate and scavenge in the harsh and dangerous environment outside the wall.&lt;/strong&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="202"/>
+        <source>The Organization has five Divisions specialized in different kinds of expeditions and environments. It employs skilled Seekers, heavy vehicles and machinery useful to harvest Qoam and other resources, as well as to help them to explore more deeply into the Regions. Most of the Seekers &lt;strong&gt;live outside the walls to prepare for the expeditions by adapting to the harsh conditions.&lt;/strong&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="208"/>
+        <source>Seekers venture regularly outside the City in &lt;strong&gt;small teams and convoys&lt;/strong&gt;, to gather precious resources, hunt for treasures, scavenge ancient relics and to ensure that no monster threats are nearby. Outside the walls some outposts are present, managed by the Seeker’s Organization and used as places to rest and recuperate before going even further in their missions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="214"/>
+        <source>Recently their work has become even harder. They discovered that a &lt;strong&gt;huge Colossus&lt;/strong&gt; roaming the most remote regions is connected with Qoam. The being doesn’t seem directly aggressive, but its presence seems to &lt;strong&gt;twist the planet, spreading an illness&lt;/strong&gt; everywhere it crosses.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="219"/>
+        <source>Seekers’ Backstories &amp; Design</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="228"/>
+        <source>The Lone Survivor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="233"/>
+        <source>Tall, muscular and mostly abrupt in his manner of speech, the Lone Survivor was born as a Worker and his imagination had been captivated by the life of the Seekers as a child when he regularly saw them in his father’s tavern and stood for hours listening to their stories and tales. During his career he distinguished himself as light on his feet and quick-thinking under stress, able to improvise solutions to the difficult situations that arose during expeditions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="247"/>
+        <source>Several years ago &lt;strong&gt;he returned alone from an expedition that departed with fifty Seekers.&lt;/strong&gt; Although he was de-briefed by the top echelons of the Organization, &lt;strong&gt;nobody outside the senior ranks knows what happened to the other members.&lt;/strong&gt; Since that time the Lone Survivor has remained curt and mostly unresponsive in conversation, always keeping to himself except for essential communication. He carries with him a giant staff in the form of a two-pronged fork. This is also a relic from his solo return. Nobody knows where it is from, how the Lone Survivor came to have it in his possession, nor to what ends it can be put to. Rumour has it that if someone stands close to it they can hear it humming and if you touch it there is shock that burns, but leaves no mark. The Lone Survivor habitually wears a broad-brimmed hat that obscures his face and a long heavy waterproof coat that he wears everywhere. The mysterious staff is never out of his grasp and that also accompanies him in his slumber.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="256"/>
+        <source>The Heir</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="261"/>
+        <source>A fat, spoiled and rich man from the Farmer Class, someone &apos;blessed with the gift of light&apos; so to speak. He&apos;s &lt;strong&gt;the heir of a huge estate of lands near the crystal&lt;/strong&gt; and he has always lived a comfortable and easy life under the sun. Some years ago he decided to find some thrill in his life and &lt;strong&gt;used his family influence to join the Organization,&lt;/strong&gt; climbing the ranks without any merit. He joined and started to guide expeditions only for his leisure, most often than not endangering the whole convoy with his lack of expertise combined with his unwillingness to listen to the Seekers’ advice about the harsh wilderness.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="275"/>
+        <source>The Organization has learned that he’s a liability more than anything else, but his ruthless methods and complete disregard for others allows him to do things that at the end of the day are very valuable for them. Considering also that the family influence is strong, the Organization still allows him to have his little game outside the City walls even if it’s not always in the Organization’s best interests. He’s &lt;strong&gt;always carried around by his two personal servants&lt;/strong&gt; so he doesn’t need to ever touch foot on the cold ground of the wild regions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="284"/>
+        <source>The Machine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="289"/>
+        <source>An &lt;strong&gt;autonomous machine built by the Industrialists&lt;/strong&gt; in an effort to make expeditions by themselves without relying on the Organization and to avoid paying their cut. The Industrialists invested a lot of resources in building the Machine, hoping that they could just send machines outside without having to pay the costly labor expenses and bonuses of the human Seekers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="303"/>
+        <source>The Machine showed useful skills and a great ability for adaptation, but it was unable to work completely by itself without bringing a team on its convoy. The Industrialists’ goal to not rely on expert Seekers was far from being achieved and the research and development needed to reach it by adjusting the design flaws of the Machine was too expensive. Therefore the Industrialists decided that it wasn’t possible to recover on their investment and they &lt;strong&gt;sold the design to the Organization&lt;/strong&gt; to recoup the research costs incurred so far. The Organization now employs the Machine as an overseer of the most technical expeditions, in which its built in tools give it an edge.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="312"/>
+        <source>The Creature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="318"/>
+        <source>The Creature appeared one day around the City walls and quickly demonstrated that it wasn’t a threat. It &lt;strong&gt;learned how to communicate perfectly in the people’s language in a matter of days,&lt;/strong&gt; showing that it is in its nature to learn almost everything in an extremely short time. This seems to be the peculiarity of this species, they are &lt;strong&gt;able to learn and master even the most complex skill really quickly,&lt;/strong&gt; but unfortunately they can do this only for a few skills at a time. This is not a major problem since they can &lt;strong&gt;forget and relearn things&lt;/strong&gt; so fast that they just end up switching between skills frequently. This huge flexibility made The Creature very interesting to the Organization that started to employ her in as many of the most various tasks as possible. Regardless of the task, the Creature is capable of spending very few days with proficient instructors and it will rapidly learn the assigned skill. The Creature always &lt;strong&gt;carries an object in two of its four hands&lt;/strong&gt; and many people believe that it is this object which conveys it its learning power.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="336"/>
+        <source>The Outsider</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="342"/>
+        <source>A mysterious man that was encountered far from the City, deep in the regions during an expedition years ago. A stranger of unknown origins clearly not from anywhere near the City. Although The Outsider is humanoid, &lt;strong&gt;it is speculated among the Seekers that he is not entirely human.&lt;/strong&gt; When he originally made contact with a convoy the Seekers were very wary. Nonetheless, after the initial caution, he was asked to join them after helping with his knowledge of survival skills necessary for the Regions. Eventually he went with them to the headquarters of the Organization outside the City walls. He lived in the wilderness around the walls for a while, until he was approached by the Organization, interested in employing him due to his &lt;strong&gt;great adaptability and expert knowledge of the areas outside&lt;/strong&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="356"/>
+        <source>His in-depth understanding of the Regions allowed him to quickly make a name for himself inside the Organization, becoming one of the most efficient expedition leaders. He doesn&apos;t answer any questions about his past and he is generally silent. He wears a mask which also covers his eyes and a hood which he never takes off while in the presence of others.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="365"/>
+        <source>The Criminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="371"/>
+        <source>She’s a convicted criminal that escaped from the City years ago, having a hefty bounty on her head she would be arrested on the spot if she ever set foot in the City again. To survive the wilderness and harshness of the outside regions, she built a set of &lt;strong&gt;armor with thermal capabilities&lt;/strong&gt;, to keep her warm and protected. Being unrecognizable in the armor, she was able to join a Seeker’s convoy and managed to enter the Organization undercover. She did not reveal her identity until she proved her value to the Organization leaders, who then &lt;strong&gt;decided to protect her&lt;/strong&gt; due to her incredible survival and adaptation abilities on the outside. She now lives in the Organization headquarters outside the walls and outside the City jurisdiction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="392"/>
+        <source>The Cursed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="398"/>
+        <source>This woman from the Industrialxist Class has always been a talented individual able to &lt;strong&gt;build the most innovative machines and contraptions.&lt;/strong&gt; Her technical and tinkering skill was unmatched among her peers, but unfortunately for her, she always had the reputation of being somewhat of a jinxed individual. This was because she always &lt;strong&gt;pushed to the most obscure fringes of science&lt;/strong&gt;, so her results may either be spectacular or fail in spectacular (and sometimes very loud) ways. For her all these failures where just part of &lt;strong&gt;her innovative and rigorous creative method&lt;/strong&gt;, which allowed her to have an edge over her competitors. She didn’t really care about the gossip since she knew that they were only due to ignorance and she always thought that in the end her works would speak for themselves. Unfortunately that wasn’t the case and one day she lost an arm while working on some new innovative contraption that she believed could change Qoam extraction forever. This event really damaged her reputation and people became so entrenched in the conviction that she was cursed. It reached the point where almost nobody would work with her anymore. Forced to find new ways to make a living, she joined the Organization and they were more than happy to disregard all the hearsay and take such a talented individual on board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/LoreModel.qml" line="413"/>
+        <source>Being a tinkerer, &lt;strong&gt;she tried to build the perfect mechanic substitution for her arm&lt;/strong&gt; and over the years she experimented with and improved on different designs. Her current production is a wing-like device that she originally built hoping she could start to fly. Unfortunately it did not work, but she found out that refitting the design to hold tools and blades would make an extremely effective and dangerous weapon. Thus she kept her wing, at least until her unstoppable mind will bring a new creation.</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="17"/>
         <source>General Setting</source>
@@ -1684,7 +1954,32 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="22"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="23"/>
+        <source>Colossus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="27"/>
+        <source>Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="31"/>
+        <source>Machines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="35"/>
+        <source>Wonders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/Miniatures.qml" line="39"/>
+        <source>Parasites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="24"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>

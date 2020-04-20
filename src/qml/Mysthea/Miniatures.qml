@@ -4,6 +4,7 @@ import QtQuick.Controls 2.14
 import Mysthea 1.0
 import Mysthea.Models 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0 as MystheaUniverse
 
 Page {
     id: root
@@ -19,6 +20,7 @@ Page {
         id: _miniaturesGridModel
         ListElement {
             game: 1
+            type: 1
             title: qsTr("Heroes")
         }
     }
@@ -36,7 +38,7 @@ Page {
             property Action leftAction: null
 
             model: _miniaturesGridModel
-            delegate: MiniaturesGrid {
+            delegate: MystheaUniverse.MiniaturesGrid {
                 width: _stackView.width
                 miniaturesModel: MiniaturesFilterModel {
                     game: 1

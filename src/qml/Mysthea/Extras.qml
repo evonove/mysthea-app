@@ -22,9 +22,6 @@ MystheaUniverse.Extras {
         id: _lorePage
         Lore {
             property bool isLoading: _lorePage.status != Component.Ready
-            loreModel: LoreModel {
-                width: root.availableWidth
-            }
 
             Action {
                 id: _backAction
