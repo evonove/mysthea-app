@@ -1,5 +1,17 @@
 <RCC>
     <qresource prefix="/">
+        <file>assets/images/extras/lore/thefall/img_lore1.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore1@2x.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore1@3x.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore1@4x.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore2.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore2@2x.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore2@3x.jpg</file>
+        <file>assets/images/extras/lore/thefall/img_lore2@4x.jpg</file>
+        <file>assets/images/extras/artworks/thefall/artwork_1.jpg</file>
+        <file>assets/images/extras/artworks/thefall/artwork_1@2x.jpg</file>
+        <file>assets/images/extras/artworks/thefall/artwork_1@3x.jpg</file>
+        <file>assets/images/extras/artworks/thefall/artwork_1@4x.jpg</file>
         <file>assets/images/extras/menu/thefall/artworks.jpg</file>
         <file>assets/images/extras/menu/thefall/artworks@2x.jpg</file>
         <file>assets/images/extras/menu/thefall/artworks@3x.jpg</file>

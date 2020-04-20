@@ -20,27 +20,11 @@ Page {
         id: _artworkGridModel
         ListElement {
             type: 1
-            title: qsTr("Champions")
+            title: qsTr("Mysthea: The Fall")
         }
         ListElement {
             type: 2
-            title: qsTr("Attunements")
-        }
-        ListElement {
-            type: 3
-            title: qsTr("Encounters")
-        }
-        ListElement {
-            type: 4
-            title: qsTr("Monsters")
-        }
-        ListElement {
-            type: 5
-            title: qsTr("Regions")
-        }
-        ListElement {
-            type: 6
-            title: qsTr("Guilds")
+            title: qsTr("Seekers")
         }
     }
 
@@ -61,7 +45,7 @@ Page {
             delegate: ArtworkGrid {
                 width: _stackView.width
                 artworkModel: ArtworksFilterModel {
-                    game: 1
+                    game: 3
                     sourceModel: _artworkModel
                     type: model.type
                 }
@@ -86,7 +70,7 @@ Page {
 
             Repeater {
                 model: ArtworksFilterModel {
-                    game: 1
+                    game: 3
                     sourceModel: _artworkModel
                 }
                 Pane {

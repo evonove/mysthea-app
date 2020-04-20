@@ -8,10 +8,7 @@
         <file>qml/Icaion/GameSetupMap.qml</file>
         <file>qml/Icaion/GameSetupModel.qml</file>
         <file>qml/Icaion/Lore.qml</file>
-        <file>qml/Icaion/LoreHeading.qml</file>
         <file>qml/Icaion/LoreModel.qml</file>
-        <file>qml/Icaion/LoreParagraph.qml</file>
-        <file>qml/Icaion/LoreTitle.qml</file>
         <file>qml/Icaion/Miniatures.qml</file>
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
@@ -61,6 +58,9 @@
         <file>style/MystheaUniverse/Components/Header.qml</file>
         <file>style/MystheaUniverse/Components/ImageButton.qml</file>
         <file>style/MystheaUniverse/Components/LabelComboBox.qml</file>
+        <file>style/MystheaUniverse/Components/LoreHeading.qml</file>
+        <file>style/MystheaUniverse/Components/LoreParagraph.qml</file>
+        <file>style/MystheaUniverse/Components/LoreTitle.qml</file>
         <file>style/MystheaUniverse/Components/MiniaturesGrid.qml</file>
         <file>style/MystheaUniverse/Components/RadioButton.qml</file>
         <file>style/MystheaUniverse/Components/RadioIndicator.qml</file>

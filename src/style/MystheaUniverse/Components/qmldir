@@ -10,9 +10,12 @@ ColorComboBox 1.0 ColorComboBox.qml
 DropCapLabel 1.0 DropCapLabel.qml
 ExtrasMenu 1.0 ExtrasMenu.qml
 Header 1.0 Header.qml
-LabelComboBox 1.0 LabelComboBox.qml
-MiniaturesGrid 1.0 MiniaturesGrid.qml
 ImageButton 1.0 ImageButton.qml
+LabelComboBox 1.0 LabelComboBox.qml
+LoreHeading 1.0 LoreHeading.qml
+LoreParagraph 1.0 LoreParagraph.qml
+LoreTitle 1.0 LoreTitle.qml
+MiniaturesGrid 1.0 MiniaturesGrid.qml
 RadioIndicatorLanguage 1.0 RadioIndicator.qml
 RadioLanguage 1.0 RadioButton.qml
 RoundedImage 1.0 RoundedImage.qml
