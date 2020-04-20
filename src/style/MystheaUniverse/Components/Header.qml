@@ -9,6 +9,7 @@ ToolBar {
 
     property alias logo: _image.source
     property alias separatorColor: root.separatorColor
+    property alias backgroundColor: root.backgroundColor
     property Action leftAction
     property Action rightAction
 

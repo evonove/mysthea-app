@@ -19,6 +19,7 @@ Page {
     property int currentIndex
     property int numberSteps: 0
     property alias sourceComponent: _componentLoader.sourceComponent
+    property alias mainColor: _pageIndicator.mainColor
 
     BusyIndicator {
         anchors.centerIn: parent
@@ -44,12 +45,12 @@ Page {
         }
 
         PageIndicator {
+            id: _pageIndicator
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
             currentIndex: root.currentIndex - 1
             count: root.numberSteps
             visible: root.currentIndex >= 1
-            mainColor: Palette.mystheaMain
         }
     }
 }

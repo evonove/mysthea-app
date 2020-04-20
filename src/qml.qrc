@@ -2,6 +2,8 @@
     <qresource prefix="/">
         <file>qml/Icaion/CardsReference.qml</file>
         <file>qml/Icaion/GameSetup.qml</file>
+        <file>qml/Icaion/GameSetupMap.qml</file>
+        <file>qml/Icaion/GameSetupModel.qml</file>
         <file>qml/Icaion/Extras.qml</file>
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
@@ -14,7 +16,6 @@
         <file>qml/Mysthea/GameSetup.qml</file>
         <file>qml/Mysthea/GameSetupMap.qml</file>
         <file>qml/Mysthea/GameSetupModel.qml</file>
-        <file>qml/Mysthea/GameSetupStep.qml</file>
         <file>qml/Mysthea/LanguageListModel.qml</file>
         <file>qml/Mysthea/Extras.qml</file>
         <file>qml/Mysthea/ExtrasMenu.qml</file>

@@ -17,6 +17,7 @@ Page {
     property color whiteColor
     property color accentColor
     property color headerSeparatorColor
+    property color headerBackgroundColor
 
     signal cardsReferenceClicked
     signal gameSetupClicked
@@ -68,6 +69,7 @@ Page {
 
         leftAction: root.leftAction
         separatorColor: root.headerSeparatorColor
+        backgroundColor: root.headerBackgroundColor
     }
 
     SwipeView {

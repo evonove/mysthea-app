@@ -35,6 +35,9 @@ QtObject {
 
     // Icaion default colors
     readonly property color icaionMain: "#6DE4E9"
+    readonly property color icaionDark: "#819FA5"
+    readonly property color icaionLight: "#C3DDE2"
+    readonly property color icaionBlack: "#0E1617"
 
     // TheFall default colors
     readonly property color theFallMain: "#2FFF20"

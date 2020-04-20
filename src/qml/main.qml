@@ -124,6 +124,7 @@ ApplicationWindow {
                 whiteColor: Palette.lightPink
                 accentColor: Palette.darkPink
                 headerSeparatorColor: Palette.pink
+                headerBackgroundColor: Palette.background
                 rightAction: _drawerOpenAction
                 appContents: [
                     Mysthea.CardsReference {
@@ -151,9 +152,10 @@ ApplicationWindow {
                 objectName: PageName.icaionPage
                 logo: "qrc:/assets/images/icaion_logo.png"
                 mainColor: Palette.icaionMain
-                whiteColor: Palette.lightPink
-                accentColor: Palette.darkPink
-                headerSeparatorColor: Palette.pink
+                whiteColor: Palette.icaionLight
+                accentColor: Palette.icaionDark
+                headerSeparatorColor: Palette.icaionLight
+                headerBackgroundColor: Palette.icaionBlack
                 rightAction: _drawerOpenAction
                 appContents: [
                     Icaion.CardsReference {},

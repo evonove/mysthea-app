@@ -9,6 +9,7 @@ import Mysthea 1.0 as Mysthea
 
 GameSetup {
     id: root
+    mainColor: Palette.mystheaMain
 
 
     sourceComponent: Component {
