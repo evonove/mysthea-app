@@ -38,6 +38,8 @@
         <file>qml/Mysthea/qmldir</file>
         <file>qml/TheFall/CardsReference.qml</file>
         <file>qml/TheFall/GameSetup.qml</file>
+        <file>qml/TheFall/GameSetupMap.qml</file>
+        <file>qml/TheFall/GameSetupModel.qml</file>
         <file>qml/TheFall/Extras.qml</file>
         <file>qml/TheFall/Rulebook.qml</file>
         <file>qml/TheFall/qmldir</file>

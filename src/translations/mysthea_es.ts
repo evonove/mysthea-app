@@ -1033,6 +1033,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1300,6 +1301,136 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="692"/>
         <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="35"/>
+        <source>Place the Game Board and the Event Board in the center of the table, one next to the other. Randomly place an Island on each Game Board crater. The Islands’ side without icons must be facing upwards.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="70"/>
+        <source>Place 4 Golems on each Island, all in one Region. Choose a different kind of Region for each Island.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="104"/>
+        <source>Place 4 Troops on each remaining empty Region among all Islands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="138"/>
+        <source>Place all Qoam crystals, Parasites, and Monsters in a common pool near the Game Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="188"/>
+        <source>Choose the difficulty level for the game. Take 10 Primal Shards according to your choice and place them in an opaque container that they may be drawn from at random (like a bag or a cup).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="202"/>
+        <source>&lt;strong&gt;&lt;u&gt;Easy:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 3 SHARDS “1”&lt;br&gt;- 5 SHARDS “2”&lt;br&gt;- 2 SHARDS “3”</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="215"/>
+        <source>&lt;strong&gt;&lt;u&gt;Normal:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 2 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 4 SHARDS “3”</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="228"/>
+        <source>&lt;strong&gt;&lt;u&gt;Difficult:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 1 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 5 SHARDS “3”</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="241"/>
+        <source>Take one of the remaining Primal Shards and use it as a score marker on the Game Board track, starting in the space labeled “99”. This serves as a counter for the City Defense Points. Put the remaining Primal Shards back into the game box.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="275"/>
+        <source>Draw at random 5 Primal Shards from the bag. Without looking at their values, plug them into the base of the Colossus’ miniature.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="309"/>
+        <source>Place the Colossus on one of the five external nodes, chosen at random. It will only move between these nodes during the game.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="353"/>
+        <source>Place Machinery on the Game Board: In each of its Regions, place three different Machines, all of the same color. Each kind of Region may only hold Machines of the same color (e.g., Black Machines in Forest Regions).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="387"/>
+        <source>The oldest player is the first in turn order. Other players follow clockwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="401"/>
+        <source>Divide the Character Cards into two piles (Mysthea’s and Icaion’s) and shuffle them both. The first player gets to choose which pile they draw a Character from.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="414"/>
+        <source>Each following player must draw from a pile that is different from the player choosing before them. Each player then takes the corresponding miniature and the tile related to their Character (Mysthea’s Artefact or Icaion’s Emergency Power Supply).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="428"/>
+        <source>&lt;strong&gt;Note:&lt;/strong&gt; From now on, we will refer to both kinds of tiles as Relics.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="442"/>
+        <source>Place the Relic in front of you, with its charged side facing upwards.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="455"/>
+        <source>Finally, each player takes a colored base for their miniature, plus some Fortification Tokens depending on the number of players:&lt;br&gt;&lt;strong&gt;- 5 players:&lt;/strong&gt; 1 Fortification of your color.&lt;br&gt;&lt;strong&gt;- 4 players:&lt;/strong&gt; 2 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 3 players:&lt;/strong&gt; 3 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 2 players:&lt;/strong&gt; 3 Fortifications of your color, plus another 2 of a non-playing color.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="470"/>
+        <source>&lt;strong&gt;Solo variant&lt;/strong&gt;&lt;br&gt;Set up the game following the 2-player rules. Choose two Characters and alternate your turns between the two.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="505"/>
+        <source>In order of play, each player places their Character on an empty node of the Game Board, following the instructions below:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="519"/>
+        <source>&lt;span style=&apos;color: #ED008C&apos;&gt;&lt;strong&gt;Mysthea Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five nodes adjacent to a fallen Island and two Icaion Regions.&lt;br&gt;&lt;span style=&apos;color: #0094CC&apos;&gt;&lt;strong&gt;Icaion Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five City nodes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="532"/>
+        <source>For each of the two Regions adjacent to your Character, take 1 Qoam crystal of the same type as the Region.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="567"/>
+        <source>Divide Command Cards into three decks: Era I, Era II, and Era III. Place the three decks, face down, on the Event Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="602"/>
+        <source>Prepare the Event Deck: shuffle together all Region Cards (both Mysthea’s and Icaion’s), the three Colossus Cards, and the Storm Card. &lt;br&gt;&lt;br&gt;Place the deck face down on the Event Board. Also shuffle the Monster Cards to form another deck. Place it above the Event Board, face down.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
+        <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
+        <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

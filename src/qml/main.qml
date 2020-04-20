@@ -173,9 +173,10 @@ ApplicationWindow {
                 objectName: PageName.theFallPage
                 logo: "qrc:/assets/images/the_fall_logo.png"
                 mainColor: Palette.theFallMain
-                whiteColor: Palette.lightPink
-                accentColor: Palette.darkPink
-                headerSeparatorColor: Palette.pink
+                whiteColor: Palette.theFallLight
+                accentColor: Palette.theFallDark
+                headerSeparatorColor: Palette.theFallLight
+                headerBackgroundColor: Palette.theFallBlack
                 rightAction: _drawerOpenAction
                 appContents: [
                     TheFall.CardsReference {},
