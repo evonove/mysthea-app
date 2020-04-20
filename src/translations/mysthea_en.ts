@@ -2087,6 +2087,56 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
         <source>The process of manipulating Qoam to move it telekinetically is common practice for all of the city. The practice is considered as natural as breathing. In reality the process is very complex, but only some are aware of this or are able to use this knowledge to their advantage. Highly talented individuals put a lot of concentration into what they do. For them, the goal is to sense crystals whose electromagnetic fields vibrate at a frequency that works well for them. Finding such a crystal makes a great difference, as choosing the right crystal can make the process immensely easier, enabling the user to perform greater feats. Usually, when one is interacting with a Qoam, others cannot take control of it unless the first user allows them to do so.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="16"/>
+        <source>Mysthea: the Fall</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="24"/>
+        <source>&lt;strong&gt;Henakor&lt;/strong&gt;, the core crystal from beyond the stars, after piercing the planet Icaion became the &lt;strong&gt;new axis of a frantic magnetic field.&lt;/strong&gt; The world was reshaped by the impact, nature itself morphed to adapt to these wild energies.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="29"/>
+        <source>Once part of the surface, islands of floating earth and rock, vast as entire nations, strove to develop a new habitat while fully immersed in a sea of magnetic winds. The &lt;strong&gt;inhabitants&lt;/strong&gt; of this sky world developed a &lt;strong&gt;deep connection with these storming energies,&lt;/strong&gt; learning across centuries to manipulate them at will. This civilization call their home Mysthea.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="34"/>
+        <source>Those who survived extinction on the planet surface did not develop any specific power, though. They had to learn anew, to rebuild from scratch, to discover and experiment. The Henakor is able to &lt;strong&gt;penetrate the thick layer of clouds&lt;/strong&gt; enveloping the planet, collecting the energy of the sun and this energy can be harnessed and put to good use with the right tools.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="39"/>
+        <source>Soon after, &lt;strong&gt;a society arose&lt;/strong&gt;, whose whole reality revolves around the crystal arose while wealth revolves around the &lt;strong&gt;ability to harvest crystal pieces&lt;/strong&gt;, called &lt;strong&gt;Qoam&lt;/strong&gt;. For what we know, only one city, the City, exists on the world surface... built across millennia around, embracing the Henakor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="53"/>
+        <source>This &lt;strong&gt;excessive exploitation&lt;/strong&gt; of the crystal caused its energy to be weakened to the point of &lt;strong&gt;destabilizing half planet&lt;/strong&gt; and this fluctuation in the magnetic field made the &lt;strong&gt;five floating sacred islands of Mysthea to fall from the sky&lt;/strong&gt;, crushing the lands surrounding the City.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="59"/>
+        <source>The &lt;strong&gt;creatures&lt;/strong&gt; that survived the impact changed their behavior as they were exposed to the Henakor proximity: they developed an &lt;strong&gt;aggressive nature&lt;/strong&gt; that led them to attack everything that came between them and crystal, perhaps trying to restore that deep bond with the raw material that shaped them into what they are.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="65"/>
+        <source>The devastation shocked the &lt;strong&gt;Mysthea Champions&lt;/strong&gt; to the point that now they are willing to &lt;strong&gt;put aside their rivalry&lt;/strong&gt; and the interests of the Guilds to stop their former minions from bringing destruction to this newly discovered civilization. On the other hand, &lt;strong&gt;Icaion Seekers are not going to refuse help&lt;/strong&gt; when the only world they ever knew, the City, is at risk.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="71"/>
+        <source>The key to end this madness seems to be the most imposing creature on the planet: &lt;strong&gt;the Colossus&lt;/strong&gt; that roams the lands surrounding the City. Partly composed of the same substance as Henakor, the creature &lt;strong&gt;holds some Primal Shards:&lt;/strong&gt; Henakor flakes detached during the first impact, still retaining &lt;strong&gt;the purest energy of Qoam.&lt;/strong&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/TheFall/LoreModel.qml" line="87"/>
+        <source>The Colossus, who used to roam peacefully the surface, is now howling like a thunder, &lt;strong&gt;inciting the creatures&lt;/strong&gt; that came from above to reach the crystal within the City walls. Is the Colossus trying to &lt;strong&gt;save the Henakor?&lt;/strong&gt; Or is it just &lt;strong&gt;revenge&lt;/strong&gt; for the exploited planet?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Miniatures</name>

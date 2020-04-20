@@ -19,11 +19,11 @@ Page {
     ListModel {
         id: _artworkGridModel
         ListElement {
-            type: 1
+            type: 15
             title: qsTr("Mysthea: The Fall")
         }
         ListElement {
-            type: 2
+            type: 16
             title: qsTr("Seekers")
         }
     }
@@ -50,7 +50,7 @@ Page {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: _stackView.push(_artworkSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -58,6 +58,11 @@ Page {
     Component {
         id: _artworkSlides
         SwipeView {
+            property Action leftAction: _backAction
+            property var sourceIndex
+
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
+            clip: true
 
             Action {
                 id: _backAction
@@ -65,11 +70,9 @@ Page {
                 onTriggered: _stackView.pop()
             }
 
-            property Action leftAction: _backAction
-            clip: true
-
             Repeater {
                 model: ArtworksFilterModel {
+                    id: _artworkSlidesProxyModel
                     game: 3
                     sourceModel: _artworkModel
                 }

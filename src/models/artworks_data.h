@@ -26,6 +26,12 @@
  * 12 - Events
  * 13 - Parasites
  * 14 - Playerboards
+ *
+ * GAME:
+ * 1 - The Fall
+ * TYPES:
+ * 15 - Mysthea: the Fall
+ * 16 - Seekers
  */
 
 struct Artwork {
@@ -154,5 +160,14 @@ const QVector<Artwork> artworks_data = {
     {2, 14, "Red playerboard","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/Pboard3_ica.jpg"},
     {2, 14, "Yellow playerboard","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/Pboard4_ica.jpg"},
     {2, 14, "Blue playerboard","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/Pboard5-ica.jpg"},
+    // Game: THE FALL
+    // Type: Mysthea: the Fall
+    {3, 15, "Mysthea: the Fall","Travis Anderson","qrc:/assets/images/extras/artworks/thefall/artwork_1.jpg"},
+    // Game: THE FALL
+    // Type: Seekers
+    {3, 16, "The Lone Survivor","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/seeker1.jpg"},
+    {3, 16, "The Criminal","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/seeker2.jpg"},
+    {3, 16, "The Heir","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/seeker3.jpg"},
+    {3, 16, "The Outsider","Travis Anderson","qrc:/assets/images/extras/artworks/icaion/seeker4.jpg"},
 };
 // clang-format on
