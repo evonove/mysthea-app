@@ -8,6 +8,12 @@ MystheaUniverse.Extras {
     id: root
     property bool isLoading: false
 
+    Action {
+        id: _backAction
+        text: Icon.back
+        onTriggered: root.pop()
+    }
+
     initialItem: Component {
         id: _extrasMenu
         ExtrasMenu {
@@ -22,12 +28,6 @@ MystheaUniverse.Extras {
         Lore {
             property bool isLoading: _lorePage.status != Component.Ready
 
-            Action {
-                id: _backAction
-                text: Icon.back
-                onTriggered: root.pop()
-            }
-
             Component.onCompleted: {
                 root.leftAction = _backAction
             }
@@ -39,17 +39,10 @@ MystheaUniverse.Extras {
         Artwork {
             id: _artworks
             property bool isLoading: _artworkPage.status != Component.Ready
-
-            Component.onCompleted: {
-                root.leftAction = _backAction
-            }
+            mainLeftAction: _backAction
 
             onLeftActionChanged: {
-                if (_artworks.leftAction) {
-                    root.leftAction = _artworks.leftAction
-                } else {
-                    root.leftAction = _backAction
-                }
+                root.leftAction = _artworks.leftAction
             }
         }
     }

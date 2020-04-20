@@ -11,6 +11,7 @@ Page {
     padding: 0
 
     property Action leftAction: _stackView.currentItem.leftAction
+    property Action mainLeftAction;
 
     MiniaturesModel {
         id: _miniaturesModel
@@ -32,10 +33,16 @@ Page {
         padding: 0
     }
 
+    Action {
+        id: _backAction
+        text: Icon.back
+        onTriggered: _stackView.pop()
+    }
+
     Component {
         id: _miniaturesGrid
         ListView {
-            property Action leftAction: null
+            property Action leftAction: mainLeftAction
 
             model: _miniaturesGridModel
             delegate: MystheaUniverse.MiniaturesGrid {
@@ -45,7 +52,7 @@ Page {
                     sourceModel: _miniaturesModel
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_miniaturesSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: _stackView.push(_miniaturesSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -53,18 +60,15 @@ Page {
     Component {
         id: _miniaturesSlides
         SwipeView {
-
-            Action {
-                id: _backAction
-                text: Icon.back
-                onTriggered: _stackView.pop()
-            }
-
             property Action leftAction: _backAction
+            property var sourceIndex
+
+            currentIndex: _miniaturesSlidesProxyModel.mapFromSource(sourceIndex).row
             clip: true
 
             Repeater {
                 model: MiniaturesFilterModel {
+                    id: _miniaturesSlidesProxyModel
                     game: 1
                     sourceModel: _miniaturesModel
                 }

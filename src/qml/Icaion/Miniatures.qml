@@ -11,6 +11,7 @@ Page {
     padding: 0
 
     property Action leftAction: _stackView.currentItem.leftAction
+    property Action mainLeftAction;
 
     MiniaturesModel {
         id: _miniaturesModel
@@ -47,13 +48,18 @@ Page {
         padding: 0
     }
 
+    Action {
+        id: _backAction
+        text: Icon.back
+        onTriggered: _stackView.pop()
+    }
+
     Component {
         id: _miniaturesGrid
         ListView {
-            property Action leftAction: null
+            property Action leftAction: mainLeftAction
 
             model: _miniaturesGridModel
-
             delegate: MiniaturesGrid {
                 width: _stackView.width
                 miniaturesModel: MiniaturesFilterModel {
@@ -62,9 +68,7 @@ Page {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: {
-                    _stackView.push(_miniaturesSlides, { sourceIndex: sourceIndex })
-                }
+                onCardClicked: _stackView.push(_miniaturesSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -78,11 +82,6 @@ Page {
             currentIndex: _miniaturesSlidesProxyModel.mapFromSource(sourceIndex).row
             clip: true
 
-            Action {
-                id: _backAction
-                text: Icon.back
-                onTriggered: _stackView.pop()
-            }
 
             Repeater {
                 model: MiniaturesFilterModel {

@@ -8,5 +8,4 @@ GameSetupMap 1.0 GameSetupMap.qml
 GameSetupModel 1.0 GameSetupModel.qml
 Lore 1.0 Lore.qml
 LoreModel 1.0 LoreModel.qml
-Miniatures 1.0 Miniatures.qml
 Rulebook 1.0 Rulebook.qml

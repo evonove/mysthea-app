@@ -11,6 +11,7 @@ Page {
     padding: 0
 
     property Action leftAction: _stackView.currentItem.leftAction
+    property Action mainLeftAction;
 
     ArtworksModel {
         id: _artworkModel
@@ -51,11 +52,16 @@ Page {
         padding: 0
     }
 
+    Action {
+        id: _backAction
+        text: Icon.back
+        onTriggered: _stackView.pop()
+    }
+
     Component {
         id: _artworkGrid
         ListView {
-            property Action leftAction: null
-
+            property Action leftAction: mainLeftAction
             model: _artworkGridModel
 
             delegate: ArtworkGrid {
@@ -66,7 +72,7 @@ Page {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: _stackView.push(_artworkSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -74,18 +80,15 @@ Page {
     Component {
         id: _artworkSlides
         SwipeView {
-
-            Action {
-                id: _backAction
-                text: Icon.back
-                onTriggered: _stackView.pop()
-            }
-
             property Action leftAction: _backAction
+            property var sourceIndex
+
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
             clip: true
 
             Repeater {
                 model: ArtworksFilterModel {
+                    id: _artworkSlidesProxyModel
                     game: 1
                     sourceModel: _artworkModel
                 }
