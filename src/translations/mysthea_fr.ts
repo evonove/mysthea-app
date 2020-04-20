@@ -86,31 +86,37 @@
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="23"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="23"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="27"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="27"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="31"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="31"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="35"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="35"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="39"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="39"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="43"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="43"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
@@ -991,17 +997,17 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>ExtrasMenu</name>
     <message>
-        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="31"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="32"/>
         <source>LORE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="39"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="40"/>
         <source>ARTWORKS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="47"/>
+        <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="48"/>
         <source>MINIATURES</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1676,6 +1682,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="17"/>
+        <location filename="../qml/TheFall/LoreModel.qml" line="17"/>
         <source>General Setting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2111,6 +2118,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     </message>
     <message>
         <location filename="../qml/Mysthea/Miniatures.qml" line="24"/>
+        <location filename="../qml/TheFall/Miniatures.qml" line="24"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>

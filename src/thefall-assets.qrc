@@ -1,5 +1,13 @@
 <RCC>
     <qresource prefix="/">
+        <file>assets/images/extras/menu/thefall/artworks.jpg</file>
+        <file>assets/images/extras/menu/thefall/artworks@2x.jpg</file>
+        <file>assets/images/extras/menu/thefall/artworks@3x.jpg</file>
+        <file>assets/images/extras/menu/thefall/artworks@4x.jpg</file>
+        <file>assets/images/extras/menu/thefall/lore.jpg</file>
+        <file>assets/images/extras/menu/thefall/lore@2x.jpg</file>
+        <file>assets/images/extras/menu/thefall/lore@3x.jpg</file>
+        <file>assets/images/extras/menu/thefall/lore@4x.jpg</file>
         <file>assets/images/game_setup/thefall/eventboard_setup-general.jpg</file>
         <file>assets/images/game_setup/thefall/eventboard_setup-general@2x.jpg</file>
         <file>assets/images/game_setup/thefall/eventboard_setup-general@3x.jpg</file>
