@@ -14,7 +14,6 @@ Pane {
     property alias artworkModel: _grid.model
     property alias title: _header.text
 
-
     DelegateModel {
         id: _delegate
         model: root.artworkModel
@@ -33,6 +32,7 @@ Pane {
             leftPadding: 13
             topPadding: 10
             bottomPadding: 10
+
             Layout.fillWidth: true
         }
 
