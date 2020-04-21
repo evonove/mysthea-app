@@ -29,7 +29,6 @@ MystheaUniverse.Extras {
         Lore {
             property bool isLoading: _lorePage.status != Component.Ready
 
-
             Component.onCompleted: {
                 root.leftAction = _backAction
             }
