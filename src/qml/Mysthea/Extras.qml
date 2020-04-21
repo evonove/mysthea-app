@@ -28,7 +28,6 @@ MystheaUniverse.Extras {
         id: _lorePage
         Lore {
             property bool isLoading: _lorePage.status != Component.Ready
-
             Component.onCompleted: {
                 root.leftAction = _backAction
             }
@@ -41,7 +40,6 @@ MystheaUniverse.Extras {
             id: _artworks
             property bool isLoading: _artworkPage.status != Component.Ready
             mainLeftAction: _backAction
-
             onLeftActionChanged: {
                 root.leftAction = _artworks.leftAction
             }

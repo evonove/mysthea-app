@@ -8,6 +8,7 @@ Page {
     id: root
 
     property alias initialItem: _stack.initialItem
+    property Action leftAction: _stack.currentItem.leftAction
 
     function push(component, properties) {
         _stack.push(component, properties)
