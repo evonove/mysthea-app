@@ -4,13 +4,14 @@ import QtQuick.Controls 2.14
 import Mysthea.Models 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
+import MystheaUniverse.Pages 1.0
 
 
-Page {
+StackPage {
     id: root
     padding: 0
+    initialItem: _miniaturesGrid
 
-    property Action leftAction: _stackView.currentItem.leftAction
     property Action mainLeftAction;
 
     MiniaturesModel {
@@ -41,34 +42,28 @@ Page {
         }
     }
 
-    StackView {
-        id: _stackView
-        anchors.fill: parent
-        initialItem: _miniaturesGrid
-        padding: 0
-    }
-
     Action {
         id: _backAction
         text: Icon.back
-        onTriggered: _stackView.pop()
+        onTriggered: root.pop()
     }
 
     Component {
         id: _miniaturesGrid
         ListView {
+            property bool isLoading: _miniaturesGrid.status != Component.Ready
             property Action leftAction: mainLeftAction
 
             model: _miniaturesGridModel
             delegate: MiniaturesGrid {
-                width: _stackView.width
+                width: root.width
                 miniaturesModel: MiniaturesFilterModel {
                     game: 2
                     sourceModel: _miniaturesModel
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_miniaturesSlides, { sourceIndex: sourceIndex })
+                onCardClicked: root.push(_miniaturesSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -76,6 +71,7 @@ Page {
     Component {
         id: _miniaturesSlides
         SwipeView {
+            property bool isLoading: _miniaturesSlides.status != Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
 
@@ -90,8 +86,8 @@ Page {
                     sourceModel: _miniaturesModel
                 }
                 Pane {
-                    width: _stackView.width
-                    height: _stackView.height
+                    width: root.width
+                    height: root.height
                     padding: 0
 
                     Image {
