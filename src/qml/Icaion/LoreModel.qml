@@ -13,7 +13,7 @@ ObjectModel {
     property bool asynchronous: true
     LoreHeading {
         text: qsTr("Icaion Lore")
-        color: Palette.icaionLight
+        color: Palette.white
     }
 
     ColumnLayout {
@@ -23,7 +23,7 @@ ObjectModel {
 
         LoreTitle {
             text: qsTr("A cold dark planet")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -58,7 +58,7 @@ ObjectModel {
 
         LoreTitle {
             text: qsTr("The city")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -86,7 +86,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("Society inside the walls")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -119,7 +119,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("Classes of the city")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -190,7 +190,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The organization")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -218,7 +218,7 @@ ObjectModel {
         }
         LoreHeading {
             text: qsTr("Seekers’ Backstories & Design")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
     }
@@ -227,7 +227,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Lone Survivor")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -255,7 +255,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Heir")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -283,7 +283,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Machine")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
         LoreParagraph {
@@ -311,7 +311,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Creature")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
 
@@ -335,7 +335,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Outsider")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
 
@@ -364,7 +364,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Criminal")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
 
@@ -391,7 +391,7 @@ ObjectModel {
         spacing: 0
         LoreTitle {
             text: qsTr("The Cursed")
-            color: Palette.icaionLight
+            color: Palette.white
             Layout.fillWidth: true
         }
 
