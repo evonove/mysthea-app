@@ -12,6 +12,7 @@ Page {
 
     property Action leftAction: null
     property bool hasToolbarLine: false
+    property bool showMiniatures: true
     property alias loreImage: _loreImage.backgroundImageSource
     property alias artworksImage: _artworksImage.backgroundImageSource
     property alias miniaturesImage: _miniaturesImage.backgroundImageSource
@@ -49,6 +50,7 @@ Page {
             onClicked: root.miniaturesClicked()
             Layout.fillHeight: true
             Layout.fillWidth: true
+            opacity: root.showMiniatures ? 1 : 0
         }
     }
 }

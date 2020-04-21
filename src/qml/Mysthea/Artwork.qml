@@ -5,12 +5,14 @@ import Mysthea 1.0
 import Mysthea.Models 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Pages 1.0
 
-Page {
+StackPage {
     id: root
     padding: 0
+    initialItem: _artworkGrid
 
-    property Action leftAction: _stackView.currentItem.leftAction
+    property Action mainLeftAction;
 
     ArtworksModel {
         id: _artworkModel
@@ -44,29 +46,29 @@ Page {
         }
     }
 
-    StackView {
-        id: _stackView
-        anchors.fill: parent
-        initialItem: _artworkGrid
-        padding: 0
+    Action {
+        id: _backAction
+        text: Icon.back
+        onTriggered: root.pop()
     }
 
     Component {
         id: _artworkGrid
         ListView {
-            property Action leftAction: null
+            property bool isLoading: _artworkGrid.status != Component.Ready
+            property Action leftAction: mainLeftAction
 
             model: _artworkGridModel
 
             delegate: ArtworkGrid {
-                width: _stackView.width
+                width: root.width
                 artworkModel: ArtworksFilterModel {
                     game: 1
                     sourceModel: _artworkModel
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: _stackView.push(_artworkSlides, { currentIndex: sourceIndex.row })
+                onCardClicked: root.push(_artworkSlides, { sourceIndex: sourceIndex })
             }
         }
     }
@@ -74,24 +76,22 @@ Page {
     Component {
         id: _artworkSlides
         SwipeView {
-
-            Action {
-                id: _backAction
-                text: Icon.back
-                onTriggered: _stackView.pop()
-            }
-
+            property bool isLoading: _artworkSlides.status != Component.Ready
             property Action leftAction: _backAction
+            property var sourceIndex
+
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
             clip: true
 
             Repeater {
                 model: ArtworksFilterModel {
+                    id: _artworkSlidesProxyModel
                     game: 1
                     sourceModel: _artworkModel
                 }
                 Pane {
-                    width: _stackView.width
-                    height: _stackView.height
+                    width: root.width
+                    height: root.height
                     padding: 0
 
                     Image {

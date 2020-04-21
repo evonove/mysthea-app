@@ -1,29 +1,32 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 
-import Mysthea 1.0
+import TheFall 1.0
 import Mysthea.Models 1.0
-import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0
 import MystheaUniverse.Pages 1.0
-import MystheaUniverse.Components 1.0 as MystheaUniverse
+import MystheaUniverse.Theme 1.0
 
 StackPage {
     id: root
     padding: 0
-    initialItem: _miniaturesGrid
+    initialItem: _artworkGrid
 
     property Action mainLeftAction;
 
-    MiniaturesModel {
-        id: _miniaturesModel
+    ArtworksModel {
+        id: _artworkModel
     }
 
     ListModel {
-        id: _miniaturesGridModel
+        id: _artworkGridModel
         ListElement {
-            game: 1
-            type: 1
-            title: qsTr("Heroes")
+            type: 15
+            title: qsTr("Mysthea: The Fall")
+        }
+        ListElement {
+            type: 16
+            title: qsTr("Seekers")
         }
     }
 
@@ -34,39 +37,41 @@ StackPage {
     }
 
     Component {
-        id: _miniaturesGrid
+        id: _artworkGrid
         ListView {
-            property bool isLoading: _miniaturesGrid.status != Component.Ready
+            property bool isLoading: _artworkGrid.status != Component.Ready
             property Action leftAction: mainLeftAction
+            model: _artworkGridModel
 
-            model: _miniaturesGridModel
-            delegate: MystheaUniverse.MiniaturesGrid {
+            delegate: ArtworkGrid {
                 width: root.width
-                miniaturesModel: MiniaturesFilterModel {
-                    game: 1
-                    sourceModel: _miniaturesModel
+                artworkModel: ArtworksFilterModel {
+                    game: 3
+                    sourceModel: _artworkModel
+                    type: model.type
                 }
                 title: model.title
-                onCardClicked: root.push(_miniaturesSlides, { sourceIndex: sourceIndex })
+                onCardClicked: root.push(_artworkSlides, { sourceIndex: sourceIndex })
             }
+
         }
     }
 
     Component {
-        id: _miniaturesSlides
+        id: _artworkSlides
         SwipeView {
-            property bool isLoading: _miniaturesSlides.status != Component.Ready
+            property bool isLoading: _artworkSlides.status != Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
 
-            currentIndex: _miniaturesSlidesProxyModel.mapFromSource(sourceIndex).row
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
             clip: true
 
             Repeater {
-                model: MiniaturesFilterModel {
-                    id: _miniaturesSlidesProxyModel
-                    game: 1
-                    sourceModel: _miniaturesModel
+                model: ArtworksFilterModel {
+                    id: _artworkSlidesProxyModel
+                    game: 3
+                    sourceModel: _artworkModel
                 }
                 Pane {
                     width: root.width

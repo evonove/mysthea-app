@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.14
 import QtQuick.Controls 2.14
 
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0
 
 ObjectModel {
     id: root
