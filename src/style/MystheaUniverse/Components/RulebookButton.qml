@@ -30,11 +30,20 @@ Button {
             fillMode: Image.PreserveAspectCrop
             visible: false
         }
-        ColorOverlay {
-            id: _colorOverlay
+
+        Desaturate {
+            id: _desaturate
             anchors.fill: _backgroundImage
             source: _backgroundImage
-            color: "#80000000"
+            desaturation: enabled ? 0.0 : 1.0
+            visible: false
+        }
+
+        ColorOverlay {
+            id: _colorOverlay
+            anchors.fill: _desaturate
+            source: _desaturate
+            color: enabled ? "#80000000" : "#AA000000"
             visible: false
         }
         OpacityMask {

@@ -2,10 +2,11 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 
 import Mysthea.Models 1.0
-import MystheaUniverse.Pages 1.0 as BasePages
+import MystheaUniverse.Pages 1.0 as MUPages
+import MystheaUniverse.Components 1.0 as MUComponents
 import MystheaUniverse.Theme 1.0
 
-BasePages.CardsReference {
+MUPages.CardsReference {
     id: root
 
     typeProxyModel: TypeProxyModel {}
@@ -45,9 +46,8 @@ BasePages.CardsReference {
                 cards: modelCards
             }
 
-            Action {
+            MUComponents.BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.pop()
             }
 

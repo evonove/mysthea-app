@@ -33,7 +33,7 @@ Rulebook {
         }
         ListElement {
             language: "JP"
-            downloadUrl: ""
+            downloadUrl: "https://storage.googleapis.com/mystheauniverse/rulebooks/JP_tfa_rulebook.pdf"
         }
         ListElement {
             language: "PT"

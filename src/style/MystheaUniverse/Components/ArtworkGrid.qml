@@ -6,14 +6,13 @@ import QtQml.Models 2.14
 
 Pane {
     id: root
+    spacing: 0
+    padding: 7
 
     signal cardClicked(var sourceIndex)
 
     property alias artworkModel: _grid.model
     property alias title: _header.text
-
-    spacing: 0
-    padding: 0
 
     DelegateModel {
         id: _delegate
@@ -23,13 +22,16 @@ Pane {
 
     ColumnLayout {
         anchors.fill: parent
-        spacing: 10
+        anchors.topMargin: 7
+        spacing: 0
 
         Label {
             id: _header
             font.pixelSize: 32
             color: "white"
-            padding: 7
+            leftPadding: 13
+            topPadding: 10
+            bottomPadding: 10
 
             Layout.fillWidth: true
         }
@@ -37,11 +39,11 @@ Pane {
         GridView {
             id: _grid
             interactive: false
-            cellWidth: width / 2
-            cellHeight: 250
+            cellWidth: root.width / 2 - root.padding
+            cellHeight: 268
 
             Layout.fillWidth: true
-            Layout.preferredHeight: Math.ceil(_delegate.count / 2) * cellHeight
+            Layout.preferredHeight: Math.ceil(_delegate.count / 2) * cellHeight + root.padding
 
             delegate: Pane {
                 id: _pane

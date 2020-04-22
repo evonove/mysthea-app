@@ -43,6 +43,7 @@ Page {
                 height: 77
                 anchors.centerIn: parent
                 label: language
+                enabled: downloadUrl !== ""
                 onClicked: Qt.openUrlExternally(downloadUrl)
             }
         }

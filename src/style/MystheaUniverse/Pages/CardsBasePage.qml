@@ -15,6 +15,7 @@ Page {
     property color searchFieldBorderColor: Palette.white
     property bool isLoading: _loader.status !== Loader.Ready
     property alias sourceComponent: _loader.sourceComponent
+    property Action leftAction: null
 
     property alias typeProxyModel: _filtersHeader.typeProxyModel
     property alias typeComboBoxModel: _filtersHeader.typeComboBoxModel

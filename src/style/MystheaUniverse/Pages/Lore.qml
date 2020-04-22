@@ -6,6 +6,7 @@ Page {
     id: root
 
     property ObjectModel loreModel: null
+    property Action leftAction: null
 
     title: qsTr("LORE")
     objectName: PageName.lorePage
