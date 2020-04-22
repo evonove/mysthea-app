@@ -30,9 +30,8 @@ StackPage {
         }
     }
 
-    Action {
+    BackAction {
         id: _backAction
-        text: Icon.back
         onTriggered: root.pop()
     }
 

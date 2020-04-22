@@ -1,11 +1,12 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 
-import MystheaUniverse.Pages 1.0 as MystheaUniverse
+import MystheaUniverse.Pages 1.0 as MUPages
+import MystheaUniverse.Components 1.0 as MUComponents
 import MystheaUniverse.Theme 1.0
 import TheFall 1.0 as TheFall
 
-MystheaUniverse.GameSetup {
+MUPages.GameSetup {
     id: root
     mainColor: Palette.theFallMain
 
@@ -17,9 +18,8 @@ MystheaUniverse.GameSetup {
             anchors.fill: parent
             clip: false
 
-            Action {
+            MUComponents.BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.currentIndex = 0
             }
 

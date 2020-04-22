@@ -3,11 +3,12 @@ import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 import QtQuick.Controls 2.14
 
-import MystheaUniverse.Pages 1.0 as MystheaUniverse
+import MystheaUniverse.Pages 1.0 as MUPages
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0 as MUComponents
 import Icaion 1.0 as Icaion
 
-MystheaUniverse.GameSetup {
+MUPages.GameSetup {
     id: root
     mainColor: Palette.icaionMain
 
@@ -19,9 +20,8 @@ MystheaUniverse.GameSetup {
             anchors.fill: parent
             clip: false
 
-            Action {
+            MUComponents.BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.currentIndex = 0
             }
 

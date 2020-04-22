@@ -17,6 +17,8 @@ ToolBar {
         action: root.leftAction
         anchors.left: parent.left
         color: root.separatorColor
+        width: 54
+        height: 54
 
         visible: root.leftAction !== null
         enabled: root.leftAction !== null

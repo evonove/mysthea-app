@@ -47,6 +47,7 @@
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/ArtworkGrid.qml</file>
+        <file>style/MystheaUniverse/Components/BackAction.qml</file>
         <file>style/MystheaUniverse/Components/Button.qml</file>
         <file>style/MystheaUniverse/Components/CardDetailDelegate.qml</file>
         <file>style/MystheaUniverse/Components/CardsFiltersHeader.qml</file>

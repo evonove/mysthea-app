@@ -4,6 +4,7 @@ import QtQuick.Controls 2.14
 import Mysthea.Models 1.0
 import MystheaUniverse.Pages 1.0 as BasePages
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0
 
 BasePages.CardsReference {
     id: root
@@ -45,9 +46,8 @@ BasePages.CardsReference {
                 cards: modelCards
             }
 
-            Action {
+            BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.pop()
             }
 

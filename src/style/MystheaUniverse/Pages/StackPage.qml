@@ -10,6 +10,10 @@ Page {
     property alias initialItem: _stack.initialItem
     property Action leftAction: _stack.currentItem.leftAction
 
+    function depth() {
+        return _stack.depth
+    }
+
     function push(component, properties) {
         _stack.push(component, properties)
         _stack.forceActiveFocus()

@@ -5,7 +5,7 @@ import Mysthea 1.0
 import Mysthea.Models 1.0
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Pages 1.0
-import MystheaUniverse.Components 1.0 as MystheaUniverse
+import MystheaUniverse.Components 1.0 as MUComponents
 
 StackPage {
     id: root
@@ -27,9 +27,8 @@ StackPage {
         }
     }
 
-    Action {
+    MUComponents.BackAction {
         id: _backAction
-        text: Icon.back
         onTriggered: root.pop()
     }
 
@@ -40,7 +39,7 @@ StackPage {
             property Action leftAction: mainLeftAction
 
             model: _miniaturesGridModel
-            delegate: MystheaUniverse.MiniaturesGrid {
+            delegate: MUComponents.MiniaturesGrid {
                 width: root.width
                 miniaturesModel: MiniaturesFilterModel {
                     game: 1

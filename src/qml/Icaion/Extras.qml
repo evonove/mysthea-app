@@ -1,17 +1,22 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 
-import MystheaUniverse.Pages 1.0 as MystheaUniverse
+import MystheaUniverse.Pages 1.0 as MUPages
+import MystheaUniverse.Components 1.0 as MUComponents
 import MystheaUniverse.Theme 1.0
 
-MystheaUniverse.Extras {
+MUPages.Extras {
     id: root
     property bool isLoading: false
 
-    Action {
+    MUComponents.BackAction {
         id: _backAction
-        text: Icon.back
-        onTriggered: root.pop()
+        onTriggered: {
+            root.pop()
+            if (root.depth() === 1) {
+                root.leftAction = null
+            }
+        }
     }
 
     initialItem: Component {
@@ -28,7 +33,6 @@ MystheaUniverse.Extras {
         id: _lorePage
         Lore {
             property bool isLoading: _lorePage.status != Component.Ready
-
             Component.onCompleted: {
                 root.leftAction = _backAction
             }

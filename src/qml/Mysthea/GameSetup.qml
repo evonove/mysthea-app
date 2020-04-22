@@ -5,6 +5,7 @@ import QtQuick.Controls 2.5
 
 import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Components 1.0
 import Mysthea 1.0 as Mysthea
 
 GameSetup {
@@ -17,9 +18,8 @@ GameSetup {
         SwipeView {
             id: _swipeView
 
-            Action {
+            BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.currentIndex = 0
             }
 

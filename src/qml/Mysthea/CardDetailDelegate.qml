@@ -3,11 +3,11 @@ import QtQuick.Layouts 1.14
 import QtQuick.Controls 2.14
 import QtGraphicalEffects 1.14
 
-import MystheaUniverse.Components 1.0 as MystheaUniverse
+import MystheaUniverse.Components 1.0 as MUComponents
 import MystheaUniverse.Theme 1.0
 import Mysthea.Models 1.0
 
-MystheaUniverse.CardDetailDelegate {
+MUComponents.CardDetailDelegate {
     id: root
 
     Flickable {
@@ -114,7 +114,7 @@ MystheaUniverse.CardDetailDelegate {
                 transform: cards.type === 6
                            || cards.type === 7 ? rotationTransform : []
 
-                sourceComponent: MystheaUniverse.RoundedImage {
+                sourceComponent: MUComponents.RoundedImage {
                     source: "qrc:/assets/images/cards/" + cards.image
                     fillMode: Image.PreserveAspectFit
                     borderRadius: 5
@@ -146,7 +146,7 @@ MystheaUniverse.CardDetailDelegate {
                 sourceComponent: Item {
                     id: _backCardItem
                     anchors.fill: parent
-                    MystheaUniverse.RoundedImage {
+                    MUComponents.RoundedImage {
                         source: "qrc:/assets/images/cards/" + cards.backImage
                         fillMode: Image.PreserveAspectFit
                         borderRadius: 5
