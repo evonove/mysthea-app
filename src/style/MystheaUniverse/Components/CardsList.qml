@@ -103,7 +103,7 @@ ListView {
                         Label {
                             id: _cardCodeLabel
                             text: code
-                            font.family: "Futura PT Bold"
+                            font.family: "FuturaPTBold"
                             font.letterSpacing: 0
                             font.pixelSize: 25
 

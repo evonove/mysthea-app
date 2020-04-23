@@ -94,7 +94,7 @@ Pane {
                             text: model.name
                             color: "white"
                             font.pixelSize: 18
-                            font.weight: Font.Bold
+                            font.family: "FuturaPTBold"
                         }
 
                         Label {

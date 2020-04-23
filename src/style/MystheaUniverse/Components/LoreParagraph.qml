@@ -4,7 +4,7 @@ import QtQuick.Controls 2.14
 import MystheaUniverse.Theme 1.0
 
 Label {
-    font.family: "Futura PT Book"
+    font.family: "FuturaPTBook"
     font.pixelSize: 18
 
     leftPadding: 20

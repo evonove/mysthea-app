@@ -61,7 +61,7 @@ AbstractButton {
             id: _label
             color: "white"
             font.pixelSize: 25
-            font.weight: Font.Bold
+            font.family: "FuturaPTBold"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
         }

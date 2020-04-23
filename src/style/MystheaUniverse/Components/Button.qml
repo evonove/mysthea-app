@@ -14,7 +14,7 @@ Button {
     property alias sourceItem: effectSourceCard.sourceItem
 
     font.pixelSize: 24
-    font.family: "Yanone Kaffeesatz"
+    font.family: "FuturaPTMedium"
     font.letterSpacing: 1.5
 
     padding: 0

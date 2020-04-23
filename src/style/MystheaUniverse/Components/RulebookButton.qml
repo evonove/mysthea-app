@@ -15,7 +15,7 @@ Button {
         color: "white"
         font.pixelSize: 32
         font.letterSpacing: 0.5
-        font.weight: Font.Bold
+        font.family: "FuturaPTBold"
         topPadding: 0
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter

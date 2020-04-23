@@ -1443,7 +1443,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 <context>
     <name>Lore</name>
     <message>
-        <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="10"/>
+        <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="11"/>
         <source>LORE</source>
         <translation type="unfinished"></translation>
     </message>
