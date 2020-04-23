@@ -22,7 +22,7 @@ ObjectModel {
 
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup01.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -73,7 +73,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup02.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -108,7 +108,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup03.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -144,7 +144,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup04.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -180,7 +180,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup05.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -216,7 +216,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup06.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -252,7 +252,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup07.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -302,7 +302,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup08.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -352,7 +352,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup09.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
                 borderWidth: 1
 
@@ -468,7 +468,7 @@ ObjectModel {
                 Image {
                     id: heroIcon
                     source: "qrc:/assets/images/game_setup/mysthea/hero.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -500,7 +500,7 @@ ObjectModel {
                 Image {
                     id: troopIcon
                     source: "qrc:/assets/images/game_setup/mysthea/icon_troop.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -532,7 +532,7 @@ ObjectModel {
                 Image {
                     id: golemIcon
                     source: "qrc:/assets/images/game_setup/mysthea/icon_golem.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -564,7 +564,7 @@ ObjectModel {
                 Image {
                     id: fortificationIcon
                     source: "qrc:/assets/images/game_setup/mysthea/fortification.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -615,7 +615,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup10.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
 
                 Layout.fillWidth: true
@@ -665,7 +665,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/mysthea/setup11.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: width
 
                 Layout.fillWidth: true

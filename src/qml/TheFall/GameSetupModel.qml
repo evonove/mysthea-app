@@ -21,7 +21,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_1.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -56,7 +56,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_2.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -90,7 +90,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_3.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -124,7 +124,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_4.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -174,7 +174,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup-5.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -261,7 +261,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_6.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -295,7 +295,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_7.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -320,7 +320,7 @@ ObjectModel {
             }
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_7b.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -339,7 +339,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_8.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -373,7 +373,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_9.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -491,7 +491,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_10.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -553,7 +553,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup-11.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -588,7 +588,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/thefall/setup_12.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -630,7 +630,7 @@ ObjectModel {
                 spacing: 20
                 RoundedImage {
                     source: "qrc:/assets/images/game_setup/thefall/setup_13a.jpg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     Layout.fillWidth: true
                     Layout.preferredHeight: 230
                     Layout.alignment: Qt.AlignTop
@@ -638,7 +638,7 @@ ObjectModel {
                 }
                 RoundedImage {
                     source: "qrc:/assets/images/game_setup/thefall/setup_13b.jpg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     Layout.fillWidth: true
                     Layout.preferredHeight: 230
                     Layout.alignment: Qt.AlignTop
