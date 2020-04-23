@@ -22,7 +22,7 @@ ObjectModel {
 
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup01.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -78,7 +78,7 @@ ObjectModel {
 
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup01b.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -99,7 +99,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup02.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -174,7 +174,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup03.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -208,7 +208,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup04.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -256,7 +256,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup05.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -290,7 +290,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup06.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -320,7 +320,7 @@ ObjectModel {
                 Image {
                     id: harvesterIcon
                     source: "qrc:/assets/images/game_setup/icaion/icon_harvester.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -351,7 +351,7 @@ ObjectModel {
                 Image {
                     id: scavengerIcon
                     source: "qrc:/assets/images/game_setup/icaion/icon_scavenger.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -382,7 +382,7 @@ ObjectModel {
                 Image {
                     id: refinersIcon
                     source: "qrc:/assets/images/game_setup/icaion/icon_refiners.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -474,7 +474,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup07.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -518,7 +518,7 @@ ObjectModel {
                 Image {
                     id: maximumHandsIcon
                     source: "qrc:/assets/images/game_setup/icaion/icon_max_hands.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -549,7 +549,7 @@ ObjectModel {
                 Image {
                     id: maximumUpgradeIcon
                     source: "qrc:/assets/images/game_setup/icaion/icon_max_curio_upgrades.svg"
-                    fillMode: Image.PreserveAspectFit
+                    fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
                     Layout.fillWidth: true
@@ -574,7 +574,7 @@ ObjectModel {
             }
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup07b.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -609,7 +609,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup08.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -658,7 +658,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup09.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -692,7 +692,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup10.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
@@ -742,7 +742,7 @@ ObjectModel {
             spacing: 20
             RoundedImage {
                 source: "qrc:/assets/images/game_setup/icaion/setup11.jpg"
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
                 width: root.width
                 borderWidth: 1
                 Layout.fillWidth: true
