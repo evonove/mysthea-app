@@ -144,7 +144,7 @@ Drawer {
                         Label {
                             id: labelLanguage
                             text: qsTr("Language - ")
-                            font.weight: Font.Bold
+                            font.family: "FuturaPTBold"
                             color: Palette.gallery
                         }
 

@@ -25,7 +25,7 @@ MUComponents.CardDetailDelegate {
                 Layout.fillWidth: true
                 Label {
                     text: cards.code
-                    font.family: "Futura PT Bold"
+                    font.family: "FuturaPTBold"
                     font.pixelSize: 25
                     font.letterSpacing: 0.38
                     color: root.commandComboBoxModel.color(cards.command)
@@ -81,7 +81,7 @@ MUComponents.CardDetailDelegate {
 
             Label {
                 text: cards.description
-                font.family: "Futura PT Book"
+                font.family: "FuturaPTBook"
                 font.pixelSize: 18
                 color: Palette.white
                 wrapMode: Text.Wrap

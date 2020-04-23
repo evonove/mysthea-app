@@ -19,7 +19,7 @@ T.RoundButton {
     icon.color: control.checked || control.highlighted ? control.palette.brightText :
                 control.flat && !control.down ? (control.visualFocus ? control.palette.highlight : control.palette.windowText) : control.palette.buttonText
     font.pixelSize: 30
-    font.family: "Futura PT Bold"
+    font.family: "FuturaPTBold"
 
     contentItem: IconLabel {
         spacing: control.spacing

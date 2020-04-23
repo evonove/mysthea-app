@@ -27,7 +27,7 @@ ToolBar {
 
             borderColor: root.separatorColor
             placeholderText: qsTr("Search cards by code")
-            font.family: "Futura PT Book"
+            font.family: "FuturaPTBook"
             font.pixelSize: 18
 
             Layout.fillWidth: true
