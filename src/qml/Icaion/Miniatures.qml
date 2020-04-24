@@ -16,6 +16,7 @@ StackPage {
 
     MiniaturesModel {
         id: _miniaturesModel
+        configurationFilePath: "qrc:/configurations/icaion_configuration.json"
     }
 
     ListModel {

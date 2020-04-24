@@ -16,6 +16,7 @@ StackPage {
 
     MiniaturesModel {
         id: _miniaturesModel
+        configurationFilePath: "qrc:/configurations/mysthea_configuration.json"
     }
 
     ListModel {
