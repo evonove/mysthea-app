@@ -14,7 +14,7 @@ def generate(original_file_path, fields, delimiter):
 
     with open("result.js", "w") as out:
         for line in processed:
-            out.write(f"QT_TR_NOOP(\"{repr(line)[1:-1]}\")\n")
+            out.write(f"QT_TRANSLATE_NOOP(\"CardsData\", \"{repr(line)[1:-1]}\")\n")
 
 
 if __name__ == '__main__':
