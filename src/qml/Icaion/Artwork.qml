@@ -15,6 +15,7 @@ StackPage {
 
     ArtworksModel {
         id: _artworkModel
+        configurationFilePath: "qrc:/configurations/icaion_configuration.json"
     }
 
     ListModel {

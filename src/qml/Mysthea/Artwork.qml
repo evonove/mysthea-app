@@ -16,6 +16,7 @@ StackPage {
 
     ArtworksModel {
         id: _artworkModel
+        configurationFilePath: "qrc:/configurations/mysthea_configuration.json"
     }
 
     ListModel {

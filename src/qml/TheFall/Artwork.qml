@@ -16,6 +16,7 @@ StackPage {
 
     ArtworksModel {
         id: _artworkModel
+        configurationFilePath: "qrc:/configurations/the_fall_configuration.json"
     }
 
     ListModel {
