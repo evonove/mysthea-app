@@ -23,27 +23,19 @@ MUComponents.CardDetailDelegate {
             RowLayout {
                 spacing: 14
                 Layout.fillWidth: true
-                Label {
-                    text: cards.code
-                    font.family: "FuturaPTBold"
-                    font.pixelSize: 25
-                    font.letterSpacing: 0.38
-                    color: root.commandComboBoxModel.color(cards.command)
-                }
 
                 Label {
                     font.pixelSize: 25
                     font.letterSpacing: 0.38
                     font.capitalization: Font.AllUppercase
+                    color: Palette.white
 
                     text: {
-                        if (cards.command !== -1) {
-                            return qsTr("Command")
-                        } else {
-                            return cards.typeText
-                        }
+                        const start = cards.code
+                        const textColor = root.commandComboBoxModel.color(cards.command)
+                        const end = cards.command !== -1 ? qsTr("Command") : cards.typeText
+                        return "<span style=\"font-family: FuturaPTBold\"; color: " + textColor + ";\">" + start + "</span>  " + end
                     }
-                    color: Palette.white
                 }
             }
 
