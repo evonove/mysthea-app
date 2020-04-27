@@ -28,14 +28,19 @@ MystheaUniverse.CardDetailDelegate {
                     font.family: "FuturaPTBold"
                     font.pixelSize: 25
                     color: Palette.white
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                 }
 
                 Label {
                     font.pixelSize: 25
                     font.capitalization: Font.AllUppercase
                     text: cards.typeText
+                    wrapMode: Text.Wrap
 
                     color: Palette.white
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                 }
             }
 
@@ -46,6 +51,8 @@ MystheaUniverse.CardDetailDelegate {
                     text: cards.name
                     font.pixelSize: 18
                     color: Palette.white
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
                 }
             }
 
