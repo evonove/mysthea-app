@@ -62,7 +62,6 @@ StackPage {
             delegate: ArtworkGrid {
                 width: root.width
                 artworkModel: ArtworksFilterModel {
-                    game: 1
                     sourceModel: _artworkModel
                     type: model.type
                 }
@@ -85,7 +84,6 @@ StackPage {
             Repeater {
                 model: ArtworksFilterModel {
                     id: _artworkSlidesProxyModel
-                    game: 1
                     sourceModel: _artworkModel
                 }
                 Pane {

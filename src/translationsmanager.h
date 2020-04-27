@@ -1,8 +1,7 @@
-#ifndef TRANSLATIONSMANAGER_H
-#define TRANSLATIONSMANAGER_H
+#pragma once
 #include <QLocale>
-#include <QTranslator>
 #include <QSettings>
+#include <QTranslator>
 
 class TranslationsManager : public QObject {
   Q_OBJECT
@@ -41,5 +40,3 @@ private:
 
   QSettings m_settings;
 };
-
-#endif // TRANSLATIONSMANAGER_H

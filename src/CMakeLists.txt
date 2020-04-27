@@ -39,6 +39,10 @@ set(SOURCE_FILES
     models/typecomboboxmodel.cpp
     models/typemodel.cpp
     models/typeproxymodel.cpp
+    models/mystheatypeproxymodel.cpp
+    models/icaiontypeproxymodel.cpp
+    models/thefalltypeproxymodel.cpp
+    configurations.qrc
     assets.qrc
     fonts.qrc
     qml.qrc

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>configurations/mysthea_configuration.json</file>
+        <file>configurations/icaion_configuration.json</file>
+        <file>configurations/the_fall_configuration.json</file>
+    </qresource>
+</RCC>

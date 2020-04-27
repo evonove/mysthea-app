@@ -3,11 +3,14 @@
 #include <QList>
 #include <QVariant>
 
-CardsModel::CardsModel(QVector<Card> cards, QObject *parent)
-    : QAbstractListModel{parent}, m_cards{cards} {}
+CardsModel::CardsModel(QVector<Card> cards, QHash<int, QString> types,
+                       QHash<int, QString> commands, QObject *parent)
+    : QAbstractListModel{parent}, m_cards{cards}, m_types{types},
+      m_commands{commands} {}
 
 QHash<int, QByteArray> CardsModel::roleNames() const {
   return QHash<int, QByteArray>{{Roles::Code, "code"},
+                                {Roles::Name, "name"},
                                 {Roles::Type, "type"},
                                 {Roles::TypeText, "typeText"},
                                 {Roles::Command, "command"},
@@ -32,16 +35,18 @@ QVariant CardsModel::data(const QModelIndex &index, int role) const {
   switch (role) {
   case Roles::Code:
     return m_cards.at(row).code;
+  case Roles::Name:
+    return m_cards.at(row).name;
   case Roles::Type:
     return m_cards.at(row).type;
   case Roles::TypeText: {
-    auto typeText = types_map.value(m_cards.at(row).type);
+    auto typeText = m_types.value(m_cards.at(row).type);
     return qGuiApp->translate("CardsData", typeText.toStdString().c_str());
   }
   case Roles::Command:
     return m_cards.at(row).command;
   case Roles::CommandText: {
-    auto commandText = commands_map.value(m_cards.at(row).command);
+    auto commandText = m_commands.value(m_cards.at(row).command);
     return qGuiApp->translate("CardsData", commandText.toStdString().c_str());
   }
   case Roles::Image:

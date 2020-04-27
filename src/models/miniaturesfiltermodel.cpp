@@ -2,15 +2,7 @@
 #include "miniaturesmodel.h"
 
 MiniaturesFilterModel::MiniaturesFilterModel(QObject *parent)
-    : QSortFilterProxyModel(parent), m_game{0}, m_type{0} {}
-
-void MiniaturesFilterModel::setGame(int game) {
-  if (m_game != game) {
-    m_game = game;
-    invalidateFilter();
-    emit gameChanged();
-  }
-}
+    : QSortFilterProxyModel(parent), m_type{0} {}
 
 void MiniaturesFilterModel::setType(int type) {
   if (m_type != type) {
@@ -19,8 +11,6 @@ void MiniaturesFilterModel::setType(int type) {
     emit typeChanged();
   }
 }
-
-int MiniaturesFilterModel::game() const { return m_game; }
 
 int MiniaturesFilterModel::type() const { return m_type; }
 
@@ -36,14 +26,5 @@ bool MiniaturesFilterModel::filterAcceptsRow(
       return false;
     }
   }
-  if (m_game != 0) {
-    auto game =
-        model->data(createIndex(source_row, 0), MiniaturesModel::Roles::Game)
-            .toInt();
-    if (m_game != game) {
-      return false;
-    }
-  }
   return true;
 }
-

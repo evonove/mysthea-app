@@ -1,7 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>
 #endif
@@ -14,8 +13,11 @@
 #include "models/artworksmodel.h"
 #include "models/cardsmodel.h"
 #include "models/commandcomboboxmodel.h"
+#include "models/icaiontypeproxymodel.h"
 #include "models/miniaturesfiltermodel.h"
 #include "models/miniaturesmodel.h"
+#include "models/mystheatypeproxymodel.h"
+#include "models/thefalltypeproxymodel.h"
 #include "models/typecomboboxmodel.h"
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"
@@ -51,18 +53,31 @@ int main(int argc, char *argv[]) {
                                        "ArtworksFilterModel");
   qmlRegisterType<MiniaturesModel>("Mysthea.Models", 1, 0, "MiniaturesModel");
   qmlRegisterType<MiniaturesFilterModel>("Mysthea.Models", 1, 0,
-                                       "MiniaturesFilterModel");
-  qmlRegisterType<TypeProxyModel>("Mysthea.Models", 1, 0, "TypeProxyModel");
+                                         "MiniaturesFilterModel");
+
+  qmlRegisterUncreatableType<TypeProxyModel>(
+      "MystheaUniverse.Models", 1, 0, "TypeProxyModel",
+      "TypeProxyModel cannot be created");
+
+  qmlRegisterType<MystheaTypeProxyModel>("Mysthea.Models", 1, 0,
+                                         "MystheaTypeProxyModel");
+
+  qmlRegisterType<IcaionTypeProxyModel>("Icaion.Models", 1, 0,
+                                        "IcaionTypeProxyModel");
+
+  qmlRegisterType<TheFallTypeProxyModel>("TheFall.Models", 1, 0,
+                                         "TheFallTypeProxyModel");
+
   qmlRegisterUncreatableType<CardsModel>("Mysthea.Models", 1, 0, "CardsModel",
                                          "CardsModel cannot be created");
 
   qmlRegisterUncreatableType<CardsProxyModel>(
-      "Mysthea.Models", 1, 0, "CardsProxyModel",
+      "MystheaUniverse.Models", 1, 0, "CardsProxyModel",
       "CardsProxyModel cannot be created");
 
-  qmlRegisterType<TypeComboBoxModel>("Mysthea.Models", 1, 0,
+  qmlRegisterType<TypeComboBoxModel>("MystheaUniverse.Models", 1, 0,
                                      "TypeComboBoxModel");
-  qmlRegisterType<CommandComboBoxModel>("Mysthea.Models", 1, 0,
+  qmlRegisterType<CommandComboBoxModel>("MystheaUniverse.Models", 1, 0,
                                         "CommandComboBoxModel");
 
   bool hasNotch = false;

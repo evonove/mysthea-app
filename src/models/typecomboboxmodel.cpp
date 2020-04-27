@@ -1,21 +1,26 @@
 #include "typecomboboxmodel.h"
 #include "card_data.h"
 
+#include <QFile>
 #include <QGuiApplication>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
 #include <QList>
 #include <QVariant>
 
 TypeComboBoxModel::TypeComboBoxModel(QObject *parent)
-    : QAbstractListModel{parent},
-      m_types{{0, ALL_TYPES_TEXT},  {1, ERA_TEXT},       {2, ERA_TEXT},
-              {3, ERA_TEXT},        {4, ERA_TEXT},       {5, HERO_TEXT},
-              {6, ATTUNEMENT_TEXT}, {7, ENCOUNTER_TEXT}, {8, EVENT_TEXT}},
-      m_typesIcon{{1, "qrc:/assets/icons/era_x.svg"},
-                  {2, "qrc:/assets/icons/era_1.svg"},
-                  {3, "qrc:/assets/icons/era_2.svg"},
-                  {4, "qrc:/assets/icons/era_3.svg"}} {}
+    : QAbstractListModel{parent} {}
 
 TypeComboBoxModel::~TypeComboBoxModel() {}
+
+void TypeComboBoxModel::classBegin() {}
+
+void TypeComboBoxModel::componentComplete() {
+  if (!m_configurationFilePath.isEmpty()) {
+    this->processFile();
+  }
+}
 
 QHash<int, QByteArray> TypeComboBoxModel::roleNames() const {
   return QHash<int, QByteArray>{
@@ -53,4 +58,56 @@ QString TypeComboBoxModel::getTypeFromIndex(int index) const {
 QUrl TypeComboBoxModel::iconUrl(const int &type) const {
   QUrl url(m_typesIcon.value(type, ""));
   return url;
+}
+
+void TypeComboBoxModel::setConfigurationFilePath(const QUrl &url) {
+  if (m_configurationFilePath != url) {
+    m_configurationFilePath = url;
+
+    this->processFile();
+    emit configurationFilePathChanged();
+  }
+}
+
+QString TypeComboBoxModel::convertUrlToFilePath(const QUrl &url) {
+  // This function convert the url passed from qml in a valid resource path.
+  if (url.scheme().compare(QLatin1String("qrc"), Qt::CaseInsensitive) == 0) {
+    if (url.authority().isEmpty()) {
+      return QLatin1Char(':') + url.path();
+    }
+  }
+  return QString();
+}
+
+void TypeComboBoxModel::processFile() {
+  auto filePath = convertUrlToFilePath(m_configurationFilePath);
+  QFile file;
+  file.setFileName(filePath);
+  QJsonDocument confFile;
+
+  if (file.open(QIODevice::ReadOnly)) {
+    QJsonParseError error;
+    confFile = QJsonDocument::fromJson(file.readAll(), &error);
+  }
+  this->beginResetModel();
+  m_types.clear();
+  m_typesIcon.clear();
+  // Check the validity of file.
+  if (!confFile.isNull()) {
+    auto contentFile = confFile.object();
+
+    if (contentFile.contains("cards_types") &&
+        contentFile["cards_types"].isArray()) {
+      QJsonArray typesArray = contentFile["cards_types"].toArray();
+      for (auto i = 0; i < typesArray.size(); ++i) {
+        if (typesArray[i].isObject()) {
+          auto typeObj = typesArray[i].toObject();
+
+          m_types.insert(typeObj["id"].toInt(), typeObj["text"].toString());
+          m_typesIcon.insert(typeObj["id"].toInt(), typeObj["icon"].toString());
+        }
+      }
+    }
+  }
+  this->endResetModel();
 }

@@ -2,7 +2,7 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 
 import MystheaUniverse.Theme 1.0
-import Mysthea.Models 1.0
+import MystheaUniverse.Models 1.0
 
 Page {
     id: root
