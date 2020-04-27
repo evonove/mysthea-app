@@ -47,13 +47,13 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="24"/>
         <source>Colossus</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kolosskarten</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="28"/>
         <location filename="../qml/TheFall/Artwork.qml" line="29"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Entdecker</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="32"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="36"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Spezialausrüstungskarten</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="40"/>
@@ -1763,155 +1763,168 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
 <context>
     <name>GameSetupModel</name>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
-        <source>Place the Game Board and the Event Board in the center of the table, one next to the other</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
-        <source>Flip the Event Board to the side corresponding to the number of players. Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Hinweis:&lt;/strong&gt; Betrachte Qoam-Kristalle und Parasiten-Miniaturen als unbegrenzt verfügbar. In dem seltenen Fall, dass ein bestimmter Komponentenvorrat erschöpft ist, verwende andere Komponenten als temporären Ersatz.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="112"/>
         <source>Place the Colossus on a random crater of the Game Board. Place 1 Parasite on each region adjacent to the Colossus’ crater.</source>
-        <translation type="unfinished"></translation>
+        <translation>Platziere den Koloss auf einem zufällig gewählten Krater des Spielplans. Platziere je 1 Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="125"/>
         <source>&lt;strong&gt;2-3 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 1 Qoam on each of the ten external Regions and 2 Qoam on each of the five internal Regions (those adjacent to the City). </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2-3 Spieler -&lt;/strong&gt; Platziere je 1 Qoam auf jeder der zehn äußeren Regionen und je 2 Qoam auf jeder der fünf inneren Regionen (jene, die an die Stadt angrenzen). Die Farben der Kristalle und Regionen müssen dabei übereinstimmen.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="139"/>
         <source>&lt;strong&gt;4-5 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 2 Qoam on each Region of the Game Board. Then, place 1 Parasite on each of the five internal Regions.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4-5 Spieler -&lt;/strong&gt; Platziere je 2 Qoam auf jeder Region des Spielplans. Die Farben der Kristalle und Regionen müssen dabei übereinstimmen.  Dann platziere je 1 Parasiten auf jeder der fünf inneren Regionen.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Regions can only hold Qoam of the corresponding color (see p.18 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Hinweis:&lt;/strong&gt; Regionen können nur Qoam der entsprechenden Farbe enthalten (siehe S.18).</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="187"/>
         <source>Shuffle the Colossus’ Primal Shards without looking at their values.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
-        <source>4 Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die Ursplitter des Kolosses, ohne dabei auf ihre Werte zu achten.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
         <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lege die drei Kolosskarten in zufällig gewählter Reihenfolge offen auf die Felder für das Jahr I, das Jahr II und das Jahr III des Ereignistableaus.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
+        <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
+        <translation>Platziere den Spielplan und das Ereignistableau in der Mitte des Tisches, eines neben dem anderen.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
+        <source>Flip the Event Board to the side corresponding to the number of players.
+Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
+        <translation>Drehe das Ereignistableau auf die Seite, die der Anzahl der Spieler entspricht. 
+Lege alle Qoam-Kristalle und Parasiten als allgemeinen Vorrat in die Nähe des Ereignistableaus.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
+        <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
+        <translation>Mische die fünf Regionskarten und lege sie verdeckt auf das entsprechende Feld des Ereignistableaus.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="269"/>
-        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each. Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top. Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
-        <translation type="unfinished"></translation>
+        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.
+Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.
+Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
+        <translation>Nimm alle 15 Apparaturmarker. Sortiere sie nach Farbe in 5 Stapeln zu je drei Markern.
+Entscheide, ob du mit Stapeln auf ihrer Tagesseite, ihrer Nachtseite oder einer Mischung aus beidem spielen möchtest.
+Ein Stapel darf nur Marker enthalten, die dieselbe Seite zeigen. Die Steine mit der römischen Zahl “III“ werden im Stapel nach unten und die mit einer “I” oben auf einen Stapel gelegt.
+Danach legst du je einen Stapel auf jedes Feld in der Stadt. Auf allen muss die römische Zahl „I“ sichtbar sein.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="303"/>
-        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners). Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
-        <translation type="unfinished"></translation>
+        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).
+Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
+        <translation>Jeder Spieler wählt eine Farbe und nimmt sein jeweiliges Einheitentableau, den Reputationsmarker, den farbigen Basisring und 9 Maschinen (3 Erntemaschinen, 3 Sammler, 3 Veredler).
+Lege dein Einheitentableau vor dich und platziere die Maschinen wie abgebildet:</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Erntemaschinen&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Sammler&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Veredler&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2 Spieler -&lt;/strong&gt; Jeder Spieler platziert dann abwechselnd 1 Maschine einer dritten, nicht von einem Spieler verwendeten Farbe auf einer beliebigen Region des Spielplans, bis alle 3 Maschinen jeden Typs platziert worden sind.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;3 Spieler -&lt;/strong&gt; Jeder Spieler platziert dann abwechselnd 1 Maschine einer vierten, nicht von einem Spieler verwendeten Farbe auf einer beliebigen Region des Spielplans, bis 2 Maschinen jeden Typs platziert worden sind.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4 Spieler -&lt;/strong&gt; Jeder Spieler platziert dann abwechselnd 1 Maschine der fünften, nicht von einem Spieler verwendeten Farbe auf einer beliebigen Region des Spielplans, bis 1 Maschine jeden Typs platziert worden ist.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Hinweis:&lt;/strong&gt; Es gilt ein Limit von 3 Maschinen je Region. Alle Maschinen in der gleichen Region müssen sich sowohl in Farbe als auch im Typ unterscheiden.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeder Spieler erhält eine zufällig gewählte Entdeckerkarte und eine Spezialausrüstungskarte. Nimm die entsprechende Figur und bringe den farbigen Ring an deren Basis an. Die Karten deines Charakters liegen links neben deinem Einheitentableau.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Anzahl der Symbole deiner Entdecker- und Spezialausrüstungskarten bestimmen deine Kartenlimits und Ressourcen.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
         <source> = Maximum hand size</source>
-        <translation type="unfinished"></translation>
+        <translation>= Handkartenlimit</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
-        <translation type="unfinished"></translation>
+        <translation>= Maximale Anzahl an Upgrade-Artefaktkarten, die du gleichzeitig im Spiel haben kannst.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
-        <source>= Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
-        <translation type="unfinished"></translation>
+        <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
+        <translation>Anzahl der Qoam-Kristalle zu Spielbeginn.  Nimm so viele Qoam-Kristalle aus dem Vorrat, wie auf den Karten deines Charakters angegeben. Lege diese Ressourcen auf eines der anfänglich verfügbaren Nullkäfig-Felder (diejenige, auf denen keine Maschinen stehen).</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
+Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
+        <translation>Lege den Notstromversorgungsmarker mit der Seite “Geladen” nach oben auf dein Einheitentableau.
+Notstromversorgungsmarker definieren die Spielerreihenfolge. Der Startspieler ist also immer der Spieler mit dem Marker “I”, die weiteren Spieler folgen in Zahlenfolge.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
+        <translation>Jeder Spieler platziert seinen Reputationsmarker auf dem Feld „0“ der Wertungsleiste.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
+Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
+        <translation>Mische alle Artefaktkarten und lege den Stapel verdeckt auf das Ereignistableau.
+Teile jedem Spieler drei Karten vom Artefaktstapel aus. Artefaktkarten werden vor anderen Spielern geheim gehalten.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
-        <source>Roman numerals from I to V. Randomly deal one to each player. Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side. Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
-        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
-        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board. Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimm Notstromversorgungsmarker in Höhe der Spielerzahl, beginnend bei der römischen Zahl “I”. Teile jedem Spieler einen zufällig gewählten Marker aus.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Hinweis:&lt;/strong&gt; Falls der Artefaktstapel aufgebraucht ist, mische alle abgeworfenen Karten zu einem neuen Stapel.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation>In umgekehrter Spielerreihenfolge (d.h. vom letzten Spieler hin zum Startspieler) wählt jeder Spieler einen der fünf äußeren Knotenpunkte (s. Abbildung) und platziert dort seine Entdeckerfigur. Spieler können keinen Knotenpunkt wählen, der bereits von einem anderen Spieler besetzt ist.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="36"/>
@@ -2323,7 +2336,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="222"/>
         <source>The Lone Survivor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Der Einsame Überlebnde</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="226"/>
@@ -2338,7 +2351,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="249"/>
         <source>The Heir</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Der Erbe</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="253"/>
@@ -2353,7 +2366,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="276"/>
         <source>The Machine</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Die Maschine</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="280"/>
@@ -2368,7 +2381,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="303"/>
         <source>The Creature</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Die Kreatur</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="308"/>
@@ -2378,7 +2391,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="326"/>
         <source>The Outsider</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Der Aussenseiter</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="331"/>
@@ -2393,7 +2406,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="354"/>
         <source>The Criminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Die Verbrecherin</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="359"/>
@@ -2403,7 +2416,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="380"/>
         <source>The Cursed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Die Verfluchte</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="385"/>
@@ -2878,12 +2891,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
         <source>Colossus</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kolosskarten</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="29"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Entdecker</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="33"/>

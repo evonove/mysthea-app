@@ -1724,16 +1724,6 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
 <context>
     <name>GameSetupModel</name>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
-        <source>Place the Game Board and the Event Board in the center of the table, one next to the other</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
-        <source>Flip the Event Board to the side corresponding to the number of players. Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
@@ -1765,23 +1755,37 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
-        <source>4 Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
         <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
+        <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
+        <source>Flip the Event Board to the side corresponding to the number of players.
+Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
+        <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="269"/>
-        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each. Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top. Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
+        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.
+Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.
+Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="303"/>
-        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners). Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
+        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).
+Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1841,27 +1845,29 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
-        <source>= Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
+        <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
+Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
+Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
-        <source>Roman numerals from I to V. Randomly deal one to each player. Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side. Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
-        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
-        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board. Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
