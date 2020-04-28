@@ -33,9 +33,11 @@ MUComponents.CardDetailDelegate {
 
                     text: {
                         const start = cards.code
-                        const textColor = root.commandComboBoxModel.color(cards.command)
+                        const textColor = root.commandComboBoxModel.color(
+                                            cards.command)
                         const end = cards.command !== -1 ? qsTr("Command") : cards.typeText
-                        return "<span style='font-family: FuturaPTBold; color: " + textColor + ";'>" + start + "</span>  " + end
+                        return "<span style='font-family: FuturaPTBold; color: "
+                                + textColor + ";'>" + start + "</span>    " + end
                     }
                 }
             }

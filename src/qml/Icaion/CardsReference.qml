@@ -55,7 +55,6 @@ BasePages.CardsReference {
 
             Components.BackAction {
                 id: _backAction
-                text: Icon.back
                 onTriggered: root.pop()
             }
 

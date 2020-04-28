@@ -20,28 +20,16 @@ MystheaUniverse.CardDetailDelegate {
             width: parent.width
             spacing: 8
 
-            RowLayout {
-                spacing: 14
+            Label {
+                text: "<span style='font-family: FuturaPTBold'>" + cards.code
+                      + "    </span>" + cards.typeText
+                font.pixelSize: 25
+                font.capitalization: Font.AllUppercase
+                textFormat: Text.RichText
+                wrapMode: Text.Wrap
+
+                color: Palette.white
                 Layout.fillWidth: true
-                Label {
-                    text: cards.code
-                    font.family: "FuturaPTBold"
-                    font.pixelSize: 25
-                    color: Palette.white
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                }
-
-                Label {
-                    font.pixelSize: 25
-                    font.capitalization: Font.AllUppercase
-                    text: cards.typeText
-                    wrapMode: Text.Wrap
-
-                    color: Palette.white
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                }
             }
 
             RowLayout {
