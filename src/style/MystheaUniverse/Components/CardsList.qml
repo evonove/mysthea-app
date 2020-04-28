@@ -107,7 +107,7 @@ ListView {
                             font.letterSpacing: 0
                             font.pixelSize: 25
 
-                            color: root.commandComboBoxModel.color(command)
+                            color: root.commandComboBoxModel !== null ? commandComboBoxModel.color(model.command) : "#FFFFFF"
 
                             Layout.topMargin: 6
                             Layout.alignment: Qt.AlignHCenter

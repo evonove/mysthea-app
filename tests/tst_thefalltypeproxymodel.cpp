@@ -1,4 +1,3 @@
-#pragma once
 #include <QUrl>
 #include <QtTest/QtTest>
 
@@ -70,7 +69,7 @@ private slots:
             ->data(m_typeProxyModel->visibleCards()->index(0, 0),
                    CardsModel::Image)
             .toString();
-    QCOMPARE(cardImageText, "theFall/in040.jpg");
+    QCOMPARE(cardImageText, "thefall/in040.jpg");
   }
 
   void testUnexistingCodeFilter() {

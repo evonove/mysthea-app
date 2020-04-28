@@ -6,6 +6,7 @@ import MystheaUniverse.Models 1.0
 import MystheaUniverse.Pages 1.0 as MUPages
 import MystheaUniverse.Components 1.0 as MUComponents
 import MystheaUniverse.Theme 1.0
+import MystheaUniverse.Models 1.0
 
 MUPages.CardsReference {
     id: root
@@ -13,8 +14,12 @@ MUPages.CardsReference {
     typeProxyModel: MystheaTypeProxyModel {
         configurationFilePath: "qrc:/configurations/mysthea_configuration.json"
     }
-    typeComboBoxModel: TypeComboBoxModel {}
-    commandComboBoxModel: CommandComboBoxModel {}
+    typeComboBoxModel: TypeComboBoxModel {
+        configurationFilePath: "qrc:/configurations/mysthea_configuration.json"
+    }
+    commandComboBoxModel: CommandComboBoxModel {
+        configurationFilePath: "qrc:/configurations/mysthea_configuration.json"
+    }
 
     cardsListComponent: _cardsListComponent
 

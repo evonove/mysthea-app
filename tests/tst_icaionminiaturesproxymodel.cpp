@@ -1,4 +1,3 @@
-#pragma once
 #include <QUrl>
 #include <QtTest/QtTest>
 
