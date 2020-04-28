@@ -158,380 +158,275 @@
 <context>
     <name>CardsData</name>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="1"/>
         <source>Curio</source>
-        <translation>Curio</translation>
+        <translation type="vanished">Curio</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="2"/>
         <source>One Shot</source>
-        <translation>Einmalig Verwendbare</translation>
+        <translation type="vanished">Einmalig Verwendbare</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="3"/>
         <source>Take from the supply as much Qoam as depicted (in the case of wild Qoam, all crystals must be taken of the same color).</source>
-        <translation>Nimm aus dem Vorrat so viel Qoam wie abgebildet. (Solltest du dir die Farbe aussuchen dürfen, müssen alle Kristalle von derselben Farbe genommen werden.)</translation>
+        <translation type="vanished">Nimm aus dem Vorrat so viel Qoam wie abgebildet. (Solltest du dir die Farbe aussuchen dürfen, müssen alle Kristalle von derselben Farbe genommen werden.)</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="4"/>
         <source>Immediately score as many Reputation Points as depicted.</source>
-        <translation>Du erhältst sofort so viele Reputationspunkte wie angegeben.</translation>
+        <translation type="vanished">Du erhältst sofort so viele Reputationspunkte wie angegeben.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="5"/>
         <source>Immediately perform the action indicated by the card. If two actions are listed, choose only one to perform. You still have to meet the action requirements and pay for its cost.</source>
-        <translation>Führe sofort die Aktion aus, die auf der Karte angegeben ist. Falls zwei Aktionen angegeben sind, wählst du nur eine davon aus. Du musst aber weiterhin alle Voraussetzungen für eine Aktion erfüllen und deren Kosten bezahlen können.</translation>
+        <translation type="vanished">Führe sofort die Aktion aus, die auf der Karte angegeben ist. Falls zwei Aktionen angegeben sind, wählst du nur eine davon aus. Du musst aber weiterhin alle Voraussetzungen für eine Aktion erfüllen und deren Kosten bezahlen können.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="6"/>
         <source>Right after you conclude your movement, you may play this card to move up to as many additional nodes as depicted.</source>
-        <translation>Direkt nachdem du deine Bewegung abgeschlossen hast, darfst du diese Karte spielen, um die abgebildete Zahl an Knotenpunkten zusätzlich weiterzurücken.</translation>
+        <translation type="vanished">Direkt nachdem du deine Bewegung abgeschlossen hast, darfst du diese Karte spielen, um die abgebildete Zahl an Knotenpunkten zusätzlich weiterzurücken.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="7"/>
         <source>Draw one or two Curio Cards.</source>
-        <translation>Ziehe eine oder zwei Artefaktkarten.</translation>
+        <translation type="vanished">Ziehe eine oder zwei Artefaktkarten.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="8"/>
         <source>Upgrade</source>
-        <translation>Upgrade</translation>
+        <translation type="vanished">Upgrade</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="9"/>
         <source>These cards add extra Null Cage to your Division Board.
 </source>
-        <translation>Diese Karten erhöhen deine Zahl an Nullkäfig.\n</translation>
+        <translation type="vanished">Diese Karten erhöhen deine Zahl an Nullkäfig.\n</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="10"/>
         <source>These cards add extra Strength to your Division Board.
 </source>
-        <translation>Diese Karten erhöhen deine Zahl an Stärke.\n</translation>
+        <translation type="vanished">Diese Karten erhöhen deine Zahl an Stärke.\n</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="11"/>
         <source>These cards add extra Movement
 to your Division Board.
 </source>
-        <translation>Diese Karten erhöhen deine Zahl an Bewegungs.\n</translation>
+        <translation type="vanished">Diese Karten erhöhen deine Zahl an Bewegungs.\n</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="12"/>
         <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
 NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
-        <translation>Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
+        <translation type="vanished">Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
 HINWEIS: All diese Upgradekarten, darfst du nur einmal je Aktion einsetzen.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="13"/>
         <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
 NOTE: There must still be a second Qoam available in the Region.</source>
-        <translation>Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
+        <translation type="vanished">Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
 HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="14"/>
         <source>Whenever you activate a Scavenger, you may decide to discard a Curio Card from your hand instead of drawing 1. If you do so, immediately score 3 Reputation Points.</source>
-        <translation>Jedes Mal, wenn du einen Sammler aktivierst, darfst du dich dazu entscheiden, eine Artefaktkarte aus deiner Hand abzuwerfen, anstatt 1 zu ziehen. Wenn du dies tust, erhältst du sofort 3 Reputationspunkte.</translation>
+        <translation type="vanished">Jedes Mal, wenn du einen Sammler aktivierst, darfst du dich dazu entscheiden, eine Artefaktkarte aus deiner Hand abzuwerfen, anstatt 1 zu ziehen. Wenn du dies tust, erhältst du sofort 3 Reputationspunkte.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="15"/>
         <source>Whenever you activate a Refiner, score 3 Reputation Points instead of 2.</source>
-        <translation>Jedes Mal, wenn du einen Veredler aktivierst, erhältst du 3 Reputationspunkte (anstatt 2).</translation>
+        <translation type="vanished">Jedes Mal, wenn du einen Veredler aktivierst, erhältst du 3 Reputationspunkte (anstatt 2).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="16"/>
         <source>Whenever you activate a Harvester, you may take a third Qoam crystal from the Region, if available, instead of 2.</source>
-        <translation>Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du einen dritten Qoam-Kristall aus der Region nehmen, sofern verfügbar (anstatt 2).</translation>
+        <translation type="vanished">Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du einen dritten Qoam-Kristall aus der Region nehmen, sofern verfügbar (anstatt 2).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="17"/>
         <source>Whenever you activate a Scavenger, you may draw up to 2 Curio Cards, instead of 1.</source>
-        <translation>Jedes Mal, wenn du einen Sammler aktivierst, darfst du bis zu 2 Artefaktkarten ziehen (anstatt 1).</translation>
+        <translation type="vanished">Jedes Mal, wenn du einen Sammler aktivierst, darfst du bis zu 2 Artefaktkarten ziehen (anstatt 1).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="18"/>
         <source>Whenever you activate a Refiner, you may Eradicate and collect a single Parasite from the same Region, for free.</source>
-        <translation>Jedes Mal, wenn du einen Veredler aktivierst, darfst du Parasiten beseitigen und damit einen einzelnen Parasiten aus der gleichen Region umsonst nehmen, ohne die Kosten dafür zu bezahlen.</translation>
+        <translation type="vanished">Jedes Mal, wenn du einen Veredler aktivierst, darfst du Parasiten beseitigen und damit einen einzelnen Parasiten aus der gleichen Region umsonst nehmen, ohne die Kosten dafür zu bezahlen.</translation>
     </message>
     <message>
         <source>Immediately wound all opponents’ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
         <translation type="vanished">Du verletzt sofort alle Entdecker, die auf deinem oder einem an deinen angrenzenden Knotenpunkt stehen. Du erhältst so viele Reputationspunkte wie angegeben für jeden Entdecker, den du mit dieser Aktion triffst. (Dieser muss dabei nicht zwingend verletzt worden sein.)</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="19"/>
-        <source>Immediately wound all opponentsâ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="20"/>
         <source>Seekers</source>
-        <translation>Entdecker</translation>
+        <translation type="vanished">Entdecker</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="21"/>
         <source>On your last turn during each End of a Year phase, you may move your Seeker onto any node of the Game Board instead of performing a standard Move action.</source>
-        <translation>In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du deinen Entdecker auf einen beliebigen Knotenpunkt des Spielplans stellen, anstatt eine &quot;Bewegen&quot;-Aktion auszuführen.</translation>
+        <translation type="vanished">In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du deinen Entdecker auf einen beliebigen Knotenpunkt des Spielplans stellen, anstatt eine &quot;Bewegen&quot;-Aktion auszuführen.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="22"/>
         <location filename="../configurations/thefall-cards.js" line="17"/>
         <source>The Lone Survivor</source>
         <translation>Der Einsame Überlebnde</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="23"/>
         <source>On your last turn during each End of a Year phase, you may perform two Standard Actions instead of one.</source>
-        <translation>In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du zwei Standardaktionen ausführen (anstatt einer).</translation>
+        <translation type="vanished">In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du zwei Standardaktionen ausführen (anstatt einer).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="24"/>
         <location filename="../configurations/thefall-cards.js" line="27"/>
         <source>The Cursed</source>
         <translation>Die Verfluchte</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="25"/>
         <source>Each time you play a Curio Card, you immediately score 1 Reputation Point.</source>
-        <translation>Jedes Mal, wenn du eine Artefaktkarte spielst, erhältst du sofort 1 Reputationspunkt.</translation>
+        <translation type="vanished">Jedes Mal, wenn du eine Artefaktkarte spielst, erhältst du sofort 1 Reputationspunkt.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="26"/>
         <location filename="../configurations/thefall-cards.js" line="21"/>
         <source>The Heir</source>
         <translatorcomment>DER ERBE</translatorcomment>
         <translation>Der Erbe</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="27"/>
         <source>Each time you use the Emergency Power Supply, you may immediately take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
-        <translation>Jedes Mal, wenn du die Notstromversorgung benutzt, darfst du sofort 1 Qoam beliebiger Farbe aus dem allgemeinen Vorrat nehmen und ihn in einem deiner Nullkäfige einlagern (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).</translation>
+        <translation type="vanished">Jedes Mal, wenn du die Notstromversorgung benutzt, darfst du sofort 1 Qoam beliebiger Farbe aus dem allgemeinen Vorrat nehmen und ihn in einem deiner Nullkäfige einlagern (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="28"/>
         <location filename="../configurations/thefall-cards.js" line="25"/>
         <source>The Machine</source>
         <translation>Die Maschine</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="29"/>
         <source>When you Investigate the Colossus, you score three times the number of Reputation Points you normally would.</source>
-        <translation>Wenn du den Koloss erkundest, erhältst du die dreifache Zahl an Reputationspunkten, die du sonst erhalten würdest.</translation>
+        <translation type="vanished">Wenn du den Koloss erkundest, erhältst du die dreifache Zahl an Reputationspunkten, die du sonst erhalten würdest.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="30"/>
         <location filename="../configurations/thefall-cards.js" line="23"/>
         <source>The Outsider</source>
         <translation>Der Aussenseiter</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="31"/>
         <source>You spend 1 Qoam less to perform Deploy a Machine and Play a Curio Card actions. When deploying a Machine, you score Reputation Points as if you paid the full cost.</source>
-        <translation>In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du zwei Standardaktionen ausführen (anstatt einer).</translation>
+        <translation type="vanished">In deinem letzten Zug jeder &quot;Ende eines Jahres&quot;-Phase darfst du zwei Standardaktionen ausführen (anstatt einer).</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="32"/>
         <location filename="../configurations/thefall-cards.js" line="29"/>
         <source>The Creature</source>
         <translation>Die Kreatur</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="33"/>
         <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.
 By the end of a turn in which you have not performed any Special Action, put on the Armor.
 While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
 NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
-        <translation>Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;&quot;Koloss erkunden&quot;&quot;-, &quot;&quot;Apparatur erhalten&quot;&quot;- und &quot;&quot;Apparatur installieren&quot;&quot;-Aktion als Spezialaktion ausführen. 
+        <translation type="vanished">Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;&quot;Koloss erkunden&quot;&quot;-, &quot;&quot;Apparatur erhalten&quot;&quot;- und &quot;&quot;Apparatur installieren&quot;&quot;-Aktion als Spezialaktion ausführen. 
 HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könntest, einmal als Standard- und einmal als Spezialaktion.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="34"/>
         <location filename="../configurations/thefall-cards.js" line="19"/>
         <source>The Criminal</source>
         <translation>Die Verbrecherin</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="35"/>
         <source>Specialized Gear</source>
-        <translation>Spezialausrüstungskarten</translation>
+        <translation type="vanished">Spezialausrüstungskarten</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="36"/>
         <source>Your basic movement distance is improved by one node.</source>
-        <translation>Deine normale Distanz bei Bewegungen wird um 1 Knotenpunkt erhöht.</translation>
+        <translation type="vanished">Deine normale Distanz bei Bewegungen wird um 1 Knotenpunkt erhöht.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="37"/>
         <source>Hyper Boots</source>
-        <translation>Hyperstiefel</translation>
+        <translation type="vanished">Hyperstiefel</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="38"/>
         <source>At the End of the Game, score 3 Reputation Points for each Primal Shard you own.</source>
-        <translation>Am Ende des Spiels erhältst du 3 Reputationspunkte für jeden Ursplitter in deinem Besitz.</translation>
+        <translation type="vanished">Am Ende des Spiels erhältst du 3 Reputationspunkte für jeden Ursplitter in deinem Besitz.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="39"/>
         <source>Primal Armor</source>
-        <translation>Ursplitterrüstung</translation>
+        <translation type="vanished">Ursplitterrüstung</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="40"/>
         <source>Each Year, at the beginning of your very first turn, you may draw up to 2 Curio Cards.</source>
-        <translation>Jedes Jahr darfst du zu Beginn deines allerersten Zuges bis zu 2 Artefaktkarten ziehen.</translation>
+        <translation type="vanished">Jedes Jahr darfst du zu Beginn deines allerersten Zuges bis zu 2 Artefaktkarten ziehen.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="41"/>
         <source>Multifunctional Belt</source>
-        <translation>Multifunktionsgürtel</translation>
+        <translation type="vanished">Multifunktionsgürtel</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="42"/>
         <source>Each Year, at the beginning of your very first turn, you may choose Qoam of any color, then take 3 crystals of that color from the common supply.</source>
-        <translation>Jedes Jahr darfst du zu Beginn deines allerersten Zuges 3 Qoam einer beliebigen Farbe aus dem allgemeinen Vorrat nehmen.</translation>
+        <translation type="vanished">Jedes Jahr darfst du zu Beginn deines allerersten Zuges 3 Qoam einer beliebigen Farbe aus dem allgemeinen Vorrat nehmen.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="43"/>
         <source>Exploration Case</source>
-        <translation>Erkundungskoffer</translation>
+        <translation type="vanished">Erkundungskoffer</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="44"/>
         <source>You start the game with an additional Strength icon. Each turn you successfully perform an Eradicate Parasites action you immediately score 2 Reputation Points.</source>
-        <translation>Du startest das Spiel mit einem zusätzlichen Stärke-Symbol. Jedes Mal, wenn du eine &quot;Parasiten beseitigen&quot;-Aktion erfolgreich ausführst, erhältst du sofort 2 Reputationspunkte.</translation>
+        <translation type="vanished">Du startest das Spiel mit einem zusätzlichen Stärke-Symbol. Jedes Mal, wenn du eine &quot;Parasiten beseitigen&quot;-Aktion erfolgreich ausführst, erhältst du sofort 2 Reputationspunkte.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="45"/>
         <source>Parasite Sword</source>
-        <translation>Parasitenschwert</translation>
+        <translation type="vanished">Parasitenschwert</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="46"/>
         <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your
 Null Cages.
 </source>
-        <translation>Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.</translation>
+        <translation type="vanished">Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="47"/>
         <source>Energy Harness</source>
-        <translation>Energiegurtzeug</translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="48"/>
-        <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a craterâs edge node.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="63"/>
-        <source>Move the Colossus
-Place two Parasites on each Region adjacent to the Colossusâ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="65"/>
-        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
-Place one Parasite on each Region adjacent to the Colossusâ crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="67"/>
-        <source>Place one Parasite on each Region adjacent to the Colossusâ crater.
-Move the Colossus.
-Place one Parasite on each Region adjacent to the Colossusâ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="70"/>
-        <source>Cost: 2 qoam
-Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent to it.
-</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Energiegurtzeug</translation>
     </message>
     <message>
         <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a crater’s edge node.</source>
         <translation type="vanished">In jeder &quot;Ende eines Jahres&quot;-Phase erhältst du 5 Reputationspunkte, falls du deinen letzten Zug auf einem Knotenpunkt des Kraterrandes beendet hast.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="49"/>
         <source>Vertebra Crown</source>
-        <translation>Knochenkrone</translation>
+        <translation type="vanished">Knochenkrone</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="50"/>
         <source>Whenever you install an Apparatus, immediately score 4 Reputation Points.</source>
-        <translation>Immer wenn du eine Apparatur installierst, erhältst du sofort 4 Reputationspunkte.</translation>
+        <translation type="vanished">Immer wenn du eine Apparatur installierst, erhältst du sofort 4 Reputationspunkte.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="51"/>
         <source>Empowered Tools</source>
-        <translation>Powerwerkzeuge</translation>
+        <translation type="vanished">Powerwerkzeuge</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="52"/>
         <source>You may perform Deploy a Machine as a Special Action. This means you might perform this action twice in a turn, once as a Standard Action and once as a Special Action.</source>
-        <translation>Du darfst eine &quot;Maschine entsenden&quot;-Aktion als Spezialaktion ausführen. Das bedeutet, du könntest diese Aktion in einem Zug zweimal ausführen - einmal als Standardaktion und einmal als Spezialaktion.</translation>
+        <translation type="vanished">Du darfst eine &quot;Maschine entsenden&quot;-Aktion als Spezialaktion ausführen. Das bedeutet, du könntest diese Aktion in einem Zug zweimal ausführen - einmal als Standardaktion und einmal als Spezialaktion.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="53"/>
         <source>Mechanic Gloves</source>
-        <translation>Mechanische Handschuhe</translation>
+        <translation type="vanished">Mechanische Handschuhe</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="54"/>
         <source>Whenever you Overcharge Machinery, draw 1 Curio Card.</source>
-        <translation>Jedes Mal, wenn du eine Maschine überlädst, ziehst du 1 Artefaktkarte.</translation>
+        <translation type="vanished">Jedes Mal, wenn du eine Maschine überlädst, ziehst du 1 Artefaktkarte.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="55"/>
         <source>Energy Stabilizer</source>
-        <translation>Energiestabilisierer</translation>
+        <translation type="vanished">Energiestabilisierer</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="56"/>
-        <source>Region</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="57"/>
         <location filename="../configurations/mysthea-cards.js" line="144"/>
         <source>River</source>
         <translation>Fluss</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="58"/>
         <location filename="../configurations/mysthea-cards.js" line="145"/>
         <source>Mountain</source>
         <translation>Berg</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="59"/>
         <location filename="../configurations/mysthea-cards.js" line="146"/>
         <source>Forest</source>
         <translation>Wald</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="60"/>
         <location filename="../configurations/mysthea-cards.js" line="148"/>
         <source>Crystal Field</source>
         <translation>Kristallfeld</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="61"/>
         <location filename="../configurations/mysthea-cards.js" line="147"/>
         <source>Land of Myst</source>
         <translation>Geheimnisvolle Lande</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="62"/>
         <source>Colossus</source>
-        <translation>Kolosskarten</translation>
+        <translation type="vanished">Kolosskarten</translation>
     </message>
     <message>
         <source>Move the Colossus
@@ -544,22 +439,12 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="64"/>
-        <source>Giant event 1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
 Place one Parasite on each Region adjacent to the Colossus’ crater.
 </source>
         <translation type="vanished">Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 </translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="66"/>
-        <source>Giant event 2</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
@@ -574,14 +459,8 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="68"/>
-        <source>Giant event 3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="69"/>
         <source>Wonder</source>
-        <translation>Wunder</translation>
+        <translation type="vanished">Wunder</translation>
     </message>
     <message>
         <source>Cost: 2 qoam
@@ -592,93 +471,80 @@ Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines 
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="71"/>
         <source>Parasite Colony</source>
-        <translation>Parasitenkolonie</translation>
+        <translation type="vanished">Parasitenkolonie</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="72"/>
         <source>Cost: 2 qoam
 Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.
 </source>
-        <translation>Kosten:2 Qoam
+        <translation type="vanished">Kosten:2 Qoam
 Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vorrat abwerfen.
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="73"/>
         <source>Pulsar</source>
-        <translation>Pulsar</translation>
+        <translation type="vanished">Pulsar</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="74"/>
         <source>Cost: 2 qoam
 Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.
 </source>
-        <translation>Kosten:2 Qoam
+        <translation type="vanished">Kosten:2 Qoam
 Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Reputationspunkte zu erhalten.
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="75"/>
         <source>Transmuter</source>
-        <translation>Wandler</translation>
+        <translation type="vanished">Wandler</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="76"/>
         <source>Cost: 3 qoam
 Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).
 </source>
-        <translation>Kosten: 3 Qoam
+        <translation type="vanished">Kosten: 3 Qoam
 Effekt für Besitzer: Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nullkäfige ein (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="77"/>
         <source>Qoamcopia</source>
-        <translation>Qoamcopia</translation>
+        <translation type="vanished">Qoamcopia</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="78"/>
         <source>Cost: 3 qoam
 Owner effect: You may either draw a Curio Card or play a Curio Card.
 </source>
-        <translation>Kosten: 3 Qoam
+        <translation type="vanished">Kosten: 3 Qoam
 Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Artefaktkarte spielen.
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="79"/>
         <source>Curio Hub</source>
-        <translation>Artefaktschrein</translation>
+        <translation type="vanished">Artefaktschrein</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="80"/>
         <source>Cost: 4 qoam
 Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.
 </source>
-        <translation>Kosten: 4 Qoam
+        <translation type="vanished">Kosten: 4 Qoam
 Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt weiterbewegen oder kostenlos einen Parasiten in einer an deinen Entdecker angrenzenden Region beseitigen.
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="81"/>
         <source>Living Altar</source>
-        <translation>Lebendiger Altar</translation>
+        <translation type="vanished">Lebendiger Altar</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="82"/>
         <source>Cost: 4 qoam
 Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.
 </source>
-        <translation>Kosten: 4 Qoam
+        <translation type="vanished">Kosten: 4 Qoam
 Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegenuhrzeigersinn weiter bewegen. Platziere dann je einen Parasiten auf beide Regionen, die am Krater angrenzen.
 </translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="83"/>
         <source>Dark Bell</source>
-        <translation>Düstere Glocke</translation>
+        <translation type="vanished">Düstere Glocke</translation>
     </message>
     <message>
         <location filename="../configurations/mysthea-cards.js" line="1"/>
