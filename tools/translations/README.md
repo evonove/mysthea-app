@@ -20,11 +20,11 @@ python generate.py icaion/cards.csv icaion FR
 python generate.py icaion/cards.csv icaion IT
 python generate.py icaion/cards.csv icaion JP
 # The Fall
-python generate.py thfall/cards.csv mysthea DE
-python generate.py thfall/cards.csv mysthea ES
-python generate.py thfall/cards.csv mysthea FR
-python generate.py thfall/cards.csv mysthea IT
-python generate.py thfall/cards.csv mysthea JP
+python generate.py thefall/cards.csv thefall DE
+python generate.py thefall/cards.csv thefall ES
+python generate.py thefall/cards.csv thefall FR
+python generate.py thefall/cards.csv thefall IT
+python generate.py thefall/cards.csv thefall JP
 ```
 
 Then copy the content of `<prefix>.js` and the various `<prefix>_<lang>.ts` files inside the project.
