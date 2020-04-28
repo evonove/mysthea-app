@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ja" sourcelanguage="en">
 <context>
     <name>AppContainer</name>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="101"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>カードレファレンス</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="114"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="127"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブック</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="140"/>
@@ -29,17 +29,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="146"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>言語 - </translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="269"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームのデザインと制作元</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="297"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリの開発元</translation>
     </message>
 </context>
 <context>
@@ -126,7 +126,7 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardDetail.qml" line="9"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>カードの詳細</translation>
     </message>
 </context>
 <context>
@@ -134,12 +134,12 @@
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>時代</translation>
     </message>
 </context>
 <context>
@@ -147,12 +147,12 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="18"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>カードが見つかりません.</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="27"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>別番号の入力や検索条件の変更を試してください</translation>
     </message>
 </context>
 <context>
@@ -1679,7 +1679,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="29"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>カード番号検索</translation>
     </message>
 </context>
 <context>
@@ -1687,7 +1687,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="10"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>カードレファレンス</translation>
     </message>
 </context>
 <context>
@@ -1695,7 +1695,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="32"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの世界</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="40"/>
@@ -1713,12 +1713,12 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの準備 - %1 / 11</translation>
     </message>
 </context>
 <context>
@@ -1726,290 +1726,309 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
         <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームボードとイベントボードをテーブルの真ん中に置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
         <source>Flip the Event Board to the side corresponding to the number of players.
 Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>イベントボードはプレイ人数に合わせた面を上にして置きます。
+コアムのクリスタルとパラサイトを全てイベントボードの近くに共用のサプライとして置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;備考：&lt;/strong&gt; コアムのクリスタルとパラサイトのミニチュアに個数制限はありません。
+珍しく全部無くなった場合は、他のものを代わりに使ってください。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="112"/>
         <source>Place the Colossus on a random crater of the Game Board. Place 1 Parasite on each region adjacent to the Colossus’ crater.</source>
-        <translation type="unfinished"></translation>
+        <translation>巨像をゲームボード上のランダムに選んだクレーターの上に置きます。
+そして、そのクレーターに接している各リージョンの上にパラサイトを1個置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="125"/>
         <source>&lt;strong&gt;2-3 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 1 Qoam on each of the ten external Regions and 2 Qoam on each of the five internal Regions (those adjacent to the City). </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2～3人の場合 -&lt;/strong&gt; 外部の各リージョン（10リージョン）の上にコアムを1個、内部の各リージョン（街に接している5リージョン）の上にコアムを2個置きます。
+コアムとリージョンの色が一致している必要があります。 </translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="139"/>
         <source>&lt;strong&gt;4-5 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 2 Qoam on each Region of the Game Board. Then, place 1 Parasite on each of the five internal Regions.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4～5人の場合 -&lt;/strong&gt;各リージョンの上にコアムを2個、内部の各リージョンの上にパラサイトを1個置きます。
+コアムとリージョンの色が一致している必要があります。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Regions can only hold Qoam of the corresponding color (see p.18 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;備考:&lt;/strong&gt; コアムを違う色のリージョンの上に置くことはできません。（18ページを参照）。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="187"/>
         <source>Shuffle the Colossus’ Primal Shards without looking at their values.</source>
-        <translation type="unfinished"></translation>
+        <translation>巨像のプライマルシャードを（値を見ずに）シャッフルしておきます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
         <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>5枚のリージョンカードをシャッフルしてイベントボードの該当エリアに裏向きに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
         <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>3枚の巨像カードをランダムにイベントボードの1年目、2年目と3年目のところに表向きに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="269"/>
         <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.
 Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.
 Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
-        <translation type="unfinished"></translation>
+        <translation>15枚の装置タイルを色別に分けて3枚ⅹ5山を作って置きます。
+装置タイルの山のプレイするサイド（「昼」面、「夜」面または両面の組み合わせ）をプレイヤー同士で決めます。
+ローマ数字の「III」のタイルは各山の一番下、「I」のタイルは各山のトップにします。
+ローマ数字の「I」が見える状態にして装置タイルの山を街の各スロットのところに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="303"/>
         <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).
 Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
-        <translation type="unfinished"></translation>
+        <translation>各プレイヤーが自分の色を決め、その色のプレイヤーボード、評価マーカー、ミニチュアの土台と9個の機械（ハーベスター3個、スカベンジャー3個、リファイナー3個）を受け取ります。
+プレイヤーボードを自分の前に置いて機械を画像通りに並べておきます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;ハーベスター&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;、スカベンジャー&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;リファイナー&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2人の場合 -&lt;/strong&gt;プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が3個配置されるまでこのように置き続けます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;3人の場合 -&lt;/strong&gt; プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が2個配置されるまで置き続けます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4人の場合 -&lt;/strong&gt;プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が1個配置されるまで置き続けます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;備考:&lt;/strong&gt;１つのリージョンには機械を3個までしか配置できません。
+同じリージョンに配置されている機械は色も種類も異なる必要があります。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
-        <translation type="unfinished"></translation>
+        <translation> 各プレイヤーはランダムにシーカーカード1枚と専門ギアカード1枚を受け取り、プレイヤーボードの横に置きます。 シーカーカードと専門ギアカードは「キャラクターカード」とも言います。 自分の色のミニチュアを受け取って色付きの土台を付けておきます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>各プレイヤーが受け取ったシーカーカードと専門ギアカードのアイコン数が、自分が持てるカードとリソースの最大数になります。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
         <source> = Maximum hand size</source>
-        <translation type="unfinished"></translation>
+        <translation> = カードの最大数</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
-        <translation type="unfinished"></translation>
+        <translation>= プレイ中のアップグレードキュリオカードの最大数。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲーム開始時点の所有のコアムクリスタル数です。
+キャラクターカード上に表示されている分のコアムクリスタルを受け取り、プレイヤーボード上のいずれかの「ヌルケージ」エリアに置きます。
+（ゲーム開始の時点で利用できるヌルケージは機械が置いてないヌルケージです）。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
-        <translation type="unfinished"></translation>
+        <translation>プレイヤー人数に合わせた数枚の非常パワーサプライタイルをとり（「I」から「V」まで順番に）、一枚ずつ各プレイヤーにランダムに配ります。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
-        <translation type="unfinished"></translation>
+        <translation>非常パワーサプライタイルを「チャージ済」向きに自分のプレイヤーボードの上に置きます。このタイルでプレイ順が決まります。
+「I」のタイルを持っているプレイヤーがプレイヤー1になり、タイルの数字の順番に合わせてプレイしていきます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
-        <translation type="unfinished"></translation>
+        <translation>各プレイヤーが自分の評価マーカーをスコアトラックの「0」に置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
-        <translation type="unfinished"></translation>
+        <translation>キュリオカードを全てシャッフルしてイベントボードの上に裏向きにおきます。
+このキュリオデッキから各プレイヤーに3枚を配ります。
+（自分のキュリオカードが他プレイヤーに見られないようにします）。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;備考:&lt;/strong&gt;キュリオデッキからカードが無くなった場合は捨てられたカードをシャッフルしてデッキを作りなおします。</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation>逆プレイ順に（最後のプレイヤーから）各プレイヤーは下記の画像通りに外部の中心点5つの中から任意の中心点を選び、そこに自分のシーカーのミニチュアを配置します。
+他プレイヤーのシーカーが既に配置されている中心点を選ぶことはできません。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="36"/>
         <source>Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>5枚の浮遊島を ランダムにゲームボード 上の該当位置に置きます。 （アイコンが表示されて いる面が上に）。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="50"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;2人プレイの場合のみ&lt;/strong&gt;&lt;br&gt; 各浮遊島の上に ミラージュトークンを1個 置きます。ミラージュ トークンはそれぞれ別の
+リージョンに置かなけれ ばなりません（森、河、山、 ミスト、クリスタル）。 ミラージュトークンが置い てあるリージョンは、 ゲーム終了までユニットの 配置と移動ができません。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="86"/>
         <source>Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
-        <translation type="unfinished"></translation>
+        <translation>モンスターカードを シャッフルしてイベント ボードの該当エリアに ランダムに3枚を表向き に置きます。残りの モンスターカードは 利用されないのでゲーム ボックスに戻します。 そして、各モンスター カードの上に該当の モンスターミニチュアを 置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="122"/>
         <source>Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>5枚のリージョン カードと1枚のストームカードをシャッフルして「イベントデッキ」を 作ります。イベントデッキをイベントボードの該当エリアに表向きに 置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="158"/>
         <source>Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>エンカウンターカードをシャッフルして「エンカウンターデッキ」を 作り、ゲームボードの該当エリアに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="194"/>
         <source>Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>同調カードのどちらの面を利用するかプレイヤー同士で決めておき （例：5枚とも昼面にする、または2枚を昼面にして3枚を夜面にするなど）、 同調カードをゲームボード上の該当エリアに決めた向きにして置きます。 備考：ゲームを始めたら同調カードの面を変えることはできません。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="230"/>
         <source>Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンドカードを時代別でシャッフルして3つのコマンドデッキを作って
+（20枚ずつ）イベントボード上の該当エリアに裏向きに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="266"/>
         <source>Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>20枚のスターティングコマンドカードを色別で分けて各プレイヤーに 赤1枚、黄1枚、緑1枚、青1枚のカードを配ります（合計4枚）。 プレイ人数によって残ったカードが利用されないのでゲームボックスに 戻します。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="279"/>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="329"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Expert Players Mode:&lt;/strong&gt;&lt;br&gt; Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;エキスパートルール&lt;/strong&gt;&lt;br&gt; 上記 7. と8. の手順をスキップします。 アーチファクトタイルを配った後、ランダムに1枚のチャンピオン カードと色ごとに1枚のスターティングカードをテーブル上に 表向きに置きます。プレイヤー達がプレイ順に従ってその中から カードを1枚ずつ取っていきます。常に1枚のチャンピオンカード と色ごとに1枚のスターティングカードからの選択ができるように （合計5枚）、カードを取るたびに同じ種類のカードを1枚新しく 引きます。各プレイヤーが1枚のチャンピオンカードと色ごとに 1枚のスターティングカードを取るまでこのようにドラフトを 進めます。残りのカードがありましたらゲームボックスに戻します。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="316"/>
         <source>Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>チャンピオンカードをシャッフルして各プレイヤーにランダムに1枚を 配ります。もらったチャンピオンカードは自分の前に表向きに置きます。 残りのチャンピオンカードがありましたらゲームボックスに戻します。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="366"/>
         <source>Each player chooses a color and takes the matching:</source>
-        <translation type="unfinished"></translation>
+        <translation>各プレイヤーが自分のプレイヤーカラーを選択してその色の以下の コンポネントをもらいます:</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="380"/>
         <source>&lt;b&gt;&lt;u&gt;Player Board&lt;/u&gt;&lt;/b&gt; &lt;br&gt; To be placed in front of you, next to your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;プレイヤーボード&lt;/u&gt;&lt;/b&gt; &lt;br&gt; 自分のチャンピオンカードの横に置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;1 Energy Token and 1 Experience Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;エネルギートークン1個、経験トークン1個&lt;/u&gt;&lt;/b&gt;&lt;br&gt;プレイヤーボード上の「0」のところに両方を置きます。 この2個のトークンをプレイヤーボード上で動かすことで自分が持って いるエネルギーポイントと経験ポイントを記録します。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="408"/>
         <source> Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. </source>
-        <translation type="unfinished"></translation>
+        <translation> 備考：エネルギーポイントと経験ポイントは最低「0」で最大 「12」になります。 </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="422"/>
         <source>&lt;b&gt;&lt;u&gt;Glory Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;グローリートークン&lt;/u&gt;&lt;/b&gt;&lt;br&gt; ゲームボード上の「1」のところに置きます。 このトークンをゲームボード上で動かすことで自分が持っている グローリーポイントを記録します。グローリーポイントは「1」以下に なることはありません。グローリーポイントの一周を行うたびに ＋100／＋200のグローリーポイントマーカーをもらいます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="436"/>
         <source>&lt;b&gt;&lt;u&gt;Encounter Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place this on your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;エンカウンタートークン&lt;/u&gt;&lt;/b&gt;&lt;br&gt; 自分のチャンピオンカードの上に置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="450"/>
         <source>&lt;b&gt;&lt;u&gt;Your units&lt;/u&gt;&lt;/b&gt;&lt;br&gt; The area of your Player Board showing the illustration of your Guild Banner is referred to as your constructed unit space and is where you place all of your constructed units.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;自分のユニット&lt;/u&gt;&lt;/b&gt;&lt;br&gt; 自分のプレイヤーボードにてギルドバナーが描かれているエリアが 自分の採用ユニットエリアになります。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="484"/>
         <source>- &lt;b&gt;&lt;u&gt;1 Champion&lt;/u&gt;&lt;/b&gt; (the miniature corresponding to your Champion Card) Place it on your constructed unit space.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;チャンピオン1個 &lt;/u&gt;&lt;/b&gt; （自分のチャンピオンカードに該当する ミニチュア） プレイヤーボード上の採用ユニットエリアに置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="516"/>
         <source>- &lt;b&gt;&lt;u&gt;8 Troops&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;部隊8個&lt;/u&gt;&lt;/b&gt;&lt;br&gt; 2個をプレイヤーボード上の採用ユニットエリアに置き、残りの 6個をプレイヤーボードの横に置いておきます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="548"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;ゴーレム4個&lt;/u&gt;&lt;/b&gt;&lt;br&gt;1個をプレイヤーボード上の採用ユニットエリアに置き、残りの 3個をプレイヤーボードの横に置いておきます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="580"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Keep all 4 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;4 個のとりで&lt;/u&gt;&lt;/b&gt;&lt;br&gt; 4個ともプレイヤーボードの横に置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="593"/>
         <source>&lt;b&gt;&lt;u&gt;13 Colored Rings&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attach these onto the base of all your miniatures, matching your Guild’s color.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;13個の土台&lt;/u&gt;&lt;/b&gt;&lt;br&gt; 自分の全てのミニチュアに付けます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="628"/>
         <source>Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>アーチファクトタイルをシャッフルして各プレイヤーにランダムに1枚を 配ります。
+もらったタイルを自分の前にチャージ済（光っている面）向きに 置きます。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="642"/>
         <source>The Artefacts show the order of play: the player with Artefact “I” goes first, and the other players follow according to the Roman Numeral on their Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation>アーチファクトタイルはプレイ順を決めます。 「I」が表示されているタイルを持っているプレイヤーが プレイヤー1、「II」のタイルを持っているプレイヤーが プレイヤー2、などになります。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="678"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>最後に、逆プレイ順に（最後のプレイヤーから）各プレイヤーが誰の チャンピオンも置いていない浮遊島を選択し、その浮遊島の任意のリージョンに 自分のチャンピオンミニチュアを置きます。そして、別の浮遊島を選択して自分の エンカウンタートークンを任意のリージョンに置きます。（エンカウンター専用の スペースあり）。</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="692"/>
         <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;2人プレイの場合のみ&lt;/strong&gt;&lt;br&gt; 自分のチャンピオンをミラージュトークンが置いてあるリージョンに置くことは できません。プレイヤーが2人ともチャンピオンを置いた後に、誰のチャンピオンも 置いていない3つの浮遊島から3個のミラージュトークンを外します。</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="35"/>
@@ -2147,7 +2166,7 @@ Deal each player three cards from the Curio Deck. Curio Cards are kept hidden fr
     <message>
         <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="11"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームの世界</translation>
     </message>
 </context>
 <context>
@@ -2878,12 +2897,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブック</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="27"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation>ルールブックを任意の言語でダウンロードする</translation>
     </message>
 </context>
 <context>
@@ -3072,7 +3091,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/main.qml" line="41"/>
         <source>Mysthea Universe</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
