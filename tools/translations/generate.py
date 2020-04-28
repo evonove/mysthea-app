@@ -10,15 +10,15 @@ def generate(original_file_path, lang, prefix):
     # First rearrange data in a dict compose like thid:
     # { "<code>": { "<field>": { "orig": "<original text>", "<lang>": "<translated text>" } } }
     processed = {}
-    trans_fields = ["TYPE", "COMMAND", "NAME", "CONTENT"]
+    trans_fields = ["TYPE", "COMMAND", "NAME", "CONTENT", "CATEGORY", "COLOR", "DESCRIPTION"]
     for element in data:
         code = element["CODE"]
         processed[code] = {}
         for field in trans_fields:
-            if element[field]:
+            if element.get(field):
                 processed[code][field] = {}
                 processed[code][field]["orig"] = element[field]
-                processed[code][field][lang] = element[f"{field}_{lang}"]
+                processed[code][field][lang] = element.get(f"{field}_{lang}", "")
 
     # Generate the XML tree for the translations file
     ts = ET.Element("TS", version="2.1", language=f"{lang.lower()}_{lang}")
@@ -30,7 +30,7 @@ def generate(original_file_path, lang, prefix):
     processed_lines = []
 
     # Output js filename
-    out_js_filename = f"{prefix}_{lang}.js"
+    out_js_filename = f"{prefix}.js"
     with open(out_js_filename, "w") as js_out:
         count = 1
         for code, data in processed.items():
@@ -54,7 +54,7 @@ def generate(original_file_path, lang, prefix):
                     count += 1
         # Write the final .ts file, to be opened in QT linguist
         tree = ET.ElementTree(ts)
-        tree.write(f"{prefix}_{lang}.ts", encoding="utf-8", xml_declaration=True)
+        tree.write(f"{prefix}_{lang.lower()}.ts", encoding="utf-8", xml_declaration=True)
 
 
 if __name__ == '__main__':

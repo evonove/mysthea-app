@@ -45,78 +45,78 @@
 <context>
     <name>Artwork</name>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="24"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="25"/>
         <source>Colossus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="28"/>
-        <location filename="../qml/TheFall/Artwork.qml" line="29"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="29"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="32"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="33"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="36"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="40"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="41"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="44"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="45"/>
         <source>Events</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="48"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="49"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="52"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="53"/>
         <source>Playerboards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="25"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="26"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="29"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="30"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="33"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="34"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="37"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="38"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="41"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="45"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="46"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/Artwork.qml" line="25"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="26"/>
         <source>Mysthea: The Fall</source>
         <translation type="unfinished"></translation>
     </message>
@@ -132,12 +132,12 @@
 <context>
     <name>CardDetailDelegate</name>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="41"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="56"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2843,32 +2843,32 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="26"/>
         <source>Colossus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="29"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
         <source>Seekers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="33"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="34"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="37"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="38"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="41"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="42"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="26"/>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="27"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>
