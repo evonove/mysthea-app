@@ -6,17 +6,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="101"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Kartenreferenz</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="114"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Spieleinrichtung</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="127"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Regelbuch</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="140"/>
@@ -29,17 +29,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="146"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>Sprache - </translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="269"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiel erstellt und produziert von</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="297"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>App entworfen und entwickelt von</translation>
     </message>
 </context>
 <context>
@@ -47,13 +47,13 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="25"/>
         <source>Colossus</source>
-        <translation type="unfinished">Kolosskarten</translation>
+        <translation>Kolosskarten</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="29"/>
         <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished">Entdecker</translation>
+        <translation>Entdecker</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="33"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished">Spezialausrüstungskarten</translation>
+        <translation>Spezialausrüstungskarten</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="41"/>
@@ -126,7 +126,7 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardDetail.qml" line="9"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>KARTE DETAILS</translation>
     </message>
 </context>
 <context>
@@ -134,12 +134,12 @@
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära</translation>
     </message>
 </context>
 <context>
@@ -147,12 +147,12 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="18"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ooops! Karte nicht gefunden.</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="27"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte geben Sie einen anderen Code ein oder ändern Sie die Filteroptionen.</translation>
     </message>
 </context>
 <context>
@@ -1781,7 +1781,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="29"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>Karten nach Code suchen</translation>
     </message>
 </context>
 <context>
@@ -1789,7 +1789,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="10"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>KARTENREFERENZ</translation>
     </message>
 </context>
 <context>
@@ -1797,7 +1797,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="32"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>HINTERGRUNDGESCHICHTE</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="40"/>
@@ -1815,12 +1815,12 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>SPIELEINSTELLUNG</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished"></translation>
+        <translation>SPIELEINSTELLUNG - %1 von 11</translation>
     </message>
 </context>
 <context>
@@ -1992,42 +1992,42 @@ Teile jedem Spieler drei Karten vom Artefaktstapel aus. Artefaktkarten werden vo
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="36"/>
         <source>Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Verteile die 5 schwebenden Inseln zufällig auf die passenden Felder. Die Seite mit den Symbolen muss zu sehen sein.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="50"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Im Spiel zu zweit:&lt;/strong&gt;&lt;br&gt; Lege auf jede Insel einen Trugbildmarker. Achte hierbei darauf, dass jeder dieser Marker auf einem unterschiedlichen Regionstyp liegt (Wald, Fluss, Nebelland, Kristallfeld oder Berge). Regionen, auf denen Trugbildmarker liegen, sind für die Dauer des gesamten Spiels blockiert.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="86"/>
         <source>Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die Monsterkarten. Ziehe drei und lege sie offen auf die entsprechenden Felder des Ereignisbereichs. Stelle die passende Monsterfigur auf die jeweilige Karte. Die restlichen Monsterkarten werden in diesem Spiel nicht benötigt.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="122"/>
         <source>Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die 5 Regionskarten gemeinsam mit der Sturmkarte und lege den Stapel offen auf das entsprechende Feld des Ereignisbereichs.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="158"/>
         <source>Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die Begegungskarten und lege sie offen als Begegnungsstapel auf das entsprechende Feld des Spielplans.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="194"/>
         <source>Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Entscheide, ob die Einstimmungen einheitlich mit der Tag- oder Nachtseite ins Spiel gebracht werden oder ob Tag und Nacht gemischt werden sollen. Lege die Einstimmungskarten mit der gewählten Seite auf den Spielplan. Nach dieser Entscheidung werden die Karten für die Dauer des Spiels nicht mehr umgedreht.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="230"/>
         <source>Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortiere die Befehlskarten nach ihrer Ära  (&lt;span style=&quot;font-family:EraIcons;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons;&quot;&gt;3&lt;/span&gt; in der rechten oberen Ecke). Mische die jeweils 20 Karten der Ära &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;, &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; und &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; getrennt voneinander und lege diese drei Ärastapel verdeckt auf die Felder des Ereignisbereichs.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="266"/>
         <source>Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortiere die 20 Startbefehlskarten nach ihrer Farbe und mische sie getrennt. Anschließend erhält jeder Spieler verdeckt eine Karte jeder Farbe auf die Hand und hält diese vor den anderen Spielern geheim. Alle nicht verteilten Karten werden in diesem Spiel nicht benötigt.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="279"/>
@@ -2038,87 +2038,87 @@ Teile jedem Spieler drei Karten vom Artefaktstapel aus. Artefaktkarten werden vo
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="316"/>
         <source>Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die Heldenkarten und teile eine an jeden Spieler aus. Jeder Spieler legt diese offen vor sich ab. Die übrigen Heldenkarten werden in diesem Spiel nicht benötigt.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="366"/>
         <source>Each player chooses a color and takes the matching:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeder Spieler wählt eine Farbe und nimmt sich das entsprechende Spielmaterial:</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="380"/>
         <source>&lt;b&gt;&lt;u&gt;Player Board&lt;/u&gt;&lt;/b&gt; &lt;br&gt; To be placed in front of you, next to your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Spielertableau&lt;/u&gt;&lt;/b&gt; &lt;br&gt; Lege es neben deiner Heldenkarte vor dir ab.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;1 Energy Token and 1 Experience Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;1 Energiemarker and 1 Erfahrungsmarker&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Lege beide auf das Feld mit dem Wert “0” deines Spielertableaus. Sie geben im Spiel jeweils den aktuellen Wert deiner Energie und Erfahrung wieder.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="408"/>
         <source> Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. </source>
-        <translation type="unfinished"></translation>
+        <translation> Hinweis: Dein jeweiliger Wert für Energie und Erfahrung kann im Laufe des Spiels nie unter 0 sinken oder 12 überschreiten. Solltest du in einer Situation mehr erhalten, verfällt der Überschuss. Das gilt natürlich auch umgekehrt, du kannst nie “negative” Punkte haben. </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="422"/>
         <source>&lt;b&gt;&lt;u&gt;Glory Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Ruhmesmarker&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Lege ihn auf das Feld “1” der Ruhmesleiste, welche den Spielplan umläuft. Dein Ruhmesmarker zeigt den aktuellen Stand deines Ruhms, welcher nie unter 1 sinken kann. Falls du mehr als 100 Ruhmespunkte erreichst, benutze die Marker “+100 / +200 Ruhmespunkte”, um einen Überblick über deinen Punktestand zu behalten.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="436"/>
         <source>&lt;b&gt;&lt;u&gt;Encounter Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place this on your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Begegnungsmarker&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Lege diesen auf deine Heldenkarte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="450"/>
         <source>&lt;b&gt;&lt;u&gt;Your units&lt;/u&gt;&lt;/b&gt;&lt;br&gt; The area of your Player Board showing the illustration of your Guild Banner is referred to as your constructed unit space and is where you place all of your constructed units.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Deine Einheiten&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Der Bereich deines Spielertableaus, welcher dein Gildenbanner zeigt, wird Konstruktionsplatz genannt und bietet Platz für erschaffene Einheiten.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="484"/>
         <source>- &lt;b&gt;&lt;u&gt;1 Champion&lt;/u&gt;&lt;/b&gt; (the miniature corresponding to your Champion Card) Place it on your constructed unit space.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;1 Held&lt;/u&gt;&lt;/b&gt; (die Figur, welche deiner Heldenkarte entspricht) Stelle die Figur auf den Konstruktionsplatz.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="516"/>
         <source>- &lt;b&gt;&lt;u&gt;8 Troops&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;8 Kämpfer&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Stelle 2 Figuren auf den Konstruktionsplatz und halte die übrigen 6 neben deinem Spielertableau als Reserve bereit.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="548"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Stelle 1 Figur auf den Konstruktionsplatz und halte die übrigen 3 neben deinem Spielertableau als Reserve bereit.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="580"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Keep all 4 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt;4 Festungen&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Halte auch diese neben deinem Spielertableau bereit.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="593"/>
         <source>&lt;b&gt;&lt;u&gt;13 Colored Rings&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attach these onto the base of all your miniatures, matching your Guild’s color.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;13 farbige Ringe&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Befestige diese am Standfuß deiner Figuren. Sie zeigen durch ihre Farbe die Zugehörigkeit zu deiner Gilde an.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="628"/>
         <source>Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mische die Artefaktmarker und teile einen davon zufällig an jeden Spieler aus.&lt;br&gt;Jeder Spieler legt diesen mit der aufgeladenen (hellen) Seite nach oben vor sich ab. Eventuell übrig gebliebenes Spielmaterial (Spielertableaus, Marker und Einheiten) wird in diesem Spiel nicht mehr benötigt.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="642"/>
         <source>The Artefacts show the order of play: the player with Artefact “I” goes first, and the other players follow according to the Roman Numeral on their Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Artefakte legen die Spielreihenfolge fest: der Besitzer des Artefakts “I” beginnt, die anderen Spieler folgen entsprechend der Reihenfolge der römischen Zahlen auf ihren Artefakten.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="678"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>In umgekehrter Spielreihenfolge (vom letzten zum ersten Spieler) wählt jeder Spieler eine Insel aus, auf der sich noch kein Held befindet und stellt seine Heldenfigur auf eine der drei Regionen der Insel. Anschließend legt er seinen Begegnungsmarker auf das entsprechende Feld einer beliebigen anderen Insel. Es können sich mehrere Begegnungsmarker auf dem selben Feld befinden.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="692"/>
         <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Im Spiel zu zweit: &lt;/strong&gt;&lt;br&gt; Dein Held darf nicht auf eine Region mit einem Trugbildmarker gestellt werden. Nachdem beide Spieler ihre Helden eingesetzt haben, werden die 3 Trugbildmarker von den Inseln entfernt, auf denen keine Helden stehen.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="35"/>
@@ -2256,7 +2256,7 @@ Teile jedem Spieler drei Karten vom Artefaktstapel aus. Artefaktkarten werden vo
     <message>
         <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="11"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>HINTERGRUNDGESCHICHTE</translation>
     </message>
 </context>
 <context>
@@ -2987,12 +2987,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>REGELBUCH</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="27"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden Sie das Regelbuch in Ihrer bevorzugten Sprache herunter</translation>
     </message>
 </context>
 <context>
@@ -3181,7 +3181,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/main.qml" line="41"/>
         <source>Mysthea Universe</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
