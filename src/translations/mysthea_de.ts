@@ -45,78 +45,78 @@
 <context>
     <name>Artwork</name>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="24"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="25"/>
         <source>Colossus</source>
         <translation type="unfinished">Kolosskarten</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="28"/>
-        <location filename="../qml/TheFall/Artwork.qml" line="29"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="29"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
         <translation type="unfinished">Entdecker</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="32"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="33"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="36"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
         <translation type="unfinished">Spezialausrüstungskarten</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="40"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="41"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="44"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="45"/>
         <source>Events</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="48"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="49"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="52"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="53"/>
         <source>Playerboards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="25"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="26"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="29"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="30"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="33"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="34"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="37"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="38"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="41"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="45"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="46"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/Artwork.qml" line="25"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="26"/>
         <source>Mysthea: The Fall</source>
         <translation type="unfinished"></translation>
     </message>
@@ -132,12 +132,12 @@
 <context>
     <name>CardDetailDelegate</name>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="41"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="56"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
         <translation type="unfinished"></translation>
     </message>
@@ -256,9 +256,13 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
         <translation>Jedes Mal, wenn du einen Veredler aktivierst, darfst du Parasiten beseitigen und damit einen einzelnen Parasiten aus der gleichen Region umsonst nehmen, ohne die Kosten dafür zu bezahlen.</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="19"/>
         <source>Immediately wound all opponents’ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
-        <translation>Du verletzt sofort alle Entdecker, die auf deinem oder einem an deinen angrenzenden Knotenpunkt stehen. Du erhältst so viele Reputationspunkte wie angegeben für jeden Entdecker, den du mit dieser Aktion triffst. (Dieser muss dabei nicht zwingend verletzt worden sein.)</translation>
+        <translation type="vanished">Du verletzt sofort alle Entdecker, die auf deinem oder einem an deinen angrenzenden Knotenpunkt stehen. Du erhältst so viele Reputationspunkte wie angegeben für jeden Entdecker, den du mit dieser Aktion triffst. (Dieser muss dabei nicht zwingend verletzt worden sein.)</translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="19"/>
+        <source>Immediately wound all opponentsâ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../configurations/icaion-cards.js" line="20"/>
@@ -416,8 +420,43 @@ Null Cages.
     </message>
     <message>
         <location filename="../configurations/icaion-cards.js" line="48"/>
+        <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a craterâs edge node.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="63"/>
+        <source>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossusâ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="65"/>
+        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
+Place one Parasite on each Region adjacent to the Colossusâ crater.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="67"/>
+        <source>Place one Parasite on each Region adjacent to the Colossusâ crater.
+Move the Colossus.
+Place one Parasite on each Region adjacent to the Colossusâ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="70"/>
+        <source>Cost: 2 qoam
+Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent to it.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a crater’s edge node.</source>
-        <translation>In jeder &quot;Ende eines Jahres&quot;-Phase erhältst du 5 Reputationspunkte, falls du deinen letzten Zug auf einem Knotenpunkt des Kraterrandes beendet hast.</translation>
+        <translation type="vanished">In jeder &quot;Ende eines Jahres&quot;-Phase erhältst du 5 Reputationspunkte, falls du deinen letzten Zug auf einem Knotenpunkt des Kraterrandes beendet hast.</translation>
     </message>
     <message>
         <location filename="../configurations/icaion-cards.js" line="49"/>
@@ -495,12 +534,11 @@ Null Cages.
         <translation>Kolosskarten</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
 </source>
-        <translation>Bewege den Koloss.
+        <translation type="vanished">Bewege den Koloss.
 Platziere zwei Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.
 </translation>
@@ -511,11 +549,10 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="65"/>
         <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
 Place one Parasite on each Region adjacent to the Colossus’ crater.
 </source>
-        <translation>Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
+        <translation type="vanished">Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 </translation>
     </message>
@@ -525,13 +562,12 @@ Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angre
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="67"/>
         <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
 Move the Colossus.
 Place one Parasite on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
 </source>
-        <translation>Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
+        <translation type="vanished">Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Bewege den Koloss.
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.
@@ -548,11 +584,10 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
         <translation>Wunder</translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="70"/>
         <source>Cost: 2 qoam
 Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.
 </source>
-        <translation>Kosten:2 Qoam
+        <translation type="vanished">Kosten:2 Qoam
 Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines Entdeckers oder daran angrenzender Knotenpunkte.
 </translation>
     </message>
@@ -1012,8 +1047,39 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="../configurations/mysthea-cards.js" line="74"/>
+        <source>Pay 4 Energy Points to choose any region. Wound all Opponentsâ Champions in that region.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/mysthea-cards.js" line="94"/>
+        <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monsterâs attack.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/mysthea-cards.js" line="151"/>
+        <source>Onygauros the Collector:
+Strength 13
+Rewards:
+Gold - Gain 4 Command Points and 4 Glory Points.
+Silver - Gain 3 Command Points and 3 Glory Points.
+Bronze - Gain 2 Command Points and 2 Glory Points.
+Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game â Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/mysthea-cards.js" line="156"/>
+        <source>Kodror the Infestation:
+Strength 16
+Rewards:
+Gold - Gain 16 Glory Points.
+Silver - Gain 12 Glory Points.
+Bronze - Gain 8 Glory Points.
+Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodrorâs Event Card from the game.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Pay 4 Energy Points to choose any region. Wound all Opponents’ Champions in that region.</source>
-        <translation>Zahle 4 Energiepunkte und wähle eine Region. Alle gegnerischen Helden in dieser Region werden verwundet.</translation>
+        <translation type="vanished">Zahle 4 Energiepunkte und wähle eine Region. Alle gegnerischen Helden in dieser Region werden verwundet.</translation>
     </message>
     <message>
         <location filename="../configurations/mysthea-cards.js" line="75"/>
@@ -1111,9 +1177,8 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/mysthea-cards.js" line="94"/>
         <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monster’s attack.</source>
-        <translation>Anuth: Wenn Du einen Kampf in der Region beginnst, in der sich Anuth befindet oder er sich auf einer Insel befindet, die von einem Monster angegriffen wird, erhält er 2 Stärkepunkte bis zum Ende des Kampfes/Angriffs.</translation>
+        <translation type="vanished">Anuth: Wenn Du einen Kampf in der Region beginnst, in der sich Anuth befindet oder er sich auf einer Insel befindet, die von einem Monster angegriffen wird, erhält er 2 Stärkepunkte bis zum Ende des Kampfes/Angriffs.</translation>
     </message>
     <message>
         <location filename="../configurations/mysthea-cards.js" line="95"/>
@@ -1383,7 +1448,6 @@ Bronze - Erhalte 2 Ruhmespunkte.
 Verhalten: Da Boulron sehr flink und geschickt ist, zählt die Stärke von Festungen nicht, wenn er eine Insel angreift.</translation>
     </message>
     <message>
-        <location filename="../configurations/mysthea-cards.js" line="151"/>
         <source>Onygauros the Collector:
 Strength 13
 Rewards:
@@ -1391,7 +1455,7 @@ Gold - Gain 4 Command Points and 4 Glory Points.
 Silver - Gain 3 Command Points and 3 Glory Points.
 Bronze - Gain 2 Command Points and 2 Glory Points.
 Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation>Onygauros der Sammler:
+        <translation type="vanished">Onygauros der Sammler:
 Stärke 13
 Belohnungen:
 Gold - Erhalte 4 Befehlspunkte und 4 Ruhmespunkte.
@@ -1447,7 +1511,6 @@ Behaviour: When Obsidusa attacks but is not defeated, he does not move to the ne
         <translation>ObsiDusa der Verschlinger:\nStärke 14\nBelohnungen:\nGold - Erhalte 7 Ruhmespunkte und ziehe 1 Befehlskarte..\nSilber - Erhalte 5 Ruhmespunkte und ziehe 1 Befehlskarte.\nBronze - Erhalte 3 Ruhmespunkte und ziehe 1 Befehlskarte.\nDie Befehlskarten werden vom aktuellen Ärastapel gezogen.\nVerhalten: Wenn ObsiDusa angreift aber nicht besiegt wird, bewegt er sich nicht auf die nächste Insel sondern verbleibt, um die Körper der Gefallenen zu verschlingen.</translation>
     </message>
     <message>
-        <location filename="../configurations/mysthea-cards.js" line="156"/>
         <source>Kodror the Infestation:
 Strength 16
 Rewards:
@@ -1455,7 +1518,7 @@ Gold - Gain 16 Glory Points.
 Silver - Gain 12 Glory Points.
 Bronze - Gain 8 Glory Points.
 Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
-        <translation>Kodror der Parasit:\nStärke 16\nBelohnungen:\nGold - Erhalte 16 Ruhmespunkte.\nSilber - Erhalte 12 Ruhmespunkte.\nBronze - Erhalte 8 Ruhmespunkte.\nVerhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wurzeln mit sich (tausche die Insel mit der nächsten Insel im Uhrzeigersinn). Wenn Kodror angreift und besiegt wird, entferne seine Figur aus dem Spiel und drehe seine Ereigniskarte um, um anzuzeigen, dass er nicht mehr im Spiel ist. Entferne seine Ereigniskarte am Ende der aktuellen Ära aus dem Spiel.</translation>
+        <translation type="vanished">Kodror der Parasit:\nStärke 16\nBelohnungen:\nGold - Erhalte 16 Ruhmespunkte.\nSilber - Erhalte 12 Ruhmespunkte.\nBronze - Erhalte 8 Ruhmespunkte.\nVerhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wurzeln mit sich (tausche die Insel mit der nächsten Insel im Uhrzeigersinn). Wenn Kodror angreift und besiegt wird, entferne seine Figur aus dem Spiel und drehe seine Ereigniskarte um, um anzuzeigen, dass er nicht mehr im Spiel ist. Entferne seine Ereigniskarte am Ende der aktuellen Ära aus dem Spiel.</translation>
     </message>
     <message>
         <location filename="../configurations/thefall-cards.js" line="1"/>
@@ -1617,7 +1680,21 @@ Immediately attack any Monster, regardless of your position on the Game Board. T
         <source>CHARACTER ABILITY
 Whenever you Move, you may move another Character instead of yours.
 RELIC POWER
-Each time you Use the Relic, copy and resolve another player’s Relic Power.
+Each time you Use the Relic, copy and resolve another playerâs Relic Power.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/thefall-cards.js" line="33"/>
+        <source>STRENGTH 7
+When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarokâs card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/thefall-cards.js" line="39"/>
+        <source>STRENGTH 7
+When it comes into play, take all Golems on its Island and place them onto Obsidusaâs card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -1636,13 +1713,6 @@ During the Colossus Card resolution, it inflicts 10 damage to the City.
     <message>
         <location filename="../configurations/thefall-cards.js" line="32"/>
         <source>Boulron the Reaper</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/thefall-cards.js" line="33"/>
-        <source>STRENGTH 7
-When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1674,13 +1744,6 @@ Eradication Bonus.
     <message>
         <location filename="../configurations/thefall-cards.js" line="38"/>
         <source>Onygauros the Collector</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/thefall-cards.js" line="39"/>
-        <source>STRENGTH 7
-When it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2889,32 +2952,32 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="26"/>
         <source>Colossus</source>
         <translation type="unfinished">Kolosskarten</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="29"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
         <source>Seekers</source>
         <translation type="unfinished">Entdecker</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="33"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="34"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="37"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="38"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="41"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="42"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="26"/>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="27"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>

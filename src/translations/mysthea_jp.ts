@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es_ES">
+<TS version="2.1">
 <context>
     <name>AppContainer</name>
     <message>
@@ -416,37 +416,6 @@ Null Cages.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/icaion-cards.js" line="63"/>
-        <source>Move the Colossus
-Place two Parasites on each Region adjacent to the Colossusâ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="65"/>
-        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
-Place one Parasite on each Region adjacent to the Colossusâ crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="67"/>
-        <source>Place one Parasite on each Region adjacent to the Colossusâ crater.
-Move the Colossus.
-Place one Parasite on each Region adjacent to the Colossusâ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/icaion-cards.js" line="70"/>
-        <source>Cost: 2 qoam
-Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent to it.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../configurations/icaion-cards.js" line="49"/>
         <source>Vertebra Crown</source>
         <translation type="unfinished"></translation>
@@ -522,13 +491,37 @@ Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent 
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../configurations/icaion-cards.js" line="63"/>
+        <source>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossusâ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../configurations/icaion-cards.js" line="64"/>
         <source>Giant event 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../configurations/icaion-cards.js" line="65"/>
+        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
+Place one Parasite on each Region adjacent to the Colossusâ crater.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../configurations/icaion-cards.js" line="66"/>
         <source>Giant event 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="67"/>
+        <source>Place one Parasite on each Region adjacent to the Colossusâ crater.
+Move the Colossus.
+Place one Parasite on each Region adjacent to the Colossusâ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -539,6 +532,13 @@ Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent 
     <message>
         <location filename="../configurations/icaion-cards.js" line="69"/>
         <source>Wonder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/icaion-cards.js" line="70"/>
+        <source>Cost: 2 qoam
+Owner effect: Wound enemy Seekers on your Seekerâs node â or adjacent to it.
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -989,33 +989,6 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/mysthea-cards.js" line="94"/>
-        <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monsterâs attack.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/mysthea-cards.js" line="151"/>
-        <source>Onygauros the Collector:
-Strength 13
-Rewards:
-Gold - Gain 4 Command Points and 4 Glory Points.
-Silver - Gain 3 Command Points and 3 Glory Points.
-Bronze - Gain 2 Command Points and 2 Glory Points.
-Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game â Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/mysthea-cards.js" line="156"/>
-        <source>Kodror the Infestation:
-Strength 16
-Rewards:
-Gold - Gain 16 Glory Points.
-Silver - Gain 12 Glory Points.
-Bronze - Gain 8 Glory Points.
-Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodrorâs Event Card from the game.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../configurations/mysthea-cards.js" line="75"/>
         <source>Pay 5 Energy Points to Start a Battle in any region with at least 1 Opponent and add 5 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
         <translation type="unfinished"></translation>
@@ -1108,6 +1081,11 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../configurations/mysthea-cards.js" line="93"/>
         <source>Gray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/mysthea-cards.js" line="94"/>
+        <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monsterâs attack.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1372,6 +1350,17 @@ Behaviour: When Boulron attacks, due to its swift and elegant movements, players
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../configurations/mysthea-cards.js" line="151"/>
+        <source>Onygauros the Collector:
+Strength 13
+Rewards:
+Gold - Gain 4 Command Points and 4 Glory Points.
+Silver - Gain 3 Command Points and 3 Glory Points.
+Bronze - Gain 2 Command Points and 2 Glory Points.
+Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game â Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../configurations/mysthea-cards.js" line="152"/>
         <source>Caerulas the Inhabitant from Below:
 Strength 15
@@ -1416,6 +1405,17 @@ Silver - Gain 5 Glory Points and draw 1 Command card.
 Bronze - Gain 3 Glory Points and draw 1 Command card.
 Command cards are drawn from the Era Deck of the current Era.
 Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/mysthea-cards.js" line="156"/>
+        <source>Kodror the Infestation:
+Strength 16
+Rewards:
+Gold - Gain 16 Glory Points.
+Silver - Gain 12 Glory Points.
+Bronze - Gain 8 Glory Points.
+Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodrorâs Event Card from the game.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1583,20 +1583,6 @@ Each time you Use the Relic, copy and resolve another playerâs Relic Power.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../configurations/thefall-cards.js" line="33"/>
-        <source>STRENGTH 7
-When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarokâs card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../configurations/thefall-cards.js" line="39"/>
-        <source>STRENGTH 7
-When it comes into play, take all Golems on its Island and place them onto Obsidusaâs card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../configurations/thefall-cards.js" line="30"/>
         <source>TFA Mysthea Monsters</source>
         <translation type="unfinished"></translation>
@@ -1611,6 +1597,13 @@ During the Colossus Card resolution, it inflicts 10 damage to the City.
     <message>
         <location filename="../configurations/thefall-cards.js" line="32"/>
         <source>Boulron the Reaper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/thefall-cards.js" line="33"/>
+        <source>STRENGTH 7
+When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarokâs card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1642,6 +1635,13 @@ Eradication Bonus.
     <message>
         <location filename="../configurations/thefall-cards.js" line="38"/>
         <source>Onygauros the Collector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../configurations/thefall-cards.js" line="39"/>
+        <source>STRENGTH 7
+When it comes into play, take all Golems on its Island and place them onto Obsidusaâs card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1724,6 +1724,17 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
 <context>
     <name>GameSetupModel</name>
     <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
+        <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
+        <source>Flip the Event Board to the side corresponding to the number of players.
+Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
@@ -1755,24 +1766,13 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
-        <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
-        <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
-        <source>Flip the Event Board to the side corresponding to the number of players.
-Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
         <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
+        <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1849,6 +1849,11 @@ Keep the Division Board in front of you and place the Machines as shown in the f
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
+        <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
@@ -1863,11 +1868,6 @@ Emergency Power Supply tiles determine the order of play. The first player is wh
         <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
-        <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
