@@ -6,17 +6,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="101"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Référence de la carte</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="114"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration du jeu</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="127"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Livret de règles</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="140"/>
@@ -29,17 +29,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="146"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>Langue - </translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="269"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeu créé et produit par</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="297"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>Application conçue et développée par</translation>
     </message>
 </context>
 <context>
@@ -126,7 +126,7 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardDetail.qml" line="9"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>DÉTAIL DE LA CARTE</translation>
     </message>
 </context>
 <context>
@@ -134,12 +134,12 @@
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Commandement</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère</translation>
     </message>
 </context>
 <context>
@@ -147,12 +147,12 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="18"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ooops! Carte non trouvée.</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="27"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Essayez de saisir un code différent ou de modifier les options de filtrage.</translation>
     </message>
 </context>
 <context>
@@ -1679,7 +1679,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="29"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des cartes par code</translation>
     </message>
 </context>
 <context>
@@ -1687,7 +1687,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="10"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>RÉFÉRENCE DE CARTES</translation>
     </message>
 </context>
 <context>
@@ -1695,7 +1695,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="32"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>LORE</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="40"/>
@@ -1713,12 +1713,12 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>CONFIGURATION DU JEU</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished"></translation>
+        <translation>CONFIGURATION DU JEU - %1 de 11</translation>
     </message>
 </context>
 <context>
@@ -1727,419 +1727,435 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Considérez les cristaux de Qoam et les figurines de Parasite comme inépuisables. Dans les rares cas où ces éléments venaient à s’épuiser, remplacez-les temporairement par d&apos;autres éléments de jeu.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="112"/>
         <source>Place the Colossus on a random crater of the Game Board. Place 1 Parasite on each region adjacent to the Colossus’ crater.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez le Colosse sur un cratère aléatoire du Plateau de Jeu. Placez 1 Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="125"/>
         <source>&lt;strong&gt;2-3 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 1 Qoam on each of the ten external Regions and 2 Qoam on each of the five internal Regions (those adjacent to the City). </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2-3 joueurs -&lt;/strong&gt; Placez 1 Qoam sur chacune des dix Régions extérieures et 2 Qoam sur chacune des cinq Régions intérieures (celles adjacentes à la Cité), en faisant correspondre à chaque fois la couleur des cristaux à celle des Régions. </translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="139"/>
         <source>&lt;strong&gt;4-5 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 2 Qoam on each Region of the Game Board. Then, place 1 Parasite on each of the five internal Regions.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4-5 joueurs -&lt;/strong&gt; Placez 2 Qoam sur chaque Région du Plateau de Jeu, en faisant correspondre à chaque fois la couleur des cristaux à celle des Régions. Placez ensuite 1 Parasite sur chacune des cinq Régions intérieures.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Regions can only hold Qoam of the corresponding color (see p.18 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; les Régions ne peuvent contenir que du Qoam de leur couleur (voir p.18).</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="187"/>
         <source>Shuffle the Colossus’ Primal Shards without looking at their values.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les Éclats de Colosse primaires sans regarder leur valeur.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
         <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez au hasard et face visible les trois cartes Colosse, sur les cases Année I, Année II et Année III du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
         <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez le Plateau de Jeu et le Plateau d&apos;Évènements l&apos;un à côté de l&apos;autre, au centre de la table.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
         <source>Flip the Event Board to the side corresponding to the number of players.
 Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Retournez le Plateau d&apos;Évènements du côté correspondant au nombre de joueurs.
+Prenez les cristaux de Qoam et les Parasites et faites-en une réserve commune à proximité du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
         <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cinq cartes Région et placez-les face cachée sur l&apos;espace approprié du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="269"/>
         <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.
 Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.
 Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez les 15 tuiles Appareil. Triez-les par couleur et faites-en 5 piles de trois tuiles chacune.
+Vous pouvez choisir de jouer avec les piles soit côté Jour, soit côté Nuit, soit faire un mélange des deux. Toutefois, chaque pile ne doit contenir que des tuiles retournées du même côté (Jour ou Nuit). Placez les tuiles portant le chiffre romain &quot;&quot;III&quot;&quot; au bas de chaque pile, et les tuiles portant le &quot;&quot;I&quot;&quot; sur le dessus des piles.
+Placez ensuite ces piles sur les différents emplacements de la Cité, avec la tuile &quot;&quot;I&quot;&quot; visible.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="303"/>
         <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).
 Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque joueur choisit une couleur et prend son Plateau de Division, son Marqueur de Réputation, son anneau de base coloré et ses 9 Machines (3 Moissonneurs, 3 Pilleurs, 3 Raffineurs).
+Disposez le Plateau de Division devant vous et placez les Machines tel qu’indiqué sur l’image :</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Moissonneurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Pilleurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Raffineurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un troisième joueur contrôlé par le jeu, jusqu&apos;à ce que les 3 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;3 joueurs -&lt;/strong&gt;À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un quatrième joueur contrôlé par le jeu, jusqu&apos;à ce que 2 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un cinquième joueur contrôlé par le jeu, jusqu&apos;à ce que 1 Machine de chaque type ait été disposée.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Chaque Région ne peut accueillir plus de 3 Machines en même temps. Toutes les Machines d&apos;une même région doivent être différentes en couleur et en type.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Distribuez au hasard à chaque joueur une carte Émissaire et une carte Équipement spécialisé. Chaque joueur prend la figurine correspondante et fixe l&apos;anneau coloré à sa base. Gardez les cartes de votre personnage à côté de votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nombre d&apos;icônes sur vos cartes Émissaire et Équipement spécialisé détermine la limite de cartes et de ressources que vous pouvez posséder.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
         <source> = Maximum hand size</source>
-        <translation type="unfinished"></translation>
+        <translation>= Taille maximale de la main</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre maximum de cartes Curio d’amélioration X que vous pouvez avoir en jeu en même temps.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre de cristaux de Qoam avec lesquels vous commencez. Prenez dans la réserve autant de cristaux de Qoam qu’indiqué sur votre carte Émissaire. Placez ces ressources sur l&apos;un des emplacements Cage Zéro disponibles (ceux sans Machine).</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gardez cette tuile d’Alimentation électrique d’urgence sur votre Plateau de Division, retournée sur son côté « Chargée ».
+Les tuiles d’Alimentation électrique d&apos;urgence déterminent l&apos;ordre de jeu. Le premier joueur est celui qui possède le numéro de tuile « I » ; puis les autres joueurs se succèdent en suivant la numérotation.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque joueur place son Marqueur de Réputation sur l&apos;emplacement « 0 » de la Piste de score.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez toutes les cartes Curio, puis placez ce paquet face cachée sur le Plateau d&apos;Évènements.
+Distribuez à chaque joueur trois cartes du paquet Curio. Ne révélez pas vos cartes Curio aux autres joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez autant de tuiles d’Alimentation électrique d’urgence que le nombre de joueurs, en suivant les chiffres romains de I à V. Distribuez-en une au hasard à chacun des joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si le paquet Curio est épuisé, mélangez toutes les cartes Curio défaussées pour former un nouveau paquet.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation>En sens inverse (autrement dit, du dernier au premier joueur), chaque joueur choisit l&apos;un des cinq croisements extérieurs indiqués ci-dessous pour y placer sa figurine Émissaire. Un joueur ne peut pas choisir un croisement déjà occupé par un adversaire.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="36"/>
         <source>Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez, au hasard, les 5 Îles Flottantes dans les emplacements indiqués sur le plateau de jeu. Leurs faces présentant des symboles doivent être visibles.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="50"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Partie à 2 joueurs :&lt;/strong&gt;&lt;br&gt; Placez un jeton Mirage sur chaque Île. Assurez-vous que chaque Mirage est placé dans une Région différente (Forêt, Rivière, Terre brumeuse, Champ cristallin, Montagne). Les Régions contenant des Mirages ne peuvent pas être utilisées par les joueurs pour se déplacer ou déployer des unités pendant la partie.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="86"/>
         <source>Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Monstres et placezen trois au hasard, faces visibles, dans les emplacements dédiés du plateau d’Évènements. Rangez les cartes Monstres restantes dans la boîte. Prenez les figurines des trois Monstres conservés et placez-les sur la carte correspondante.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="122"/>
         <source>Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez ensemble les 5 cartes Régions et la carte Tempête. Ce tas constitue la “pile d’Évènements”; placez-la, face visible, dans son espace dédié du plateau d’Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="158"/>
         <source>Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Rencontres et placez-les, faces visibles, dans l’espace dédié du plateau de jeu. Ce tas constitue la “pile de Rencontres”.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="194"/>
         <source>Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez si vous voulez jouer avec toutes les cartes Harmonisations sur leur face Jour ou Nuit, ou si vous voulez mélanger les faces visibles. Placez les Harmonisations dans les espaces dédiés du plateau de jeu, en accord avec votre choix. Celui-ci est définitif pour le restant de la partie.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="230"/>
         <source>Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Répartissez les cartes Commandements par Ère (symbole &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; en haut à droite des cartes). Mélangez les 20 cartes des Ères &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;, &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; et &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; en trois piles distinctes et placez-les sur leurs emplacements dédiés du plateau d’Évènements. Ces tas constituent les “piles d’Ère”.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="266"/>
         <source>Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez les 20 cartes Commandements de l’Ère de départ et répartissezles par couleur. Mélangez chaque pile séparément. Distribuez, face cachée, une carte de chaque couleur à chacun des joueurs. Ceux-ci peuvent prendre connaissance des cartes reçues mais ne doivent pas les révéler aux autres. Rangez les cartes de départ inutilisées dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="279"/>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="329"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Expert Players Mode:&lt;/strong&gt;&lt;br&gt; Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Joueurs expérimentés:&lt;/strong&gt;&lt;br&gt; Passez les étapes 7 et 8 ci-dessus. Après avoir distribué les Artefacts, choisissez au hasard une carte Champion et une carte Commandement de l’Ère de départ de chaque couleur et placez-les, faces visibles, sur la table. Dans l’ordre de jeu, chaque joueur sélectionne et prend l’une des cartes sur la table ; il la remplace par une carte du même type, piochée au hasard. Assurez-vous qu’il y a toujours 1 carte Champion et une carte de départ de chaque couleur sur la table. Continuez ainsi jusqu’à ce que tous les joueurs aient en main 1 Champion et 1 carte de départ de chaque couleur (bleu, vert, jaune, rouge). Rangez les cartes restantes dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="316"/>
         <source>Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Champions et distribuez-en une à chaque joueur. Ceux-ci doivent les conserver, face visible, devant eux. Rangez les cartes Champions inutilisées dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="366"/>
         <source>Each player chooses a color and takes the matching:</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque joueur choisit une couleur, récupère les éléments de la couleur correspondante et les dispose comme indiqué :</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="380"/>
         <source>&lt;b&gt;&lt;u&gt;Player Board&lt;/u&gt;&lt;/b&gt; &lt;br&gt; To be placed in front of you, next to your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Tableau de bord&lt;/u&gt;&lt;/b&gt; &lt;br&gt;Il est placé en face du joueur, à côté de sa carte de Champion.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;1 Energy Token and 1 Experience Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;1 jeton Énergie et 1 jeton Expérience&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Placez-les sur la case “0” de votre tableau de bord. En cours de jeu, quand votre Énergie ou votre Expérience change, déplacez le jeton correspondant sur votre plateau en accord avec le gain ou la perte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="408"/>
         <source> Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. </source>
-        <translation type="unfinished"></translation>
+        <translation> Note: Durant la partie, vous ne pouvez jamais avoir plus de 12 points d’Expérience ou d’Énergie, ni moins de 0. Ignorez les pertes ou les gains au-delà de ces limites. </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="422"/>
         <source>&lt;b&gt;&lt;u&gt;Glory Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Jeton Gloire&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-le sur la case “1” du plateau de jeu. En cours de jeu, quand votre Gloire change, déplacez le jeton correspondant sur le plateau de jeu. Vous ne pouvez pas avoir moins de 1 point de Gloire. Quand votre jeton a accompli un tour complet du plateau, utilisez le marqueur +100/+200 points de Gloire pour vous souvenir du montant total de points de Gloire.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="436"/>
         <source>&lt;b&gt;&lt;u&gt;Encounter Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place this on your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Jeton Rencontre&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Placez-le sur votre carte de Champion.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="450"/>
         <source>&lt;b&gt;&lt;u&gt;Your units&lt;/u&gt;&lt;/b&gt;&lt;br&gt; The area of your Player Board showing the illustration of your Guild Banner is referred to as your constructed unit space and is where you place all of your constructed units.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Unités&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Sur le tableau de bord, la zone où figure l’emblème de Guilde est appelée “espace des unités construites”; les unités construites par le joueur sont entreposées sur cet emplacement.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="484"/>
         <source>- &lt;b&gt;&lt;u&gt;1 Champion&lt;/u&gt;&lt;/b&gt; (the miniature corresponding to your Champion Card) Place it on your constructed unit space.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 1 Champion &lt;/u&gt;&lt;/b&gt; (la figurine correspondant à la carte de votre Champion) Placez-le dans l’espace des unités construites.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="516"/>
         <source>- &lt;b&gt;&lt;u&gt;8 Troops&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 8 Troupes&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-en 2 dans l’espace des unités construites et les autres à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="548"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-en 1 dans l’espace des unités construites et les autres à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="580"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Keep all 4 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Gardez-les à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="593"/>
         <source>&lt;b&gt;&lt;u&gt;13 Colored Rings&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attach these onto the base of all your miniatures, matching your Guild’s color.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;13 socles colorés&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attachez-les à vos figurines, selon la couleur de votre Guilde.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="628"/>
         <source>Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les jetons Artefacts et donnez-en un, au hasard, à chaque joueur.&lt;br&gt;Chaque joueur place son Artefact, sur le côté Brillant/Chargé, face à lui. À moins de 5 joueurs, rangez tous les plateaux, les jetons et les unités inutilisés dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="642"/>
         <source>The Artefacts show the order of play: the player with Artefact “I” goes first, and the other players follow according to the Roman Numeral on their Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les chiffres romains inscrits sur les Artefacts indiquent l’ordre de jeu : le joueur avec l’Artefact “I” joue en premier, suivi par le joueur avec l’Artefact “II” et ainsi de suite.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="678"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dans le sens inverse de l’ordre de jeu (en commençant donc par le dernier joueur), chaque joueur choisit une Région d’une Île où ne se trouve pas déjà un Champion et y place le sien. Après avoir placé son Champion, le joueur place son jeton Rencontre sur une autre Île de son choix, dans l’emplacement approprié (le cercle vide figurant sur la tuile). Il n’y a pas de limite au nombre de jetons Rencontres sur une Île.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="692"/>
         <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Partie à 2 joueurs :&lt;/strong&gt;&lt;br&gt; Vous ne pouvez pas placer votre Champion dans une Région contenant un Mirage. Lorsque les deux joueurs ont placé leurs Champions, retirez les jetons Mirages situés sur les 3 Îles où ne se trouvent pas les Champions.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="35"/>
         <source>Place the Game Board and the Event Board in the center of the table, one next to the other. Randomly place an Island on each Game Board crater. The Islands’ side without icons must be facing upwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Disposez le Plateau de jeu et le Plateau d&apos;Évènements au centre de la table, l&apos;un à côté de l&apos;autre. Placez au hasard une Île sur chaque cratère du Plateau de Jeu. Les Îles doivent être placées avec la face sans icônes visible.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="70"/>
         <source>Place 4 Golems on each Island, all in one Region. Choose a different kind of Region for each Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez 4 Golems sur une seule Région de chaque Île. Choisissez un type de Région différent pour chaque Île.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="104"/>
         <source>Place 4 Troops on each remaining empty Region among all Islands.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez 4 Troupes sur toutes les Régions vides de chaque  Île.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="138"/>
         <source>Place all Qoam crystals, Parasites, and Monsters in a common pool near the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez tous les cristaux de Qoam, Parasites et Monstres et faites-en une réserve commune à proximité du Plateau de Jeu.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="188"/>
         <source>Choose the difficulty level for the game. Take 10 Primal Shards according to your choice and place them in an opaque container that they may be drawn from at random (like a bag or a cup).</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez le niveau de difficulté du jeu. Prenez 10 Éclats primaires et placez-les dans un récipient opaque (sachet ou bol) à partir duquel ils pourront être piochés au hasard.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="202"/>
         <source>&lt;strong&gt;&lt;u&gt;Easy:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 3 SHARDS “1”&lt;br&gt;- 5 SHARDS “2”&lt;br&gt;- 2 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Facile:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 3 ÉCLATS “1”&lt;br&gt;- 5 ÉCLATS “2”&lt;br&gt;- 2 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="215"/>
         <source>&lt;strong&gt;&lt;u&gt;Normal:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 2 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 4 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Normal:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 2 ÉCLATS “1”&lt;br&gt;- 4 ÉCLATS “2”&lt;br&gt;- 4 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="228"/>
         <source>&lt;strong&gt;&lt;u&gt;Difficult:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 1 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 5 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Difficile:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 1 ÉCLAT “1”&lt;br&gt;- 4 ÉCLATS “2”&lt;br&gt;- 5 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="241"/>
         <source>Take one of the remaining Primal Shards and use it as a score marker on the Game Board track, starting in the space labeled “99”. This serves as a counter for the City Defense Points. Put the remaining Primal Shards back into the game box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez l&apos;un des Éclats primaires restants et vous placez-le sur la la case «99» de Piste de score du Plateau de Jeu : il servira de compteur pour les Points de Défense de la Cité. Remettez dans la boîte de jeu les Éclats primaires restants.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="275"/>
         <source>Draw at random 5 Primal Shards from the bag. Without looking at their values, plug them into the base of the Colossus’ miniature.</source>
-        <translation type="unfinished"></translation>
+        <translation>Piochez au hasard 5 Éclats primaires du sachet. Sans regarder leur valeur, insérez-les dans les encoches à la base de la figurine du Colosse.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="309"/>
         <source>Place the Colossus on one of the five external nodes, chosen at random. It will only move between these nodes during the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez le Colosse au hasard sur l&apos;un des cinq croisements extérieurs. Il se déplacera uniquement entre ces croisements-là au cours de la partie.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="353"/>
         <source>Place Machinery on the Game Board: In each of its Regions, place three different Machines, all of the same color. Each kind of Region may only hold Machines of the same color (e.g., Black Machines in Forest Regions).</source>
-        <translation type="unfinished"></translation>
+        <translation>Sur chaque Région du Plateau de Jeu, placez trois Machines différentes, de même couleur. Chaque type de Région ne peut accueillir que des Machines de même couleur (par exemple, des Machines noires sur les Régions Forêt).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="387"/>
         <source>The oldest player is the first in turn order. Other players follow clockwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le joueur le plus âgé sera le premier à jouer. La main passera aux autres joueurs en sens horaire.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="401"/>
         <source>Divide the Character Cards into two piles (Mysthea’s and Icaion’s) and shuffle them both. The first player gets to choose which pile they draw a Character from.</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisez les cartes Personnage en deux piles (Mysthea et Icaion) que vous mélangez séparément.
+Le premier joueur peut choisir la pile dans laquelle il pioche son personnage.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="414"/>
         <source>Each following player must draw from a pile that is different from the player choosing before them. Each player then takes the corresponding miniature and the tile related to their Character (Mysthea’s Artefact or Icaion’s Emergency Power Supply).</source>
-        <translation type="unfinished"></translation>
+        <translation>Chacun des autres joueurs doit ensuite piocher son Personnage dans une pile différente de celle choisie par le joueur précédent.
+Chaque joueur prend ensuite la figurine correspondante et la tuile liée à son Personnage (Artefact de Mysthea ou Alimentation électrique d’urgence d’Icaion).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="428"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; From now on, we will refer to both kinds of tiles as Relics.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; À partir de maintenant, ces deux sortes de tuiles seront qualifiées de “Reliques”.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="442"/>
         <source>Place the Relic in front of you, with its charged side facing upwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez votre Relique devant vous, côté Chargée visible.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="455"/>
         <source>Finally, each player takes a colored base for their miniature, plus some Fortification Tokens depending on the number of players:&lt;br&gt;&lt;strong&gt;- 5 players:&lt;/strong&gt; 1 Fortification of your color.&lt;br&gt;&lt;strong&gt;- 4 players:&lt;/strong&gt; 2 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 3 players:&lt;/strong&gt; 3 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 2 players:&lt;/strong&gt; 3 Fortifications of your color, plus another 2 of a non-playing color.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Enfin, chaque joueur prend un anneau de base coloré pour sa figurine, et une quantité de Fortifications dépendant du nombre de joueurs ::&lt;br&gt;&lt;strong&gt;- 5 joueurs:&lt;/strong&gt; 1 Fortification de votre couleur.&lt;br&gt;&lt;strong&gt;- 4 joueurs:&lt;/strong&gt; 2 Fortifications de votre couleur.&lt;br&gt;&lt;strong&gt;- 3 joueurs:&lt;/strong&gt; 3  Fortifications de votre couleur.&lt;br&gt;&lt;strong&gt;- 2 joueurs:&lt;/strong&gt; 3 Fortifications de votre couleur, et 2 Fortifications supplémentaires d’une couleur différente de celle choisie par chacune des joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="470"/>
         <source>&lt;strong&gt;Solo variant&lt;/strong&gt;&lt;br&gt;Set up the game following the 2-player rules. Choose two Characters and alternate your turns between the two.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Variante Solo&lt;/strong&gt;&lt;br&gt;Procédez à la mise en place en suivant les règles d’une partie à 2 joueurs. Choisissez deux Personnages et alternez les tours entre eux.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="505"/>
         <source>In order of play, each player places their Character on an empty node of the Game Board, following the instructions below:</source>
-        <translation type="unfinished"></translation>
+        <translation>En suivant l’ordre du tour, chaque joueur place son Personnage sur un croisement vide du Plateau de Jeu, en respectant les instructions ci-dessous:</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="519"/>
         <source>&lt;span style=&apos;color: #ED008C&apos;&gt;&lt;strong&gt;Mysthea Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five nodes adjacent to a fallen Island and two Icaion Regions.&lt;br&gt;&lt;span style=&apos;color: #0094CC&apos;&gt;&lt;strong&gt;Icaion Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five City nodes.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;span style=&apos;color: #ED008C&apos;&gt;&lt;strong&gt;Personnage de Mysthea:&lt;/strong&gt;&lt;/span&gt; Placez-le sur l’un des cinq croisements adjacents à une Île effondrée et deux Régions d’Icaion.&lt;br&gt;&lt;span style=&apos;color: #0094CC&apos;&gt;&lt;strong&gt;Personnage d’Icaion:&lt;/strong&gt;&lt;/span&gt; Placez-le sur l’un des cinq croisements de la Cité.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="532"/>
         <source>For each of the two Regions adjacent to your Character, take 1 Qoam crystal of the same type as the Region.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez 1 cristal de Qoam du type de chacune des deux Régions adjacentes à votre Personnage.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="567"/>
         <source>Divide Command Cards into three decks: Era I, Era II, and Era III. Place the three decks, face down, on the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisez les cartes Commandement en trois paquets : Ère I, Ère II et Ère III.
+Placez les trois paquets face cachée sur le Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="602"/>
         <source>Prepare the Event Deck: shuffle together all Region Cards (both Mysthea’s and Icaion’s), the three Colossus Cards, and the Storm Card. &lt;br&gt;&lt;br&gt;Place the deck face down on the Event Board. Also shuffle the Monster Cards to form another deck. Place it above the Event Board, face down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Préparez le paquet d&apos;Évènements : mélangez ensemble toutes les cartes Région (Mysthea et Icaion), les trois cartes Colosse et la carte Tempête. &lt;br&gt;&lt;br&gt; Placez le paquet face cachée sur le Plateau d&apos;Évènements. Par ailleurs, mélangez les cartes Monstre pour former un autre paquet. Placez-le face cachée à côté du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>Piochez un Monstre de ce paquet, révélez-le et placez sa figurine sur l&apos;Île correspondante. Appliquez tous les effets liés à ce Monstre (voir p.12).
+
+Révélez un nombre de cartes Évènement correspondant au niveau de difficulté choisi, et placez-les sur le Plateau d&apos;Évènements :
+Facile : 2 cartes Évènement
+Normal : 3 cartes Évènement
+Difficile : 4 cartes Évènement
+
+Résolvez-les l’une après l’autre, en suivant l&apos;ordre dans lequel elles ont été révélées (voir p.9).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si une carte Tempête est révélée, ignorez-la et piochez une autre carte à la place. À la fin de cette étape, mélangez à nouveau la carte Tempête dans le paquet d’Évènements.</translation>
     </message>
 </context>
 <context>
@@ -2147,7 +2163,7 @@ Deal each player three cards from the Curio Deck. Curio Cards are kept hidden fr
     <message>
         <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="11"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>LORE</translation>
     </message>
 </context>
 <context>
@@ -2845,12 +2861,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="26"/>
         <source>Colossus</source>
-        <translation type="unfinished"></translation>
+        <translation>Colosse</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation>Émissaire</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="34"/>
@@ -2878,12 +2894,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>LIVRET DE RÈGLES</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="27"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger les règles du jeu dans votre langue favorite</translation>
     </message>
 </context>
 <context>
@@ -3072,7 +3088,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/main.qml" line="41"/>
         <source>Mysthea Universe</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
