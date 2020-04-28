@@ -29,12 +29,13 @@ MUComponents.CardDetailDelegate {
                     font.letterSpacing: 0.38
                     font.capitalization: Font.AllUppercase
                     color: Palette.white
+                    textFormat: Text.RichText
 
                     text: {
                         const start = cards.code
                         const textColor = root.commandComboBoxModel.color(cards.command)
                         const end = cards.command !== -1 ? qsTr("Command") : cards.typeText
-                        return "<span style=\"font-family: FuturaPTBold\"; color: " + textColor + ";\">" + start + "</span>  " + end
+                        return "<span style='font-family: FuturaPTBold; color: " + textColor + ";'>" + start + "</span>  " + end
                     }
                 }
             }
