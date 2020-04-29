@@ -199,24 +199,21 @@
     </message>
     <message>
         <location filename="icaion.js" line="9"/>
-        <source>These cards add extra Null Cage to your Division Board.
-</source>
-        <oldsource>These cards add extra Null Cage to your Division Board.\n</oldsource>
+        <source>These cards add extra Null Cage to your Division Board.</source>
+        <oldsource>These cards add extra Null Cage to your Division Board.</oldsource>
         <translation>プレイヤーボード上のヌルケージアイコンが多くなります。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="10"/>
-        <source>These cards add extra Strength to your Division Board.
-</source>
-        <oldsource>These cards add extra Strength to your Division Board.\n</oldsource>
+        <source>These cards add extra Strength to your Division Board.</source>
+        <oldsource>These cards add extra Strength to your Division Board.</oldsource>
         <translation>プレイヤーボード上根絶力アイコンが多くなります。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="11"/>
         <source>These cards add extra Movement
-to your Division Board.
-</source>
-        <oldsource>These cards add extra Movement\nto your Division Board.\n</oldsource>
+to your Division Board.</source>
+        <oldsource>These cards add extra Movement\nto your Division Board.</oldsource>
         <translation>プレイヤーボード上のヌ移動のアイコンが多くなります。</translation>
     </message>
     <message>
@@ -422,9 +419,8 @@ NOTE: This means you might investigate the Colossus twice in the same turn, once
     <message>
         <location filename="icaion.js" line="47"/>
         <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your
-Null Cages.
-</source>
-        <oldsource>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.\n</oldsource>
+Null Cages.</source>
+        <oldsource>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.</oldsource>
         <translation>ゲーム終了時にヌルケージに残っているコアム毎に1評価ポイントではなく2評価ポイントを受け取ります。</translation>
     </message>
     <message>
@@ -516,37 +512,31 @@ Null Cages.
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <oldsource>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <oldsource>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
         <translation>巨像を移動します。
 巨像のクレーターに接している各リージョンの上にパラサイトを2個置きます。
-クレーターの隣接リージョンの中心点にいるシーカーが全て負傷します。
-</translation>
+クレーターの隣接リージョンの中心点にいるシーカーが全て負傷します。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="64"/>
         <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
-Place one Parasite on each Region adjacent to the Colossus’ crater.
-</source>
-        <oldsource>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\n</oldsource>
+Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
+        <oldsource>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.</oldsource>
         <translation>巨像を移動します。巨像が移動中に触れるクレーターの隣接リージョンの中心点にいるシーカーが全て負傷します。（移動元と移動先のクレーターも含め）
-巨像のクレーターに接している各リージョンの上にパラサイトを1個置きます。
-</translation>
+巨像のクレーターに接している各リージョンの上にパラサイトを1個置きます。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="65"/>
         <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
 Move the Colossus.
 Place one Parasite on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <oldsource>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <oldsource>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
         <translation>巨像のクレーターに接している各リージョンの上にパラサイトを1個置きます。
 巨像を移動します。
 巨像のクレーターに接している各リージョンの上にパラサイトを1個置きます。
-クレーターの隣接リージョンの中心点にいるシーカーが全て負傷します。
-</translation>
+クレーターの隣接リージョンの中心点にいるシーカーが全て負傷します。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="66"/>
@@ -561,12 +551,10 @@ The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crat
     <message>
         <location filename="icaion.js" line="68"/>
         <source>Cost: 2 qoam
-Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.
-</source>
-        <oldsource>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.\n</oldsource>
+Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</oldsource>
         <translation>コスト：コアム2個
-所有者のボーナス：自分の中心点（または隣接の中心点）にいる他プレイヤーのシーカーが負傷します。
-</translation>
+所有者のボーナス：自分の中心点（または隣接の中心点）にいる他プレイヤーのシーカーが負傷します。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="69"/>
@@ -576,12 +564,10 @@ Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.
     <message>
         <location filename="icaion.js" line="70"/>
         <source>Cost: 2 qoam
-Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.
-</source>
-        <oldsource>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.\n</oldsource>
+Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</oldsource>
         <translation>コスト：コアム2個
-所有者のボーナス：自分以外の各プレイヤーが任意の色のコアムを1個共用サプライに戻さなければなりません。
-</translation>
+所有者のボーナス：自分以外の各プレイヤーが任意の色のコアムを1個共用サプライに戻さなければなりません。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="71"/>
@@ -591,12 +577,10 @@ Owner effect: Each opponent must discard 1 Qoam of their choosing to the common 
     <message>
         <location filename="icaion.js" line="72"/>
         <source>Cost: 2 qoam
-Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.
-</source>
-        <oldsource>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.\n</oldsource>
+Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</oldsource>
         <translation>コスト：コアム2個
-所有者のボーナス：任意の色のコアムを捨てれば2評価ポイントを受け取ります。
-</translation>
+所有者のボーナス：任意の色のコアムを捨てれば2評価ポイントを受け取ります。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="73"/>
@@ -606,12 +590,10 @@ Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputati
     <message>
         <location filename="icaion.js" line="74"/>
         <source>Cost: 3 qoam
-Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).
-</source>
-        <oldsource>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).\n</oldsource>
+Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
+        <oldsource>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</oldsource>
         <translation>コスト：コアム3個
-所有者のボーナス：共用サプライから任意のコアムを1個受け取り自分の任意のヌルケージに置きます。（前から置いてある場合の他コアムを捨てることなく）
-</translation>
+所有者のボーナス：共用サプライから任意のコアムを1個受け取り自分の任意のヌルケージに置きます。（前から置いてある場合の他コアムを捨てることなく）</translation>
     </message>
     <message>
         <location filename="icaion.js" line="75"/>
@@ -621,12 +603,10 @@ Owner effect: Take from the supply 1 Qoam of any color and add it to one of your
     <message>
         <location filename="icaion.js" line="76"/>
         <source>Cost: 3 qoam
-Owner effect: You may either draw a Curio Card or play a Curio Card.
-</source>
-        <oldsource>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.\n</oldsource>
+Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
+        <oldsource>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.</oldsource>
         <translation>コスト：コアム3個
-所有者のボーナス：キュリオカードを1枚引く、またはキュリオカードを1枚プレイします。
-</translation>
+所有者のボーナス：キュリオカードを1枚引く、またはキュリオカードを1枚プレイします。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="77"/>
@@ -636,12 +616,10 @@ Owner effect: You may either draw a Curio Card or play a Curio Card.
     <message>
         <location filename="icaion.js" line="78"/>
         <source>Cost: 4 qoam
-Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.
-</source>
-        <oldsource>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.\n</oldsource>
+Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
+        <oldsource>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</oldsource>
         <translation>コスト：コアム4個
-所有者のボーナス：自分のシーカーを1つの中心点まで移動する、または自分のシーカーに接している任意のリージョンから無料でパラサイトを1個根絶します。
-</translation>
+所有者のボーナス：自分のシーカーを1つの中心点まで移動する、または自分のシーカーに接している任意のリージョンから無料でパラサイトを1個根絶します。</translation>
     </message>
     <message>
         <location filename="icaion.js" line="79"/>
@@ -651,12 +629,10 @@ Owner effect: You may either move your Seeker of one node or eradicate for free 
     <message>
         <location filename="icaion.js" line="80"/>
         <source>Cost: 4 qoam
-Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.
-</source>
-        <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</oldsource>
+Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
+        <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</oldsource>
         <translation>コスト：コアム4個
-所有者のボーナス：巨像を時計回りか反時計回りに1つのクレーターまで移動できます。そして、移動先のクレーターに接している両リージョンの上にそれぞれパラサイトを1個置きます。
-</translation>
+所有者のボーナス：巨像を時計回りか反時計回りに1つのクレーターまで移動できます。そして、移動先のクレーターに接している両リージョンの上にそれぞれパラサイトを1個置きます。</translation>
     </message>
     <message>
         <location filename="../configurations/mysthea-cards.js" line="1"/>
