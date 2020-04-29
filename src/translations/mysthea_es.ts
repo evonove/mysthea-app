@@ -53,7 +53,7 @@
         <location filename="../qml/Icaion/Artwork.qml" line="29"/>
         <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">BUSCADOR</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="33"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">HERRAMIENTA ESPECIALIZADA</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="41"/>
@@ -265,6 +265,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="21"/>
+        <location filename="thefall.js" line="17"/>
         <source>The Lone Survivor</source>
         <translation type="unfinished">EL SUPERVIVIENTE SOLITARIO</translation>
     </message>
@@ -275,6 +276,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="23"/>
+        <location filename="thefall.js" line="26"/>
         <source>The Cursed</source>
         <translation type="unfinished">LA MALDITA</translation>
     </message>
@@ -285,6 +287,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="25"/>
+        <location filename="thefall.js" line="20"/>
         <source>The Heir</source>
         <translation type="unfinished">EL HEREDERO</translation>
     </message>
@@ -295,6 +298,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="27"/>
+        <location filename="thefall.js" line="24"/>
         <source>The Machine</source>
         <translation type="unfinished">LA MÁQUINA</translation>
     </message>
@@ -305,6 +309,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="29"/>
+        <location filename="thefall.js" line="22"/>
         <source>The Outsider</source>
         <translation type="unfinished">EL FORASTERO</translation>
     </message>
@@ -315,6 +320,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="31"/>
+        <location filename="thefall.js" line="28"/>
         <source>The Creature</source>
         <translation type="unfinished">LA CRIATURA</translation>
     </message>
@@ -325,6 +331,7 @@ NOTA: Debe haber un segundo Qoam disponible en la Región.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="33"/>
+        <location filename="thefall.js" line="18"/>
         <source>The Criminal</source>
         <translation type="unfinished">LA CRIMINAL</translation>
     </message>
@@ -449,26 +456,31 @@ NOTA: Esto significa que podrías Investigar al Coloso dos veces en un turno, un
     </message>
     <message>
         <location filename="icaion.js" line="57"/>
+        <location filename="mysthea.js" line="144"/>
         <source>River</source>
         <translation type="unfinished">RÍO</translation>
     </message>
     <message>
         <location filename="icaion.js" line="58"/>
+        <location filename="mysthea.js" line="145"/>
         <source>Mountain</source>
         <translation type="unfinished">MONTAÑA</translation>
     </message>
     <message>
         <location filename="icaion.js" line="59"/>
+        <location filename="mysthea.js" line="146"/>
         <source>Forest</source>
         <translation type="unfinished">BOSQUE</translation>
     </message>
     <message>
         <location filename="icaion.js" line="60"/>
+        <location filename="mysthea.js" line="148"/>
         <source>Crystal Field</source>
         <translation type="unfinished">CAMPO DE CRISTALES</translation>
     </message>
     <message>
         <location filename="icaion.js" line="61"/>
+        <location filename="mysthea.js" line="147"/>
         <source>Land of Myst</source>
         <translation type="unfinished">TIERRA NUBLADA</translation>
     </message>
@@ -481,7 +493,11 @@ NOTA: Esto significa que podrías Investigar al Coloso dos veces en un turno, un
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
+        <oldsource>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
         <translation type="unfinished">1. Moved al Coloso.
 2. Colocad dos Parásitos en cada Región adyacente al cráter del Coloso.
 3. El Coloso hiere a los Buscadores situados en todos los nodos de las Regiones adyacentes al cráter.
@@ -1390,12 +1406,19 @@ Comportamiento: Cuando Utcoro ataque, todos los jugadores que no participen en l
     </message>
     <message>
         <location filename="mysthea.js" line="154"/>
-        <source>Cannibarok the Qoam Eater:\Strength 12
+        <source>Cannibarok the Qoam Eater:
+Strength 12
 Rewards:
 Gold - Gain 6 Energy Points and 6 Glory Points.
 Silver - Gain 4 Energy Points and 4 Glory Points.
 Bronze - Gain 2 Energy Points and 2 Glory Points.
 Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
+        <oldsource>Cannibarok the Qoam Eater:\Strength 12
+Rewards:
+Gold - Gain 6 Energy Points and 6 Glory Points.
+Silver - Gain 4 Energy Points and 4 Glory Points.
+Bronze - Gain 2 Energy Points and 2 Glory Points.
+Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</oldsource>
         <translation type="unfinished">Cannibarok el Comedor de Qoam:
 Fuerza 12
 Recompensas:
@@ -1452,7 +1475,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="3"/>
-        <source>CHARACTER ABILITY\nWhenever you Attack, add 2 Strength Points to your total.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Attack, add 2 Strength Points to your total.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Attack, add 2 Strength Points to your total.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1462,7 +1490,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="5"/>
-        <source>CHARACTER ABILITY\nWhenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.\nRELIC POWER\nImmediately take 3 Qoam crystals of any kind from the common pool.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.
+RELIC POWER
+Immediately take 3 Qoam crystals of any kind from the common pool.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.\nRELIC POWER\nImmediately take 3 Qoam crystals of any kind from the common pool.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1472,7 +1505,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="7"/>
-        <source>CHARACTER ABILITY\nOnce during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.\nRELIC POWER\nSwap position with another Character on the Game Board.\n</source>
+        <source>CHARACTER ABILITY
+Once during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.
+RELIC POWER
+Swap position with another Character on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY\nOnce during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.\nRELIC POWER\nSwap position with another Character on the Game Board.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1482,7 +1520,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="9"/>
-        <source>CHARACTER ABILITY\nAt the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+At the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY\nAt the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1492,7 +1535,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="11"/>
-        <source>CHARACTER ABILITY\nDuring your turn, when you Activate a Machine you may activate another Machine you own in the same Region.\nRELIC POWER\nTake a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.\n</source>
+        <source>CHARACTER ABILITY
+During your turn, when you Activate a Machine you may activate another Machine you own in the same Region.
+RELIC POWER
+Take a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.
+</source>
+        <oldsource>CHARACTER ABILITY\nDuring your turn, when you Activate a Machine you may activate another Machine you own in the same Region.\nRELIC POWER\nTake a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1502,7 +1550,13 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="13"/>
-        <source>CHARACTER ABILITY\nWhenever you Move, you may always travel up to a distance of 2 nodes.\nRELIC POWER\nMove to any node of the Game Board\nwith no other Character on it.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may always travel up to a distance of 2 nodes.
+RELIC POWER
+Move to any node of the Game Board
+with no other Character on it.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Move, you may always travel up to a distance of 2 nodes.\nRELIC POWER\nMove to any node of the Game Board\nwith no other Character on it.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1512,7 +1566,12 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="15"/>
-        <source>CHARACTER ABILITY\nYou may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.\nRELIC POWER\nFreely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.\n</source>
+        <source>CHARACTER ABILITY
+You may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.
+RELIC POWER
+Freely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.
+</source>
+        <oldsource>CHARACTER ABILITY\nYou may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.\nRELIC POWER\nFreely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1522,32 +1581,63 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="19"/>
-        <source>CHARACTER ABILITY\nWithout the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.\nWhile wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.\nRELIC POWER\nPut on the Armor or take it off.\nNOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <source>CHARACTER ABILITY
+Without the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.
+While wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.
+RELIC POWER
+Put on the Armor or take it off.
+NOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <oldsource>CHARACTER ABILITY\nWithout the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.\nWhile wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.\nRELIC POWER\nPut on the Armor or take it off.\nNOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="21"/>
-        <source>CHARACTER ABILITY\nWhenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.\nRELIC POWER\nDeposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.
+RELIC POWER
+Deposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.\nRELIC POWER\nDeposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="23"/>
-        <source>CHARACTER ABILITY\nDuring an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.\nRELIC POWER\nWhen your Investigate the Colossus action is successful, do not move your Character back to the City.\n</source>
+        <source>CHARACTER ABILITY
+During an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.
+RELIC POWER
+When your Investigate the Colossus action is successful, do not move your Character back to the City.
+</source>
+        <oldsource>CHARACTER ABILITY\nDuring an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.\nRELIC POWER\nWhen your Investigate the Colossus action is successful, do not move your Character back to the City.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="25"/>
-        <source>CHARACTER ABILITY\nOnce per turn, move any Fortification up to a 2 node distance from its current position.\nRELIC POWER\nReveal a Primal Shard from the base of the Colossus, then put it back into its slot.\n</source>
+        <source>CHARACTER ABILITY
+Once per turn, move any Fortification up to a 2 node distance from its current position.
+RELIC POWER
+Reveal a Primal Shard from the base of the Colossus, then put it back into its slot.
+</source>
+        <oldsource>CHARACTER ABILITY\nOnce per turn, move any Fortification up to a 2 node distance from its current position.\nRELIC POWER\nReveal a Primal Shard from the base of the Colossus, then put it back into its slot.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="27"/>
-        <source>CHARACTER ABILITY\nWhenever you gain an Eradication Bonus, benefit from each revealed Command Card.\nRELIC POWER\nImmediately attack any Monster, regardless of your position on the Game Board. This is not an action.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you gain an Eradication Bonus, benefit from each revealed Command Card.
+RELIC POWER
+Immediately attack any Monster, regardless of your position on the Game Board. This is not an action.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you gain an Eradication Bonus, benefit from each revealed Command Card.\nRELIC POWER\nImmediately attack any Monster, regardless of your position on the Game Board. This is not an action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="29"/>
-        <source>CHARACTER ABILITY\nWhenever you Move, you may move another Character instead of yours.\nRELIC POWER\nEach time you Use the Relic, copy and resolve another player’s Relic Power.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may move another Character instead of yours.
+RELIC POWER
+Each time you Use the Relic, copy and resolve another player’s Relic Power.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Move, you may move another Character instead of yours.\nRELIC POWER\nEach time you Use the Relic, copy and resolve another player’s Relic Power.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1562,7 +1652,10 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="32"/>
-        <source>STRENGTH 5\nDuring the Colossus Card resolution, it inflicts 10 damage to the City.\n</source>
+        <source>STRENGTH 5
+During the Colossus Card resolution, it inflicts 10 damage to the City.
+</source>
+        <oldsource>STRENGTH 5\nDuring the Colossus Card resolution, it inflicts 10 damage to the City.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1572,7 +1665,10 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="34"/>
-        <source>STRENGTH 7\nWhen it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.\n</source>
+        <source>STRENGTH 7
+When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1582,7 +1678,11 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="36"/>
-        <source>STRENGTH 6\nWhen it comes into play, all players discharge their Relics.\nRelics cannot be recharged until Utcoro leaves the game.\n</source>
+        <source>STRENGTH 6
+When it comes into play, all players discharge their Relics.
+Relics cannot be recharged until Utcoro leaves the game.
+</source>
+        <oldsource>STRENGTH 6\nWhen it comes into play, all players discharge their Relics.\nRelics cannot be recharged until Utcoro leaves the game.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1592,7 +1692,11 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="38"/>
-        <source>STRENGTH 9\nWhile Onygauros is in play, players cannot benefit from an\nEradication Bonus.\n</source>
+        <source>STRENGTH 9
+While Onygauros is in play, players cannot benefit from an
+Eradication Bonus.
+</source>
+        <oldsource>STRENGTH 9\nWhile Onygauros is in play, players cannot benefit from an\nEradication Bonus.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1602,7 +1706,10 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="40"/>
-        <source>STRENGTH 7\nWhen it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.\n</source>
+        <source>STRENGTH 7
+When it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1612,7 +1719,10 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="42"/>
-        <source>STRENGTH 6\nWhile Caerulas is in play, players cannot perform an Investigate the Colossus action.\n</source>
+        <source>STRENGTH 6
+While Caerulas is in play, players cannot perform an Investigate the Colossus action.
+</source>
+        <oldsource>STRENGTH 6\nWhile Caerulas is in play, players cannot perform an Investigate the Colossus action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1622,7 +1732,10 @@ Comportamiento: Cuando Kodror se mueva, la Isla en la que esté actualmente se m
     </message>
     <message>
         <location filename="thefall.js" line="44"/>
-        <source>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</source>
+        <source>STRENGTH 8
+Each player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.
+</source>
+        <oldsource>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2248,7 +2361,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="222"/>
         <source>The Lone Survivor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">EL SUPERVIVIENTE SOLITARIO</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="226"/>
@@ -2263,7 +2376,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="249"/>
         <source>The Heir</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">EL HEREDERO</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="253"/>
@@ -2278,7 +2391,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="276"/>
         <source>The Machine</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA MÁQUINA</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="280"/>
@@ -2293,7 +2406,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="303"/>
         <source>The Creature</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA CRIATURA</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="308"/>
@@ -2303,7 +2416,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="326"/>
         <source>The Outsider</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">EL FORASTERO</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="331"/>
@@ -2318,7 +2431,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="354"/>
         <source>The Criminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA CRIMINAL</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="359"/>
@@ -2328,7 +2441,7 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="380"/>
         <source>The Cursed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA MALDITA</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="385"/>
@@ -2808,7 +2921,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">BUSCADOR</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="34"/>

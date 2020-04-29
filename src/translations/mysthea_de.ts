@@ -199,29 +199,36 @@
     </message>
     <message>
         <location filename="icaion.js" line="9"/>
-        <source>These cards add extra Null Cage to your Division Board.\n</source>
-        <translation>Diese Karten erhöhen deine Zahl an Nullkäfig.\n</translation>
+        <source>These cards add extra Null Cage to your Division Board.</source>
+        <oldsource>These cards add extra Null Cage to your Division Board.\n</oldsource>
+        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Nullkäfig.\n</translation>
     </message>
     <message>
         <location filename="icaion.js" line="10"/>
-        <source>These cards add extra Strength to your Division Board.\n</source>
-        <translation>Diese Karten erhöhen deine Zahl an Stärke.\n</translation>
+        <source>These cards add extra Strength to your Division Board.</source>
+        <oldsource>These cards add extra Strength to your Division Board.\n</oldsource>
+        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Stärke.\n</translation>
     </message>
     <message>
         <location filename="icaion.js" line="11"/>
-        <source>These cards add extra Movement\nto your Division Board.\n</source>
-        <translation>Diese Karten erhöhen deine Zahl an Bewegungs.\n</translation>
+        <source>These cards add extra Movement to your Division Board.</source>
+        <oldsource>These cards add extra Movement\nto your Division Board.\n</oldsource>
+        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Bewegungs.\n</translation>
     </message>
     <message>
         <location filename="icaion.js" line="12"/>
-        <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.\nNOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
-        <translation>Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
+        <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
+NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
+        <oldsource>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.\nNOTE: You may only benefit from each of these Upgrade Cards once per action.</oldsource>
+        <translation type="unfinished">Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
 HINWEIS: All diese Upgradekarten, darfst du nur einmal je Aktion einsetzen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="13"/>
-        <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.\nNOTE: There must still be a second Qoam available in the Region.</source>
-        <translation>Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
+        <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
+NOTE: There must still be a second Qoam available in the Region.</source>
+        <oldsource>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.\nNOTE: There must still be a second Qoam available in the Region.</oldsource>
+        <translation type="unfinished">Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
 HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</translation>
     </message>
     <message>
@@ -261,6 +268,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="21"/>
+        <location filename="thefall.js" line="17"/>
         <source>The Lone Survivor</source>
         <translation>Der Einsame Überlebende</translation>
     </message>
@@ -271,6 +279,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="23"/>
+        <location filename="thefall.js" line="26"/>
         <source>The Cursed</source>
         <translation>Die Verfluchte</translation>
     </message>
@@ -281,6 +290,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="25"/>
+        <location filename="thefall.js" line="20"/>
         <source>The Heir</source>
         <translation>Der Erbe</translation>
     </message>
@@ -291,6 +301,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="27"/>
+        <location filename="thefall.js" line="24"/>
         <source>The Machine</source>
         <translation>Die Maschine</translation>
     </message>
@@ -301,6 +312,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="29"/>
+        <location filename="thefall.js" line="22"/>
         <source>The Outsider</source>
         <translation>Der Aussenseiter</translation>
     </message>
@@ -311,6 +323,7 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="31"/>
+        <location filename="thefall.js" line="28"/>
         <source>The Creature</source>
         <translation>Die Kreatur</translation>
     </message>
@@ -321,13 +334,18 @@ HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</
     </message>
     <message>
         <location filename="icaion.js" line="33"/>
+        <location filename="thefall.js" line="18"/>
         <source>The Criminal</source>
         <translation>Die Verbrecherin</translation>
     </message>
     <message>
         <location filename="icaion.js" line="34"/>
-        <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.\nBy the end of a turn in which you have not performed any Special Action, put on the Armor.\nWhile you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.\nNOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
-        <translation>Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;Koloss erkunden&quot;-, &quot;Apparatur erhalten&quot;- und &quot;Apparatur installieren&quot;-Aktion als Spezialaktion ausführen.
+        <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.
+By the end of a turn in which you have not performed any Special Action, put on the Armor.
+While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
+NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
+        <oldsource>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.\nBy the end of a turn in which you have not performed any Special Action, put on the Armor.\nWhile you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.\nNOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</oldsource>
+        <translation type="unfinished">Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;Koloss erkunden&quot;-, &quot;Apparatur erhalten&quot;- und &quot;Apparatur installieren&quot;-Aktion als Spezialaktion ausführen.
 HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könntest, einmal als Standard- und einmal als Spezialaktion.
 </translation>
     </message>
@@ -393,8 +411,9 @@ HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könn
     </message>
     <message>
         <location filename="icaion.js" line="47"/>
-        <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.\n</source>
-        <translation>Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.\n</translation>
+        <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your Null Cages.</source>
+        <oldsource>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.\n</oldsource>
+        <translation type="unfinished">Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.\n</translation>
     </message>
     <message>
         <location filename="icaion.js" line="48"/>
@@ -443,26 +462,31 @@ HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könn
     </message>
     <message>
         <location filename="icaion.js" line="57"/>
+        <location filename="mysthea.js" line="144"/>
         <source>River</source>
         <translation>Fluss</translation>
     </message>
     <message>
         <location filename="icaion.js" line="58"/>
+        <location filename="mysthea.js" line="145"/>
         <source>Mountain</source>
         <translation>Berg</translation>
     </message>
     <message>
         <location filename="icaion.js" line="59"/>
+        <location filename="mysthea.js" line="146"/>
         <source>Forest</source>
         <translation>Wald</translation>
     </message>
     <message>
         <location filename="icaion.js" line="60"/>
+        <location filename="mysthea.js" line="148"/>
         <source>Crystal Field</source>
         <translation>Kristallfeld</translation>
     </message>
     <message>
         <location filename="icaion.js" line="61"/>
+        <location filename="mysthea.js" line="147"/>
         <source>Land of Myst</source>
         <translation>Geheimnisvolle Lande</translation>
     </message>
@@ -473,22 +497,32 @@ HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könn
     </message>
     <message>
         <location filename="icaion.js" line="63"/>
-        <source>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</source>
-        <translation>Bewege den Koloss.
+        <source>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
+</source>
+        <oldsource>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
+        <translation type="unfinished">Bewege den Koloss.
 Platziere zwei Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.
 </translation>
     </message>
     <message>
         <location filename="icaion.js" line="64"/>
-        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\n</source>
-        <translation>Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
+        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
+Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
+        <oldsource>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\n</oldsource>
+        <translation type="unfinished">Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.\n</translation>
     </message>
     <message>
         <location filename="icaion.js" line="65"/>
-        <source>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</source>
-        <translation>
+        <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
+Move the Colossus.
+Place one Parasite on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <oldsource>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
+        <translation type="unfinished">
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Bewege den Koloss.
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
@@ -506,8 +540,10 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
     </message>
     <message>
         <location filename="icaion.js" line="68"/>
-        <source>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.\n</source>
-        <translation>Kosten:2 Qoam
+        <source>Cost: 2 qoam
+Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.\n</oldsource>
+        <translation type="unfinished">Kosten:2 Qoam
 Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines Entdeckers oder daran angrenzender Knotenpunkte.\n</translation>
     </message>
     <message>
@@ -517,8 +553,10 @@ Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines 
     </message>
     <message>
         <location filename="icaion.js" line="70"/>
-        <source>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.\n</source>
-        <translation>Kosten:2 Qoam
+        <source>Cost: 2 qoam
+Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.\n</oldsource>
+        <translation type="unfinished">Kosten:2 Qoam
 Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vorrat abwerfen.\n</translation>
     </message>
     <message>
@@ -528,8 +566,10 @@ Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vo
     </message>
     <message>
         <location filename="icaion.js" line="72"/>
-        <source>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.\n</source>
-        <translation>Kosten:2 Qoam
+        <source>Cost: 2 qoam
+Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
+        <oldsource>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.\n</oldsource>
+        <translation type="unfinished">Kosten:2 Qoam
 Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Reputationspunkte zu erhalten.
 </translation>
     </message>
@@ -540,8 +580,10 @@ Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Re
     </message>
     <message>
         <location filename="icaion.js" line="74"/>
-        <source>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).\n</source>
-        <translation>Kosten: 3 Qoam
+        <source>Cost: 3 qoam
+Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
+        <oldsource>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).\n</oldsource>
+        <translation type="unfinished">Kosten: 3 Qoam
 Effekt für Besitzer:
 Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nullkäfige ein (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).\n</translation>
     </message>
@@ -552,8 +594,10 @@ Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nu
     </message>
     <message>
         <location filename="icaion.js" line="76"/>
-        <source>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.\n</source>
-        <translation>Kosten: 3 Qoam
+        <source>Cost: 3 qoam
+Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
+        <oldsource>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.\n</oldsource>
+        <translation type="unfinished">Kosten: 3 Qoam
 Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Artefaktkarte spielen.\n</translation>
     </message>
     <message>
@@ -563,8 +607,10 @@ Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Art
     </message>
     <message>
         <location filename="icaion.js" line="78"/>
-        <source>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.\n</source>
-        <translation>Kosten: 4 Qoam
+        <source>Cost: 4 qoam
+Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
+        <oldsource>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.\n</oldsource>
+        <translation type="unfinished">Kosten: 4 Qoam
 Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt weiterbewegen oder kostenlos einen Parasiten in einer an deinen Entdecker angrenzenden Region beseitigen.
 </translation>
     </message>
@@ -575,8 +621,10 @@ Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt w
     </message>
     <message>
         <location filename="icaion.js" line="80"/>
-        <source>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</source>
-        <translation>Kosten: 4 Qoam
+        <source>Cost: 4 qoam
+Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
+        <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</oldsource>
+        <translation type="unfinished">Kosten: 4 Qoam
 Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegenuhrzeigersinn weiter bewegen. Platziere dann je einen Parasiten auf beide Regionen, die am Krater angrenzen.
 </translation>
     </message>
@@ -1302,37 +1350,89 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="mysthea.js" line="150"/>
-        <source>Boulron the Reaper:\\nStrength 11\\nRewards:\\nGold - Gain 9 Glory Points.\\nSilver - Gain 4 Glory Points.\\nBronze - Gain 2 Glory Points.\\nBehaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
+        <source>Boulron the Reaper:
+Strength 11
+Rewards:
+Gold - Gain 9 Glory Points.
+Silver - Gain 4 Glory Points.
+Bronze - Gain 2 Glory Points.
+Behaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
+        <oldsource>Boulron the Reaper:\\nStrength 11\\nRewards:\\nGold - Gain 9 Glory Points.\\nSilver - Gain 4 Glory Points.\\nBronze - Gain 2 Glory Points.\\nBehaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</oldsource>
         <translation type="unfinished">Boulron der Schnitter\nStärke 11\nBelohnungen:\nGold - Erhalte 9 Ruhmespunkte.\nSilber - Erhalte 4 Ruhmespunkte.\nBronze - Erhalte 2 Ruhmespunkte.\nVerhalten: Da Boulron sehr flink und geschickt ist, zählt die Stärke von Festungen nicht, wenn er eine Insel angreift.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="151"/>
-        <source>Onygauros the Collector:\\nStrength 13\\nRewards:\\nGold - Gain 4 Command Points and 4 Glory Points.\\nSilver - Gain 3 Command Points and 3 Glory Points.\\nBronze - Gain 2 Command Points and 2 Glory Points.\\nBehaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <source>Onygauros the Collector:
+Strength 13
+Rewards:
+Gold - Gain 4 Command Points and 4 Glory Points.
+Silver - Gain 3 Command Points and 3 Glory Points.
+Bronze - Gain 2 Command Points and 2 Glory Points.
+Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <oldsource>Onygauros the Collector:\\nStrength 13\\nRewards:\\nGold - Gain 4 Command Points and 4 Glory Points.\\nSilver - Gain 3 Command Points and 3 Glory Points.\\nBronze - Gain 2 Command Points and 2 Glory Points.\\nBehaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</oldsource>
         <translation type="unfinished">Onygauros der Sammler:\nStärke 13\nBelohnungen:\nGold - Erhalte 4 Befehlspunkte und 4 Ruhmespunkte.\nSilber - Erhalte 3 Befehlspunkte und 3 Ruhmespunkte.\nBronze - Erhalte 2 Befehlspunkte und 2 Ruhmespunkte.\nVerhalten: Wenn Onygauros angreift, wählt jeder Spieler in Zugreihenfolge (auch Spieler, die auf der Insel keine Einheiten haben) zufällig eine Karte aus dem Abwurfstapel und entfernt sie aus dem Spiel - Onygauros sammelt diese. Alternativ können Spieler auch 5 Ruhmespunkte bezahlen. Diese EntscheiDung muss getroffen werden, bevor zufällig eine Karte bestimmt wird.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="152"/>
-        <source>Caerulas the Inhabitant from Below:\\nStrength 15\\nRewards:\\nGold - Gain 5 Experience Points and 5 Glory Points.\\nSilver - Gain 4 Experience Points and 4 Glory Points.\\nBronze - Gain 3 Experience Points and 3 Glory Points.\\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
+        <source>Caerulas the Inhabitant from Below:
+Strength 15
+Rewards:
+Gold - Gain 5 Experience Points and 5 Glory Points.
+Silver - Gain 4 Experience Points and 4 Glory Points.
+Bronze - Gain 3 Experience Points and 3 Glory Points.
+Behaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.
+Note: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
+        <oldsource>Caerulas the Inhabitant from Below:\\nStrength 15\\nRewards:\\nGold - Gain 5 Experience Points and 5 Glory Points.\\nSilver - Gain 4 Experience Points and 4 Glory Points.\\nBronze - Gain 3 Experience Points and 3 Glory Points.\\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</oldsource>
         <translation type="unfinished">Caerulas aus der Tiefe:\nStärke 15\nBelohnungen:\nGold - Erhalte 5 Erfahrungspunkte und 5 Ruhmespunkte.\nSilber - Erhalte 4 Erfahrungspunkte und 4 Ruhmespunkte.\nBronze - Erhalte 3 Erfahrungspunkte und 3 Ruhmespunkte.\nVerhalten: Wenn Caerulas angreift aber nicht besiegt wird, fällt er in einen Blutrausch. Er bewegt sich sofort eine Insel im Uhrzeigersinn weiter und greift erneut an.\nHinweis: Nach dem zweiten Angriff hält er inne und greift erst bei seiner nächsten Aktivierung wieder an.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="153"/>
-        <source>Utcoro the Swarmer:\\nStrength 10\\nRewards:\\nGold - Gain 3 Glory Points. You may also Face an Encounter.\\nSilver - Gain 2 Glory Points. You may also Face an Encounter.\\nBronze - Gain 1 Glory Point. You may also Face an Encounter.\\nYou can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.\\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
+        <source>Utcoro the Swarmer:
+Strength 10
+Rewards:
+Gold - Gain 3 Glory Points. You may also Face an Encounter.
+Silver - Gain 2 Glory Points. You may also Face an Encounter.
+Bronze - Gain 1 Glory Point. You may also Face an Encounter.
+You can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.
+Behaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
+        <oldsource>Utcoro the Swarmer:\\nStrength 10\\nRewards:\\nGold - Gain 3 Glory Points. You may also Face an Encounter.\\nSilver - Gain 2 Glory Points. You may also Face an Encounter.\\nBronze - Gain 1 Glory Point. You may also Face an Encounter.\\nYou can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.\\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</oldsource>
         <translation type="unfinished">Utcoro der Jäger:\nStärke 10\nBelohnungen:\nGold - Erhalte 3 Ruhmespunkte. Du kannst eine Begegnung haben.\nSilber - Erhalte 2 Ruhmespunkte. Du kannst eine Begegnung haben.\nBronze - Erhalte 1 Ruhmespunkt. Du kannst eine Begegnung haben.\nDu kannst diese Begegnungen auch haben, falls sich Dein Held und Dein Begegnungsmarker nicht auf der gleichen Insel befinden. Du musst keine Erfahrungspunkte bezahlen. Alle anderen Regeln für Begegnungen sind unverändert.\nVerhalten: Wenn Utcoro angreift, verlieren alle Spieler, die nicht am Kampf teilnehmen (Feiglinge!) sofort 5 Ruhmespunkte.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="154"/>
-        <source>Cannibarok the Qoam Eater:\\nStrength 12\\nRewards:\\nGold - Gain 6 Energy Points and 6 Glory Points.\\nSilver - Gain 4 Energy Points and 4 Glory Points.\\nBronze - Gain 2 Energy Points and 2 Glory Points.\\nBehaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
+        <source>Cannibarok the Qoam Eater:
+Strength 12
+Rewards:
+Gold - Gain 6 Energy Points and 6 Glory Points.
+Silver - Gain 4 Energy Points and 4 Glory Points.
+Bronze - Gain 2 Energy Points and 2 Glory Points.
+Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
+        <oldsource>Cannibarok the Qoam Eater:\\nStrength 12\\nRewards:\\nGold - Gain 6 Energy Points and 6 Glory Points.\\nSilver - Gain 4 Energy Points and 4 Glory Points.\\nBronze - Gain 2 Energy Points and 2 Glory Points.\\nBehaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</oldsource>
         <translation type="unfinished">Cannibarok der Qoamfresser:\nStärke 12\nBelohnungen:\nGold - Erhalte 6 Energiepunkte und 6 Ruhmespunkte.\nSilber - Erhalte 4 Energiepunkte und 4 Ruhmespunkte.\nBronze - Erhalte 2 Energiepunkte und 2 Ruhmespunkte.\nVerhalten: Wenn Cannibarok eine Insel angreift, auf der sich eine Kristallregion befindet, frisst er sich an den Kristallen satt und erhält 2 Stärkepunkte bis zum Ende des Angriffs.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="155"/>
-        <source>Obsidusa The Devourer:\\nStrength 14\\nRewards:\\nGold - Gain 7 Glory Points and draw 1 Command card.\\nSilver - Gain 5 Glory Points and draw 1 Command card.\\nBronze - Gain 3 Glory Points and draw 1 Command card.\\nCommand cards are drawn from the Era Deck of the current Era.\\nBehaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
+        <source>Obsidusa The Devourer:
+Strength 14
+Rewards:
+Gold - Gain 7 Glory Points and draw 1 Command card.
+Silver - Gain 5 Glory Points and draw 1 Command card.
+Bronze - Gain 3 Glory Points and draw 1 Command card.
+Command cards are drawn from the Era Deck of the current Era.
+Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
+        <oldsource>Obsidusa The Devourer:\\nStrength 14\\nRewards:\\nGold - Gain 7 Glory Points and draw 1 Command card.\\nSilver - Gain 5 Glory Points and draw 1 Command card.\\nBronze - Gain 3 Glory Points and draw 1 Command card.\\nCommand cards are drawn from the Era Deck of the current Era.\\nBehaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</oldsource>
         <translation type="unfinished">ObsiDusa der Verschlinger:\nStärke 14\nBelohnungen:\nGold - Erhalte 7 Ruhmespunkte und ziehe 1 Befehlskarte..\nSilber - Erhalte 5 Ruhmespunkte und ziehe 1 Befehlskarte.\nBronze - Erhalte 3 Ruhmespunkte und ziehe 1 Befehlskarte.\nDie Befehlskarten werden vom aktuellen Ärastapel gezogen.\nVerhalten: Wenn ObsiDusa angreift aber nicht besiegt wird, bewegt er sich nicht auf die nächste Insel sondern verbleibt, um die Körper der Gefallenen zu verschlingen.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="156"/>
-        <source>Kodror the Infestation:\\nStrength 16\\nRewards:\\nGold - Gain 16 Glory Points.\\nSilver - Gain 12 Glory Points.\\nBronze - Gain 8 Glory Points.\\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
+        <source>Kodror the Infestation:
+Strength 16
+Rewards:
+Gold - Gain 16 Glory Points.
+Silver - Gain 12 Glory Points.
+Bronze - Gain 8 Glory Points.
+Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
+        <oldsource>Kodror the Infestation:\\nStrength 16\\nRewards:\\nGold - Gain 16 Glory Points.\\nSilver - Gain 12 Glory Points.\\nBronze - Gain 8 Glory Points.\\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</oldsource>
         <translation type="unfinished">Kodror der Parasit:\nStärke 16\nBelohnungen:\nGold - Erhalte 16 Ruhmespunkte.\nSilber - Erhalte 12 Ruhmespunkte.\nBronze - Erhalte 8 Ruhmespunkte.\nVerhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wurzeln mit sich (tausche die Insel mit der nächsten Insel im Uhrzeigersinn). Wenn Kodror angreift und besiegt wird, entferne seine Figur aus dem Spiel und drehe seine Ereigniskarte um, um anzuzeigen, dass er nicht mehr im Spiel ist. Entferne seine Ereigniskarte am Ende der aktuellen Ära aus dem Spiel.</translation>
     </message>
     <message>
@@ -1347,7 +1447,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="3"/>
-        <source>CHARACTER ABILITY\nWhenever you Attack, add 2 Strength Points to your total.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Attack, add 2 Strength Points to your total.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Attack, add 2 Strength Points to your total.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1357,7 +1462,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="5"/>
-        <source>CHARACTER ABILITY\nWhenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.\nRELIC POWER\nImmediately take 3 Qoam crystals of any kind from the common pool.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.
+RELIC POWER
+Immediately take 3 Qoam crystals of any kind from the common pool.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.\nRELIC POWER\nImmediately take 3 Qoam crystals of any kind from the common pool.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1367,7 +1477,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="7"/>
-        <source>CHARACTER ABILITY\nOnce during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.\nRELIC POWER\nSwap position with another Character on the Game Board.\n</source>
+        <source>CHARACTER ABILITY
+Once during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.
+RELIC POWER
+Swap position with another Character on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY\nOnce during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.\nRELIC POWER\nSwap position with another Character on the Game Board.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1377,7 +1492,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="9"/>
-        <source>CHARACTER ABILITY\nAt the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+At the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY\nAt the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1387,7 +1507,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="11"/>
-        <source>CHARACTER ABILITY\nDuring your turn, when you Activate a Machine you may activate another Machine you own in the same Region.\nRELIC POWER\nTake a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.\n</source>
+        <source>CHARACTER ABILITY
+During your turn, when you Activate a Machine you may activate another Machine you own in the same Region.
+RELIC POWER
+Take a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.
+</source>
+        <oldsource>CHARACTER ABILITY\nDuring your turn, when you Activate a Machine you may activate another Machine you own in the same Region.\nRELIC POWER\nTake a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1397,7 +1522,13 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="13"/>
-        <source>CHARACTER ABILITY\nWhenever you Move, you may always travel up to a distance of 2 nodes.\nRELIC POWER\nMove to any node of the Game Board\nwith no other Character on it.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may always travel up to a distance of 2 nodes.
+RELIC POWER
+Move to any node of the Game Board
+with no other Character on it.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Move, you may always travel up to a distance of 2 nodes.\nRELIC POWER\nMove to any node of the Game Board\nwith no other Character on it.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1407,7 +1538,12 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="15"/>
-        <source>CHARACTER ABILITY\nYou may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.\nRELIC POWER\nFreely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.\n</source>
+        <source>CHARACTER ABILITY
+You may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.
+RELIC POWER
+Freely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.
+</source>
+        <oldsource>CHARACTER ABILITY\nYou may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.\nRELIC POWER\nFreely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1417,32 +1553,63 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="19"/>
-        <source>CHARACTER ABILITY\nWithout the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.\nWhile wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.\nRELIC POWER\nPut on the Armor or take it off.\nNOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <source>CHARACTER ABILITY
+Without the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.
+While wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.
+RELIC POWER
+Put on the Armor or take it off.
+NOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <oldsource>CHARACTER ABILITY\nWithout the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.\nWhile wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.\nRELIC POWER\nPut on the Armor or take it off.\nNOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="21"/>
-        <source>CHARACTER ABILITY\nWhenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.\nRELIC POWER\nDeposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.
+RELIC POWER
+Deposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.\nRELIC POWER\nDeposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="23"/>
-        <source>CHARACTER ABILITY\nDuring an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.\nRELIC POWER\nWhen your Investigate the Colossus action is successful, do not move your Character back to the City.\n</source>
+        <source>CHARACTER ABILITY
+During an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.
+RELIC POWER
+When your Investigate the Colossus action is successful, do not move your Character back to the City.
+</source>
+        <oldsource>CHARACTER ABILITY\nDuring an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.\nRELIC POWER\nWhen your Investigate the Colossus action is successful, do not move your Character back to the City.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="25"/>
-        <source>CHARACTER ABILITY\nOnce per turn, move any Fortification up to a 2 node distance from its current position.\nRELIC POWER\nReveal a Primal Shard from the base of the Colossus, then put it back into its slot.\n</source>
+        <source>CHARACTER ABILITY
+Once per turn, move any Fortification up to a 2 node distance from its current position.
+RELIC POWER
+Reveal a Primal Shard from the base of the Colossus, then put it back into its slot.
+</source>
+        <oldsource>CHARACTER ABILITY\nOnce per turn, move any Fortification up to a 2 node distance from its current position.\nRELIC POWER\nReveal a Primal Shard from the base of the Colossus, then put it back into its slot.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="27"/>
-        <source>CHARACTER ABILITY\nWhenever you gain an Eradication Bonus, benefit from each revealed Command Card.\nRELIC POWER\nImmediately attack any Monster, regardless of your position on the Game Board. This is not an action.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you gain an Eradication Bonus, benefit from each revealed Command Card.
+RELIC POWER
+Immediately attack any Monster, regardless of your position on the Game Board. This is not an action.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you gain an Eradication Bonus, benefit from each revealed Command Card.\nRELIC POWER\nImmediately attack any Monster, regardless of your position on the Game Board. This is not an action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="29"/>
-        <source>CHARACTER ABILITY\nWhenever you Move, you may move another Character instead of yours.\nRELIC POWER\nEach time you Use the Relic, copy and resolve another player’s Relic Power.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may move another Character instead of yours.
+RELIC POWER
+Each time you Use the Relic, copy and resolve another player’s Relic Power.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Move, you may move another Character instead of yours.\nRELIC POWER\nEach time you Use the Relic, copy and resolve another player’s Relic Power.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1457,7 +1624,10 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="32"/>
-        <source>STRENGTH 5\nDuring the Colossus Card resolution, it inflicts 10 damage to the City.\n</source>
+        <source>STRENGTH 5
+During the Colossus Card resolution, it inflicts 10 damage to the City.
+</source>
+        <oldsource>STRENGTH 5\nDuring the Colossus Card resolution, it inflicts 10 damage to the City.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1467,7 +1637,10 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="34"/>
-        <source>STRENGTH 7\nWhen it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.\n</source>
+        <source>STRENGTH 7
+When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1477,7 +1650,11 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="36"/>
-        <source>STRENGTH 6\nWhen it comes into play, all players discharge their Relics.\nRelics cannot be recharged until Utcoro leaves the game.\n</source>
+        <source>STRENGTH 6
+When it comes into play, all players discharge their Relics.
+Relics cannot be recharged until Utcoro leaves the game.
+</source>
+        <oldsource>STRENGTH 6\nWhen it comes into play, all players discharge their Relics.\nRelics cannot be recharged until Utcoro leaves the game.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1487,7 +1664,11 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="38"/>
-        <source>STRENGTH 9\nWhile Onygauros is in play, players cannot benefit from an\nEradication Bonus.\n</source>
+        <source>STRENGTH 9
+While Onygauros is in play, players cannot benefit from an
+Eradication Bonus.
+</source>
+        <oldsource>STRENGTH 9\nWhile Onygauros is in play, players cannot benefit from an\nEradication Bonus.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1497,7 +1678,10 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="40"/>
-        <source>STRENGTH 7\nWhen it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.\n</source>
+        <source>STRENGTH 7
+When it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1507,7 +1691,10 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="42"/>
-        <source>STRENGTH 6\nWhile Caerulas is in play, players cannot perform an Investigate the Colossus action.\n</source>
+        <source>STRENGTH 6
+While Caerulas is in play, players cannot perform an Investigate the Colossus action.
+</source>
+        <oldsource>STRENGTH 6\nWhile Caerulas is in play, players cannot perform an Investigate the Colossus action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1517,7 +1704,10 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="thefall.js" line="44"/>
-        <source>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</source>
+        <source>STRENGTH 8
+Each player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.
+</source>
+        <oldsource>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
