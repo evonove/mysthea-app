@@ -200,28 +200,32 @@ cartes Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="9"/>
-        <source>These cards add extra Null Cage to your Division Board.\n</source>
+        <source>These cards add extra Null Cage to your Division Board.</source>
         <translation type="unfinished">Ces cartes ajoutent une icône Cage Zéro supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="10"/>
-        <source>These cards add extra Strength to your Division Board.\n</source>
+        <source>These cards add extra Strength to your Division Board.</source>
         <translation type="unfinished">Ces cartes ajoutent une icône Force supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="11"/>
-        <source>These cards add extra Movement\nto your Division Board.\n</source>
+        <source>These cards add extra Movement to your Division Board.</source>
         <translation type="unfinished">Ces cartes ajoutent une icône Mouvement supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="12"/>
-        <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.\nNOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
-        <translation type="unfinished">À chaque fois que vous dépensez du Qoam, vous pouvez d’abord transformer 2 de vos cristaux de Qoam de même couleur en 1 cristal de Qoam de n’importe quelle autre couleur de votre choix. NOTE : Vous ne pouvez bénéficier de l’effet de chaque carte d’amélioration qu’une seule fois par action. </translation>
+        <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
+NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
+        <translation type="unfinished">À chaque fois que vous dépensez du Qoam, vous pouvez d’abord transformer 2 de vos cristaux de Qoam de même couleur en 1 cristal de Qoam de n’importe quelle autre couleur de votre choix.
+NOTE : Vous ne pouvez bénéficier de l’effet de chaque carte d’amélioration qu’une seule fois par action. </translation>
     </message>
     <message>
         <location filename="icaion.js" line="13"/>
-        <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.\nNOTE: There must still be a second Qoam available in the Region.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 1 Qoam de n’importe quelle couleur dans la réserve, plutôt qu’un second Qoam de la Région où il se trouve. NOTE : Pour que cette carte soit activée, il doit toujours y avoir au moins un deuxième Qoam disponible dans cette Région.</translation>
+        <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
+NOTE: There must still be a second Qoam available in the Region.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 1 Qoam de n’importe quelle couleur dans la réserve, plutôt qu’un second Qoam de la Région où il se trouve.
+NOTE : Pour que cette carte soit activée, il doit toujours y avoir au moins un deuxième Qoam disponible dans cette Région.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="14"/>
@@ -325,8 +329,14 @@ cartes Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="34"/>
-        <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.\nBy the end of a turn in which you have not performed any Special Action, put on the Armor.\nWhile you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.\nNOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
-        <translation type="unfinished">À chaque fois que vous devenez Blessé et à chaque Début d’une Année, retirez votre Armure. À la fin d’un tour où vous n’avez effectué aucune Action spéciale, enfilez l’Armure. Quand vous êtes équipé de l’Armure, vous pouvez effectuer Enquêter sur le Colosse, Récupérer un Appareil et Installer un appareil comme des Actions spéciales. NOTE : cela signifie que vous pouvez Enquêter sur le Colosse deux fois dans le même tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
+        <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.
+By the end of a turn in which you have not performed any Special Action, put on the Armor.
+While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
+NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
+        <translation type="unfinished">À chaque fois que vous devenez Blessé et à chaque Début d’une Année, retirez votre Armure.
+À la fin d’un tour où vous n’avez effectué aucune Action spéciale, enfilez l’Armure.
+Quand vous êtes équipé de l’Armure, vous pouvez effectuer Enquêter sur le Colosse, Récupérer un Appareil et Installer un appareil comme des Actions spéciales.
+NOTE : cela signifie que vous pouvez Enquêter sur le Colosse deux fois dans le même tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="35"/>
@@ -394,7 +404,7 @@ en votre possession.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="47"/>
-        <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.\n</source>
+        <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your Null Cages.</source>
         <translation type="unfinished">À la fin de la partie, chaque cristal de Qoam restant dans vos Cages Zéro vous rapporte 2 PR au lieu de 1.</translation>
     </message>
     <message>
@@ -476,20 +486,26 @@ immédiatement 4 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="63"/>
-        <source>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</source>
+        <source>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
         <translation type="unfinished">Déplacez le Colosse
 Placez deux Parasites sur chaque Région adjacente au cratère où se trouve le Colosse.
 Le Colosse blesse tous les Émissaires présents sur les croisements des Régions adjacentes au cratère où il se trouve.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="64"/>
-        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\n</source>
+        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
+Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
         <translation type="unfinished">Déplacez le Colosse. Au cours de son déplacement, il blesse tous les Émissaires présents sur les croisements des Régions adjacentes aux cratères qu’il traverse (y compris les cratères où il commence et termine son déplacement).
 Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="65"/>
-        <source>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</source>
+        <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
+Move the Colossus.
+Place one Parasite on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
         <translation type="unfinished">Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
 Déplacez le Colosse.
 Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
@@ -507,7 +523,8 @@ Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Col
     </message>
     <message>
         <location filename="icaion.js" line="68"/>
-        <source>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.\n</source>
+        <source>Cost: 2 qoam
+Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
         <translation type="unfinished">Coût : 2 qoam
 Effet : Vous blessez les Émissaires ennemis présents sur votre croisement où sur un croisement adjacent à celui-ci.
 </translation>
@@ -519,7 +536,8 @@ Effet : Vous blessez les Émissaires ennemis présents sur votre croisement où 
     </message>
     <message>
         <location filename="icaion.js" line="70"/>
-        <source>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.\n</source>
+        <source>Cost: 2 qoam
+Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
         <translation type="unfinished">Coût : 2 qoam
 Effet : Chacun de vos adversaires doit défausser 1 Qoam de son choix dans la réserve commune.
 </translation>
@@ -531,7 +549,8 @@ Effet : Chacun de vos adversaires doit défausser 1 Qoam de son choix dans la r�
     </message>
     <message>
         <location filename="icaion.js" line="72"/>
-        <source>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.\n</source>
+        <source>Cost: 2 qoam
+Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
         <translation type="unfinished">Coût : 2 qoam
 Effet : Vous pouvez défausser 1 Qoam de n&apos;importe quel type pour gagner immédiatement 2 PR.
 </translation>
@@ -543,7 +562,8 @@ Effet : Vous pouvez défausser 1 Qoam de n&apos;importe quel type pour gagner im
     </message>
     <message>
         <location filename="icaion.js" line="74"/>
-        <source>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).\n</source>
+        <source>Cost: 3 qoam
+Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
         <translation type="unfinished">Coût : 3 qoam
 Effet : Prenez dans la réserve 1 Qoam de n&apos;importe quelle couleur et ajoutez-le à l&apos;une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà)
 </translation>
@@ -555,7 +575,8 @@ Effet : Prenez dans la réserve 1 Qoam de n&apos;importe quelle couleur et ajout
     </message>
     <message>
         <location filename="icaion.js" line="76"/>
-        <source>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.\n</source>
+        <source>Cost: 3 qoam
+Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
         <translation type="unfinished">Coût : 3 qoam
 Effet : Vous pouvez soit piocher une carte Curio soit jouer une carte Curio.
 </translation>
@@ -567,7 +588,8 @@ Effet : Vous pouvez soit piocher une carte Curio soit jouer une carte Curio.
     </message>
     <message>
         <location filename="icaion.js" line="78"/>
-        <source>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.\n</source>
+        <source>Cost: 4 qoam
+Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
         <translation type="unfinished">Coût : 4 qoam
 Effet : Vous pouvez soit déplacer votre Émissaire d&apos;un croisement, soit éradiquer gratuitement un Parasite dans l’une des Régions adjacentes à votre Émissaire.
 </translation>
@@ -579,7 +601,8 @@ Effet : Vous pouvez soit déplacer votre Émissaire d&apos;un croisement, soit �
     </message>
     <message>
         <location filename="icaion.js" line="80"/>
-        <source>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</source>
+        <source>Cost: 4 qoam
+Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
         <translation type="unfinished">Coût : 4 qoam
 Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou antihoraire. Placez ensuite un Parasite sur chacune des deux Régions adjacentes au cratère sur lequel vient d’arriver le Colosse.
 </translation>
@@ -1306,38 +1329,135 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="mysthea.js" line="150"/>
-        <source>Boulron the Reaper:\\nStrength 11\\nRewards:\\nGold - Gain 9 Glory Points.\\nSilver - Gain 4 Glory Points.\\nBronze - Gain 2 Glory Points.\\nBehaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
-        <translation type="unfinished">Boulron les Faucheurs:\nForce 11\n\nRÉCOMPENSES:\nOr - Gagnez 9 points de Gloire.\nArgent - Gagnez 4 points de Gloire.\nBronze - Gagnez 2 points de Gloire.\n\nCOMPORTEMENT\nQuand un Boulron attaque, en raison de ses mouvements vifs et élégants, les joueurs ne bénéficient pas de la Force de leurs Fortifications sur l’Île attaquée.</translation>
+        <source>Boulron the Reaper:
+Strength 11
+Rewards:
+Gold - Gain 9 Glory Points.
+Silver - Gain 4 Glory Points.
+Bronze - Gain 2 Glory Points.
+Behaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
+        <translation type="unfinished">Boulron les Faucheurs:
+Force 11
+RÉCOMPENSES:
+Or - Gagnez 9 points de Gloire.
+Argent - Gagnez 4 points de Gloire.
+Bronze - Gagnez 2 points de Gloire.
+COMPORTEMENT
+Quand un Boulron attaque, en raison de ses mouvements vifs et élégants, les joueurs ne bénéficient pas de la Force de leurs Fortifications sur l’Île attaquée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="151"/>
-        <source>Onygauros the Collector:\\nStrength 13\\nRewards:\\nGold - Gain 4 Command Points and 4 Glory Points.\\nSilver - Gain 3 Command Points and 3 Glory Points.\\nBronze - Gain 2 Command Points and 2 Glory Points.\\nBehaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation type="unfinished">Onygauros les Collecteurs:\nForce 13\n\nRÉCOMPENSES:\nOr - Gagnez 4 points de Gloire et 4 points de Commandement.\nArgent - Gagnez 3 points de Gloire et 3 points de Commandement.\nBronze - Gagnez 2 points de Gloire et 2 points de Commandement.\n\nCOMPORTEMENT:\nQuand un Onygauros attaque, chaque joueur dans l’ordre du tour (y compris ceux qui n’ont pas d’unités sur l’Île attaquée) doit choisir au hasard une carte de sa défausse et la retirer de la partie. L’Onygauros l’a collectée. Plutôt que de retirer une carte, un joueur peut choisir de perdre 5 points de Gloire à la place (mais la décision doit être prise avant de tirer la carte au hasard).</translation>
+        <source>Onygauros the Collector:
+Strength 13
+Rewards:
+Gold - Gain 4 Command Points and 4 Glory Points.
+Silver - Gain 3 Command Points and 3 Glory Points.
+Bronze - Gain 2 Command Points and 2 Glory Points.
+Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <translation type="unfinished">Onygauros les Collecteurs:
+Force 13
+RÉCOMPENSES:
+Or - Gagnez 4 points de Gloire et 4 points de Commandement.
+Argent - Gagnez 3 points de Gloire et 3 points de Commandement.
+Bronze - Gagnez 2 points de Gloire et 2 points de Commandement.
+COMPORTEMENT:
+Quand un Onygauros attaque, chaque joueur dans l’ordre du tour (y compris ceux qui n’ont pas d’unités sur l’Île attaquée) doit choisir au hasard une carte de sa défausse et la retirer de la partie. L’Onygauros l’a collectée. Plutôt que de retirer une carte, un joueur peut choisir de perdre 5 points de Gloire à la place (mais la décision doit être prise avant de tirer la carte au hasard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="152"/>
-        <source>Caerulas the Inhabitant from Below:\\nStrength 15\\nRewards:\\nGold - Gain 5 Experience Points and 5 Glory Points.\\nSilver - Gain 4 Experience Points and 4 Glory Points.\\nBronze - Gain 3 Experience Points and 3 Glory Points.\\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
-        <translation type="unfinished">Caerulas Celui d’En-dessous:\nForce 15\n\nRÉCOMPENSES:\nOr - Gagnez 5 points de Gloire et 5 points d’Expérience.\nArgent - Gagnez 4 points de Gloire et 4 points d’Expérience.\nBronze - Gagnez 3 points de Gloire et 3 points d’Expérience.\n\nCOMPORTEMENT\nQuand Caerulas attaque et n’est pas vaincu, il enrage. Il se déplace sur l’Île suivante dans le sens horaire et attaque à nouveau.\nNote : il ne procède pas à une nouvelle attaque après la seconde ; il s’arrête et ne bougera pas vers l’Île suivante avant sa prochaine activation.</translation>
+        <source>Caerulas the Inhabitant from Below:
+Strength 15
+Rewards:
+Gold - Gain 5 Experience Points and 5 Glory Points.
+Silver - Gain 4 Experience Points and 4 Glory Points.
+Bronze - Gain 3 Experience Points and 3 Glory Points.
+Behaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.
+Note: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
+        <translation type="unfinished">Caerulas Celui d’En-dessous:
+Force 15
+RÉCOMPENSES:
+Or - Gagnez 5 points de Gloire et 5 points d’Expérience.
+Argent - Gagnez 4 points de Gloire et 4 points d’Expérience.
+Bronze - Gagnez 3 points de Gloire et 3 points d’Expérience.
+COMPORTEMENT
+Quand Caerulas attaque et n’est pas vaincu, il enrage. Il se déplace sur l’Île suivante dans le sens horaire et attaque à nouveau.
+Note : il ne procède pas à une nouvelle attaque après la seconde ; il s’arrête et ne bougera pas vers l’Île suivante avant sa prochaine activation.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="153"/>
-        <source>Utcoro the Swarmer:\\nStrength 10\\nRewards:\\nGold - Gain 3 Glory Points. You may also Face an Encounter.\\nSilver - Gain 2 Glory Points. You may also Face an Encounter.\\nBronze - Gain 1 Glory Point. You may also Face an Encounter.\\nYou can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.\\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
-        <translation type="unfinished">Utcoro les Essaimeurs:\nForce 10\n\nRÉCOMPENSES:\nOr - Gagnez 3 points de Gloire. Vous pouvez aussi faire une Rencontre.\nArgent - Gagnez 2 points de Gloire. Vous pouvez aussi faire une Rencontre.\nBronze - Gagnez 1 point de Gloire. Vous pouvez aussi faire une Rencontre.\n\nVous pouvez faire ces Rencontres même si votre Champion et votre jeton Rencontre ne sont pas sur la même Île. Vous n’avez pas besoin de dépenser d’Expérience durant ces Rencontres. Toutes les autres règles des Rencontres s’appliquent normalement.\n\nCOMPORTEMENT\nQuand un Utcoro attaque, tous les joueurs qui ne participent pas au combat (Couards !) perdent immédiatement 5 points de Gloire.</translation>
+        <source>Utcoro the Swarmer:
+Strength 10
+Rewards:
+Gold - Gain 3 Glory Points. You may also Face an Encounter.
+Silver - Gain 2 Glory Points. You may also Face an Encounter.
+Bronze - Gain 1 Glory Point. You may also Face an Encounter.
+You can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.
+Behaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
+        <translation type="unfinished">Utcoro les Essaimeurs:
+Force 10
+RÉCOMPENSES:
+Or - Gagnez 3 points de Gloire. Vous pouvez aussi faire une Rencontre.
+Argent - Gagnez 2 points de Gloire. Vous pouvez aussi faire une Rencontre.
+Bronze - Gagnez 1 point de Gloire. Vous pouvez aussi faire une Rencontre.
+Vous pouvez faire ces Rencontres même si votre Champion et votre jeton Rencontre ne sont pas sur la même Île. Vous n’avez pas besoin de dépenser d’Expérience durant ces Rencontres. Toutes les autres règles des Rencontres s’appliquent normalement.
+COMPORTEMENT
+Quand un Utcoro attaque, tous les joueurs qui ne participent pas au combat (Couards !) perdent immédiatement 5 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="154"/>
-        <source>Cannibarok the Qoam Eater:\\nStrength 12\\nRewards:\\nGold - Gain 6 Energy Points and 6 Glory Points.\\nSilver - Gain 4 Energy Points and 4 Glory Points.\\nBronze - Gain 2 Energy Points and 2 Glory Points.\\nBehaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
-        <translation type="unfinished">Cannibarok les Mange-Qoam:\nForce 12\n\nRÉCOMPENSES:\nOr - Gagnez 6 points de Gloire et 6 points d’Énergie.\nArgent - Gagnez 4 points de Gloire et 4 points d’Énergie.\nBronze - Gagnez 2 points de Gloire et 2 points d’Énergie.\n\nCOMPORTEMENT\nQuand un Cannibarok attaque une Île où se trouve une Région Champ cristallin, il est renforcé par l’énergie débordante et gagne +2 en Force jusqu’à la fin de son attaque.</translation>
+        <source>Cannibarok the Qoam Eater:
+Strength 12
+Rewards:
+Gold - Gain 6 Energy Points and 6 Glory Points.
+Silver - Gain 4 Energy Points and 4 Glory Points.
+Bronze - Gain 2 Energy Points and 2 Glory Points.
+Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
+        <translation type="unfinished">Cannibarok les Mange-Qoam:
+Force 12
+RÉCOMPENSES:
+Or - Gagnez 6 points de Gloire et 6 points d’Énergie.
+Argent - Gagnez 4 points de Gloire et 4 points d’Énergie.
+Bronze - Gagnez 2 points de Gloire et 2 points d’Énergie.
+COMPORTEMENT
+Quand un Cannibarok attaque une Île où se trouve une Région Champ cristallin, il est renforcé par l’énergie débordante et gagne +2 en Force jusqu’à la fin de son attaque.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="155"/>
-        <source>Obsidusa The Devourer:\\nStrength 14\\nRewards:\\nGold - Gain 7 Glory Points and draw 1 Command card.\\nSilver - Gain 5 Glory Points and draw 1 Command card.\\nBronze - Gain 3 Glory Points and draw 1 Command card.\\nCommand cards are drawn from the Era Deck of the current Era.\\nBehaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
-        <translation type="unfinished">Obsidusa le Dévoreur:\nForce 14\n\nRÉCOMPENSES:\nOr - Gagnez 7 points de Gloire et piochez 1 carte de Commandement.\nArgent - Gagnez 5 points de Gloire et piochez 1 carte de Commandement.\nBronze - Gagnez 3 points de Gloire et piochez 1 carte de Commandement.\n\nLes cartes de Commandement sont piochées dans la pile de l’Ère actuelle.\n\nCOMPORTEMENT\nQuand l’Obsidusa attaque et n’est pas vaincu, il demeure sur l’Île où il se trouve pour se repaître des ennemis tombés.</translation>
+        <source>Obsidusa The Devourer:
+Strength 14
+Rewards:
+Gold - Gain 7 Glory Points and draw 1 Command card.
+Silver - Gain 5 Glory Points and draw 1 Command card.
+Bronze - Gain 3 Glory Points and draw 1 Command card.
+Command cards are drawn from the Era Deck of the current Era.
+Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
+        <translation type="unfinished">Obsidusa le Dévoreur:
+Force 14
+RÉCOMPENSES:
+Or - Gagnez 7 points de Gloire et piochez 1 carte de Commandement.
+Argent - Gagnez 5 points de Gloire et piochez 1 carte de Commandement.
+Bronze - Gagnez 3 points de Gloire et piochez 1 carte de Commandement.
+Les cartes de Commandement sont piochées dans la pile de l’Ère actuelle.
+COMPORTEMENT
+Quand l’Obsidusa attaque et n’est pas vaincu, il demeure sur l’Île où il se trouve pour se repaître des ennemis tombés.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="156"/>
-        <source>Kodror the Infestation:\\nStrength 16\\nRewards:\\nGold - Gain 16 Glory Points.\\nSilver - Gain 12 Glory Points.\\nBronze - Gain 8 Glory Points.\\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
-        <translation type="unfinished">Kodror l’Infestation:\nForce 16\n\nRÉCOMPENSES:\nOr - Gagnez 16 points de Gloire.\nArgent - Gagnez 12 points de Gloire.\nBronze - Gagnez 8 points de Gloire.\n\nCOMPORTEMENT\nQuand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec lui, enchevêtrée dans ses racines infestées (échangez la position de l’Île avec la suivante dans le sens horaire). Quand Kodror attaque et est vaincu, retirez sa figurine de la partie et retournez sa carte d’Évènement face cachée pour montrer que Kodror n’est plus en jeu. À la fin de l’Ère actuelle, retirez la carte d’Évènement de Kodror de la partie.</translation>
+        <source>Kodror the Infestation:
+Strength 16
+Rewards:
+Gold - Gain 16 Glory Points.
+Silver - Gain 12 Glory Points.
+Bronze - Gain 8 Glory Points.
+Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
+        <translation type="unfinished">Kodror l’Infestation:
+Force 16
+RÉCOMPENSES:
+Or - Gagnez 16 points de Gloire.
+Argent - Gagnez 12 points de Gloire.
+Bronze - Gagnez 8 points de Gloire.
+COMPORTEMENT
+Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec lui, enchevêtrée dans ses racines infestées (échangez la position de l’Île avec la suivante dans le sens horaire). Quand Kodror attaque et est vaincu, retirez sa figurine de la partie et retournez sa carte d’Évènement face cachée pour montrer que Kodror n’est plus en jeu. À la fin de l’Ère actuelle, retirez la carte d’Évènement de Kodror de la partie.</translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>
@@ -1351,7 +1471,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="3"/>
-        <source>CHARACTER ABILITY\nWhenever you Attack, add 2 Strength Points to your total.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Attack, add 2 Strength Points to your total.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1361,7 +1484,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="5"/>
-        <source>CHARACTER ABILITY\nWhenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.\nRELIC POWER\nImmediately take 3 Qoam crystals of any kind from the common pool.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.
+RELIC POWER
+Immediately take 3 Qoam crystals of any kind from the common pool.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1371,7 +1497,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="7"/>
-        <source>CHARACTER ABILITY\nOnce during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.\nRELIC POWER\nSwap position with another Character on the Game Board.\n</source>
+        <source>CHARACTER ABILITY
+Once during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.
+RELIC POWER
+Swap position with another Character on the Game Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1381,7 +1510,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="9"/>
-        <source>CHARACTER ABILITY\nAt the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.\nRELIC POWER\nMove the Colossus one external node clockwise or counter-clockwise.\n</source>
+        <source>CHARACTER ABILITY
+At the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1391,7 +1523,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="11"/>
-        <source>CHARACTER ABILITY\nDuring your turn, when you Activate a Machine you may activate another Machine you own in the same Region.\nRELIC POWER\nTake a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.\n</source>
+        <source>CHARACTER ABILITY
+During your turn, when you Activate a Machine you may activate another Machine you own in the same Region.
+RELIC POWER
+Take a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1401,7 +1536,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="13"/>
-        <source>CHARACTER ABILITY\nWhenever you Move, you may always travel up to a distance of 2 nodes.\nRELIC POWER\nMove to any node of the Game Board\nwith no other Character on it.\n</source>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may always travel up to a distance of 2 nodes.
+RELIC POWER
+Move to any node of the Game Board with no other Character on it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1411,7 +1549,10 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="15"/>
-        <source>CHARACTER ABILITY\nYou may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.\nRELIC POWER\nFreely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.\n</source>
+        <source>CHARACTER ABILITY
+You may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.
+RELIC POWER
+Freely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1421,7 +1562,12 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     </message>
     <message>
         <location filename="thefall.js" line="19"/>
-        <source>CHARACTER ABILITY\nWithout the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.\nWhile wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.\nRELIC POWER\nPut on the Armor or take it off.\nNOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <source>CHARACTER ABILITY
+Without the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.
+While wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.
+RELIC POWER
+Put on the Armor or take it off.
+NOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
