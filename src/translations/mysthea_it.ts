@@ -1327,38 +1327,128 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     </message>
     <message>
         <location filename="mysthea.js" line="150"/>
-        <source>Boulron the Reaper:\\nStrength 11\\nRewards:\\nGold - Gain 9 Glory Points.\\nSilver - Gain 4 Glory Points.\\nBronze - Gain 2 Glory Points.\\nBehaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
-        <translation>Boulron il Mietitore:\nForza 11\nRicompense:\nOro - Ottieni 9 Punti Gloria.\nArgento - Ottieni 4 Punti Gloria.\nBronzo - Ottieni 2 Punti Gloria.\nComportamento: quando Boulron attacca, visti i suoi movimenti eleganti e rapidi, i giocatori non beneficiano della Forza fornita dalle Fortificazioni sull’Isola attaccata.</translation>
+        <source>Boulron the Reaper:
+Strength 11
+Rewards:
+Gold - Gain 9 Glory Points.
+Silver - Gain 4 Glory Points.
+Bronze - Gain 2 Glory Points.
+Behaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
+        <translation>Boulron il Mietitore:
+Forza 11
+Ricompense:
+Oro - Ottieni 9 Punti Gloria.
+Argento - Ottieni 4 Punti Gloria.
+Bronzo - Ottieni 2 Punti Gloria.
+Comportamento: quando Boulron attacca, visti i suoi movimenti eleganti e rapidi, i giocatori non beneficiano della Forza fornita dalle Fortificazioni sull’Isola attaccata.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="151"/>
-        <source>Onygauros the Collector:\\nStrength 13\\nRewards:\\nGold - Gain 4 Command Points and 4 Glory Points.\\nSilver - Gain 3 Command Points and 3 Glory Points.\\nBronze - Gain 2 Command Points and 2 Glory Points.\\nBehaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation>Onygauros il Collezionista:\nForza 13\nRicompense:\nOro - Ottieni 4 Punti Comando e 4 Punti Gloria.\nArgento - Ottieni 3 Punti Comando e 3 Punti Gloria.\nBronzo - Ottieni 2 Punti Comando e 2 Punti Gloria.\nComportamento: quando Onygauros attacca, ogni giocatore secondo l’ordine di turno (inclusi i giocatori senza unità sull’Isola attaccata) devono scegliere a caso una carta dalla pila degli scarti e rimuoverla dal gioco - Onygauros l’ha collezionata. In alternativa, invece che rimuovere una carta, i giocatori possono scegliere di perdere 5 Punti Gloria ma questa decisione deve essere presa prima di vedere la carta da scartare.</translation>
+        <source>Onygauros the Collector:
+Strength 13
+Rewards:
+Gold - Gain 4 Command Points and 4 Glory Points.
+Silver - Gain 3 Command Points and 3 Glory Points.
+Bronze - Gain 2 Command Points and 2 Glory Points.
+Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
+        <translation>Onygauros il Collezionista:
+Forza 13
+Ricompense:
+Oro - Ottieni 4 Punti Comando e 4 Punti Gloria.
+Argento - Ottieni 3 Punti Comando e 3 Punti Gloria.
+Bronzo - Ottieni 2 Punti Comando e 2 Punti Gloria.
+Comportamento: quando Onygauros attacca, ogni giocatore secondo l’ordine di turno (inclusi i giocatori senza unità sull’Isola attaccata) devono scegliere a caso una carta dalla pila degli scarti e rimuoverla dal gioco - Onygauros l’ha collezionata. In alternativa, invece che rimuovere una carta, i giocatori possono scegliere di perdere 5 Punti Gloria ma questa decisione deve essere presa prima di vedere la carta da scartare.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="152"/>
-        <source>Caerulas the Inhabitant from Below:\\nStrength 15\\nRewards:\\nGold - Gain 5 Experience Points and 5 Glory Points.\\nSilver - Gain 4 Experience Points and 4 Glory Points.\\nBronze - Gain 3 Experience Points and 3 Glory Points.\\nBehaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.\\nNote: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
-        <translation>Caerulas l&apos;Abitante del Sottosuolo:\nForza 15\nRicompense:\nOro - Ottieni 5 Punti Esperienza e 5 Punti Gloria.\nArgento - Ottieni 4 Punti Esperienza e 4 Punti Gloria.\nBronzo - Ottieni 3 Punti Esperienza e 3 Punti Gloria.\nComportamento: quando Caerulas attacca e non viene sconfitto, diventa furioso: si sposta sull’Isola successiva in senso orario e attacca ancora.\nNota: dopo questo secondo attacco, si ferma e non si sposta sull’Isola successiva in senso orario fino alla sua prossima attivazione.</translation>
+        <source>Caerulas the Inhabitant from Below:
+Strength 15
+Rewards:
+Gold - Gain 5 Experience Points and 5 Glory Points.
+Silver - Gain 4 Experience Points and 4 Glory Points.
+Bronze - Gain 3 Experience Points and 3 Glory Points.
+Behaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.
+Note: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
+        <translation>Caerulas l&apos;Abitante del Sottosuolo:
+Forza 15
+Ricompense:
+Oro - Ottieni 5 Punti Esperienza e 5 Punti Gloria.
+Argento - Ottieni 4 Punti Esperienza e 4 Punti Gloria.
+Bronzo - Ottieni 3 Punti Esperienza e 3 Punti Gloria.
+Comportamento: quando Caerulas attacca e non viene sconfitto, diventa furioso: si sposta sull’Isola successiva in senso orario e attacca ancora.
+Nota: dopo questo secondo attacco, si ferma e non si sposta sull’Isola successiva in senso orario fino alla sua prossima attivazione.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="153"/>
-        <source>Utcoro the Swarmer:\\nStrength 10\\nRewards:\\nGold - Gain 3 Glory Points. You may also Face an Encounter.\\nSilver - Gain 2 Glory Points. You may also Face an Encounter.\\nBronze - Gain 1 Glory Point. You may also Face an Encounter.\\nYou can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.\\nBehaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
-        <translation>Utcoro il Brulicante:\nForza 10\nRicompense:\nOro - Ottieni 3 Punti Gloria. Puoi anche affrontare un Incontro.\nArgento - Ottieni 2 Punti Gloria. Puoi anche Affrontare un Incontro.\nBronzo - Ottieni 1 Punto Gloria. Puoi anche Affrontare un Incontro.\nPuoi Affrontare questi Incontri anche se il tuo Campione e il tuo Segnalino Incontri sono su Isole diverse. Inoltre, non devi spendere alcun Punto Esperienza. Tutte le altre regole che riguardano l’affrontare gli Incontri vengono applicate normalmente.\nComportamento: quando Utcoro attacca, tutti i giocatori che non prendono parte alla battaglia (codardi!) perdono immediatamente 5 Punti Gloria.</translation>
+        <source>Utcoro the Swarmer:
+Strength 10
+Rewards:
+Gold - Gain 3 Glory Points. You may also Face an Encounter.
+Silver - Gain 2 Glory Points. You may also Face an Encounter.
+Bronze - Gain 1 Glory Point. You may also Face an Encounter.
+You can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.
+Behaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
+        <translation>Utcoro il Brulicante:
+Forza 10
+Ricompense:
+Oro - Ottieni 3 Punti Gloria. Puoi anche affrontare un Incontro.
+Argento - Ottieni 2 Punti Gloria. Puoi anche Affrontare un Incontro.
+Bronzo - Ottieni 1 Punto Gloria. Puoi anche Affrontare un Incontro.
+Puoi Affrontare questi Incontri anche se il tuo Campione e il tuo Segnalino Incontri sono su Isole diverse. Inoltre, non devi spendere alcun Punto Esperienza. Tutte le altre regole che riguardano l’affrontare gli Incontri vengono applicate normalmente.
+Comportamento: quando Utcoro attacca, tutti i giocatori che non prendono parte alla battaglia (codardi!) perdono immediatamente 5 Punti Gloria.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="154"/>
-        <source>Cannibarok the Qoam Eater:\\nStrength 12\\nRewards:\\nGold - Gain 6 Energy Points and 6 Glory Points.\\nSilver - Gain 4 Energy Points and 4 Glory Points.\\nBronze - Gain 2 Energy Points and 2 Glory Points.\\nBehaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
-        <translation>Cannibarok il Mangia-Qoam:\nForza 12\nRicompense:\nOro - Ottieni 6 Punti Energia e 6 Punti Gloria.\nArgento - Ottieni 4 Punti Energia e 4 Punti Gloria.\nBronzo - Ottieni 2 Punti Energia e 2 Punti Gloria.\nComportamento: quando Cannibarok attacca un’Isola che ha una regione Campo di Cristallo, è rinvigorito dalle dirompenti energie e ottiene +2 alla Forza fino alla fine del suo attacco.</translation>
+        <source>Cannibarok the Qoam Eater:
+Strength 12
+Rewards:
+Gold - Gain 6 Energy Points and 6 Glory Points.
+Silver - Gain 4 Energy Points and 4 Glory Points.
+Bronze - Gain 2 Energy Points and 2 Glory Points.
+Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
+        <translation>Cannibarok il Mangia-Qoam:
+Forza 12
+Ricompense:
+Oro - Ottieni 6 Punti Energia e 6 Punti Gloria.
+Argento - Ottieni 4 Punti Energia e 4 Punti Gloria.
+Bronzo - Ottieni 2 Punti Energia e 2 Punti Gloria.
+Comportamento: quando Cannibarok attacca un’Isola che ha una regione Campo di Cristallo, è rinvigorito dalle dirompenti energie e ottiene +2 alla Forza fino alla fine del suo attacco.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="155"/>
-        <source>Obsidusa The Devourer:\\nStrength 14\\nRewards:\\nGold - Gain 7 Glory Points and draw 1 Command card.\\nSilver - Gain 5 Glory Points and draw 1 Command card.\\nBronze - Gain 3 Glory Points and draw 1 Command card.\\nCommand cards are drawn from the Era Deck of the current Era.\\nBehaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
-        <translation>Obsidusa il Divoratore:\nForza 14\nRicompense:\nOro - Ottieni 7 Punti Gloria e pesca 1 carta Comando.\nArgento - Ottieni 5 Punti Gloria e pesca 1 carta Comando.\nBronzo - Ottieni 3 Punti Gloria e pesca 1 carta Comando.\nLe carte Comando vengono pescate dal Mazzo Era dell’Era attuale.\nComportamento: quando Obsidusa attacca, e non viene sconfitto, non si sposta verso l’Isola successiva ma rimane sull’Isola attaccata per banchettare con la carne dei nemici caduti.</translation>
+        <source>Obsidusa The Devourer:
+Strength 14
+Rewards:
+Gold - Gain 7 Glory Points and draw 1 Command card.
+Silver - Gain 5 Glory Points and draw 1 Command card.
+Bronze - Gain 3 Glory Points and draw 1 Command card.
+Command cards are drawn from the Era Deck of the current Era.
+Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
+        <translation>Obsidusa il Divoratore:
+Forza 14
+Ricompense:
+Oro - Ottieni 7 Punti Gloria e pesca 1 carta Comando.
+Argento - Ottieni 5 Punti Gloria e pesca 1 carta Comando.
+Bronzo - Ottieni 3 Punti Gloria e pesca 1 carta Comando.
+Le carte Comando vengono pescate dal Mazzo Era dell’Era attuale.
+Comportamento: quando Obsidusa attacca, e non viene sconfitto, non si sposta verso l’Isola successiva ma rimane sull’Isola attaccata per banchettare con la carne dei nemici caduti.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="156"/>
-        <source>Kodror the Infestation:\\nStrength 16\\nRewards:\\nGold - Gain 16 Glory Points.\\nSilver - Gain 12 Glory Points.\\nBronze - Gain 8 Glory Points.\\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
-        <translation>Kodror l&apos;Infestazione:\nForza 16\nRicompense:\nOro - Ottieni 16 Punti Gloria.\nArgento - Ottieni 12 Punti Gloria.\nBronzo - Ottieni 8 Punti Gloria.\nComportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è posizionato, attanagliata dalle sue radici infestanti (scambia l’Isola con quella vicina in senso orario). Quando Kodror attacca e viene sconfitto, rimuovi la sua miniatura dal gioco e gira la sua Carta Eventi a faccia in giù per mostrare che Kodror non è più in gioco. Alla fine dell’Era attuale, rimuovi la Carta Evento di Kodror dal gioco.</translation>
+        <source>Kodror the Infestation:
+Strength 16
+Rewards:
+Gold - Gain 16 Glory Points.
+Silver - Gain 12 Glory Points.
+Bronze - Gain 8 Glory Points.
+Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
+        <translation>Kodror l&apos;Infestazione:
+Forza 16
+Ricompense:
+Oro - Ottieni 16 Punti Gloria.
+Argento - Ottieni 12 Punti Gloria.
+Bronzo - Ottieni 8 Punti Gloria.
+Comportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è posizionato, attanagliata dalle sue radici infestanti (scambia l’Isola con quella vicina in senso orario). Quando Kodror attacca e viene sconfitto, rimuovi la sua miniatura dal gioco e gira la sua Carta Eventi a faccia in giù per mostrare che Kodror non è più in gioco. Alla fine dell’Era attuale, rimuovi la Carta Evento di Kodror dal gioco.</translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>
