@@ -201,26 +201,26 @@
         <location filename="icaion.js" line="9"/>
         <source>These cards add extra Null Cage to your Division Board.</source>
         <oldsource>These cards add extra Null Cage to your Division Board.\n</oldsource>
-        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Nullkäfig.\n</translation>
+        <translation>Diese Karten erhöhen deine Zahl an Nullkäfig.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="10"/>
         <source>These cards add extra Strength to your Division Board.</source>
         <oldsource>These cards add extra Strength to your Division Board.\n</oldsource>
-        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Stärke.\n</translation>
+        <translation>Diese Karten erhöhen deine Zahl an Stärke.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="11"/>
         <source>These cards add extra Movement to your Division Board.</source>
         <oldsource>These cards add extra Movement\nto your Division Board.\n</oldsource>
-        <translation type="unfinished">Diese Karten erhöhen deine Zahl an Bewegungs.\n</translation>
+        <translation>Diese Karten erhöhen deine Zahl an Bewegungs.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="12"/>
         <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
 NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
         <oldsource>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.\nNOTE: You may only benefit from each of these Upgrade Cards once per action.</oldsource>
-        <translation type="unfinished">Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
+        <translation>Jedes Mal, wenn du Qoam ausgibst, darfst du vorab 2 deiner Qoam-Kristalle gleicher Farbe in 1 Qoam-Kristall einer anderen Farbe transformieren.
 HINWEIS: All diese Upgradekarten, darfst du nur einmal je Aktion einsetzen.</translation>
     </message>
     <message>
@@ -228,7 +228,7 @@ HINWEIS: All diese Upgradekarten, darfst du nur einmal je Aktion einsetzen.</tra
         <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
 NOTE: There must still be a second Qoam available in the Region.</source>
         <oldsource>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.\nNOTE: There must still be a second Qoam available in the Region.</oldsource>
-        <translation type="unfinished">Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
+        <translation>Jedes Mal, wenn du eine Erntemaschine aktivierst, darfst du 1 Qoam beliebiger Farbe aus dem Vorrat nehmen, anstatt dem zweiten Qoam aus der gleichen Region.
 HINWEIS: Es muss allerdings ein zweites Qoam in dieser Region verfügbar sein.</translation>
     </message>
     <message>
@@ -345,9 +345,8 @@ By the end of a turn in which you have not performed any Special Action, put on 
 While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
 NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
         <oldsource>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.\nBy the end of a turn in which you have not performed any Special Action, put on the Armor.\nWhile you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.\nNOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</oldsource>
-        <translation type="unfinished">Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;Koloss erkunden&quot;-, &quot;Apparatur erhalten&quot;- und &quot;Apparatur installieren&quot;-Aktion als Spezialaktion ausführen.
-HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könntest, einmal als Standard- und einmal als Spezialaktion.
-</translation>
+        <translation>Immer wenn du verwundet wirst und zu Beginn eines jeden Jahres, legst du deine Rüstung ab.Am Ende eines Zuges, in dem du keine Spezialaktion ausgeführt hast, lege die Rüstung an.Während du eine Rüstung trägst, darfst du die &quot;Koloss erkunden&quot;-, &quot;Apparatur erhalten&quot;- und &quot;Apparatur installieren&quot;-Aktion als Spezialaktion ausführen.
+HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könntest, einmal als Standard- und einmal als Spezialaktion.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="35"/>
@@ -413,7 +412,7 @@ HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könn
         <location filename="icaion.js" line="47"/>
         <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your Null Cages.</source>
         <oldsource>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your\nNull Cages.\n</oldsource>
-        <translation type="unfinished">Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.\n</translation>
+        <translation>Am Ende des Spiels erhältst du 2 Reputationspunkte (anstatt 1) für jedes Qoam, das in einem deiner Nullkäfige eingelagert ist.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="48"/>
@@ -499,21 +498,19 @@ HINWEIS: Das bedeutet, dass du zweimal im gleichen Zug den Koloss erkunden könn
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
         <oldsource>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
-        <translation type="unfinished">Bewege den Koloss.
+        <translation>Bewege den Koloss.
 Platziere zwei Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
-Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.
-</translation>
+Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="64"/>
         <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
 Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
         <oldsource>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\n</oldsource>
-        <translation type="unfinished">Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
-Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.\n</translation>
+        <translation>Bewege den Koloss. Während der Bewegung verwundet der Koloss alle Entdecker auf den Knotenpunkten, die an den Krater angrenzen, durch den er sich gerade bewegt (eingeschlossen dem Start- und Endkrater).
+Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="65"/>
@@ -522,11 +519,10 @@ Move the Colossus.
 Place one Parasite on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
         <oldsource>Place one Parasite on each Region adjacent to the Colossus’ crater.\nMove the Colossus.\nPlace one Parasite on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
-        <translation type="unfinished">
-Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
+        <translation>Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
 Bewege den Koloss.
 Platziere einen Parasiten auf jeder Region, die an den Krater des Kolosses angrenzt.
-Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.\n</translation>
+Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenzenden Regionen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="66"/>
@@ -543,8 +539,8 @@ Der Koloss verwundet alle Entdecker auf Knotenpunkten der an den Krater angrenze
         <source>Cost: 2 qoam
 Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
         <oldsource>Cost: 2 qoam\nOwner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.\n</oldsource>
-        <translation type="unfinished">Kosten:2 Qoam
-Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines Entdeckers oder daran angrenzender Knotenpunkte.\n</translation>
+        <translation>Kosten:2 Qoam
+Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines Entdeckers oder daran angrenzender Knotenpunkte.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="69"/>
@@ -556,8 +552,8 @@ Effekt für Besitzer: Verwunde gegnerische Entdecker auf dem Knotenpunkt deines 
         <source>Cost: 2 qoam
 Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
         <oldsource>Cost: 2 qoam\nOwner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.\n</oldsource>
-        <translation type="unfinished">Kosten:2 Qoam
-Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vorrat abwerfen.\n</translation>
+        <translation>Kosten:2 Qoam
+Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vorrat abwerfen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="71"/>
@@ -569,9 +565,8 @@ Effekt für Besitzer: Jeder Gegner muss 1 Qoam seiner Wahl in den allgemeinen Vo
         <source>Cost: 2 qoam
 Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
         <oldsource>Cost: 2 qoam\nOwner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.\n</oldsource>
-        <translation type="unfinished">Kosten:2 Qoam
-Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Reputationspunkte zu erhalten.
-</translation>
+        <translation>Kosten:2 Qoam
+Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Reputationspunkte zu erhalten.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="73"/>
@@ -583,9 +578,9 @@ Effekt für Besitzer: Du darfst 1 Qoam beliebiger Farbe abwerfen, um sofort 2 Re
         <source>Cost: 3 qoam
 Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
         <oldsource>Cost: 3 qoam\nOwner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).\n</oldsource>
-        <translation type="unfinished">Kosten: 3 Qoam
+        <translation>Kosten: 3 Qoam
 Effekt für Besitzer:
-Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nullkäfige ein (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).\n</translation>
+Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nullkäfige ein (ohne vorher Qoam abwerfen zu müssen, das schon im Käfig war).</translation>
     </message>
     <message>
         <location filename="icaion.js" line="75"/>
@@ -597,8 +592,8 @@ Nimm 1 Qoam beliebiger Farbe aus dem Vorrat und lagere diesen in einem deiner Nu
         <source>Cost: 3 qoam
 Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
         <oldsource>Cost: 3 qoam\nOwner effect: You may either draw a Curio Card or play a Curio Card.\n</oldsource>
-        <translation type="unfinished">Kosten: 3 Qoam
-Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Artefaktkarte spielen.\n</translation>
+        <translation>Kosten: 3 Qoam
+Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Artefaktkarte spielen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="77"/>
@@ -610,9 +605,8 @@ Effekt für Besitzer: Du darfst entweder eine Artefaktkarte ziehen oder eine Art
         <source>Cost: 4 qoam
 Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
         <oldsource>Cost: 4 qoam\nOwner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.\n</oldsource>
-        <translation type="unfinished">Kosten: 4 Qoam
-Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt weiterbewegen oder kostenlos einen Parasiten in einer an deinen Entdecker angrenzenden Region beseitigen.
-</translation>
+        <translation>Kosten: 4 Qoam
+Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt weiterbewegen oder kostenlos einen Parasiten in einer an deinen Entdecker angrenzenden Region beseitigen.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="79"/>
@@ -624,9 +618,8 @@ Effekt für Besitzer: Du darfst entweder deinen Entdecker um einen Knotenpunkt w
         <source>Cost: 4 qoam
 Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
         <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</oldsource>
-        <translation type="unfinished">Kosten: 4 Qoam
-Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegenuhrzeigersinn weiter bewegen. Platziere dann je einen Parasiten auf beide Regionen, die am Krater angrenzen.
-</translation>
+        <translation>Kosten: 4 Qoam
+Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegenuhrzeigersinn weiter bewegen. Platziere dann je einen Parasiten auf beide Regionen, die am Krater angrenzen.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="1"/>
