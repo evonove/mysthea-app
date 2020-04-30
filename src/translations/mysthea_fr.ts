@@ -500,8 +500,7 @@ immédiatement 4 PR.</translation>
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
         <oldsource>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
