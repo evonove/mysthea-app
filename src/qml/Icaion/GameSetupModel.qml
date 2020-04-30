@@ -323,7 +323,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: harvesterIcon
                         source: harvesterIcon
@@ -354,7 +353,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: scavengerIcon
                         source: scavengerIcon
@@ -385,7 +383,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: refinersIcon
                         source: refinersIcon
@@ -521,7 +518,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: maximumHandsIcon
                         source: maximumHandsIcon
@@ -552,7 +548,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: maximumUpgradeIcon
                         source: maximumUpgradeIcon
