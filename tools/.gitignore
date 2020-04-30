@@ -1,4 +1,9 @@
 orig/
 processed/
-translations/result.js
+translations/icaion/*.ts
+translations/icaion/*.js
+translations/mysthea/*.ts
+translations/mysthea/*.js
+translations/thefall/*.ts
+translations/thefall/*.js
 
