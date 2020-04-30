@@ -33,7 +33,7 @@ ObjectModel {
 
             DropCapLabel {
                 dropLetter: "1"
-                otherText: qsTr("Place the Game Board and the Event Board in the center of the table, one next to the other")
+                otherText: qsTr("Place the Game Board and the Event Board in the center of the table, one next to the other.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -47,7 +47,7 @@ ObjectModel {
             }
 
             Label {
-                text: qsTr("Flip the Event Board to the side corresponding to the number of players. Place all Qoam crystals and Parasites in a common pool near the Event Board.")
+                text: qsTr("Flip the Event Board to the side corresponding to the number of players.\nPlace all Qoam crystals and Parasites in a common pool near the Event Board.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -218,7 +218,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "4"
-                otherText: qsTr("4 Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board")
+                otherText: qsTr("Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -266,7 +266,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "5"
-                otherText: qsTr("Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each. Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top. Then place a pile on each City slot, all with the Roman numeral “I” visible.")
+                otherText: qsTr("Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.\nDecide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.\nThen place a pile on each City slot, all with the Roman numeral “I” visible.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -300,7 +300,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "6"
-                otherText: qsTr("Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners). Keep the Division Board in front of you and place the Machines as shown in the figure:")
+                otherText: qsTr("Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).\nKeep the Division Board in front of you and place the Machines as shown in the figure:")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -323,7 +323,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: harvesterIcon
                         source: harvesterIcon
@@ -354,7 +353,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: scavengerIcon
                         source: scavengerIcon
@@ -385,7 +383,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: refinersIcon
                         source: refinersIcon
@@ -521,7 +518,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: maximumHandsIcon
                         source: maximumHandsIcon
@@ -552,7 +548,6 @@ ObjectModel {
                     fillMode: Image.PreserveAspectCrop
                     sourceSize.width: 18
                     Layout.alignment: Qt.AlignTop
-                    Layout.fillWidth: true
                     ColorOverlay {
                         anchors.fill: maximumUpgradeIcon
                         source: maximumUpgradeIcon
@@ -583,7 +578,7 @@ ObjectModel {
                 Layout.topMargin: 10
             }
             Label {
-                text: qsTr("= Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).")
+                text: qsTr("Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -632,7 +627,7 @@ ObjectModel {
                 Layout.rightMargin: 20
             }
             Label {
-                text: qsTr("Roman numerals from I to V. Randomly deal one to each player. Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side. Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.")
+                text: qsTr("Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.\nEmergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -668,7 +663,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "9"
-                otherText: qsTr("Each player places their Reputation Marker on the scoring track, in the space labeled “0”")
+                otherText: qsTr("Each player places their Reputation Marker on the scoring track, in the space labeled “0”.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1
@@ -702,7 +697,7 @@ ObjectModel {
             }
             DropCapLabel {
                 dropLetter: "10"
-                otherText: qsTr("Shuffle all Curio Cards, then place the deck face down onto the Event Board. Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.")
+                otherText: qsTr("Shuffle all Curio Cards, then place the deck face down onto the Event Board.\nDeal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.")
                 color: Palette.icaionLight
                 font.pixelSize: 18
                 font.letterSpacing: 1

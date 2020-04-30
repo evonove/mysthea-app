@@ -615,9 +615,8 @@ ObjectModel {
     }
 
     Flickable {
-        // TODO: There is a bug here, try to scroll to the bottom in the app
         contentWidth: root.width
-        contentHeight: step12.height
+        contentHeight: step13.height
         ColumnLayout {
             id: step13
             width: parent.width

@@ -35,8 +35,10 @@ QVariant CardsModel::data(const QModelIndex &index, int role) const {
   switch (role) {
   case Roles::Code:
     return m_cards.at(row).code;
-  case Roles::Name:
-    return m_cards.at(row).name;
+  case Roles::Name: {
+    auto nameText = m_cards.at(row).name;
+    return qGuiApp->translate("CardsData", nameText.toStdString().c_str());
+  }
   case Roles::Type:
     return m_cards.at(row).type;
   case Roles::TypeText: {

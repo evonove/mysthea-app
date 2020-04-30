@@ -6,17 +6,17 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="101"/>
         <source>Cards Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Référence de la carte</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="114"/>
         <source>Game Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuration du jeu</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="127"/>
         <source>Rulebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Livret de règles</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppContainer.qml" line="140"/>
@@ -29,94 +29,94 @@
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="146"/>
         <source>Language - </source>
-        <translation type="unfinished"></translation>
+        <translation>Langue - </translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="269"/>
         <source>Game created and produced by</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeu créé et produit par</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/AppDrawer.qml" line="297"/>
         <source>App designed and developed by</source>
-        <translation type="unfinished"></translation>
+        <translation>Application conçue et développée par</translation>
     </message>
 </context>
 <context>
     <name>Artwork</name>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="24"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="25"/>
         <source>Colossus</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Colosse</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="28"/>
-        <location filename="../qml/TheFall/Artwork.qml" line="29"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="29"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Émissaire</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="32"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="33"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="36"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">equipement spécialisé</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="40"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="41"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="44"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="45"/>
         <source>Events</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="48"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="49"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Artwork.qml" line="52"/>
+        <location filename="../qml/Icaion/Artwork.qml" line="53"/>
         <source>Playerboards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="25"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="26"/>
         <source>Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="29"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="30"/>
         <source>Attunements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="33"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="34"/>
         <source>Encounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="37"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="38"/>
         <source>Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="41"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
         <source>Regions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Artwork.qml" line="45"/>
+        <location filename="../qml/Mysthea/Artwork.qml" line="46"/>
         <source>Guilds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/Artwork.qml" line="25"/>
+        <location filename="../qml/TheFall/Artwork.qml" line="26"/>
         <source>Mysthea: The Fall</source>
         <translation type="unfinished"></translation>
     </message>
@@ -126,20 +126,20 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardDetail.qml" line="9"/>
         <source>CARD DETAIL</source>
-        <translation type="unfinished"></translation>
+        <translation>DÉTAIL DE LA CARTE</translation>
     </message>
 </context>
 <context>
     <name>CardDetailDelegate</name>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="41"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="38"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Commandement</translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="56"/>
+        <location filename="../qml/Mysthea/CardDetailDelegate.qml" line="51"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère</translation>
     </message>
 </context>
 <context>
@@ -147,758 +147,1248 @@
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="18"/>
         <source>Ooops! Card not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ooops! Carte non trouvée.</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/CardNotFound.qml" line="27"/>
         <source>Please try to type a different code or to change filter options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Essayez de saisir un code différent ou de modifier les options de filtrage.</translation>
     </message>
 </context>
 <context>
     <name>CardsData</name>
     <message>
-        <location filename="../models/card_data.h" line="9"/>
+        <location filename="icaion.js" line="1"/>
+        <source>Curio</source>
+        <translation type="unfinished">CURIO</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="2"/>
+        <source>One Shot</source>
+        <translation type="unfinished">CARTE À USAGE UNIQUE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="3"/>
+        <source>Take from the supply as much Qoam as depicted (in the case of wild Qoam, all crystals must be taken of the same color).</source>
+        <translation type="unfinished">Prenez dans la réserve autant de Qoam qu’indiqué (s’il s’agit de Qoam sauvage, tous les cristaux obtenus doivent être de la même couleur).</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="4"/>
+        <source>Immediately score as many Reputation Points as depicted.</source>
+        <translation type="unfinished">Marquez immédiatement autant de points de Réputation qu’indiqué.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="5"/>
+        <source>Immediately perform the action indicated by the card. If two actions are listed, choose only one to perform. You still have to meet the action requirements and pay for its cost.</source>
+        <translation type="unfinished">Effectuez immédiatement l’action indiquée par la carte. Si deux actions sont symbolisées, n’en choisissez qu’une à effectuer. Vous devez toujours satisfaire aux conditions d’utilisation de l’action et être en mesure de payer son coût.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="6"/>
+        <source>Right after you conclude your movement, you may play this card to move up to as many additional nodes as depicted.</source>
+        <translation type="unfinished">Juste après avoir terminé votre déplacement, jouez cette carte pour vous déplacer encore (dans la limite du nombre de croisements indiqué sur la carte).</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="7"/>
+        <source>Draw one or two Curio Cards.</source>
+        <translation type="unfinished">Piochez une ou deux
+cartes Curio.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
+        <source>Upgrade</source>
+        <translation type="unfinished">CARTE D’AMÉLIORATION</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="9"/>
+        <source>These cards add extra Null Cage to your Division Board.</source>
+        <translation type="unfinished">Ces cartes ajoutent une icône Cage Zéro supplémentaire à votre Plateau de Division.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="10"/>
+        <source>These cards add extra Strength to your Division Board.</source>
+        <translation type="unfinished">Ces cartes ajoutent une icône Force supplémentaire à votre Plateau de Division.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="11"/>
+        <source>These cards add extra Movement to your Division Board.</source>
+        <translation type="unfinished">Ces cartes ajoutent une icône Mouvement supplémentaire à votre Plateau de Division.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="12"/>
+        <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
+NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
+        <translation type="unfinished">À chaque fois que vous dépensez du Qoam, vous pouvez d’abord transformer 2 de vos cristaux de Qoam de même couleur en 1 cristal de Qoam de n’importe quelle autre couleur de votre choix.
+NOTE : Vous ne pouvez bénéficier de l’effet de chaque carte d’amélioration qu’une seule fois par action. </translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="13"/>
+        <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
+NOTE: There must still be a second Qoam available in the Region.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 1 Qoam de n’importe quelle couleur dans la réserve, plutôt qu’un second Qoam de la Région où il se trouve.
+NOTE : Pour que cette carte soit activée, il doit toujours y avoir au moins un deuxième Qoam disponible dans cette Région.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="14"/>
+        <source>Whenever you activate a Scavenger, you may decide to discard a Curio Card from your hand instead of drawing 1. If you do so, immediately score 3 Reputation Points.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Pilleur, vous pouvez défausser une carte Curio de votre main au lieu d’en piocher une. Dans ce cas, vous marquez immédiatement 3 PR.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="15"/>
+        <source>Whenever you activate a Refiner, score 3 Reputation Points instead of 2.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Raffineur, marquez 3 PR au lieu de deux.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="16"/>
+        <source>Whenever you activate a Harvester, you may take a third Qoam crystal from the Region, if available, instead of 2.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 3 cristaux de Qoam de cette Région (si possible), au lieu de deux.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="17"/>
+        <source>Whenever you activate a Scavenger, you may draw up to 2 Curio Cards, instead of 1.</source>
+        <translation type="unfinished">À chaque fois que vous activez un Pilleur, vous pouvez piocher jusqu’à 2 cartes Curio au lieu d’une.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="18"/>
+        <source>Whenever you activate a Refiner, you may Eradicate and collect a single Parasite from the same Region, for free.</source>
+        <translation type="unfinished">À chaque fois que vous  activez un Raffineur, vous pouvez éradiquer et collecter gratuitement un Parasite (un seul) de la même Région.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="19"/>
+        <source>Immediately wound all opponents’ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
+        <translation type="unfinished">Blessez immédiatement tous les Émissaires adverses présents sur le croisement où vous vous trouvez et sur les croisements adjacents au vôtre. Pour chaque Émissaire touché (mais pas nécessairement Blessé) par cette action, vous marquez autant de Points de Réputation qu’indiqué.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="20"/>
+        <source>Seekers</source>
+        <translation type="unfinished">émissaire</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="21"/>
+        <location filename="thefall.js" line="17"/>
+        <source>The Lone Survivor</source>
+        <translation type="unfinished">LE SURVIVANT SOLITAIRE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="22"/>
+        <source>On your last turn during each End of a Year phase, you may move your Seeker onto any node of the Game Board instead of performing a standard Move action.</source>
+        <translation type="unfinished">À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez déplacer votre Émissaire sur n’importe quel croisement du Plateau de Jeu plutôt qu’effectuer une action Déplacement standard.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="23"/>
+        <location filename="thefall.js" line="26"/>
+        <source>The Cursed</source>
+        <translation type="unfinished">LA DAMNÉE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="24"/>
+        <source>On your last turn during each End of a Year phase, you may perform two Standard Actions instead of one.</source>
+        <translation type="unfinished">À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez effectuer deux Actions standard au lieu d’une seule.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="25"/>
+        <location filename="thefall.js" line="20"/>
+        <source>The Heir</source>
+        <translation type="unfinished">L’HÉRITIER</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="26"/>
+        <source>Each time you play a Curio Card, you immediately score 1 Reputation Point.</source>
+        <translation type="unfinished">À chaque fois que vous jouez une carte Curio, vous marquez immédiatement 1 PR.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="27"/>
+        <location filename="thefall.js" line="24"/>
+        <source>The Machine</source>
+        <translation type="unfinished">LA MACHINE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="28"/>
+        <source>Each time you use the Emergency Power Supply, you may immediately take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
+        <translation type="unfinished">À chaque fois que vous utilisez l’Alimentation électrique d’urgence, vous pouvez immédiatement prendre dans la réserve 1 Qoam de n’importe quelle couleur et l’ajouter à l’une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà).</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="29"/>
+        <location filename="thefall.js" line="22"/>
+        <source>The Outsider</source>
+        <translation type="unfinished">L’ÉTRANGER</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="30"/>
+        <source>When you Investigate the Colossus, you score three times the number of Reputation Points you normally would.</source>
+        <translation type="unfinished">Lorsque vous Enquêtez sur le Colosse, vous marquez trois fois plus de points de Réputation que vous ne le feriez en temps normal.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="31"/>
+        <location filename="thefall.js" line="28"/>
+        <source>The Creature</source>
+        <translation type="unfinished">L’ADEPTE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="32"/>
+        <source>You spend 1 Qoam less to perform Deploy a Machine and Play a Curio Card actions. When deploying a Machine, you score Reputation Points as if you paid the full cost.</source>
+        <translation type="unfinished">Vous dépensez 1 Qoam de moins pour effectuer les actions Déployer une Machine et Jouer une carte Curio. Lors du déploiement d’une Machine, vous marquez autant de Points de Réputation que si vous en aviez payé le coût total.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="33"/>
+        <location filename="thefall.js" line="18"/>
+        <source>The Criminal</source>
+        <translation type="unfinished">LA CRIMINELLE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="34"/>
+        <source>Whenever you get Wounded, and at the Beginning of each Year, remove your Armor.
+By the end of a turn in which you have not performed any Special Action, put on the Armor.
+While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
+NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
+        <translation type="unfinished">À chaque fois que vous devenez Blessé et à chaque Début d’une Année, retirez votre Armure.
+À la fin d’un tour où vous n’avez effectué aucune Action spéciale, enfilez l’Armure.
+Quand vous êtes équipé de l’Armure, vous pouvez effectuer Enquêter sur le Colosse, Récupérer un Appareil et Installer un appareil comme des Actions spéciales.
+NOTE : cela signifie que vous pouvez Enquêter sur le Colosse deux fois dans le même tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="35"/>
+        <source>Specialized Gear</source>
+        <translation type="unfinished">equipement spécialisé</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="36"/>
+        <source>Hyper Boots</source>
+        <translation type="unfinished">BOTTES HYPER</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="37"/>
+        <source>Your basic movement distance is improved by one node.</source>
+        <translation type="unfinished">Votre distance de déplacement basique est augmentée
+d’un croisement.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="38"/>
+        <source>Primal Armor</source>
+        <translation type="unfinished">ARMURE PRIMAIRE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="39"/>
+        <source>At the End of the Game, score 3 Reputation Points for each Primal Shard you own.</source>
+        <translation type="unfinished">À la fin de la partie,
+vous marquez 3 PR
+pour chaque Éclat primaire
+en votre possession.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="40"/>
+        <source>Multifunctional Belt</source>
+        <translation type="unfinished">CEINTURE MULTIFONCTIONNELLE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="41"/>
+        <source>Each Year, at the beginning of your very first turn, you may draw up to 2 Curio Cards.</source>
+        <translation type="unfinished">Chaque Année, au début de votre tout premier tour, vous pouvez piocher jusqu’à 2 cartes Curio.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="42"/>
+        <source>Exploration Case</source>
+        <translation type="unfinished">CAS D’EXPLORATION</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="43"/>
+        <source>Each Year, at the beginning of your very first turn, you may choose Qoam of any color, then take 3 crystals of that color from the common supply.</source>
+        <translation type="unfinished">Chaque Année, au début de votre tout premier tour, vous pouvez choisir n’importe quelle couleur de Qoam, puis prendre dans la réserve commune 3 cristaux de cette couleur.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="44"/>
+        <source>Parasite Sword</source>
+        <translation type="unfinished">ÉPÉE PARASITE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="45"/>
+        <source>You start the game with an additional Strength icon. Each turn you successfully perform an Eradicate Parasites action you immediately score 2 Reputation Points.</source>
+        <translation type="unfinished">Vous démarrez la partie avec une icône Force supplémentaire. À chaque tour, si vous réalisez avec succès au moins une action Éradiquer les parasites, vous marquez 2 PR.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="46"/>
+        <source>Energy Harness</source>
+        <translation type="unfinished">HARNAIS ÉNERGÉTIQUE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="47"/>
+        <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your Null Cages.</source>
+        <translation type="unfinished">À la fin de la partie, chaque cristal de Qoam restant dans vos Cages Zéro vous rapporte 2 PR au lieu de 1.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="48"/>
+        <source>Vertebra Crown</source>
+        <translation type="unfinished">COURONNE DE VERTIBRA</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="49"/>
+        <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a crater’s edge node.</source>
+        <translation type="unfinished">Lors de chaque phase de Fin d’une Année, vous marquez 5 PR si vous avez terminé votre dernier tour sur un croisement situé au bord d’un cratère.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="50"/>
+        <source>Empowered Tools</source>
+        <translation type="unfinished">OUTILS AUTONOMES</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="51"/>
+        <source>Whenever you install an Apparatus, immediately score 4 Reputation Points.</source>
+        <translation type="unfinished">À chaque fois que vous installez
+un Appareil, vous marquez
+immédiatement 4 PR.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="52"/>
+        <source>Mechanic Gloves</source>
+        <translation type="unfinished">GANTS MÉCANIQUES</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="53"/>
+        <source>You may perform Deploy a Machine as a Special Action. This means you might perform this action twice in a turn, once as a Standard Action and once as a Special Action.</source>
+        <translation type="unfinished">Vous pouvez effectuer l’action Déployer une Machine comme s’il s’agissait d’une Action spéciale. Cela signifie que vous pouvez effectuer cette action deux fois lors de votre tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="54"/>
+        <source>Energy Stabilizer</source>
+        <translation type="unfinished">STABILISATEUR D’ÉNERGIE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="55"/>
+        <source>Whenever you Overcharge Machinery, draw 1 Curio Card.</source>
+        <translation type="unfinished">À chaque fois que vous suralimentez des Machines, piochez 1 carte Curio.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="56"/>
+        <source>Event - Region</source>
+        <translation type="unfinished">ÉVÈNEMENTS - région</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="57"/>
+        <location filename="mysthea.js" line="144"/>
+        <source>River</source>
+        <translation type="unfinished">RIVIÈRE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="58"/>
+        <location filename="mysthea.js" line="145"/>
+        <source>Mountain</source>
+        <translation type="unfinished">MONTAGNE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="59"/>
+        <location filename="mysthea.js" line="146"/>
+        <source>Forest</source>
+        <translation type="unfinished">FORÊT</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="60"/>
+        <location filename="mysthea.js" line="148"/>
+        <source>Crystal Field</source>
+        <translation type="unfinished">TERRE BRUMEUSE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="61"/>
+        <location filename="mysthea.js" line="147"/>
+        <source>Land of Myst</source>
+        <translation type="unfinished">CHAMP CRISTALLIN</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="62"/>
+        <source>Event - Colossus</source>
+        <translation type="unfinished">ÉVÈNEMENTS - Colosse</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="63"/>
+        <source>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <oldsource>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
+        <translation type="unfinished">Déplacez le Colosse
+Placez deux Parasites sur chaque Région adjacente au cratère où se trouve le Colosse.
+Le Colosse blesse tous les Émissaires présents sur les croisements des Régions adjacentes au cratère où il se trouve.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="64"/>
+        <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
+Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
+        <translation type="unfinished">Déplacez le Colosse. Au cours de son déplacement, il blesse tous les Émissaires présents sur les croisements des Régions adjacentes aux cratères qu’il traverse (y compris les cratères où il commence et termine son déplacement).
+Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="65"/>
+        <source>Place one Parasite on each Region adjacent to the Colossus’ crater.
+Move the Colossus.
+Place one Parasite on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <translation type="unfinished">Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
+Déplacez le Colosse.
+Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
+ Le Colosse blesse tous les Émissaires présents sur les croisements des Régions adjacentes au cratère où il se trouve.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="66"/>
+        <source>Wonder</source>
+        <translation type="unfinished">Merveille</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="67"/>
+        <source>Parasite Colony</source>
+        <translation type="unfinished">COLONIE PARASITE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="68"/>
+        <source>Cost: 2 qoam
+Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
+        <translation type="unfinished">Coût : 2 qoam
+Effet : Vous blessez les Émissaires ennemis présents sur votre croisement où sur un croisement adjacent à celui-ci.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="69"/>
+        <source>Pulsar</source>
+        <translation type="unfinished">PULSAR</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="70"/>
+        <source>Cost: 2 qoam
+Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
+        <translation type="unfinished">Coût : 2 qoam
+Effet : Chacun de vos adversaires doit défausser 1 Qoam de son choix dans la réserve commune.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="71"/>
+        <source>Transmuter</source>
+        <translation type="unfinished">TRANSMUTATEUR</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="72"/>
+        <source>Cost: 2 qoam
+Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
+        <translation type="unfinished">Coût : 2 qoam
+Effet : Vous pouvez défausser 1 Qoam de n&apos;importe quel type pour gagner immédiatement 2 PR.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="73"/>
+        <source>Qoamcopia</source>
+        <translation type="unfinished">QOAMCOPIA</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="74"/>
+        <source>Cost: 3 qoam
+Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
+        <translation type="unfinished">Coût : 3 qoam
+Effet : Prenez dans la réserve 1 Qoam de n&apos;importe quelle couleur et ajoutez-le à l&apos;une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà)
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="75"/>
+        <source>Curio Hub</source>
+        <translation type="unfinished">HUB CURIO</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="76"/>
+        <source>Cost: 3 qoam
+Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
+        <translation type="unfinished">Coût : 3 qoam
+Effet : Vous pouvez soit piocher une carte Curio soit jouer une carte Curio.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="77"/>
+        <source>Living Altar</source>
+        <translation type="unfinished">AUTEL VIVANT</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="78"/>
+        <source>Cost: 4 qoam
+Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
+        <translation type="unfinished">Coût : 4 qoam
+Effet : Vous pouvez soit déplacer votre Émissaire d&apos;un croisement, soit éradiquer gratuitement un Parasite dans l’une des Régions adjacentes à votre Émissaire.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="79"/>
+        <source>Dark Bell</source>
+        <translation type="unfinished">SONNEUR FUNESTE</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="80"/>
+        <source>Cost: 4 qoam
+Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
+        <translation type="unfinished">Coût : 4 qoam
+Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou antihoraire. Placez ensuite un Parasite sur chacune des deux Régions adjacentes au cratère sur lequel vient d’arriver le Colosse.
+</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
         <source>All types</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="10"/>
-        <source>Era</source>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="11"/>
-        <source>Era X</source>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="12"/>
-        <source>Era I</source>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="13"/>
-        <source>Era II</source>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="14"/>
-        <source>Era III</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="15"/>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
         <source>Champion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="17"/>
-        <source>Attunement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="19"/>
-        <source>Encounter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="20"/>
-        <source>Event</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="23"/>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
         <source>All commands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="24"/>
-        <source>Tactic</source>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="26"/>
-        <source>Objective</source>
+        <location filename="mysthea.js" line="1"/>
+        <source>Minieuro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="28"/>
-        <source>Accessory</source>
+        <location filename="mysthea.js" line="2"/>
+        <source>Era x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="29"/>
-        <source>Upgrade</source>
+        <location filename="mysthea.js" line="3"/>
+        <source>Red</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="55"/>
+        <location filename="mysthea.js" line="4"/>
         <source>Pay 2 Energy Points to Travel with your Champion to any region. The Champion cannot carry any other unit.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Le Champion ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="56"/>
+        <location filename="mysthea.js" line="5"/>
         <source>Pay 2 Energy Points to gain 2 Experience Points and Develop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 2 points d’Expérience et développer (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="57"/>
+        <location filename="mysthea.js" line="6"/>
         <source>Pay 2 Energy Points to Act.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour agir (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="58"/>
+        <location filename="mysthea.js" line="7"/>
         <source>Pay 2 Energy Points to Start a Battle in any region with at least 1 Opponent and add 2 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire (ceci ne décharge pas votre Artefact) ; ajoutez 2 à votre Force totale.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="59"/>
+        <location filename="mysthea.js" line="8"/>
         <source>Pay 2 Energy Points to Meditate.</source>
+        <translation type="unfinished">Payez 2 points d’Énergie pour méditer (Action Standard).</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="9"/>
+        <source>Yellow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="60"/>
+        <location filename="mysthea.js" line="10"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Forest region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Forêt que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="61"/>
+        <location filename="mysthea.js" line="11"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Land of Myst region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="62"/>
+        <location filename="mysthea.js" line="12"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each River region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="63"/>
+        <location filename="mysthea.js" line="13"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Crystal Field region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Champ cristallin que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="64"/>
+        <location filename="mysthea.js" line="14"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Mountain region you control.</source>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="15"/>
+        <source>Green</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="65"/>
+        <location filename="mysthea.js" line="16"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Tactic Card to Act.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Tactique pour agir (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="66"/>
+        <location filename="mysthea.js" line="17"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Objective Card to Develop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Objectif pour développer (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="67"/>
+        <location filename="mysthea.js" line="18"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Accessory Card to Meditate.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Accessoire pour méditer (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="68"/>
+        <location filename="mysthea.js" line="19"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Upgrade Card to Recharge your Artefact and/or gain 4 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Amélioration pour recharger votre Artefact ou gagner 4 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="69"/>
+        <location filename="mysthea.js" line="20"/>
         <source>While this card is on your Player Board, once per turn you may discard any Command Card to gain X Command Points, where X is equal to the number of Command Points of the discarded card.</source>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte de Commandement pour gagner X points de Gloire, où X est le nombre de points de Commandement de la carte défaussée.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="21"/>
+        <source>Blue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="70"/>
+        <location filename="mysthea.js" line="22"/>
         <source>Whenever you Deploy a Fortification, you gain 1 Glory Point and 1 Energy Point.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point de Gloire et 1 point d’Énergie chaque fois que vous déployez une Fortification.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="71"/>
+        <location filename="mysthea.js" line="23"/>
         <source>While this card is on your Player Board, whenever you Construct a Troop, gain 1 Experience Point.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point d’Expérience chaque fois que vous construisez une Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="72"/>
+        <location filename="mysthea.js" line="24"/>
         <source>While this card is on your Player Board, whenever you Construct a Golem, you may Deploy it at no cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez un Golem, vous pouvez le déployer gratuitement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="73"/>
+        <location filename="mysthea.js" line="25"/>
         <source>While this card is on your Player Board, add 2 Strength Points to your Champion.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 2 à la Force de votre Champion.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="74"/>
+        <location filename="mysthea.js" line="26"/>
         <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous n’avez pas besoin de dépenser d’Énergie pour poser une carte Amélioration.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="27"/>
+        <source>Era I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="78"/>
+        <location filename="mysthea.js" line="28"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie pour recharger votre Artefact.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="79"/>
+        <location filename="mysthea.js" line="29"/>
         <source>Pay 1 Energy Point to Travel with 1 Golem to any region. The Golem cannot carry any other unit.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie pour faire Voyager un Golem vers n’importe quelle Région. Le Golem ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="80"/>
+        <location filename="mysthea.js" line="30"/>
         <source>Pay 2 Energy Points to choose any region. Remove 1 Fortification from each Opponent in that region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Fortification à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="81"/>
+        <location filename="mysthea.js" line="31"/>
         <source>Pay 3 Energy Points to Construct 1 Troop and/or 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour construire 1 Troupe et/ou 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="82"/>
+        <location filename="mysthea.js" line="32"/>
         <source>Pay 3 Energy Points to Deploy 1 Troop and/or 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour déployer 1 Troupe et/ou 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="83"/>
+        <location filename="mysthea.js" line="33"/>
         <source>Pay 1 Energy Point to gain 3 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="84"/>
+        <location filename="mysthea.js" line="34"/>
         <source>Pay 1 Energy Point and remove from the game 1 Tactic Card from your hand to gain X Command Points and X Experience Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Tactique de votre main pour gagner X points de Commandement et d’Expérience, où X est le nombre de points de Commandement de la carte retirée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="85"/>
+        <location filename="mysthea.js" line="35"/>
         <source>Pay 2 Energy Points to gain 2 Glory Points for each of your Fortifications currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 2 points de Gloire pour chacune de vos Fortifications actuellement déployées.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="86"/>
+        <location filename="mysthea.js" line="36"/>
         <source>Pay 3 Energy Points to gain 1 Glory Point and 1 Energy Point for each of your Golems currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 1 point de Gloire et 1 point d’Énergie pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="87"/>
+        <location filename="mysthea.js" line="37"/>
         <source>Pay 3 Energy Points to gain 3 Glory Points for each Encounter you faced.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 3 points de Gloire pour chaque Rencontre que vous avez affrontée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="88"/>
+        <location filename="mysthea.js" line="38"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to gain 2 Energy Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 2 points d’Énergie.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="89"/>
+        <location filename="mysthea.js" line="39"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Travel with your Champion to any region. The Champion cannot carry any other unit.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Il ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="90"/>
+        <location filename="mysthea.js" line="40"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 2 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 2 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="91"/>
+        <location filename="mysthea.js" line="41"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct 1 Troop or Travel with 1 Troop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Troupe ou faire Voyager 1 Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="92"/>
+        <location filename="mysthea.js" line="42"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct 1 Golem or Travel with 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Golem ou faire Voyager 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="93"/>
+        <location filename="mysthea.js" line="43"/>
         <source>While this card is on your Player Board, whenever you Deploy a Fortification, you may gain 1 Experience Point.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 1 point d’Expérience.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="94"/>
+        <location filename="mysthea.js" line="44"/>
         <source>While this card is on your Player Board, whenever you Deploy a Golem, you may gain 3 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 3 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="95"/>
+        <location filename="mysthea.js" line="45"/>
         <source>While this card is on your Player Board, whenever your Champion Travels, they may carry one of your units from the same region that has not yet traveled this turn. If your Champion Travels several times, they can carry a different unit each time.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que votre Champion Voyage, il peut emmener avec lui une unité de la même Région qui n’a pas déja voyagéce tour-ci. Si votre Champion Voyage plusieurs fois, il peut emmener des unités différentes à chaque fois.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="96"/>
+        <location filename="mysthea.js" line="46"/>
         <source>While this card is on your Player Board, whenever you Construct a Troop, you may Deploy it at no cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez une Troupe, vous pouvez la déployer gratuitement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="97"/>
+        <location filename="mysthea.js" line="47"/>
         <source>While this card is on your Player Board, whenever you play an Accessory Card, you do not have to spend Energy Points to place it.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Accessoire, vous n’avez pas besoin de dépenser d’Énergie pour la poser.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="48"/>
+        <source>Era II</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="101"/>
+        <location filename="mysthea.js" line="49"/>
         <source>Pay 1 Energy Point to draw up to 2 cards from the top of the Era Deck of the current Era at no cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie pour piocher les deux premières cartes de la pile de l’Ère actuelle.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="102"/>
+        <location filename="mysthea.js" line="50"/>
         <source>Pay 2 Energy Points to Travel with up to 2 Troops to any region. Chosen units cannot carry any other unit but they can Travel to two different regions, independently.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour faire Voyager jusqu’à 2 Troupes vers n’importe quelle Région. Les Troupes ne peuvent pas emmener d’autres unités mais elles peuvent Voyager chacune vers une Région différente.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="103"/>
+        <location filename="mysthea.js" line="51"/>
         <source>Pay 3 Energy Points to Start a Battle in any region with at least one Opponent and add 3 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 3 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="104"/>
+        <location filename="mysthea.js" line="52"/>
         <source>Pay 3 Energy Points to choose any region. Remove 1 Troop from each Opponent in that region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie et choisissez une Région. Retirez 1 Troupe à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="105"/>
+        <location filename="mysthea.js" line="53"/>
         <source>Pay 4 Energy Points to choose any region where you are present. Travel with all your units (except Fortifications) from that region to any other region. Units that have already traveled this turn cannot Travel again.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 4 points d’Énergies et choisissez une Région où vous êtes présent. Faites Voyager toutes vos unités (Fortifications exceptées) depuis cette Région vers n’importe quelle autre Région. Les unités qui ont déjà Voyagé ce tour-ci  ne peuvent pas Voyager à nouveau.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="106"/>
+        <location filename="mysthea.js" line="54"/>
         <source>Pay 1 Energy Point and remove from the game 1 Objective Card from your hand to gain X Glory Points and X Command Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Objectif de votre main pour gagner un nombre de points de Commandement et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="107"/>
+        <location filename="mysthea.js" line="55"/>
         <source>Pay 2 Energy Points to gain 5 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 5 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="108"/>
+        <location filename="mysthea.js" line="56"/>
         <source>Pay 3 Energy Points to gain 7 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 7 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="109"/>
+        <location filename="mysthea.js" line="57"/>
         <source>Pay 3 Energy Points to gain 1 Glory Point for each of your Troops currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 1 point de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="110"/>
+        <location filename="mysthea.js" line="58"/>
         <source>Pay 4 Energy Points to Recharge your Artefact and/or Meditate.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 4 points d’Énergie pour recharger votre Artefact et/ou méditer (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="111"/>
+        <location filename="mysthea.js" line="59"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to gain 1 Experience Point and 1 Glory Point.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 1 point d’Expérience et 1 point de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="112"/>
+        <location filename="mysthea.js" line="60"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct or Deploy 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="113"/>
+        <location filename="mysthea.js" line="61"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct or Deploy 1 Troop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="114"/>
+        <location filename="mysthea.js" line="62"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 4 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 4 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="115"/>
+        <location filename="mysthea.js" line="63"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Fortification.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour déployer 1 Fortification.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="64"/>
+        <source>Blu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="116"/>
+        <location filename="mysthea.js" line="65"/>
         <source>While this card is on your Player Board, whenever you Face an Encounter, you may gain 3 Energy Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous affrontez une Rencontre, vous pouvez gagner 3 points d’Énergie.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="117"/>
+        <location filename="mysthea.js" line="66"/>
         <source>While this card is on your Player Board, whenever you play a Tactic Card, you do not have to pay its Energy cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Tactique, vous n’avez pas à payer son coût en points d’Énergie.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="118"/>
+        <location filename="mysthea.js" line="67"/>
         <source>While this card is on your Player Board, add 1 Strength Point to each of your Golems.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Golems.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="119"/>
+        <location filename="mysthea.js" line="68"/>
         <source>While this card is on your Player Board, whenever one of your Troops Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Troop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois qu’une de vos Troupes Voyage, elle peut emmener une autre de vos unités qui n’a pas déjà Voyagé ce tour-ci. L’unité emmenée doit se trouver dans la même Région que votre Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="120"/>
+        <location filename="mysthea.js" line="69"/>
         <source>While this card is on your Player Board, add 1 Strength to each of your Fortifications.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Fortifications.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="70"/>
+        <source>Era III</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="124"/>
+        <location filename="mysthea.js" line="71"/>
         <source>Pay 1 Energy Point to gain 12 Energy Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie pour gagner 12 points d’Énergie.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="125"/>
+        <location filename="mysthea.js" line="72"/>
         <source>Pay 2 Energy Points to choose any region. Remove 1 Golem from each Opponent in that region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Golem à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="126"/>
+        <location filename="mysthea.js" line="73"/>
         <source>Pay 3 Energy Points to choose a Monster whose card has already been placed on the Events Board during this Era. The Monster attacks immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie et choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="127"/>
+        <location filename="mysthea.js" line="74"/>
         <source>Pay 4 Energy Points to choose any region. Wound all Opponents’ Champions in that region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 4 points d’Énergie et choisissez une Région. Blessez tous les Champions adverses présents dans cette Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="128"/>
+        <location filename="mysthea.js" line="75"/>
         <source>Pay 5 Energy Points to Start a Battle in any region with at least 1 Opponent and add 5 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 5 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 5 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="129"/>
+        <location filename="mysthea.js" line="76"/>
         <source>Pay 1 Energy Point and remove from the game 1 Accessory Card from your hand to gain X Energy Points and X Glory Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Accessoire de votre main pour gagner un nombre de points d’Énergie et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="130"/>
+        <location filename="mysthea.js" line="77"/>
         <source>Pay 2 Energy Points and remove from the game 1 Upgrade Card from your hand to gain X Glory Points and X Experience Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 2 point d’Énergie et retirez de la partie une carte Amélioration de votre main pour gagner X points d’Expérience et X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="131"/>
+        <location filename="mysthea.js" line="78"/>
         <source>Pay 3 Energy points to Recharge your Artefact and gain 4 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 3 points d’Énergie pour recharger votre Artefact et gagner 4 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="132"/>
+        <location filename="mysthea.js" line="79"/>
         <source>Pay 4 Energy Points to gain 9 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 4 points d’Énergie pour gagner 9 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="133"/>
+        <location filename="mysthea.js" line="80"/>
         <source>Pay 5 Energy Points and remove from the game 1 Tactic Card, 1 Objective Card, 1 Accessory Card, and 1 Upgrade Card from your hand to gain 16 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Payez 5 points d’Énergie et retirez de la partie une carte Tactique, 1 carte Objectif, 1 carte Accessoire et 1 carte Amélioration de votre main pour gagner 16 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="134"/>
+        <location filename="mysthea.js" line="81"/>
         <source>While this card is on your Player Board, once per turn you may remove from the game 2 Accessory Cards from your hand to choose a Monster whose card has already been placed on the Events Board during this Era. The Monster attacks immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie 2 cartes Accessoires de votre main pour choisir un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="135"/>
+        <location filename="mysthea.js" line="82"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Golem or Travel with 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (une fois par tour) payer 1 point d’Énergie pour déployer 1 Golem ou faire Voyager 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="136"/>
+        <location filename="mysthea.js" line="83"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Troop or Travel with 1 Troop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour déployer 1 Troupe ou faire Voyager 1 Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="137"/>
+        <location filename="mysthea.js" line="84"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 6 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 6 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="138"/>
+        <location filename="mysthea.js" line="85"/>
         <source>While this card is on your Player Board, once per turn you may remove from the game any card from your hand to gain X Glory Points twice, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie une carte de votre main pour gagner deux fois le nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="139"/>
+        <location filename="mysthea.js" line="86"/>
         <source>While this card is on your Player Board, add 3 Strength Points to your Champion.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 3 à la Force de votre Champion.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="140"/>
+        <location filename="mysthea.js" line="87"/>
         <source>While this card is on your Player Board, whenever one of your Golems Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, chaque fois qu’un de vos Golems Voyage, il peut emmener une autre unité alliée de la même Région et qui n’a pas déjà Voyagé ce tour-ci.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="141"/>
+        <location filename="mysthea.js" line="88"/>
         <source>While this card is on your Player Board, whenever you play an Objective Card, you do not have to pay its Energy cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Objectif, vous n’avez pas à payer son coût en points d’Énergie.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="142"/>
+        <location filename="mysthea.js" line="89"/>
         <source>While this card is on your Player Board, whenever you Deploy a Fortification, gain 4 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, gagnez 4 points de Gloire chaque fois que vous déployez une Fortification.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="143"/>
+        <location filename="mysthea.js" line="90"/>
         <source>While this card is on your Player Board, add 1 Strength Point to each of your Troops.</source>
+        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Troupes.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="91"/>
+        <source>Poker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="147"/>
+        <location filename="mysthea.js" line="92"/>
+        <source>Hero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="93"/>
+        <source>Gray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="94"/>
         <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monster’s attack.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand vous commencez une bataille dans la Région où se trouve Anuth (ou qu’Anuth se trouve sur l’Île attaquée par un Monstre), il reçoit 2 points de Force additionnels jusqu’à la fin de la bataille ou de l’attaque du Monstre.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="148"/>
+        <location filename="mysthea.js" line="95"/>
         <source>Celethe: When Celethe is on an Island attacked by a Monster, if the Monster loses, the player controlling Celethe doubles their reward.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand Celethe est sur une Île attaquée par un Monstre, si le Monstre perd, le contrôleur de Celethe double sa récompense.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="149"/>
+        <location filename="mysthea.js" line="96"/>
         <source>Leheir: When you Start a Battle, Leheir gives you 1 extra Glory Point for each unit which are removed or retreat (including your own), and for each Champion that becomes wounded.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand vous commencez une bataille, Leheir vous donne 1 point de Gloire additionnel pour chaque unité retirée ou ayant fait retraite (y compris les vôtres) et pour chaque Champion blessé à la fin du conflit.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="150"/>
+        <location filename="mysthea.js" line="97"/>
         <source>Telron: At the very beginning of each Era (before Champions are restored), Telron gives you 4 extra Energy Points if not wounded.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Au début de chaque Ère (avant que les Champions ne soient soignés), Telron vous accorde 4 points d’Énergie additionnels s’il n’est pas blessé.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="151"/>
+        <location filename="mysthea.js" line="98"/>
         <source>CR-2T1: At the end of each Era, you receive 3 extra Glory Points for each 2 regions you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">À la fin de chaque Ère, vous recevez 3 points de Gloire additionnels toutes les 2 Régions que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="152"/>
+        <location filename="mysthea.js" line="99"/>
         <source>Sanya: When you Start a Battle or Face an Encounter, you may first choose to take the card on top of the Era Deck of the current Era and add it to your hand, at no cost.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quand vous commencez une bataille ou affrontez une Rencontre, vous pouvez tout d’abord prendre la première carte de la pile de l’Ère actuelle et l’ajouter gratuitement à votre main.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="153"/>
+        <location filename="mysthea.js" line="100"/>
         <source>Kolbor &amp; Malabor: When you Move an Island, you can perform one of any of the Attunements available, regardless of which Island you moved.</source>
+        <translation type="unfinished">Quand vous déplacez une Île, vous pouvez accomplir n’importe quelle Harmonisation parmi celles disponibles, sans être limité par l’Île déplacée.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="101"/>
+        <source>Attunement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="157"/>
+        <location filename="mysthea.js" line="102"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each Upgrade Card in play on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chaque carte Amélioration en jeu sur votre tableau de bord.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="158"/>
+        <location filename="mysthea.js" line="103"/>
         <source>Attune to the anomaly. Receive 4 Glory Points for each Encounter you faced.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 4 points de Gloire pour chaque Rencontre que vous avez faite.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="159"/>
+        <location filename="mysthea.js" line="104"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chaque Région que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="160"/>
+        <location filename="mysthea.js" line="105"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each of your Troops currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="161"/>
+        <location filename="mysthea.js" line="106"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each Command Card in your discard pile.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chaque carte Commandement dans votre défausse.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="162"/>
+        <location filename="mysthea.js" line="107"/>
         <source>Attune to the anomaly. Receive 4 Glory Points for each Accessory Card in play on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 4 points de Gloire pour chaque carte Accessoire en jeu sur votre tableau de bord.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="163"/>
+        <location filename="mysthea.js" line="108"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each Experience Point you currently possess.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chacun de vos points d’Expérience actuels.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="164"/>
+        <location filename="mysthea.js" line="109"/>
         <source>Attune to the anomaly. Receive 1 Glory Point for each region where you have at least one unit.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 1 point de Gloire pour chaque Région où vous avez au moins une unité.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="165"/>
+        <location filename="mysthea.js" line="110"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each of your Golems currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="166"/>
+        <location filename="mysthea.js" line="111"/>
         <source>Attune to the anomaly. At the end of this Era, receive 8 Glory Points for each Monster defeated (even if you did not take part in the attack).</source>
+        <translation type="unfinished">Harmonisations. À la fin de cette Ère, recevez 8 points de Gloire pour chaque Monstre vaincu.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="112"/>
+        <source>Encounter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="170"/>
+        <location filename="mysthea.js" line="113"/>
         <source>Gain 6 Glory Points. Axe: Remove a Fortification from each Opponent / Boots: Gain 2 Experience Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : retirez une Fortification à chaque adversaire. Bottes : gagnez 2 points d’Expérience.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="171"/>
+        <location filename="mysthea.js" line="114"/>
         <source>Gain 6 Glory Points. Dialogue: Gain 3 Command Points / Chest: Meditate.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : gagnez 3 points de Commandement. Coffre : méditez (Action Standard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="172"/>
+        <location filename="mysthea.js" line="115"/>
         <source>Gain 6 Glory Points. Boots: Construct 1 Troop and 1 Golem / Chest: Gain 3 Glory Points for each Crystal Field region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : construisez 1 Troupe et 1 Golem. Coffre : gagnez 3 points de Gloire pour chaque Champ cristallin que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="173"/>
+        <location filename="mysthea.js" line="116"/>
         <source>Gain 7 Glory Points. Axe: Gain 3 Glory Points for each Forest region you control / Dialogue: Gain 1 Experience Point and Travel with your Champion.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : gagnez 3 points de Gloire pour chaque Forêt que vous contrôlez. Dialogue : gagnez 1 point d’Expérience et faites Voyager votre Champion.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="174"/>
+        <location filename="mysthea.js" line="117"/>
         <source>Gain 7 Glory Points. Boots: Gain 2 Command Points / Chest: Gain 1 Energy Point and Develop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : gagnez 2 points de Commandement. Coffre: gagnez 1 point d’Énergie et développez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="175"/>
+        <location filename="mysthea.js" line="118"/>
         <source>Gain 7 Glory Points. Chest: Gain 3 Energy Points / Boots: Draw 1 card from the top of the Era Deck.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : gagnez 3 points d’Énergie. Bottes : piochez la première carte de la pile d’Ère.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="176"/>
-        <source>Gain 8 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Construct 1 Troop or Travel with 1 Troop you control.</source>
-        <translation type="unfinished"></translation>
+        <location filename="mysthea.js" line="119"/>
+        <source>Gain 8 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Construct 1 Troop or Travel with 1 Troop you control. </source>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : construisez 1 troupe ou faites Voyager 1 des Troupes que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="177"/>
+        <location filename="mysthea.js" line="120"/>
         <source>Gain 8 Glory Points. Dialogue: Gain 1 Energy Point and 1 Command Point / Boots: Remove 1 Troop from each Opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Dialogue : gagnez 1 point d’Énergie et 1 point de Commandement. Bottes: retirez une Troupe à chaque adversaire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="178"/>
+        <location filename="mysthea.js" line="121"/>
         <source>Gain 8 Glory Points. Chest: Discard a Tactic Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card / Dialogue: Construct or Deploy 1 Troop.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Coffre : défaussez une carte Tactique pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée. Dialogue : construisez ou déployez 1 Troupe.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="179"/>
+        <location filename="mysthea.js" line="122"/>
         <source>Gain 7 Glory Points. Dialogue: Gain 3 Glory Points for each Land of Myst region you control / Boots: Choose 1 Golem and 1 Troop you control, then Travel to any region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Dialogue : gagnez 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez. Bottes : choisissez 1 Golem et 1 Troupe que vous contrôlez et faites-les Voyager vers n’importe quelle Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="180"/>
+        <location filename="mysthea.js" line="123"/>
         <source>Gain 7 Glory Points. Axe: Remove 1 Golem from each Opponent / Chest: Gain 3 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : retirez 1 Golem à chaque adversaire. Coffre : gagnez 3 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="181"/>
+        <location filename="mysthea.js" line="124"/>
         <source>Gain 7 Glory Points. Chest: Gain 1 Energy Point / Axe: Recharge your Artefact or gain 1 Command Point.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : gagnez 1 point d’Énergie. Hache : rechargez votre Artefact ou gagnez 1 point de Commandement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="182"/>
+        <location filename="mysthea.js" line="125"/>
         <source>Gain 7 Glory Points. Chest: Develop / Boots: Construct 1 Golem or Travel with 1 Golem you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : développez (Action Standard). Bottes : construisez 1 Golem ou faites Voyager 1 Golem que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="183"/>
+        <location filename="mysthea.js" line="126"/>
         <source>Gain 7 Glory Points. Boots: Gain 1 Command Point and 2 Glory Points / Axe: Remove 1 Golem from each Opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : gagnez 1 point de Commandement et 2 points de Gloire. Hache : retirez 1 Golem à chaque adversaire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="184"/>
+        <location filename="mysthea.js" line="127"/>
         <source>Gain 7 Glory Points. Chest: Draw 1 card from the top of the Era Deck / Dialogue: Gain 1 Glory Point for each of your Golem currently deployed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : piochez la première carte de la pile d’Ère. Dialogue : gagnez 1 point de Gloire pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="185"/>
+        <location filename="mysthea.js" line="128"/>
         <source>Gain 6 Glory Points. Dialogue: Deploy 1 Troop or Construct 1 Golem / Chest: Pay 1 Energy Point to gain 3 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : déployez 1 Troupe ou construisez 1 Golem. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="186"/>
+        <location filename="mysthea.js" line="129"/>
         <source>Gain 6 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Draw 1 card from the top of the Era Deck.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : piochez la première carte de la pile d’Ère.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="187"/>
+        <location filename="mysthea.js" line="130"/>
         <source>Gain 6 Glory Points. Chest: Construct 1 Troop or Construct 1 Golem / Axe: Discard an Accessory Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : construisez 1 Troupe ou 1 Golem. Hache : défaussez une carte Accessoire pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="188"/>
+        <location filename="mysthea.js" line="131"/>
         <source>Gain 6 Glory Points. Chest: Gain 2 Energy Points or gain 2 Command Points / Dialogue: Gain 2 Experience Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : gagnez 2 points d’Énergie ou 2 points de Commandement. Dialogue : gagnez 2 points d’Expérience.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="189"/>
+        <location filename="mysthea.js" line="132"/>
         <source>Gain 6 Glory Points. Boots: Travel to any region with your Champion / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : faites Voyager votre Champion vers n’importe quelle Région. Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="190"/>
+        <location filename="mysthea.js" line="133"/>
         <source>Gain 6 Glory Points. Dialogue: Construct or Deploy 1 Golem / Boots: Gain 3 Glory Points and Start a Battle in any region with at least 1 Opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : construisez ou déployez 1 Golem. Bottes : gagnez 3 points de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="191"/>
+        <location filename="mysthea.js" line="134"/>
         <source>Gain 8 Glory Points. Chest: Pay 1 Energy Point to gain 3 Glory Points / Boots: Travel to any region with 2 Troops you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire. Bottes : faites Voyager 2 Troupes que vous contrôlez vers n’importe quelle Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="192"/>
+        <location filename="mysthea.js" line="135"/>
         <source>Gain 8 Glory Points. Dialogue: Draw 1 card from the top of the Era Deck / Axe: Discard an Upgrade Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Dialogue : piochez la première carte de la pile d’Ère. Hache : défaussez une carte Amélioration pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="193"/>
+        <location filename="mysthea.js" line="136"/>
         <source>Gain 8 Glory Points. Boots: Deploy 1 Golem or Travel with 1 Golem / Dialogue: Gain 3 Glory Points for each River region you control.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 8 points de Gloire. Bottes : déployez 1 Golem ou faites Voyager 1 Golem. Dialogue : gagnez 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="194"/>
+        <location filename="mysthea.js" line="137"/>
         <source>Gain 6 Glory Points. Axe: Pay 1 Energy Point to gain 2 Glory Points and 1 Experience Point / Boots: Choose a region with at least 1 Troop or 1 Golem you control. Travel with all Troops and Golems you control in the chosen region to any other region.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : payez 1 point d’Énergie pour gagner 2 points de Gloire et 1 point d’Expérience. Bottes : choisissez une Région contenant au moins 1 Troupe ou 1 Golem sous votre contrôle. Faites Voyager  toutes vos Troupes et tous vos Golems depuis la Région sélectionnée vers n’importe quelle autre Région.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="195"/>
+        <location filename="mysthea.js" line="138"/>
         <source>Gain 6 Glory Points. Boots: Recharge your Artefact and gain 1 Experience Point / Dialogue: Gain 4 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : rechargez votre Artefact et gagnez 1 point d’Expérience. Dialogue : Gagnez 4 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="196"/>
+        <location filename="mysthea.js" line="139"/>
         <source>Gain 6 Glory Points. Chest: Meditate / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : méditez (Action Standard). Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="197"/>
+        <location filename="mysthea.js" line="140"/>
         <source>Gain 7 Glory Points. Boots: Travel with 2 Troops / Axe: Deploy a Fortification or 1 Golem.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : faites Voyager 2 Troupes. Hache : déployez 1 Fortification ou 1 Golem.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="198"/>
+        <location filename="mysthea.js" line="141"/>
         <source>Gain 7 Glory Points. Axe: Recharge your Artefact and Start a Battle in any region with at least 1 Opponent / Boots: Discard an Objective Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : rechargez votre Artefact et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : défaussez une carte Objectif pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="199"/>
+        <location filename="mysthea.js" line="142"/>
         <source>Gain 7 Glory Points. Dialogue: Act / Chest: Gain 3 Glory Points for each Mountain region you control.</source>
+        <translation type="unfinished">Gagnez 7 points de Gloire. Dialogue : agissez (Action Standard). Coffre : gagnez 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="143"/>
+        <source>Event</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="203"/>
-        <source>River</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="204"/>
-        <source>Mountain</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="205"/>
-        <source>Forest</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="206"/>
-        <source>Land of Myst</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="207"/>
-        <source>Crystal Field</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../models/card_data.h" line="208"/>
+        <location filename="mysthea.js" line="149"/>
         <source>Storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">TEMPÊTE</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="209"/>
+        <location filename="mysthea.js" line="150"/>
         <source>Boulron the Reaper:
 Strength 11
 Rewards:
@@ -906,10 +1396,17 @@ Gold - Gain 9 Glory Points.
 Silver - Gain 4 Glory Points.
 Bronze - Gain 2 Glory Points.
 Behaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Boulron les Faucheurs:
+Force 11
+RÉCOMPENSES:
+Or - Gagnez 9 points de Gloire.
+Argent - Gagnez 4 points de Gloire.
+Bronze - Gagnez 2 points de Gloire.
+COMPORTEMENT
+Quand un Boulron attaque, en raison de ses mouvements vifs et élégants, les joueurs ne bénéficient pas de la Force de leurs Fortifications sur l’Île attaquée.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="210"/>
+        <location filename="mysthea.js" line="151"/>
         <source>Onygauros the Collector:
 Strength 13
 Rewards:
@@ -917,10 +1414,17 @@ Gold - Gain 4 Command Points and 4 Glory Points.
 Silver - Gain 3 Command Points and 3 Glory Points.
 Bronze - Gain 2 Command Points and 2 Glory Points.
 Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Onygauros les Collecteurs:
+Force 13
+RÉCOMPENSES:
+Or - Gagnez 4 points de Gloire et 4 points de Commandement.
+Argent - Gagnez 3 points de Gloire et 3 points de Commandement.
+Bronze - Gagnez 2 points de Gloire et 2 points de Commandement.
+COMPORTEMENT:
+Quand un Onygauros attaque, chaque joueur dans l’ordre du tour (y compris ceux qui n’ont pas d’unités sur l’Île attaquée) doit choisir au hasard une carte de sa défausse et la retirer de la partie. L’Onygauros l’a collectée. Plutôt que de retirer une carte, un joueur peut choisir de perdre 5 points de Gloire à la place (mais la décision doit être prise avant de tirer la carte au hasard).</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="211"/>
+        <location filename="mysthea.js" line="152"/>
         <source>Caerulas the Inhabitant from Below:
 Strength 15
 Rewards:
@@ -929,10 +1433,18 @@ Silver - Gain 4 Experience Points and 4 Glory Points.
 Bronze - Gain 3 Experience Points and 3 Glory Points.
 Behaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.
 Note: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Caerulas Celui d’En-dessous:
+Force 15
+RÉCOMPENSES:
+Or - Gagnez 5 points de Gloire et 5 points d’Expérience.
+Argent - Gagnez 4 points de Gloire et 4 points d’Expérience.
+Bronze - Gagnez 3 points de Gloire et 3 points d’Expérience.
+COMPORTEMENT
+Quand Caerulas attaque et n’est pas vaincu, il enrage. Il se déplace sur l’Île suivante dans le sens horaire et attaque à nouveau.
+Note : il ne procède pas à une nouvelle attaque après la seconde ; il s’arrête et ne bougera pas vers l’Île suivante avant sa prochaine activation.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="212"/>
+        <location filename="mysthea.js" line="153"/>
         <source>Utcoro the Swarmer:
 Strength 10
 Rewards:
@@ -941,10 +1453,18 @@ Silver - Gain 2 Glory Points. You may also Face an Encounter.
 Bronze - Gain 1 Glory Point. You may also Face an Encounter.
 You can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.
 Behaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Utcoro les Essaimeurs:
+Force 10
+RÉCOMPENSES:
+Or - Gagnez 3 points de Gloire. Vous pouvez aussi faire une Rencontre.
+Argent - Gagnez 2 points de Gloire. Vous pouvez aussi faire une Rencontre.
+Bronze - Gagnez 1 point de Gloire. Vous pouvez aussi faire une Rencontre.
+Vous pouvez faire ces Rencontres même si votre Champion et votre jeton Rencontre ne sont pas sur la même Île. Vous n’avez pas besoin de dépenser d’Expérience durant ces Rencontres. Toutes les autres règles des Rencontres s’appliquent normalement.
+COMPORTEMENT
+Quand un Utcoro attaque, tous les joueurs qui ne participent pas au combat (Couards !) perdent immédiatement 5 points de Gloire.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="213"/>
+        <location filename="mysthea.js" line="154"/>
         <source>Cannibarok the Qoam Eater:
 Strength 12
 Rewards:
@@ -952,10 +1472,17 @@ Gold - Gain 6 Energy Points and 6 Glory Points.
 Silver - Gain 4 Energy Points and 4 Glory Points.
 Bronze - Gain 2 Energy Points and 2 Glory Points.
 Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cannibarok les Mange-Qoam:
+Force 12
+RÉCOMPENSES:
+Or - Gagnez 6 points de Gloire et 6 points d’Énergie.
+Argent - Gagnez 4 points de Gloire et 4 points d’Énergie.
+Bronze - Gagnez 2 points de Gloire et 2 points d’Énergie.
+COMPORTEMENT
+Quand un Cannibarok attaque une Île où se trouve une Région Champ cristallin, il est renforcé par l’énergie débordante et gagne +2 en Force jusqu’à la fin de son attaque.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="214"/>
+        <location filename="mysthea.js" line="155"/>
         <source>Obsidusa The Devourer:
 Strength 14
 Rewards:
@@ -964,10 +1491,18 @@ Silver - Gain 5 Glory Points and draw 1 Command card.
 Bronze - Gain 3 Glory Points and draw 1 Command card.
 Command cards are drawn from the Era Deck of the current Era.
 Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Obsidusa le Dévoreur:
+Force 14
+RÉCOMPENSES:
+Or - Gagnez 7 points de Gloire et piochez 1 carte de Commandement.
+Argent - Gagnez 5 points de Gloire et piochez 1 carte de Commandement.
+Bronze - Gagnez 3 points de Gloire et piochez 1 carte de Commandement.
+Les cartes de Commandement sont piochées dans la pile de l’Ère actuelle.
+COMPORTEMENT
+Quand l’Obsidusa attaque et n’est pas vaincu, il demeure sur l’Île où il se trouve pour se repaître des ennemis tombés.</translation>
     </message>
     <message>
-        <location filename="../models/card_data.h" line="215"/>
+        <location filename="mysthea.js" line="156"/>
         <source>Kodror the Infestation:
 Strength 16
 Rewards:
@@ -975,6 +1510,328 @@ Gold - Gain 16 Glory Points.
 Silver - Gain 12 Glory Points.
 Bronze - Gain 8 Glory Points.
 Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
+        <translation type="unfinished">Kodror l’Infestation:
+Force 16
+RÉCOMPENSES:
+Or - Gagnez 16 points de Gloire.
+Argent - Gagnez 12 points de Gloire.
+Bronze - Gagnez 8 points de Gloire.
+COMPORTEMENT
+Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec lui, enchevêtrée dans ses racines infestées (échangez la position de l’Île avec la suivante dans le sens horaire). Quand Kodror attaque et est vaincu, retirez sa figurine de la partie et retournez sa carte d’Évènement face cachée pour montrer que Kodror n’est plus en jeu. À la fin de l’Ère actuelle, retirez la carte d’Évènement de Kodror de la partie.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="1"/>
+        <source>TFA Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="2"/>
+        <source>Anuth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="3"/>
+        <source>CHARACTER ABILITY
+Whenever you Attack, add 2 Strength Points to your total.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY
+Whenever you Attack, add 2 Strength Points to your total.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="4"/>
+        <source>Celethe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="5"/>
+        <source>CHARACTER ABILITY
+Whenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.
+RELIC POWER
+Immediately take 3 Qoam crystals of any kind from the common pool.
+</source>
+        <oldsource>CHARACTER ABILITY
+Whenever you collect Qoam crystals, you may swap 1 Qoam crystal of any kind in place of one of the collected crystals.
+RELIC POWER
+Immediately take 3 Qoam crystals of any kind from the common pool.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="6"/>
+        <source>Leheir</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="7"/>
+        <source>CHARACTER ABILITY
+Once during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.
+RELIC POWER
+Swap position with another Character on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY
+Once during your turn, you may give another player 2 Qoam crystals from your personal reserve, then take 2 Qoam crystals from their pool. The trade is simultaneous.
+RELIC POWER
+Swap position with another Character on the Game Board.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="8"/>
+        <source>Telron</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="9"/>
+        <source>CHARACTER ABILITY
+At the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.
+</source>
+        <oldsource>CHARACTER ABILITY
+At the beginning of your turn, reveal the first card of the Event Deck, then put it back onto the top of the deck.
+RELIC POWER
+Move the Colossus one external node clockwise or counter-clockwise.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="10"/>
+        <source>CR-2T1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="11"/>
+        <source>CHARACTER ABILITY
+During your turn, when you Activate a Machine you may activate another Machine you own in the same Region.
+RELIC POWER
+Take a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.
+</source>
+        <oldsource>CHARACTER ABILITY
+During your turn, when you Activate a Machine you may activate another Machine you own in the same Region.
+RELIC POWER
+Take a Machine previously removed from the game and place it back on the Game Board, in a Region where no other Machine of the same kind is present.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="12"/>
+        <source>Sanya</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="13"/>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may always travel up to a distance of 2 nodes.
+RELIC POWER
+Move to any node of the Game Board
+with no other Character on it.
+</source>
+        <oldsource>CHARACTER ABILITY
+Whenever you Move, you may always travel up to a distance of 2 nodes.
+RELIC POWER
+Move to any node of the Game Board with no other Character on it.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="14"/>
+        <source>Kolbor &amp; Malabor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="15"/>
+        <source>CHARACTER ABILITY
+You may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.
+RELIC POWER
+Freely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.
+</source>
+        <oldsource>CHARACTER ABILITY
+You may spend an action to move from a node adjacent to an Island to one of the nodes of the two closest Islands.
+RELIC POWER
+Freely rearrange Enemies between the Regions adjacent to your node. This action does not trigger Enemy Attacks.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="16"/>
+        <source>TFA Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="19"/>
+        <source>CHARACTER ABILITY
+Without the Armor: Whenever you move as your first action of the turn, move up to a distance of 3 nodes, instead of just 1.
+While wearing the Armor: An Enemy Attack in the Regions adjacent to your Character is triggered by at least four Enemies.
+RELIC POWER
+Put on the Armor or take it off.
+NOTE: The Criminal is a special miniature that comes with two interchangeable torsos. At the beginning of the game, choose whether the Criminal starts the game with or without her Armor on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="21"/>
+        <source>CHARACTER ABILITY
+Whenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.
+RELIC POWER
+Deposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you consume a Parasite to generate 1 wild Qoam crystal, it provides 2 wild Qoam crystals of the same kind instead.\nRELIC POWER\nDeposit up to 3 Qoam crystals in the City, regardless of your position on the Game Board.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="23"/>
+        <source>CHARACTER ABILITY
+During an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.
+RELIC POWER
+When your Investigate the Colossus action is successful, do not move your Character back to the City.
+</source>
+        <oldsource>CHARACTER ABILITY\nDuring an Attack Enemies action, automatically gain an Eradication Bonus if you get to defeat at least one Golem.\nRELIC POWER\nWhen your Investigate the Colossus action is successful, do not move your Character back to the City.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="25"/>
+        <source>CHARACTER ABILITY
+Once per turn, move any Fortification up to a 2 node distance from its current position.
+RELIC POWER
+Reveal a Primal Shard from the base of the Colossus, then put it back into its slot.
+</source>
+        <oldsource>CHARACTER ABILITY\nOnce per turn, move any Fortification up to a 2 node distance from its current position.\nRELIC POWER\nReveal a Primal Shard from the base of the Colossus, then put it back into its slot.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="27"/>
+        <source>CHARACTER ABILITY
+Whenever you gain an Eradication Bonus, benefit from each revealed Command Card.
+RELIC POWER
+Immediately attack any Monster, regardless of your position on the Game Board. This is not an action.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you gain an Eradication Bonus, benefit from each revealed Command Card.\nRELIC POWER\nImmediately attack any Monster, regardless of your position on the Game Board. This is not an action.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="29"/>
+        <source>CHARACTER ABILITY
+Whenever you Move, you may move another Character instead of yours.
+RELIC POWER
+Each time you Use the Relic, copy and resolve another player’s Relic Power.
+</source>
+        <oldsource>CHARACTER ABILITY\nWhenever you Move, you may move another Character instead of yours.\nRELIC POWER\nEach time you Use the Relic, copy and resolve another player’s Relic Power.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="30"/>
+        <source>TFA Mysthea Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="31"/>
+        <source>Boulron the Reaper</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="32"/>
+        <source>STRENGTH 5
+During the Colossus Card resolution, it inflicts 10 damage to the City.
+</source>
+        <oldsource>STRENGTH 5\nDuring the Colossus Card resolution, it inflicts 10 damage to the City.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="33"/>
+        <source>Cannibarok the Qoam-Eater</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="34"/>
+        <source>STRENGTH 7
+When it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take half of the Troops on its Island (rounded up) and place them onto Cannibarok’s card. While Cannibarok is in play, these Troops are considered removed from the game. If Cannibarok leaves the game, put the Troops back on their Island.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="35"/>
+        <source>Utcoro the Swarmer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="36"/>
+        <source>STRENGTH 6
+When it comes into play, all players discharge their Relics.
+Relics cannot be recharged until Utcoro leaves the game.
+</source>
+        <oldsource>STRENGTH 6\nWhen it comes into play, all players discharge their Relics.\nRelics cannot be recharged until Utcoro leaves the game.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="37"/>
+        <source>Onygauros the Collector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="38"/>
+        <source>STRENGTH 9
+While Onygauros is in play, players cannot benefit from an
+Eradication Bonus.
+</source>
+        <oldsource>STRENGTH 9\nWhile Onygauros is in play, players cannot benefit from an\nEradication Bonus.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="39"/>
+        <source>Obsidusa the Devourer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="40"/>
+        <source>STRENGTH 7
+When it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.
+</source>
+        <oldsource>STRENGTH 7\nWhen it comes into play, take all Golems on its Island and place them onto Obsidusa’s card. While Obsidusa is in play, these Golems are considered removed from the game. If Obsidusa leaves the game, put the Golems back on their Island.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="41"/>
+        <source>Caerulas the Inhabitant from Below</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="42"/>
+        <source>STRENGTH 6
+While Caerulas is in play, players cannot perform an Investigate the Colossus action.
+</source>
+        <oldsource>STRENGTH 6\nWhile Caerulas is in play, players cannot perform an Investigate the Colossus action.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="43"/>
+        <source>Kodror the Infestation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="44"/>
+        <source>STRENGTH 8
+Each player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.
+</source>
+        <oldsource>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -983,15 +1840,15 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../style/MystheaUniverse/Components/CardsFiltersHeader.qml" line="29"/>
         <source>Search cards by code</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher des cartes par code</translation>
     </message>
 </context>
 <context>
     <name>CardsReference</name>
     <message>
-        <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="15"/>
+        <location filename="../style/MystheaUniverse/Pages/CardsReference.qml" line="10"/>
         <source>CARDS REFERENCE</source>
-        <translation type="unfinished"></translation>
+        <translation>RÉFÉRENCE DE CARTES</translation>
     </message>
 </context>
 <context>
@@ -999,7 +1856,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="32"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>LORE</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Components/ExtrasMenu.qml" line="40"/>
@@ -1017,427 +1874,449 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP</source>
-        <translation type="unfinished"></translation>
+        <translation>CONFIGURATION DU JEU</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/GameSetup.qml" line="12"/>
         <source>GAME SETUP - %1 of 11</source>
-        <translation type="unfinished"></translation>
+        <translation>CONFIGURATION DU JEU - %1 de 11</translation>
     </message>
 </context>
 <context>
     <name>GameSetupModel</name>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
-        <source>Place the Game Board and the Event Board in the center of the table, one next to the other</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
-        <source>Flip the Event Board to the side corresponding to the number of players. Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="64"/>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Consider Qoam crystals and Parasites miniatures as infinite. In the rare case that a specific component supply is depleted, use other components as a temporary replacement.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Considérez les cristaux de Qoam et les figurines de Parasite comme inépuisables. Dans les rares cas où ces éléments venaient à s’épuiser, remplacez-les temporairement par d&apos;autres éléments de jeu.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="112"/>
         <source>Place the Colossus on a random crater of the Game Board. Place 1 Parasite on each region adjacent to the Colossus’ crater.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez le Colosse sur un cratère aléatoire du Plateau de Jeu. Placez 1 Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="125"/>
         <source>&lt;strong&gt;2-3 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 1 Qoam on each of the ten external Regions and 2 Qoam on each of the five internal Regions (those adjacent to the City). </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2-3 joueurs -&lt;/strong&gt; Placez 1 Qoam sur chacune des dix Régions extérieures et 2 Qoam sur chacune des cinq Régions intérieures (celles adjacentes à la Cité), en faisant correspondre à chaque fois la couleur des cristaux à celle des Régions. </translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="139"/>
         <source>&lt;strong&gt;4-5 players -&lt;/strong&gt; Matching the colors of both crystals and Regions, place 2 Qoam on each Region of the Game Board. Then, place 1 Parasite on each of the five internal Regions.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4-5 joueurs -&lt;/strong&gt; Placez 2 Qoam sur chaque Région du Plateau de Jeu, en faisant correspondre à chaque fois la couleur des cristaux à celle des Régions. Placez ensuite 1 Parasite sur chacune des cinq Régions intérieures.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="152"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; Regions can only hold Qoam of the corresponding color (see p.18 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; les Régions ne peuvent contenir que du Qoam de leur couleur (voir p.18).</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="187"/>
         <source>Shuffle the Colossus’ Primal Shards without looking at their values.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
-        <source>4 Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les Éclats de Colosse primaires sans regarder leur valeur.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="234"/>
         <source>Randomly place the three Colossus Cards in the Year I, Year II, and Year III spaces on the Event Board face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez au hasard et face visible les trois cartes Colosse, sur les cases Année I, Année II et Année III du Plateau d&apos;Évènements.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="36"/>
+        <source>Place the Game Board and the Event Board in the center of the table, one next to the other.</source>
+        <translation>Placez le Plateau de Jeu et le Plateau d&apos;Évènements l&apos;un à côté de l&apos;autre, au centre de la table.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
+        <source>Flip the Event Board to the side corresponding to the number of players.
+Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
+        <translation>Retournez le Plateau d&apos;Évènements du côté correspondant au nombre de joueurs.
+Prenez les cristaux de Qoam et les Parasites et faites-en une réserve commune à proximité du Plateau d&apos;Évènements.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="221"/>
+        <source>Shuffle the five Region Cards and place them face down in the appropriate space on the Event Board.</source>
+        <translation>Mélangez les cinq cartes Région et placez-les face cachée sur l&apos;espace approprié du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="269"/>
-        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each. Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top. Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
-        <translation type="unfinished"></translation>
+        <source>Take all 15 Apparatus Tiles. Sort them by color into 5 piles of three tiles each.
+Decide whether to play with piles on their Day side, their Night Side, or a mix of both. A pile may only contain tiles showing the same side. Tiles with the Roman numeral “III” are put at the bottom of each pile, while “I” at the top.
+Then place a pile on each City slot, all with the Roman numeral “I” visible.</source>
+        <translation>Prenez les 15 tuiles Appareil. Triez-les par couleur et faites-en 5 piles de trois tuiles chacune.
+Vous pouvez choisir de jouer avec les piles soit côté Jour, soit côté Nuit, soit faire un mélange des deux. Toutefois, chaque pile ne doit contenir que des tuiles retournées du même côté (Jour ou Nuit). Placez les tuiles portant le chiffre romain &quot;&quot;III&quot;&quot; au bas de chaque pile, et les tuiles portant le &quot;&quot;I&quot;&quot; sur le dessus des piles.
+Placez ensuite ces piles sur les différents emplacements de la Cité, avec la tuile &quot;&quot;I&quot;&quot; visible.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="303"/>
-        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners). Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
-        <translation type="unfinished"></translation>
+        <source>Each player chooses a color and takes their respective Division Board, Reputation Marker, colored base ring, and 9 Machines (3 Harvesters, 3 Scavengers, 3 Refiners).
+Keep the Division Board in front of you and place the Machines as shown in the figure:</source>
+        <translation>Chaque joueur choisit une couleur et prend son Plateau de Division, son Marqueur de Réputation, son anneau de base coloré et ses 9 Machines (3 Moissonneurs, 3 Pilleurs, 3 Raffineurs).
+Disposez le Plateau de Division devant vous et placez les Machines tel qu’indiqué sur l’image :</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Moissonneurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Pilleurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Raffineurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;2 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un troisième joueur contrôlé par le jeu, jusqu&apos;à ce que les 3 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;3 joueurs -&lt;/strong&gt;À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un quatrième joueur contrôlé par le jeu, jusqu&apos;à ce que 2 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;4 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un cinquième joueur contrôlé par le jeu, jusqu&apos;à ce que 1 Machine de chaque type ait été disposée.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Chaque Région ne peut accueillir plus de 3 Machines en même temps. Toutes les Machines d&apos;une même région doivent être différentes en couleur et en type.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Distribuez au hasard à chaque joueur une carte Émissaire et une carte Équipement spécialisé. Chaque joueur prend la figurine correspondante et fixe l&apos;anneau coloré à sa base. Gardez les cartes de votre personnage à côté de votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nombre d&apos;icônes sur vos cartes Émissaire et Équipement spécialisé détermine la limite de cartes et de ressources que vous pouvez posséder.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
         <source> = Maximum hand size</source>
-        <translation type="unfinished"></translation>
+        <translation>= Taille maximale de la main</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre maximum de cartes Curio d’amélioration X que vous pouvez avoir en jeu en même temps.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
-        <source>= Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
-        <translation type="unfinished"></translation>
+        <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
+        <translation>Nombre de cristaux de Qoam avec lesquels vous commencez. Prenez dans la réserve autant de cristaux de Qoam qu’indiqué sur votre carte Émissaire. Placez ces ressources sur l&apos;un des emplacements Cage Zéro disponibles (ceux sans Machine).</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
+Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
+        <translation>Gardez cette tuile d’Alimentation électrique d’urgence sur votre Plateau de Division, retournée sur son côté « Chargée ».
+Les tuiles d’Alimentation électrique d&apos;urgence déterminent l&apos;ordre de jeu. Le premier joueur est celui qui possède le numéro de tuile « I » ; puis les autres joueurs se succèdent en suivant la numérotation.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
+        <translation>Chaque joueur place son Marqueur de Réputation sur l&apos;emplacement « 0 » de la Piste de score.</translation>
+    </message>
+    <message>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
+Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
+        <translation>Mélangez toutes les cartes Curio, puis placez ce paquet face cachée sur le Plateau d&apos;Évènements.
+Distribuez à chaque joueur trois cartes du paquet Curio. Ne révélez pas vos cartes Curio aux autres joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
-        <source>Roman numerals from I to V. Randomly deal one to each player. Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side. Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
-        <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
-        <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board. Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez autant de tuiles d’Alimentation électrique d’urgence que le nombre de joueurs, en suivant les chiffres romains de I à V. Distribuez-en une au hasard à chacun des joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si le paquet Curio est épuisé, mélangez toutes les cartes Curio défaussées pour former un nouveau paquet.</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
-        <translation type="unfinished"></translation>
+        <translation>En sens inverse (autrement dit, du dernier au premier joueur), chaque joueur choisit l&apos;un des cinq croisements extérieurs indiqués ci-dessous pour y placer sa figurine Émissaire. Un joueur ne peut pas choisir un croisement déjà occupé par un adversaire.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="36"/>
         <source>Place the 5 Floating Islands at random in the spaces marked on the board. The side showing the icons must be face up.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez, au hasard, les 5 Îles Flottantes dans les emplacements indiqués sur le plateau de jeu. Leurs faces présentant des symboles doivent être visibles.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="50"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; Place one Mirage Token on each Island. Make sure each Mirage Token is placed on a different region (Forest, River, Land of Myst, Crystal Field, or Mountain). Regions containing Mirage Tokens cannot be used by players for moving or deploying units for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Partie à 2 joueurs :&lt;/strong&gt;&lt;br&gt; Placez un jeton Mirage sur chaque Île. Assurez-vous que chaque Mirage est placé dans une Région différente (Forêt, Rivière, Terre brumeuse, Champ cristallin, Montagne). Les Régions contenant des Mirages ne peuvent pas être utilisées par les joueurs pour se déplacer ou déployer des unités pendant la partie.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="86"/>
         <source>Shuffle the Monster Cards and randomly place three of them face up on the indicated spaces of the Events Board. Put the leftover Monster Cards back into the box. Now take the 3 matching Monster Miniatures and place each one on its corresponding card.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Monstres et placezen trois au hasard, faces visibles, dans les emplacements dédiés du plateau d’Évènements. Rangez les cartes Monstres restantes dans la boîte. Prenez les figurines des trois Monstres conservés et placez-les sur la carte correspondante.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="122"/>
         <source>Shuffle the 5 Region Cards and the Storm Card together and place them face up as an Events Deck on the appropriate space of the Events Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez ensemble les 5 cartes Régions et la carte Tempête. Ce tas constitue la “pile d’Évènements”; placez-la, face visible, dans son espace dédié du plateau d’Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="158"/>
         <source>Shuffle the Encounter Cards and place them face up as an Encounter Deck on the appropriate space of the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Rencontres et placez-les, faces visibles, dans l’espace dédié du plateau de jeu. Ce tas constitue la “pile de Rencontres”.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="194"/>
         <source>Choose whether to play with all the Attunements on the Day side, the Night side, or mixed. Place the Attunement Cards on the Game Board, with the chosen side up. Once you have chosen, Attunements must be kept the same side up for the entire game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez si vous voulez jouer avec toutes les cartes Harmonisations sur leur face Jour ou Nuit, ou si vous voulez mélanger les faces visibles. Placez les Harmonisations dans les espaces dédiés du plateau de jeu, en accord avec votre choix. Celui-ci est définitif pour le restant de la partie.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="230"/>
         <source>Sort the Command Cards by Era (&lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; in the top-right hand corner). Shuffle the 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt; cards, 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; cards, and 20 Era &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; cards separately, and place the three decks face down on the Events Board, as Era Decks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Répartissez les cartes Commandements par Ère (symbole &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;0&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;/ &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; or &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; en haut à droite des cartes). Mélangez les 20 cartes des Ères &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;1&lt;/span&gt;, &lt;span style=&quot;font-family:EraIcons; font-size: 15px;&quot;&gt;2&lt;/span&gt; et &lt;span style=&quot;font-family:EraIcons; font-size: 17px;&quot;&gt;3&lt;/span&gt; en trois piles distinctes et placez-les sur leurs emplacements dédiés du plateau d’Évènements. Ces tas constituent les “piles d’Ère”.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="266"/>
         <source>Take the 20 starting Command Cards and divide them by color. Shuffle each pile separately and then deal 1 card of each color face down to each player. Players keep their Command Cards in their hand but must keep them secret from other players. Return any leftover cards from the starting Era back to the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez les 20 cartes Commandements de l’Ère de départ et répartissezles par couleur. Mélangez chaque pile séparément. Distribuez, face cachée, une carte de chaque couleur à chacun des joueurs. Ceux-ci peuvent prendre connaissance des cartes reçues mais ne doivent pas les révéler aux autres. Rangez les cartes de départ inutilisées dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="279"/>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="329"/>
         <source>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Expert Players Mode:&lt;/strong&gt;&lt;br&gt; Skip steps 7. and 8. above. After dealing the Artefacts, randomly choose 1 Champion Card and 1 starting Command Card of each color and place them face up on the table. In order of play, players take turns picking up a card from the table. Each time you take a card, replace it with another of the same type, chosen at random, so there are always exactly 1 Champion Card and 1 starting card of each color on the table. Continue this way until everyone has exactly 1 Champion and 1 starting card of each color (blue, green, yellow, red). Put any leftover cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Joueurs expérimentés:&lt;/strong&gt;&lt;br&gt; Passez les étapes 7 et 8 ci-dessus. Après avoir distribué les Artefacts, choisissez au hasard une carte Champion et une carte Commandement de l’Ère de départ de chaque couleur et placez-les, faces visibles, sur la table. Dans l’ordre de jeu, chaque joueur sélectionne et prend l’une des cartes sur la table ; il la remplace par une carte du même type, piochée au hasard. Assurez-vous qu’il y a toujours 1 carte Champion et une carte de départ de chaque couleur sur la table. Continuez ainsi jusqu’à ce que tous les joueurs aient en main 1 Champion et 1 carte de départ de chaque couleur (bleu, vert, jaune, rouge). Rangez les cartes restantes dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="316"/>
         <source>Shuffle the Champion Cards and randomly deal one to each player. Each player must keep their Champion Card face up in front of them. Put the leftover Champion Cards back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les cartes Champions et distribuez-en une à chaque joueur. Ceux-ci doivent les conserver, face visible, devant eux. Rangez les cartes Champions inutilisées dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="366"/>
         <source>Each player chooses a color and takes the matching:</source>
-        <translation type="unfinished"></translation>
+        <translation>Chaque joueur choisit une couleur, récupère les éléments de la couleur correspondante et les dispose comme indiqué :</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="380"/>
         <source>&lt;b&gt;&lt;u&gt;Player Board&lt;/u&gt;&lt;/b&gt; &lt;br&gt; To be placed in front of you, next to your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Tableau de bord&lt;/u&gt;&lt;/b&gt; &lt;br&gt;Il est placé en face du joueur, à côté de sa carte de Champion.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;1 Energy Token and 1 Experience Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place both of them on the “0” space of your Player Board. Keep track of Energy and Experience Points by moving the tokens on your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;1 jeton Énergie et 1 jeton Expérience&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Placez-les sur la case “0” de votre tableau de bord. En cours de jeu, quand votre Énergie ou votre Expérience change, déplacez le jeton correspondant sur votre plateau en accord avec le gain ou la perte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="408"/>
         <source> Note: During the game, you can never have more than 12 or less than 0 Energy or Experience Points. If you would ever gain Energy or Experience Points that would cause you to have more than 12 or less than 0, leave the token on 12 or 0 respectively. </source>
-        <translation type="unfinished"></translation>
+        <translation> Note: Durant la partie, vous ne pouvez jamais avoir plus de 12 points d’Expérience ou d’Énergie, ni moins de 0. Ignorez les pertes ou les gains au-delà de ces limites. </translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="422"/>
         <source>&lt;b&gt;&lt;u&gt;Glory Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place it on the “1” space of the Game Board. Keep track of your Glory Points by moving the token along the Glory Track around the Game Board. You cannot have less than 1 Glory Point. Whenever your Glory Token completes a lap around the Glory Track, use the “+100 / +200 Glory Points” markers to keep track of your total amount of Glory Points.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Jeton Gloire&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-le sur la case “1” du plateau de jeu. En cours de jeu, quand votre Gloire change, déplacez le jeton correspondant sur le plateau de jeu. Vous ne pouvez pas avoir moins de 1 point de Gloire. Quand votre jeton a accompli un tour complet du plateau, utilisez le marqueur +100/+200 points de Gloire pour vous souvenir du montant total de points de Gloire.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="436"/>
         <source>&lt;b&gt;&lt;u&gt;Encounter Token&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place this on your Champion Card.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Jeton Rencontre&lt;/u&gt;&lt;/b&gt;&lt;br&gt;Placez-le sur votre carte de Champion.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="450"/>
         <source>&lt;b&gt;&lt;u&gt;Your units&lt;/u&gt;&lt;/b&gt;&lt;br&gt; The area of your Player Board showing the illustration of your Guild Banner is referred to as your constructed unit space and is where you place all of your constructed units.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;Unités&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Sur le tableau de bord, la zone où figure l’emblème de Guilde est appelée “espace des unités construites”; les unités construites par le joueur sont entreposées sur cet emplacement.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="484"/>
         <source>- &lt;b&gt;&lt;u&gt;1 Champion&lt;/u&gt;&lt;/b&gt; (the miniature corresponding to your Champion Card) Place it on your constructed unit space.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 1 Champion &lt;/u&gt;&lt;/b&gt; (la figurine correspondant à la carte de votre Champion) Placez-le dans l’espace des unités construites.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="516"/>
         <source>- &lt;b&gt;&lt;u&gt;8 Troops&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 2 on your constructed unit space, and keep the other 6 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 8 Troupes&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-en 2 dans l’espace des unités construites et les autres à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="548"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Place 1 on your constructed unit space, and keep the other 3 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 4 Golems&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Placez-en 1 dans l’espace des unités construites et les autres à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="580"/>
         <source>- &lt;b&gt;&lt;u&gt;4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Keep all 4 next to your Player Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>- &lt;b&gt;&lt;u&gt; 4 Fortifications&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Gardez-les à côté de votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="593"/>
         <source>&lt;b&gt;&lt;u&gt;13 Colored Rings&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attach these onto the base of all your miniatures, matching your Guild’s color.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;&lt;u&gt;13 socles colorés&lt;/u&gt;&lt;/b&gt;&lt;br&gt; Attachez-les à vos figurines, selon la couleur de votre Guilde.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="628"/>
         <source>Shuffle the Artefact Tokens and give each player one of them at random.&lt;br&gt;Players place their Artefacts in front of them with the charged side (bright side) face up. With fewer than 5 players, return any unused Player Boards, tokens, and units back into the box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mélangez les jetons Artefacts et donnez-en un, au hasard, à chaque joueur.&lt;br&gt;Chaque joueur place son Artefact, sur le côté Brillant/Chargé, face à lui. À moins de 5 joueurs, rangez tous les plateaux, les jetons et les unités inutilisés dans la boîte.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="642"/>
         <source>The Artefacts show the order of play: the player with Artefact “I” goes first, and the other players follow according to the Roman Numeral on their Artefact.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les chiffres romains inscrits sur les Artefacts indiquent l’ordre de jeu : le joueur avec l’Artefact “I” joue en premier, suivi par le joueur avec l’Artefact “II” et ainsi de suite.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="678"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses an Island without a Champion and places their own Champion Miniature on one of the Island’s three regions. After placing your Champion, place your Encounter Token on any other Island of your choice, in the appropriate space. At any time, there can be any number of Encounter Tokens in the appropriate space of an Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dans le sens inverse de l’ordre de jeu (en commençant donc par le dernier joueur), chaque joueur choisit une Région d’une Île où ne se trouve pas déjà un Champion et y place le sien. Après avoir placé son Champion, le joueur place son jeton Rencontre sur une autre Île de son choix, dans l’emplacement approprié (le cercle vide figurant sur la tuile). Il n’y a pas de limite au nombre de jetons Rencontres sur une Île.</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/GameSetupModel.qml" line="692"/>
         <source>&lt;strong style=&quot;color:#FFEDF5;&quot;&gt;In a 2-player game:&lt;/strong&gt;&lt;br&gt; You cannot place your Champion in a region containing a Mirage Token. After both players have placed their Champions, remove the 3 Mirage Tokens belonging to the Islands where no Champion has been placed.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong style=&quot;color: #FFEDF5;&quot;&gt;Partie à 2 joueurs :&lt;/strong&gt;&lt;br&gt; Vous ne pouvez pas placer votre Champion dans une Région contenant un Mirage. Lorsque les deux joueurs ont placé leurs Champions, retirez les jetons Mirages situés sur les 3 Îles où ne se trouvent pas les Champions.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="35"/>
         <source>Place the Game Board and the Event Board in the center of the table, one next to the other. Randomly place an Island on each Game Board crater. The Islands’ side without icons must be facing upwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Disposez le Plateau de jeu et le Plateau d&apos;Évènements au centre de la table, l&apos;un à côté de l&apos;autre. Placez au hasard une Île sur chaque cratère du Plateau de Jeu. Les Îles doivent être placées avec la face sans icônes visible.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="70"/>
         <source>Place 4 Golems on each Island, all in one Region. Choose a different kind of Region for each Island.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez 4 Golems sur une seule Région de chaque Île. Choisissez un type de Région différent pour chaque Île.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="104"/>
         <source>Place 4 Troops on each remaining empty Region among all Islands.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez 4 Troupes sur toutes les Régions vides de chaque  Île.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="138"/>
         <source>Place all Qoam crystals, Parasites, and Monsters in a common pool near the Game Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez tous les cristaux de Qoam, Parasites et Monstres et faites-en une réserve commune à proximité du Plateau de Jeu.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="188"/>
         <source>Choose the difficulty level for the game. Take 10 Primal Shards according to your choice and place them in an opaque container that they may be drawn from at random (like a bag or a cup).</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisissez le niveau de difficulté du jeu. Prenez 10 Éclats primaires et placez-les dans un récipient opaque (sachet ou bol) à partir duquel ils pourront être piochés au hasard.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="202"/>
         <source>&lt;strong&gt;&lt;u&gt;Easy:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 3 SHARDS “1”&lt;br&gt;- 5 SHARDS “2”&lt;br&gt;- 2 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Facile:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 3 ÉCLATS “1”&lt;br&gt;- 5 ÉCLATS “2”&lt;br&gt;- 2 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="215"/>
         <source>&lt;strong&gt;&lt;u&gt;Normal:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 2 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 4 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Normal:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 2 ÉCLATS “1”&lt;br&gt;- 4 ÉCLATS “2”&lt;br&gt;- 4 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="228"/>
         <source>&lt;strong&gt;&lt;u&gt;Difficult:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 1 SHARDS “1”&lt;br&gt;- 4 SHARDS “2”&lt;br&gt;- 5 SHARDS “3”</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;&lt;u&gt;Difficile:&lt;/u&gt;&lt;/strong&gt;&lt;br&gt;- 1 ÉCLAT “1”&lt;br&gt;- 4 ÉCLATS “2”&lt;br&gt;- 5 ÉCLATS “3”</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="241"/>
         <source>Take one of the remaining Primal Shards and use it as a score marker on the Game Board track, starting in the space labeled “99”. This serves as a counter for the City Defense Points. Put the remaining Primal Shards back into the game box.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez l&apos;un des Éclats primaires restants et vous placez-le sur la la case «99» de Piste de score du Plateau de Jeu : il servira de compteur pour les Points de Défense de la Cité. Remettez dans la boîte de jeu les Éclats primaires restants.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="275"/>
         <source>Draw at random 5 Primal Shards from the bag. Without looking at their values, plug them into the base of the Colossus’ miniature.</source>
-        <translation type="unfinished"></translation>
+        <translation>Piochez au hasard 5 Éclats primaires du sachet. Sans regarder leur valeur, insérez-les dans les encoches à la base de la figurine du Colosse.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="309"/>
         <source>Place the Colossus on one of the five external nodes, chosen at random. It will only move between these nodes during the game.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez le Colosse au hasard sur l&apos;un des cinq croisements extérieurs. Il se déplacera uniquement entre ces croisements-là au cours de la partie.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="353"/>
         <source>Place Machinery on the Game Board: In each of its Regions, place three different Machines, all of the same color. Each kind of Region may only hold Machines of the same color (e.g., Black Machines in Forest Regions).</source>
-        <translation type="unfinished"></translation>
+        <translation>Sur chaque Région du Plateau de Jeu, placez trois Machines différentes, de même couleur. Chaque type de Région ne peut accueillir que des Machines de même couleur (par exemple, des Machines noires sur les Régions Forêt).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="387"/>
         <source>The oldest player is the first in turn order. Other players follow clockwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le joueur le plus âgé sera le premier à jouer. La main passera aux autres joueurs en sens horaire.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="401"/>
         <source>Divide the Character Cards into two piles (Mysthea’s and Icaion’s) and shuffle them both. The first player gets to choose which pile they draw a Character from.</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisez les cartes Personnage en deux piles (Mysthea et Icaion) que vous mélangez séparément.
+Le premier joueur peut choisir la pile dans laquelle il pioche son personnage.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="414"/>
         <source>Each following player must draw from a pile that is different from the player choosing before them. Each player then takes the corresponding miniature and the tile related to their Character (Mysthea’s Artefact or Icaion’s Emergency Power Supply).</source>
-        <translation type="unfinished"></translation>
+        <translation>Chacun des autres joueurs doit ensuite piocher son Personnage dans une pile différente de celle choisie par le joueur précédent.
+Chaque joueur prend ensuite la figurine correspondante et la tuile liée à son Personnage (Artefact de Mysthea ou Alimentation électrique d’urgence d’Icaion).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="428"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; From now on, we will refer to both kinds of tiles as Relics.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; À partir de maintenant, ces deux sortes de tuiles seront qualifiées de “Reliques”.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="442"/>
         <source>Place the Relic in front of you, with its charged side facing upwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Placez votre Relique devant vous, côté Chargée visible.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="455"/>
         <source>Finally, each player takes a colored base for their miniature, plus some Fortification Tokens depending on the number of players:&lt;br&gt;&lt;strong&gt;- 5 players:&lt;/strong&gt; 1 Fortification of your color.&lt;br&gt;&lt;strong&gt;- 4 players:&lt;/strong&gt; 2 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 3 players:&lt;/strong&gt; 3 Fortifications of your color.&lt;br&gt;&lt;strong&gt;- 2 players:&lt;/strong&gt; 3 Fortifications of your color, plus another 2 of a non-playing color.</source>
-        <translation type="unfinished"></translation>
+        <translation>Enfin, chaque joueur prend un anneau de base coloré pour sa figurine, et une quantité de Fortifications dépendant du nombre de joueurs ::&lt;br&gt;&lt;strong&gt;- 5 joueurs:&lt;/strong&gt; 1 Fortification de votre couleur.&lt;br&gt;&lt;strong&gt;- 4 joueurs:&lt;/strong&gt; 2 Fortifications de votre couleur.&lt;br&gt;&lt;strong&gt;- 3 joueurs:&lt;/strong&gt; 3  Fortifications de votre couleur.&lt;br&gt;&lt;strong&gt;- 2 joueurs:&lt;/strong&gt; 3 Fortifications de votre couleur, et 2 Fortifications supplémentaires d’une couleur différente de celle choisie par chacune des joueurs.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="470"/>
         <source>&lt;strong&gt;Solo variant&lt;/strong&gt;&lt;br&gt;Set up the game following the 2-player rules. Choose two Characters and alternate your turns between the two.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Variante Solo&lt;/strong&gt;&lt;br&gt;Procédez à la mise en place en suivant les règles d’une partie à 2 joueurs. Choisissez deux Personnages et alternez les tours entre eux.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="505"/>
         <source>In order of play, each player places their Character on an empty node of the Game Board, following the instructions below:</source>
-        <translation type="unfinished"></translation>
+        <translation>En suivant l’ordre du tour, chaque joueur place son Personnage sur un croisement vide du Plateau de Jeu, en respectant les instructions ci-dessous:</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="519"/>
         <source>&lt;span style=&apos;color: #ED008C&apos;&gt;&lt;strong&gt;Mysthea Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five nodes adjacent to a fallen Island and two Icaion Regions.&lt;br&gt;&lt;span style=&apos;color: #0094CC&apos;&gt;&lt;strong&gt;Icaion Character:&lt;/strong&gt;&lt;/span&gt; Place them on one of the five City nodes.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;span style=&apos;color: #ED008C&apos;&gt;&lt;strong&gt;Personnage de Mysthea:&lt;/strong&gt;&lt;/span&gt; Placez-le sur l’un des cinq croisements adjacents à une Île effondrée et deux Régions d’Icaion.&lt;br&gt;&lt;span style=&apos;color: #0094CC&apos;&gt;&lt;strong&gt;Personnage d’Icaion:&lt;/strong&gt;&lt;/span&gt; Placez-le sur l’un des cinq croisements de la Cité.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="532"/>
         <source>For each of the two Regions adjacent to your Character, take 1 Qoam crystal of the same type as the Region.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenez 1 cristal de Qoam du type de chacune des deux Régions adjacentes à votre Personnage.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="567"/>
         <source>Divide Command Cards into three decks: Era I, Era II, and Era III. Place the three decks, face down, on the Event Board.</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisez les cartes Commandement en trois paquets : Ère I, Ère II et Ère III.
+Placez les trois paquets face cachée sur le Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="602"/>
         <source>Prepare the Event Deck: shuffle together all Region Cards (both Mysthea’s and Icaion’s), the three Colossus Cards, and the Storm Card. &lt;br&gt;&lt;br&gt;Place the deck face down on the Event Board. Also shuffle the Monster Cards to form another deck. Place it above the Event Board, face down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Préparez le paquet d&apos;Évènements : mélangez ensemble toutes les cartes Région (Mysthea et Icaion), les trois cartes Colosse et la carte Tempête. &lt;br&gt;&lt;br&gt; Placez le paquet face cachée sur le Plateau d&apos;Évènements. Par ailleurs, mélangez les cartes Monstre pour former un autre paquet. Placez-le face cachée à côté du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
-        <translation type="unfinished"></translation>
+        <translation>Piochez un Monstre de ce paquet, révélez-le et placez sa figurine sur l&apos;Île correspondante. Appliquez tous les effets liés à ce Monstre (voir p.12).
+
+Révélez un nombre de cartes Évènement correspondant au niveau de difficulté choisi, et placez-les sur le Plateau d&apos;Évènements :
+Facile : 2 cartes Évènement
+Normal : 3 cartes Évènement
+Difficile : 4 cartes Évènement
+
+Résolvez-les l’une après l’autre, en suivant l&apos;ordre dans lequel elles ont été révélées (voir p.9).</translation>
     </message>
     <message>
         <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si une carte Tempête est révélée, ignorez-la et piochez une autre carte à la place. À la fin de cette étape, mélangez à nouveau la carte Tempête dans le paquet d’Évènements.</translation>
     </message>
 </context>
 <context>
@@ -1445,7 +2324,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../style/MystheaUniverse/Pages/Lore.qml" line="11"/>
         <source>LORE</source>
-        <translation type="unfinished"></translation>
+        <translation>LORE</translation>
     </message>
 </context>
 <context>
@@ -1588,7 +2467,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="222"/>
         <source>The Lone Survivor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LE SURVIVANT SOLITAIRE</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="226"/>
@@ -1603,7 +2482,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="249"/>
         <source>The Heir</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">L’HÉRITIER</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="253"/>
@@ -1618,7 +2497,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="276"/>
         <source>The Machine</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA MACHINE</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="280"/>
@@ -1633,7 +2512,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="303"/>
         <source>The Creature</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">L’ADEPTE</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="308"/>
@@ -1643,7 +2522,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="326"/>
         <source>The Outsider</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">L’ÉTRANGER</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="331"/>
@@ -1658,7 +2537,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="354"/>
         <source>The Criminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA CRIMINELLE</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="359"/>
@@ -1668,7 +2547,7 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="380"/>
         <source>The Cursed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">LA DAMNÉE</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/LoreModel.qml" line="385"/>
@@ -2141,32 +3020,32 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>Miniatures</name>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="25"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="26"/>
         <source>Colossus</source>
-        <translation type="unfinished"></translation>
+        <translation>Colosse</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="29"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished"></translation>
+        <translation>Émissaire</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="33"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="34"/>
         <source>Machines</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="37"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="38"/>
         <source>Wonders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/Miniatures.qml" line="41"/>
+        <location filename="../qml/Icaion/Miniatures.qml" line="42"/>
         <source>Parasites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Mysthea/Miniatures.qml" line="26"/>
+        <location filename="../qml/Mysthea/Miniatures.qml" line="27"/>
         <source>Heroes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2176,12 +3055,12 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="11"/>
         <source>RULEBOOK</source>
-        <translation type="unfinished"></translation>
+        <translation>LIVRET DE RÈGLES</translation>
     </message>
     <message>
         <location filename="../style/MystheaUniverse/Pages/Rulebook.qml" line="27"/>
         <source>Download the rulebook in your preferred language</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger les règles du jeu dans votre langue favorite</translation>
     </message>
 </context>
 <context>
@@ -2368,9 +3247,9 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="40"/>
+        <location filename="../qml/main.qml" line="41"/>
         <source>Mysthea Universe</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>

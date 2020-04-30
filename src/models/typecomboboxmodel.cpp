@@ -52,7 +52,8 @@ QVariant TypeComboBoxModel::data(const QModelIndex &index, int role) const {
 }
 
 QString TypeComboBoxModel::getTypeFromIndex(int index) const {
-  return m_types.value(index);
+  return qGuiApp->translate("CardsData",
+                            m_types.value(index).toStdString().c_str());
 }
 
 QUrl TypeComboBoxModel::iconUrl(const int &type) const {
