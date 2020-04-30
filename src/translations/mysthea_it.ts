@@ -495,15 +495,10 @@ NOTA: Ciò significa che puoi studiare il Colosso due volte nello stesso turno, 
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <oldsource>Move the Colossus
-Place two Parasites on each Region adjacent to the Colossus’ crater.
-The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
-        <translation type="unfinished">1. Sposta il Colosso
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <translation>1. Sposta il Colosso
 2. Posiziona 2 Parassiti su ogni Regione adiacente al cratere del Colosso.
-3. Il Colosso ferisce tutti gli Esploratori sui nodi delle Regioni adiacenti al cratere.
-</translation>
+3. Il Colosso ferisce tutti gli Esploratori sui nodi delle Regioni adiacenti al cratere.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="64"/>
