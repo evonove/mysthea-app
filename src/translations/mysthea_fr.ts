@@ -47,13 +47,13 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="25"/>
         <source>Colossus</source>
-        <translation type="unfinished">Colosse</translation>
+        <translation>Colosse</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="29"/>
         <location filename="../qml/TheFall/Artwork.qml" line="30"/>
         <source>Seekers</source>
-        <translation type="unfinished">Émissaire</translation>
+        <translation>Émissaire</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="33"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="37"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished">equipement spécialisé</translation>
+        <translation>Equipement Spécialisé</translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Artwork.qml" line="41"/>
@@ -160,180 +160,179 @@
     <message>
         <location filename="icaion.js" line="1"/>
         <source>Curio</source>
-        <translation type="unfinished">CURIO</translation>
+        <translation>Curio</translation>
     </message>
     <message>
         <location filename="icaion.js" line="2"/>
         <source>One Shot</source>
-        <translation type="unfinished">CARTE À USAGE UNIQUE</translation>
+        <translation>Carte À Usage Unique</translation>
     </message>
     <message>
         <location filename="icaion.js" line="3"/>
         <source>Take from the supply as much Qoam as depicted (in the case of wild Qoam, all crystals must be taken of the same color).</source>
-        <translation type="unfinished">Prenez dans la réserve autant de Qoam qu’indiqué (s’il s’agit de Qoam sauvage, tous les cristaux obtenus doivent être de la même couleur).</translation>
+        <translation>Prenez dans la réserve autant de Qoam qu’indiqué (s’il s’agit de Qoam sauvage, tous les cristaux obtenus doivent être de la même couleur).</translation>
     </message>
     <message>
         <location filename="icaion.js" line="4"/>
         <source>Immediately score as many Reputation Points as depicted.</source>
-        <translation type="unfinished">Marquez immédiatement autant de points de Réputation qu’indiqué.</translation>
+        <translation>Marquez immédiatement autant de points de Réputation qu’indiqué.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="5"/>
         <source>Immediately perform the action indicated by the card. If two actions are listed, choose only one to perform. You still have to meet the action requirements and pay for its cost.</source>
-        <translation type="unfinished">Effectuez immédiatement l’action indiquée par la carte. Si deux actions sont symbolisées, n’en choisissez qu’une à effectuer. Vous devez toujours satisfaire aux conditions d’utilisation de l’action et être en mesure de payer son coût.</translation>
+        <translation>Effectuez immédiatement l’action indiquée par la carte. Si deux actions sont symbolisées, n’en choisissez qu’une à effectuer. Vous devez toujours satisfaire aux conditions d’utilisation de l’action et être en mesure de payer son coût.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="6"/>
         <source>Right after you conclude your movement, you may play this card to move up to as many additional nodes as depicted.</source>
-        <translation type="unfinished">Juste après avoir terminé votre déplacement, jouez cette carte pour vous déplacer encore (dans la limite du nombre de croisements indiqué sur la carte).</translation>
+        <translation>Juste après avoir terminé votre déplacement, jouez cette carte pour vous déplacer encore (dans la limite du nombre de croisements indiqué sur la carte).</translation>
     </message>
     <message>
         <location filename="icaion.js" line="7"/>
         <source>Draw one or two Curio Cards.</source>
-        <translation type="unfinished">Piochez une ou deux
-cartes Curio.</translation>
+        <translation>Piochez une ou deux cartes Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
         <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
-        <translation type="unfinished">CARTE D’AMÉLIORATION</translation>
+        <translation>Carte D’Amélioration</translation>
     </message>
     <message>
         <location filename="icaion.js" line="9"/>
         <source>These cards add extra Null Cage to your Division Board.</source>
-        <translation type="unfinished">Ces cartes ajoutent une icône Cage Zéro supplémentaire à votre Plateau de Division.</translation>
+        <translation>Ces cartes ajoutent une icône Cage Zéro supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="10"/>
         <source>These cards add extra Strength to your Division Board.</source>
-        <translation type="unfinished">Ces cartes ajoutent une icône Force supplémentaire à votre Plateau de Division.</translation>
+        <translation>Ces cartes ajoutent une icône Force supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="11"/>
         <source>These cards add extra Movement to your Division Board.</source>
-        <translation type="unfinished">Ces cartes ajoutent une icône Mouvement supplémentaire à votre Plateau de Division.</translation>
+        <translation>Ces cartes ajoutent une icône Mouvement supplémentaire à votre Plateau de Division.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="12"/>
         <source>Whenever you spend Qoam, you may first transform 2 of your Qoam crystals of the same color into 1 Qoam crystal of any other color of your choice.
 NOTE: You may only benefit from each of these Upgrade Cards once per action.</source>
-        <translation type="unfinished">À chaque fois que vous dépensez du Qoam, vous pouvez d’abord transformer 2 de vos cristaux de Qoam de même couleur en 1 cristal de Qoam de n’importe quelle autre couleur de votre choix.
-NOTE : Vous ne pouvez bénéficier de l’effet de chaque carte d’amélioration qu’une seule fois par action. </translation>
+        <translation>À chaque fois que vous dépensez du Qoam, vous pouvez d’abord transformer 2 de vos cristaux de Qoam de même couleur en 1 cristal de Qoam de n’importe quelle autre couleur de votre choix.
+NOTE : Vous ne pouvez bénéficier de l’effet de chaque carte d’amélioration qu’une seule fois par action.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="13"/>
         <source>Whenever you activate a Harvester, you may take 1 Qoam of any kind from the supply, instead of the second Qoam from the same Region.
 NOTE: There must still be a second Qoam available in the Region.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 1 Qoam de n’importe quelle couleur dans la réserve, plutôt qu’un second Qoam de la Région où il se trouve.
+        <translation>À chaque fois que vous activez un Moissonneur, vous pouvez prendre 1 Qoam de n’importe quelle couleur dans la réserve, plutôt qu’un second Qoam de la Région où il se trouve.
 NOTE : Pour que cette carte soit activée, il doit toujours y avoir au moins un deuxième Qoam disponible dans cette Région.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="14"/>
         <source>Whenever you activate a Scavenger, you may decide to discard a Curio Card from your hand instead of drawing 1. If you do so, immediately score 3 Reputation Points.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Pilleur, vous pouvez défausser une carte Curio de votre main au lieu d’en piocher une. Dans ce cas, vous marquez immédiatement 3 PR.</translation>
+        <translation>À chaque fois que vous activez un Pilleur, vous pouvez défausser une carte Curio de votre main au lieu d’en piocher une. Dans ce cas, vous marquez immédiatement 3 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="15"/>
         <source>Whenever you activate a Refiner, score 3 Reputation Points instead of 2.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Raffineur, marquez 3 PR au lieu de deux.</translation>
+        <translation>À chaque fois que vous activez un Raffineur, marquez 3 PR au lieu de deux.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="16"/>
         <source>Whenever you activate a Harvester, you may take a third Qoam crystal from the Region, if available, instead of 2.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Moissonneur, vous pouvez prendre 3 cristaux de Qoam de cette Région (si possible), au lieu de deux.</translation>
+        <translation>À chaque fois que vous activez un Moissonneur, vous pouvez prendre 3 cristaux de Qoam de cette Région (si possible), au lieu de deux.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="17"/>
         <source>Whenever you activate a Scavenger, you may draw up to 2 Curio Cards, instead of 1.</source>
-        <translation type="unfinished">À chaque fois que vous activez un Pilleur, vous pouvez piocher jusqu’à 2 cartes Curio au lieu d’une.</translation>
+        <translation>À chaque fois que vous activez un Pilleur, vous pouvez piocher jusqu’à 2 cartes Curio au lieu d’une.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="18"/>
         <source>Whenever you activate a Refiner, you may Eradicate and collect a single Parasite from the same Region, for free.</source>
-        <translation type="unfinished">À chaque fois que vous  activez un Raffineur, vous pouvez éradiquer et collecter gratuitement un Parasite (un seul) de la même Région.</translation>
+        <translation>À chaque fois que vous  activez un Raffineur, vous pouvez éradiquer et collecter gratuitement un Parasite (un seul) de la même Région.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="19"/>
         <source>Immediately wound all opponents’ Seekers standing on your same node and on nodes adjacent to yours. You score as many Reputation Points as indicated for each Seeker you hit (not necessarily wounded) with this action.</source>
-        <translation type="unfinished">Blessez immédiatement tous les Émissaires adverses présents sur le croisement où vous vous trouvez et sur les croisements adjacents au vôtre. Pour chaque Émissaire touché (mais pas nécessairement Blessé) par cette action, vous marquez autant de Points de Réputation qu’indiqué.</translation>
+        <translation>Blessez immédiatement tous les Émissaires adverses présents sur le croisement où vous vous trouvez et sur les croisements adjacents au vôtre. Pour chaque Émissaire touché (mais pas nécessairement Blessé) par cette action, vous marquez autant de Points de Réputation qu’indiqué.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="20"/>
         <source>Seekers</source>
-        <translation type="unfinished">émissaire</translation>
+        <translation>Émissaire</translation>
     </message>
     <message>
         <location filename="icaion.js" line="21"/>
         <location filename="thefall.js" line="17"/>
         <source>The Lone Survivor</source>
-        <translation type="unfinished">LE SURVIVANT SOLITAIRE</translation>
+        <translation>Le Survivant Solitaire</translation>
     </message>
     <message>
         <location filename="icaion.js" line="22"/>
         <source>On your last turn during each End of a Year phase, you may move your Seeker onto any node of the Game Board instead of performing a standard Move action.</source>
-        <translation type="unfinished">À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez déplacer votre Émissaire sur n’importe quel croisement du Plateau de Jeu plutôt qu’effectuer une action Déplacement standard.</translation>
+        <translation>À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez déplacer votre Émissaire sur n’importe quel croisement du Plateau de Jeu plutôt qu’effectuer une action Déplacement standard.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="23"/>
         <location filename="thefall.js" line="26"/>
         <source>The Cursed</source>
-        <translation type="unfinished">LA DAMNÉE</translation>
+        <translation>La Damnée</translation>
     </message>
     <message>
         <location filename="icaion.js" line="24"/>
         <source>On your last turn during each End of a Year phase, you may perform two Standard Actions instead of one.</source>
-        <translation type="unfinished">À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez effectuer deux Actions standard au lieu d’une seule.</translation>
+        <translation>À chaque phase de Fin d’une Année, lors de votre dernier tour, vous pouvez effectuer deux Actions standard au lieu d’une seule.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="25"/>
         <location filename="thefall.js" line="20"/>
         <source>The Heir</source>
-        <translation type="unfinished">L’HÉRITIER</translation>
+        <translation>L’Héritier</translation>
     </message>
     <message>
         <location filename="icaion.js" line="26"/>
         <source>Each time you play a Curio Card, you immediately score 1 Reputation Point.</source>
-        <translation type="unfinished">À chaque fois que vous jouez une carte Curio, vous marquez immédiatement 1 PR.</translation>
+        <translation>À chaque fois que vous jouez une carte Curio, vous marquez immédiatement 1 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="27"/>
         <location filename="thefall.js" line="24"/>
         <source>The Machine</source>
-        <translation type="unfinished">LA MACHINE</translation>
+        <translation>La Machine</translation>
     </message>
     <message>
         <location filename="icaion.js" line="28"/>
         <source>Each time you use the Emergency Power Supply, you may immediately take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
-        <translation type="unfinished">À chaque fois que vous utilisez l’Alimentation électrique d’urgence, vous pouvez immédiatement prendre dans la réserve 1 Qoam de n’importe quelle couleur et l’ajouter à l’une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà).</translation>
+        <translation>À chaque fois que vous utilisez l’Alimentation électrique d’urgence, vous pouvez immédiatement prendre dans la réserve 1 Qoam de n’importe quelle couleur et l’ajouter à l’une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà).</translation>
     </message>
     <message>
         <location filename="icaion.js" line="29"/>
         <location filename="thefall.js" line="22"/>
         <source>The Outsider</source>
-        <translation type="unfinished">L’ÉTRANGER</translation>
+        <translation>L’Étranger</translation>
     </message>
     <message>
         <location filename="icaion.js" line="30"/>
         <source>When you Investigate the Colossus, you score three times the number of Reputation Points you normally would.</source>
-        <translation type="unfinished">Lorsque vous Enquêtez sur le Colosse, vous marquez trois fois plus de points de Réputation que vous ne le feriez en temps normal.</translation>
+        <translation>Lorsque vous Enquêtez sur le Colosse, vous marquez trois fois plus de points de Réputation que vous ne le feriez en temps normal.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="31"/>
         <location filename="thefall.js" line="28"/>
         <source>The Creature</source>
-        <translation type="unfinished">L’ADEPTE</translation>
+        <translation>L’Adepte</translation>
     </message>
     <message>
         <location filename="icaion.js" line="32"/>
         <source>You spend 1 Qoam less to perform Deploy a Machine and Play a Curio Card actions. When deploying a Machine, you score Reputation Points as if you paid the full cost.</source>
-        <translation type="unfinished">Vous dépensez 1 Qoam de moins pour effectuer les actions Déployer une Machine et Jouer une carte Curio. Lors du déploiement d’une Machine, vous marquez autant de Points de Réputation que si vous en aviez payé le coût total.</translation>
+        <translation>Vous dépensez 1 Qoam de moins pour effectuer les actions Déployer une Machine et Jouer une carte Curio. Lors du déploiement d’une Machine, vous marquez autant de Points de Réputation que si vous en aviez payé le coût total.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="33"/>
         <location filename="thefall.js" line="18"/>
         <source>The Criminal</source>
-        <translation type="unfinished">LA CRIMINELLE</translation>
+        <translation>La Criminelle</translation>
     </message>
     <message>
         <location filename="icaion.js" line="34"/>
@@ -341,7 +340,7 @@ NOTE : Pour que cette carte soit activée, il doit toujours y avoir au moins un 
 By the end of a turn in which you have not performed any Special Action, put on the Armor.
 While you wear the Armor, you may perform Investigate the Colossus, Retrieve an Apparatus, and Install an Apparatus as Special Actions.
 NOTE: This means you might investigate the Colossus twice in the same turn, once as a Standard Action and once as a Special Action.</source>
-        <translation type="unfinished">À chaque fois que vous devenez Blessé et à chaque Début d’une Année, retirez votre Armure.
+        <translation>À chaque fois que vous devenez Blessé et à chaque Début d’une Année, retirez votre Armure.
 À la fin d’un tour où vous n’avez effectué aucune Action spéciale, enfilez l’Armure.
 Quand vous êtes équipé de l’Armure, vous pouvez effectuer Enquêter sur le Colosse, Récupérer un Appareil et Installer un appareil comme des Actions spéciales.
 NOTE : cela signifie que vous pouvez Enquêter sur le Colosse deux fois dans le même tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
@@ -349,153 +348,147 @@ NOTE : cela signifie que vous pouvez Enquêter sur le Colosse deux fois dans le 
     <message>
         <location filename="icaion.js" line="35"/>
         <source>Specialized Gear</source>
-        <translation type="unfinished">equipement spécialisé</translation>
+        <translation>Equipement Spécialisé</translation>
     </message>
     <message>
         <location filename="icaion.js" line="36"/>
         <source>Hyper Boots</source>
-        <translation type="unfinished">BOTTES HYPER</translation>
+        <translation>Bottes Hyper</translation>
     </message>
     <message>
         <location filename="icaion.js" line="37"/>
         <source>Your basic movement distance is improved by one node.</source>
-        <translation type="unfinished">Votre distance de déplacement basique est augmentée
-d’un croisement.</translation>
+        <translation>Votre distance de déplacement basique est augmentée d’un croisement.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="38"/>
         <source>Primal Armor</source>
-        <translation type="unfinished">ARMURE PRIMAIRE</translation>
+        <translation>Armure Primaire</translation>
     </message>
     <message>
         <location filename="icaion.js" line="39"/>
         <source>At the End of the Game, score 3 Reputation Points for each Primal Shard you own.</source>
-        <translation type="unfinished">À la fin de la partie,
-vous marquez 3 PR
-pour chaque Éclat primaire
-en votre possession.</translation>
+        <translation>À la fin de la partie, vous marquez 3 PR pour chaque Éclat primaire en votre possession.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="40"/>
         <source>Multifunctional Belt</source>
-        <translation type="unfinished">CEINTURE MULTIFONCTIONNELLE</translation>
+        <translation>Ceinture Multifonctionnelle</translation>
     </message>
     <message>
         <location filename="icaion.js" line="41"/>
         <source>Each Year, at the beginning of your very first turn, you may draw up to 2 Curio Cards.</source>
-        <translation type="unfinished">Chaque Année, au début de votre tout premier tour, vous pouvez piocher jusqu’à 2 cartes Curio.</translation>
+        <translation>Chaque Année, au début de votre tout premier tour, vous pouvez piocher jusqu’à 2 cartes Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="42"/>
         <source>Exploration Case</source>
-        <translation type="unfinished">CAS D’EXPLORATION</translation>
+        <translation>Cas D’Exploration</translation>
     </message>
     <message>
         <location filename="icaion.js" line="43"/>
         <source>Each Year, at the beginning of your very first turn, you may choose Qoam of any color, then take 3 crystals of that color from the common supply.</source>
-        <translation type="unfinished">Chaque Année, au début de votre tout premier tour, vous pouvez choisir n’importe quelle couleur de Qoam, puis prendre dans la réserve commune 3 cristaux de cette couleur.</translation>
+        <translation>Chaque Année, au début de votre tout premier tour, vous pouvez choisir n’importe quelle couleur de Qoam, puis prendre dans la réserve commune 3 cristaux de cette couleur.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="44"/>
         <source>Parasite Sword</source>
-        <translation type="unfinished">ÉPÉE PARASITE</translation>
+        <translation>Épée Parasite</translation>
     </message>
     <message>
         <location filename="icaion.js" line="45"/>
         <source>You start the game with an additional Strength icon. Each turn you successfully perform an Eradicate Parasites action you immediately score 2 Reputation Points.</source>
-        <translation type="unfinished">Vous démarrez la partie avec une icône Force supplémentaire. À chaque tour, si vous réalisez avec succès au moins une action Éradiquer les parasites, vous marquez 2 PR.</translation>
+        <translation>Vous démarrez la partie avec une icône Force supplémentaire. À chaque tour, si vous réalisez avec succès au moins une action Éradiquer les parasites, vous marquez 2 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="46"/>
         <source>Energy Harness</source>
-        <translation type="unfinished">HARNAIS ÉNERGÉTIQUE</translation>
+        <translation>Harnais Énergétique</translation>
     </message>
     <message>
         <location filename="icaion.js" line="47"/>
         <source>At the End of the Game, score 2 Reputation Points instead of 1 for each Qoam crystal left in your Null Cages.</source>
-        <translation type="unfinished">À la fin de la partie, chaque cristal de Qoam restant dans vos Cages Zéro vous rapporte 2 PR au lieu de 1.</translation>
+        <translation>À la fin de la partie, chaque cristal de Qoam restant dans vos Cages Zéro vous rapporte 2 PR au lieu de 1.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="48"/>
         <source>Vertebra Crown</source>
-        <translation type="unfinished">COURONNE DE VERTIBRA</translation>
+        <translation>Couronne De Vertibra</translation>
     </message>
     <message>
         <location filename="icaion.js" line="49"/>
         <source>During each End of a Year phase, score 5 Reputation Points if you ended your last turn on a crater’s edge node.</source>
-        <translation type="unfinished">Lors de chaque phase de Fin d’une Année, vous marquez 5 PR si vous avez terminé votre dernier tour sur un croisement situé au bord d’un cratère.</translation>
+        <translation>Lors de chaque phase de Fin d’une Année, vous marquez 5 PR si vous avez terminé votre dernier tour sur un croisement situé au bord d’un cratère.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="50"/>
         <source>Empowered Tools</source>
-        <translation type="unfinished">OUTILS AUTONOMES</translation>
+        <translation>Outils Autonomes</translation>
     </message>
     <message>
         <location filename="icaion.js" line="51"/>
         <source>Whenever you install an Apparatus, immediately score 4 Reputation Points.</source>
-        <translation type="unfinished">À chaque fois que vous installez
-un Appareil, vous marquez
-immédiatement 4 PR.</translation>
+        <translation>À chaque fois que vous installez un Appareil, vous marquez immédiatement 4 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="52"/>
         <source>Mechanic Gloves</source>
-        <translation type="unfinished">GANTS MÉCANIQUES</translation>
+        <translation>Gants Mécaniques</translation>
     </message>
     <message>
         <location filename="icaion.js" line="53"/>
         <source>You may perform Deploy a Machine as a Special Action. This means you might perform this action twice in a turn, once as a Standard Action and once as a Special Action.</source>
-        <translation type="unfinished">Vous pouvez effectuer l’action Déployer une Machine comme s’il s’agissait d’une Action spéciale. Cela signifie que vous pouvez effectuer cette action deux fois lors de votre tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
+        <translation>Vous pouvez effectuer l’action Déployer une Machine comme s’il s’agissait d’une Action spéciale. Cela signifie que vous pouvez effectuer cette action deux fois lors de votre tour, une fois en tant qu’Action standard et une fois en tant qu’Action spéciale.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="54"/>
         <source>Energy Stabilizer</source>
-        <translation type="unfinished">STABILISATEUR D’ÉNERGIE</translation>
+        <translation>Stabilisateur D’Énergie</translation>
     </message>
     <message>
         <location filename="icaion.js" line="55"/>
         <source>Whenever you Overcharge Machinery, draw 1 Curio Card.</source>
-        <translation type="unfinished">À chaque fois que vous suralimentez des Machines, piochez 1 carte Curio.</translation>
+        <translation>À chaque fois que vous suralimentez des Machines, piochez 1 carte Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="56"/>
         <source>Event - Region</source>
-        <translation type="unfinished">ÉVÈNEMENTS - région</translation>
+        <translation>Évènements - région</translation>
     </message>
     <message>
         <location filename="icaion.js" line="57"/>
         <location filename="mysthea.js" line="144"/>
         <source>River</source>
-        <translation type="unfinished">RIVIÈRE</translation>
+        <translation>Rivière</translation>
     </message>
     <message>
         <location filename="icaion.js" line="58"/>
         <location filename="mysthea.js" line="145"/>
         <source>Mountain</source>
-        <translation type="unfinished">MONTAGNE</translation>
+        <translation>Montagne</translation>
     </message>
     <message>
         <location filename="icaion.js" line="59"/>
         <location filename="mysthea.js" line="146"/>
         <source>Forest</source>
-        <translation type="unfinished">FORÊT</translation>
+        <translation>Forêt</translation>
     </message>
     <message>
         <location filename="icaion.js" line="60"/>
         <location filename="mysthea.js" line="148"/>
         <source>Crystal Field</source>
-        <translation type="unfinished">TERRE BRUMEUSE</translation>
+        <translation>Terre Brumeuse</translation>
     </message>
     <message>
         <location filename="icaion.js" line="61"/>
         <location filename="mysthea.js" line="147"/>
         <source>Land of Myst</source>
-        <translation type="unfinished">CHAMP CRISTALLIN</translation>
+        <translation>Champ Cristallin</translation>
     </message>
     <message>
         <location filename="icaion.js" line="62"/>
         <source>Event - Colossus</source>
-        <translation type="unfinished">ÉVÈNEMENTS - Colosse</translation>
+        <translation>Évènements - Colosse</translation>
     </message>
     <message>
         <location filename="icaion.js" line="63"/>
@@ -505,7 +498,7 @@ The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crat
         <oldsource>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</oldsource>
-        <translation type="unfinished">Déplacez le Colosse
+        <translation>Déplacez le Colosse
 Placez deux Parasites sur chaque Région adjacente au cratère où se trouve le Colosse.
 Le Colosse blesse tous les Émissaires présents sur les croisements des Régions adjacentes au cratère où il se trouve.</translation>
     </message>
@@ -513,7 +506,7 @@ Le Colosse blesse tous les Émissaires présents sur les croisements des Région
         <location filename="icaion.js" line="64"/>
         <source>Move the Colossus. While it moves it also wounds all Seekers on the nodes of the Regions adjacent to the craters it moves through (including the craters where it starts and ends its movement).
 Place one Parasite on each Region adjacent to the Colossus’ crater.</source>
-        <translation type="unfinished">Déplacez le Colosse. Au cours de son déplacement, il blesse tous les Émissaires présents sur les croisements des Régions adjacentes aux cratères qu’il traverse (y compris les cratères où il commence et termine son déplacement).
+        <translation>Déplacez le Colosse. Au cours de son déplacement, il blesse tous les Émissaires présents sur les croisements des Régions adjacentes aux cratères qu’il traverse (y compris les cratères où il commence et termine son déplacement).
 Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.</translation>
     </message>
     <message>
@@ -522,7 +515,7 @@ Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Col
 Move the Colossus.
 Place one Parasite on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
-        <translation type="unfinished">Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
+        <translation>Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
 Déplacez le Colosse.
 Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Colosse.
  Le Colosse blesse tous les Émissaires présents sur les croisements des Régions adjacentes au cratère où il se trouve.</translation>
@@ -530,105 +523,98 @@ Placez un Parasite sur chaque Région adjacente au cratère où se trouve le Col
     <message>
         <location filename="icaion.js" line="66"/>
         <source>Wonder</source>
-        <translation type="unfinished">Merveille</translation>
+        <translation>Merveille</translation>
     </message>
     <message>
         <location filename="icaion.js" line="67"/>
         <source>Parasite Colony</source>
-        <translation type="unfinished">COLONIE PARASITE</translation>
+        <translation>Colonie Parasite</translation>
     </message>
     <message>
         <location filename="icaion.js" line="68"/>
         <source>Cost: 2 qoam
 Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
-        <translation type="unfinished">Coût : 2 qoam
-Effet : Vous blessez les Émissaires ennemis présents sur votre croisement où sur un croisement adjacent à celui-ci.
-</translation>
+        <translation>Coût : 2 qoam
+Effet : Vous blessez les Émissaires ennemis présents sur votre croisement où sur un croisement adjacent à celui-ci.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="69"/>
         <source>Pulsar</source>
-        <translation type="unfinished">PULSAR</translation>
+        <translation>Pulsar</translation>
     </message>
     <message>
         <location filename="icaion.js" line="70"/>
         <source>Cost: 2 qoam
 Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
-        <translation type="unfinished">Coût : 2 qoam
-Effet : Chacun de vos adversaires doit défausser 1 Qoam de son choix dans la réserve commune.
-</translation>
+        <translation>Coût : 2 qoam
+Effet : Chacun de vos adversaires doit défausser 1 Qoam de son choix dans la réserve commune.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="71"/>
         <source>Transmuter</source>
-        <translation type="unfinished">TRANSMUTATEUR</translation>
+        <translation>Transmutateur</translation>
     </message>
     <message>
         <location filename="icaion.js" line="72"/>
         <source>Cost: 2 qoam
 Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
-        <translation type="unfinished">Coût : 2 qoam
-Effet : Vous pouvez défausser 1 Qoam de n&apos;importe quel type pour gagner immédiatement 2 PR.
-</translation>
+        <translation>Coût : 2 qoam
+Effet : Vous pouvez défausser 1 Qoam de n&apos;importe quel type pour gagner immédiatement 2 PR.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="73"/>
         <source>Qoamcopia</source>
-        <translation type="unfinished">QOAMCOPIA</translation>
+        <translation>Qoamcopia</translation>
     </message>
     <message>
         <location filename="icaion.js" line="74"/>
         <source>Cost: 3 qoam
 Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
-        <translation type="unfinished">Coût : 3 qoam
-Effet : Prenez dans la réserve 1 Qoam de n&apos;importe quelle couleur et ajoutez-le à l&apos;une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà)
-</translation>
+        <translation>Coût : 3 qoam
+Effet : Prenez dans la réserve 1 Qoam de n&apos;importe quelle couleur et ajoutez-le à l&apos;une de vos Cages Zéro (sans avoir à défausser le Qoam qui s’y trouverait déjà)</translation>
     </message>
     <message>
         <location filename="icaion.js" line="75"/>
         <source>Curio Hub</source>
-        <translation type="unfinished">HUB CURIO</translation>
+        <translation>Hub Curio</translation>
     </message>
     <message>
         <location filename="icaion.js" line="76"/>
         <source>Cost: 3 qoam
 Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
-        <translation type="unfinished">Coût : 3 qoam
-Effet : Vous pouvez soit piocher une carte Curio soit jouer une carte Curio.
-</translation>
+        <translation>Coût : 3 qoam
+Effet : Vous pouvez soit piocher une carte Curio soit jouer une carte Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="77"/>
         <source>Living Altar</source>
-        <translation type="unfinished">AUTEL VIVANT</translation>
+        <translation>Autel Vivant</translation>
     </message>
     <message>
         <location filename="icaion.js" line="78"/>
         <source>Cost: 4 qoam
 Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
-        <translation type="unfinished">Coût : 4 qoam
-Effet : Vous pouvez soit déplacer votre Émissaire d&apos;un croisement, soit éradiquer gratuitement un Parasite dans l’une des Régions adjacentes à votre Émissaire.
-</translation>
+        <translation>Coût : 4 qoam
+Effet : Vous pouvez soit déplacer votre Émissaire d&apos;un croisement, soit éradiquer gratuitement un Parasite dans l’une des Régions adjacentes à votre Émissaire.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="79"/>
         <source>Dark Bell</source>
-        <translation type="unfinished">SONNEUR FUNESTE</translation>
+        <translation>Sonneur Funeste</translation>
     </message>
     <message>
         <location filename="icaion.js" line="80"/>
         <source>Cost: 4 qoam
 Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
-        <translation type="unfinished">Coût : 4 qoam
-Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou antihoraire. Placez ensuite un Parasite sur chacune des deux Régions adjacentes au cratère sur lequel vient d’arriver le Colosse.
-</translation>
+        <translation>Coût : 4 qoam
+Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou antihoraire. Placez ensuite un Parasite sur chacune des deux Régions adjacentes au cratère sur lequel vient d’arriver le Colosse.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="81"/>
         <location filename="mysthea.js" line="157"/>
         <location filename="thefall.js" line="45"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>Tout type</translation>
     </message>
     <message>
         <location filename="thefall.js" line="46"/>
@@ -654,13 +640,13 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
         <location filename="icaion.js" line="83"/>
         <location filename="mysthea.js" line="159"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>Champion</translation>
     </message>
     <message>
         <location filename="icaion.js" line="84"/>
         <location filename="mysthea.js" line="160"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Toutes commandements</translation>
     </message>
     <message>
         <location filename="icaion.js" line="85"/>
@@ -675,7 +661,7 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="2"/>
         <source>Era x</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère X</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>
@@ -685,27 +671,27 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="4"/>
         <source>Pay 2 Energy Points to Travel with your Champion to any region. The Champion cannot carry any other unit.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Le Champion ne peut pas emmener d’autres unités.</translation>
+        <translation>Payez 2 points d’Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Le Champion ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="5"/>
         <source>Pay 2 Energy Points to gain 2 Experience Points and Develop.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 2 points d’Expérience et développer (Action Standard).</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 2 points d’Expérience et développer (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="6"/>
         <source>Pay 2 Energy Points to Act.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour agir (Action Standard).</translation>
+        <translation>Payez 2 points d’Énergie pour agir (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="7"/>
         <source>Pay 2 Energy Points to Start a Battle in any region with at least 1 Opponent and add 2 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire (ceci ne décharge pas votre Artefact) ; ajoutez 2 à votre Force totale.</translation>
+        <translation>Payez 2 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire (ceci ne décharge pas votre Artefact) ; ajoutez 2 à votre Force totale.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="8"/>
         <source>Pay 2 Energy Points to Meditate.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour méditer (Action Standard).</translation>
+        <translation>Payez 2 points d’Énergie pour méditer (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="9"/>
@@ -715,27 +701,27 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="10"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Forest region you control.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Forêt que vous contrôlez.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Forêt que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="11"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Land of Myst region you control.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="12"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each River region you control.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="13"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Crystal Field region you control.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Champ cristallin que vous contrôlez.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Champ cristallin que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="14"/>
         <source>Pay 2 Energy Points to gain 3 Glory Points for each Mountain region you control.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="15"/>
@@ -745,27 +731,27 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="16"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Tactic Card to Act.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Tactique pour agir (Action Standard).</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Tactique pour agir (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="17"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Objective Card to Develop.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Objectif pour développer (Action Standard).</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Objectif pour développer (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="18"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Accessory Card to Meditate.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Accessoire pour méditer (Action Standard).</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Accessoire pour méditer (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="19"/>
         <source>While this card is on your Player Board, once per turn you may discard 1 Upgrade Card to Recharge your Artefact and/or gain 4 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Amélioration pour recharger votre Artefact ou gagner 4 points de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte Amélioration pour recharger votre Artefact ou gagner 4 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="20"/>
         <source>While this card is on your Player Board, once per turn you may discard any Command Card to gain X Command Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte de Commandement pour gagner X points de Gloire, où X est le nombre de points de Commandement de la carte défaussée.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) défausser 1 carte de Commandement pour gagner X points de Gloire, où X est le nombre de points de Commandement de la carte défaussée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="21"/>
@@ -775,212 +761,212 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="22"/>
         <source>Whenever you Deploy a Fortification, you gain 1 Glory Point and 1 Energy Point.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point de Gloire et 1 point d’Énergie chaque fois que vous déployez une Fortification.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point de Gloire et 1 point d’Énergie chaque fois que vous déployez une Fortification.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="23"/>
         <source>While this card is on your Player Board, whenever you Construct a Troop, gain 1 Experience Point.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point d’Expérience chaque fois que vous construisez une Troupe.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous gagnez 1 point d’Expérience chaque fois que vous construisez une Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="24"/>
         <source>While this card is on your Player Board, whenever you Construct a Golem, you may Deploy it at no cost.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez un Golem, vous pouvez le déployer gratuitement.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez un Golem, vous pouvez le déployer gratuitement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="25"/>
         <source>While this card is on your Player Board, add 2 Strength Points to your Champion.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 2 à la Force de votre Champion.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 2 à la Force de votre Champion.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="26"/>
         <source>While this card is on your Player Board, whenever you play an Upgrade Card, you do not have to spend Energy Points to place it.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous n’avez pas besoin de dépenser d’Énergie pour poser une carte Amélioration.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous n’avez pas besoin de dépenser d’Énergie pour poser une carte Amélioration.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="27"/>
         <source>Era I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère I</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="28"/>
         <source>Pay 1 Energy Point to Recharge your Artefact.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie pour recharger votre Artefact.</translation>
+        <translation>Payez 1 point d’Énergie pour recharger votre Artefact.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="29"/>
         <source>Pay 1 Energy Point to Travel with 1 Golem to any region. The Golem cannot carry any other unit.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie pour faire Voyager un Golem vers n’importe quelle Région. Le Golem ne peut pas emmener d’autres unités.</translation>
+        <translation>Payez 1 point d’Énergie pour faire Voyager un Golem vers n’importe quelle Région. Le Golem ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="30"/>
         <source>Pay 2 Energy Points to choose any region. Remove 1 Fortification from each Opponent in that region.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Fortification à chaque adversaire présent dans cette Région.</translation>
+        <translation>Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Fortification à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="31"/>
         <source>Pay 3 Energy Points to Construct 1 Troop and/or 1 Golem.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour construire 1 Troupe et/ou 1 Golem.</translation>
+        <translation>Payez 3 points d’Énergie pour construire 1 Troupe et/ou 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="32"/>
         <source>Pay 3 Energy Points to Deploy 1 Troop and/or 1 Golem.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour déployer 1 Troupe et/ou 1 Golem.</translation>
+        <translation>Payez 3 points d’Énergie pour déployer 1 Troupe et/ou 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="33"/>
         <source>Pay 1 Energy Point to gain 3 Glory Points.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
+        <translation>Payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="34"/>
         <source>Pay 1 Energy Point and remove from the game 1 Tactic Card from your hand to gain X Command Points and X Experience Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Tactique de votre main pour gagner X points de Commandement et d’Expérience, où X est le nombre de points de Commandement de la carte retirée.</translation>
+        <translation>Payez 1 point d’Énergie et retirez de la partie une carte Tactique de votre main pour gagner X points de Commandement et d’Expérience, où X est le nombre de points de Commandement de la carte retirée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="35"/>
         <source>Pay 2 Energy Points to gain 2 Glory Points for each of your Fortifications currently deployed.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 2 points de Gloire pour chacune de vos Fortifications actuellement déployées.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 2 points de Gloire pour chacune de vos Fortifications actuellement déployées.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="36"/>
         <source>Pay 3 Energy Points to gain 1 Glory Point and 1 Energy Point for each of your Golems currently deployed.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 1 point de Gloire et 1 point d’Énergie pour chacun de vos Golems actuellement déployés.</translation>
+        <translation>Payez 3 points d’Énergie pour gagner 1 point de Gloire et 1 point d’Énergie pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="37"/>
         <source>Pay 3 Energy Points to gain 3 Glory Points for each Encounter you faced.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 3 points de Gloire pour chaque Rencontre que vous avez affrontée.</translation>
+        <translation>Payez 3 points d’Énergie pour gagner 3 points de Gloire pour chaque Rencontre que vous avez affrontée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="38"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to gain 2 Energy Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 2 points d’Énergie.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 2 points d’Énergie.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="39"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Travel with your Champion to any region. The Champion cannot carry any other unit.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Il ne peut pas emmener d’autres unités.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour faire Voyager votre Champion vers n’importe quelle Région. Il ne peut pas emmener d’autres unités.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="40"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 2 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 2 points de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 2 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="41"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct 1 Troop or Travel with 1 Troop.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Troupe ou faire Voyager 1 Troupe.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Troupe ou faire Voyager 1 Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="42"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct 1 Golem or Travel with 1 Golem.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Golem ou faire Voyager 1 Golem.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 Énergie pour construire 1 Golem ou faire Voyager 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="43"/>
         <source>While this card is on your Player Board, whenever you Deploy a Fortification, you may gain 1 Experience Point.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 1 point d’Expérience.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 1 point d’Expérience.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="44"/>
         <source>While this card is on your Player Board, whenever you Deploy a Golem, you may gain 3 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 3 points de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous déployez une Fortification, vous pouvez gagner 3 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="45"/>
         <source>While this card is on your Player Board, whenever your Champion Travels, they may carry one of your units from the same region that has not yet traveled this turn. If your Champion Travels several times, they can carry a different unit each time.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que votre Champion Voyage, il peut emmener avec lui une unité de la même Région qui n’a pas déja voyagéce tour-ci. Si votre Champion Voyage plusieurs fois, il peut emmener des unités différentes à chaque fois.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que votre Champion Voyage, il peut emmener avec lui une unité de la même Région qui n’a pas déja voyagéce tour-ci. Si votre Champion Voyage plusieurs fois, il peut emmener des unités différentes à chaque fois.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="46"/>
         <source>While this card is on your Player Board, whenever you Construct a Troop, you may Deploy it at no cost.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez une Troupe, vous pouvez la déployer gratuitement.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous construisez une Troupe, vous pouvez la déployer gratuitement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="47"/>
         <source>While this card is on your Player Board, whenever you play an Accessory Card, you do not have to spend Energy Points to place it.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Accessoire, vous n’avez pas besoin de dépenser d’Énergie pour la poser.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Accessoire, vous n’avez pas besoin de dépenser d’Énergie pour la poser.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="48"/>
         <source>Era II</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère II</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="49"/>
         <source>Pay 1 Energy Point to draw up to 2 cards from the top of the Era Deck of the current Era at no cost.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie pour piocher les deux premières cartes de la pile de l’Ère actuelle.</translation>
+        <translation>Payez 1 point d’Énergie pour piocher les deux premières cartes de la pile de l’Ère actuelle.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="50"/>
         <source>Pay 2 Energy Points to Travel with up to 2 Troops to any region. Chosen units cannot carry any other unit but they can Travel to two different regions, independently.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour faire Voyager jusqu’à 2 Troupes vers n’importe quelle Région. Les Troupes ne peuvent pas emmener d’autres unités mais elles peuvent Voyager chacune vers une Région différente.</translation>
+        <translation>Payez 2 points d’Énergie pour faire Voyager jusqu’à 2 Troupes vers n’importe quelle Région. Les Troupes ne peuvent pas emmener d’autres unités mais elles peuvent Voyager chacune vers une Région différente.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="51"/>
         <source>Pay 3 Energy Points to Start a Battle in any region with at least one Opponent and add 3 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 3 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
+        <translation>Payez 3 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 3 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="52"/>
         <source>Pay 3 Energy Points to choose any region. Remove 1 Troop from each Opponent in that region.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie et choisissez une Région. Retirez 1 Troupe à chaque adversaire présent dans cette Région.</translation>
+        <translation>Payez 3 points d’Énergie et choisissez une Région. Retirez 1 Troupe à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="53"/>
         <source>Pay 4 Energy Points to choose any region where you are present. Travel with all your units (except Fortifications) from that region to any other region. Units that have already traveled this turn cannot Travel again.</source>
-        <translation type="unfinished">Payez 4 points d’Énergies et choisissez une Région où vous êtes présent. Faites Voyager toutes vos unités (Fortifications exceptées) depuis cette Région vers n’importe quelle autre Région. Les unités qui ont déjà Voyagé ce tour-ci  ne peuvent pas Voyager à nouveau.</translation>
+        <translation>Payez 4 points d’Énergies et choisissez une Région où vous êtes présent. Faites Voyager toutes vos unités (Fortifications exceptées) depuis cette Région vers n’importe quelle autre Région. Les unités qui ont déjà Voyagé ce tour-ci  ne peuvent pas Voyager à nouveau.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="54"/>
         <source>Pay 1 Energy Point and remove from the game 1 Objective Card from your hand to gain X Glory Points and X Command Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Objectif de votre main pour gagner un nombre de points de Commandement et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
+        <translation>Payez 1 point d’Énergie et retirez de la partie une carte Objectif de votre main pour gagner un nombre de points de Commandement et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="55"/>
         <source>Pay 2 Energy Points to gain 5 Glory Points.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie pour gagner 5 points de Gloire.</translation>
+        <translation>Payez 2 points d’Énergie pour gagner 5 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="56"/>
         <source>Pay 3 Energy Points to gain 7 Glory Points.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 7 points de Gloire.</translation>
+        <translation>Payez 3 points d’Énergie pour gagner 7 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="57"/>
         <source>Pay 3 Energy Points to gain 1 Glory Point for each of your Troops currently deployed.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour gagner 1 point de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
+        <translation>Payez 3 points d’Énergie pour gagner 1 point de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="58"/>
         <source>Pay 4 Energy Points to Recharge your Artefact and/or Meditate.</source>
-        <translation type="unfinished">Payez 4 points d’Énergie pour recharger votre Artefact et/ou méditer (Action Standard).</translation>
+        <translation>Payez 4 points d’Énergie pour recharger votre Artefact et/ou méditer (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="59"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to gain 1 Experience Point and 1 Glory Point.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 1 point d’Expérience et 1 point de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 1 point d’Expérience et 1 point de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="60"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct or Deploy 1 Golem.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Golem.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="61"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Construct or Deploy 1 Troop.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Troupe.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour construi- re ou déployer 1 Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="62"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 4 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 4 points de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour gagner 4 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="63"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Fortification.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour déployer 1 Fortification.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Expérience pour déployer 1 Fortification.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="64"/>
@@ -990,132 +976,132 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="65"/>
         <source>While this card is on your Player Board, whenever you Face an Encounter, you may gain 3 Energy Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous affrontez une Rencontre, vous pouvez gagner 3 points d’Énergie.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous affrontez une Rencontre, vous pouvez gagner 3 points d’Énergie.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="66"/>
         <source>While this card is on your Player Board, whenever you play a Tactic Card, you do not have to pay its Energy cost.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Tactique, vous n’avez pas à payer son coût en points d’Énergie.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Tactique, vous n’avez pas à payer son coût en points d’Énergie.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="67"/>
         <source>While this card is on your Player Board, add 1 Strength Point to each of your Golems.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Golems.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Golems.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="68"/>
         <source>While this card is on your Player Board, whenever one of your Troops Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Troop.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois qu’une de vos Troupes Voyage, elle peut emmener une autre de vos unités qui n’a pas déjà Voyagé ce tour-ci. L’unité emmenée doit se trouver dans la même Région que votre Troupe.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois qu’une de vos Troupes Voyage, elle peut emmener une autre de vos unités qui n’a pas déjà Voyagé ce tour-ci. L’unité emmenée doit se trouver dans la même Région que votre Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="69"/>
         <source>While this card is on your Player Board, add 1 Strength to each of your Fortifications.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Fortifications.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Fortifications.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="70"/>
         <source>Era III</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère III</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="71"/>
         <source>Pay 1 Energy Point to gain 12 Energy Points.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie pour gagner 12 points d’Énergie.</translation>
+        <translation>Payez 1 point d’Énergie pour gagner 12 points d’Énergie.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="72"/>
         <source>Pay 2 Energy Points to choose any region. Remove 1 Golem from each Opponent in that region.</source>
-        <translation type="unfinished">Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Golem à chaque adversaire présent dans cette Région.</translation>
+        <translation>Payez 2 points d’Énergie et choisissez une Région. Retirez 1 Golem à chaque adversaire présent dans cette Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="73"/>
         <source>Pay 3 Energy Points to choose a Monster whose card has already been placed on the Events Board during this Era. The Monster attacks immediately.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie et choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
+        <translation>Payez 3 points d’Énergie et choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="74"/>
         <source>Pay 4 Energy Points to choose any region. Wound all Opponents’ Champions in that region.</source>
-        <translation type="unfinished">Payez 4 points d’Énergie et choisissez une Région. Blessez tous les Champions adverses présents dans cette Région.</translation>
+        <translation>Payez 4 points d’Énergie et choisissez une Région. Blessez tous les Champions adverses présents dans cette Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="75"/>
         <source>Pay 5 Energy Points to Start a Battle in any region with at least 1 Opponent and add 5 to your Strength total. Starting a Battle this way does not Discharge your Artefact.</source>
-        <translation type="unfinished">Payez 5 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 5 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
+        <translation>Payez 5 points d’Énergie pour commencer une bataille dans une Région contenant au moins 1 adversaire ; ajoutez 5 à votre Force totale. Commencer une bataille de cette manière ne décharge pas votre Artefact.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="76"/>
         <source>Pay 1 Energy Point and remove from the game 1 Accessory Card from your hand to gain X Energy Points and X Glory Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished">Payez 1 point d’Énergie et retirez de la partie une carte Accessoire de votre main pour gagner un nombre de points d’Énergie et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
+        <translation>Payez 1 point d’Énergie et retirez de la partie une carte Accessoire de votre main pour gagner un nombre de points d’Énergie et de points de Gloire égaux au nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="77"/>
         <source>Pay 2 Energy Points and remove from the game 1 Upgrade Card from your hand to gain X Glory Points and X Experience Points, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished">Payez 2 point d’Énergie et retirez de la partie une carte Amélioration de votre main pour gagner X points d’Expérience et X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte retirée.</translation>
+        <translation>Payez 2 point d’Énergie et retirez de la partie une carte Amélioration de votre main pour gagner X points d’Expérience et X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="78"/>
         <source>Pay 3 Energy points to Recharge your Artefact and gain 4 Glory Points.</source>
-        <translation type="unfinished">Payez 3 points d’Énergie pour recharger votre Artefact et gagner 4 points de Gloire.</translation>
+        <translation>Payez 3 points d’Énergie pour recharger votre Artefact et gagner 4 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="79"/>
         <source>Pay 4 Energy Points to gain 9 Glory Points.</source>
-        <translation type="unfinished">Payez 4 points d’Énergie pour gagner 9 points de Gloire.</translation>
+        <translation>Payez 4 points d’Énergie pour gagner 9 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="80"/>
         <source>Pay 5 Energy Points and remove from the game 1 Tactic Card, 1 Objective Card, 1 Accessory Card, and 1 Upgrade Card from your hand to gain 16 Glory Points.</source>
-        <translation type="unfinished">Payez 5 points d’Énergie et retirez de la partie une carte Tactique, 1 carte Objectif, 1 carte Accessoire et 1 carte Amélioration de votre main pour gagner 16 points de Gloire.</translation>
+        <translation>Payez 5 points d’Énergie et retirez de la partie une carte Tactique, 1 carte Objectif, 1 carte Accessoire et 1 carte Amélioration de votre main pour gagner 16 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="81"/>
         <source>While this card is on your Player Board, once per turn you may remove from the game 2 Accessory Cards from your hand to choose a Monster whose card has already been placed on the Events Board during this Era. The Monster attacks immediately.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie 2 cartes Accessoires de votre main pour choisir un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie 2 cartes Accessoires de votre main pour choisir un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="82"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Golem or Travel with 1 Golem.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (une fois par tour) payer 1 point d’Énergie pour déployer 1 Golem ou faire Voyager 1 Golem.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (une fois par tour) payer 1 point d’Énergie pour déployer 1 Golem ou faire Voyager 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="83"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Energy Point to Deploy 1 Troop or Travel with 1 Troop.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour déployer 1 Troupe ou faire Voyager 1 Troupe.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour déployer 1 Troupe ou faire Voyager 1 Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="84"/>
         <source>While this card is on your Player Board, once per turn you may pay 1 Experience Point to gain 6 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 6 points de Gloire.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, vous pouvez (1x par tour) payer 1 point d’Énergie pour gagner 6 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="85"/>
         <source>While this card is on your Player Board, once per turn you may remove from the game any card from your hand to gain X Glory Points twice, where X is equal to the number of Command Points of the removed card.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie une carte de votre main pour gagner deux fois le nombre de points de Commandement indiqué sur la carte retirée.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, vous pouvez (1x par tour) retirer de la partie une carte de votre main pour gagner deux fois le nombre de points de Commandement indiqué sur la carte retirée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="86"/>
         <source>While this card is on your Player Board, add 3 Strength Points to your Champion.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 3 à la Force de votre Champion.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 3 à la Force de votre Champion.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="87"/>
         <source>While this card is on your Player Board, whenever one of your Golems Travels, it may carry one of your other units that has not yet traveled this turn. The carried unit must start in the same region as your Golem.</source>
-        <translation type="unfinished">Quand cette carte est sur votre tableau de bord, chaque fois qu’un de vos Golems Voyage, il peut emmener une autre unité alliée de la même Région et qui n’a pas déjà Voyagé ce tour-ci.</translation>
+        <translation>Quand cette carte est sur votre tableau de bord, chaque fois qu’un de vos Golems Voyage, il peut emmener une autre unité alliée de la même Région et qui n’a pas déjà Voyagé ce tour-ci.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="88"/>
         <source>While this card is on your Player Board, whenever you play an Objective Card, you do not have to pay its Energy cost.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Objectif, vous n’avez pas à payer son coût en points d’Énergie.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, chaque fois que vous jouez une carte Objectif, vous n’avez pas à payer son coût en points d’Énergie.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="89"/>
         <source>While this card is on your Player Board, whenever you Deploy a Fortification, gain 4 Glory Points.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, gagnez 4 points de Gloire chaque fois que vous déployez une Fortification.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, gagnez 4 points de Gloire chaque fois que vous déployez une Fortification.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="90"/>
         <source>While this card is on your Player Board, add 1 Strength Point to each of your Troops.</source>
-        <translation type="unfinished">Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Troupes.</translation>
+        <translation>Tant que cette carte est sur votre tableau de bord, ajoutez 1 à la Force de vos Troupes.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="91"/>
@@ -1135,257 +1121,257 @@ Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou 
     <message>
         <location filename="mysthea.js" line="94"/>
         <source>Anuth: When you Start a Battle in the region where Anuth is, or if Anuth is on an Island attacked by a Monster, he receives 2 additional Strength Points until the end of the Battle or the end of the Monster’s attack.</source>
-        <translation type="unfinished">Quand vous commencez une bataille dans la Région où se trouve Anuth (ou qu’Anuth se trouve sur l’Île attaquée par un Monstre), il reçoit 2 points de Force additionnels jusqu’à la fin de la bataille ou de l’attaque du Monstre.</translation>
+        <translation>Quand vous commencez une bataille dans la Région où se trouve Anuth (ou qu’Anuth se trouve sur l’Île attaquée par un Monstre), il reçoit 2 points de Force additionnels jusqu’à la fin de la bataille ou de l’attaque du Monstre.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="95"/>
         <source>Celethe: When Celethe is on an Island attacked by a Monster, if the Monster loses, the player controlling Celethe doubles their reward.</source>
-        <translation type="unfinished">Quand Celethe est sur une Île attaquée par un Monstre, si le Monstre perd, le contrôleur de Celethe double sa récompense.</translation>
+        <translation>Quand Celethe est sur une Île attaquée par un Monstre, si le Monstre perd, le contrôleur de Celethe double sa récompense.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="96"/>
         <source>Leheir: When you Start a Battle, Leheir gives you 1 extra Glory Point for each unit which are removed or retreat (including your own), and for each Champion that becomes wounded.</source>
-        <translation type="unfinished">Quand vous commencez une bataille, Leheir vous donne 1 point de Gloire additionnel pour chaque unité retirée ou ayant fait retraite (y compris les vôtres) et pour chaque Champion blessé à la fin du conflit.</translation>
+        <translation>Quand vous commencez une bataille, Leheir vous donne 1 point de Gloire additionnel pour chaque unité retirée ou ayant fait retraite (y compris les vôtres) et pour chaque Champion blessé à la fin du conflit.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="97"/>
         <source>Telron: At the very beginning of each Era (before Champions are restored), Telron gives you 4 extra Energy Points if not wounded.</source>
-        <translation type="unfinished">Au début de chaque Ère (avant que les Champions ne soient soignés), Telron vous accorde 4 points d’Énergie additionnels s’il n’est pas blessé.</translation>
+        <translation>Au début de chaque Ère (avant que les Champions ne soient soignés), Telron vous accorde 4 points d’Énergie additionnels s’il n’est pas blessé.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="98"/>
         <source>CR-2T1: At the end of each Era, you receive 3 extra Glory Points for each 2 regions you control.</source>
-        <translation type="unfinished">À la fin de chaque Ère, vous recevez 3 points de Gloire additionnels toutes les 2 Régions que vous contrôlez.</translation>
+        <translation>À la fin de chaque Ère, vous recevez 3 points de Gloire additionnels toutes les 2 Régions que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="99"/>
         <source>Sanya: When you Start a Battle or Face an Encounter, you may first choose to take the card on top of the Era Deck of the current Era and add it to your hand, at no cost.</source>
-        <translation type="unfinished">Quand vous commencez une bataille ou affrontez une Rencontre, vous pouvez tout d’abord prendre la première carte de la pile de l’Ère actuelle et l’ajouter gratuitement à votre main.</translation>
+        <translation>Quand vous commencez une bataille ou affrontez une Rencontre, vous pouvez tout d’abord prendre la première carte de la pile de l’Ère actuelle et l’ajouter gratuitement à votre main.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="100"/>
         <source>Kolbor &amp; Malabor: When you Move an Island, you can perform one of any of the Attunements available, regardless of which Island you moved.</source>
-        <translation type="unfinished">Quand vous déplacez une Île, vous pouvez accomplir n’importe quelle Harmonisation parmi celles disponibles, sans être limité par l’Île déplacée.</translation>
+        <translation>Quand vous déplacez une Île, vous pouvez accomplir n’importe quelle Harmonisation parmi celles disponibles, sans être limité par l’Île déplacée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="101"/>
         <source>Attunement</source>
-        <translation type="unfinished"></translation>
+        <translation>Harmonisation</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="102"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each Upgrade Card in play on your Player Board.</source>
-        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chaque carte Amélioration en jeu sur votre tableau de bord.</translation>
+        <translation>Harmonisations. Recevez 3 points de Gloire pour chaque carte Amélioration en jeu sur votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="103"/>
         <source>Attune to the anomaly. Receive 4 Glory Points for each Encounter you faced.</source>
-        <translation type="unfinished">Harmonisations. Recevez 4 points de Gloire pour chaque Rencontre que vous avez faite.</translation>
+        <translation>Harmonisations. Recevez 4 points de Gloire pour chaque Rencontre que vous avez faite.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="104"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each region you control.</source>
-        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chaque Région que vous contrôlez.</translation>
+        <translation>Harmonisations. Recevez 3 points de Gloire pour chaque Région que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="105"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each of your Troops currently deployed.</source>
-        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
+        <translation>Harmonisations. Recevez 2 points de Gloire pour chacune de vos Troupes actuellement déployées.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="106"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each Command Card in your discard pile.</source>
-        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chaque carte Commandement dans votre défausse.</translation>
+        <translation>Harmonisations. Recevez 2 points de Gloire pour chaque carte Commandement dans votre défausse.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="107"/>
         <source>Attune to the anomaly. Receive 4 Glory Points for each Accessory Card in play on your Player Board.</source>
-        <translation type="unfinished">Harmonisations. Recevez 4 points de Gloire pour chaque carte Accessoire en jeu sur votre tableau de bord.</translation>
+        <translation>Harmonisations. Recevez 4 points de Gloire pour chaque carte Accessoire en jeu sur votre tableau de bord.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="108"/>
         <source>Attune to the anomaly. Receive 2 Glory Points for each Experience Point you currently possess.</source>
-        <translation type="unfinished">Harmonisations. Recevez 2 points de Gloire pour chacun de vos points d’Expérience actuels.</translation>
+        <translation>Harmonisations. Recevez 2 points de Gloire pour chacun de vos points d’Expérience actuels.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="109"/>
         <source>Attune to the anomaly. Receive 1 Glory Point for each region where you have at least one unit.</source>
-        <translation type="unfinished">Harmonisations. Recevez 1 point de Gloire pour chaque Région où vous avez au moins une unité.</translation>
+        <translation>Harmonisations. Recevez 1 point de Gloire pour chaque Région où vous avez au moins une unité.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="110"/>
         <source>Attune to the anomaly. Receive 3 Glory Points for each of your Golems currently deployed.</source>
-        <translation type="unfinished">Harmonisations. Recevez 3 points de Gloire pour chacun de vos Golems actuellement déployés.</translation>
+        <translation>Harmonisations. Recevez 3 points de Gloire pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="111"/>
         <source>Attune to the anomaly. At the end of this Era, receive 8 Glory Points for each Monster defeated (even if you did not take part in the attack).</source>
-        <translation type="unfinished">Harmonisations. À la fin de cette Ère, recevez 8 points de Gloire pour chaque Monstre vaincu.</translation>
+        <translation>Harmonisations. À la fin de cette Ère, recevez 8 points de Gloire pour chaque Monstre vaincu.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="112"/>
         <source>Encounter</source>
-        <translation type="unfinished"></translation>
+        <translation>Rencontre</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="113"/>
         <source>Gain 6 Glory Points. Axe: Remove a Fortification from each Opponent / Boots: Gain 2 Experience Points.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : retirez une Fortification à chaque adversaire. Bottes : gagnez 2 points d’Expérience.</translation>
+        <translation>Gagnez 6 points de Gloire. Hache : retirez une Fortification à chaque adversaire. Bottes : gagnez 2 points d’Expérience.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="114"/>
         <source>Gain 6 Glory Points. Dialogue: Gain 3 Command Points / Chest: Meditate.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : gagnez 3 points de Commandement. Coffre : méditez (Action Standard).</translation>
+        <translation>Gagnez 6 points de Gloire. Dialogue : gagnez 3 points de Commandement. Coffre : méditez (Action Standard).</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="115"/>
         <source>Gain 6 Glory Points. Boots: Construct 1 Troop and 1 Golem / Chest: Gain 3 Glory Points for each Crystal Field region you control.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : construisez 1 Troupe et 1 Golem. Coffre : gagnez 3 points de Gloire pour chaque Champ cristallin que vous contrôlez.</translation>
+        <translation>Gagnez 6 points de Gloire. Bottes : construisez 1 Troupe et 1 Golem. Coffre : gagnez 3 points de Gloire pour chaque Champ cristallin que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="116"/>
         <source>Gain 7 Glory Points. Axe: Gain 3 Glory Points for each Forest region you control / Dialogue: Gain 1 Experience Point and Travel with your Champion.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : gagnez 3 points de Gloire pour chaque Forêt que vous contrôlez. Dialogue : gagnez 1 point d’Expérience et faites Voyager votre Champion.</translation>
+        <translation>Gagnez 7 points de Gloire. Hache : gagnez 3 points de Gloire pour chaque Forêt que vous contrôlez. Dialogue : gagnez 1 point d’Expérience et faites Voyager votre Champion.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="117"/>
         <source>Gain 7 Glory Points. Boots: Gain 2 Command Points / Chest: Gain 1 Energy Point and Develop.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : gagnez 2 points de Commandement. Coffre: gagnez 1 point d’Énergie et développez.</translation>
+        <translation>Gagnez 7 points de Gloire. Bottes : gagnez 2 points de Commandement. Coffre: gagnez 1 point d’Énergie et développez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="118"/>
         <source>Gain 7 Glory Points. Chest: Gain 3 Energy Points / Boots: Draw 1 card from the top of the Era Deck.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : gagnez 3 points d’Énergie. Bottes : piochez la première carte de la pile d’Ère.</translation>
+        <translation>Gagnez 7 points de Gloire. Coffre : gagnez 3 points d’Énergie. Bottes : piochez la première carte de la pile d’Ère.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="119"/>
         <source>Gain 8 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Construct 1 Troop or Travel with 1 Troop you control. </source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : construisez 1 troupe ou faites Voyager 1 des Troupes que vous contrôlez.</translation>
+        <translation>Gagnez 8 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : construisez 1 troupe ou faites Voyager 1 des Troupes que vous contrôlez. </translation>
     </message>
     <message>
         <location filename="mysthea.js" line="120"/>
         <source>Gain 8 Glory Points. Dialogue: Gain 1 Energy Point and 1 Command Point / Boots: Remove 1 Troop from each Opponent.</source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Dialogue : gagnez 1 point d’Énergie et 1 point de Commandement. Bottes: retirez une Troupe à chaque adversaire.</translation>
+        <translation>Gagnez 8 points de Gloire. Dialogue : gagnez 1 point d’Énergie et 1 point de Commandement. Bottes: retirez une Troupe à chaque adversaire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="121"/>
         <source>Gain 8 Glory Points. Chest: Discard a Tactic Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card / Dialogue: Construct or Deploy 1 Troop.</source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Coffre : défaussez une carte Tactique pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée. Dialogue : construisez ou déployez 1 Troupe.</translation>
+        <translation>Gagnez 8 points de Gloire. Coffre : défaussez une carte Tactique pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée. Dialogue : construisez ou déployez 1 Troupe.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="122"/>
         <source>Gain 7 Glory Points. Dialogue: Gain 3 Glory Points for each Land of Myst region you control / Boots: Choose 1 Golem and 1 Troop you control, then Travel to any region.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Dialogue : gagnez 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez. Bottes : choisissez 1 Golem et 1 Troupe que vous contrôlez et faites-les Voyager vers n’importe quelle Région.</translation>
+        <translation>Gagnez 7 points de Gloire. Dialogue : gagnez 3 points de Gloire pour chaque Région Terre brumeuse que vous contrôlez. Bottes : choisissez 1 Golem et 1 Troupe que vous contrôlez et faites-les Voyager vers n’importe quelle Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="123"/>
         <source>Gain 7 Glory Points. Axe: Remove 1 Golem from each Opponent / Chest: Gain 3 Glory Points.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : retirez 1 Golem à chaque adversaire. Coffre : gagnez 3 points de Gloire.</translation>
+        <translation>Gagnez 7 points de Gloire. Hache : retirez 1 Golem à chaque adversaire. Coffre : gagnez 3 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="124"/>
         <source>Gain 7 Glory Points. Chest: Gain 1 Energy Point / Axe: Recharge your Artefact or gain 1 Command Point.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : gagnez 1 point d’Énergie. Hache : rechargez votre Artefact ou gagnez 1 point de Commandement.</translation>
+        <translation>Gagnez 7 points de Gloire. Coffre : gagnez 1 point d’Énergie. Hache : rechargez votre Artefact ou gagnez 1 point de Commandement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="125"/>
         <source>Gain 7 Glory Points. Chest: Develop / Boots: Construct 1 Golem or Travel with 1 Golem you control.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : développez (Action Standard). Bottes : construisez 1 Golem ou faites Voyager 1 Golem que vous contrôlez.</translation>
+        <translation>Gagnez 7 points de Gloire. Coffre : développez (Action Standard). Bottes : construisez 1 Golem ou faites Voyager 1 Golem que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="126"/>
         <source>Gain 7 Glory Points. Boots: Gain 1 Command Point and 2 Glory Points / Axe: Remove 1 Golem from each Opponent.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : gagnez 1 point de Commandement et 2 points de Gloire. Hache : retirez 1 Golem à chaque adversaire.</translation>
+        <translation>Gagnez 7 points de Gloire. Bottes : gagnez 1 point de Commandement et 2 points de Gloire. Hache : retirez 1 Golem à chaque adversaire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="127"/>
         <source>Gain 7 Glory Points. Chest: Draw 1 card from the top of the Era Deck / Dialogue: Gain 1 Glory Point for each of your Golem currently deployed.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Coffre : piochez la première carte de la pile d’Ère. Dialogue : gagnez 1 point de Gloire pour chacun de vos Golems actuellement déployés.</translation>
+        <translation>Gagnez 7 points de Gloire. Coffre : piochez la première carte de la pile d’Ère. Dialogue : gagnez 1 point de Gloire pour chacun de vos Golems actuellement déployés.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="128"/>
         <source>Gain 6 Glory Points. Dialogue: Deploy 1 Troop or Construct 1 Golem / Chest: Pay 1 Energy Point to gain 3 Glory Points.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : déployez 1 Troupe ou construisez 1 Golem. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
+        <translation>Gagnez 6 points de Gloire. Dialogue : déployez 1 Troupe ou construisez 1 Golem. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="129"/>
         <source>Gain 6 Glory Points. Axe: Gain 1 Glory Point and Start a Battle in any region with at least 1 Opponent / Boots: Draw 1 card from the top of the Era Deck.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : piochez la première carte de la pile d’Ère.</translation>
+        <translation>Gagnez 6 points de Gloire. Hache : gagnez 1 point de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : piochez la première carte de la pile d’Ère.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="130"/>
         <source>Gain 6 Glory Points. Chest: Construct 1 Troop or Construct 1 Golem / Axe: Discard an Accessory Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : construisez 1 Troupe ou 1 Golem. Hache : défaussez une carte Accessoire pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
+        <translation>Gagnez 6 points de Gloire. Coffre : construisez 1 Troupe ou 1 Golem. Hache : défaussez une carte Accessoire pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="131"/>
         <source>Gain 6 Glory Points. Chest: Gain 2 Energy Points or gain 2 Command Points / Dialogue: Gain 2 Experience Points.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : gagnez 2 points d’Énergie ou 2 points de Commandement. Dialogue : gagnez 2 points d’Expérience.</translation>
+        <translation>Gagnez 6 points de Gloire. Coffre : gagnez 2 points d’Énergie ou 2 points de Commandement. Dialogue : gagnez 2 points d’Expérience.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="132"/>
         <source>Gain 6 Glory Points. Boots: Travel to any region with your Champion / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : faites Voyager votre Champion vers n’importe quelle Région. Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
+        <translation>Gagnez 6 points de Gloire. Bottes : faites Voyager votre Champion vers n’importe quelle Région. Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="133"/>
         <source>Gain 6 Glory Points. Dialogue: Construct or Deploy 1 Golem / Boots: Gain 3 Glory Points and Start a Battle in any region with at least 1 Opponent.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Dialogue : construisez ou déployez 1 Golem. Bottes : gagnez 3 points de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire.</translation>
+        <translation>Gagnez 6 points de Gloire. Dialogue : construisez ou déployez 1 Golem. Bottes : gagnez 3 points de Gloire et commencez une bataille dans une Région contenant au moins 1 adversaire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="134"/>
         <source>Gain 8 Glory Points. Chest: Pay 1 Energy Point to gain 3 Glory Points / Boots: Travel to any region with 2 Troops you control.</source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire. Bottes : faites Voyager 2 Troupes que vous contrôlez vers n’importe quelle Région.</translation>
+        <translation>Gagnez 8 points de Gloire. Coffre : payez 1 point d’Énergie pour gagner 3 points de Gloire. Bottes : faites Voyager 2 Troupes que vous contrôlez vers n’importe quelle Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="135"/>
         <source>Gain 8 Glory Points. Dialogue: Draw 1 card from the top of the Era Deck / Axe: Discard an Upgrade Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Dialogue : piochez la première carte de la pile d’Ère. Hache : défaussez une carte Amélioration pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
+        <translation>Gagnez 8 points de Gloire. Dialogue : piochez la première carte de la pile d’Ère. Hache : défaussez une carte Amélioration pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="136"/>
         <source>Gain 8 Glory Points. Boots: Deploy 1 Golem or Travel with 1 Golem / Dialogue: Gain 3 Glory Points for each River region you control.</source>
-        <translation type="unfinished">Gagnez 8 points de Gloire. Bottes : déployez 1 Golem ou faites Voyager 1 Golem. Dialogue : gagnez 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
+        <translation>Gagnez 8 points de Gloire. Bottes : déployez 1 Golem ou faites Voyager 1 Golem. Dialogue : gagnez 3 points de Gloire pour chaque Région Rivière que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="137"/>
         <source>Gain 6 Glory Points. Axe: Pay 1 Energy Point to gain 2 Glory Points and 1 Experience Point / Boots: Choose a region with at least 1 Troop or 1 Golem you control. Travel with all Troops and Golems you control in the chosen region to any other region.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Hache : payez 1 point d’Énergie pour gagner 2 points de Gloire et 1 point d’Expérience. Bottes : choisissez une Région contenant au moins 1 Troupe ou 1 Golem sous votre contrôle. Faites Voyager  toutes vos Troupes et tous vos Golems depuis la Région sélectionnée vers n’importe quelle autre Région.</translation>
+        <translation>Gagnez 6 points de Gloire. Hache : payez 1 point d’Énergie pour gagner 2 points de Gloire et 1 point d’Expérience. Bottes : choisissez une Région contenant au moins 1 Troupe ou 1 Golem sous votre contrôle. Faites Voyager  toutes vos Troupes et tous vos Golems depuis la Région sélectionnée vers n’importe quelle autre Région.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="138"/>
         <source>Gain 6 Glory Points. Boots: Recharge your Artefact and gain 1 Experience Point / Dialogue: Gain 4 Glory Points.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Bottes : rechargez votre Artefact et gagnez 1 point d’Expérience. Dialogue : Gagnez 4 points de Gloire.</translation>
+        <translation>Gagnez 6 points de Gloire. Bottes : rechargez votre Artefact et gagnez 1 point d’Expérience. Dialogue : Gagnez 4 points de Gloire.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="139"/>
         <source>Gain 6 Glory Points. Chest: Meditate / Axe: Choose a Monster placed on the Events Board. The Monster attacks immediately.</source>
-        <translation type="unfinished">Gagnez 6 points de Gloire. Coffre : méditez (Action Standard). Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
+        <translation>Gagnez 6 points de Gloire. Coffre : méditez (Action Standard). Hache : choisissez un Monstre dont la carte a déjà été placée sur le plateau d’Évènements durant cette Ère. Ce Monstre attaque immédiatement.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="140"/>
         <source>Gain 7 Glory Points. Boots: Travel with 2 Troops / Axe: Deploy a Fortification or 1 Golem.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Bottes : faites Voyager 2 Troupes. Hache : déployez 1 Fortification ou 1 Golem.</translation>
+        <translation>Gagnez 7 points de Gloire. Bottes : faites Voyager 2 Troupes. Hache : déployez 1 Fortification ou 1 Golem.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="141"/>
         <source>Gain 7 Glory Points. Axe: Recharge your Artefact and Start a Battle in any region with at least 1 Opponent / Boots: Discard an Objective Card to gain X Glory Points, where X is equal to the number of Command Points of the discarded card.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Hache : rechargez votre Artefact et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : défaussez une carte Objectif pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
+        <translation>Gagnez 7 points de Gloire. Hache : rechargez votre Artefact et commencez une bataille dans une Région contenant au moins 1 adversaire. Bottes : défaussez une carte Objectif pour gagner X points de Gloire, où X est le nombre de points de Commandement indiqué sur la carte défaussée.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="142"/>
         <source>Gain 7 Glory Points. Dialogue: Act / Chest: Gain 3 Glory Points for each Mountain region you control.</source>
-        <translation type="unfinished">Gagnez 7 points de Gloire. Dialogue : agissez (Action Standard). Coffre : gagnez 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
+        <translation>Gagnez 7 points de Gloire. Dialogue : agissez (Action Standard). Coffre : gagnez 3 points de Gloire pour chaque Région Montagne que vous contrôlez.</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="143"/>
         <source>Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Événement</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="149"/>
         <source>Storm</source>
-        <translation type="unfinished">TEMPÊTE</translation>
+        <translation>Tempête</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="150"/>
@@ -1396,7 +1382,7 @@ Gold - Gain 9 Glory Points.
 Silver - Gain 4 Glory Points.
 Bronze - Gain 2 Glory Points.
 Behaviour: When Boulron attacks, due to its swift and elegant movements, players do not benefit from the Strength provided by Fortifications on the attacked Island.</source>
-        <translation type="unfinished">Boulron les Faucheurs:
+        <translation>Boulron les Faucheurs:
 Force 11
 RÉCOMPENSES:
 Or - Gagnez 9 points de Gloire.
@@ -1414,7 +1400,7 @@ Gold - Gain 4 Command Points and 4 Glory Points.
 Silver - Gain 3 Command Points and 3 Glory Points.
 Bronze - Gain 2 Command Points and 2 Glory Points.
 Behaviour: When Onygauros attacks, every player in turn order (including players with no units on the attacked Island) must randomly choose a card from their discard pile and remove it from the game — Onygauros has collected it. As an alternative to removing a card, players may choose to lose 5 Glory Points instead, but this decision must be made before seeing the card that would be discarded.</source>
-        <translation type="unfinished">Onygauros les Collecteurs:
+        <translation>Onygauros les Collecteurs:
 Force 13
 RÉCOMPENSES:
 Or - Gagnez 4 points de Gloire et 4 points de Commandement.
@@ -1433,7 +1419,7 @@ Silver - Gain 4 Experience Points and 4 Glory Points.
 Bronze - Gain 3 Experience Points and 3 Glory Points.
 Behaviour: When Caerulas attacks but is not defeated, it becomes enraged. It then moves to the next Island clockwise, and attacks again.
 Note: After this second attack, it stops and does not move onto the next Island clockwise until its next activation.</source>
-        <translation type="unfinished">Caerulas Celui d’En-dessous:
+        <translation>Caerulas Celui d’En-dessous:
 Force 15
 RÉCOMPENSES:
 Or - Gagnez 5 points de Gloire et 5 points d’Expérience.
@@ -1453,7 +1439,7 @@ Silver - Gain 2 Glory Points. You may also Face an Encounter.
 Bronze - Gain 1 Glory Point. You may also Face an Encounter.
 You can Face these Encounters even if your Champion and your Encounter token are on different Islands. In addition, you do not have to spend any Experience Points. All other rules regarding facing Encounters apply.
 Behaviour: When Utcoro attacks, all players that do not take part in the battle (cowards!) immediately lose 5 Glory Points.</source>
-        <translation type="unfinished">Utcoro les Essaimeurs:
+        <translation>Utcoro les Essaimeurs:
 Force 10
 RÉCOMPENSES:
 Or - Gagnez 3 points de Gloire. Vous pouvez aussi faire une Rencontre.
@@ -1472,7 +1458,7 @@ Gold - Gain 6 Energy Points and 6 Glory Points.
 Silver - Gain 4 Energy Points and 4 Glory Points.
 Bronze - Gain 2 Energy Points and 2 Glory Points.
 Behaviour: When Cannibarok attacks an Island that has a Crystal Field region, it is reinvigorated by the erupting energies and gains +2 Strength until the end of this attack.</source>
-        <translation type="unfinished">Cannibarok les Mange-Qoam:
+        <translation>Cannibarok les Mange-Qoam:
 Force 12
 RÉCOMPENSES:
 Or - Gagnez 6 points de Gloire et 6 points d’Énergie.
@@ -1491,7 +1477,7 @@ Silver - Gain 5 Glory Points and draw 1 Command card.
 Bronze - Gain 3 Glory Points and draw 1 Command card.
 Command cards are drawn from the Era Deck of the current Era.
 Behaviour: When Obsidusa attacks but is not defeated, he does not move to the next Island, but remains instead on the attacked Island to feast on the fallen enemies.</source>
-        <translation type="unfinished">Obsidusa le Dévoreur:
+        <translation>Obsidusa le Dévoreur:
 Force 14
 RÉCOMPENSES:
 Or - Gagnez 7 points de Gloire et piochez 1 carte de Commandement.
@@ -1510,7 +1496,7 @@ Gold - Gain 16 Glory Points.
 Silver - Gain 12 Glory Points.
 Bronze - Gain 8 Glory Points.
 Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
-        <translation type="unfinished">Kodror l’Infestation:
+        <translation>Kodror l’Infestation:
 Force 16
 RÉCOMPENSES:
 Or - Gagnez 16 points de Gloire.
@@ -1522,22 +1508,22 @@ Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec 
     <message>
         <location filename="mysthea.js" line="158"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Ère</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="161"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>Tactiques</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="162"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>Objectifs</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="163"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>Accessoires</translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>
@@ -3037,7 +3023,7 @@ They are sometimes used by soldiers and militias of Mysthea as a sort of rite of
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="38"/>
         <source>Wonders</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qml/Icaion/Miniatures.qml" line="42"/>

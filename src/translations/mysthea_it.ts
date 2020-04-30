@@ -108,7 +108,7 @@
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="42"/>
         <source>Regions</source>
-        <translation type="unfinished">Regioni</translation>
+        <translation>Regioni</translation>
     </message>
     <message>
         <location filename="../qml/Mysthea/Artwork.qml" line="46"/>
@@ -343,8 +343,7 @@ NOTE: This means you might investigate the Colossus twice in the same turn, once
         <translation>Ogni volta che vieni Ferito e all’Inizio di ogni Anno, rimuovi la tua Armatura.
 Alla fine di un turno in cui non hai effettuato nessuna Azione Speciale, rimetti l’Armatura.
 Mentre indossi l’Armatura puoi Studiare il Colosso, Reperire un Apparato e Installare un Apparato come Azione Speciale.
-NOTA: Ciò significa che puoi studiare il Colosso due volte nello stesso turno, una volta come Azione Standard e una volta come Azione Speciale.
-</translation>
+NOTA: Ciò significa che puoi studiare il Colosso due volte nello stesso turno, una volta come Azione Standard e una volta come Azione Speciale.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="35"/>
@@ -536,8 +535,7 @@ The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crat
         <source>Cost: 2 qoam
 Owner effect: Wound enemy Seekers on your Seeker’s node – or adjacent to it.</source>
         <translation>Costo: 2 Qoam
-Effetto per il possessore: ferisce gli Esploratori nemici sul nodo dov’è posizionato il tuo Esploratore - o su quello adiacente.
-</translation>
+Effetto per il possessore: ferisce gli Esploratori nemici sul nodo dov’è posizionato il tuo Esploratore - o su quello adiacente.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="69"/>
@@ -549,8 +547,7 @@ Effetto per il possessore: ferisce gli Esploratori nemici sul nodo dov’è posi
         <source>Cost: 2 qoam
 Owner effect: Each opponent must discard 1 Qoam of their choosing to the common supply.</source>
         <translation>Costo: 2 Qoam
-Effetto per il possessore: ogni avversario deve scartare 1 Qoam a sua scelta nella scorta comune.
-</translation>
+Effetto per il possessore: ogni avversario deve scartare 1 Qoam a sua scelta nella scorta comune.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="71"/>
@@ -562,8 +559,7 @@ Effetto per il possessore: ogni avversario deve scartare 1 Qoam a sua scelta nel
         <source>Cost: 2 qoam
 Owner effect: You may discard 1 Qoam of any type to immediately score 2 Reputation Points.</source>
         <translation>Costo: 2 Qoam
-Effetto per il possessore: puoi scartare 1 Qoam di qualsiasi tipo per ottenere immediatamente 2 Punti Reputazione.
-</translation>
+Effetto per il possessore: puoi scartare 1 Qoam di qualsiasi tipo per ottenere immediatamente 2 Punti Reputazione.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="73"/>
@@ -575,8 +571,7 @@ Effetto per il possessore: puoi scartare 1 Qoam di qualsiasi tipo per ottenere i
         <source>Cost: 3 qoam
 Owner effect: Take from the supply 1 Qoam of any color and add it to one of your Null Cages (without discarding Qoam, if any is present).</source>
         <translation>Costo: 3 Qoam
-Effetto per il possessore: prendi 1 Qoam di qualsiasi colore dalla scorta e aggiungilo a una delle tue Gabbie Zero (senza scartare Qoam, se presente).
-</translation>
+Effetto per il possessore: prendi 1 Qoam di qualsiasi colore dalla scorta e aggiungilo a una delle tue Gabbie Zero (senza scartare Qoam, se presente).</translation>
     </message>
     <message>
         <location filename="icaion.js" line="75"/>
@@ -588,8 +583,7 @@ Effetto per il possessore: prendi 1 Qoam di qualsiasi colore dalla scorta e aggi
         <source>Cost: 3 qoam
 Owner effect: You may either draw a Curio Card or play a Curio Card.</source>
         <translation>Costo: 3 Qoam.
-Effetto del possessore: puoi pescare una Carta Curio o giocare una Carta Curio.
-</translation>
+Effetto del possessore: puoi pescare una Carta Curio o giocare una Carta Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="77"/>
@@ -601,8 +595,7 @@ Effetto del possessore: puoi pescare una Carta Curio o giocare una Carta Curio.
         <source>Cost: 4 qoam
 Owner effect: You may either move your Seeker of one node or eradicate for free a Parasite in a Region surrounding your Seeker.</source>
         <translation>Costo: 4 Qoam
-Effetto per il possessore: puoi spostare il tuo Esploratore di un nodo o Eradicare un Parassita a costo zero in una Regione adiacente al tuo Esploratore.
-</translation>
+Effetto per il possessore: puoi spostare il tuo Esploratore di un nodo o Eradicare un Parassita a costo zero in una Regione adiacente al tuo Esploratore.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="79"/>
@@ -614,15 +607,14 @@ Effetto per il possessore: puoi spostare il tuo Esploratore di un nodo o Eradica
         <source>Cost: 4 qoam
 Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
         <translation>Costo: 4 Qoam
-Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orario o antiorario. Poi, posiziona un Parassita su ciascuna di entrambe le Regioni adiacenti al cratere.
-</translation>
+Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orario o antiorario. Poi, posiziona un Parassita su ciascuna di entrambe le Regioni adiacenti al cratere.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="81"/>
         <location filename="mysthea.js" line="157"/>
         <location filename="thefall.js" line="45"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>Ogni tipo</translation>
     </message>
     <message>
         <location filename="thefall.js" line="46"/>
@@ -642,19 +634,19 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="icaion.js" line="82"/>
         <source>Seeker</source>
-        <translation type="unfinished"></translation>
+        <translation>Esploratore</translation>
     </message>
     <message>
         <location filename="icaion.js" line="83"/>
         <location filename="mysthea.js" line="159"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>Campione</translation>
     </message>
     <message>
         <location filename="icaion.js" line="84"/>
         <location filename="mysthea.js" line="160"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Ogni comando</translation>
     </message>
     <message>
         <location filename="icaion.js" line="85"/>
@@ -669,7 +661,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="2"/>
         <source>Era x</source>
-        <translation type="unfinished"></translation>
+        <translation>Era X</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>
@@ -794,7 +786,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="27"/>
         <source>Era I</source>
-        <translation type="unfinished"></translation>
+        <translation>Era I</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="28"/>
@@ -899,7 +891,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="48"/>
         <source>Era II</source>
-        <translation type="unfinished"></translation>
+        <translation>Era II</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="49"/>
@@ -1009,7 +1001,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="70"/>
         <source>Era III</source>
-        <translation type="unfinished"></translation>
+        <translation>Era III</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="71"/>
@@ -1164,7 +1156,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="101"/>
         <source>Attunement</source>
-        <translation type="unfinished"></translation>
+        <translation>Armonizzazione</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="102"/>
@@ -1219,7 +1211,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="112"/>
         <source>Encounter</source>
-        <translation type="unfinished"></translation>
+        <translation>Incontro</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="113"/>
@@ -1374,7 +1366,7 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     <message>
         <location filename="mysthea.js" line="143"/>
         <source>Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Evento</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="149"/>
@@ -1509,22 +1501,22 @@ Comportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è 
     <message>
         <location filename="mysthea.js" line="158"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>Era</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="161"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>Tattiche</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="162"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>Obiettivo</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="163"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>Accessorio</translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>

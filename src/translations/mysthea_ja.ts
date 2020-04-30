@@ -630,7 +630,7 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <location filename="mysthea.js" line="157"/>
         <location filename="thefall.js" line="45"/>
         <source>All types</source>
-        <translation type="unfinished"></translation>
+        <translation>全タイプ</translation>
     </message>
     <message>
         <location filename="thefall.js" line="46"/>
@@ -656,13 +656,13 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <location filename="icaion.js" line="83"/>
         <location filename="mysthea.js" line="159"/>
         <source>Champion</source>
-        <translation type="unfinished"></translation>
+        <translation>全タイプ</translation>
     </message>
     <message>
         <location filename="icaion.js" line="84"/>
         <location filename="mysthea.js" line="160"/>
         <source>All commands</source>
-        <translation type="unfinished"></translation>
+        <translation>全コマンド</translation>
     </message>
     <message>
         <location filename="icaion.js" line="85"/>
@@ -1495,22 +1495,22 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="mysthea.js" line="158"/>
         <source>Era</source>
-        <translation type="unfinished"></translation>
+        <translation>時代</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="161"/>
         <source>Tactic</source>
-        <translation type="unfinished"></translation>
+        <translation>戦術</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="162"/>
         <source>Objective</source>
-        <translation type="unfinished"></translation>
+        <translation>目的</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="163"/>
         <source>Accessory</source>
-        <translation type="unfinished"></translation>
+        <translation>エネルギ</translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>
