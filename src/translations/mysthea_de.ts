@@ -194,6 +194,7 @@
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
         <translation>Verbesserungs</translation>
     </message>
@@ -620,6 +621,35 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</oldsource>
         <translation>Kosten: 4 Qoam
 Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegenuhrzeigersinn weiter bewegen. Platziere dann je einen Parasiten auf beide Regionen, die am Krater angrenzen.</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
+        <source>All types</source>
+        <translation>Alle Typen</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
+        <source>Champion</source>
+        <translation>Helden</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
+        <source>All commands</source>
+        <translation>Alle Befehl</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
+        <translation>Alle Curio typen</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="1"/>
@@ -1474,6 +1504,26 @@ Bronze - Erhalte 8 Ruhmespunkte.
 Verhalten: Wenn Kodror sich bewegt zieht er die Insel mit seinen infizierten Wurzeln mit sich (tausche die Insel mit der nächsten Insel im Uhrzeigersinn). Wenn Kodror angreift und besiegt wird, entferne seine Figur aus dem Spiel und drehe seine Ereigniskarte um, um anzuzeigen, dass er nicht mehr im Spiel ist. Entferne seine Ereigniskarte am Ende der aktuellen Ära aus dem Spiel.</translation>
     </message>
     <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation>Ära</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation>Taktik</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation>Ziel</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
+        <translation>Zusatz</translation>
+    </message>
+    <message>
         <location filename="thefall.js" line="1"/>
         <source>TFA Mysthea Champions</source>
         <translation type="unfinished"></translation>
@@ -1748,6 +1798,21 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
         <oldsource>STRENGTH 8\nEach player, if possible, must remove from the Game Board one of their Fortifications. While Kodror is in play, players cannot perform an Activate a Machine action.\n</oldsource>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CardsFiltersHeader</name>
@@ -1843,7 +1908,7 @@ Each player, if possible, must remove from the Game Board one of their Fortifica
         <location filename="../qml/Icaion/GameSetupModel.qml" line="50"/>
         <source>Flip the Event Board to the side corresponding to the number of players.
 Place all Qoam crystals and Parasites in a common pool near the Event Board.</source>
-        <translation>Drehe das Ereignistableau auf die Seite, die der Anzahl der Spieler entspricht. 
+        <translation>Drehe das Ereignistableau auf die Seite, die der Anzahl der Spieler entspricht.
 Lege alle Qoam-Kristalle und Parasiten als allgemeinen Vorrat in die Nähe des Ereignistableaus.</translation>
     </message>
     <message>
@@ -2481,11 +2546,11 @@ Teile jedem Spieler drei Karten vom Artefaktstapel aus. Artefaktkarten werden vo
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="51"/>
-        <source>On impact, the crystal scattered into shards all over the planet, from the surface to its greatest depths. These crystal shards, called Qoam, have their own magnetic field that reacts oddly with the planet’s gravitational forces. Some Qoam shards float, while others remain firmly solidified on the ground. Some shards are embedded so deeply in stone and other materials that the material itself shares their same properties. 
+        <source>On impact, the crystal scattered into shards all over the planet, from the surface to its greatest depths. These crystal shards, called Qoam, have their own magnetic field that reacts oddly with the planet’s gravitational forces. Some Qoam shards float, while others remain firmly solidified on the ground. Some shards are embedded so deeply in stone and other materials that the material itself shares their same properties.
 
-This cataclysm and displacement had huge consequences on the balance of the forces of the planet, creating anomalies everywhere, bending the laws of physics and spawning unimaginable anomalies. 
+This cataclysm and displacement had huge consequences on the balance of the forces of the planet, creating anomalies everywhere, bending the laws of physics and spawning unimaginable anomalies.
 
-One of the two most notable effects of this cataclysm was the blanket of mist and clouds covering the whole surface of the planet, a seemingly endless storm that appeared after the impact and continued for millenia. The second most notable effect was the detachment of large and small chunks of crust from the planet’s surface. Areas as large as continents detached from the planet and began floating around it, pulled by a mysterious gravitational force generated by the Henakor, the largest chunk of crystal still embedded within the center of the planet. The floating islands orbit around Icaion above the cloud layer. 
+One of the two most notable effects of this cataclysm was the blanket of mist and clouds covering the whole surface of the planet, a seemingly endless storm that appeared after the impact and continued for millenia. The second most notable effect was the detachment of large and small chunks of crust from the planet’s surface. Areas as large as continents detached from the planet and began floating around it, pulled by a mysterious gravitational force generated by the Henakor, the largest chunk of crystal still embedded within the center of the planet. The floating islands orbit around Icaion above the cloud layer.
 
 It took thousands of years for the planet to rebalance itself, if we can truly call it balance even now. In reality, while it’s stable at the moment, this stability is just a temporary truce in an endless fight between the planet’s attempts to restore itself and the constant instability brought on by the unnatural forces of the Henakor.</source>
         <translation type="unfinished"></translation>
@@ -2497,9 +2562,9 @@ It took thousands of years for the planet to rebalance itself, if we can truly c
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="75"/>
-        <source>Mysthea is the region of lands floating above the clouds. It consists of a great landmass and plenty of smaller islands, including the five main ones that rotate around the Henakor. 
+        <source>Mysthea is the region of lands floating above the clouds. It consists of a great landmass and plenty of smaller islands, including the five main ones that rotate around the Henakor.
 
-During these long years new life spawned in Mysthea, influenced and corrupted by the power of the crystal and the presence of Qoam. Some of these beings are peaceful creatures, while others react violently to the energy of the crystal. It remains unclear if humans survived the cataclysm or were generated by the anomalies on the planet after the impact, but unquestionably their physical and societal development has been largely influenced by the presence of the crystal. These people developed the ability to attune themselves with Qoam shards and interact with their powers in strange ways. Their society is progressing steadily using Qoam as its main resource. 
+During these long years new life spawned in Mysthea, influenced and corrupted by the power of the crystal and the presence of Qoam. Some of these beings are peaceful creatures, while others react violently to the energy of the crystal. It remains unclear if humans survived the cataclysm or were generated by the anomalies on the planet after the impact, but unquestionably their physical and societal development has been largely influenced by the presence of the crystal. These people developed the ability to attune themselves with Qoam shards and interact with their powers in strange ways. Their society is progressing steadily using Qoam as its main resource.
 
 In present day, the population above the clouds lives and prospers completely unaware of what lies beneath them. The floating regions of Mysthea, for all its inhabitants know, contain the only human presence in the whole universe. They are just able to see the Henakor sticking out from the perennial storm. From their perspective, it is impossible to tell if it is floating there or if it stretches all the way down to something else below. Scholars have their theories, the faith have others and the common folksmen rely on legends and tales. What is certain is that nobody has ever ventured there.</source>
         <translation type="unfinished"></translation>
@@ -2511,7 +2576,7 @@ In present day, the population above the clouds lives and prospers completely un
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="101"/>
-        <source>The Henakor releases regularly pulsing waves of energy,  twisting everything they happen to hit. Luckily for the inhabitants of Mysthea, they are far enough from the crystal to be out of reach of this energy. From a distance they observe the effects it has on everything within its reach. 
+        <source>The Henakor releases regularly pulsing waves of energy,  twisting everything they happen to hit. Luckily for the inhabitants of Mysthea, they are far enough from the crystal to be out of reach of this energy. From a distance they observe the effects it has on everything within its reach.
 
 Particularly, there are five floating islands that are stuck in a gravitational force generated by the Henakor. These islands are periodically hit by beams of energy fromthe crystal and are heavily affected. As beholders of this phenomenon they are hypnotized, waiting to be immersed in the next pulse wave. These islands are hazardous places since the crystal causes all kinds of effects on the environment and inhabitants. For the people living on Mysthea the crystal and its odd satellites have always been there, becoming the stuff of tales and legends, both admired and feared, an astonishing and terrifying place that the faith venerates and that scholars can only dream of comprehending.</source>
         <translation type="unfinished"></translation>
@@ -2533,7 +2598,7 @@ Particularly, there are five floating islands that are stuck in a gravitational 
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="147"/>
-        <source>Society prospered, living and building on the lands, admiring from afar the Henakor with its five floating islands. 
+        <source>Society prospered, living and building on the lands, admiring from afar the Henakor with its five floating islands.
 
 For centuries the inhabitants battled among themselves for power and land, cities were built, and kingdoms went to war, while society relentlessly developed and evolved. Now the Kingdom of Ahatils has proven its supremacy and domain over Mysthea, undisputed for decades. This is a stability previously unknown in the land’s history. </source>
         <translation type="unfinished"></translation>
@@ -2545,7 +2610,7 @@ For centuries the inhabitants battled among themselves for power and land, citie
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="169"/>
-        <source>The city of Ilvash, capital of the Kingdom of the ruling dynasty Ahatils, is a sprawling city built upon the biggest floating chunk of land in Mysthea. It’s the oldest citiy ever built, and the biggest one. It rules over all other cities and towns, even ones that were once rivaling kingdoms. 
+        <source>The city of Ilvash, capital of the Kingdom of the ruling dynasty Ahatils, is a sprawling city built upon the biggest floating chunk of land in Mysthea. It’s the oldest citiy ever built, and the biggest one. It rules over all other cities and towns, even ones that were once rivaling kingdoms.
 
 After decades of peace ascribable to the King’s conquest of all opposing states, the ruler decided to delegate the management of the state to the five major Guilds of the city. For each citizen in the kingdom it is mandatory to enroll in the guild that represents the interests of his social class. This system was created to ensure that every citizen’s interests are somehow represented. In reality, it ended up with the guilds fighting between each other for political and economical power in a constant struggle that rarely considers the needs of the population.</source>
         <translation type="unfinished"></translation>
@@ -2557,7 +2622,7 @@ After decades of peace ascribable to the King’s conquest of all opposing state
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="183"/>
-        <source>Recently, for the first time ever, Magista, the Guild of Scholars, decided to collaborate with the Faith, represented by the Lusma Guild, to research a new artefact. They hoped this artefact would be able to amplify the people’s power, allowing them to move quantities of Qoam previously unimaginable. The manufacturing of this artefact was extremely difficult and expensive, but they succeeded. This was a huge breakthrough. They created an object that in the right hands would allow people to complete incredible feats. With enough concentration the right mind could now move immense quantities of Qoam, maybe even cities if they chose to. 
+        <source>Recently, for the first time ever, Magista, the Guild of Scholars, decided to collaborate with the Faith, represented by the Lusma Guild, to research a new artefact. They hoped this artefact would be able to amplify the people’s power, allowing them to move quantities of Qoam previously unimaginable. The manufacturing of this artefact was extremely difficult and expensive, but they succeeded. This was a huge breakthrough. They created an object that in the right hands would allow people to complete incredible feats. With enough concentration the right mind could now move immense quantities of Qoam, maybe even cities if they chose to.
 
 Only five artefacts were created, and they were gifted to the five guilds of the capital. They were considered tools of immense power, necessary for the development of the society, to be used with extreme care and responsibility and only for further progress of the species. For a while they were rarely utilized, mostly in ceremonious instances: the power they could bring was so strong that even the elders of the guilds were afraid of possible outcomes. That was, until the moment in which the Merchant Guild realized that with the aid of the artefact they could send an explorer to the islands around the Henakor. For the first time in history, they would be able to explore those new, terrifying and sacred places. The idea started to spread quickly among the whole population: they would finally be able to reach that place of tales and legend. They could touch the lands considered holy by some but damned by others. What would be waiting there? What would happen when they were so close to the Henakor? What answers would they find? What treasure would they be able to bring back?</source>
         <translation type="unfinished"></translation>
@@ -2593,7 +2658,7 @@ Their sole goal is to create wealth. They see the new islands as possible source
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="247"/>
-        <source>This guild represents the interests of the pure blooded noblemen close to the crown who live off their family inheritances. They formed this guild when they noticed the King began to delegate power. They understood that if they did not begin to protect their interests, they would lose much in the long term. 
+        <source>This guild represents the interests of the pure blooded noblemen close to the crown who live off their family inheritances. They formed this guild when they noticed the King began to delegate power. They understood that if they did not begin to protect their interests, they would lose much in the long term.
 
 Their power is entirely tied to land ownership but if the people were to stop believing the guild was powerful, they would probably stop being so. They understand the value of land and even more so the value of being the first to obtain it. They finance the exploration of the Henakor because they believe conquest is essential to maintaining their social status and thus their power.</source>
         <translation type="unfinished"></translation>
@@ -2605,9 +2670,9 @@ Their power is entirely tied to land ownership but if the people were to stop be
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="282"/>
-        <source>This guild claims to represent the interests of those left behind by the other, wealthier guilds. Despite what they say, they hold immense power inside the city walls since the majority of the population is always ready to answer their call. They are the spiritual and religious leaders of this world. They are in the rare position of deciding what is right and what is wrong. More than once they used this power to their own advantage, to the point that a simple threat was enough to get what they wanted. 
+        <source>This guild claims to represent the interests of those left behind by the other, wealthier guilds. Despite what they say, they hold immense power inside the city walls since the majority of the population is always ready to answer their call. They are the spiritual and religious leaders of this world. They are in the rare position of deciding what is right and what is wrong. More than once they used this power to their own advantage, to the point that a simple threat was enough to get what they wanted.
 
-They venerate the Henakor, sure that it holds together not only their world, but the entire universe. They are the elected species, since they are the ones living so close to the crystal. They also believe that the Qoam, being parts of a god, are sacred objects that should only be used under certain circumstances and with great care. They chant prayers before using them. In reality, nobody follows their instructions regarding this matter, but this doesn&apos;t stop them from using it as an excuse to persecute troublesome individuals. 
+They venerate the Henakor, sure that it holds together not only their world, but the entire universe. They are the elected species, since they are the ones living so close to the crystal. They also believe that the Qoam, being parts of a god, are sacred objects that should only be used under certain circumstances and with great care. They chant prayers before using them. In reality, nobody follows their instructions regarding this matter, but this doesn&apos;t stop them from using it as an excuse to persecute troublesome individuals.
 
  They are sure that once they reach the Henakor and conquer those lands, their god will finally reward their faith.</source>
         <translation type="unfinished"></translation>
@@ -2685,7 +2750,7 @@ He decides to go for the expedition because he believes that in the islands he c
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="429"/>
-        <source>Anuth is an ex-soldier, a retired commander that led the Ilvash army to victory in the Great War of Dulkodel. Hardened by innumerable battles, he’s one of the strongest warriors who ever lived, but also a great strategist on the field. He decided to retire after the Great War and now operates his private militia that escorts merchants and precious goods. 
+        <source>Anuth is an ex-soldier, a retired commander that led the Ilvash army to victory in the Great War of Dulkodel. Hardened by innumerable battles, he’s one of the strongest warriors who ever lived, but also a great strategist on the field. He decided to retire after the Great War and now operates his private militia that escorts merchants and precious goods.
 
 He owns a shield made of Qoam that was gifted to him by his mentor when he  was recruited into the army. He’s refused to use any other shield and since  its Qoam frequency resonates perfectly with him, he’s developed a peculiar  fighting style utilizing it to bash and charge his foes. To him, the weapon  feels almost weightless, granting a completely unexpected agility.
 
@@ -2699,7 +2764,7 @@ He strongly believes in Ilvash as a Nation, and he wants to take part in the exp
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="461"/>
-        <source>Celethe of the family Ahatils was the heiress to the throne of Ilvash. She is the daughter of the King and would have been the rightful owner of the crown when the time came. This was her fate until she renounced her name and refused her rights. Celethe was uninterested in the sort of lifestyle nobles indulge in. She always had a great fascination for Qoam manipulation and great talent for it. But as the life she was born into was predestined for other things, she renounced her birthright to become the apprentice of Telron, the most respected Qoam manipulator. Telron had never had an apprentice, but for Celethe made one exception. When Celethe’s training ended and they parted ways, she managed to use her family name and master’s fame to become a respected manipulator. As revered as Celethe has become, she may one day be the great Telron’s successor. 
+        <source>Celethe of the family Ahatils was the heiress to the throne of Ilvash. She is the daughter of the King and would have been the rightful owner of the crown when the time came. This was her fate until she renounced her name and refused her rights. Celethe was uninterested in the sort of lifestyle nobles indulge in. She always had a great fascination for Qoam manipulation and great talent for it. But as the life she was born into was predestined for other things, she renounced her birthright to become the apprentice of Telron, the most respected Qoam manipulator. Telron had never had an apprentice, but for Celethe made one exception. When Celethe’s training ended and they parted ways, she managed to use her family name and master’s fame to become a respected manipulator. As revered as Celethe has become, she may one day be the great Telron’s successor.
 
 Celethe wants to take part in the exploration for her desire of making a name for herself, in order to become stronger that one day she might even surpass her mentor.</source>
         <translation type="unfinished"></translation>
@@ -2723,7 +2788,7 @@ Now, she wants to take part in the exploration as an act of redemption, hoping t
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="509"/>
-        <source>Sanya grew up near the city walls of Ilvash, an area populated by lower class farmers that traveled daily to farmlands outside the city. Her life was humble, but Sanya has fond memories of those times. Times that abruptly ended the day a Cannibarook attacked the city. On this day a lot of people remained trapped and died below the ruins of the city Walls, including Sanya’s entire family. During this accident, she lost both her legs becoming one of the tragedy’s many victims. Sanya recovered, but losing her family and her mobility took a toll on her that required years to overcome. 
+        <source>Sanya grew up near the city walls of Ilvash, an area populated by lower class farmers that traveled daily to farmlands outside the city. Her life was humble, but Sanya has fond memories of those times. Times that abruptly ended the day a Cannibarook attacked the city. On this day a lot of people remained trapped and died below the ruins of the city Walls, including Sanya’s entire family. During this accident, she lost both her legs becoming one of the tragedy’s many victims. Sanya recovered, but losing her family and her mobility took a toll on her that required years to overcome.
 
 After the accident, a physician from the Magista Guild crafted two prosthesis out of Qoam enable her to walk again. The physician made it out of Qoam so that Sanya would use her mental powers to help her movements. What no one anticipated is how quickly she would learn this skill and how much control she would have over the crystal. It soon became clear that she had an innate talent for Qoam manipulation, since Sanya used her mental powers to boost her movements at an incredibly high speed. After just a few years, Sanya’s control over her Qoam legs become complete and she was able to do things with an unnatural agility. It was just a matter of time before she became a Champion of Ilvash.</source>
         <translation type="unfinished"></translation>
@@ -2735,7 +2800,7 @@ After the accident, a physician from the Magista Guild crafted two prosthesis ou
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="533"/>
-        <source>Kolbor and Malabor, known around Ilvash as “the Twins”, refuse to work unless hired together. Very little is known about the Twins, including where they came from. Some stories claim that they arrived from an ancient structure buried beneath the ground, while others say they are from the Five and others even dare to state that they come, somehow, from underneath the clouds. The only thing that is clear is that Kolbor and Malabor made a name for themselves in the shadiest corners of Ilvash.  
+        <source>Kolbor and Malabor, known around Ilvash as “the Twins”, refuse to work unless hired together. Very little is known about the Twins, including where they came from. Some stories claim that they arrived from an ancient structure buried beneath the ground, while others say they are from the Five and others even dare to state that they come, somehow, from underneath the clouds. The only thing that is clear is that Kolbor and Malabor made a name for themselves in the shadiest corners of Ilvash.
 
 Kolbor and Malabor do everything in their daily life in complete synchronicity, harmonizing every movement like two mirror images. They always know what the other does, as if each could read the other’s thought. In reality, this mysterious skill  most likely is due to  the Qoam they have embed in their hands, two symmetrical and identical crystals that resonate at opposite frequencies.
 
@@ -2777,7 +2842,7 @@ This coexistence between monsters and people is taken for granted by the citizen
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="607"/>
-        <source>The Onygauros are a species of huge scarab-like monsters with four arms and they are probably the smartest creatures after humans. Onygauros are called “the collectors”, since they live in small caves where they store huge collections of weird items that usually have no value at all for humans, but seem extremely precious to them. Each Onygauros is fascinated by a different kind of item and tend to collect as many variations as possible of that specific item. For example, you might see a Onygauros cave filled with all sorts of bottles and another filled with drawers, cogs, and other bizarre things. Be aware when venturing into their caves because they may become violent to defend their collections. 
+        <source>The Onygauros are a species of huge scarab-like monsters with four arms and they are probably the smartest creatures after humans. Onygauros are called “the collectors”, since they live in small caves where they store huge collections of weird items that usually have no value at all for humans, but seem extremely precious to them. Each Onygauros is fascinated by a different kind of item and tend to collect as many variations as possible of that specific item. For example, you might see a Onygauros cave filled with all sorts of bottles and another filled with drawers, cogs, and other bizarre things. Be aware when venturing into their caves because they may become violent to defend their collections.
 
 Their bizarre behaviour has long been the basis for collaboration with humans, who quickly understood how to please these powerful beasts, making them allies and valuable assets to their armies. While they are excellent warriors due to their size and ability to wield four weapons at once, some are uninterested in engaging in war and can instead be seen trading their strange objects with human merchants. They naturally understand what is valuable to other beings and use this to obtain what they want from each trade.</source>
         <translation type="unfinished"></translation>
@@ -2805,7 +2870,7 @@ In the wild not only is their behaviour unsettling and unpredictable, but the id
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="655"/>
-        <source>Caerulas, nicknamed “the inhabitant from below”, is a strange three-headed creature that appears from the storm. Usually it tends to appear from the clouds, fly over the floating island while screeching strange harmonic sounds, then disappearing back below. Its appearance is similar to the rest of the mist that surrounds the planet, and it is not clear if Caerulas is made of the same or if the cloud sticks to its body as it travels through it. Caerulas  seems to ignore humanity and all living beings. It’s most important goal is to fly freely around Icaion. 
+        <source>Caerulas, nicknamed “the inhabitant from below”, is a strange three-headed creature that appears from the storm. Usually it tends to appear from the clouds, fly over the floating island while screeching strange harmonic sounds, then disappearing back below. Its appearance is similar to the rest of the mist that surrounds the planet, and it is not clear if Caerulas is made of the same or if the cloud sticks to its body as it travels through it. Caerulas  seems to ignore humanity and all living beings. It’s most important goal is to fly freely around Icaion.
 
 Some scholars studying Caerulas more closely reported there had actually been some interactions between Caerulas and humans. But these reports are strange, like tales of madmen, and all uncannily similar to each other. Once they had Caerulas’ attention, the raconteurs felt that Caerulas was staring directly into their souls, comprehending every detail of their existence before quickly disappearing into the skies. This is what is reported by those who survived the encounter, since there are also many reports of people being brutally slaughtered by Caerulas, perhaps people whose souls may not have impressed the creature.</source>
         <translation type="unfinished"></translation>
@@ -2829,7 +2894,7 @@ That sad history starts with a Champion that disappeared in mysterious circumsta
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="704"/>
-        <source>Cannibarok is a huge and dangerously stupid creature that lives only to satisfy his most basic needs. He feeds himself off Qoam and little else matters to this great beast. Cannibarok seems to be able to sense Qoam, even at a great distance, and when he reaches it he uses his multiple mouths to feed himself with the precious Crystal. 
+        <source>Cannibarok is a huge and dangerously stupid creature that lives only to satisfy his most basic needs. He feeds himself off Qoam and little else matters to this great beast. Cannibarok seems to be able to sense Qoam, even at a great distance, and when he reaches it he uses his multiple mouths to feed himself with the precious Crystal.
 
 It is possible to tell the age of a Qoam Eater by his size, since the diet seems to have an effect on the growth of the beast. Usually Qoam Eaters do not live more than a decade, but during this time they can grow to incredible proportions, which poses a great risk for everyone around them. Sometimes these Qoam Eaters enter unnoticed into caves filled with Crystal and come out many years later, having grown to gigantic proportions from feasting on the crystals within and henceforth wreaking havoc on their path toward some new Qoam field. For this reason the Kaetur Guild monitors closely the presence of Cannibaroks around cities and settlements,trying to exterminate the creatures before they grow too large. This movement started after an enormous Cannibarook entered the walls of Ilvash, attracted by the Qoam embedded in almost every building of the city. He destroyed a large portion of the city and a day of fighting ensued before Champions and soldiers were able to bring down the beast.</source>
         <translation type="unfinished"></translation>
@@ -2851,7 +2916,7 @@ It is possible to tell the age of a Qoam Eater by his size, since the diet seems
     </message>
     <message>
         <location filename="../qml/Mysthea/LoreModel.qml" line="763"/>
-        <source>Utcoros are predatory beasts with a short lifespan of just a couple of months. They hatch from eggs and immediately begin to hunt for sustenance. Utcoros try to kill and eat almost anything they encounter, if their size allows it. If their size does not allow it, they tend to aggregate themselves in packs to swarm and overwhelm their prey. Utcoros continuously hunt until they are ready to lay eggs. When this happens, it means that their life span is near its end. Utcoros die on top of their offspring, so that their toxic dead bodies can protect their eggs from the elements and from any other predators until the eggs hatch and the cycle repeats. 
+        <source>Utcoros are predatory beasts with a short lifespan of just a couple of months. They hatch from eggs and immediately begin to hunt for sustenance. Utcoros try to kill and eat almost anything they encounter, if their size allows it. If their size does not allow it, they tend to aggregate themselves in packs to swarm and overwhelm their prey. Utcoros continuously hunt until they are ready to lay eggs. When this happens, it means that their life span is near its end. Utcoros die on top of their offspring, so that their toxic dead bodies can protect their eggs from the elements and from any other predators until the eggs hatch and the cycle repeats.
 
 They are sometimes used by soldiers and militias of Mysthea as a sort of rite of passage: after their training young recruits are required to kill them as a test of courage and strength. For this reason military veterans see fleeing in front of them as an act of cowardice, an admission of weakness and unpreparedness.</source>
         <translation type="unfinished"></translation>

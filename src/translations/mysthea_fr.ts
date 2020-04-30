@@ -195,6 +195,7 @@ cartes Curio.</translation>
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
         <translation type="unfinished">CARTE D’AMÉLIORATION</translation>
     </message>
@@ -621,6 +622,50 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <translation type="unfinished">Coût : 4 qoam
 Effet : vous pouvez déplacer le Colosse d&apos;un cratère, en sens horaire ou antihoraire. Placez ensuite un Parasite sur chacune des deux Régions adjacentes au cratère sur lequel vient d’arriver le Colosse.
 </translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
+        <source>All types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
+        <source>Champion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
+        <source>All commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mysthea.js" line="1"/>
@@ -1473,6 +1518,26 @@ Argent - Gagnez 12 points de Gloire.
 Bronze - Gagnez 8 points de Gloire.
 COMPORTEMENT
 Quand Kodror se déplace, l’Île sur laquelle il se situe se déplace avec lui, enchevêtrée dans ses racines infestées (échangez la position de l’Île avec la suivante dans le sens horaire). Quand Kodror attaque et est vaincu, retirez sa figurine de la partie et retournez sa carte d’Évènement face cachée pour montrer que Kodror n’est plus en jeu. À la fin de l’Ère actuelle, retirez la carte d’Évènement de Kodror de la partie.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>

@@ -194,6 +194,7 @@
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
         <translation>アップグレードカード</translation>
     </message>
@@ -623,6 +624,50 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</oldsource>
         <translation>コスト：コアム4個
 所有者のボーナス：巨像を時計回りか反時計回りに1つのクレーターまで移動できます。そして、移動先のクレーターに接している両リージョンの上にそれぞれパラサイトを1個置きます。</translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
+        <source>All types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
+        <source>Champion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
+        <source>All commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mysthea.js" line="1"/>
@@ -1446,6 +1491,26 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
 ーポイント\n挙動： コドロールが移動する時に、移動元の浮遊島も同時に移動します。（移動元の浮遊島と移動先の浮遊島を入れ替えます）コドロール
 が攻撃して倒された場合、コドロールのミニチュアをゲームボードから外して該当のモンスターカードをひっくり返します。現在の時代が終了したらコ
 ドロールのモンスターカードをゲームから削除します。（コドロールが二度と登場しないことになります)</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>

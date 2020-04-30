@@ -194,6 +194,7 @@
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
         <translation></translation>
     </message>
@@ -603,6 +604,50 @@ Owner effect: You may either move your Seeker of one node or eradicate for free 
         <source>Cost: 4 qoam
 Owner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.</source>
         <oldsource>Cost: 4 qoam\nOwner effect: You may move the Colossus of one crater clockwise or counter-clockwise. Then, place a Parasite on each of both Regions adjacent to the crater.\n</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
+        <source>All types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
+        <source>Champion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
+        <source>All commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1410,6 +1455,26 @@ Silver - Gain 12 Glory Points.
 Bronze - Gain 8 Glory Points.
 Behaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</source>
         <oldsource>Kodror the Infestation:\\nStrength 16\\nRewards:\\nGold - Gain 16 Glory Points.\\nSilver - Gain 12 Glory Points.\\nBronze - Gain 8 Glory Points.\\nBehaviour: When Kodror moves, the Island it is currently located on gets moved along with it, grappled by its infested roots (swap the Island with the next one clockwise). When Kodror attacks and is defeated, remove its miniature from the game and flip its Event Card face down to show that Kodror is no longer in play. At the end of the current Era, remove Kodror’s Event Card from the game.</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

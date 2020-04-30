@@ -194,6 +194,7 @@
     </message>
     <message>
         <location filename="icaion.js" line="8"/>
+        <location filename="mysthea.js" line="164"/>
         <source>Upgrade</source>
         <translation>Miglioria</translation>
     </message>
@@ -615,6 +616,50 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <translation>Costo: 4 Qoam
 Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orario o antiorario. Poi, posiziona un Parassita su ciascuna di entrambe le Regioni adiacenti al cratere.
 </translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="81"/>
+        <location filename="mysthea.js" line="157"/>
+        <location filename="thefall.js" line="45"/>
+        <source>All types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="46"/>
+        <source>Mysthea Champions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="47"/>
+        <source>Icaion Seekers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="thefall.js" line="48"/>
+        <source>Mysthea: The Fall Monsters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="82"/>
+        <source>Seeker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="83"/>
+        <location filename="mysthea.js" line="159"/>
+        <source>Champion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="84"/>
+        <location filename="mysthea.js" line="160"/>
+        <source>All commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="85"/>
+        <source>All Curio types</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mysthea.js" line="1"/>
@@ -1460,6 +1505,26 @@ Oro - Ottieni 16 Punti Gloria.
 Argento - Ottieni 12 Punti Gloria.
 Bronzo - Ottieni 8 Punti Gloria.
 Comportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è posizionato, attanagliata dalle sue radici infestanti (scambia l’Isola con quella vicina in senso orario). Quando Kodror attacca e viene sconfitto, rimuovi la sua miniatura dal gioco e gira la sua Carta Eventi a faccia in giù per mostrare che Kodror non è più in gioco. Alla fine dell’Era attuale, rimuovi la Carta Evento di Kodror dal gioco.</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="158"/>
+        <source>Era</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="161"/>
+        <source>Tactic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="162"/>
+        <source>Objective</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="163"/>
+        <source>Accessory</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>

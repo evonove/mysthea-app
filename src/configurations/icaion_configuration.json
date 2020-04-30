@@ -156,7 +156,7 @@
         {"id": 0,   "text": "All types",            "icon": ""},
         {"id": 1,   "text": "Curio",                "icon": ""},
         {"id": 2,   "text": "Seeker",               "icon": ""},
-        {"id": 3,   "text": "Specialized gear",     "icon": ""},
+        {"id": 3,   "text": "Specialized Gear",     "icon": ""},
         {"id": 4,   "text": "Event",                "icon": ""},
         {"id": 5,   "text": "Wonder",               "icon": ""}
     ],
