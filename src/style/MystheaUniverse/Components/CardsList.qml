@@ -48,14 +48,6 @@ ListView {
                     color: Palette.white
                     verticalAlignment: Text.AlignVCenter
                 }
-
-                Image {
-                    fillMode: Image.PreserveAspectFit
-                    sourceSize.height: 18
-                    source: root.typeComboBoxModel.iconUrl(type)
-
-                    verticalAlignment: Image.AlignVCenter
-                }
             }
 
             GridView {

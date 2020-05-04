@@ -24,10 +24,8 @@ ComboBox {
         LabelComboBox {
             id: _contentItem
             height: parent.height
-            width: root.iconAlignLeft ? _contentItem.implicitWidth : parent.width
 
             text: root.displayText
-
             iconUrl: root.urlIcon
 
             textColor: root.enabled ? Palette.black : Palette.placeholderText

@@ -682,8 +682,8 @@ Efecto para el propietario: Puedes mover al Coloso un cráter en el sentido de l
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era X</source>
-        <translation>Era X</translation>
+        <source>Era ◊</source>
+        <translation>Era ◊</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>
