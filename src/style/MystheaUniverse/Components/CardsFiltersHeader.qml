@@ -13,7 +13,7 @@ ToolBar {
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
 
-    signal comboboxValueChanged()
+    signal comboboxValueChanged
 
     implicitHeight: 136
     padding: 16
@@ -44,11 +44,8 @@ ToolBar {
                 id: _typesCombo
 
                 model: root.typeComboBoxModel
-
                 textRole: "type"
-                iconRole: "iconUrl"
                 roleName: TypeComboBoxModel.IconUrl
-                iconAlignLeft: false
 
                 Layout.fillWidth: true
 
@@ -65,7 +62,8 @@ ToolBar {
                 id: _commandsCombo
                 padding: 0
                 model: root.commandComboBoxModel
-                enabled: root.commandComboBoxModel != null ? root.typeProxyModel.enableCommand : false
+                enabled: root.commandComboBoxModel
+                         != null ? root.typeProxyModel.enableCommand : false
 
                 visible: root.commandComboBoxModel != null
 
@@ -102,12 +100,14 @@ ToolBar {
                                         _typesCombo.currentIndex, 0),
                                     TypeComboBoxModel.Type)
                     })
-                    _commandsCombo.displayText = Qt.binding(function () {
-                        return root.commandComboBoxModel.data(
-                                    root.commandsComboBoxModel.index(
-                                        _commandsCombo.currentIndex, 0),
-                                    CommandComboBoxModel.Command)
-                    })
+                    if (_commandsCombo.visible) {
+                        _commandsCombo.displayText = Qt.binding(function () {
+                            return root.commandComboBoxModel.data(
+                                        root.commandComboBoxModel.index(
+                                            _commandsCombo.currentIndex, 0),
+                                        CommandComboBoxModel.Command)
+                        })
+                    }
                 }
             }
         }
