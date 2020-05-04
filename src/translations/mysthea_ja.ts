@@ -701,8 +701,8 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era X</source>
-        <translation>時代 X</translation>
+        <source>Era ◊</source>
+        <translation>時代 ◊</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>

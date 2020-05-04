@@ -683,8 +683,8 @@ Effekt für Besitzer: Du darfst den Koloss einen Krater im Uhrzeiger- oder Gegen
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era X</source>
-        <translation>Ära X</translation>
+        <source>Era ◊</source>
+        <translation>Ära ◊</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>

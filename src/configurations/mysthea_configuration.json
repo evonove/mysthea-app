@@ -199,15 +199,15 @@
         {"type": 1, "name": "CR-2T1",           "image": "qrc:/assets/images/extras/miniatures/mysthea/mini_cr.jpg"}
     ],
     "cards_types":[
-        {"id": 0,   "text": "All types",    "icon": ""},
-        {"id": 1,   "text": "Era",          "icon": "qrc:/assets/icons/era_x.svg"},
-        {"id": 2,   "text": "Era",          "icon": "qrc:/assets/icons/era_1.svg"},
-        {"id": 3,   "text": "Era",          "icon": "qrc:/assets/icons/era_2.svg"},
-        {"id": 4,   "text": "Era",          "icon": "qrc:/assets/icons/era_3.svg"},
-        {"id": 5,   "text": "Champion",     "icon": ""},
-        {"id": 6,   "text": "Attunement",   "icon": ""},
-        {"id": 7,   "text": "Encounter",    "icon": ""},
-        {"id": 8,   "text": "Event",        "icon": ""}
+        {"id": 0,   "text": "All types",       "icon": ""},
+        {"id": 1,   "text": "Era ◊",           "icon": "qrc:/assets/icons/era_x.svg"},
+        {"id": 2,   "text": "Era I",           "icon": "qrc:/assets/icons/era_1.svg"},
+        {"id": 3,   "text": "Era II",          "icon": "qrc:/assets/icons/era_2.svg"},
+        {"id": 4,   "text": "Era III",         "icon": "qrc:/assets/icons/era_3.svg"},
+        {"id": 5,   "text": "Champion",        "icon": ""},
+        {"id": 6,   "text": "Attunement",      "icon": ""},
+        {"id": 7,   "text": "Encounter",       "icon": ""},
+        {"id": 8,   "text": "Event",           "icon": ""}
     ],
     "cards_commands": [
         {"id": 0,   "text": "All commands",    "icon": "",                                  "color": "#FFFFFF" },

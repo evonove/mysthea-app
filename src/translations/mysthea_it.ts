@@ -685,8 +685,8 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era X</source>
-        <translation>Era X</translation>
+        <source>Era ◊</source>
+        <translation>Era ◊</translation>
     </message>
     <message>
         <location filename="mysthea.js" line="3"/>

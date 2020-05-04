@@ -1,5 +1,5 @@
 QT_TRANSLATE_NOOP("CardsData", "Minieuro")
-QT_TRANSLATE_NOOP("CardsData", "Era x")
+QT_TRANSLATE_NOOP("CardsData", "Era \u25ca")
 QT_TRANSLATE_NOOP("CardsData", "Red")
 QT_TRANSLATE_NOOP("CardsData", "Pay 2 Energy Points to Travel with your Champion to any region. The Champion cannot carry any other unit.")
 QT_TRANSLATE_NOOP("CardsData", "Pay 2 Energy Points to gain 2 Experience Points and Develop.")

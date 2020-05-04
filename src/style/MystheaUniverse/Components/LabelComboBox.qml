@@ -16,6 +16,7 @@ Item {
     Label {
         id: _label
         height: parent.height
+        width: parent.width - _icon.width - 16
         verticalAlignment: Text.AlignVCenter
 
         anchors.left: control.left
@@ -23,6 +24,7 @@ Item {
                             && control.iconUrl != "" ? 36 : 16
 
         elide: Text.ElideRight
+        wrapMode: Text.Wrap
         font.pixelSize: 18
         font.letterSpacing: 0
     }
