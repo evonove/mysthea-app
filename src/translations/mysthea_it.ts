@@ -654,13 +654,38 @@ Effetto per il possessore: puoi spostare il Colosso di un cratere in senso orari
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="icaion.js" line="86"/>
+        <source>Black playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="87"/>
+        <source>Purple playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="88"/>
+        <source>Red playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="89"/>
+        <source>Yellow playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="90"/>
+        <source>Blue playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="mysthea.js" line="1"/>
         <source>Minieuro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era x</source>
+        <source>Era X</source>
         <translation>Era X</translation>
     </message>
     <message>
@@ -1517,6 +1542,16 @@ Comportamento: quando Kodror si sposta, si muove anche l’Isola sulla quale è 
         <location filename="mysthea.js" line="163"/>
         <source>Accessory</source>
         <translation>Accessorio</translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="165"/>
+        <source>Attunement, Daylight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="166"/>
+        <source>Attunement, Night</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="thefall.js" line="1"/>

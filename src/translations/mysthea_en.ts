@@ -651,13 +651,38 @@ Owner effect: You may move the Colossus of one crater clockwise or counter-clock
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="icaion.js" line="86"/>
+        <source>Black playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="87"/>
+        <source>Purple playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="88"/>
+        <source>Red playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="89"/>
+        <source>Yellow playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="icaion.js" line="90"/>
+        <source>Blue playerboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="mysthea.js" line="1"/>
         <source>Minieuro</source>
         <translation></translation>
     </message>
     <message>
         <location filename="mysthea.js" line="2"/>
-        <source>Era x</source>
+        <source>Era X</source>
         <translation></translation>
     </message>
     <message>
@@ -1475,6 +1500,16 @@ Behaviour: When Kodror moves, the Island it is currently located on gets moved a
     <message>
         <location filename="mysthea.js" line="163"/>
         <source>Accessory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="165"/>
+        <source>Attunement, Daylight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mysthea.js" line="166"/>
+        <source>Attunement, Night</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
