@@ -52,8 +52,10 @@ QVariant MiniaturesModel::data(const QModelIndex &index, int role) const {
     return m_miniatures.at(row).type;
   case Roles::Image:
     return m_miniatures.at(row).image;
-  case Roles::Name:
-    return m_miniatures.at(row).name;
+  case Roles::Name: {
+    auto nameText = m_miniatures.at(row).name;
+    return qGuiApp->translate("CardsData", nameText.toStdString().c_str());
+  }
   default:
     return QVariant();
   }

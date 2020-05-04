@@ -63,8 +63,10 @@ QVariant ArtworksModel::data(const QModelIndex &index, int role) const {
     return m_artworks.at(row).type;
   case Roles::Image:
     return m_artworks.at(row).image;
-  case Roles::Name:
-    return m_artworks.at(row).name;
+  case Roles::Name: {
+    auto nameText = m_artworks.at(row).name;
+    return qGuiApp->translate("CardsData", nameText.toStdString().c_str());
+  }
   case Roles::Author:
     return m_artworks.at(row).author;
   default:
