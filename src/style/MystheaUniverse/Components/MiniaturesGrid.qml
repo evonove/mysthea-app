@@ -81,18 +81,22 @@ Pane {
                 Rectangle {
                     anchors.bottom: parent.bottom
                     anchors.bottomMargin: 18
-                    height: 38
+                    height: _label.implicitHeight + 14
                     width: parent.width
                     color: "#99000000"
 
                     Label {
+                        id: _label
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 7
+                        anchors.rightMargin: 7
+                        width: parent.width - anchors.leftMargin - anchors.rightMargin
                         text: model.name
                         color: "white"
                         font.pixelSize: 18
                         font.family: "FuturaPTBold"
+                        wrapMode: Text.Wrap
                     }
                 }
             }

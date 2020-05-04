@@ -81,26 +81,38 @@ Pane {
                 Rectangle {
                     anchors.bottom: parent.bottom
                     anchors.bottomMargin: 18
-                    height: 55
+                    height: _column.implicitHeight + 14
                     width: parent.width
                     color: "#99000000"
 
-                    Column {
+                    ColumnLayout {
+                        id: _column
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 7
+                        anchors.rightMargin: 7
+                        width: parent.width - anchors.leftMargin - anchors.rightMargin
+                        spacing: 0
 
                         Label {
                             text: model.name
                             color: "white"
+                            wrapMode: Text.Wrap
+
                             font.pixelSize: 18
                             font.family: "FuturaPTBold"
+
+                            Layout.fillWidth: true
                         }
 
                         Label {
                             text: model.author
                             color: "white"
+                            wrapMode: Text.Wrap
+
                             font.pixelSize: 12
+
+                            Layout.fillWidth: true
                         }
                     }
                 }
