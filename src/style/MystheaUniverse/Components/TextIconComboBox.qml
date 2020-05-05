@@ -24,6 +24,7 @@ ComboBox {
         LabelComboBox {
             id: _contentItem
             height: parent.height
+            width: root.width
 
             text: root.displayText
             iconUrl: root.urlIcon

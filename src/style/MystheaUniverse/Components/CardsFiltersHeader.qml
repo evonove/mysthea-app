@@ -72,7 +72,7 @@ ToolBar {
                 roleName: CommandComboBoxModel.IconUrl
                 iconAlignLeft: true
 
-                Layout.fillWidth: true
+                Layout.fillWidth: root.commandComboBoxModel != null
 
                 onActivated: {
                     root.typeProxyModel.setCommandFilter(
