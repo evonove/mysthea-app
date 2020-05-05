@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
+project(mystheaapp LANGUAGES CXX)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -13,6 +15,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
 set(ANDROID_VERSION_NAME "4.0.0-dev")
 set(ANDROID_VERSION_CODE "400000")
+set(ANDROID_SDK_BUILD_TOOLS_REVISION "28.0.3")
 
 set(QML_IMPORT_PATH
     ${CMAKE_CURRENT_SOURCE_DIR}/qml
@@ -70,21 +73,21 @@ qt5_create_translation(QM_FILES ${CMAKE_CURRENT_SOURCE_DIR} ${TS_FILES})
 if(ANDROID)
     find_package(Qt5 COMPONENTS AndroidExtras REQUIRED)
 
-    add_library(mysthea SHARED
+    add_library(mystheaapp SHARED
         ${SOURCE_FILES}
         ${QML_JS_FILES}
         ${QM_FILES}
         )
 else()
-    add_executable(mysthea
+    add_executable(mystheaapp
         ${SOURCE_FILES}
         ${QML_JS_FILES}
         ${QM_FILES}
         )
 endif()
 
-target_compile_definitions(mysthea
+target_compile_definitions(mystheaapp
     PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(mysthea
+target_link_libraries(mystheaapp
     PRIVATE Qt5::Core Qt5::Quick Qt5::Svg $<$<BOOL:${ANDROID}>:Qt5::AndroidExtras>)
 

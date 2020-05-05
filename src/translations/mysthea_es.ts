@@ -1951,96 +1951,96 @@ Keep the Division Board in front of you and place the Machines as shown in the f
 Dejad el Tablero de Facción frente a vosotros y colocad las Máquinas como se muestra en el diagrama:</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="334"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Cosechadoras&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="364"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Chatarreras&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Refinadoras&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="406"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;2 jugadores -&lt;/strong&gt; Los jugadores se turnan para colocar 1 Máquina de un tercer color (distinto al de los jugadores) en cualquier Región hasta que las 3 máquinas de cada tipo y de dicho color hayan sido colocadas.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="419"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;3 jugadores -&lt;/strong&gt; Los jugadores se turnan para colocar 1 Máquina de un cuarto color (distinto al de los jugadores) en cualquier Región hasta que las 3 máquinas de cada tipo y de dicho color hayan sido colocadas.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="433"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
         <translation>&lt;strong&gt;4 jugadores -&lt;/strong&gt; Los jugadores se turnan para colocar 1 Máquina del quinto color (distinto al de los jugadores) en cualquier Región hasta que las 3 máquinas de cada tipo y de dicho color hayan sido colocadas.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="448"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
         <translation>&lt;strong&gt;Nota:&lt;/strong&gt; Cada Región puede contener hasta 3 Máquinas. Todas las Máquinas en una Región deben ser de distinto color y tipo.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="484"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
         <translation>Al azar, repartid a cada jugador una Carta de Buscador y una Carta de Herramienta Especializada. Cada jugador coge la miniatura correspondiente y le coloca su anillo de color en la base. Dejad vuestras cartas de personaje junto a vuestro Tablero de Facción.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="497"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
         <translation>El número de iconos en tu Carta de Buscador y de Herramienta Especializada determina tu límite de cartas y recursos.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="529"/>
         <source> = Maximum hand size</source>
         <translation> = Máximo de cartas en tu mano</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="559"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
         <translation>= Máximo número de Cartas de Rareza de Mejora  que puedes tener en juego al mismo tiempo.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="581"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
         <translation>Número de cristales de Qoam iniciales. Coge de la reserva tanto cristales de Qoam como se muestre en tus cartas de personaje. Coloca estos recursos en uno de los espacios de Celda de Contención disponibles inicialmente (aquellos que no tienen Máquinas).</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="630"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
         <translation>Colocad vuestra loseta de Fuente de Poder de Emergencia en vuestro Tablero de Jugador mostrando la cara “Cargada”.
 Las losetas de Fuente de Poder de Emergencia determinan el orden de juego. El primer jugador es el que posee la loseta con el número “I”, el resto de jugadores siguen el orden de esta numeración.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="666"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
         <translation>Cada jugador coloca su Marcador de Reputación en la tabla de puntuación, en el espacio con un “0”.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="700"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation>Barajad las Cartas de Rareza y colocadlas formando un mazo bocabajo en el Tablero de Eventos.
 Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se mantienen ocultas al resto de jugadores.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="617"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
         <translation>Coged tantas losetas de Fuente de Poder de Emergencia como jugadores haya, siguiendo el orden de los números romanos del I al V. Repartid al azar una a cada jugador.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="714"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
         <translation>&lt;strong&gt;Nota:&lt;/strong&gt; Si el mazo de Cartas de Rareza se agota, barajad las cartas descartadas y formad uno nuevo.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="750"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
         <translation>En orden contrario al orden de juego (es decir, desde el último al primer jugador), cada jugador escoge uno de los cinco nodos externos mostrados abajo y coloca ahí su miniatura de Buscador. Los jugadores no pueden elegir un nodo que ya esté ocupado por otro oponente.</translation>
     </message>
@@ -2296,12 +2296,12 @@ Repartid a cada jugador tres cartas del mazo de Rarezas. Las Cartas de Rareza se
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="650"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="664"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
         <translation type="unfinished"></translation>
     </message>

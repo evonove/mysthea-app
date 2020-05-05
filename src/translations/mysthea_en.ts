@@ -496,9 +496,11 @@ NOTE: This means you might investigate the Colossus twice in the same turn, once
         <location filename="icaion.js" line="63"/>
         <source>Move the Colossus
 Place two Parasites on each Region adjacent to the Colossus’ crater.
+The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.</source>
+        <oldsource>Move the Colossus
+Place two Parasites on each Region adjacent to the Colossus’ crater.
 The Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.
-</source>
-        <oldsource>Move the Colossus\nPlace two Parasites on each Region adjacent to the Colossus’ crater.\nThe Colossus wounds all Seekers on the nodes of the Regions adjacent to the crater.\n</oldsource>
+</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1903,94 +1905,94 @@ Keep the Division Board in front of you and place the Machines as shown in the f
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="334"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="364"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="406"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="419"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="433"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="448"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="484"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="497"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="529"/>
         <source> = Maximum hand size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="559"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="581"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="630"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="666"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="700"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="617"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="714"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="750"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2246,12 +2248,12 @@ Deal each player three cards from the Curio Deck. Curio Cards are kept hidden fr
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="650"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="664"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
         <translation type="unfinished"></translation>
     </message>

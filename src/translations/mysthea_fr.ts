@@ -1975,96 +1975,96 @@ Keep the Division Board in front of you and place the Machines as shown in the f
 Disposez le Plateau de Division devant vous et placez les Machines tel qu’indiqué sur l’image :</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="334"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Moissonneurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="364"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Pilleurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;Raffineurs&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="406"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;2 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un troisième joueur contrôlé par le jeu, jusqu&apos;à ce que les 3 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="419"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;3 joueurs -&lt;/strong&gt;À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un quatrième joueur contrôlé par le jeu, jusqu&apos;à ce que 2 Machines de chaque type aient été disposées.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="433"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
         <translation>&lt;strong&gt;4 joueurs -&lt;/strong&gt; À tour de rôle, chaque joueur place sur n&apos;importe quelle Région du plateau 1 Machine de la couleur d’un cinquième joueur contrôlé par le jeu, jusqu&apos;à ce que 1 Machine de chaque type ait été disposée.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="448"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
         <translation>&lt;strong&gt;Note:&lt;/strong&gt; Chaque Région ne peut accueillir plus de 3 Machines en même temps. Toutes les Machines d&apos;une même région doivent être différentes en couleur et en type.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="484"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
         <translation>Distribuez au hasard à chaque joueur une carte Émissaire et une carte Équipement spécialisé. Chaque joueur prend la figurine correspondante et fixe l&apos;anneau coloré à sa base. Gardez les cartes de votre personnage à côté de votre Plateau de Division.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="497"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
         <translation>Le nombre d&apos;icônes sur vos cartes Émissaire et Équipement spécialisé détermine la limite de cartes et de ressources que vous pouvez posséder.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="529"/>
         <source> = Maximum hand size</source>
         <translation>= Taille maximale de la main</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="559"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
         <translation>Nombre maximum de cartes Curio d’amélioration X que vous pouvez avoir en jeu en même temps.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="581"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
         <translation>Nombre de cristaux de Qoam avec lesquels vous commencez. Prenez dans la réserve autant de cristaux de Qoam qu’indiqué sur votre carte Émissaire. Placez ces ressources sur l&apos;un des emplacements Cage Zéro disponibles (ceux sans Machine).</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="630"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
         <translation>Gardez cette tuile d’Alimentation électrique d’urgence sur votre Plateau de Division, retournée sur son côté « Chargée ».
 Les tuiles d’Alimentation électrique d&apos;urgence déterminent l&apos;ordre de jeu. Le premier joueur est celui qui possède le numéro de tuile « I » ; puis les autres joueurs se succèdent en suivant la numérotation.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="666"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
         <translation>Chaque joueur place son Marqueur de Réputation sur l&apos;emplacement « 0 » de la Piste de score.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="700"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation>Mélangez toutes les cartes Curio, puis placez ce paquet face cachée sur le Plateau d&apos;Évènements.
 Distribuez à chaque joueur trois cartes du paquet Curio. Ne révélez pas vos cartes Curio aux autres joueurs.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="617"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
         <translation>Prenez autant de tuiles d’Alimentation électrique d’urgence que le nombre de joueurs, en suivant les chiffres romains de I à V. Distribuez-en une au hasard à chacun des joueurs.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="714"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
         <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si le paquet Curio est épuisé, mélangez toutes les cartes Curio défaussées pour former un nouveau paquet.</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="750"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
         <translation>En sens inverse (autrement dit, du dernier au premier joueur), chaque joueur choisit l&apos;un des cinq croisements extérieurs indiqués ci-dessous pour y placer sa figurine Émissaire. Un joueur ne peut pas choisir un croisement déjà occupé par un adversaire.</translation>
     </message>
@@ -2323,7 +2323,7 @@ Placez les trois paquets face cachée sur le Plateau d&apos;Évènements.</trans
         <translation>Préparez le paquet d&apos;Évènements : mélangez ensemble toutes les cartes Région (Mysthea et Icaion), les trois cartes Colosse et la carte Tempête. &lt;br&gt;&lt;br&gt; Placez le paquet face cachée sur le Plateau d&apos;Évènements. Par ailleurs, mélangez les cartes Monstre pour former un autre paquet. Placez-le face cachée à côté du Plateau d&apos;Évènements.</translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="650"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
         <translation>Piochez un Monstre de ce paquet, révélez-le et placez sa figurine sur l&apos;Île correspondante. Appliquez tous les effets liés à ce Monstre (voir p.12).
 
@@ -2335,7 +2335,7 @@ Difficile : 4 cartes Évènement
 Résolvez-les l’une après l’autre, en suivant l&apos;ordre dans lequel elles ont été révélées (voir p.9).</translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="664"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
         <translation>&lt;strong&gt;Note:&lt;/strong&gt; Si une carte Tempête est révélée, ignorez-la et piochez une autre carte à la place. À la fin de cette étape, mélangez à nouveau la carte Tempête dans le paquet d’Évènements.</translation>
     </message>

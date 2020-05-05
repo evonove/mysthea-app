@@ -1947,87 +1947,87 @@ Keep the Division Board in front of you and place the Machines as shown in the f
 プレイヤーボードを自分の前に置いて機械を画像通りに並べておきます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="335"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="334"/>
         <source>&lt;b&gt;&lt;u&gt;Harvesters&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;ハーベスター&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="366"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="364"/>
         <source>&lt;b&gt;&lt;u&gt;Scavengers&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;、スカベンジャー&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="397"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="394"/>
         <source>&lt;b&gt;&lt;u&gt;Refiners&lt;/u&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;u&gt;リファイナー&lt;/u&gt;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="409"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="406"/>
         <source>&lt;strong&gt;2 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a third, non-player color in any Region on the board until all 3 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;2人の場合 -&lt;/strong&gt;プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が3個配置されるまでこのように置き続けます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="422"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="419"/>
         <source>&lt;strong&gt;3 players -&lt;/strong&gt; Each player then takes turns placing 1 Machine at a time of a fourth, non-player color in any Region on the board until 2 Machines of each type have been placed.</source>
         <translation>&lt;strong&gt;3人の場合 -&lt;/strong&gt; プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が2個配置されるまで置き続けます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="436"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="433"/>
         <source>&lt;strong&gt;4 players -&lt;/strong&gt; Players then place 1 Machine at a time of the fifth, non-player color in any Region on the board until 1 Machine of each type has been placed.</source>
         <translation>&lt;strong&gt;4人の場合 -&lt;/strong&gt;プレイヤー達が交互に選択されていない色の機械を1個ゲームボード上の任意のリージョンに配置します。各類の機械が1個配置されるまで置き続けます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="451"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="448"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; There is a limit of 3 Machines for each Region. All Machines in the same Region must be different both in color and type.</source>
         <translation>&lt;strong&gt;備考:&lt;/strong&gt;１つのリージョンには機械を3個までしか配置できません。
 同じリージョンに配置されている機械は色も種類も異なる必要があります。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="487"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="484"/>
         <source>Randomly deal to each player a Seeker Card and a Specialized Gear Card. Each player takes the corresponding miniature and attaches the colored ring to its base. Keep your character’s cards next to your Division Board.</source>
         <translation> 各プレイヤーはランダムにシーカーカード1枚と専門ギアカード1枚を受け取り、プレイヤーボードの横に置きます。 シーカーカードと専門ギアカードは「キャラクターカード」とも言います。 自分の色のミニチュアを受け取って色付きの土台を付けておきます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="500"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="497"/>
         <source>The number of icons on your Seeker and Specialized Gear Cards determines your card-limits and resources.</source>
         <translation>各プレイヤーが受け取ったシーカーカードと専門ギアカードのアイコン数が、自分が持てるカードとリソースの最大数になります。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="533"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="529"/>
         <source> = Maximum hand size</source>
         <translation> = カードの最大数</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="564"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="559"/>
         <source>= Maximum number of Upgrade Curio Cards X that you have in play at the same time.</source>
         <translation>= プレイ中のアップグレードキュリオカードの最大数。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="586"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="581"/>
         <source>Number of starting Qoam crystals. Take from the supply as many Qoam crystals as shown on your character’s cards. Place these resources on one of the Null Cage slots initially available (those with no Machines on them).</source>
         <translation>ゲーム開始時点の所有のコアムクリスタル数です。
 キャラクターカード上に表示されている分のコアムクリスタルを受け取り、プレイヤーボード上のいずれかの「ヌルケージ」エリアに置きます。
 （ゲーム開始の時点で利用できるヌルケージは機械が置いてないヌルケージです）。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="622"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="617"/>
         <source>Take as many Emergency Power Supply tiles as the number of players, following the Roman numerals from I to V. Randomly deal one to each player.</source>
         <translation>プレイヤー人数に合わせた数枚の非常パワーサプライタイルをとり（「I」から「V」まで順番に）、一枚ずつ各プレイヤーにランダムに配ります。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="635"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="630"/>
         <source>Keep the Emergency Power Supply tile on your Player Board, flipped on its “Charged” side.
 Emergency Power Supply tiles determine the order of play. The first player is whoever possesses tile number “I”; the other players follow according to the numeration.</source>
         <translation>非常パワーサプライタイルを「チャージ済」向きに自分のプレイヤーボードの上に置きます。このタイルでプレイ順が決まります。
 「I」のタイルを持っているプレイヤーがプレイヤー1になり、タイルの数字の順番に合わせてプレイしていきます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="671"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="666"/>
         <source>Each player places their Reputation Marker on the scoring track, in the space labeled “0”.</source>
         <translation>各プレイヤーが自分の評価マーカーをスコアトラックの「0」に置きます。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="705"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="700"/>
         <source>Shuffle all Curio Cards, then place the deck face down onto the Event Board.
 Deal each player three cards from the Curio Deck. Curio Cards are kept hidden from the other players.</source>
         <translation>キュリオカードを全てシャッフルしてイベントボードの上に裏向きにおきます。
@@ -2035,12 +2035,12 @@ Deal each player three cards from the Curio Deck. Curio Cards are kept hidden fr
 （自分のキュリオカードが他プレイヤーに見られないようにします）。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="719"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="714"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If the Curio Deck is depleted, shuffle all discarded cards to form a new deck.</source>
         <translation>&lt;strong&gt;備考:&lt;/strong&gt;キュリオデッキからカードが無くなった場合は捨てられたカードをシャッフルしてデッキを作りなおします。</translation>
     </message>
     <message>
-        <location filename="../qml/Icaion/GameSetupModel.qml" line="755"/>
+        <location filename="../qml/Icaion/GameSetupModel.qml" line="750"/>
         <source>In reverse order of play (i.e. from the last player to the first), each player chooses one of the five external nodes shown below to place their Seeker miniature on. Players cannot choose a node already occupied by an opponent.</source>
         <translation>逆プレイ順に（最後のプレイヤーから）各プレイヤーは下記の画像通りに外部の中心点5つの中から任意の中心点を選び、そこに自分のシーカーのミニチュアを配置します。
 他プレイヤーのシーカーが既に配置されている中心点を選ぶことはできません。</translation>
@@ -2300,12 +2300,12 @@ Deal each player three cards from the Curio Deck. Curio Cards are kept hidden fr
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="651"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="650"/>
         <source>Reveal a Monster from the appropriate deck, and place its miniature on the corresponding Island. Apply all effects related to that Monster (see p.12 of the rulebook).&lt;br&gt;&lt;br&gt;Reveal an amount of Event Cards equal to the difficulty level you chose, then place them on the Event Board:&lt;br&gt;Easy: 2 Event Cards&lt;br&gt;Normal: 3 Event Cards&lt;br&gt;Hard: 4 Event Cards&lt;br&gt;Resolve them following the order in which they were revealed (see p.9 of the rulebook).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/TheFall/GameSetupModel.qml" line="665"/>
+        <location filename="../qml/TheFall/GameSetupModel.qml" line="664"/>
         <source>&lt;strong&gt;Note:&lt;/strong&gt; If a Storm Card is revealed, ignore it and draw another card instead. At the end of this step, shuffle the Storm Card back into the Event Deck.</source>
         <translation type="unfinished"></translation>
     </message>
