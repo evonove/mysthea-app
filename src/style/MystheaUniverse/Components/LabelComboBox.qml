@@ -6,7 +6,7 @@ Item {
     id: control
 
     implicitHeight: 36
-    implicitWidth: 164
+    implicitWidth: parent.width
 
     property alias text: _label.text
     property alias iconUrl: _icon.source
