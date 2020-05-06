@@ -24,14 +24,6 @@ Page {
         _stack.forceActiveFocus()
     }
 
-    function clear() {
-        if(_stack.depth > 1) {
-            _stack.pop(StackView.Immediate)
-            _stack.push(root.initialItem, StackView.Immediate)
-            _stack.forceActiveFocus()
-        }
-    }
-
     function replace(component) {
         _stack.replace(component, {}, StackView.Immediate)
         _stack.forceActiveFocus()
