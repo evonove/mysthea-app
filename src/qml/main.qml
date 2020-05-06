@@ -130,20 +130,12 @@ ApplicationWindow {
 
                 appContents: [
                     Mysthea.CardsReference {
-                        id: _cardsRef
                         searchFieldBorderColor: Palette.pinkLavenderBlush
                     },
                     Mysthea.GameSetup {},
                     Mysthea.Rulebook {},
-                    Mysthea.Extras {
-                        id: _mystheaExtras
-                    }
+                    Mysthea.Extras {}
                 ]
-
-                onTabButtonClicked: {
-                    _cardsRef.clear()
-                    _mystheaExtras.clear()
-                }
             }
         }
 

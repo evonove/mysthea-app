@@ -3,7 +3,6 @@ import QtQuick.Controls 2.14
 
 import MystheaUniverse.Models 1.0
 import MystheaUniverse.Theme 1.0
-import MystheaUniverse.Models 1.0
 
 StackPage {
     id: root
