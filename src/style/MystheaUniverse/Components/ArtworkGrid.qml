@@ -43,7 +43,8 @@ Pane {
             cellHeight: 268
 
             Layout.fillWidth: true
-            Layout.preferredHeight: Math.ceil(_delegate.count / 2) * cellHeight + root.padding
+            Layout.preferredHeight: Math.ceil(
+                                        _delegate.count / 2) * cellHeight + root.padding
 
             delegate: Pane {
                 id: _pane
@@ -55,7 +56,8 @@ Pane {
                     id: _paneArea
                     anchors.fill: parent
                     onClicked: {
-                        var sourceIndex = root.artworkModel.mapToSource(root.artworkModel.index(index, 0))
+                        var sourceIndex = root.artworkModel.mapToSource(
+                                    root.artworkModel.index(index, 0))
                         root.cardClicked(sourceIndex)
                     }
                 }
@@ -66,6 +68,7 @@ Pane {
                     fillMode: Image.PreserveAspectCrop
                     source: model.image
                     visible: false
+                    asynchronous: true
                 }
 
                 OpacityMask {
@@ -76,6 +79,14 @@ Pane {
                         height: _pane.height
                         radius: 10
                     }
+                }
+
+                Rectangle {
+                    id: _border
+                    anchors.fill: parent
+                    color: _image.status === Image.Ready ? "transparent" : "dimgray"
+                    opacity: _image.status === Image.Ready ? 1 : 0.5
+                    radius: 10
                 }
 
                 Rectangle {
