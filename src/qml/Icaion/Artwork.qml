@@ -83,6 +83,8 @@ StackPage {
     Component {
         id: _artworkSlides
         SwipeView {
+            id: _swipeView
+            anchors.fill: parent
             property bool isLoading: _artworkSlides.status !== Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
@@ -92,6 +94,7 @@ StackPage {
             clip: true
 
             Repeater {
+                id: _repeater
                 model: ArtworksFilterModel {
                     id: _artworkSlidesProxyModel
                     sourceModel: _artworkModel
@@ -99,9 +102,12 @@ StackPage {
 
                 Loader {
                     id: _loader
+                    width: root.width
+                    height: root.height - _swipeView.topPadding
+                    asynchronous: true
+
                     sourceComponent: Pane {
-                        width: root.width
-                        height: root.height
+                        anchors.fill: parent
                         padding: 0
 
                         Image {
@@ -110,6 +116,11 @@ StackPage {
                             source: model.image
                             sourceSize.width: parent.width
                         }
+                    }
+
+                    BusyIndicator {
+                        anchors.centerIn: parent
+                        running: _loader.status !== Loader.Ready
                     }
                 }
             }
