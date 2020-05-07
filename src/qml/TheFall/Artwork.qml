@@ -12,7 +12,7 @@ StackPage {
     padding: 0
     initialItem: _artworkGrid
 
-    property Action mainLeftAction;
+    property Action mainLeftAction
 
     ArtworksModel {
         id: _artworkModel
@@ -39,7 +39,7 @@ StackPage {
     Component {
         id: _artworkGrid
         ListView {
-            property bool isLoading: _artworkGrid.status != Component.Ready
+            property bool isLoading: _artworkGrid.status !== Component.Ready
             property Action leftAction: mainLeftAction
             model: _artworkGridModel
 
@@ -50,20 +50,22 @@ StackPage {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: root.push(_artworkSlides, { sourceIndex: sourceIndex })
+                onCardClicked: root.push(_artworkSlides, {
+                                             "sourceIndex": sourceIndex
+                                         })
             }
-
         }
     }
 
     Component {
         id: _artworkSlides
         SwipeView {
-            property bool isLoading: _artworkSlides.status != Component.Ready
+            property bool isLoading: _artworkSlides.status !== Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
 
-            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(
+                              sourceIndex).row
             clip: true
 
             Repeater {
@@ -71,20 +73,23 @@ StackPage {
                     id: _artworkSlidesProxyModel
                     sourceModel: _artworkModel
                 }
-                Pane {
-                    width: root.width
-                    height: root.height
-                    padding: 0
 
-                    Image {
-                        anchors.centerIn: parent
-                        fillMode: Image.PreserveAspectCrop
-                        source: model.image
-                        sourceSize.width: parent.width
+                Loader {
+                    id: _loader
+                    sourceComponent: Pane {
+                        width: root.width
+                        height: root.height
+                        padding: 0
+
+                        Image {
+                            anchors.centerIn: parent
+                            fillMode: Image.PreserveAspectCrop
+                            source: model.image
+                            sourceSize.width: parent.width
+                        }
                     }
                 }
             }
         }
     }
 }
-
