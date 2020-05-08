@@ -80,5 +80,6 @@
         <file>assets/icons/arrow_right.svg</file>
         <file>assets/icons/arrow_left.svg</file>
         <file>assets/icons/drawer_close_icon.svg</file>
+        <file>assets/icons/clear_filter_icon.svg</file>
     </qresource>
 </RCC>
