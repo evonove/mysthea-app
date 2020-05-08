@@ -18,6 +18,7 @@ Drawer {
     property alias mystheaButtonVisible: mystheaDelegate.visible
     property alias icaionButtonVisible: icaionDelegate.visible
     property alias theFallButtonVisible: theFallDelegate.visible
+    property color currentLanguageColor: Palette.gallery
 
     signal mystheaClicked
     signal icaionClicked
@@ -170,7 +171,7 @@ Drawer {
                             id: labelLanguage
                             text: qsTr("Language - ")
                             font.family: "FuturaPTBold"
-                            color: Palette.gallery
+                            color: Palette.white
                         }
 
                         Label {
@@ -184,8 +185,8 @@ Drawer {
                                     }
                                 }
                             }
-                            opacity: 0.5
-                            color: Palette.gallery
+                            font.family: "FuturaPTBold"
+                            color: root.currentLanguageColor
                         }
                     }
 

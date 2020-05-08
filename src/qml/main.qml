@@ -201,6 +201,7 @@ ApplicationWindow {
                 PropertyChanges {
                     target: _drawer
                     activeColor: Palette.mystheaMain
+                    currentLanguageColor: Palette.darkPink
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/mysthea_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/mysthea_logo.png"
                     mystheaButtonVisible: false
@@ -214,6 +215,7 @@ ApplicationWindow {
                 PropertyChanges {
                     target: _drawer
                     activeColor: Palette.icaionMain
+                    currentLanguageColor: Palette.icaionDark
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/icaion_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/icaion_logo.png"
                     mystheaButtonVisible: true
@@ -227,6 +229,7 @@ ApplicationWindow {
                 PropertyChanges {
                     target: _drawer
                     activeColor: Palette.theFallMain
+                    currentLanguageColor: Palette.theFallDark
                     activeBackgroundImageSource: "qrc:/assets/images/main_menu/the_fall_button_back.png"
                     activeLogoImageSource: "qrc:/assets/images/the_fall_logo.png"
                     mystheaButtonVisible: true
