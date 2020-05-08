@@ -78,7 +78,7 @@ ApplicationWindow {
 
     AppDrawer {
         id: _drawer
-        width: 319
+        width: root.width * 0.85
         height: root.height
         onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
         onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
