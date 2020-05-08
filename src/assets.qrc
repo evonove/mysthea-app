@@ -79,5 +79,6 @@
         <file>assets/images/main_menu/the_fall_button_back@4x.png</file>
         <file>assets/icons/arrow_right.svg</file>
         <file>assets/icons/arrow_left.svg</file>
+        <file>assets/icons/drawer_close_icon.svg</file>
     </qresource>
 </RCC>
