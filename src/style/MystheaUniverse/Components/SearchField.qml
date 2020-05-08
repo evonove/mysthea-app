@@ -9,6 +9,7 @@ TextField {
     id: control
 
     property color borderColor
+    signal resetSearchFieldClicked
 
     implicitHeight: 48
     topPadding: 13
@@ -37,10 +38,49 @@ TextField {
         verticalAlignment: control.verticalAlignment
     }
 
+    Button {
+        id: _resetTextButton
+        anchors.right: control.right
+        width: parent.height
+        height: parent.height
+        visible: false
+
+        icon.source: "qrc:/assets/icons/clear_filter_icon.svg"
+        icon.color: Palette.placeholderText
+        icon.width: 48
+        icon.height: 48
+
+        background: null
+
+        onClicked: control.resetSearchFieldClicked()
+    }
+
     background: Rectangle {
         color: Palette.white
         border.color: control.borderColor
         border.width: 1
         radius: 5
+    }
+
+
+    onPreeditTextChanged: {
+        if(control.displayText.length > 0) {
+            _resetTextButton.visible = true
+        } else {
+            _resetTextButton.visible = false
+        }
+    }
+
+    onTextEdited: {
+        if(control.displayText.length > 0) {
+            _resetTextButton.visible = true
+        } else {
+            _resetTextButton.visible = false
+        }
+    }
+
+    onResetSearchFieldClicked: {
+        _resetTextButton.visible = false
+        control.forceActiveFocus()
     }
 }

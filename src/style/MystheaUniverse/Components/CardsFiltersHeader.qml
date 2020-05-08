@@ -33,6 +33,15 @@ ToolBar {
             Layout.fillWidth: true
 
             onTextEdited: root.typeProxyModel.setCodeFilter(_searchField.text)
+
+            onResetSearchFieldClicked: {
+                _searchField.clear()
+                root.typeProxyModel.setCodeFilter(_searchField.displayText)
+            }
+
+            onPreeditTextChanged: {
+                root.typeProxyModel.setCodeFilter(_searchField.displayText)
+            }
         }
 
         RowLayout {
