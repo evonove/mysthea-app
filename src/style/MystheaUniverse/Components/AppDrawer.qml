@@ -18,12 +18,38 @@ Drawer {
     property alias mystheaButtonVisible: mystheaDelegate.visible
     property alias icaionButtonVisible: icaionDelegate.visible
     property alias theFallButtonVisible: theFallDelegate.visible
+    property color currentLanguageColor: Palette.gallery
 
     signal mystheaClicked
     signal icaionClicked
     signal theFallClicked
 
     bottomPadding: 24
+
+    Button {
+        id: _closeButton
+        height: 54
+        width: 54
+        x: root.width
+        y: 0
+
+        icon.source: "qrc:/assets/icons/drawer_close_icon.svg"
+        icon.color: Palette.white
+        icon.width: 54
+        icon.height: 54
+
+        background: Rectangle {
+            color: Palette.black
+            Rectangle {
+                anchors.bottom: parent.bottom
+                color: Palette.white
+                width: parent.width
+                height: 1
+            }
+        }
+
+        onClicked: root.close()
+    }
 
     M.LanguageListModel {
         id: _languageListModel
@@ -145,21 +171,22 @@ Drawer {
                             id: labelLanguage
                             text: qsTr("Language - ")
                             font.family: "FuturaPTBold"
-                            color: Palette.gallery
+                            color: Palette.white
                         }
 
                         Label {
                             text: {
                                 // Find name of current language
                                 for (var i = 0; i < _languageListModel.count; i++) {
-                                    var element = _languageListModel.get(i);
-                                    if (element.translation === TranslationsManager.currentLanguage) {
-                                        return element.language;
+                                    var element = _languageListModel.get(i)
+                                    if (element.translation
+                                            === TranslationsManager.currentLanguage) {
+                                        return element.language
                                     }
                                 }
                             }
-                            opacity: 0.5
-                            color: Palette.gallery
+                            font.family: "FuturaPTBold"
+                            color: root.currentLanguageColor
                         }
                     }
 
@@ -325,4 +352,3 @@ Drawer {
         languageItemDelegate.checked = false
     }
 }
-
