@@ -3,14 +3,15 @@ import QtQuick.Controls 2.3
 
 import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
+import MystheaUniverse.Pages 1.0
 
 Page {
     id: root
 
     property real headerHeight: 54
     property alias logo: _header.logo
-    property alias appContents: _swipe.contentData
-    property Action leftAction: _swipe.currentItem.leftAction
+    property list<Component> appContents
+    property Action leftAction: _stack.currentItem.leftAction
     property alias rightAction: _header.rightAction
 
     property color mainColor
@@ -24,40 +25,26 @@ Page {
     signal rulebookClicked
     signal extrasClicked
 
-    signal mystheaClicked
-    signal icaionClicked
-    signal theFallClicked
-
-    signal tabButtonClicked
-
     QtObject {
         // These functions take tracks of swipe history.
         id: history
 
         // It stores the index of pages that we visited.
-        property var items: [0]
+        property list<Component> items
 
-        function push(index) {
-            let lastIndex = items[items.length - 1]
-            if (lastIndex !== index) {
-                items.push(index)
-                // Update the item in swipe view.
-                _swipe.currentIndex = index
+        function push(component) {
+            let lastComponent = items[items.length - 1]
+            if (lastComponent !== component) {
+                items.push(component)
+                _stack.push(component)
             }
-
-            _swipe.currentItem.forceActiveFocus()
+            _stack.currentItem.forceActiveFocus()
         }
 
         function pop() {
-            if (items.length > 1) {
+            if(items.length > 1) {
                 items.pop()
-                let index = items[items.length - 1]
-                // Update the item in swipe view.
-                _swipe.currentIndex = index
-                // Update the current item of tabbar to highlight the correct button.
-                _tabbar.currentIndex = index
             }
-            _swipe.currentItem.forceActiveFocus()
         }
     }
 
@@ -72,17 +59,25 @@ Page {
         backgroundColor: root.headerBackgroundColor
     }
 
-    SwipeView {
-        id: _swipe
+    onActiveFocusChanged: {
+        if(root.activeFocus) {
+            _stack.currentItem.forceActiveFocus()
+        }
+    }
+
+    StackView {
+        id: _stack
         anchors.fill: parent
         focus: true
-        interactive: false
+
+        initialItem: root.appContents[0]
 
         // Handles click of back button by popping current page from Swipe
         Keys.onPressed: {
             if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
-                if (history.items.length > 1) {
-                    history.pop()
+                if (_stack.depth > 1) {
+                    _stack.pop()
+                    _stack.currentItem.forceActiveFocus()
                     event.accepted = true
                 }
             }
@@ -99,52 +94,56 @@ Page {
         TabButton {
             icon.source: "qrc:/assets/icons/card_reference_icon.svg"
             text: qsTr("Cards Reference")
+            checked: _stack.currentItem.objectName === PageName.cardPage
 
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
             onClicked: {
-                root.tabButtonClicked()
-                history.push(TabBar.index)
+                root.cardsReferenceClicked()
+                history.push(root.appContents[0])
             }
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/game_setup_icon.svg"
             text: qsTr("Game Setup")
+            checked: _stack.currentItem.objectName === PageName.gameSetupPage
 
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
             onClicked: {
-                root.tabButtonClicked()
-                history.push(TabBar.index)
+                root.gameSetupClicked()
+                history.push(root.appContents[1])
             }
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/rulebook_icon.svg"
             text: qsTr("Rulebook")
+            checked: _stack.currentItem.objectName === PageName.rulebookPage
 
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
             onClicked: {
-                root.tabButtonClicked()
-                history.push(TabBar.index)
+                root.rulebookClicked()
+                history.push(root.appContents[2])
             }
         }
 
         TabButton {
             icon.source: "qrc:/assets/icons/extras_icon.svg"
             text: qsTr("Extras")
+            checked: _stack.currentItem.objectName === PageName.extrasPage
 
             checkedColor: root.mainColor
             uncheckedColor: root.whiteColor
 
             onClicked: {
-                root.tabButtonClicked()
-                history.push(TabBar.index)
+                root.extrasClicked()
+                history.push(root.appContents[3])
             }
         }
     }

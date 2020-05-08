@@ -96,6 +96,7 @@ ApplicationWindow {
             if (event.key === Qt.Key_Escape || event.key === Qt.Key_Back) {
                 if (_mainStackView.depth > 1) {
                     _mainStackView.pop()
+                    _mainStackView.currentItem.forceActiveFocus()
                     event.accepted = true
                 }
             }
@@ -129,12 +130,20 @@ ApplicationWindow {
                 rightAction: _drawerOpenAction
 
                 appContents: [
-                    Mysthea.CardsReference {
-                        searchFieldBorderColor: Palette.pinkLavenderBlush
+                    Component {
+                        Mysthea.CardsReference {
+                            searchFieldBorderColor: Palette.pinkLavenderBlush
+                        }
                     },
-                    Mysthea.GameSetup {},
-                    Mysthea.Rulebook {},
-                    Mysthea.Extras {}
+                    Component {
+                        Mysthea.GameSetup {}
+                    },
+                    Component {
+                        Mysthea.Rulebook {}
+                    },
+                    Component {
+                        Mysthea.Extras {}
+                    }
                 ]
             }
         }
@@ -153,10 +162,18 @@ ApplicationWindow {
                 rightAction: _drawerOpenAction
 
                 appContents: [
-                    Icaion.CardsReference {},
-                    Icaion.GameSetup {},
-                    Icaion.Rulebook {},
-                    Icaion.Extras {}
+                    Component {
+                        Icaion.CardsReference {}
+                    },
+                    Component {
+                        Icaion.GameSetup {}
+                    },
+                    Component {
+                        Icaion.Rulebook {}
+                    },
+                    Component {
+                        Icaion.Extras {}
+                    }
                 ]
             }
         }
@@ -175,10 +192,18 @@ ApplicationWindow {
                 rightAction: _drawerOpenAction
 
                 appContents: [
-                    TheFall.CardsReference {},
-                    TheFall.GameSetup {},
-                    TheFall.Rulebook {},
-                    TheFall.Extras {}
+                    Component {
+                        TheFall.CardsReference {}
+                    },
+                    Component {
+                        TheFall.GameSetup {}
+                    },
+                    Component {
+                        TheFall.Rulebook {}
+                    },
+                    Component {
+                        TheFall.Extras {}
+                    }
                 ]
             }
         }

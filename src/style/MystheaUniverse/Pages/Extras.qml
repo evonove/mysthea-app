@@ -7,4 +7,5 @@ import MystheaUniverse.Theme 1.0
 StackPage {
     id: root
     property Action leftAction: null
+    objectName: PageName.extrasPage
 }
