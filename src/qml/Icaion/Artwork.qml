@@ -11,7 +11,7 @@ StackPage {
     padding: 0
     initialItem: _artworkGrid
 
-    property Action mainLeftAction;
+    property Action mainLeftAction
 
     ArtworksModel {
         id: _artworkModel
@@ -59,11 +59,10 @@ StackPage {
         onTriggered: root.pop()
     }
 
-
     Component {
         id: _artworkGrid
         ListView {
-            property bool isLoading: _artworkGrid.status != Component.Ready
+            property bool isLoading: _artworkGrid.status !== Component.Ready
             property Action leftAction: mainLeftAction
             model: _artworkGridModel
 
@@ -74,7 +73,9 @@ StackPage {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: root.push(_artworkSlides, { sourceIndex: sourceIndex })
+                onCardClicked: root.push(_artworkSlides, {
+                                             "sourceIndex": sourceIndex
+                                         })
             }
         }
     }
@@ -82,28 +83,47 @@ StackPage {
     Component {
         id: _artworkSlides
         SwipeView {
-            property bool isLoading: _artworkSlides.status != Component.Ready
+            id: _swipeView
+            width: root.width
+
+            property bool isLoading: _artworkSlides.status !== Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
 
-            currentIndex: _artworkSlidesProxyModel.mapFromSource(sourceIndex).row
+            currentIndex: _artworkSlidesProxyModel.mapFromSource(
+                              sourceIndex).row
             clip: true
 
             Repeater {
+                id: _repeater
                 model: ArtworksFilterModel {
                     id: _artworkSlidesProxyModel
                     sourceModel: _artworkModel
                 }
-                Pane {
-                    width: root.width
-                    height: root.height
-                    padding: 0
 
-                    Image {
+                Loader {
+                    id: _loader
+                    width: root.width
+                    height: root.height - _swipeView.topPadding
+                    active: SwipeView.isCurrentItem || SwipeView.isNextItem
+                            || SwipeView.isPreviousItem
+                    asynchronous: true
+
+                    sourceComponent: Pane {
+                        anchors.fill: parent
+                        padding: 0
+
+                        Image {
+                            anchors.centerIn: parent
+                            fillMode: Image.PreserveAspectCrop
+                            source: model.image
+                            sourceSize.width: parent.width
+                        }
+                    }
+
+                    BusyIndicator {
                         anchors.centerIn: parent
-                        fillMode: Image.PreserveAspectCrop
-                        source: model.image
-                        sourceSize.width: parent.width
+                        running: _loader.status !== Loader.Ready
                     }
                 }
             }

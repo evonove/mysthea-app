@@ -7,7 +7,6 @@ import MystheaUniverse.Theme 1.0
 
 MUPages.Extras {
     id: root
-    property bool isLoading: false
 
     MUComponents.BackAction {
         id: _backAction
