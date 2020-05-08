@@ -15,7 +15,6 @@ Page {
     property int index: -1
     property Component sourceComponent
 
-
     padding: 0
 
     SwipeView {
@@ -35,6 +34,8 @@ Page {
                 width: root.width
                 height: root.height - _swipeView.topPadding
                 asynchronous: true
+                active: SwipeView.isCurrentItem || SwipeView.isNextItem
+                        || SwipeView.isPreviousItem
 
                 sourceComponent: root.sourceComponent
 
