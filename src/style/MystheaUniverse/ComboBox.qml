@@ -12,6 +12,7 @@ T.ComboBox {
     id: control
 
     property string iconRole
+    property color accentColor
 
     property bool iconAlignLeft: true
 
@@ -47,7 +48,7 @@ T.ComboBox {
             iconUrl: control.iconRole ? (Array.isArray(
                                              control.model) ? modelData[control.iconRole] : model[control.iconRole]) : ""
 
-            textColor: control.highlightedIndex === index ? Palette.mystheaMain : Palette.black
+            textColor: control.currentIndex === index ? control.accentColor : Palette.black
             iconAlignLeft: control.iconAlignLeft
         }
 

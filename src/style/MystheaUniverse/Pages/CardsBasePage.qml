@@ -13,6 +13,8 @@ Page {
       filters' combobox.
     */
     property color searchFieldBorderColor: Palette.white
+    property color searchFieldBorderFocusColor: Palette.white
+    property color comboBoxAccentColor: Palette.black
     property bool isLoading: _loader.status !== Loader.Ready
     property alias sourceComponent: _loader.sourceComponent
     property Action leftAction: null
@@ -32,6 +34,8 @@ Page {
             id: _filtersHeader
             width: parent.width
             separatorColor: root.searchFieldBorderColor
+            separatorFocusColor: root.searchFieldBorderFocusColor
+            comboBoxAccentColor: root.comboBoxAccentColor
             backgroundColor: Palette.black
 
             onComboboxValueChanged: {
