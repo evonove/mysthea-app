@@ -72,7 +72,7 @@ TextField {
     }
 
     onTextEdited: {
-        if(control.displayText.length > 0) {
+        if(control.text.length > 0) {
             _resetTextButton.visible = true
         } else {
             _resetTextButton.visible = false
