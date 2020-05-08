@@ -6,13 +6,12 @@ import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Pages 1.0
 
-
 StackPage {
     id: root
     padding: 0
     initialItem: _miniaturesGrid
 
-    property Action mainLeftAction;
+    property Action mainLeftAction
 
     MiniaturesModel {
         id: _miniaturesModel
@@ -51,7 +50,7 @@ StackPage {
     Component {
         id: _miniaturesGrid
         ListView {
-            property bool isLoading: _miniaturesGrid.status != Component.Ready
+            property bool isLoading: _miniaturesGrid.status !== Component.Ready
             property Action leftAction: mainLeftAction
 
             model: _miniaturesGridModel
@@ -62,7 +61,9 @@ StackPage {
                     type: model.type
                 }
                 title: model.title
-                onCardClicked: root.push(_miniaturesSlides, { sourceIndex: sourceIndex })
+                onCardClicked: root.push(_miniaturesSlides, {
+                                             "sourceIndex": sourceIndex
+                                         })
             }
         }
     }
@@ -70,29 +71,47 @@ StackPage {
     Component {
         id: _miniaturesSlides
         SwipeView {
-            property bool isLoading: _miniaturesSlides.status != Component.Ready
+            id: _swipeView
+
+            property bool isLoading: _miniaturesSlides.status !== Component.Ready
             property Action leftAction: _backAction
             property var sourceIndex
 
-            currentIndex: _miniaturesSlidesProxyModel.mapFromSource(sourceIndex).row
-            clip: true
+            width: root.width
 
+            currentIndex: _miniaturesSlidesProxyModel.mapFromSource(
+                              sourceIndex).row
+            clip: true
 
             Repeater {
                 model: MiniaturesFilterModel {
                     id: _miniaturesSlidesProxyModel
                     sourceModel: _miniaturesModel
                 }
-                Pane {
+                Loader {
+                    id: _loader
                     width: root.width
-                    height: root.height
-                    padding: 0
+                    height: root.height - _swipeView.topPadding
+                    active: SwipeView.isCurrentItem || SwipeView.isNextItem
+                            || SwipeView.isPreviousItem
+                    asynchronous: true
 
-                    Image {
+                    sourceComponent: Pane {
+                        width: root.width
+                        height: root.height
+                        padding: 0
+
+                        Image {
+                            anchors.centerIn: parent
+                            fillMode: Image.PreserveAspectCrop
+                            source: model.image
+                            sourceSize.width: parent.width
+                        }
+                    }
+
+                    BusyIndicator {
                         anchors.centerIn: parent
-                        fillMode: Image.PreserveAspectCrop
-                        source: model.image
-                        sourceSize.width: parent.width
+                        running: _loader.status !== Loader.Ready
                     }
                 }
             }
