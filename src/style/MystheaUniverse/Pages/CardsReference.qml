@@ -10,6 +10,8 @@ StackPage {
     objectName: PageName.cardPage
 
     property color searchFieldBorderColor
+    property color searchFieldBorderFocusColor
+    property color comboBoxAccentColor
     property Action leftAction: null
     property Component cardsListComponent: null
     // NOTE: Those models works only if all the apps have the same structure.
@@ -27,6 +29,8 @@ StackPage {
             typeComboBoxModel: root.typeComboBoxModel
             commandComboBoxModel: root.commandComboBoxModel
             searchFieldBorderColor: root.searchFieldBorderColor
+            searchFieldBorderFocusColor: root.searchFieldBorderFocusColor
+            comboBoxAccentColor: root.comboBoxAccentColor
             sourceComponent: root.typeProxyModel.size
                              > 0 ? root.cardsListComponent : emptyCardListComponent
         }

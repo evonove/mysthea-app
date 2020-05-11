@@ -9,6 +9,7 @@ TextField {
     id: control
 
     property color borderColor
+    property color borderColorFocus: Palette.white
     signal resetSearchFieldClicked
 
     implicitHeight: 48
@@ -57,14 +58,13 @@ TextField {
 
     background: Rectangle {
         color: Palette.white
-        border.color: control.borderColor
-        border.width: 1
+        border.color: control.activeFocus ? control.borderColorFocus : control.borderColor
+        border.width: control.activeFocus ? 2 : 1
         radius: 5
     }
 
-
     onPreeditTextChanged: {
-        if(control.displayText.length > 0) {
+        if (control.displayText.length > 0) {
             _resetTextButton.visible = true
         } else {
             _resetTextButton.visible = false
@@ -72,7 +72,7 @@ TextField {
     }
 
     onTextEdited: {
-        if(control.text.length > 0) {
+        if (control.text.length > 0) {
             _resetTextButton.visible = true
         } else {
             _resetTextButton.visible = false

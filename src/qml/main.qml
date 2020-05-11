@@ -133,6 +133,8 @@ ApplicationWindow {
                     Component {
                         Mysthea.CardsReference {
                             searchFieldBorderColor: Palette.pinkLavenderBlush
+                            searchFieldBorderFocusColor: Palette.darkPink
+                            comboBoxAccentColor: Palette.mystheaMain
                         }
                     },
                     Component {
@@ -163,7 +165,11 @@ ApplicationWindow {
 
                 appContents: [
                     Component {
-                        Icaion.CardsReference {}
+                        Icaion.CardsReference {
+                            searchFieldBorderColor: Palette.icaionLight
+                            searchFieldBorderFocusColor: Palette.icaionMain
+                            comboBoxAccentColor: Palette.icaionMain
+                        }
                     },
                     Component {
                         Icaion.GameSetup {}
@@ -193,7 +199,11 @@ ApplicationWindow {
 
                 appContents: [
                     Component {
-                        TheFall.CardsReference {}
+                        TheFall.CardsReference {
+                            searchFieldBorderColor: Palette.theFallLight
+                            searchFieldBorderFocusColor: Palette.theFallMain
+                            comboBoxAccentColor: Palette.theFallMain
+                        }
                     },
                     Component {
                         TheFall.GameSetup {}
