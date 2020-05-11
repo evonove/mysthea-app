@@ -90,6 +90,7 @@ Page {
         height: 49
 
         borderColor: root.accentColor
+        backgroundColor: root.headerBackgroundColor
 
         TabButton {
             icon.source: "qrc:/assets/icons/card_reference_icon.svg"

@@ -44,6 +44,7 @@ T.TabBar {
     id: control
 
     property alias borderColor: _border.color
+    property alias backgroundColor: _background.color
 
     implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
                             contentWidth + leftPadding + rightPadding)
@@ -69,8 +70,8 @@ T.TabBar {
     }
 
     background: Rectangle {
+        id: _background
         implicitHeight: 49
-        color: Palette.background
 
         Rectangle {
             id: _border
