@@ -40,7 +40,7 @@ QtObject {
     readonly property color icaionBlack: "#0E1617"
 
     // TheFall default colors
-    readonly property color theFallMain: "#2FFF20"
+    readonly property color theFallMain: "#24E082"
     readonly property color theFallDark: "#83A581"
     readonly property color theFallLight: "#C5E2C3"
     readonly property color theFallBlack: "#0E170F"
