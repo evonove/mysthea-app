@@ -12,8 +12,7 @@ ToolBar {
     property TypeProxyModel typeProxyModel: null
     property TypeComboBoxModel typeComboBoxModel: null
     property CommandComboBoxModel commandComboBoxModel: null
-    property color separatorFocusColor
-    property color comboBoxAccentColor
+    property color accentColor
 
     signal comboboxValueChanged
 
@@ -26,7 +25,7 @@ ToolBar {
 
         SearchField {
             id: _searchField
-            borderColorFocus: root.separatorFocusColor
+            borderColorFocus: root.accentColor
             placeholderText: qsTr("Search cards by code")
             font.family: "FuturaPTBook"
             font.pixelSize: 18
@@ -56,7 +55,7 @@ ToolBar {
                 model: root.typeComboBoxModel
                 textRole: "type"
                 roleName: TypeComboBoxModel.IconUrl
-                accentColor: root.comboBoxAccentColor
+                accentColor: root.accentColor
 
 
                 Layout.fillWidth: true
@@ -83,7 +82,7 @@ ToolBar {
                 iconRole: root.commandComboBoxModel != null ? "iconUrl" : ""
                 roleName: CommandComboBoxModel.IconUrl
                 iconAlignLeft: true
-                accentColor: root.comboBoxAccentColor
+                accentColor: root.accentColor
 
                 Layout.fillWidth: root.commandComboBoxModel != null
 

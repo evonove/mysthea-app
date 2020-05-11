@@ -132,8 +132,7 @@ ApplicationWindow {
                 appContents: [
                     Component {
                         Mysthea.CardsReference {
-                            searchFieldBorderFocusColor: Palette.mystheaMain
-                            comboBoxAccentColor: Palette.mystheaMain
+                            accentColor: Palette.mystheaMain
                         }
                     },
                     Component {
@@ -165,8 +164,7 @@ ApplicationWindow {
                 appContents: [
                     Component {
                         Icaion.CardsReference {
-                            searchFieldBorderFocusColor: Palette.icaionMain
-                            comboBoxAccentColor: Palette.icaionMain
+                            accentColor: Palette.icaionMain
                         }
                     },
                     Component {
@@ -198,8 +196,7 @@ ApplicationWindow {
                 appContents: [
                     Component {
                         TheFall.CardsReference {
-                            searchFieldBorderFocusColor: Palette.theFallMain
-                            comboBoxAccentColor: Palette.theFallMain
+                            accentColor: Palette.theFallMain
                         }
                     },
                     Component {
