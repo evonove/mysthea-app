@@ -8,7 +8,6 @@ import MystheaUniverse.Theme 1.0
 TextField {
     id: control
 
-    property color borderColor
     property color borderColorFocus: Palette.white
     signal resetSearchFieldClicked
 
@@ -58,8 +57,8 @@ TextField {
 
     background: Rectangle {
         color: Palette.white
-        border.color: control.activeFocus ? control.borderColorFocus : control.borderColor
-        border.width: control.activeFocus ? 2 : 1
+        border.color: control.activeFocus ? control.borderColorFocus : Palette.white
+        border.width: 2
         radius: 5
     }
 

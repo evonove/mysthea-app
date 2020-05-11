@@ -9,7 +9,6 @@ StackPage {
     title: qsTr("CARDS REFERENCE")
     objectName: PageName.cardPage
 
-    property color searchFieldBorderColor
     property color searchFieldBorderFocusColor
     property color comboBoxAccentColor
     property Action leftAction: null
@@ -28,7 +27,6 @@ StackPage {
             typeProxyModel: root.typeProxyModel
             typeComboBoxModel: root.typeComboBoxModel
             commandComboBoxModel: root.commandComboBoxModel
-            searchFieldBorderColor: root.searchFieldBorderColor
             searchFieldBorderFocusColor: root.searchFieldBorderFocusColor
             comboBoxAccentColor: root.comboBoxAccentColor
             sourceComponent: root.typeProxyModel.size

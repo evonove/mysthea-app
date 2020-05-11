@@ -12,7 +12,6 @@ Page {
       These are the cards proxy model and another two models to populate the
       filters' combobox.
     */
-    property color searchFieldBorderColor: Palette.white
     property color searchFieldBorderFocusColor: Palette.white
     property color comboBoxAccentColor: Palette.black
     property bool isLoading: _loader.status !== Loader.Ready
@@ -33,7 +32,6 @@ Page {
         CardsFiltersHeader {
             id: _filtersHeader
             width: parent.width
-            separatorColor: root.searchFieldBorderColor
             separatorFocusColor: root.searchFieldBorderFocusColor
             comboBoxAccentColor: root.comboBoxAccentColor
             backgroundColor: Palette.black
