@@ -38,21 +38,21 @@ TextField {
         verticalAlignment: control.verticalAlignment
     }
 
-    Button {
+    Image {
         id: _resetTextButton
         anchors.right: control.right
-        width: parent.height
-        height: parent.height
+        width: 48
+        height: 48
+        source: "qrc:/assets/icons/clear_filter_icon.svg"
+        sourceSize.width: 48
+        sourceSize.height: 48
+        fillMode: Image.PreserveAspectFit
         visible: false
 
-        icon.source: "qrc:/assets/icons/clear_filter_icon.svg"
-        icon.color: Palette.placeholderText
-        icon.width: 48
-        icon.height: 48
-
-        background: null
-
-        onClicked: control.resetSearchFieldClicked()
+        MouseArea {
+            anchors.fill: parent
+            onClicked: control.resetSearchFieldClicked()
+        }
     }
 
     background: Rectangle {
