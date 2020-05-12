@@ -33,10 +33,13 @@ Drawer {
         x: root.width
         y: 0
 
-        icon.source: "qrc:/assets/icons/drawer_close_icon.svg"
-        icon.color: Palette.white
-        icon.width: 54
-        icon.height: 54
+        Image {
+            anchors.fill: parent
+            source: "qrc:/assets/icons/drawer_close_icon.svg"
+            sourceSize.width: parent.width
+            sourceSize.height: parent.height
+            fillMode: Image.PreserveAspectFit
+        }
 
         background: Rectangle {
             color: Palette.black
