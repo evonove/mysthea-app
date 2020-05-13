@@ -36,6 +36,7 @@ ToolBar {
 
             onResetSearchFieldClicked: {
                 _searchField.clear()
+                _searchField.update()
                 root.typeProxyModel.setCodeFilter(_searchField.displayText)
             }
 

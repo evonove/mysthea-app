@@ -38,21 +38,24 @@ TextField {
         verticalAlignment: control.verticalAlignment
     }
 
-    Image {
+    Button {
         id: _resetTextButton
-        anchors.right: control.right
-        width: 48
-        height: 48
-        source: "qrc:/assets/icons/clear_filter_icon.svg"
-        sourceSize.width: 48
-        sourceSize.height: 48
-        fillMode: Image.PreserveAspectFit
+        anchors.right: parent.right
+        height: parent.height
+        width: parent.height
         visible: false
 
-        MouseArea {
+        background: null
+
+        Image {
             anchors.fill: parent
-            onClicked: control.resetSearchFieldClicked()
+            source: "qrc:/assets/icons/clear_filter_icon.svg"
+            sourceSize.width: parent.width
+            sourceSize.height: parent.height
+            fillMode: Image.PreserveAspectFit
         }
+
+        onClicked: control.resetSearchFieldClicked()
     }
 
     background: Rectangle {
@@ -80,6 +83,6 @@ TextField {
 
     onResetSearchFieldClicked: {
         _resetTextButton.visible = false
-        control.forceActiveFocus()
+        control.focus = true
     }
 }
