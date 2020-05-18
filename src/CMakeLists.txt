@@ -66,6 +66,7 @@ set(TS_FILES
     translations/mysthea_fr.ts
     translations/mysthea_it.ts
     translations/mysthea_ja.ts
+    translations/mysthea_pl.ts
     )
 configure_file(translations.qrc ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 qt5_create_translation(QM_FILES ${CMAKE_CURRENT_SOURCE_DIR} ${TS_FILES})

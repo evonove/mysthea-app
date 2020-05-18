@@ -28,4 +28,8 @@ ListModel {
         language: "日本語"
         translation: TranslationsManager.Japanese
     }
+    ListElement {
+        language: "Polskie"
+        translation: TranslationsManager.Polish
+    }
 }

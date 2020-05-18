@@ -16,7 +16,8 @@ public:
     Spanish = QLocale::Spanish,
     German = QLocale::German,
     Italian = QLocale::Italian,
-    Japanese = QLocale::Japanese
+    Japanese = QLocale::Japanese,
+    Polish = QLocale::Polish
   };
   Q_ENUM(SupportedLanguage)
 
@@ -35,6 +36,7 @@ private:
   QTranslator m_deTranslator;
   QTranslator m_itTranslator;
   QTranslator m_jaTranslator;
+  QTranslator m_plTranslator;
   QTranslator *m_currentTranslator;
   SupportedLanguage m_currentLanguage;
 

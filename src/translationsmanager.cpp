@@ -21,11 +21,14 @@ TranslationsManager::TranslationsManager(QObject *parent)
   m_jaTranslator.load(QLocale{QLocale::Japanese}, QLatin1String("mysthea"),
                       QLatin1String("_"), QLatin1String(":/translations/"));
 
+  m_plTranslator.load(QLocale{QLocale::Polish}, QLatin1String("mysthea"),
+                      QLatin1String("_"), QLatin1String(":/translations/"));
+
   m_settings.value("userLanguage", SupportedLanguage::English);
 
-  auto currentEnumLanguage =  static_cast<SupportedLanguage>(m_settings.value("userLanguage", SupportedLanguage::English).toInt());
+  auto currentEnumLanguage = static_cast<SupportedLanguage>(
+      m_settings.value("userLanguage", SupportedLanguage::English).toInt());
   setCurrentLanguage(currentEnumLanguage);
-
 }
 
 void TranslationsManager::setCurrentLanguage(SupportedLanguage language) {
@@ -61,10 +64,14 @@ void TranslationsManager::setCurrentLanguage(SupportedLanguage language) {
       m_currentTranslator = &m_itTranslator;
       break;
     }
-
     case SupportedLanguage::Japanese: {
       qGuiApp->installTranslator(&m_jaTranslator);
       m_currentTranslator = &m_jaTranslator;
+      break;
+    }
+    case SupportedLanguage::Polish: {
+      qGuiApp->installTranslator(&m_plTranslator);
+      m_currentTranslator = &m_plTranslator;
       break;
     }
     }
