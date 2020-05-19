@@ -14,7 +14,7 @@ class TypeProxyModel : public QSortFilterProxyModel, public QQmlParserStatus {
   Q_PROPERTY(int size READ rowCount NOTIFY filterChanged)
   Q_PROPERTY(
       CardsProxyModel *visibleCards READ visibleCards NOTIFY filterChanged)
-  Q_PROPERTY(QUrl configurationFilePath WRITE setConfigurationFilePath NOTIFY
+  Q_PROPERTY(QUrl configurationFilePath WRITE setConfigurationFilePath READ configurationFilePath NOTIFY
                  configurationFilePathChanged)
 
 public:
@@ -32,6 +32,7 @@ public:
                         const QModelIndex &source_parent) const override;
 
   void setConfigurationFilePath(const QUrl &url);
+  QUrl configurationFilePath() const {return m_configurationFilePath;}
 
 signals:
   void filterChanged();

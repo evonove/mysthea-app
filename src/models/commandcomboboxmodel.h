@@ -8,7 +8,7 @@ class CommandComboBoxModel : public QAbstractListModel,
                              public QQmlParserStatus {
   Q_OBJECT
   Q_INTERFACES(QQmlParserStatus)
-  Q_PROPERTY(QUrl configurationFilePath WRITE setConfigurationFilePath NOTIFY
+  Q_PROPERTY(QUrl configurationFilePath WRITE setConfigurationFilePath READ configurationFilePath NOTIFY
                  configurationFilePathChanged)
 public:
   explicit CommandComboBoxModel(QObject *parent = nullptr);
@@ -28,6 +28,7 @@ public:
   Q_INVOKABLE QUrl iconUrl(const int &command) const;
 
   void setConfigurationFilePath(const QUrl &url);
+  QUrl configurationFilePath() const {return m_configurationFilePath;}
 
 signals:
   void configurationFilePathChanged();

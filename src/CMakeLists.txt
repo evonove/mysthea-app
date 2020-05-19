@@ -78,6 +78,48 @@ if(ANDROID)
         ${QML_JS_FILES}
         ${QM_FILES}
         )
+
+elseif(APPLE)
+    message("Apple")
+    set(CMAKE_SYSTEM_NAME iOS)
+    set(CMAKE_OSX_ARCHITECTURES x86_64)
+    set(CMAKE_OSX_SYSROOT iphone iphonesimulator)
+    set(CMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH NO)
+
+    include(BundleUtilities)
+
+    set(APP_HEADER_FILES
+        ./ios/helpers/nativeidentifier.h
+        )
+
+    set(APP_SOURCE_FILES
+        ./ios/helpers/nativeidentifier.MM
+        )
+
+    set(RESOURCES
+        ./ios/Images.xcassets
+        )
+
+    find_library(UIKIT UIKit)
+    find_library(COREFOUNDATION CoreFoundation)
+    find_library(FOUNDATION Foundation)
+
+    set_target_properties(mystheaapp PROPERTIES MACOSX_BUNDLE_INFO_PLIST ./ios/Info.plist)
+
+    add_executable(mystheaapp
+        ${APP_HEADER_FILES}
+        ${APP_SOURCE_FILES}
+        ${RESOURCES}
+        ${SOURCE_FILES}
+        ${QML_JS_FILES}
+        ${QM_FILES}
+        )
+
+    target_link_libraries(mystheaapp ${UIKIT})
+    target_link_libraries(mystheaapp ${COREFOUNDATION})
+    target_link_libraries(mystheaapp ${FOUNDATION})
+    target_link_libraries(mystheaapp PUBLIC "-framework CoreFoundation Core UIKit")
+
 else()
     add_executable(mystheaapp
         ${SOURCE_FILES}
