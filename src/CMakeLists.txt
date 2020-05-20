@@ -51,12 +51,6 @@ set(SOURCE_FILES
     qml.qrc
     ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc
     )
-qt5_add_big_resources(SOURCE_FILES mysthea-assets.qrc)
-qt5_add_big_resources(SOURCE_FILES mysthea-cards.qrc)
-qt5_add_big_resources(SOURCE_FILES icaion-assets.qrc)
-qt5_add_big_resources(SOURCE_FILES icaion-cards.qrc)
-qt5_add_big_resources(SOURCE_FILES thefall-assets.qrc)
-qt5_add_big_resources(SOURCE_FILES thefall-cards.qrc)
 
 # Translation files
 set(TS_FILES
@@ -71,6 +65,12 @@ configure_file(translations.qrc ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 qt5_create_translation(QM_FILES ${CMAKE_CURRENT_SOURCE_DIR} ${TS_FILES})
 
 if(ANDROID)
+    qt5_add_big_resources(SOURCE_FILES mysthea-assets.qrc)
+    qt5_add_big_resources(SOURCE_FILES mysthea-cards.qrc)
+    qt5_add_big_resources(SOURCE_FILES icaion-assets.qrc)
+    qt5_add_big_resources(SOURCE_FILES icaion-cards.qrc)
+    qt5_add_big_resources(SOURCE_FILES thefall-assets.qrc)
+    qt5_add_big_resources(SOURCE_FILES thefall-cards.qrc)
     find_package(Qt5 COMPONENTS AndroidExtras REQUIRED)
 
     add_library(mystheaapp SHARED
@@ -81,44 +81,74 @@ if(ANDROID)
 
 elseif(APPLE)
     message("Apple")
+    qt5_add_resources(SOURCE_FILES mysthea-assets.qrc)
+    qt5_add_resources(SOURCE_FILES mysthea-cards.qrc)
+    qt5_add_resources(SOURCE_FILES icaion-assets.qrc)
+    qt5_add_resources(SOURCE_FILES icaion-cards.qrc)
+    qt5_add_resources(SOURCE_FILES thefall-assets.qrc)
+    qt5_add_resources(SOURCE_FILES thefall-cards.qrc)
+
     set(CMAKE_SYSTEM_NAME iOS)
     set(CMAKE_OSX_ARCHITECTURES x86_64)
-    set(CMAKE_OSX_SYSROOT iphone iphonesimulator)
-    set(CMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH NO)
+    set(MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_LIST_DIR}/ios/Info.plist")
+    set(MACOSX_BUNDLE_GUI_IDENTIFIER "it.evonove.mysthea")
+    set(MACOSX_BUNDLE_BUNDLE_NAME "Mysthea Universe")
+    set(MACOSX_BUNDLE_BUNDLE_VERSION 3.5.0)
+
+    set(IMAGES
+        ios/Images.xcassets/LaunchImage.launchimage/Contents.json
+        ios/Images.xcassets/LaunchImage.launchimage/1242×2688.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/828×1792.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/1125×2436.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/1242×2208.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/750x1334.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/640x960.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/640x1136.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/768x1024.jpg
+        ios/Images.xcassets/LaunchImage.launchimage/1536x2048.jpg
+        )
+
+    set(ICONS
+        ios/Images.xcassets/AppIcon.appiconset/Contents.json
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-20x20@2x-1.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-29x29@2x-1.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-40x40@2x-1.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-24@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-27.5@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-29@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-29@3x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-40@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-86@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-98@2x.png
+        ios/Images.xcassets/AppIcon.appiconset/Icon-44@2x.png
+        )
 
     include(BundleUtilities)
 
-    set(APP_HEADER_FILES
-        ./ios/helpers/nativeidentifier.h
-        )
-
-    set(APP_SOURCE_FILES
-        ./ios/helpers/nativeidentifier.MM
-        )
-
-    set(RESOURCES
-        ./ios/Images.xcassets
-        )
-
-    find_library(UIKIT UIKit)
-    find_library(COREFOUNDATION CoreFoundation)
-    find_library(FOUNDATION Foundation)
-
-    set_target_properties(mystheaapp PROPERTIES MACOSX_BUNDLE_INFO_PLIST ./ios/Info.plist)
-
-    add_executable(mystheaapp
-        ${APP_HEADER_FILES}
-        ${APP_SOURCE_FILES}
-        ${RESOURCES}
+    add_executable(mystheaapp MACOSX_BUNDLE
+        ${IMAGES}
+        ${ICONS}
         ${SOURCE_FILES}
         ${QML_JS_FILES}
         ${QM_FILES}
+        ${FRAMEWORK}
         )
 
-    target_link_libraries(mystheaapp ${UIKIT})
-    target_link_libraries(mystheaapp ${COREFOUNDATION})
-    target_link_libraries(mystheaapp ${FOUNDATION})
-    target_link_libraries(mystheaapp PUBLIC "-framework CoreFoundation Core UIKit")
+    message("mac osx bundle info plist path: " ${MACOSX_BUNDLE_INFO_PLIST})
+    message("mac osx bundle info plist path: " ${MACOSX_BUNDLE_GUI_IDENTIFIER})
 
 else()
     add_executable(mystheaapp
@@ -132,4 +162,5 @@ target_compile_definitions(mystheaapp
     PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(mystheaapp
     PRIVATE Qt5::Core Qt5::Quick Qt5::Svg $<$<BOOL:${ANDROID}>:Qt5::AndroidExtras>)
+    #$<$<BOOL:${APPLE}>:"-framework CoreFoundation" "-framework Foundation" "-framework UIKit">)
 
