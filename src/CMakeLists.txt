@@ -137,6 +137,12 @@ elseif(APPLE)
         )
 
     include(BundleUtilities)
+    enable_language(OBJC)
+
+    set(RESOURCES
+        ios/helpers/nativeidentifier.h
+        ios/helpers/nativeidentifier.mm
+        )
 
     add_executable(mystheaapp MACOSX_BUNDLE
         ${IMAGES}
