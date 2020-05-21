@@ -95,6 +95,8 @@ elseif(APPLE)
     set(MACOSX_BUNDLE_BUNDLE_NAME "Mysthea Universe")
     set(MACOSX_BUNDLE_BUNDLE_VERSION 3.5.0)
 
+    enable_language(OBJCXX)
+
     set(IMAGES
         ios/Images.xcassets/LaunchImage.launchimage/Contents.json
         ios/Images.xcassets/LaunchImage.launchimage/1242×2688.jpg
@@ -136,17 +138,44 @@ elseif(APPLE)
         ios/Images.xcassets/AppIcon.appiconset/Icon-44@2x.png
         )
 
+    set(HEADER_FILES
+        ios/helpers/nativeidentifier.h
+    )
+    
+    set(SOURCE_FILES
+        main.cpp
+        translationsmanager.cpp
+        models/artworksmodel.cpp
+        models/artworksfiltermodel.cpp
+        models/cardsmodel.cpp
+        models/cardsproxymodel.cpp
+        models/commandcomboboxmodel.cpp
+        models/miniaturesmodel.cpp
+        models/miniaturesfiltermodel.cpp
+        models/typecomboboxmodel.cpp
+        models/typemodel.cpp
+        models/typeproxymodel.cpp
+        models/mystheatypeproxymodel.cpp
+        models/icaiontypeproxymodel.cpp
+        models/thefalltypeproxymodel.cpp
+        configurations.qrc
+        assets.qrc
+        fonts.qrc
+        qml.qrc
+        ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc
+        ios/helpers/nativeidentifier.mm
+    )
+
     include(BundleUtilities)
-    enable_language(OBJC)
 
     set(RESOURCES
-        ios/helpers/nativeidentifier.h
-        ios/helpers/nativeidentifier.mm
+        ${IMAGES}
+        ${ICONS}
         )
 
     add_executable(mystheaapp MACOSX_BUNDLE
-        ${IMAGES}
-        ${ICONS}
+        ${RESOURCES}
+        ${HEADER_FILES}
         ${SOURCE_FILES}
         ${QML_JS_FILES}
         ${QM_FILES}
@@ -168,5 +197,4 @@ target_compile_definitions(mystheaapp
     PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(mystheaapp
     PRIVATE Qt5::Core Qt5::Quick Qt5::Svg $<$<BOOL:${ANDROID}>:Qt5::AndroidExtras>)
-    #$<$<BOOL:${APPLE}>:"-framework CoreFoundation" "-framework Foundation" "-framework UIKit">)
 
