@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+    <file>translations/mysthea_en.qm</file>
+    <file>translations/mysthea_fr.qm</file>
+    <file>translations/mysthea_es.qm</file>
+    <file>translations/mysthea_de.qm</file>
+    <file>translations/mysthea_it.qm</file>
+    <file>translations/mysthea_ja.qm</file>
+    </qresource>
+</RCC>

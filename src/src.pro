@@ -5,18 +5,17 @@ SOURCES += \
 
 RESOURCES += \
     $$PWD/assets.qrc \
-    $$PWD/attunement.qrc \
-    $$PWD/encounter.qrc \
-    $$PWD/encounter-back.qrc \
-    $$PWD/era-i.qrc \
-    $$PWD/era-ii.qrc \
-    $$PWD/era-iii.qrc \
-    $$PWD/era-x.qrc \
-    $$PWD/event.qrc \
+    $$PWD/configurations.qrc \
     $$PWD/fonts.qrc \
-    $$PWD/hero.qrc \
     $$PWD/qml.qrc \
-    $$PWD/translations.qrc \
+    $$PWD/mysthea-assets.qrc \
+    $$PWD/mysthea-cards.qrc \
+    $$PWD/icaion-assets.qrc \
+    $$PWD/icaion-cards.qrc \
+    $$PWD/thefall-assets.qrc \
+    $$PWD/thefall-cards.qrc \
+    $$PWD/ios-translations.qrc
+
 
 include($$PWD/src.pri)
 
