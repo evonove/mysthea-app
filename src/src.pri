@@ -1,4 +1,4 @@
-QT += qml quick svg core
+QT += qml quick svg core gui-private
 CONFIG += c++11
 
 DEFINES += QT_DEPRECATED_WARNINGS
@@ -9,6 +9,7 @@ INCLUDEPATH += \
 
 HEADERS += \
     $$PWD/models/artworksmodel.h \
+    $$PWD/system.h \
     $$PWD/translationsmanager.h \
     $$PWD/models/artworksfiltermodel.h \
     $$PWD/models/cardsmodel.h \
@@ -25,6 +26,7 @@ HEADERS += \
 
 SOURCES += \
     $$PWD/models/artworksmodel.cpp \
+    $$PWD/system.cpp \
     $$PWD/translationsmanager.cpp \
     $$PWD/models/artworksfiltermodel.cpp \
     $$PWD/models/cardsmodel.cpp \
