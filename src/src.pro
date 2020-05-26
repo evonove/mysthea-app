@@ -37,7 +37,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 # To upgrade the version change the following variable
-VERSION = 3.4.0
+VERSION = 4.0.0
 
 android {
     QT += androidextras
