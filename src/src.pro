@@ -84,12 +84,6 @@ ios {
 
     LIBS += -framework Foundation -framework CoreFoundation -framework UIKit
 
-    HEADERS += \
-        $$PWD/ios/helpers/nativeidentifier.h
-
-    OBJECTIVE_SOURCES += \
-        $$PWD/ios/helpers/nativeidentifier.mm
-
     OTHER_FILES += \
         $$PWD/ios/Images.xcassets/*
 

@@ -14,6 +14,7 @@ import MystheaUniverse.Theme 1.0
 import MystheaUniverse.Components 1.0
 import MystheaUniverse.Pages 1.0
 import MystheaUniverse.Models 1.0
+import System 1.0
 
 ApplicationWindow {
     id: root
@@ -22,7 +23,17 @@ ApplicationWindow {
 
     // A top margin added to various components so that they're not covered
     // by the iPhone top notch
-    readonly property int safeTopMargin: hasNotch ? 34 : 0
+    property real safeTopMargin: 0
+    property real safeBottomMargin: 0
+
+    Component.onCompleted: {
+        let margins = System.getSafeAreaMargins(root)
+        root.safeTopMargin = margins.top
+        root.safeBottomMargin = margins.bottom
+
+        console.log("top", root.safeTopMargin)
+        console.log("bottom", root.safeBottomMargin)
+    }
 
     property bool isPushing: false
 
@@ -42,7 +53,7 @@ ApplicationWindow {
     width: 375
     height: 667
     visible: true
-    flags: hasNotch ? Qt.MaximizeUsingFullscreenGeometryHint : Qt.Window
+    flags: Qt.Window | Qt.MaximiseUsingFullscreenGeometryHint
 
     font.pixelSize: 18
 
@@ -80,6 +91,8 @@ ApplicationWindow {
         id: _drawer
         width: root.width * 0.85
         height: root.height
+        topPadding: root.safeTopMargin
+        bottomPadding: root.safeBottomMargin
         onMystheaClicked: root.pushToStack(_mystheaApp, PageName.mystheaPage)
         onIcaionClicked: root.pushToStack(_icaionApp, PageName.icaionPage)
         onTheFallClicked: root.pushToStack(_theFallApp, PageName.theFallPage)
@@ -88,6 +101,8 @@ ApplicationWindow {
     StackView {
         id: _mainStackView
         anchors.fill: parent
+        topPadding: root.safeTopMargin
+        bottomPadding: root.safeBottomMargin
         focus: true
         padding: 0
 

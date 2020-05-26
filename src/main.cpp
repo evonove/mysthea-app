@@ -22,6 +22,16 @@
 #include "models/typemodel.h"
 #include "models/typeproxymodel.h"
 #include "translationsmanager.h"
+#include "system.h"
+
+static QObject *
+system_manager_singletontype_provider(QQmlEngine *engine,
+                                      QJSEngine *scriptEngine) {
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+    auto system = new System();
+    return system;
+}
 
 static QObject *
 translations_manager_singletontype_provider(QQmlEngine *engine,
@@ -43,6 +53,10 @@ int main(int argc, char *argv[]) {
   QGuiApplication app(argc, argv);
 
   QQmlApplicationEngine engine;
+
+  qmlRegisterSingletonType<System>(
+      "System", 1, 0, "System",
+      system_manager_singletontype_provider);
 
   qmlRegisterSingletonType<TranslationsManager>(
       "Translations", 1, 0, "TranslationsManager",
@@ -79,14 +93,6 @@ int main(int argc, char *argv[]) {
                                      "TypeComboBoxModel");
   qmlRegisterType<CommandComboBoxModel>("MystheaUniverse.Models", 1, 0,
                                         "CommandComboBoxModel");
-
-  bool hasNotch = false;
-
-#ifdef Q_OS_IOS
-  hasNotch = iOSHasNotch();
-#endif
-
-  engine.rootContext()->setContextProperty("hasNotch", QVariant{hasNotch});
 
   engine.addImportPath(QStringLiteral("qrc:/"));
   engine.addImportPath(QStringLiteral("qrc:/qml/"));
