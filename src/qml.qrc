@@ -82,7 +82,6 @@
         <file>style/MystheaUniverse/Pages/MainMenu.qml</file>
         <file>style/MystheaUniverse/Pages/PageName.qml</file>
         <file>style/MystheaUniverse/Pages/qmldir</file>
-        <file>style/MystheaUniverse/RoundButton.qml</file>
         <file>style/MystheaUniverse/Pages/Rulebook.qml</file>
         <file>style/MystheaUniverse/Pages/StackPage.qml</file>
         <file>style/MystheaUniverse/TabBar.qml</file>

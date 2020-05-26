@@ -8,23 +8,36 @@ INCLUDEPATH += \
     $$PWD
 
 HEADERS += \
-    $$PWD/models/cardsmodel.h \
+    $$PWD/models/artworksmodel.h \
     $$PWD/translationsmanager.h \
-    $$PWD/models/card_data.h \
-    $$PWD/models/typemodel.h \
+    $$PWD/models/artworksfiltermodel.h \
+    $$PWD/models/cardsmodel.h \
     $$PWD/models/cardsproxymodel.h \
-    $$PWD/models/typeproxymodel.h \
     $$PWD/models/commandcomboboxmodel.h \
-    $$PWD/models/typecomboboxmodel.h
+    $$PWD/models/miniaturesmodel.h \
+    $$PWD/models/miniaturesfiltermodel.h \
+    $$PWD/models/typecomboboxmodel.h \
+    $$PWD/models/typemodel.h \
+    $$PWD/models/typeproxymodel.h \
+    $$PWD/models/mystheatypeproxymodel.h \
+    $$PWD/models/icaiontypeproxymodel.h \
+    $$PWD/models/thefalltypeproxymodel.h
 
 SOURCES += \
-    $$PWD/models/cardsmodel.cpp \
+    $$PWD/models/artworksmodel.cpp \
     $$PWD/translationsmanager.cpp \
-    $$PWD/models/typemodel.cpp \
+    $$PWD/models/artworksfiltermodel.cpp \
+    $$PWD/models/cardsmodel.cpp \
     $$PWD/models/cardsproxymodel.cpp \
-    $$PWD/models/typeproxymodel.cpp \
     $$PWD/models/commandcomboboxmodel.cpp \
-    $$PWD/models/typecomboboxmodel.cpp
+    $$PWD/models/miniaturesmodel.cpp \
+    $$PWD/models/miniaturesfiltermodel.cpp \
+    $$PWD/models/typecomboboxmodel.cpp \
+    $$PWD/models/typemodel.cpp \
+    $$PWD/models/typeproxymodel.cpp \
+    $$PWD/models/mystheatypeproxymodel.cpp \
+    $$PWD/models/icaiontypeproxymodel.cpp \
+    $$PWD/models/thefalltypeproxymodel.cpp
 
 lupdate_only{
     SOURCES += \
