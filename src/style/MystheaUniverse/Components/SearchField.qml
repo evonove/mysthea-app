@@ -44,6 +44,7 @@ TextField {
         height: parent.height
         width: parent.height
         visible: false
+        z: 100
 
         background: null
 
@@ -55,7 +56,13 @@ TextField {
             fillMode: Image.PreserveAspectFit
         }
 
-        onClicked: control.resetSearchFieldClicked()
+        onClicked: {
+            control.resetSearchFieldClicked()
+        }
+
+        onPressed: {
+            control.resetSearchFieldClicked()
+        }
     }
 
     background: Rectangle {
@@ -83,6 +90,5 @@ TextField {
 
     onResetSearchFieldClicked: {
         _resetTextButton.visible = false
-        control.focus = true
     }
 }
