@@ -5,10 +5,6 @@
 #include <QtAndroid>
 #endif
 
-#ifdef Q_OS_IOS
-#include "ios/helpers/nativeidentifier.h"
-#endif
-
 #include "models/artworksfiltermodel.h"
 #include "models/artworksmodel.h"
 #include "models/cardsmodel.h"
