@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    icaionartworksmodel \
     icaionminiaturesmodel \
     icaiontypemodel \
     mystheaartworksmodel \
