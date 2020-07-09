@@ -1,4 +1,5 @@
 module MystheaUniverse.Components
+AccordionItemDelegate 1.0 AccordionItemDelegate.qml
 AppContainer 1.0 AppContainer.qml
 AppDrawer 1.0 AppDrawer.qml
 ArtworkGrid 1.0 ArtworkGrid.qml

@@ -1,8 +1,11 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
+import QtQml.Models 2.14
 
 import MystheaUniverse.Components 1.0
+import MystheaUniverse.Theme 1.0
+import Icaion 1.0
 
 Page {
     id: root
@@ -17,8 +20,7 @@ Page {
         contentHeight: content.height
         clip: true
 
-        ScrollIndicator.vertical: ScrollIndicator {
-        }
+        ScrollIndicator.vertical: ScrollIndicator {}
 
         ColumnLayout {
             id: content
@@ -154,7 +156,126 @@ Page {
                     onClicked: root.stepClicked(8)
                 }
             }
+
+            Label {
+                text: qsTr("Setup presets")
+                font.capitalization: Font.AllUppercase
+                font.pixelSize: 25
+                color: Palette.white
+
+                Layout.fillWidth: true
+                Layout.topMargin: 37
+                Layout.bottomMargin: 20
+                Layout.leftMargin: 20
+            }
+
+            Rectangle {
+                color: Palette.white
+                Layout.fillWidth: true
+                Layout.fillHeight: false
+                Layout.preferredHeight: 2
+            }
+
+            ListView {
+                id: _predeterminedSteps
+                spacing: 0
+                interactive: false
+
+                ObjectModel {
+                    id: _accordions
+                    AccordionItemDelegate {
+                        width: parent.width
+                        accordionText: qsTr("2 Player setup")
+                        accordionContent: Component {
+                            PredeterminedSteps {
+                                title: qsTr("2 Players setup")
+                                paragraph: qsTr("Choose a color not in play and place the machines as shown in one of the following presets.")
+                                contentModel: ListModel {
+                                    id: _2PlayerSetupSteps
+                                    ListElement {
+                                        subTitle: qsTr("Symmetry")
+                                        subParagraph: qsTr("Every kind of Region is equally accessible, obstacles are well distributed all over the land.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                    ListElement {
+                                        subTitle: qsTr("Looted Mountains")
+                                        subParagraph: qsTr("Players are more likely to run out of Brown Qoam, and they will struggle for the central Regions.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Rectangle {
+                        color: Palette.white
+                        width: parent.width
+                        height: 2
+                    }
+                    AccordionItemDelegate {
+                        width: parent.width
+                        accordionText: qsTr("3 Player setup")
+                        accordionContent: Component {
+                            PredeterminedSteps {
+                                title: qsTr("3 Players setup")
+                                paragraph: qsTr("Choose a color not in play and place the machines as shown in one of the following presets.")
+                                contentModel: ListModel {
+                                    id: _2PlayerSetupSteps
+                                    ListElement {
+                                        subTitle: qsTr("Specialized Areas")
+                                        subParagraph: qsTr("Some Regions are more coveted than others, the mightiest Seeker gets the highest Honor.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                    ListElement {
+                                        subTitle: qsTr("A Fragile Equilibrium")
+                                        subParagraph: qsTr("All players have the same opportunities, but they must aim for the best settlements before the others.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Rectangle {
+                        color: Palette.white
+                        width: parent.width
+                        height: 2
+                    }
+                    AccordionItemDelegate {
+                        width: parent.width
+                        accordionText: qsTr("4 Player setup")
+                        accordionContent: Component {
+                            PredeterminedSteps {
+                                title: qsTr("4 Players setup")
+                                paragraph: qsTr("Choose a color not in play and place the machines as shown in one of the following presets.")
+                                contentModel: ListModel {
+                                    id: _2PlayerSetupSteps
+                                    ListElement {
+                                        subTitle: qsTr("Crystal Attraction")
+                                        subParagraph: qsTr("All the Crystal Fields have been taken, but the Pink Qoam is not a resource to do without.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                    ListElement {
+                                        subTitle: qsTr("A City Hard to Reach")
+                                        subParagraph: qsTr("Building Machines around the core of the City is a strategy that repays, someone thought it first.")
+                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Rectangle {
+                        color: Palette.white
+                        width: parent.width
+                        height: 2
+                    }
+                }
+
+                model: _accordions
+
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                Layout.preferredWidth: root.width
+                Layout.preferredHeight: contentItem.height
+            }
         }
     }
 }
-
