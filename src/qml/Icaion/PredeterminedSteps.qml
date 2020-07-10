@@ -74,9 +74,10 @@ ColumnLayout {
                 Layout.rightMargin: 15
                 Layout.topMargin: 18
             }
-            Image {
+            RoundedImage {
                 source: model.imageSource
-                fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
+                borderWidth: 1
                 Layout.fillWidth: true
                 Layout.fillHeight: false
                 Layout.leftMargin: 15

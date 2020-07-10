@@ -11,6 +11,7 @@ ItemDelegate {
 
     checkable: true
     height: 52
+    background: null
 
     contentItem: ColumnLayout {
         id: _content
