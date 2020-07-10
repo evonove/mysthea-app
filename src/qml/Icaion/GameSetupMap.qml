@@ -21,30 +21,14 @@ Page {
         contentHeight: content.height
         clip: true
         pixelAligned: true
-        state: 'init'
 
         ScrollIndicator.vertical: ScrollIndicator {}
 
-        states: [
-            State {
-                name: 'moved'
-                when: _scrollButton.checked
-                PropertyChanges {
-                    target: _flickable
-                    contentY: _presets.y - 37
-                }
+        Behavior on contentY {
+            PropertyAnimation {
+                easing.type: Easing.InOutQuad
+                duration: 400
             }
-        ]
-
-        transitions: Transition {
-            to: 'moved'
-            animations: [
-                NumberAnimation {
-                    properties: "contentY"
-                    easing.type: Easing.InOutQuad
-                    duration: 400
-                }
-            ]
         }
 
         ColumnLayout {
@@ -75,6 +59,9 @@ Page {
                         sourceSize.height: 7
                         fillMode: Image.PreserveAspectFit
                     }
+                }
+                onClicked: {
+                    _flickable.contentY = _presets.y - 37
                 }
             }
 
