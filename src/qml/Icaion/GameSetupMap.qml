@@ -235,12 +235,12 @@ Page {
                                     ListElement {
                                         subTitle: qsTr("Symmetry")
                                         subParagraph: qsTr("Every kind of Region is equally accessible, obstacles are well distributed all over the land.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/SIMMETRY.jpg"
                                     }
                                     ListElement {
                                         subTitle: qsTr("Looted Mountains")
                                         subParagraph: qsTr("Players are more likely to run out of Brown Qoam, and they will struggle for the central Regions.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/LOOTED-MOUNTAINS.jpg"
                                     }
                                 }
                             }
@@ -263,12 +263,12 @@ Page {
                                     ListElement {
                                         subTitle: qsTr("Specialized Areas")
                                         subParagraph: qsTr("Some Regions are more coveted than others, the mightiest Seeker gets the highest Honor.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/SPECIAL-AREAS.jpg"
                                     }
                                     ListElement {
                                         subTitle: qsTr("A Fragile Equilibrium")
                                         subParagraph: qsTr("All players have the same opportunities, but they must aim for the best settlements before the others.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/FRAGILE-EQUILIBRIUM.jpg"
                                     }
                                 }
                             }
@@ -291,12 +291,12 @@ Page {
                                     ListElement {
                                         subTitle: qsTr("Crystal Attraction")
                                         subParagraph: qsTr("All the Crystal Fields have been taken, but the Pink Qoam is not a resource to do without.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/CRYSTAL-ATTRACTION.jpg"
                                     }
                                     ListElement {
                                         subTitle: qsTr("A City Hard to Reach")
                                         subParagraph: qsTr("Building Machines around the core of the City is a strategy that repays, someone thought it first.")
-                                        imageSource: "qrc:assets/images/extras/menu/icaion/lore.jpg"
+                                        imageSource: "qrc:/assets/images/game_setup/icaion/CITY-HTR.jpg"
                                     }
                                 }
                             }
