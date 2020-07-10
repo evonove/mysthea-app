@@ -15,20 +15,72 @@ Page {
 
     background: null
     Flickable {
+        id: _flickable
         anchors.fill: parent
         contentWidth: content.width
         contentHeight: content.height
         clip: true
+        pixelAligned: true
+        state: 'init'
 
         ScrollIndicator.vertical: ScrollIndicator {}
+
+        states: [
+            State {
+                name: 'moved'
+                when: _scrollButton.checked
+                PropertyChanges {
+                    target: _flickable
+                    contentY: _presets.y - 37
+                }
+            }
+        ]
+
+        transitions: Transition {
+            to: 'moved'
+            animations: [
+                NumberAnimation {
+                    properties: "contentY"
+                    easing.type: Easing.InOutQuad
+                    duration: 400
+                }
+            ]
+        }
 
         ColumnLayout {
             id: content
             width: root.width
+
+            ItemDelegate {
+                id: _scrollButton
+                checkable: true
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                contentItem: Item {
+                    Text {
+                        id: _text
+                        anchors.centerIn: parent
+                        text: qsTr("Looking for <font color='#C3DDE2'>Setup Presets</font>? Scroll to reveal")
+                        font.family: "FuturaPTBold"
+                        textFormat: Text.RichText
+                        color: Palette.white
+                    }
+                    Image {
+                        id: _icon
+                        anchors.left: _text.right
+                        anchors.leftMargin: 4
+                        height: parent.height
+                        source: "qrc:/assets/icons/chevron.svg"
+                        sourceSize.height: 7
+                        fillMode: Image.PreserveAspectFit
+                    }
+                }
+            }
+
             Item {
                 Layout.leftMargin: 40
                 Layout.rightMargin: 40
-                Layout.topMargin: 16
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 implicitHeight: imgBlockA.height
@@ -158,6 +210,7 @@ Page {
             }
 
             Label {
+                id: _presets
                 text: qsTr("Setup presets")
                 font.capitalization: Font.AllUppercase
                 font.pixelSize: 25
