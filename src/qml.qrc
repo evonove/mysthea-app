@@ -11,6 +11,7 @@
         <file>qml/Icaion/Lore.qml</file>
         <file>qml/Icaion/LoreModel.qml</file>
         <file>qml/Icaion/Miniatures.qml</file>
+        <file>qml/Icaion/PredeterminedSteps.qml</file>
         <file>qml/Icaion/Rulebook.qml</file>
         <file>qml/Icaion/qmldir</file>
         <file>qml/Mysthea/Artwork.qml</file>
@@ -48,6 +49,7 @@
         <file>style/MystheaUniverse/ComboBox.qml</file>
         <file>style/MystheaUniverse/PageIndicator.qml</file>
         <file>style/MystheaUniverse/RoundButton.qml</file>
+        <file>style/MystheaUniverse/Components/AccordionItemDelegate.qml</file>
         <file>style/MystheaUniverse/Components/AppContainer.qml</file>
         <file>style/MystheaUniverse/Components/AppDrawer.qml</file>
         <file>style/MystheaUniverse/Components/ArtworkGrid.qml</file>
