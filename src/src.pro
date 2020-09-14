@@ -36,11 +36,11 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-# To upgrade the version change the following variable
-VERSION = 4.1.0
-
 android {
     QT += androidextras
+
+    # To upgrade the version change the following variable
+    VERSION = 4.1.1
 
     OTHER_FILES += \
         $$PWD/android/res/drawable/* \
@@ -79,6 +79,11 @@ android {
 }
 
 ios {
+    # To upgrade the version change the following variable
+    # For iOS the value of ShortVersionString must contain a higher version
+    # than that of the previosly approved version.
+    VERSION = 4.1.0
+
     QMAKE_TARGET_BUNDLE_PREFIX = it.evonove
     QMAKE_BUNDLE = mysthea
 
