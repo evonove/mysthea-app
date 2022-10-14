@@ -40,7 +40,7 @@ android {
     QT += androidextras
 
     # To upgrade the version change the following variable
-    VERSION = 4.1.1
+    VERSION = 4.1.3
 
     OTHER_FILES += \
         $$PWD/android/res/drawable/* \
